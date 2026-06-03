@@ -1,0 +1,52 @@
+{
+  "agent": "the-director",
+  "gw": 38,
+  "generated_at": "2026-06-03T08:30:00Z",
+  "user_plan": {
+    "captain": "Haaland",
+    "key_transfers": ["OUT Gabriel (ARS)", "IN Mbeumo (BRE)"],
+    "chip": null,
+    "projected_score": 62.5,
+    "strengths": [
+      "Clean, fully-reconciled OUT/IN: sells the doubtful + falling Gabriel and buys the nailed, rising Mbeumo before price locks — every pillar (Sim, Medical, News, Market, Fixture) agrees.",
+      "Unanimous max-EV captain on Haaland (EV 16.41, haul 31.6%) with Salah as a guaranteed-minutes VC.",
+      "Disciplined CHIP-CAL: correctly banks chips on a clean non-DGW slate rather than wasting a TC on a soft FDR-2 home tie."
+    ],
+    "weaknesses": [
+      "Projected XI total (62.5) trails the rival by ~8.8 xPts — the rest of the bench/XI appears thinner on attacking returners than the rival's full 3-4-3.",
+      "Only one true differential (Mbeumo, 14.2%) — limited sub-8% rank-up leverage versus the field if the template blanks.",
+      "Captain concentration on Haaland means a blank caps the week; mitigated by VC Salah but no contrarian upside baked in."
+    ]
+  },
+  "rival_plan": {
+    "strategy": "top10k",
+    "captain": "Haaland",
+    "projected_score": 71.3,
+    "strengths": [
+      "Full template-plus-differential 3-4-3 with more attacking returners across the XI (Haaland, Salah, Mbeumo + Mateta, Rogers, Gordon, Wood) lifting the projected total to 71.3.",
+      "Same zero-risk max-EV captain (Haaland) and same VC (Salah) — no captaincy or template leak versus the user.",
+      "Two true sub-8% differentials (Mateta 6.8%, Rogers 4.1%) give genuine rank-up leverage the user lacks.",
+      "No hit required: Gabriel benched behind nailed defenders, FT banked for a clean finish."
+    ],
+    "weaknesses": [
+      "Carries the doubtful Gabriel on the bench rather than removing him — dead-weight squad value if he is ruled out.",
+      "Mateta (away FDR 3) and Rogers (lowest minutes, end-of-season rotation risk) are exposed to late lineup surprises.",
+      "Higher variance from leaning on multiple mid-price differentials that must return to hit the 71.3 projection."
+    ]
+  },
+  "head_to_head": {
+    "user_score_projection": 62.5,
+    "rival_score_projection": 71.3,
+    "winner": "rival",
+    "margin": 8.8,
+    "scoreline": "USER 62.5 - 71.3 RIVAL"
+  },
+  "verdict": "RIVAL leads by ~8.8 xPts — captain and Mbeumo are identical, so the gap is purely roster depth: the rival fields more attacking returners and two real sub-8% differentials (Mateta, Rogers) while the user runs a thinner XI with only one differential.",
+  "key_differentiators": [
+    "Identical edge cancels out: both captain Haaland (EV 16.41) and both own Mbeumo — captaincy is a wash.",
+    "The 8.8-pt gap is entirely XI depth: rival's full 3-4-3 of returners outscores the user's projected XI.",
+    "Differential leverage: rival holds two sub-8% punts (Rogers 4.1%, Mateta 6.8%); the user holds only Mbeumo (14.2%).",
+    "Squad hygiene swing the user wins: the user removes the doubtful, falling Gabriel before the price drop, while the rival keeps him as dead bench weight."
+  ],
+  "executive_summary": "GW38 is a clean, no-chip final week and both managers correctly captain Haaland with Salah as VC, so the armband is a draw. The user's brief is tactically immaculate on the margin — the Gabriel-OUT / Mbeumo-IN reconciliation and the chip-hold are textbook — but on raw projection the user trails 62.5 to 71.3. The single biggest driver is roster depth, not decision quality: the rival's full template-plus-two-differentials 3-4-3 simply has more projected returners on the pitch, and its sub-8% punts (Rogers, Mateta) carry rank-up upside the user's lone Mbeumo differential cannot match. Highest-leverage action before deadline: with the captain already optimal, the user should upgrade the weakest non-template XI slot toward a starting attacking returner (or add a true sub-8% differential such as Rogers) to close the depth gap — that, not the armband, is where this contest is being lost."
+}

@@ -1,0 +1,82 @@
+{
+  "agent": "market-desk",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00",
+  "price_velocity": [
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "price": 15.1,
+      "net_transfers": 322000,
+      "ownership_pct": 61.4,
+      "predicted_change": "+0.1",
+      "confidence": "high",
+      "action": "buy_before_rise",
+      "rationale": "Largest absolute net inflow in the dataset (+322k). cost_change_event already registering +0.1. Even against a 61.4% ownership base the sheer volume of transfers in (412k) signals imminent price rise tonight."
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "price": 7.8,
+      "net_transfers": 58000,
+      "ownership_pct": 14.2,
+      "predicted_change": "+0.1",
+      "confidence": "high",
+      "action": "buy_before_rise",
+      "rationale": "+58k net against a 14.2% ownership base is a high relative velocity signal. cost_change_event confirms +0.1. Budget mid with good fixtures (FDR 2 H) driving strong demand."
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "price": 5.6,
+      "net_transfers": 29000,
+      "ownership_pct": 4.1,
+      "predicted_change": "+0.1",
+      "confidence": "medium",
+      "action": "buy_before_rise",
+      "rationale": "+29k net at only 4.1% ownership is a very high relative velocity (transfers in represent a large proportion of existing holders). cost_change_event confirms +0.1. Absolute volume is lower so medium confidence — price rise likely but timing could slip to next cycle."
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "price": 13.4,
+      "net_transfers": 90000,
+      "ownership_pct": 48.9,
+      "predicted_change": "0.0",
+      "confidence": "high",
+      "action": "hold",
+      "rationale": "+90k net is healthy but against a 48.9% base the relative velocity is moderate. cost_change_event is 0.0 — no price movement expected tonight. Hold comfortably."
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "price": 7.5,
+      "net_transfers": 8000,
+      "ownership_pct": 6.8,
+      "predicted_change": "0.0",
+      "confidence": "high",
+      "action": "hold",
+      "rationale": "+8k net is marginal. cost_change_event 0.0. No price movement expected. Monitor only."
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "price": 6.3,
+      "net_transfers": -140000,
+      "ownership_pct": 33.1,
+      "predicted_change": "-0.1",
+      "confidence": "high",
+      "action": "sell_before_drop",
+      "rationale": "-140k net transfers is the largest negative flow in the dataset. Status is doubtful (chance_next 75%). cost_change_event already at -0.1. Price drop tonight is near-certain. Sell immediately to avoid the hit."
+    }
+  ],
+  "likely_rises": ["Haaland", "Mbeumo", "Rogers"],
+  "likely_falls": ["Gabriel"],
+  "act_now": {
+    "player": "Gabriel",
+    "action": "sell_before_drop",
+    "urgency": "critical",
+    "reason": "Doubtful fitness + -140k net transfers + cost_change_event -0.1 confirmed. Price drop tonight is near-certain. Act before the deadline."
+  },
+  "summary": "Three players are predicted to rise in GW38: Haaland (high confidence, +322k net), Mbeumo (high confidence, +58k vs small 14.2% base), and Rogers (medium confidence, +29k vs tiny 4.1% base). One fall is predicted with high confidence: Gabriel (-140k net, doubtful status, cost_change -0.1 already registering). The single most urgent action is to sell Gabriel before tonight's price drop locks in a financial loss. M.Salah and Mateta are stable — hold."
+}

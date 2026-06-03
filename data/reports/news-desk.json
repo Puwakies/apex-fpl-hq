@@ -1,0 +1,50 @@
+{
+  "agent": "news-desk",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "alerts": [
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "type": "injury",
+      "detail": "Status flagged doubtful (d) with 75% chance of featuring GW38. Significant transfer outflow of -140k net this week confirms manager concern. Price falling (-0.1). At 33.1% ownership this is a material risk for a large chunk of the FPL community. Monitor for confirmed team news before deadline.",
+      "risk_level": "high"
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "type": "rotation",
+      "detail": "Lowest minutes (2600) and starts (29) in the watchlist. At 4.1% ownership the rotation risk is contained, but end-of-season squad rotation by AVL cannot be ruled out in GW38 if their league position is settled. Favourable home fixture (FDR 2) provides upside if he starts.",
+      "risk_level": "medium"
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "type": "rotation",
+      "detail": "Second-lowest starts tally (31) and playing away (FDR 3) in GW38. Crystal Palace may have nothing to play for by GW38 — end-of-season rotation is plausible. No injury concern (status a, chance 100), but managerial squad rotation is a latent risk.",
+      "risk_level": "medium"
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "type": "confirmed_start",
+      "detail": "Fully available (status a, chance 100). 35 starts and 3100 minutes demonstrate consistent selection. Home fixture GW38 (FDR 2). Penalty taker (pens_order 1). High-volume transfer inflow (+322k net) reflects captain-grade confidence. No rotation signal.",
+      "risk_level": "low"
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "type": "confirmed_start",
+      "detail": "Fully available (status a, chance 100). Top points scorer (232 pts) with 36 starts and 3200 minutes — most assured starter in the watchlist. Away fixture GW38 (FDR 3) is only marginal concern. Penalty taker (pens_order 1) and set-piece threat (set_piece_note 2). No rotation signal.",
+      "risk_level": "low"
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "type": "confirmed_start",
+      "detail": "Fully available (status a, chance 100). Strong home fixture GW38 (FDR 2). Primary set-piece taker (set_piece_note 1) and penalty taker (pens_order 1). Positive net transfers (+58k) support community confidence. Budget enabler at 7.8m with solid underlying numbers.",
+      "risk_level": "low"
+    }
+  ],
+  "summary": "1 high-priority flag: Gabriel (ARS, DEF) is doubtful for GW38 with a 75% chance of playing — heavy net outflows of -140k confirm widespread manager concern and he should be treated as a conditional pick until confirmed. 2 medium rotation risks: Rogers (AVL) has the fewest minutes in the group and faces potential end-of-season squad rest; Mateta (CRY) also carries end-of-season rotation risk in an away fixture. 3 players are effectively nailed: Haaland (MCI, home FDR 2, +322k net), M.Salah (LIV, 36 starts), and Mbeumo (BRE, home FDR 2) — with Mbeumo standing out as the nailed budget enabler at 7.8m with primary set-piece and penalty duties."
+}

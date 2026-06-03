@@ -1,0 +1,59 @@
+{
+  "agent": "the-gaffer",
+  "gw": 38,
+  "generated_at": "2026-06-03T08:00:00Z",
+  "transfers": [
+    {
+      "action": "OUT",
+      "player": "Gabriel",
+      "team": "ARS",
+      "price": 6.3,
+      "rationale": "Reconciliation flag: Sim Lab ranks him last (xPts 3.38) AND Medical Bay/News Desk flag him doubtful (status 'd', 75%). Market Desk confirms -140k net out with cost_change -0.1 already registering — price drop is near-certain tonight. Intel notes EO is collapsing (~28%), so the cost of NOT owning him is shrinking. Sell before the deadline to bank value and remove the doubt."
+    },
+    {
+      "action": "IN",
+      "player": "Mbeumo",
+      "team": "BRE",
+      "price": 7.8,
+      "rationale": "Consensus best replacement enabler. Fixture Room ranks his run #1 (weighted 2.2, home FDR 2). Nailed at 100% (News + Medical agree). Primary set-piece + penalty taker. Sim Lab xPts 6.58 with the highest differential ceiling at 14.2% ownership. Market Desk flags an imminent +0.1 rise — buy before it locks in. Net spend ~1.5m vs Gabriel covered by bank."
+    }
+  ],
+  "captain": {
+    "player": "Haaland",
+    "ev": 16.41,
+    "haul_prob": 0.3158,
+    "rationale": "Unanimous across pillars. Sim Lab rank 1 (captain EV 16.41, haul 31.6%). Intel: mega-template, EO ~120%+ once armband share is added — not captaining him is the single biggest rank risk in the field. Fixture Room: home FDR 2, rank 2 run. Fully fit (status 'a', 100%). Non-negotiable armband."
+  },
+  "vice_captain": {
+    "player": "M.Salah",
+    "ev": 15.03,
+    "rationale": "Safest backup. Sim Lab rank 2 (EV 15.03). Most assured starter in the watchlist (36 starts, 3200 mins, status 'a'). Away FDR 3 is the only blemish but as VC the fixture matters less than guaranteed minutes. Intel: best VC behind Haaland."
+  },
+  "chip": {
+    "play": false,
+    "chip_name": null,
+    "rationale": "CHIP-CAL: HOLD. No DGW or BGW detected for GW38 (Fixture Room confirms clean slate, zero DGW/BGW alerts), so Bench Boost and Free Hit lose their structural edge. Triple Captain is tempting on Haaland (EV 16.41) but a soft single FDR-2 home tie is not a TC-grade ceiling spike — TC is better banked for a confirmed DGW. As the final gameweek, assume any remaining chips expire, but on merit there is no value-positive chip to deploy this week. Play a standard XI."
+  },
+  "top_risks": [
+    {
+      "risk": "Gabriel late team-news swing: if Arsenal confirm him fit pre-deadline he could keep a clean sheet, but Sim Lab + Medical agree the doubt outweighs upside. The greater risk is selling, then he is confirmed and the field that held gains.",
+      "mitigation": "Intel shows EO collapsing to ~28% so non-ownership damage is shrinking. Execute the OUT before tonight's price drop; do not chase him back."
+    },
+    {
+      "risk": "End-of-season rotation: News Desk flags Rogers (2600 mins, 29 starts) and Mateta (away FDR 3) for possible squad rest if their clubs have nothing to play for in GW38.",
+      "mitigation": "We are bringing in Mbeumo (nailed, 100%) not these two. Check confirmed lineups 1h before deadline if either is in your XI; have a nailed bench cover ready."
+    },
+    {
+      "risk": "Captain dependency: Haaland armband concentration means a blank caps your week. Away FDR 3 makes Salah (VC) a slightly softer auto-switch safety net.",
+      "mitigation": "VC Salah is locked and a guaranteed starter. No action needed unless Haaland is shock-benched in confirmed lineups — monitor MCI team news 1h pre-deadline."
+    }
+  ],
+  "pillar_insights": {
+    "fdr_x": "Clean GW38 — no DGW/BGW. Easiest runs: Mbeumo (BRE, weighted 2.2, home FDR 2) and Haaland (MCI, 2.4, home FDR 2). Salah has the worst run (away FDR 3, highest 5-GW avg) but stays in on form/minutes. Drives the Mbeumo IN call.",
+    "wrppm_5d": "10k-sim ranking: Haaland 8.2 xPts / 16.41 capt EV / 31.6% haul leads; Salah 7.52 / 15.03 is the clean VC; Mbeumo 6.58 carries the top differential ceiling. Gabriel last at 3.38 — reinforces the OUT.",
+    "price_vel": "Act-now signal: SELL Gabriel before a near-certain -0.1 drop (-140k net, cost_change already -0.1). BUY Mbeumo before +0.1 rise. Haaland and Rogers also rising; Salah/Mateta stable hold.",
+    "elite_own": "Template spine = Haaland + Salah; Haaland is must-own AND must-captain (EO ~120%+). Gabriel is a fading template asset — acceptable to be without as the herd exits. Mbeumo is a higher-floor near-differential with pens/set-pieces; Rogers (4.1%) is the max-leverage punt if you want rank gains."
+  },
+  "weekly_brief_summary": "GW38 final-week plan: sell the doubtful, falling Gabriel (Sim Lab last + Medical doubt + Market near-certain price drop all align) and bring in the nailed, in-form, rising Mbeumo (best fixture run, set-piece + pen duties, top differential ceiling). Captain Haaland — unanimous across every pillar (16.41 EV, 31.6% haul, EO ~120%+); vice Salah as the guaranteed-minutes safety net. No chip this week: a clean non-DGW slate gives no chip a value-positive edge, and Haaland's single soft home tie is below TC-grade. Top watch items 1h before deadline: Gabriel/Haaland confirmed lineups and any end-of-season rotation for Rogers/Mateta. Projected XI in good shape with a balanced template-plus-one-differential structure.",
+  "projected_xpts": 62.5
+}

@@ -1,0 +1,58 @@
+{
+  "agent": "intel",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "ownership_map": [
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "ownership_pct": 61.4,
+      "classification": "mega-template",
+      "template_risk": "critical",
+      "effective_ownership_note": "Top-10k ownership higher than overall (~75-80%). Consensus GW38 captain (35% armband poll, top captaincy rank factor, 6.9 xPts, 68% anytime-returns). Captaincy layer roughly doubles EO -> EO est ~120%+. Not owning AND not captaining = catastrophic green-arrow exposure."
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "ownership_pct": 48.9,
+      "classification": "high-template",
+      "template_risk": "high",
+      "effective_ownership_note": "Top-10k ownership ~60%. Secondary captain (CRF 13, ~50% returns proj). Modest captaincy share adds ~10-15pts EO -> EO est ~70%. Strong template hold; viable VC behind Haaland."
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "ownership_pct": 33.1,
+      "classification": "moderate",
+      "template_risk": "medium",
+      "effective_ownership_note": "Status 'd' (75% chance), net -140k transfers out signals herd exit. Top-10k likely already trimmed below overall (~25-30%). EO est ~28%. Risk is asymmetric: if he plays and keeps a CS the held managers gain; if benched/absent the field has largely de-risked, so template damage to non-owners is shrinking."
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "ownership_pct": 14.2,
+      "classification": "differential",
+      "template_risk": "low",
+      "effective_ownership_note": "EO est ~14%. Pens (order 1), set-piece taker, home FDR 2, xGI/90 0.56 -> best ceiling among sub-15% options. Mild differential rather than pure punt; meaningful rank lever if he hauls."
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "ownership_pct": 6.8,
+      "classification": "differential",
+      "template_risk": "low",
+      "effective_ownership_note": "EO est ~7%. Secondary pens, FWD ceiling (14.0 xG), away FDR 3 tempers it. True sub-8% differential with goal upside."
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "ownership_pct": 4.1,
+      "classification": "strong-differential",
+      "template_risk": "low",
+      "effective_ownership_note": "EO est ~4%. Lowest-owned, home FDR 2, balanced xG/xA (13.6 xGI). Highest rank-up leverage if he returns; faces a Haaland-captained Villa, so a Rogers haul on a losing side is the contrarian dream scenario."
+    }
+  ],
+  "template_players": ["Haaland", "M.Salah", "Gabriel"],
+  "differentials": ["Mbeumo", "Mateta", "Rogers"],
+  "summary": "GW38 template spine is Haaland + Salah; Haaland is the non-negotiable must-own AND must-captain (EO ~120%+ once armband share is added) -- not owning OR not captaining is the single biggest rank risk in the field. Salah is the safe template hold and best VC. Gabriel is a fading template asset (status 'd', heavy transfers out); ownership/EO is collapsing so the cost of NOT owning him is shrinking -- acceptable to be without. Best differentials are Rogers (4.1%, EO ~4%, home FDR 2, max leverage) and Mateta (6.8%, sub-8%, FWD ceiling); Mbeumo (14.2%) is a higher-floor near-differential with pens and set pieces. Recommended balance: lock the Haaland+Salah template core, captain Haaland, then deploy one true sub-8% differential (Rogers or Mateta) for rank-up upside while the field is over-invested in the doubtful Gabriel."
+}
