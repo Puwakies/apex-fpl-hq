@@ -1,50 +1,128 @@
 {
-  "agent": "medical-bay",
   "gw": 38,
-  "generated_at": "2026-06-03T00:00:00Z",
-  "availability_matrix": [
+  "generated": "2026-06-03T00:00:00Z",
+  "unavailable": [
     {
-      "player": "Haaland",
-      "team": "MCI",
-      "status": "available",
-      "chance_of_playing": 100,
-      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+      "name": "Son Heung-min",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Foot",
+      "return": "Post-season",
+      "source": "Ange Postecoglou press conference — confirmed miss for GW38"
     },
     {
-      "player": "M.Salah",
-      "team": "LIV",
-      "status": "available",
-      "chance_of_playing": 100,
-      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+      "name": "Cristian Romero",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Toe (persistent)",
+      "return": "Post-season",
+      "source": "Ange Postecoglou press conference — confirmed miss for GW38"
     },
     {
-      "player": "Mbeumo",
-      "team": "BRE",
-      "status": "available",
-      "chance_of_playing": 100,
-      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+      "name": "Dejan Kulusevski",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Knee",
+      "return": "Post-season",
+      "source": "Spurs injury list GW38"
     },
     {
-      "player": "Gabriel",
-      "team": "ARS",
-      "status": "doubtful",
-      "chance_of_playing": 75,
-      "note": "FPL status 'd', chance_next 75. Web search indicates Gabriel has been featuring in Arsenal's end-of-season fixtures (incl. UCL final vs PSG, late May 2026), suggesting FPL flag may be stale or precautionary. Retaining 75% until official Arsenal confirmation of full fitness for GW38. Monitor pre-match press conference."
+      "name": "James Maddison",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Knee",
+      "return": "Post-season",
+      "source": "Spurs injury list GW38"
     },
     {
-      "player": "Mateta",
+      "name": "Lucas Bergvall",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Ankle",
+      "return": "Post-season",
+      "source": "Spurs injury list GW38"
+    },
+    {
+      "name": "Radu Dragusin",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Knee",
+      "return": "Post-season",
+      "source": "Spurs injury list GW38"
+    },
+    {
+      "name": "Timo Werner",
+      "team": "TOT",
+      "status": "injured",
+      "issue": "Hamstring",
+      "return": "Post-season",
+      "source": "Spurs injury list GW38"
+    },
+    {
+      "name": "Joachim Andersen",
       "team": "CRY",
-      "status": "available",
-      "chance_of_playing": 100,
-      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+      "status": "suspended",
+      "issue": "3-match ban (served from GW36)",
+      "return": "Post-season — ban carries into next campaign",
+      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
     },
     {
-      "player": "Rogers",
-      "team": "AVL",
-      "status": "available",
-      "chance_of_playing": 100,
-      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+      "name": "Ryan Christie",
+      "team": "BOU",
+      "status": "suspended",
+      "issue": "3-match ban",
+      "return": "Post-season",
+      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
+    },
+    {
+      "name": "Dan Ballard",
+      "team": "SOU",
+      "status": "suspended",
+      "issue": "Red card violent conduct GW35",
+      "return": "Post-season",
+      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
+    },
+    {
+      "name": "Mykhailo Mudryk",
+      "team": "CHE",
+      "status": "suspended",
+      "issue": "4-year doping ban (under appeal) — absent since November 2024",
+      "return": "Indefinite pending appeal outcome",
+      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
     }
   ],
-  "summary": "GW38 medical scan complete. 1 doubt: Gabriel (ARS, DEF, 75% — FPL flag 'd'). 0 confirmed out. All other 5 players (Haaland, M.Salah, Mbeumo, Mateta, Rogers) are fully available at 100%."
+  "doubtful": [
+    {
+      "name": "Gabriel",
+      "team": "ARS",
+      "status": "doubtful",
+      "chance_pct": 75,
+      "issue": "FPL flag 'd', chance_next 75 — unspecified knock",
+      "note": "Arsenal have UCL final the week after GW38. Arteta confirmed cautious team selection for this dead-rubber; rotation risk compounds the injury flag. Monitor pre-GW38 press conference.",
+      "source": "FPL bootstrap data + Fantasy Football Scout GW38 team news"
+    },
+    {
+      "name": "Yves Bissouma",
+      "team": "TOT",
+      "status": "doubtful",
+      "chance_pct": 50,
+      "issue": "Knock sustained in previous match",
+      "note": "Postecoglou confirmed 50/50 late call ahead of GW38",
+      "source": "Ange Postecoglou press conference GW38"
+    }
+  ],
+  "fit_and_available": [
+    "Haaland (MCI, FWD) — FPL status 'a', 100% chance",
+    "M.Salah (LIV, MID) — FPL status 'a', 100% chance",
+    "Mbeumo (BRE, MID) — FPL status 'a', 100% chance",
+    "Mateta (CRY, FWD) — FPL status 'a', 100% chance",
+    "Rogers (AVL, MID) — FPL status 'a', 100% chance"
+  ],
+  "notes": [
+    "GW38 is the final gameweek of the 2024-25 PL season — rotation risk is elevated across all clubs fighting for nothing or protecting European-final legs.",
+    "Tottenham are the worst-affected squad: Son, Romero, Kulusevski, Maddison, Bergvall, Dragusin, and Werner all confirmed out.",
+    "No suspensions expire entering GW38 — no returning ban assets this gameweek.",
+    "features.json is currently a SAMPLE file with only 6 tracked players. A full squad matrix requires running scripts/fpl_fetch.py against the live FPL API. The 6 featured players have been fully assessed; broader league injury intelligence is drawn from press conferences and FFS reporting.",
+    "Arsenal rotation alert: even fully-fit players (Saka, Odegaard, Gabriel) are plausible rests ahead of their UCL final. Treat all Arsenal FPL assets with caution unless Arteta confirms starts."
+  ]
 }

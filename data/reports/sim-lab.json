@@ -1,21 +1,25 @@
 {
-  "agent": "sim-lab",
   "gw": 38,
-  "generated_at": "2026-06-03T07:13:02.096756+00:00",
-  "simulations": 10000,
-  "player_projections": [
-    {"player": "Haaland", "team": "MCI", "pos": "FWD", "xPts": 8.2, "haul_prob": 0.3158, "captain_ev": 16.41, "rank": 1, "variance": 26.84},
-    {"player": "M.Salah", "team": "LIV", "pos": "MID", "xPts": 7.52, "haul_prob": 0.214, "captain_ev": 15.03, "rank": 2, "variance": 26.06},
-    {"player": "Mbeumo", "team": "BRE", "pos": "MID", "xPts": 6.58, "haul_prob": 0.1512, "captain_ev": 13.16, "rank": 3, "variance": 21.83},
-    {"player": "Rogers", "team": "AVL", "pos": "MID", "xPts": 5.69, "haul_prob": 0.104, "captain_ev": 11.39, "rank": 4, "variance": 16.75},
-    {"player": "Mateta", "team": "CRY", "pos": "FWD", "xPts": 5.07, "haul_prob": 0.0929, "captain_ev": 10.14, "rank": 5, "variance": 14.27},
-    {"player": "Gabriel", "team": "ARS", "pos": "DEF", "xPts": 3.38, "haul_prob": 0.0346, "captain_ev": 6.76, "rank": 6, "variance": 11.59}
+  "generated": "2026-06-03T00:00:00",
+  "captain_rankings": [
+    {"rank": 1, "name": "M.Salah", "team": "LIV", "position": "MID", "price": "13.4", "ev": 7.17, "haul_prob": 0.385, "fixture": "Away (FDR 2.9)", "reasoning": "Highest xGI/90 (0.86) and on penalties; relentless GW38 returner. Slightly tougher away fixture but ceiling and haul probability lead the field."},
+    {"rank": 2, "name": "Haaland", "team": "MCI", "position": "FWD", "price": "15.1", "ev": 6.98, "haul_prob": 0.336, "fixture": "Home (FDR 2.4)", "reasoning": "Best form (7.2), easy home fixture, pens. EV marginally below Salah (FWD goal worth 4 and fewer assist routes) but the safest high-floor pick at 61% ownership."},
+    {"rank": 3, "name": "Mbeumo", "team": "BRE", "position": "MID", "price": "7.8", "ev": 5.82, "haul_prob": 0.279, "fixture": "Home (FDR 2.2)", "reasoning": "Easiest fixture (FDR 2.2), home, on pens. Strongest value-per-million captain and the best differential ceiling at 14% owned."},
+    {"rank": 4, "name": "Mateta", "team": "CRY", "position": "FWD", "price": "7.5", "ev": 4.5, "haul_prob": 0.144, "fixture": "Away (FDR 2.8)", "reasoning": "Secondary pens, decent xGI/90 (0.55). Away trip caps ceiling; punt-only armband."},
+    {"rank": 5, "name": "Rogers", "team": "AVL", "position": "MID", "price": "5.6", "ev": 4.27, "haul_prob": 0.153, "fixture": "Home (FDR 2.5)", "reasoning": "Home attacking mid (0.47 xGI/90). Low form (4.9); high-variance speculative cap only."}
   ],
-  "captain_recommendation": {
-    "first": "Haaland",
-    "second": "M.Salah",
-    "rationale": "Haaland leads on EV (16.41 capt pts, haul 31.6%) with FDR2 home; Salah is the safest backup. High-ceiling differential: Mbeumo (14.2% owned, haul 15.1%)."
-  },
-  "high_ceiling_differential": {"player": "Mbeumo", "haul_prob": 0.1512, "captain_ev": 13.16, "owned_pct": 14.2},
-  "summary": "GW38: Captain Haaland (EV 16.41, haul 31.6%); VC M.Salah (EV 15.03). Punt option Mbeumo carries the highest differential ceiling."
+  "top_differentials": [
+    {"name": "Mbeumo", "team": "BRE", "ownership": "14.2%", "ev": 5.82, "reasoning": "Sub-15% owned with the easiest fixture and pens — best EV-to-ownership differential captain."},
+    {"name": "Mateta", "team": "CRY", "ownership": "6.8%", "ev": 4.5, "reasoning": "6.8% owned forward; explosive ceiling if he hits, true rank-mover differential."},
+    {"name": "Rogers", "team": "AVL", "ownership": "4.1%", "ev": 4.27, "reasoning": "Lowest owned attacker; pure high-variance ceiling play for aggressive ranks."}
+  ],
+  "avoid_list": [
+    {"name": "Gabriel", "reason": "Defender, lowest EV (3.1) and haul prob (0.069); attacking returns rely on rare set-piece headers — never the captain."}
+  ],
+  "notes": [
+    "Monte Carlo over 10k draws (scripts/sim.py); xPts prior from xgi_per90 split by xg/xa ratio, scaled by fixture multiplier (easier FDR => higher), minutes factor, availability, form nudge and a bonus model.",
+    "Haul defined as base score >= 8 (>=2 returns territory). Salah leads on EV and haul; Haaland is the lower-variance template captain at 61% ownership.",
+    "Variance: Salah 24.8, Haaland 22.8 — Salah is both higher EV and higher ceiling. Mbeumo (var 18.7) is the standout differential armband.",
+    "Sourced from SAMPLE features.json (6 players); refresh via scripts/fpl_fetch.py for full pool."
+  ]
 }

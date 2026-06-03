@@ -1,0 +1,14 @@
+{
+  "gw": 38,
+  "captain_ranking": [
+    {"player": "M.Salah", "ev_xpts": 7.17, "p_haul": 0.385, "variance": 24.79},
+    {"player": "Haaland", "ev_xpts": 6.98, "p_haul": 0.336, "variance": 22.75},
+    {"player": "Mbeumo", "ev_xpts": 5.82, "p_haul": 0.279, "variance": 18.68},
+    {"player": "Mateta", "ev_xpts": 4.5, "p_haul": 0.144, "variance": 13.05},
+    {"player": "Rogers", "ev_xpts": 4.27, "p_haul": 0.153, "variance": 12.39},
+    {"player": "Gabriel", "ev_xpts": 3.1, "p_haul": 0.069, "variance": 10.39}
+  ],
+  "recommend_c": "M.Salah",
+  "recommend_vc": "Haaland",
+  "high_ceiling_differential": "Mbeumo"
+}
