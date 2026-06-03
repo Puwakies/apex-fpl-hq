@@ -103,17 +103,18 @@
 
   <div class="control">
     <span class="gw">GW <input id="gw" type="text" value="38"></span>
-    <span class="gw" style="color:var(--rival)">RIVAL
-      <select id="strat">
-        <option value="template">TEMPLATE / SAFE</option>
-        <option value="diff">DIFFERENTIAL</option>
-        <option value="top10k">TOP-10K PATTERNS</option>
-      </select>
-    </span>
-    <button class="run" id="runBtn">▶ RUN GW BRIEFING</button>
+    <button class="run" id="loadBtn">⬇ LOAD REPORTS</button>
+    <button class="reset" id="fileBtn">📁 จากไฟล์</button>
+    <button class="reset" id="demoBtn">▶ DEMO</button>
     <button class="reset" id="resetBtn">↺ RESET</button>
-    <span class="clock" id="clock">awaiting deadline...</span>
+    <input type="file" id="filepick" accept=".json" multiple style="display:none">
+    <input type="hidden" id="strat" value="top10k">
+    <span class="clock" id="clock">awaiting reports...</span>
   </div>
+
+  <div id="banner" style="display:none;margin:0 0 12px;padding:11px 13px;background:#1a1606;
+    border:3px solid var(--rival);box-shadow:4px 4px 0 #000;font-size:12px;line-height:1.6"></div>
+
 
   <div class="stage">
     <canvas id="office" width="900" height="560"></canvas>
@@ -301,7 +302,9 @@ requestAnimationFrame(render);
 
 // ---------- orchestration ----------
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-const runBtn=document.getElementById('runBtn'), resetBtn=document.getElementById('resetBtn'), clock=document.getElementById('clock');
+const loadBtn=document.getElementById('loadBtn'), fileBtn=document.getElementById('fileBtn'),
+      demoBtn=document.getElementById('demoBtn'), resetBtn=document.getElementById('resetBtn'),
+      clock=document.getElementById('clock');
 function walkTo(a){ return new Promise(res=>{ a.state='walk'; a.led='#ffd23f'; a._arrive=res; }); }
 
 async function activate(a,lines){
@@ -311,45 +314,138 @@ async function activate(a,lines){
   a.state= a.mgr?'sit':'done'; a.led='#39e08a'; a.screen='#0c3a22'; a.bubble='✓ '+lines[lines.length-1];
 }
 
-const BRIEF=[
-  {h:"⇄ TRANSFERS", body:`OUT ▸ <b>flagged DEF</b><br>IN ▸ <b>budget mid</b> (rising)<br>hits <b>0</b> · bank £0.3`},
-  {h:"© CAPTAIN", body:`(C) <b>top EV pick</b> 7.8<br>(VC) <b>premium fwd</b><br>p(haul) 0.61`},
-  {h:"⚑ CHIP-CAL", body:`Triple Captain ▸ <b>HOLD</b><br>save for DGW<br>no chip GW38`},
-  {h:"⚠ RISK", body:`<b>3</b> fitness doubts<br>1 price-fall on bench<br>check 1h pre-deadline`},
+// ---------- data-driven loader ----------
+const REPORTS_BASE='../data/reports/';
+const FEATURES_URL='../data/features.json';
+let REPORTS={};
+
+// demo fallback (used by ▶ DEMO button)
+const DEMO={
+  data:["load features.json","sample set OK","features ready"],
+  news:["scan team news","2 rotation flags","budget mid nailed"],
+  med:["poll injuries","3 doubts @75%","1 out (susp)"],
+  fix:["weight FDR","best run: DEF block","watch BGW"],
+  mkt:["transfer velocity","2 rises tonight","1 fall — act now"],
+  sim:["run 10k sims","(C) top EV 7.8","p(haul) 0.61"],
+  intel:["top-10k own","3 template core","diff <5% EO"],
+  rival:["strategy: top10k","(C) template prem","~58 xPts"],
+  gaffer:["read all reports","build 3-4-3","lock armband"],
+  director:["compare all AIs","YOU 64 - 58 RIVAL","you lead +6"],
+};
+const DEMO_BRIEF=[
+  {h:"⇄ TRANSFERS", body:`OUT ▸ <b>flagged DEF</b><br>IN ▸ <b>budget mid</b><br>hits <b>0</b>`},
+  {h:"© CAPTAIN", body:`(C) <b>top EV pick</b><br>(VC) <b>premium fwd</b>`},
+  {h:"⚑ CHIP-CAL", body:`Triple Captain ▸ <b>HOLD</b><br>save for DGW`},
+  {h:"⚠ RISK", body:`<b>3</b> fitness doubts<br>check 1h pre-deadline`},
 ];
+const DEMO_DIR={you:64, them:58, youDet:"(C) top EV<br>0 hits", themDet:"(C) template<br>top10k",
+  verdict:`ทีมคุณนำ <b>+6 xPts</b> <span class="lead">▲ YOU LEAD</span> — (ข้อมูล demo)`};
 
-async function run(){
-  runBtn.disabled=true; reset(true);
-  const gw=document.getElementById('gw').value||'38'; document.getElementById('vsGw').textContent=gw;
-  clock.textContent='briefing in progress...';
+const short=(s,n=22)=> s? (String(s).length>n? String(s).slice(0,n-1)+'…':String(s)) : '';
+function banner(html,show=true){ const b=document.getElementById('banner'); b.style.display=show?'block':'none'; b.innerHTML=html; }
 
-  await activate(byId.data, byId.data.lines);            // ETL first
+async function fetchJSON(u){ const r=await fetch(u,{cache:'no-store'}); if(!r.ok) throw new Error(r.status); return r.json(); }
 
-  const strat=RIVAL_STRATS[document.getElementById('strat').value];
-  byId.rival.lines=strat.lines;
+async function loadViaFetch(){
+  const map={news:'news',medical:'med',fixture:'fix',market:'mkt',sim:'sim',intel:'intel',rival:'rival',gaffer:'gaffer',director:'director'};
+  const out={}; let any=false;
+  try{ out.features=await fetchJSON(FEATURES_URL);}catch(e){}
+  for(const f in map){ try{ out[map[f]]=await fetchJSON(REPORTS_BASE+f+'.json'); any=true; }catch(e){} }
+  if(!any) throw new Error('no reports found');
+  return out;
+}
+
+// turn each agent's JSON into 2-3 short bubble lines (defensive)
+function deriveLines(R){
+  const L={};
+  if(R.features?.meta) L.data=['load features.json',(R.features.meta.n_players??'?')+' players','features ready'];
+  if(R.news?.items){ const flags=R.news.items.filter(i=>/rot|bench/i.test(i.signal||'')).length;
+    L.news=['scan team news',flags+' rotation flags',short(R.news.items[0]?.note||R.news.items[0]?.player)]; }
+  if(R.med?.matrix){ const d=R.med.matrix.filter(m=>/doubt/i.test(m.status||'')).length, o=R.med.matrix.filter(m=>/out|susp/i.test(m.status||'')).length;
+    L.med=['poll injuries',d+' doubt / '+o+' out',short(R.med.matrix[0]?.player)]; }
+  if(R.fix){ const best=(R.fix.best_runs?.[0]); L.fix=['weight FDR', best? short((best.team||'')+' '+(best.fdr_avg??'')):'ranked runs',
+    (R.fix.dgw_alerts?.length?'DGW flagged':R.fix.bgw_alerts?.length?'BGW risk':'no DGW/BGW')]; }
+  if(R.mkt){ L.mkt=['transfer velocity',(R.mkt.likely_rises?.length||0)+' rises / '+(R.mkt.likely_falls?.length||0)+' falls',
+    short(R.mkt.act_now?.[0]?.player||R.mkt.act_now?.[0]||'monitor')]; }
+  if(R.sim){ const c=R.sim.recommend_c||R.sim.captain_ranking?.[0]?.player; const ev=R.sim.captain_ranking?.[0]?.ev_xpts;
+    L.sim=['run sims','(C) '+short(c||'—'), ev!=null?('EV '+ev):'ranked']; }
+  if(R.intel){ L.intel=['ownership',(R.intel.template_core?.length||0)+' template',short('diff '+(R.intel.differentials?.[0]?.player||'—'))]; }
+  if(R.rival){ L.rival=['strategy: '+short(R.rival.strategy||'?'),'(C) '+short(R.rival.captain||'—'),(R.rival.projected_xpts??'?')+' xPts']; }
+  if(R.gaffer){ L.gaffer=['read all reports','(C) '+short(R.gaffer.captain||'—'),(R.gaffer.chip?.action||'chip set')]; }
+  if(R.director){ L.director=['compare all AIs','YOU '+(R.director.you_xpts??'?')+' - '+(R.director.rival_xpts??'?')+' RIVAL',
+    ((R.director.gap??0)>=0?'you lead':'you trail')+' '+Math.abs(R.director.gap??0)]; }
+  return L;
+}
+
+function fillBriefFromGaffer(g){
+  const bg=document.getElementById('briefgrid'); bg.innerHTML='';
+  const cards=[];
+  if(g?.transfers) cards.push({h:"⇄ TRANSFERS",body:`OUT ▸ <b>${g.transfers.out??'—'}</b><br>IN ▸ <b>${g.transfers.in??'—'}</b><br>hits <b>${g.transfers.hits??0}</b> · bank ${g.transfers.bank??'—'}`});
+  cards.push({h:"© CAPTAIN",body:`(C) <b>${g?.captain??'—'}</b><br>(VC) <b>${g?.vice??'—'}</b>`});
+  if(g?.chip) cards.push({h:"⚑ CHIP-CAL",body:`${g.chip.name??'chip'} ▸ <b>${g.chip.action??'—'}</b><br>${short(g.chip.reason,40)}`});
+  if(g?.risks?.length) cards.push({h:"⚠ RISK",body:g.risks.slice(0,3).map(r=>'• '+short(r,40)).join('<br>')});
+  (cards.length?cards:DEMO_BRIEF).forEach(b=>{ const c=document.createElement('div'); c.className='bcard';
+    c.innerHTML=`<span class="h">${b.h}</span>${b.body}`; bg.appendChild(c); });
+}
+
+function fillDirector(R){
+  const d=R.director||{}; const g=R.gaffer||{}, rv=R.rival||{};
+  const you=d.you_xpts ?? g.projected_xpts ?? '—';
+  const them=d.rival_xpts ?? rv.projected_xpts ?? '—';
+  document.getElementById('youPts').textContent=you+' xPts';
+  document.getElementById('themPts').textContent=them+' xPts';
+  document.getElementById('youDet').innerHTML=`(C) <b>${g.captain??'—'}</b><br>${(g.transfers?('hits '+(g.transfers.hits??0)):'')}`;
+  document.getElementById('themDet').innerHTML=`(C) <b>${rv.captain??'—'}</b><br>strategy ▸ ${rv.strategy??'—'}`;
+  const gap=(typeof you==='number'&&typeof them==='number')?you-them:(d.gap??null);
+  const v=document.getElementById('verdict');
+  const verdictTxt=d.verdict||((gap>0?`ทีมคุณนำ +${gap}`:gap<0?`Rival นำ ${gap}`:'สูสี'));
+  const tag=gap>0?'<span class="lead">▲ YOU LEAD</span>':gap<0?'<span class="trail">▼ YOU TRAIL</span>':'';
+  const action=d.highest_leverage_action?`<br><b>Action:</b> ${short(d.highest_leverage_action,80)}`:'';
+  v.innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>${verdictTxt} ${tag}${action}`;
+}
+
+async function runWithReports(R, isDemo){
+  loadBtn.disabled=true; reset(true);
+  const gw=(R.director?.gw)||(R.gaffer?.gw)||document.getElementById('gw').value||'38';
+  document.getElementById('vsGw').textContent=gw;
+  const L = isDemo? DEMO : deriveLines(R);
+  // any agent without a loaded report falls back to a neutral "no report" line
+  AGENTS.forEach(a=>{ if(!L[a.id]) L[a.id]=['no report','—','idle']; });
+
+  clock.textContent='loading data lab...';
+  await activate(byId.data, L.data||['features','—','ready']);
+
   const wave=['news','med','fix','mkt','sim','intel','rival'];
-  await Promise.all(wave.map((id,i)=>(async()=>{ await sleep(i*240); await activate(byId[id], byId[id].lines); })()));
+  await Promise.all(wave.map((id,i)=>(async()=>{ await sleep(i*220); await activate(byId[id], L[id]); })()));
 
   clock.textContent='THE GAFFER synthesizing...';
-  await activate(byId.gaffer, byId.gaffer.lines);
-  const bg=document.getElementById('briefgrid'); bg.innerHTML='';
-  for(const b of BRIEF){ const c=document.createElement('div'); c.className='bcard';
-    c.innerHTML=`<span class="h">${b.h}</span>${b.body}`; bg.appendChild(c); await sleep(220); }
+  await activate(byId.gaffer, L.gaffer);
+  if(isDemo){ const bg=document.getElementById('briefgrid'); bg.innerHTML='';
+    DEMO_BRIEF.forEach(b=>{const c=document.createElement('div');c.className='bcard';c.innerHTML=`<span class="h">${b.h}</span>${b.body}`;bg.appendChild(c);}); }
+  else fillBriefFromGaffer(R.gaffer);
 
   clock.textContent='THE DIRECTOR comparing AIs...';
-  await activate(byId.director, byId.director.lines);
-  const youPts=68+Math.round(Math.random()*6), themPts=strat.pts+Math.round(Math.random()*5);
-  document.getElementById('youPts').textContent=youPts+' xPts';
-  document.getElementById('youDet').innerHTML=`(C) <b>top EV</b> 7.8<br>3 specialists agree · 0 hits<br>chip ▸ HOLD TC`;
-  document.getElementById('themPts').textContent=themPts+' xPts';
-  document.getElementById('themDet').innerHTML=`(C) <b>${strat.cap}</b><br>diff ▸ ${strat.diff}<br><span style="opacity:.7">${strat.note}</span>`;
-  const gap=youPts-themPts, v=document.getElementById('verdict');
-  if(gap>0) v.innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>ทีมคุณนำ <b>+${gap} xPts</b> <span class="lead">▲ YOU LEAD</span> — edge มาจาก captaincy EV ที่ Sim Lab คอนเฟิร์ม. คุม rotation 1 ชม.ก่อน deadline พอ.`;
-  else if(gap<0) v.innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>Rival นำ <b>${gap} xPts</b> <span class="trail">▼ YOU TRAIL</span> — strategy "${strat.label}" ได้ ceiling สูงกว่ารอบนี้. พิจารณา differential 1 ตัวปิดช่องว่าง.`;
-  else v.innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>เสมอที่ <b>${youPts} xPts</b> — วัดกันที่ captain haul ล้วนๆ.`;
+  await activate(byId.director, L.director);
+  if(isDemo){ document.getElementById('youPts').textContent=DEMO_DIR.you+' xPts';
+    document.getElementById('themPts').textContent=DEMO_DIR.them+' xPts';
+    document.getElementById('youDet').innerHTML=DEMO_DIR.youDet;
+    document.getElementById('themDet').innerHTML=DEMO_DIR.themDet;
+    document.getElementById('verdict').innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>${DEMO_DIR.verdict}`; }
+  else fillDirector(R);
 
-  clock.textContent='✓ brief + head-to-head ready · T-24h';
-  runBtn.disabled=false;
+  clock.textContent='✓ ready · GW'+gw;
+  loadBtn.disabled=false;
+}
+
+async function loadAndRun(){
+  banner('',false); clock.textContent='fetching reports...';
+  try{ REPORTS=await loadViaFetch(); banner('✓ โหลด report จาก <b>'+REPORTS_BASE+'</b> สำเร็จ',false); await runWithReports(REPORTS,false); }
+  catch(e){
+    banner(`⚠ อ่าน report อัตโนมัติไม่ได้ (${e.message}). ถ้าเปิดไฟล์แบบดับเบิลคลิก เบราว์เซอร์จะบล็อก fetch — `+
+      `ทางแก้: <b>(1)</b> รัน <code>python3 -m http.server</code> ในโฟลเดอร์ repo แล้วเปิด <code>http://localhost:8000/office/</code> · `+
+      `<b>(2)</b> หรือกด <b>📁 จากไฟล์</b> แล้วเลือกไฟล์ใน data/reports/ เอง · <b>(3)</b> หรือกด <b>▶ DEMO</b> ดูตัวอย่าง`);
+    clock.textContent='awaiting reports...';
+  }
 }
 
 function reset(running){
@@ -360,16 +456,33 @@ function reset(running){
   });
   document.getElementById('briefgrid').innerHTML= running
     ? '<div class="bcard empty">⟳ agents working...</div>'
-    : '<div class="bcard empty">รอ agent ทุกตัวรายงานก่อน...</div>';
+    : '<div class="bcard empty">กด ⬇ LOAD REPORTS เพื่อดึงผลจริง</div>';
   ['youPts','themPts'].forEach(id=>document.getElementById(id).textContent='— xPts');
   document.getElementById('youDet').textContent= running?'⟳ orchestrating...':'รอ orchestrator...';
   document.getElementById('themDet').textContent= running?'⟳ drafting squad...':'รอ rival agent...';
   document.getElementById('verdict').innerHTML='<span class="h">⚖ DIRECTOR\'S VERDICT</span>รอผลทั้งสองฝั่ง...';
-  if(!running) clock.textContent='awaiting deadline...';
+  if(!running){ clock.textContent='awaiting reports...'; }
 }
 
-runBtn.addEventListener('click', run);
+// file picker fallback (works from file:// — bypasses fetch/CORS)
+function handleFiles(fileList){
+  const files=[...fileList]; if(!files.length) return;
+  const map={news:'news',medical:'med',fixture:'fix',market:'mkt',sim:'sim',intel:'intel',rival:'rival',gaffer:'gaffer',director:'director',features:'features'};
+  REPORTS={}; let pending=files.length;
+  files.forEach(f=>{ const rd=new FileReader();
+    rd.onload=()=>{ try{ const key=f.name.replace(/\.json$/,''); REPORTS[map[key]||key]=JSON.parse(rd.result); }catch(e){}
+      if(--pending===0){ banner('✓ โหลด '+files.length+' ไฟล์จากเครื่อง',false); runWithReports(REPORTS,false); } };
+    rd.readAsText(f); });
+}
+
+loadBtn.addEventListener('click', loadAndRun);
+demoBtn.addEventListener('click', ()=>{ banner('',false); runWithReports({},true); });
+fileBtn.addEventListener('click', ()=>document.getElementById('filepick').click());
+document.getElementById('filepick').addEventListener('change', e=>handleFiles(e.target.files));
 resetBtn.addEventListener('click', ()=>reset(false));
+
+// auto-attempt on load
+window.addEventListener('load', ()=> setTimeout(loadAndRun, 500));
 </script>
 </body>
 </html>
