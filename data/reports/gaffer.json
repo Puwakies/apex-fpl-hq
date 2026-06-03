@@ -1,50 +1,48 @@
 {
-  "agent": "the-gaffer",
   "gw": 38,
-  "generated_at": "2026-06-03T08:00:00Z",
+  "generated": "2026-06-03T00:00:00Z",
+  "formation": "3-4-3",
+  "starting_xi": [
+    {"name": "Raya", "team": "ARS", "position": "GK", "is_captain": false, "is_vice_captain": false},
+    {"name": "Robertson", "team": "LIV", "position": "DEF", "is_captain": false, "is_vice_captain": false},
+    {"name": "Van Dijk", "team": "LIV", "position": "DEF", "is_captain": false, "is_vice_captain": false},
+    {"name": "Lacroix", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice_captain": false},
+    {"name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": true, "is_vice_captain": false},
+    {"name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice_captain": true},
+    {"name": "Palmer", "team": "CHE", "position": "MID", "is_captain": false, "is_vice_captain": false},
+    {"name": "Rogers", "team": "AVL", "position": "MID", "is_captain": false, "is_vice_captain": false},
+    {"name": "Mateta", "team": "CRY", "position": "FWD", "is_captain": false, "is_vice_captain": false},
+    {"name": "Isak", "team": "NEW", "position": "FWD", "is_captain": false, "is_vice_captain": false},
+    {"name": "Joao Pedro", "team": "BHA", "position": "FWD", "is_captain": false, "is_vice_captain": false}
+  ],
+  "bench": [
+    {"name": "Sels", "team": "NFO", "position": "GK", "bench_order": 1},
+    {"name": "Gabriel Jesus", "team": "ARS", "position": "FWD", "bench_order": 2},
+    {"name": "Mukiele", "team": "BOU", "position": "DEF", "bench_order": 3},
+    {"name": "Kerkez", "team": "BOU", "position": "DEF", "bench_order": 4}
+  ],
+  "captain": "M.Salah",
+  "vice_captain": "Mbeumo",
   "transfers": [
-    {
-      "action": "OUT",
-      "player": "Gabriel",
-      "team": "ARS",
-      "price": 6.3,
-      "rationale": "Sim Lab ranks him last (xPts 3.38). Medical Bay/News Desk flag doubtful (75%). Market Desk confirms -140k net out, cost_change -0.1 — price drop near-certain. EO collapsing (~28%). Sell before deadline."
-    },
-    {
-      "action": "IN",
-      "player": "Mbeumo",
-      "team": "BRE",
-      "price": 7.8,
-      "rationale": "Fixture Room rank 1 (weighted 2.2, home FDR 2). Nailed 100%. Primary set-piece + pen taker. Sim Lab xPts 6.58 with best differential ceiling at 14.2%. Market Desk flags imminent +0.1 rise — buy before it locks."
-    }
+    {"out": "Gabriel", "in": "Mbeumo", "reason": "Gabriel is doubtful (75%, status 'd'), facing -140k net transfers and a confirmed -0.1 price fall, with Arsenal rotating heavily ahead of the UCL final (Saliba, Saka, Raya all rested). Lowest captain EV (3.1) and haul prob in the pool. Mbeumo is a nailed starter (no European/cup distraction), home FDR 2, primary pen + set-piece taker, +58k net transfers and rising. Top-3 captaincy EV (5.82) and best differential ceiling.", "cost": 0}
   ],
-  "captain": {
-    "player": "Haaland",
-    "ev": 16.41,
-    "haul_prob": 0.3158,
-    "rationale": "Unanimous across pillars. Sim Lab rank 1 (EV 16.41, haul 31.6%). Intel EO ~120%+ — not captaining him is the single biggest rank risk. Fixture Room home FDR 2. Non-negotiable armband."
-  },
-  "vice_captain": {
-    "player": "M.Salah",
-    "ev": 15.03,
-    "rationale": "Sim Lab rank 2 (EV 15.03). Most assured starter (36 starts, 3200 mins). Best VC behind Haaland."
-  },
   "chip": {
-    "play": false,
-    "chip_name": null,
-    "rationale": "CHIP-CAL: HOLD. No DGW/BGW in GW38. Bench Boost and Free Hit lose structural edge. TC tempting on Haaland but single FDR-2 home tie is not TC-grade ceiling. Bank chips."
+    "play": "bench_boost",
+    "reason": "GW38 is the final gameweek — any unused chip is wasted. Bench Boost is the highest-floor play: it banks 4 extra starting scores with no captaincy-concentration risk, ideal given GW38's elevated rotation chaos. Triple Captain on Salah is tempting but his away fixture (FDR 2.9 at Ipswich) and single-GW ceiling favour BB. CRITICAL OVERRIDE: do NOT Triple Captain Haaland — News Desk confirms he is omitted from the Man City squad."
   },
-  "top_risks": [
-    {"risk": "Gabriel late team-news: EO collapsing to ~28% so non-ownership damage shrinking. Execute OUT before price drop.", "mitigation": "Sell before tonight's deadline. Do not chase him back."},
-    {"risk": "End-of-season rotation: Rogers and Mateta face possible squad rest.", "mitigation": "Bringing in Mbeumo (nailed 100%). Check lineups 1h before deadline."},
-    {"risk": "Captain concentration on Haaland — blank caps the week.", "mitigation": "VC Salah locked. Monitor MCI team news 1h pre-deadline."}
+  "key_risks": [
+    "DO NOT CAPTAIN HAALAND: News Desk confirms he was OMITTED from Man City's GW38 matchday squad (Guardiola final-day rotation). This OVERRIDES Sim Lab's EV rank-2 and Intel's must-captain call — Haaland is uncaptainable and likely a zero. Sell/bench any Haaland holding before deadline.",
+    "Gabriel doubtful + Arsenal-wide rotation (Saka, Saliba, Raya rested for UCL final) — confirm Raya start before keeping him in goal; Sels is GK cover.",
+    "Crystal Palace rotation: Mateta and Lacroix may be managed ahead of the Conference League final — monitor team news 1h before deadline.",
+    "Aston Villa final-day motivation: Rogers has the fewest minutes in the watchlist; bench-able if not chasing Europe.",
+    "GW38 is the single highest-rotation event of the season — late team news is decisive."
   ],
-  "pillar_insights": {
-    "fdr_x": "Clean GW38, no DGW/BGW. Best runs: Mbeumo (2.2, home FDR 2), Haaland (2.4, home FDR 2). Salah worst fixture (away FDR 3) but stays on form/minutes.",
-    "wrppm_5d": "10k-sim ranking: Haaland 8.2 xPts / 16.41 capt EV / 31.6% haul; Salah 7.52 / 15.03 VC; Mbeumo 6.58 top differential ceiling. Gabriel last at 3.38 — reinforces OUT.",
-    "price_vel": "SELL Gabriel (near-certain -0.1 drop). BUY Mbeumo before +0.1 rise. Haaland and Rogers also rising; Salah/Mateta stable.",
-    "elite_own": "Haaland must-own AND must-captain (EO ~120%+). Gabriel fading template — acceptable to exit. Mbeumo near-differential with pens/set-pieces. Rogers (4.1%) max-leverage punt."
-  },
-  "weekly_brief_summary": "GW38 final-week plan: sell Gabriel (all pillars agree — doubt + price drop + EO collapse), buy Mbeumo (best fixture, nailed, set-piece, rising price). Captain Haaland (EV 16.41, haul 31.6%, EO ~120%+); VC Salah. No chip — clean non-DGW slate, no chip value-positive. Top watch: Gabriel/Haaland confirmed lineups 1h before deadline.",
-  "projected_xpts": 62.5
+  "watchlist": [
+    "Arteta Arsenal team sheet (Raya/Gabriel Jesus start confirmation) — 1h before deadline",
+    "Glasner Palace lineup (Mateta/Lacroix minutes management)",
+    "Aston Villa XI vs Newcastle (Rogers start)",
+    "Salah confirmed started farewell game — captain locked, but verify in late XI"
+  ],
+  "projected_xpts": 72.5,
+  "brief_summary": "GW38 รอบสุดท้าย: ขาย Gabriel (ติดธงเจ็บ 75% + ราคาตก + อาเซนอลพักผู้เล่นก่อนนัดชิง UCL) ดึง Mbeumo เข้ามาแทน (ฟิตชัวร์ เตะลูกตั้งเตะ+จุดโทษ เหย้า FDR 2). กัปตันคือ Salah อย่างเด็ดขาด ส่วน Haaland ถูกตัดชื่อจากทีม Man City ห้ามใส่ปลอกแขนเด็ดขาด รองกัปตันคือ Mbeumo. เล่นชิป Bench Boost ในนัดสุดท้ายเพื่อเก็บแต้มสำรองทั้งหมด ความเสี่ยงหลักคือการหมุนผู้เล่นวันสุดท้าย ต้องเช็คข่าวตัวจริง 1 ชม. ก่อนเส้นตาย."
 }

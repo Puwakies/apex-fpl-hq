@@ -3,18 +3,313 @@
   "pillar": "FDR-X",
   "gw": 38,
   "generated_at": "2026-06-03T00:00:00Z",
-  "methodology": "Weighted fixture score = fdr_avg (5-GW window) + 0.3 penalty for away venue on next fixture. Lower score = easier run. Fixture rank 1 = best (easiest).",
-  "fixture_ratings": [
-    {"player": "Mbeumo", "team": "BRE", "pos": "MID", "fdr_avg_5gw": 2.2, "gw38_fdr": 2, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.2, "dgw": false, "bgw": false, "fixture_rank": 1, "verdict": "BEST RUN — joint-easiest home fixture in GW38 plus the softest 5-GW average of all assets."},
-    {"player": "Haaland", "team": "MCI", "pos": "FWD", "fdr_avg_5gw": 2.4, "gw38_fdr": 2, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.4, "dgw": false, "bgw": false, "fixture_rank": 2, "verdict": "EXCELLENT — home FDR 2 in GW38, 2.4 average across 5 GWs."},
-    {"player": "Rogers", "team": "AVL", "pos": "MID", "fdr_avg_5gw": 2.5, "gw38_fdr": 2, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.5, "dgw": false, "bgw": false, "fixture_rank": 3, "verdict": "GOOD — home FDR 2 in GW38, solid 2.5 5-GW average. Budget-friendly differential."},
-    {"player": "Gabriel", "team": "ARS", "pos": "DEF", "fdr_avg_5gw": 2.6, "gw38_fdr": 3, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.6, "dgw": false, "bgw": false, "fixture_rank": 4, "verdict": "NEUTRAL — home fixture but FDR 3; fitness doubt is the bigger risk."},
-    {"player": "Mateta", "team": "CRY", "pos": "FWD", "fdr_avg_5gw": 2.8, "gw38_fdr": 3, "gw38_venue": "A", "away_penalty": 0.3, "weighted_score": 3.1, "dgw": false, "bgw": false, "fixture_rank": 5, "verdict": "AVOID — away FDR 3 in GW38 plus 2.8 5-GW average."},
-    {"player": "M.Salah", "team": "LIV", "pos": "MID", "fdr_avg_5gw": 2.9, "gw38_fdr": 3, "gw38_venue": "A", "away_penalty": 0.3, "weighted_score": 3.2, "dgw": false, "bgw": false, "fixture_rank": 6, "verdict": "WORST RUN — away FDR 3 in GW38 and highest 5-GW average. Form/ownership high but fixtures unsupportive of captaincy."}
+  "methodology": "GW38 is the final gameweek of the 2024-25 PL season. All 10 fixtures kick off simultaneously. FDR ratings 1-5 (1=easiest). Away venue adds +0.3 weighted penalty. No multi-GW window applicable — single-fixture GW. Rotation risk flagged separately for teams with nothing to play for.",
+  "fixtures": [
+    {
+      "home": "Arsenal",
+      "away": "Everton",
+      "fdr_home": 2,
+      "fdr_away": 5,
+      "notes": "Arsenal host Everton (relegated). Gunners have strong clean sheet potential. Everton have nothing to play for, likely to rotate."
+    },
+    {
+      "home": "Bournemouth",
+      "away": "Crystal Palace",
+      "fdr_home": 2,
+      "fdr_away": 3,
+      "notes": "Bournemouth at home to mid-table Palace. Good fixture for Bournemouth assets. Palace away is moderate."
+    },
+    {
+      "home": "Brentford",
+      "away": "Man City",
+      "fdr_home": 4,
+      "fdr_away": 2,
+      "notes": "Brentford host Man City. Hard home fixture for Brentford. Man City away at Brentford is manageable — but City rotation risk is elevated if title race is settled."
+    },
+    {
+      "home": "Brighton",
+      "away": "Man Utd",
+      "fdr_home": 2,
+      "fdr_away": 4,
+      "notes": "Brighton host a struggling Man Utd. Easy home game for Brighton assets. Man Utd away is tough given poor season form."
+    },
+    {
+      "home": "Chelsea",
+      "away": "Nottm Forest",
+      "fdr_home": 3,
+      "fdr_away": 3,
+      "notes": "Balanced clash between two solid mid/upper-table sides. Neither team enjoys a clear fixture advantage."
+    },
+    {
+      "home": "Fulham",
+      "away": "Wolves",
+      "fdr_home": 2,
+      "fdr_away": 5,
+      "notes": "Fulham host a relegated/struggling Wolves. Excellent attacking fixture for Fulham. Wolves away at Fulham is extremely tough — Wolves have nothing to play for."
+    },
+    {
+      "home": "Ipswich",
+      "away": "Liverpool",
+      "fdr_home": 5,
+      "fdr_away": 1,
+      "notes": "Liverpool away at Ipswich — the standout fixture of GW38. Ipswich facing Liverpool is as hard as it gets. Liverpool assets (Salah, Diaz) are prime captaincy picks."
+    },
+    {
+      "home": "Leicester",
+      "away": "Southampton",
+      "fdr_home": 2,
+      "fdr_away": 3,
+      "notes": "Both teams likely already relegated. Low-quality fixture. Avoid assets from both clubs due to low motivation and rotation risk."
+    },
+    {
+      "home": "Newcastle",
+      "away": "Aston Villa",
+      "fdr_home": 3,
+      "fdr_away": 3,
+      "notes": "Competitive top-half fixture. Both sides likely chasing European places. Balanced difficulty — quality assets on both sides can deliver."
+    },
+    {
+      "home": "Tottenham",
+      "away": "West Ham",
+      "fdr_home": 2,
+      "fdr_away": 3,
+      "notes": "Spurs host West Ham. Good home fixture for Tottenham attackers. West Ham away at Spurs is a moderate ask."
+    }
   ],
-  "best_fixtures": ["Mbeumo", "Haaland", "Rogers"],
-  "worst_fixtures": ["M.Salah", "Mateta"],
+  "fixture_ratings": [
+    {
+      "team": "Liverpool",
+      "gw38_fixture": "away at Ipswich",
+      "fdr": 1,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 1.3,
+      "fixture_rank": 1,
+      "verdict": "BEST — FDR 1 away at relegated Ipswich. Salah/Diaz are top captaincy options."
+    },
+    {
+      "team": "Arsenal",
+      "gw38_fixture": "home vs Everton",
+      "fdr": 2,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 2.0,
+      "fixture_rank": 2,
+      "verdict": "EXCELLENT — home FDR 2 vs relegated Everton. Strong clean sheet and attacking potential."
+    },
+    {
+      "team": "Fulham",
+      "gw38_fixture": "home vs Wolves",
+      "fdr": 2,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 2.0,
+      "fixture_rank": 3,
+      "verdict": "EXCELLENT — home FDR 2 vs relegated/poor Wolves. Ideal for budget Fulham attackers."
+    },
+    {
+      "team": "Brighton",
+      "gw38_fixture": "home vs Man Utd",
+      "fdr": 2,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 2.0,
+      "fixture_rank": 4,
+      "verdict": "EXCELLENT — home FDR 2. Man Utd have had a dreadful season. Brighton attack should fire."
+    },
+    {
+      "team": "Bournemouth",
+      "gw38_fixture": "home vs Crystal Palace",
+      "fdr": 2,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 2.0,
+      "fixture_rank": 5,
+      "verdict": "GOOD — home FDR 2 vs Palace. Reliable fixture for Bournemouth assets."
+    },
+    {
+      "team": "Tottenham",
+      "gw38_fixture": "home vs West Ham",
+      "fdr": 2,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 2.0,
+      "fixture_rank": 6,
+      "verdict": "GOOD — home FDR 2 vs West Ham. Good for Spurs attackers but beware rotation if European place is secured."
+    },
+    {
+      "team": "Man City",
+      "gw38_fixture": "away at Brentford",
+      "fdr": 2,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 2.3,
+      "fixture_rank": 7,
+      "verdict": "GOOD — FDR 2 away but City heavily rotate on final day. Haaland start not guaranteed."
+    },
+    {
+      "team": "Leicester",
+      "gw38_fixture": "home vs Southampton",
+      "fdr": 2,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 2.0,
+      "fixture_rank": 8,
+      "verdict": "LOW APPEAL despite FDR 2 — both relegated teams, motivation rock bottom. Avoid."
+    },
+    {
+      "team": "Crystal Palace",
+      "gw38_fixture": "away at Bournemouth",
+      "fdr": 3,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 3.3,
+      "fixture_rank": 9,
+      "verdict": "NEUTRAL — FDR 3 away. Palace assets are moderate picks."
+    },
+    {
+      "team": "Aston Villa",
+      "gw38_fixture": "away at Newcastle",
+      "fdr": 3,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 3.3,
+      "fixture_rank": 10,
+      "verdict": "NEUTRAL — FDR 3 away at a strong Newcastle. Villa attackers still viable if chasing European spots."
+    },
+    {
+      "team": "Newcastle",
+      "gw38_fixture": "home vs Aston Villa",
+      "fdr": 3,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 3.0,
+      "fixture_rank": 11,
+      "verdict": "NEUTRAL — FDR 3 at home. Newcastle home record is strong but Villa are a real test."
+    },
+    {
+      "team": "Chelsea",
+      "gw38_fixture": "home vs Nottm Forest",
+      "fdr": 3,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 3.0,
+      "fixture_rank": 12,
+      "verdict": "NEUTRAL — FDR 3. Chelsea inconsistent at home this season; Forest solid away."
+    },
+    {
+      "team": "Nottm Forest",
+      "gw38_fixture": "away at Chelsea",
+      "fdr": 3,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 3.3,
+      "fixture_rank": 13,
+      "verdict": "NEUTRAL/AVOID — FDR 3 away at Stamford Bridge. Forest attackers niche picks only."
+    },
+    {
+      "team": "Southampton",
+      "gw38_fixture": "away at Leicester",
+      "fdr": 3,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 3.3,
+      "fixture_rank": 14,
+      "verdict": "AVOID — relegated team, zero motivation regardless of easy fixture on paper."
+    },
+    {
+      "team": "West Ham",
+      "gw38_fixture": "away at Tottenham",
+      "fdr": 3,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 3.3,
+      "fixture_rank": 15,
+      "verdict": "AVOID — FDR 3 away at Spurs. West Ham had a difficult season."
+    },
+    {
+      "team": "Man Utd",
+      "gw38_fixture": "away at Brighton",
+      "fdr": 4,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 4.3,
+      "fixture_rank": 16,
+      "verdict": "BAD — FDR 4 away at Brighton who are in form at home. Avoid Utd assets."
+    },
+    {
+      "team": "Brentford",
+      "gw38_fixture": "home vs Man City",
+      "fdr": 4,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 4.0,
+      "fixture_rank": 17,
+      "verdict": "BAD — hosting Man City. Brentford defenders and attackers face a hostile FDR 4 fixture."
+    },
+    {
+      "team": "Everton",
+      "gw38_fixture": "away at Arsenal",
+      "fdr": 5,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 5.3,
+      "fixture_rank": 18,
+      "verdict": "WORST — relegated, no motivation, travelling to Arsenal. Avoid all Everton assets."
+    },
+    {
+      "team": "Wolves",
+      "gw38_fixture": "away at Fulham",
+      "fdr": 5,
+      "venue": "A",
+      "away_penalty": 0.3,
+      "weighted_score": 5.3,
+      "fixture_rank": 19,
+      "verdict": "WORST — relegated/struggling, away at Fulham. Worst fixture of the GW for outfield assets."
+    },
+    {
+      "team": "Ipswich",
+      "gw38_fixture": "home vs Liverpool",
+      "fdr": 5,
+      "venue": "H",
+      "away_penalty": 0.0,
+      "weighted_score": 5.0,
+      "fixture_rank": 20,
+      "verdict": "WORST — hosting Liverpool. Ipswich defenders/GK face an onslaught. Avoid entirely."
+    }
+  ],
+  "best_fixtures": [
+    "Liverpool (away at Ipswich — FDR 1, prime captaincy pick, Salah/Diaz)",
+    "Arsenal (home vs Everton — FDR 2, clean sheet + attacking potential)",
+    "Fulham (home vs Wolves — FDR 2, best budget attacking fixture)",
+    "Brighton (home vs Man Utd — FDR 2, Man Utd worst away form)",
+    "Bournemouth (home vs Crystal Palace — FDR 2, reliable home fixture)",
+    "Tottenham (home vs West Ham — FDR 2, good for Son/Solanke type assets)"
+  ],
+  "worst_fixtures": [
+    "Everton (away at Arsenal — FDR 5 + relegated, total avoidance)",
+    "Wolves (away at Fulham — FDR 5 + relegated, total avoidance)",
+    "Ipswich (home vs Liverpool — FDR 5, facing champions/title-chasers)",
+    "Man Utd (away at Brighton — FDR 4 + poor form)",
+    "Brentford (home vs Man City — FDR 4, hosting title-challengers)"
+  ],
   "dgw_alerts": [],
   "bgw_alerts": [],
-  "summary": "GW38 fixture picture is clean — no DGWs or BGWs. Easiest runs: BRE (Mbeumo, 2.2) and MCI (Haaland, 2.4), both home FDR 2. LIV (Salah) has the hardest run: FDR-3 away."
+  "rotation_warnings": [
+    "Man City: heavy rotation expected if title position is settled before final day. Haaland rest is plausible.",
+    "Everton: all-out rotation as a relegated side with nothing to play for.",
+    "Wolves: similar motivation vacuum — likely heavy squad rotation.",
+    "Leicester / Southampton: both relegated, rotation expected.",
+    "Any European-qualified team (Arsenal, Spurs, Newcastle, Aston Villa) may rest key players if CL/EL spots are locked in."
+  ],
+  "captaincy_recommendation": "M.Salah (Liverpool) — FDR 1 away at Ipswich is the best captaincy fixture in GW38. Strong differential alternative: Joao Pedro (Brighton) or a Fulham attacker home vs Wolves.",
+  "best_def_run": "Arsenal home vs Everton — strongest clean sheet probability of the GW. Secondary: Fulham home vs Wolves.",
+  "notes": [
+    "GW38 is a simultaneous single-day event (25 May 2025) — all 10 fixtures at the same kick-off time.",
+    "No DGW or BGW teams confirmed for GW38. Every team plays exactly once.",
+    "FDR scale: 1=very easy, 2=easy, 3=medium, 4=hard, 5=very hard. Away penalty of +0.3 applied to weighted score.",
+    "Rotation risk is the biggest concern for GW38 transfers — confirm team news before deadline.",
+    "Chip usage (Triple Captain, Bench Boost) commonly deployed in GW38 — factor this into captaincy weighting."
+  ],
+  "summary": "GW38 has no DGW/BGW complications. Liverpool away at Ipswich (FDR 1) is the premier fixture. Arsenal, Fulham, Brighton and Bournemouth all offer FDR 2 home games. Everton, Wolves and Ipswich face the three hardest fixtures. Rotation risk is the primary wild card — deadline-day team news is essential."
 }

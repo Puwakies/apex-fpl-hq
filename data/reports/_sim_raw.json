@@ -1,0 +1,80 @@
+[
+  {
+    "name": "M.Salah",
+    "team": "LIV",
+    "pos": "MID",
+    "price": 13.4,
+    "ev": 7.17,
+    "ev_captain": 14.33,
+    "haul_prob": 0.385,
+    "variance": 24.79,
+    "sel": 48.9,
+    "fdr": 2.9,
+    "loc": "A"
+  },
+  {
+    "name": "Haaland",
+    "team": "MCI",
+    "pos": "FWD",
+    "price": 15.1,
+    "ev": 6.98,
+    "ev_captain": 13.97,
+    "haul_prob": 0.336,
+    "variance": 22.75,
+    "sel": 61.4,
+    "fdr": 2.4,
+    "loc": "H"
+  },
+  {
+    "name": "Mbeumo",
+    "team": "BRE",
+    "pos": "MID",
+    "price": 7.8,
+    "ev": 5.82,
+    "ev_captain": 11.63,
+    "haul_prob": 0.279,
+    "variance": 18.68,
+    "sel": 14.2,
+    "fdr": 2.2,
+    "loc": "H"
+  },
+  {
+    "name": "Mateta",
+    "team": "CRY",
+    "pos": "FWD",
+    "price": 7.5,
+    "ev": 4.5,
+    "ev_captain": 9.0,
+    "haul_prob": 0.144,
+    "variance": 13.05,
+    "sel": 6.8,
+    "fdr": 2.8,
+    "loc": "A"
+  },
+  {
+    "name": "Rogers",
+    "team": "AVL",
+    "pos": "MID",
+    "price": 5.6,
+    "ev": 4.27,
+    "ev_captain": 8.54,
+    "haul_prob": 0.153,
+    "variance": 12.39,
+    "sel": 4.1,
+    "fdr": 2.5,
+    "loc": "H"
+  },
+  {
+    "name": "Gabriel",
+    "team": "ARS",
+    "pos": "DEF",
+    "price": 6.3,
+    "ev": 3.1,
+    "ev_captain": 6.2,
+    "haul_prob": 0.069,
+    "variance": 10.39,
+    "sel": 33.1,
+    "fdr": 2.6,
+    "loc": "H"
+  }
+]

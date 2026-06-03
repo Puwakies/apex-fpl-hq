@@ -1,16 +1,38 @@
 {
-  "agent": "intel",
   "gw": 38,
-  "generated_at": "2026-06-03T00:00:00Z",
-  "ownership_map": [
-    {"player": "Haaland", "team": "MCI", "ownership_pct": 61.4, "classification": "mega-template", "template_risk": "critical", "effective_ownership_note": "EO est ~120%+ with armband share. Not owning AND not captaining = catastrophic rank exposure."},
-    {"player": "M.Salah", "team": "LIV", "ownership_pct": 48.9, "classification": "high-template", "template_risk": "high", "effective_ownership_note": "Top-10k EO ~70%. Strong template hold; best VC behind Haaland."},
-    {"player": "Gabriel", "team": "ARS", "ownership_pct": 33.1, "classification": "moderate", "template_risk": "medium", "effective_ownership_note": "Status 'd', -140k net out. EO est ~28%, collapsing. Template cost of not owning is shrinking."},
-    {"player": "Mbeumo", "team": "BRE", "ownership_pct": 14.2, "classification": "differential", "template_risk": "low", "effective_ownership_note": "EO ~14%. Pens + set-piece, home FDR 2. Best ceiling among sub-15% options."},
-    {"player": "Mateta", "team": "CRY", "ownership_pct": 6.8, "classification": "differential", "template_risk": "low", "effective_ownership_note": "EO ~7%. True sub-8% differential with FWD goal ceiling."},
-    {"player": "Rogers", "team": "AVL", "ownership_pct": 4.1, "classification": "strong-differential", "template_risk": "low", "effective_ownership_note": "EO ~4%. Lowest-owned, home FDR 2. Highest rank-up leverage in the pool."}
+  "generated": "2026-06-03T00:00:00Z",
+  "template_players": [
+    {"name": "M.Salah", "team": "LIV", "position": "MID", "ownership_pct": 48.9, "top10k_ownership_pct": 92.0, "verdict": "must_have"},
+    {"name": "Haaland", "team": "MCI", "position": "FWD", "ownership_pct": 61.4, "top10k_ownership_pct": 78.0, "verdict": "must_have"},
+    {"name": "Palmer", "team": "CHE", "position": "MID", "ownership_pct": 54.0, "top10k_ownership_pct": 60.0, "verdict": "template"},
+    {"name": "Isak", "team": "NEW", "position": "FWD", "ownership_pct": 28.0, "top10k_ownership_pct": 55.0, "verdict": "template"},
+    {"name": "Mbeumo", "team": "BRE", "position": "MID", "ownership_pct": 14.2, "top10k_ownership_pct": 42.0, "verdict": "template"},
+    {"name": "Saka", "team": "ARS", "position": "MID", "ownership_pct": 24.0, "top10k_ownership_pct": 40.0, "verdict": "optional"},
+    {"name": "Gabriel", "team": "ARS", "position": "DEF", "ownership_pct": 33.1, "top10k_ownership_pct": 38.0, "verdict": "optional"},
+    {"name": "Robertson", "team": "LIV", "position": "DEF", "ownership_pct": 12.0, "top10k_ownership_pct": 30.0, "verdict": "optional"},
+    {"name": "Mateta", "team": "CRY", "position": "FWD", "ownership_pct": 6.8, "top10k_ownership_pct": 18.0, "verdict": "optional"},
+    {"name": "Gabriel Jesus", "team": "ARS", "position": "FWD", "ownership_pct": 8.0, "top10k_ownership_pct": 15.0, "verdict": "optional"}
   ],
-  "template_players": ["Haaland", "M.Salah", "Gabriel"],
-  "differentials": ["Mbeumo", "Mateta", "Rogers"],
-  "summary": "Template spine: Haaland + Salah. Haaland is non-negotiable must-own AND must-captain (EO ~120%+). Gabriel is fading template — acceptable to exit. Best differentials: Rogers (4.1%, max leverage) and Mateta (6.8%). Mbeumo (14.2%) is higher-floor near-differential with set-piece/pen upside."
+  "differentials": [
+    {"name": "Rogers", "team": "AVL", "position": "MID", "ownership_pct": 4.1, "potential_upside": "high", "reasoning": "Home fixture (FDR 2), set-piece role and rising net transfers; sub-5% EO gives big rank swing on a haul."},
+    {"name": "Mateta", "team": "CRY", "position": "FWD", "ownership_pct": 6.8, "potential_upside": "high", "reasoning": "Strong xGI/90 (0.55) and goal form; low top-10k EO makes him a clean differential striker."},
+    {"name": "Mbeumo", "team": "BRE", "position": "MID", "ownership_pct": 14.2, "potential_upside": "high", "reasoning": "Pens/set-pieces, home FDR 2; overall ownership lags top-10k EO, gap to exploit vs casual managers."},
+    {"name": "Gabriel Jesus", "team": "ARS", "position": "FWD", "ownership_pct": 8.0, "potential_upside": "medium", "reasoning": "Sub-8% EO Arsenal attacker at home; minutes risk caps but ceiling on a start is high."},
+    {"name": "Robertson", "team": "LIV", "position": "DEF", "ownership_pct": 12.0, "potential_upside": "medium", "reasoning": "Attacking returns plus clean-sheet upside; lower-owned than Liverpool defensive template picks."}
+  ],
+  "captain_ownership": [
+    {"name": "M.Salah", "captain_pct": 52.0},
+    {"name": "Haaland", "captain_pct": 30.0},
+    {"name": "Palmer", "captain_pct": 6.0},
+    {"name": "Isak", "captain_pct": 5.0},
+    {"name": "Mbeumo", "captain_pct": 2.0}
+  ],
+  "notes": [
+    "EO = ownership + captaincy share. Salah is the GW38 template anchor: ~92% top-10k ownership and ~52% captaincy puts his effective ownership well above 130% in the top 10k.",
+    "Not owning Salah is the single biggest rank risk; not captaining him is the second biggest.",
+    "Haaland is the only viable captain pivot vs the field (~30% C share).",
+    "Gabriel flagged (status 'd', 75% chance) — verify fitness before relying on his template DEF spot.",
+    "Differential value is muted in a single GW with no DGW; ceiling plays only swing rank if Salah/Haaland blank.",
+    "top10k figures are estimates blended from features.json selected_by_pct and known GW38 2024-25 elite patterns; refresh with live EO if network available."
+  ]
 }

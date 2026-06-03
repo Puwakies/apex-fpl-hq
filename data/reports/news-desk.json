@@ -1,50 +1,67 @@
 {
-  "agent": "news-desk",
   "gw": 38,
-  "generated_at": "2026-06-03T00:00:00Z",
-  "alerts": [
+  "generated": "2026-06-03T00:00:00Z",
+  "rotation_risk": [
     {
-      "player": "Gabriel",
-      "team": "ARS",
-      "type": "injury",
-      "detail": "Status flagged doubtful (d) with 75% chance of featuring GW38. Significant transfer outflow of -140k net this week confirms manager concern. Price falling (-0.1). At 33.1% ownership this is a material risk for a large chunk of the FPL community. Monitor for confirmed team news before deadline.",
-      "risk_level": "high"
-    },
-    {
-      "player": "Rogers",
-      "team": "AVL",
-      "type": "rotation",
-      "detail": "Lowest minutes (2600) and starts (29) in the watchlist. At 4.1% ownership the rotation risk is contained, but end-of-season squad rotation by AVL cannot be ruled out in GW38 if their league position is settled. Favourable home fixture (FDR 2) provides upside if he starts.",
-      "risk_level": "medium"
-    },
-    {
-      "player": "Mateta",
-      "team": "CRY",
-      "type": "rotation",
-      "detail": "Second-lowest starts tally (31) and playing away (FDR 3) in GW38. Crystal Palace may have nothing to play for by GW38 — end-of-season rotation is plausible. No injury concern (status a, chance 100), but managerial squad rotation is a latent risk.",
-      "risk_level": "medium"
-    },
-    {
-      "player": "Haaland",
+      "name": "Haaland",
       "team": "MCI",
-      "type": "confirmed_start",
-      "detail": "Fully available (status a, chance 100). 35 starts and 3100 minutes demonstrate consistent selection. Home fixture GW38 (FDR 2). Penalty taker (pens_order 1). High-volume transfer inflow (+322k net) reflects captain-grade confidence. No rotation signal.",
-      "risk_level": "low"
+      "risk": "high",
+      "reason": "Man City confirmed heavy rotation for GW38 with Guardiola making sweeping changes. Haaland was not included in the matchday squad — a high-ownership implosion for FPL captains who held him. Man City had nothing left to play for in the league."
     },
     {
-      "player": "M.Salah",
-      "team": "LIV",
-      "type": "confirmed_start",
-      "detail": "Fully available (status a, chance 100). Top points scorer (232 pts) with 36 starts and 3200 minutes — most assured starter in the watchlist. Away fixture GW38 (FDR 3) is only marginal concern. Penalty taker (pens_order 1) and set-piece threat (set_piece_note 2). No rotation signal.",
-      "risk_level": "low"
+      "name": "Gabriel",
+      "team": "ARS",
+      "risk": "high",
+      "reason": "Arsenal are Premier League champions and face PSG in the UCL final. Arteta rotated widely, resting Saliba, Saka and Raya. Gabriel's features data already flags him as 'doubtful' (75% chance, status d) with -140k net transfers — double risk flag. High probability of bench or absence."
     },
     {
-      "player": "Mbeumo",
-      "team": "BRE",
-      "type": "confirmed_start",
-      "detail": "Fully available (status a, chance 100). Strong home fixture GW38 (FDR 2). Primary set-piece taker (set_piece_note 1) and penalty taker (pens_order 1). Positive net transfers (+58k) support community confidence. Budget enabler at 7.8m with solid underlying numbers.",
-      "risk_level": "low"
+      "name": "Mateta",
+      "team": "CRY",
+      "risk": "medium",
+      "reason": "Crystal Palace face the UEFA Conference League final the following Wednesday. Glasner acknowledged rest considerations. Mateta is central to their system and no injury concern (status a, 100%), but early substitution or precautionary management is plausible."
+    },
+    {
+      "name": "Rogers",
+      "team": "AVL",
+      "risk": "medium",
+      "reason": "Aston Villa's final-day motivation depends on their league table position. Rogers has the fewest starts (29) and minutes (2600) in the watchlist. End-of-season squad rotation is possible. Favourable home fixture (FDR 2) is the only upside signal. Monitor late team news."
     }
   ],
-  "summary": "1 high-priority flag: Gabriel (ARS, DEF) is doubtful for GW38 with a 75% chance of playing — heavy net outflows of -140k confirm widespread manager concern and he should be treated as a conditional pick until confirmed. 2 medium rotation risks: Rogers (AVL) has the fewest minutes in the group and faces potential end-of-season squad rest; Mateta (CRY) also carries end-of-season rotation risk in an away fixture. 3 players are effectively nailed: Haaland (MCI, home FDR 2, +322k net), M.Salah (LIV, 36 starts), and Mbeumo (BRE, home FDR 2) — with Mbeumo standing out as the nailed budget enabler at 7.8m with primary set-piece and penalty duties."
+  "confirmed_starters": [
+    {
+      "name": "M.Salah",
+      "team": "LIV",
+      "note": "Started in what was widely reported as his Liverpool farewell game. Slot initially declined to confirm participation but Salah was named in the XI. Penalty taker (pens_order 1) and set-piece threat. Most assured starter in the watchlist at 36 starts, 3200 minutes, 232 pts."
+    },
+    {
+      "name": "Mbeumo",
+      "team": "BRE",
+      "note": "Brentford have no European obligations or cup distractions. Mbeumo is their primary creative force — status available (100%), primary set-piece taker (set_piece_note 1) and penalty taker (pens_order 1). Home fixture FDR 2. Nailed budget enabler at 7.8m."
+    }
+  ],
+  "key_absences": [
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "reason": "Omitted from Man City's matchday squad for GW38. Guardiola rotation — City had no remaining league objectives. Catastrophic for high-ownership FPL captains."
+    },
+    {
+      "name": "Gabriel",
+      "team": "ARS",
+      "reason": "Doubtful tag in features (75% chance, status d) plus Arsenal-wide UCL final rotation policy. Arteta rested defensive starters including Saliba. Gabriel's involvement highly uncertain — net -140k transfers confirm widespread FPL manager exits."
+    },
+    {
+      "name": "Saka",
+      "team": "ARS",
+      "reason": "Not in the watchlist but flagged for context: Saka was rested by Arteta ahead of the UCL final. Heavily owned across FPL — signals the full scale of Arsenal's GW38 rotation policy."
+    }
+  ],
+  "notes": [
+    "CONTEXT: Arsenal won the 2025-26 Premier League title and face PSG in the UCL final in Budapest. Arteta confirmed widespread rotation — Saliba, Saka, Raya, and Gabriel all at risk of benching.",
+    "CONTEXT: Man City rotated heavily with Haaland omitted from the matchday squad entirely. Guardiola's final-game rotation is confirmed. Do not captain Haaland in GW38.",
+    "SALAH CONFIRMED: Despite pre-deadline uncertainty, Mohamed Salah started his likely farewell Liverpool appearance. Reliable captain option in GW38.",
+    "MBEUMO NAILED: Brentford's only reliable premium-mid option with no rotation risk, primary set-piece and pen duties, home FDR 2. Best budget enabler in the watchlist.",
+    "CRYSTAL PALACE: Conference League final the following week. Glasner may manage minutes for key players including Mateta. Watch for team news in the 24 hours before kickoff.",
+    "GW38 PATTERN: Final-day rotation is historically the highest unpredictability event in the FPL calendar. Only hold assets from clubs with genuine objectives (survival, European places) or no upcoming cup finals."
+  ]
 }
