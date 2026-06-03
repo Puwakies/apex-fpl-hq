@@ -1,0 +1,29 @@
+{
+  "agent": "the-rival",
+  "strategy": "top10k",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00",
+  "squad": [
+    {"player": "Raya", "team": "ARS", "pos": "GKP", "price": 5.6, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Sels", "team": "NFO", "pos": "GKP", "price": 5.0, "role": "bench", "is_captain": false, "is_vice_captain": false},
+    {"player": "Gabriel", "team": "ARS", "pos": "DEF", "price": 6.3, "role": "bench", "is_captain": false, "is_vice_captain": false},
+    {"player": "Gvardiol", "team": "MCI", "pos": "DEF", "price": 6.0, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Van Dijk", "team": "LIV", "pos": "DEF", "price": 6.4, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Aina", "team": "NFO", "pos": "DEF", "price": 4.9, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Munoz", "team": "CRY", "pos": "DEF", "price": 5.1, "role": "bench", "is_captain": false, "is_vice_captain": false},
+    {"player": "M.Salah", "team": "LIV", "pos": "MID", "price": 13.4, "role": "starter", "is_captain": false, "is_vice_captain": true},
+    {"player": "Mbeumo", "team": "BRE", "pos": "MID", "price": 7.8, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Rogers", "team": "AVL", "pos": "MID", "price": 5.6, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Palmer", "team": "CHE", "pos": "MID", "price": 10.5, "role": "bench", "is_captain": false, "is_vice_captain": false},
+    {"player": "Anthony Gordon", "team": "NEW", "pos": "MID", "price": 7.5, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.1, "role": "starter", "is_captain": true, "is_vice_captain": false},
+    {"player": "Mateta", "team": "CRY", "pos": "FWD", "price": 7.5, "role": "starter", "is_captain": false, "is_vice_captain": false},
+    {"player": "Wood", "team": "NFO", "pos": "FWD", "price": 7.0, "role": "starter", "is_captain": false, "is_vice_captain": false}
+  ],
+  "captain": "Haaland",
+  "vice_captain": "M.Salah",
+  "transfer_plan": "Hold/roll. Gabriel benched behind nailed defenders — no hit required. Bank FT for clean GW38 finish.",
+  "chip": null,
+  "projected_score": 71.3,
+  "rationale": "Top10k blueprint: 3-4-3 with template core (Haaland, Salah, Mbeumo) plus differentials Mateta (6.8%) and Rogers (4.1%). Captain Haaland — zero-risk max-EV, 61.4% owned, MCI home FDR 2."
+}

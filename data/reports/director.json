@@ -1,0 +1,51 @@
+{
+  "agent": "the-director",
+  "gw": 38,
+  "generated_at": "2026-06-03T08:30:00Z",
+  "user_plan": {
+    "captain": "Haaland",
+    "key_transfers": ["OUT Gabriel (ARS)", "IN Mbeumo (BRE)"],
+    "chip": null,
+    "projected_score": 62.5,
+    "strengths": [
+      "Clean OUT/IN: sells the doubtful + falling Gabriel, buys nailed rising Mbeumo — every pillar agrees.",
+      "Unanimous max-EV captain on Haaland (EV 16.41, haul 31.6%) with Salah VC.",
+      "Disciplined CHIP-CAL: banks chips on non-DGW slate rather than wasting TC."
+    ],
+    "weaknesses": [
+      "Projected XI total (62.5) trails rival by ~8.8 xPts — thinner attacking returner depth.",
+      "Only one true differential (Mbeumo 14.2%) — limited sub-8% rank-up leverage.",
+      "Captain concentration on Haaland: blank caps the week."
+    ]
+  },
+  "rival_plan": {
+    "strategy": "top10k",
+    "captain": "Haaland",
+    "projected_score": 71.3,
+    "strengths": [
+      "Full template-plus-differential 3-4-3 with more attacking returners (Haaland, Salah, Mbeumo + Mateta, Rogers, Gordon, Wood).",
+      "Same zero-risk max-EV captain and VC — no captaincy leak.",
+      "Two true sub-8% differentials (Mateta 6.8%, Rogers 4.1%) giving genuine rank-up leverage."
+    ],
+    "weaknesses": [
+      "Carries doubtful Gabriel on bench — dead-weight squad value if ruled out.",
+      "Mateta (away FDR 3) and Rogers exposed to late lineup surprises.",
+      "Higher variance from leaning on multiple mid-price differentials."
+    ]
+  },
+  "head_to_head": {
+    "user_score_projection": 62.5,
+    "rival_score_projection": 71.3,
+    "winner": "rival",
+    "margin": 8.8,
+    "scoreline": "USER 62.5 - 71.3 RIVAL"
+  },
+  "verdict": "RIVAL leads by ~8.8 xPts — captain and Mbeumo are identical so the gap is purely roster depth: rival fields more attacking returners and two real sub-8% differentials (Mateta, Rogers) while user runs a thinner XI with only one differential.",
+  "key_differentiators": [
+    "Captaincy is a wash: both captain Haaland (EV 16.41).",
+    "The 8.8-pt gap is entirely XI depth: rival's full 3-4-3 outscores user's XI.",
+    "Differential leverage: rival holds two sub-8% punts (Rogers 4.1%, Mateta 6.8%); user holds only Mbeumo (14.2%).",
+    "Squad hygiene: user correctly removes doubtful falling Gabriel; rival keeps him as dead bench weight."
+  ],
+  "executive_summary": "GW38: both managers correctly captain Haaland with Salah VC — armband is a draw. User's brief is tactically immaculate on the margin (Gabriel-OUT/Mbeumo-IN + chip-hold are textbook) but trails 62.5 to 71.3 on raw projection. The gap is roster depth: rival's full 3-4-3 plus two sub-8% differentials (Rogers, Mateta) carry rank-up upside the user's lone Mbeumo cannot match. Highest-leverage action: upgrade weakest XI slot toward a starting attacking returner or add a true sub-8% differential (Rogers) to close the depth gap."
+}

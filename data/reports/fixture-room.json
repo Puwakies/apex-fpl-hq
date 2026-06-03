@@ -1,0 +1,20 @@
+{
+  "agent": "fixture-room",
+  "pillar": "FDR-X",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "methodology": "Weighted fixture score = fdr_avg (5-GW window) + 0.3 penalty for away venue on next fixture. Lower score = easier run. Fixture rank 1 = best (easiest).",
+  "fixture_ratings": [
+    {"player": "Mbeumo", "team": "BRE", "pos": "MID", "fdr_avg_5gw": 2.2, "gw38_fdr": 2, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.2, "dgw": false, "bgw": false, "fixture_rank": 1, "verdict": "BEST RUN — joint-easiest home fixture in GW38 plus the softest 5-GW average of all assets."},
+    {"player": "Haaland", "team": "MCI", "pos": "FWD", "fdr_avg_5gw": 2.4, "gw38_fdr": 2, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.4, "dgw": false, "bgw": false, "fixture_rank": 2, "verdict": "EXCELLENT — home FDR 2 in GW38, 2.4 average across 5 GWs."},
+    {"player": "Rogers", "team": "AVL", "pos": "MID", "fdr_avg_5gw": 2.5, "gw38_fdr": 2, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.5, "dgw": false, "bgw": false, "fixture_rank": 3, "verdict": "GOOD — home FDR 2 in GW38, solid 2.5 5-GW average. Budget-friendly differential."},
+    {"player": "Gabriel", "team": "ARS", "pos": "DEF", "fdr_avg_5gw": 2.6, "gw38_fdr": 3, "gw38_venue": "H", "away_penalty": 0.0, "weighted_score": 2.6, "dgw": false, "bgw": false, "fixture_rank": 4, "verdict": "NEUTRAL — home fixture but FDR 3; fitness doubt is the bigger risk."},
+    {"player": "Mateta", "team": "CRY", "pos": "FWD", "fdr_avg_5gw": 2.8, "gw38_fdr": 3, "gw38_venue": "A", "away_penalty": 0.3, "weighted_score": 3.1, "dgw": false, "bgw": false, "fixture_rank": 5, "verdict": "AVOID — away FDR 3 in GW38 plus 2.8 5-GW average."},
+    {"player": "M.Salah", "team": "LIV", "pos": "MID", "fdr_avg_5gw": 2.9, "gw38_fdr": 3, "gw38_venue": "A", "away_penalty": 0.3, "weighted_score": 3.2, "dgw": false, "bgw": false, "fixture_rank": 6, "verdict": "WORST RUN — away FDR 3 in GW38 and highest 5-GW average. Form/ownership high but fixtures unsupportive of captaincy."}
+  ],
+  "best_fixtures": ["Mbeumo", "Haaland", "Rogers"],
+  "worst_fixtures": ["M.Salah", "Mateta"],
+  "dgw_alerts": [],
+  "bgw_alerts": [],
+  "summary": "GW38 fixture picture is clean — no DGWs or BGWs. Easiest runs: BRE (Mbeumo, 2.2) and MCI (Haaland, 2.4), both home FDR 2. LIV (Salah) has the hardest run: FDR-3 away."
+}

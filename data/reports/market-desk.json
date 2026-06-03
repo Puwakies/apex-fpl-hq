@@ -1,0 +1,17 @@
+{
+  "agent": "market-desk",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00",
+  "price_velocity": [
+    {"player": "Haaland", "team": "MCI", "price": 15.1, "net_transfers": 322000, "ownership_pct": 61.4, "predicted_change": "+0.1", "confidence": "high", "action": "buy_before_rise", "rationale": "Largest absolute net inflow (+322k). cost_change_event +0.1 already registering."},
+    {"player": "Mbeumo", "team": "BRE", "price": 7.8, "net_transfers": 58000, "ownership_pct": 14.2, "predicted_change": "+0.1", "confidence": "high", "action": "buy_before_rise", "rationale": "+58k net against 14.2% base is high relative velocity. cost_change_event confirms +0.1."},
+    {"player": "Rogers", "team": "AVL", "price": 5.6, "net_transfers": 29000, "ownership_pct": 4.1, "predicted_change": "+0.1", "confidence": "medium", "action": "buy_before_rise", "rationale": "+29k net at 4.1% ownership is very high relative velocity. cost_change_event confirms +0.1."},
+    {"player": "M.Salah", "team": "LIV", "price": 13.4, "net_transfers": 90000, "ownership_pct": 48.9, "predicted_change": "0.0", "confidence": "high", "action": "hold", "rationale": "+90k net is healthy but moderate relative velocity against 48.9% base. cost_change_event 0.0."},
+    {"player": "Mateta", "team": "CRY", "price": 7.5, "net_transfers": 8000, "ownership_pct": 6.8, "predicted_change": "0.0", "confidence": "high", "action": "hold", "rationale": "+8k net is marginal. cost_change_event 0.0."},
+    {"player": "Gabriel", "team": "ARS", "price": 6.3, "net_transfers": -140000, "ownership_pct": 33.1, "predicted_change": "-0.1", "confidence": "high", "action": "sell_before_drop", "rationale": "-140k net, doubtful status, cost_change_event -0.1 confirmed. Price drop tonight near-certain."}
+  ],
+  "likely_rises": ["Haaland", "Mbeumo", "Rogers"],
+  "likely_falls": ["Gabriel"],
+  "act_now": {"player": "Gabriel", "action": "sell_before_drop", "urgency": "critical", "reason": "Doubtful fitness + -140k net + cost_change -0.1 confirmed. Act before deadline."},
+  "summary": "3 predicted rises: Haaland (high), Mbeumo (high), Rogers (medium). 1 predicted fall: Gabriel (high confidence). Most urgent: SELL Gabriel before tonight's price drop."
+}

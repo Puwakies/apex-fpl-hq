@@ -1,0 +1,16 @@
+{
+  "agent": "intel",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "ownership_map": [
+    {"player": "Haaland", "team": "MCI", "ownership_pct": 61.4, "classification": "mega-template", "template_risk": "critical", "effective_ownership_note": "EO est ~120%+ with armband share. Not owning AND not captaining = catastrophic rank exposure."},
+    {"player": "M.Salah", "team": "LIV", "ownership_pct": 48.9, "classification": "high-template", "template_risk": "high", "effective_ownership_note": "Top-10k EO ~70%. Strong template hold; best VC behind Haaland."},
+    {"player": "Gabriel", "team": "ARS", "ownership_pct": 33.1, "classification": "moderate", "template_risk": "medium", "effective_ownership_note": "Status 'd', -140k net out. EO est ~28%, collapsing. Template cost of not owning is shrinking."},
+    {"player": "Mbeumo", "team": "BRE", "ownership_pct": 14.2, "classification": "differential", "template_risk": "low", "effective_ownership_note": "EO ~14%. Pens + set-piece, home FDR 2. Best ceiling among sub-15% options."},
+    {"player": "Mateta", "team": "CRY", "ownership_pct": 6.8, "classification": "differential", "template_risk": "low", "effective_ownership_note": "EO ~7%. True sub-8% differential with FWD goal ceiling."},
+    {"player": "Rogers", "team": "AVL", "ownership_pct": 4.1, "classification": "strong-differential", "template_risk": "low", "effective_ownership_note": "EO ~4%. Lowest-owned, home FDR 2. Highest rank-up leverage in the pool."}
+  ],
+  "template_players": ["Haaland", "M.Salah", "Gabriel"],
+  "differentials": ["Mbeumo", "Mateta", "Rogers"],
+  "summary": "Template spine: Haaland + Salah. Haaland is non-negotiable must-own AND must-captain (EO ~120%+). Gabriel is fading template — acceptable to exit. Best differentials: Rogers (4.1%, max leverage) and Mateta (6.8%). Mbeumo (14.2%) is higher-floor near-differential with set-piece/pen upside."
+}

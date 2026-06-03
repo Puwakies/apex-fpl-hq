@@ -1,0 +1,21 @@
+{
+  "agent": "sim-lab",
+  "gw": 38,
+  "generated_at": "2026-06-03T07:13:02.096756+00:00",
+  "simulations": 10000,
+  "player_projections": [
+    {"player": "Haaland", "team": "MCI", "pos": "FWD", "xPts": 8.2, "haul_prob": 0.3158, "captain_ev": 16.41, "rank": 1, "variance": 26.84},
+    {"player": "M.Salah", "team": "LIV", "pos": "MID", "xPts": 7.52, "haul_prob": 0.214, "captain_ev": 15.03, "rank": 2, "variance": 26.06},
+    {"player": "Mbeumo", "team": "BRE", "pos": "MID", "xPts": 6.58, "haul_prob": 0.1512, "captain_ev": 13.16, "rank": 3, "variance": 21.83},
+    {"player": "Rogers", "team": "AVL", "pos": "MID", "xPts": 5.69, "haul_prob": 0.104, "captain_ev": 11.39, "rank": 4, "variance": 16.75},
+    {"player": "Mateta", "team": "CRY", "pos": "FWD", "xPts": 5.07, "haul_prob": 0.0929, "captain_ev": 10.14, "rank": 5, "variance": 14.27},
+    {"player": "Gabriel", "team": "ARS", "pos": "DEF", "xPts": 3.38, "haul_prob": 0.0346, "captain_ev": 6.76, "rank": 6, "variance": 11.59}
+  ],
+  "captain_recommendation": {
+    "first": "Haaland",
+    "second": "M.Salah",
+    "rationale": "Haaland leads on EV (16.41 capt pts, haul 31.6%) with FDR2 home; Salah is the safest backup. High-ceiling differential: Mbeumo (14.2% owned, haul 15.1%)."
+  },
+  "high_ceiling_differential": {"player": "Mbeumo", "haul_prob": 0.1512, "captain_ev": 13.16, "owned_pct": 14.2},
+  "summary": "GW38: Captain Haaland (EV 16.41, haul 31.6%); VC M.Salah (EV 15.03). Punt option Mbeumo carries the highest differential ceiling."
+}

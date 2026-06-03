@@ -1,0 +1,50 @@
+{
+  "agent": "medical-bay",
+  "gw": 38,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "availability_matrix": [
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "status": "available",
+      "chance_of_playing": 100,
+      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "status": "available",
+      "chance_of_playing": 100,
+      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "status": "available",
+      "chance_of_playing": 100,
+      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "status": "doubtful",
+      "chance_of_playing": 75,
+      "note": "FPL status 'd', chance_next 75. Web search indicates Gabriel has been featuring in Arsenal's end-of-season fixtures (incl. UCL final vs PSG, late May 2026), suggesting FPL flag may be stale or precautionary. Retaining 75% until official Arsenal confirmation of full fitness for GW38. Monitor pre-match press conference."
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "status": "available",
+      "chance_of_playing": 100,
+      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "status": "available",
+      "chance_of_playing": 100,
+      "note": "FPL status 'a', chance_next 100. No injury concerns. Fully available for GW38."
+    }
+  ],
+  "summary": "GW38 medical scan complete. 1 doubt: Gabriel (ARS, DEF, 75% — FPL flag 'd'). 0 confirmed out. All other 5 players (Haaland, M.Salah, Mbeumo, Mateta, Rogers) are fully available at 100%."
+}
