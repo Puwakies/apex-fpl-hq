@@ -342,6 +342,10 @@ const DEMO_DIR={you:64, them:58, youDet:"(C) top EV<br>0 hits", themDet:"(C) tem
   verdict:`ทีมคุณนำ <b>+6 xPts</b> <span class="lead">▲ YOU LEAD</span> — (ข้อมูล demo)`};
 
 const short=(s,n=22)=> s? (String(s).length>n? String(s).slice(0,n-1)+'…':String(s)) : '';
+// tolerant helpers: agents may write strings OR objects, and varying key names
+const asName=v=> v==null?'—' : (typeof v==='object' ? (v.player||v.name||v.team||'—') : String(v));
+const numOf=(o,keys)=>{ for(const k of keys){ const v=o&&o[k]; if(typeof v==='number') return v; } return null; };
+const arrOf=(o,keys)=>{ for(const k of keys){ const v=o&&o[k]; if(Array.isArray(v)) return v; } return []; };
 function banner(html,show=true){ const b=document.getElementById('banner'); b.style.display=show?'block':'none'; b.innerHTML=html; }
 
 async function fetchJSON(u){ const r=await fetch(u,{cache:'no-store'}); if(!r.ok) throw new Error(r.status); return r.json(); }
@@ -355,54 +359,76 @@ async function loadViaFetch(){
   return out;
 }
 
-// turn each agent's JSON into 2-3 short bubble lines (defensive)
+// turn each agent's JSON into 2-3 short bubble lines (tolerant of varying schemas)
 function deriveLines(R){
   const L={};
   if(R.features?.meta) L.data=['load features.json',(R.features.meta.n_players??'?')+' players','features ready'];
-  if(R.news?.items){ const flags=R.news.items.filter(i=>/rot|bench/i.test(i.signal||'')).length;
-    L.news=['scan team news',flags+' rotation flags',short(R.news.items[0]?.note||R.news.items[0]?.player)]; }
-  if(R.med?.matrix){ const d=R.med.matrix.filter(m=>/doubt/i.test(m.status||'')).length, o=R.med.matrix.filter(m=>/out|susp/i.test(m.status||'')).length;
-    L.med=['poll injuries',d+' doubt / '+o+' out',short(R.med.matrix[0]?.player)]; }
-  if(R.fix){ const best=(R.fix.best_runs?.[0]); L.fix=['weight FDR', best? short((best.team||'')+' '+(best.fdr_avg??'')):'ranked runs',
-    (R.fix.dgw_alerts?.length?'DGW flagged':R.fix.bgw_alerts?.length?'BGW risk':'no DGW/BGW')]; }
-  if(R.mkt){ L.mkt=['transfer velocity',(R.mkt.likely_rises?.length||0)+' rises / '+(R.mkt.likely_falls?.length||0)+' falls',
-    short(R.mkt.act_now?.[0]?.player||R.mkt.act_now?.[0]||'monitor')]; }
-  if(R.sim){ const c=R.sim.recommend_c||R.sim.captain_ranking?.[0]?.player; const ev=R.sim.captain_ranking?.[0]?.ev_xpts;
-    L.sim=['run sims','(C) '+short(c||'—'), ev!=null?('EV '+ev):'ranked']; }
-  if(R.intel){ L.intel=['ownership',(R.intel.template_core?.length||0)+' template',short('diff '+(R.intel.differentials?.[0]?.player||'—'))]; }
-  if(R.rival){ L.rival=['strategy: '+short(R.rival.strategy||'?'),'(C) '+short(R.rival.captain||'—'),(R.rival.projected_xpts??'?')+' xPts']; }
-  if(R.gaffer){ L.gaffer=['read all reports','(C) '+short(R.gaffer.captain||'—'),(R.gaffer.chip?.action||'chip set')]; }
-  if(R.director){ L.director=['compare all AIs','YOU '+(R.director.you_xpts??'?')+' - '+(R.director.rival_xpts??'?')+' RIVAL',
-    ((R.director.gap??0)>=0?'you lead':'you trail')+' '+Math.abs(R.director.gap??0)]; }
+  if(R.news){ const items=arrOf(R.news,['items','flags','news']);
+    const flags=items.filter(i=>/rot|bench|out|doubt/i.test(JSON.stringify(i).toLowerCase())).length;
+    L.news=['scan team news', items.length?(flags+' flags / '+items.length):'scanned', short(asName(items[0]?.player||items[0]?.note||items[0]))]; }
+  if(R.med){ const m=arrOf(R.med,['matrix','players','items']);
+    const d=m.filter(x=>/doubt/i.test(x.status||'')).length, o=m.filter(x=>/out|susp/i.test(x.status||'')).length;
+    L.med=['poll injuries', m.length?(d+' doubt / '+o+' out'):'checked', short(asName(m[0]?.player))]; }
+  if(R.fix){ const best=arrOf(R.fix,['best_runs','best','runs'])[0];
+    L.fix=['weight FDR', best?short(asName(best.team)+' '+(best.fdr_avg??best.fdr??'')):'ranked',
+      (arrOf(R.fix,['dgw_alerts']).length?'DGW!':arrOf(R.fix,['bgw_alerts']).length?'BGW risk':'no DGW/BGW')]; }
+  if(R.mkt){ const r=arrOf(R.mkt,['likely_rises','rises']).length, f=arrOf(R.mkt,['likely_falls','falls']).length;
+    L.mkt=['transfer velocity', r+' rises / '+f+' falls', short(asName(arrOf(R.mkt,['act_now'])[0]||'monitor'))]; }
+  if(R.sim){ const cr=arrOf(R.sim,['captain_ranking','ranking']); const c=R.sim.recommend_c||cr[0]?.player;
+    const ev=cr[0]?.ev_xpts??cr[0]?.ev; L.sim=['run sims','(C) '+short(asName(c)), ev!=null?('EV '+ev):'ranked']; }
+  if(R.intel){ const t=arrOf(R.intel,['template_core','template']).length, df=arrOf(R.intel,['differentials'])[0];
+    L.intel=['ownership', t+' template core', short('diff '+asName(df?.player||df))]; }
+  if(R.rival){ const p=numOf(R.rival,['projected_xpts','projected_score','projected','xpts']);
+    L.rival=['strategy: '+short(R.rival.strategy||'?'),'(C) '+short(asName(R.rival.captain)), (p??'?')+' xPts']; }
+  if(R.gaffer){ const chip=R.gaffer.chip;
+    const chipTxt= chip? ((chip.play===false||/hold/i.test(chip.action||''))?'chip HOLD':(chip.chip_name||chip.name||'chip PLAY')) : 'chip set';
+    L.gaffer=['read all reports','(C) '+short(asName(R.gaffer.captain)), chipTxt]; }
+  if(R.director){ const y=numOf(R.director,['you_xpts','user_xpts'])??numOf(R.gaffer||{},['projected_xpts']);
+    const t=numOf(R.director,['rival_xpts'])??numOf(R.rival||{},['projected_score','projected_xpts']);
+    const gap=(y!=null&&t!=null)?+(y-t).toFixed(1):null;
+    L.director=['compare all AIs','YOU '+(y??'?')+' - '+(t??'?')+' RIVAL', gap==null?'verdict ready':(gap>=0?'you lead +'+gap:'you trail '+Math.abs(gap))]; }
+  // any agent that HAS a report but produced no lines -> generic (avoids false "no report")
+  AGENTS.forEach(a=>{ if(!L[a.id] && REPORTS[a.id]) L[a.id]=['report loaded','✓','done']; });
   return L;
 }
 
 function fillBriefFromGaffer(g){
   const bg=document.getElementById('briefgrid'); bg.innerHTML='';
+  if(!g){ DEMO_BRIEF.forEach(b=>{const c=document.createElement('div');c.className='bcard';c.innerHTML=`<span class="h">${b.h}</span>${b.body}`;bg.appendChild(c);}); return; }
   const cards=[];
-  if(g?.transfers) cards.push({h:"⇄ TRANSFERS",body:`OUT ▸ <b>${g.transfers.out??'—'}</b><br>IN ▸ <b>${g.transfers.in??'—'}</b><br>hits <b>${g.transfers.hits??0}</b> · bank ${g.transfers.bank??'—'}`});
-  cards.push({h:"© CAPTAIN",body:`(C) <b>${g?.captain??'—'}</b><br>(VC) <b>${g?.vice??'—'}</b>`});
-  if(g?.chip) cards.push({h:"⚑ CHIP-CAL",body:`${g.chip.name??'chip'} ▸ <b>${g.chip.action??'—'}</b><br>${short(g.chip.reason,40)}`});
-  if(g?.risks?.length) cards.push({h:"⚠ RISK",body:g.risks.slice(0,3).map(r=>'• '+short(r,40)).join('<br>')});
+  let tBody='';
+  if(Array.isArray(g.transfers)){
+    const outs=g.transfers.filter(t=>/out/i.test(t.action||'')).map(t=>asName(t.player));
+    const ins=g.transfers.filter(t=>/in/i.test(t.action||'')).map(t=>asName(t.player));
+    tBody=`OUT ▸ <b>${outs.join(', ')||'—'}</b><br>IN ▸ <b>${ins.join(', ')||'—'}</b>`;
+  } else if(g.transfers){ tBody=`OUT ▸ <b>${asName(g.transfers.out)}</b><br>IN ▸ <b>${asName(g.transfers.in)}</b><br>hits <b>${g.transfers.hits??0}</b> · bank ${g.transfers.bank??'—'}`; }
+  if(tBody) cards.push({h:"⇄ TRANSFERS",body:tBody});
+  cards.push({h:"© CAPTAIN",body:`(C) <b>${asName(g.captain)}</b><br>(VC) <b>${asName(g.vice_captain||g.vice)}</b>`});
+  const chip=g.chip;
+  if(chip){ const action= chip.play===true?'PLAY':(chip.play===false?'HOLD':(chip.action||'—'));
+    const nm=chip.chip_name||chip.name||'chip'; const reason=chip.rationale||chip.reason||'';
+    cards.push({h:"⚑ CHIP-CAL",body:`${nm} ▸ <b>${action}</b><br>${short(reason,42)}`}); }
+  const risks=arrOf(g,['top_risks','risks']);
+  if(risks.length) cards.push({h:"⚠ RISK",body:risks.slice(0,3).map(r=>'• '+short(typeof r==='string'?r:(r.risk||r.note||''),46)).join('<br>')});
   (cards.length?cards:DEMO_BRIEF).forEach(b=>{ const c=document.createElement('div'); c.className='bcard';
     c.innerHTML=`<span class="h">${b.h}</span>${b.body}`; bg.appendChild(c); });
 }
 
 function fillDirector(R){
-  const d=R.director||{}; const g=R.gaffer||{}, rv=R.rival||{};
-  const you=d.you_xpts ?? g.projected_xpts ?? '—';
-  const them=d.rival_xpts ?? rv.projected_xpts ?? '—';
+  const d=R.director||{}, g=R.gaffer||{}, rv=R.rival||{};
+  const you=numOf(d,['you_xpts','user_xpts'])??numOf(g,['projected_xpts'])??'—';
+  const them=numOf(d,['rival_xpts'])??numOf(rv,['projected_score','projected_xpts'])??'—';
   document.getElementById('youPts').textContent=you+' xPts';
   document.getElementById('themPts').textContent=them+' xPts';
-  document.getElementById('youDet').innerHTML=`(C) <b>${g.captain??'—'}</b><br>${(g.transfers?('hits '+(g.transfers.hits??0)):'')}`;
-  document.getElementById('themDet').innerHTML=`(C) <b>${rv.captain??'—'}</b><br>strategy ▸ ${rv.strategy??'—'}`;
-  const gap=(typeof you==='number'&&typeof them==='number')?you-them:(d.gap??null);
-  const v=document.getElementById('verdict');
-  const verdictTxt=d.verdict||((gap>0?`ทีมคุณนำ +${gap}`:gap<0?`Rival นำ ${gap}`:'สูสี'));
+  document.getElementById('youDet').innerHTML=`(C) <b>${asName(g.captain)}</b><br>${Array.isArray(g.transfers)?(g.transfers.length+' transfers'):''}`;
+  document.getElementById('themDet').innerHTML=`(C) <b>${asName(rv.captain)}</b><br>strategy ▸ ${rv.strategy??'—'}`;
+  const gap=(typeof you==='number'&&typeof them==='number')?+(you-them).toFixed(1):(d.gap??null);
   const tag=gap>0?'<span class="lead">▲ YOU LEAD</span>':gap<0?'<span class="trail">▼ YOU TRAIL</span>':'';
-  const action=d.highest_leverage_action?`<br><b>Action:</b> ${short(d.highest_leverage_action,80)}`:'';
-  v.innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>${verdictTxt} ${tag}${action}`;
+  const verdictTxt=d.verdict||d.summary||(gap!=null?(gap>0?`ทีมคุณนำ +${gap} xPts`:gap<0?`Rival นำ ${Math.abs(gap)} xPts`:'สูสี'):'');
+  const action=(d.highest_leverage_action||d.action)?`<br><b>Action:</b> ${short(d.highest_leverage_action||d.action,90)}`:'';
+  document.getElementById('verdict').innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>${short(verdictTxt,260)} ${tag}${action}`;
 }
+
 
 async function runWithReports(R, isDemo){
   loadBtn.disabled=true; reset(true);
