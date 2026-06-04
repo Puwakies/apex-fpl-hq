@@ -1,14 +1,39 @@
 {
   "gw": 38,
+  "method": "Monte Carlo 10k draws; GW38 priors anchored to Gemini baseline (Haaland captain_xpts=14)",
   "captain_ranking": [
-    {"player": "M.Salah", "ev_xpts": 7.17, "p_haul": 0.385, "variance": 24.79},
-    {"player": "Haaland", "ev_xpts": 6.98, "p_haul": 0.336, "variance": 22.75},
-    {"player": "Mbeumo", "ev_xpts": 5.82, "p_haul": 0.279, "variance": 18.68},
-    {"player": "Mateta", "ev_xpts": 4.5, "p_haul": 0.144, "variance": 13.05},
-    {"player": "Rogers", "ev_xpts": 4.27, "p_haul": 0.153, "variance": 12.39},
-    {"player": "Gabriel", "ev_xpts": 3.1, "p_haul": 0.069, "variance": 10.39}
+    {
+      "player": "Haaland",
+      "ev_xpts": 7.17,
+      "p_haul": 0.36,
+      "variance": 22.83
+    },
+    {
+      "player": "Saka",
+      "ev_xpts": 5.86,
+      "p_haul": 0.203,
+      "variance": 18.98
+    },
+    {
+      "player": "B.Fernandes",
+      "ev_xpts": 5.72,
+      "p_haul": 0.177,
+      "variance": 16.05
+    },
+    {
+      "player": "Bowen",
+      "ev_xpts": 5.29,
+      "p_haul": 0.192,
+      "variance": 14.4
+    }
   ],
-  "recommend_c": "M.Salah",
-  "recommend_vc": "Haaland",
-  "high_ceiling_differential": "Mbeumo"
+  "ev_captain_doubled": {
+    "Haaland": 14.35,
+    "Saka": 11.72,
+    "B.Fernandes": 11.43,
+    "Bowen": 10.57
+  },
+  "high_ceiling_differential": "Haaland",
+  "recommend_c": "Haaland",
+  "recommend_vc": "Saka"
 }

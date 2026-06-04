@@ -1,10 +1,32 @@
 {
   "gw": 38,
-  "you":    { "projected_xpts": 62, "captain": "Haaland" },
-  "gemini": { "projected_xpts": 71, "captain": "Salah", "transfer_in": "Mbeumo", "transfer_out": "Gabriel", "chip": null },
-  "claude": { "projected_xpts": 69, "captain": "Salah", "transfer_in": "Mbeumo", "transfer_out": "Gabriel", "chip": "HOLD" },
-  "consensus": { "captain_agree": true, "transfer_agree": true, "chip_agree": true, "conviction": "HIGH" },
-  "best_plan": "gemini",
-  "verdict": "Gemini และ Claude เห็นตรงกันทั้งกัปตัน (Salah) และทรานสเฟอร์ (IN Mbeumo) ความมั่นใจสูง ทีมจริงของคุณยังตั้ง Haaland อยู่ — ควรย้ายปลอกแขน",
-  "highest_leverage_action": "เปลี่ยนกัปตันเป็น Salah และ IN Mbeumo แทน Gabriel ก่อนเส้นตาย"
+  "you": {
+    "projected_xpts": 14.8,
+    "captain": "Bowen",
+    "note": "Real XI still contains Haaland (OUT=0) plus Saka/Gabriel/Rice (Arsenal UCL rotation, benched/doubtful). VC Gabriel also a non-starter. Bowen (C) is sound, but ~4 dead/risky XI slots cap the score. xpts.json is all-zero placeholder; projection derived from sim EVs of confirmed starters with Bowen doubled."
+  },
+  "gemini": {
+    "projected_xpts": 85,
+    "captain": "Gabriel",
+    "transfer_in": null,
+    "transfer_out": null,
+    "chip": null,
+    "note": "Stated captain was Haaland but that is STALE/CONFIRMED OUT; effective captain falls to VC Gabriel, who is himself an Arsenal rotation risk. The 85 figure is unreliable — it assumes Haaland plays and ignores Arsenal benchings. Treat as LOW confidence."
+  },
+  "claude": {
+    "projected_xpts": 21.2,
+    "captain": "Bowen",
+    "transfer_in": "João Pedro",
+    "transfer_out": "Haaland",
+    "chip": "none"
+  },
+  "consensus": {
+    "captain_agree": false,
+    "transfer_agree": false,
+    "chip_agree": true,
+    "conviction": "SPLIT"
+  },
+  "best_plan": "claude",
+  "verdict": "Claude is the best plan. Gemini's 85 xPts is a stale artifact — its captain (Haaland) is CONFIRMED OUT and its effective captain (Gabriel, VC) is an Arsenal rotation risk, so its real expected output is far below face value. YOU's current real team is the weakest: it starts Haaland (guaranteed 0) plus Saka/Gabriel/Rice who are benched or doubtful — four near-dead XI slots. Captain consensus is SPLIT (Gemini->Gabriel vs Claude->Bowen), so the user makes the final call, but on confirmed team news Bowen is clearly the safer, higher-floor captain: confirmed starter, on penalties, WHU vs Leeds, 5 assists in last 6. Execute Claude's plan: 0-hit transfer Haaland->João Pedro, keep Bowen (C), and move VC off Gabriel to a confirmed starter (B.Fernandes).",
+  "highest_leverage_action": "Transfer OUT Haaland (confirmed OUT = guaranteed 0) -> IN João Pedro (Chelsea, confirmed starter) for a free 0-hit transfer before deadline; keep Bowen captain and switch VC from Gabriel to B.Fernandes."
 }

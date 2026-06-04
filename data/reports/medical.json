@@ -1,0 +1,141 @@
+{
+  "gw": 38,
+  "generated": "2026-06-04T00:00:00.000Z",
+  "matrix": [
+    {
+      "player": "Verbruggen",
+      "team": "BHA",
+      "pos": "GK",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No injury flag in FPL or news.json. Brighton have nothing to play for but Verbruggen expected to feature."
+    },
+    {
+      "player": "Hill",
+      "team": "BOU",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No injury flag in FPL or news.json."
+    },
+    {
+      "player": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No injury flag in FPL or news.json. Newcastle teammates Schar and Livramento listed OUT but Thiaw is clear."
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "status": "doubt",
+      "chance_pct": 40,
+      "expected_return_gw": null,
+      "source": "Arsenal rotated heavily for GW38 ahead of Champions League final vs PSG. Gabriel confirmed benched. Fantasy Football Scout GW38 team news 24 May 2026: https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+    },
+    {
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 90,
+      "expected_return_gw": 38,
+      "source": "No injury flag. Man United have nothing to play for in final day but Fernandes typically captains the side and plays. Casemiro search results (manutd.com, May 2026) confirm training activity at Carrington."
+    },
+    {
+      "player": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "status": "doubt",
+      "chance_pct": 40,
+      "expected_return_gw": null,
+      "source": "Arsenal rotated heavily for GW38 ahead of Champions League final. Only two GW37 starters retained. Rice rotation risk is high. Fantasy Football Scout GW38 team news: https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 90,
+      "expected_return_gw": 38,
+      "source": "No injury flag in FPL or news.json. NFO have motivation (European spots). Hudson-Odoi and Murillo are injured but Anderson is clear."
+    },
+    {
+      "player": "Saka",
+      "team": "ARS",
+      "pos": "MID",
+      "status": "doubt",
+      "chance_pct": 30,
+      "expected_return_gw": null,
+      "source": "Arsenal rotated massively for GW38 ahead of Champions League final vs PSG. Saka confirmed on bench. Fantasy Football Scout GW38 team news 24 May 2026: https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts. Earlier Achilles management also noted: https://www.fantasyfootballscout.co.uk/2026/05/14/saka-saliba-calafiori-arsenal-injury-latest-for-fpl-gameweek-37"
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "status": "fit",
+      "chance_pct": 85,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json. Brentford teammates Henry, Milambo, Carvalho all OUT but Thiago not flagged. Touch-and-go note from earlier in season resolved."
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "pos": "FWD",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No injury flag. In strong form (5 assists in last 6 GWs). Potential final game for West Ham. FPL GW37 lesson article: https://www.premierleague.com/en/news/2620338"
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "status": "out",
+      "chance_pct": 0,
+      "expected_return_gw": null,
+      "source": "Haaland NOT in Man City matchday squad for GW38 vs Aston Villa. Rested ahead of 2026 World Cup. Confirmed absence: https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts and https://www.espn.com/soccer/story/_/id/48062103/erling-haaland-left-man-city-squad-trip-leeds"
+    },
+    {
+      "player": "Dúbravka",
+      "team": "BUR",
+      "pos": "GK",
+      "status": "fit",
+      "chance_pct": 90,
+      "expected_return_gw": 38,
+      "source": "No injury flag. Burnley bench keeper. BUR teammate Jordan listed OUT but Dubravka is clear."
+    },
+    {
+      "player": "O'Reilly",
+      "team": "MCI",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 85,
+      "expected_return_gw": 38,
+      "source": "No injury flag. City rotated heavily including Haaland absence, so some fringe players may get starts. O'Reilly not flagged."
+    },
+    {
+      "player": "Canvot",
+      "team": "CRY",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 85,
+      "expected_return_gw": 38,
+      "source": "No injury flag in FPL or news.json. Crystal Palace teammates Richards and Doucouré are OUT but Canvot is clear."
+    },
+    {
+      "player": "Casemiro",
+      "team": "MUN",
+      "pos": "MID",
+      "status": "doubt",
+      "chance_pct": 50,
+      "expected_return_gw": null,
+      "source": "Casemiro did not feature in Man United's final GW38 match vs Brighton. Season farewell confirmed but did not play. Manager opted for emotional send-off without a playing role. Source: manutd.com training update 13 May 2026 + The Peoples Person."
+    }
+  ]
+}

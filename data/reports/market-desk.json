@@ -1,41 +1,8 @@
 {
   "gw": 38,
-  "generated": "2026-06-03T00:00:00Z",
-  "likely_rises": [
-    {"player": "Haaland", "net_transfers": 322000, "confidence": "high"},
-    {"player": "Mbeumo", "net_transfers": 58000, "confidence": "high"},
-    {"player": "Rogers", "net_transfers": 29000, "confidence": "medium"}
-  ],
-  "likely_falls": [
-    {"player": "Gabriel", "net_transfers": -140000, "confidence": "high"}
-  ],
-  "act_now": [
-    {"player": "Gabriel", "action": "sell", "reason": "net_transfers -140000, cost_change_event -0.1 confirmed, status doubtful 75% — price fall near-certain before GW38 deadline"},
-    {"player": "Haaland", "action": "hold/buy", "reason": "net_transfers +322000, cost_change_event +0.1 already registering — late buyers pay 15.2"}
-  ],
-  "price_risers": [
-    {"name": "Haaland", "team": "MCI", "price": "15.1", "transfer_in_velocity": "high", "predicted_rise": true},
-    {"name": "Mbeumo", "team": "BRE", "price": "7.8", "transfer_in_velocity": "high", "predicted_rise": true},
-    {"name": "Rogers", "team": "AVL", "price": "5.6", "transfer_in_velocity": "medium", "predicted_rise": true}
-  ],
-  "price_fallers": [
-    {"name": "Gabriel", "team": "ARS", "price": "6.3", "transfer_out_velocity": "high", "predicted_fall": true}
-  ],
-  "hot_transfers_in": [
-    {"name": "Haaland", "team": "MCI", "reason": "Largest absolute net inflow +322k; cost_change_event +0.1 confirmed; home GW38 FDR 2; penalty taker"},
-    {"name": "Mbeumo", "team": "BRE", "reason": "+58k net against only 14.2% ownership base = high relative velocity; cost_change +0.1; home FDR 2; pen taker"},
-    {"name": "Rogers", "team": "AVL", "reason": "+29k net at 4.1% ownership = very high relative velocity; cost_change +0.1; home FDR 2; budget enabler"}
-  ],
-  "hot_transfers_out": [
-    {"name": "Gabriel", "team": "ARS", "reason": "-140k net outflow; cost_change_event -0.1 active; status doubtful (75%) — largest fall signal in dataset"}
-  ],
-  "notes": [
-    "GW38 is the final gameweek — no future price recovery exists; sell decisions carry no long-term cost.",
-    "Gabriel is the single most urgent action: active fall signal (cost_change_event -0.1) combined with doubt status. Sell before deadline.",
-    "Haaland's cost_change_event of +0.1 confirms rise already in progress — late buyers will pay 15.2.",
-    "Mbeumo's relative velocity (58k net vs 14.2% base) is the highest in the sample after Haaland; high confidence rise.",
-    "Rogers relative velocity (29k vs 4.1% base) is extreme but absolute volume is lower; medium-high confidence.",
-    "M.Salah +90k net but cost_change_event 0.0 — no imminent price move despite healthy inflow at 48.9% ownership.",
-    "Mateta +8k net — negligible velocity, no price movement expected."
-  ]
+  "generated": "2026-06-04T07:45:31.000Z",
+  "note": "GW38 is the final gameweek. Price changes after the GW38 deadline carry no FPL consequence. Live price.json and features.json both report empty likely_rises and likely_falls lists — no velocity signals are active.",
+  "likely_rises": [],
+  "likely_falls": [],
+  "act_now": []
 }

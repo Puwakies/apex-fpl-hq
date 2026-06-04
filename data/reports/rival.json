@@ -1,50 +1,50 @@
 {
   "gw": 38,
-  "strategy": "top10k",
-  "generated": "2026-06-03T00:00:00Z",
+  "strategy": "aggressive",
+  "generated": "2026-06-04T08:10:00Z",
   "squad": {
     "GK": [
-      {"name": "Raya", "team": "ARS", "price": "5.6", "role": "starter"},
-      {"name": "Sels", "team": "NFO", "price": "5.0", "role": "bench"}
+      {"name": "Sels", "team": "NFO", "price": "4.6", "role": "starter"},
+      {"name": "Petrović", "team": "BOU", "price": "4.6", "role": "bench"}
     ],
     "DEF": [
-      {"name": "Van Dijk", "team": "LIV", "price": "6.4", "role": "starter"},
-      {"name": "Robertson", "team": "LIV", "price": "6.0", "role": "starter"},
-      {"name": "Aina", "team": "NFO", "price": "4.9", "role": "starter"},
-      {"name": "Gabriel", "team": "ARS", "price": "6.3", "role": "bench"},
-      {"name": "Munoz", "team": "CRY", "price": "5.1", "role": "bench"}
+      {"name": "Virgil", "team": "LIV", "price": "6.1", "role": "starter"},
+      {"name": "Muñoz", "team": "CRY", "price": "5.9", "role": "starter"},
+      {"name": "Senesi", "team": "BOU", "price": "5.2", "role": "starter"},
+      {"name": "Truffert", "team": "BOU", "price": "4.8", "role": "bench"},
+      {"name": "N.Williams", "team": "NFO", "price": "4.8", "role": "bench"}
     ],
     "MID": [
-      {"name": "M.Salah", "team": "LIV", "price": "13.4", "role": "starter"},
-      {"name": "Palmer", "team": "CHE", "price": "10.5", "role": "starter"},
-      {"name": "Mbeumo", "team": "BRE", "price": "7.8", "role": "starter"},
-      {"name": "Saka", "team": "ARS", "price": "10.0", "role": "starter"},
-      {"name": "Rogers", "team": "AVL", "price": "5.6", "role": "bench"}
+      {"name": "Palmer", "team": "CHE", "price": "10.3", "role": "starter"},
+      {"name": "Mbeumo", "team": "MUN", "price": "8.3", "role": "starter"},
+      {"name": "Semenyo", "team": "MCI", "price": "8.0", "role": "starter"},
+      {"name": "Sarr", "team": "CRY", "price": "6.4", "role": "starter"},
+      {"name": "Bruno G.", "team": "NEW", "price": "6.9", "role": "bench"}
     ],
     "FWD": [
-      {"name": "Isak", "team": "NEW", "price": "9.5", "role": "starter"},
-      {"name": "Mateta", "team": "CRY", "price": "7.5", "role": "starter"},
-      {"name": "Wood", "team": "NFO", "price": "7.0", "role": "starter"}
+      {"name": "Gyökeres", "team": "ARS", "price": "9.1", "role": "starter"},
+      {"name": "Mateta", "team": "CRY", "price": "7.6", "role": "starter"},
+      {"name": "João Pedro", "team": "CHE", "price": "7.4", "role": "starter"}
     ]
   },
   "starting_xi": [
-    "Raya",
-    "Van Dijk",
-    "Robertson",
-    "Aina",
-    "M.Salah",
+    "Sels",
+    "Virgil",
+    "Muñoz",
+    "Senesi",
     "Palmer",
     "Mbeumo",
-    "Saka",
-    "Isak",
+    "Semenyo",
+    "Sarr",
+    "Gyökeres",
     "Mateta",
-    "Wood"
+    "João Pedro"
   ],
-  "captain": "M.Salah",
-  "vice": "Mbeumo",
+  "captain": "Mateta",
+  "vice": "Palmer",
   "transfers": [],
   "chip": "none",
-  "projected_xpts": 70,
-  "key_differential": "Rogers",
-  "strategy_notes": "top10k mirror: template core (Salah 92% top-10k EO, Palmer, Isak, Mbeumo, Saka, VVD/Robertson Liverpool double-up) plus calculated differentials (Mateta 6.8%, Rogers 4.1%, Wood). CAPTAIN SALAH over Haaland: news-desk and fixture-room confirm Man City heavy rotation with Haaland OMITTED from the GW38 squad — captaining him is a rank-disaster trap that the field walks into. Salah is confirmed to start his Liverpool farewell away at relegated Ipswich (FDR 1), leads sim-lab on EV (7.17) and haul prob (0.385), and is the single biggest rank-protection pick at ~52% top-10k captaincy. Haaland excluded from the squad entirely given the confirmed omission; budget redeployed into Isak + a 3-4-3 attack and a Liverpool defensive double-up chasing the Ipswich clean sheet. Gabriel and Munoz benched behind nailed defenders — Gabriel carries a 75% flag plus Arsenal UCL-final rotation, so he is held for template EO but not started. Vice Mbeumo (home FDR 2, pens, zero rotation risk) is the safe armband fallback. No chip: single GW, no DGW, and elevated final-day rotation make Bench Boost / Triple Captain low-EV and high-variance; a clean non-chip game best protects a top-10k rank."
+  "projected_xpts": 69,
+  "key_differential": "Sarr",
+  "strategy_notes": "AGGRESSIVE / high-variance. With Haaland OUT (rested), Saka benched and Gabriel uncertain, the field's captaincy collapses onto a tiny pool — so I attack the gaps. CAPTAIN MATETA, a sub-15% contrarian armband: Crystal Palace at home with pens and elite penalty-box volume, while the template scrambles for a Haaland replacement. Double Palace attack (Mateta + Sarr) is the punt engine; Sarr (<8% EO) is the key differential. Semenyo and João Pedro add further low-template upside. 3-4-3 max-attack shape, Liverpool/Bournemouth defenders only for budget and clean-sheet lottery. Avoided all three flagged Arsenal assets entirely (Saka bench, Gabriel uncertain, and even Gyökeres carries final-day rotation risk but is kept as a high-ceiling starter, not captained). No chip in a single GW. Accept the variance — chasing rank swings, not protecting them."
 }
