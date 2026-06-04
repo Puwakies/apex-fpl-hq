@@ -1,19 +1,20 @@
 ---
-description: Run the full APEX FPL HQ gameweek briefing — ETL, all pillar agents, the rival, the gaffer, and the director head-to-head.
-argument-hint: [GW number] [rival strategy: template|differential|top10k]
+description: Run the 3-way GW briefing — YOU vs GEMINI vs CLAUDE — from the Apps Script cache.
+argument-hint: [GW number]
 ---
-Run a complete gameweek briefing for **GW $1** with rival strategy **$2** (default: top10k).
+Run the 3-way gameweek briefing for **GW $1**. Data comes from the Apps Script cache already committed to data/cache/ (no FPL API calls).
 
-Execute in this exact order:
+Execute in this order:
 
-1. **Data Lab first (blocking).** Use the `data-lab` subagent to run the ETL for GW $1. Wait for `data/features.json`. If it fails, STOP and report — do not continue on stale data.
+1. **data-lab** — read data/cache/*.json (squad, xpts, league, news, price, gemini). If anything is missing, STOP.
 
-2. **Fan out specialists + the rival in parallel.** Launch these subagents together, each reads `data/features.json` and writes its own `data/reports/*.json`:
-   - `news-desk`, `medical-bay`, `fixture-room`, `market-desk`, `sim-lab`, `intel`
-   - `the-rival` (pass STRATEGY=$2) — builds its own competing squad
+2. **Specialists in parallel** — news-desk, medical-bay, fixture-room, market-desk, sim-lab, intel. Each reads the cache + writes data/reports/<name>.json.
 
-3. **The Gaffer.** Use `the-gaffer` to read all specialist reports and produce the user's weekly brief → `data/reports/gaffer.json`.
+3. **Two engines in parallel:**
+   - **gemini-read** → relays Gemini's picks → data/reports/gemini.json
+   - **the-gaffer** (CLAUDE) → independent second opinion → data/reports/claude.json
+   - **the-rival** (optional sparring) → data/reports/rival.json
 
-4. **The Director.** Use `the-director` to read everything incl. `gaffer.json` and `rival.json`, then produce the head-to-head verdict → `data/reports/director.json`.
+4. **the-director** — 3-way compare YOU vs GEMINI vs CLAUDE, measure consensus, pick best plan → data/reports/director.json
 
-Finally, print a consolidated Thai brief: transfers, captain, chip, top risks, and the YOU-vs-RIVAL scoreline with the Director's one-line verdict.
+Finally print a Thai brief: each engine's captain + projected xPts, whether Gemini and Claude AGREE (conviction), the best plan, and the one highest-leverage action. Flag clearly if the engines disagree.
