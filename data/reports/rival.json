@@ -1,50 +1,45 @@
 {
   "gw": 38,
-  "strategy": "top10k",
-  "generated": "2026-06-03T00:00:00Z",
-  "squad": {
-    "GK": [
-      {"name": "Raya", "team": "ARS", "price": "5.6", "role": "starter"},
-      {"name": "Sels", "team": "NFO", "price": "5.0", "role": "bench"}
-    ],
-    "DEF": [
-      {"name": "Van Dijk", "team": "LIV", "price": "6.4", "role": "starter"},
-      {"name": "Robertson", "team": "LIV", "price": "6.0", "role": "starter"},
-      {"name": "Aina", "team": "NFO", "price": "4.9", "role": "starter"},
-      {"name": "Gabriel", "team": "ARS", "price": "6.3", "role": "bench"},
-      {"name": "Munoz", "team": "CRY", "price": "5.1", "role": "bench"}
-    ],
-    "MID": [
-      {"name": "M.Salah", "team": "LIV", "price": "13.4", "role": "starter"},
-      {"name": "Palmer", "team": "CHE", "price": "10.5", "role": "starter"},
-      {"name": "Mbeumo", "team": "BRE", "price": "7.8", "role": "starter"},
-      {"name": "Saka", "team": "ARS", "price": "10.0", "role": "starter"},
-      {"name": "Rogers", "team": "AVL", "price": "5.6", "role": "bench"}
-    ],
-    "FWD": [
-      {"name": "Isak", "team": "NEW", "price": "9.5", "role": "starter"},
-      {"name": "Mateta", "team": "CRY", "price": "7.5", "role": "starter"},
-      {"name": "Wood", "team": "NFO", "price": "7.0", "role": "starter"}
-    ]
-  },
-  "starting_xi": [
-    "Raya",
-    "Van Dijk",
-    "Robertson",
-    "Aina",
-    "M.Salah",
-    "Palmer",
-    "Mbeumo",
+  "strategy": "differential",
+  "generated": "2026-06-04T01:00:00Z",
+  "squad": [
+    "Verbruggen",
+    "Dúbravka",
+    "Truffert",
+    "Senesi",
+    "Thiaw",
+    "O'Reilly",
+    "Virgil",
+    "Anderson",
+    "Gibbs-White",
+    "Szoboszlai",
+    "E.Le Fée",
     "Saka",
-    "Isak",
-    "Mateta",
-    "Wood"
+    "Haaland",
+    "Bowen",
+    "Thiago"
   ],
-  "captain": "M.Salah",
-  "vice": "Mbeumo",
-  "transfers": [],
+  "starting_xi": [
+    "Verbruggen",
+    "Truffert",
+    "Senesi",
+    "Virgil",
+    "Anderson",
+    "Gibbs-White",
+    "Szoboszlai",
+    "E.Le Fée",
+    "Haaland",
+    "Bowen",
+    "Thiago"
+  ],
+  "captain": "Anderson",
+  "vice": "Gibbs-White",
+  "transfers": [
+    "OUT: M.Salah/template premium IN: Anderson (NFO) - low-owned ceiling captain",
+    "OUT: template DEF IN: Truffert + Senesi (BOU double-up, sub-8% owned)"
+  ],
   "chip": "none",
-  "projected_xpts": 70,
-  "key_differential": "Rogers",
-  "strategy_notes": "top10k mirror: template core (Salah 92% top-10k EO, Palmer, Isak, Mbeumo, Saka, VVD/Robertson Liverpool double-up) plus calculated differentials (Mateta 6.8%, Rogers 4.1%, Wood). CAPTAIN SALAH over Haaland: news-desk and fixture-room confirm Man City heavy rotation with Haaland OMITTED from the GW38 squad — captaining him is a rank-disaster trap that the field walks into. Salah is confirmed to start his Liverpool farewell away at relegated Ipswich (FDR 1), leads sim-lab on EV (7.17) and haul prob (0.385), and is the single biggest rank-protection pick at ~52% top-10k captaincy. Haaland excluded from the squad entirely given the confirmed omission; budget redeployed into Isak + a 3-4-3 attack and a Liverpool defensive double-up chasing the Ipswich clean sheet. Gabriel and Munoz benched behind nailed defenders — Gabriel carries a 75% flag plus Arsenal UCL-final rotation, so he is held for template EO but not started. Vice Mbeumo (home FDR 2, pens, zero rotation risk) is the safe armband fallback. No chip: single GW, no DGW, and elevated final-day rotation make Bench Boost / Triple Captain low-EV and high-variance; a clean non-chip game best protects a top-10k rank."
+  "projected_xpts": 79.2,
+  "key_differential": "E.Le Fée (SUN)",
+  "strategy_notes": "DIFFERENTIAL play for the final GW chasing rank gains over safety. Contrarian captain ANDERSON (NFO): tops the overall xPts board at 9.03 (18.06 captained), well above template Haaland (12.80 captained) who carries MCI final-day rotation risk. The field captains Haaland/Salah, so a green Anderson armband is the maximum-leverage swing. Punts under ~8% ownership: E.Le Fée (SUN MID, 7.45 xpts, set-piece upside), Truffert + Senesi (BOU defensive double-up, 8.61 & 8.14 xpts, both contrarian), and Gibbs-White (NFO, 8.35 xpts) as a paired Forest attacking differential alongside Anderson. Nottingham Forest double-stack (Anderson + Gibbs-White) is the core variance bet. Virgil + Szoboszlai give a Liverpool spine for floor. 3-4-3 attacking shape maximises ceiling; bench Dúbravka/Thiaw/O'Reilly are pure cover. No chip available context-wise — pure transfer-driven differential build. Accept high variance: this team boom-or-busts but has the highest realistic upside if Forest deliver at home."
 }
