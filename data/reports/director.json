@@ -1,10 +1,31 @@
 {
   "gw": 38,
-  "you":    { "projected_xpts": 62, "captain": "Haaland" },
-  "gemini": { "projected_xpts": 71, "captain": "Salah", "transfer_in": "Mbeumo", "transfer_out": "Gabriel", "chip": null },
-  "claude": { "projected_xpts": 69, "captain": "Salah", "transfer_in": "Mbeumo", "transfer_out": "Gabriel", "chip": "HOLD" },
-  "consensus": { "captain_agree": true, "transfer_agree": true, "chip_agree": true, "conviction": "HIGH" },
-  "best_plan": "gemini",
-  "verdict": "Gemini และ Claude เห็นตรงกันทั้งกัปตัน (Salah) และทรานสเฟอร์ (IN Mbeumo) ความมั่นใจสูง ทีมจริงของคุณยังตั้ง Haaland อยู่ — ควรย้ายปลอกแขน",
-  "highest_leverage_action": "เปลี่ยนกัปตันเป็น Salah และ IN Mbeumo แทน Gabriel ก่อนเส้นตาย"
+  "you": {
+    "projected_xpts": 57.5,
+    "captain": "Bowen"
+  },
+  "gemini": {
+    "projected_xpts": null,
+    "captain": null,
+    "transfer_in": null,
+    "transfer_out": null,
+    "chip": null,
+    "status": "PARSE_FAILED — no picks, treated as no-show"
+  },
+  "claude": {
+    "projected_xpts": 70.45,
+    "captain": "Anderson",
+    "transfer_in": "Gibbs-White",
+    "transfer_out": "Saka",
+    "chip": "none"
+  },
+  "consensus": {
+    "captain_agree": false,
+    "transfer_agree": false,
+    "chip_agree": false,
+    "conviction": "SPLIT (Gemini no-show); Claude HIGH on captain — Rival independently agrees on Anderson"
+  },
+  "best_plan": "claude",
+  "verdict": "Gemini's report failed to parse, so this is a no-consensus situation on paper. But Claude (the-gaffer) and the-rival INDEPENDENTLY converge on Captain Anderson, giving the captain call effective HIGH conviction. Claude's plan projects 70.45 xPts vs YOU's current 57.5 — a ~13 pt gap driven almost entirely by the armband: your real team captains Bowen (xPts 4.83, near-worst attacker in your XI) while Anderson is the single highest-projected player in the pool (9.03, 18.06 captained). Your current team does NOT match the best plan and needs a move before the final-GW deadline.",
+  "highest_leverage_action": "MOVE THE CAPTAIN: switch armband from Bowen (4.83) to Anderson (9.03). This single change adds ~8.4 captained xPts at zero cost and zero hit — by far the biggest swing available. Secondary: bench Haaland (confirmed out of City's GW38 squad) for a fit replacement; he is currently a dead starter."
 }
