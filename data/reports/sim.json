@@ -1,14 +1,72 @@
 {
   "gw": 38,
   "captain_ranking": [
-    {"player": "M.Salah", "ev_xpts": 7.17, "p_haul": 0.385, "variance": 24.79},
-    {"player": "Haaland", "ev_xpts": 6.98, "p_haul": 0.336, "variance": 22.75},
-    {"player": "Mbeumo", "ev_xpts": 5.82, "p_haul": 0.279, "variance": 18.68},
-    {"player": "Mateta", "ev_xpts": 4.5, "p_haul": 0.144, "variance": 13.05},
-    {"player": "Rogers", "ev_xpts": 4.27, "p_haul": 0.153, "variance": 12.39},
-    {"player": "Gabriel", "ev_xpts": 3.1, "p_haul": 0.069, "variance": 10.39}
+    {
+      "player": "Anderson",
+      "ev_xpts": 21.37,
+      "p_haul": 0.602,
+      "variance": 164.79
+    },
+    {
+      "player": "Gabriel",
+      "ev_xpts": 20.03,
+      "p_haul": 0.556,
+      "variance": 137.2
+    },
+    {
+      "player": "Haaland",
+      "ev_xpts": 14.98,
+      "p_haul": 0.354,
+      "variance": 78.85
+    },
+    {
+      "player": "B.Fernandes",
+      "ev_xpts": 14.05,
+      "p_haul": 0.306,
+      "variance": 72.08
+    },
+    {
+      "player": "Verbruggen",
+      "ev_xpts": 13.37,
+      "p_haul": 0.275,
+      "variance": 64.47
+    },
+    {
+      "player": "Bowen",
+      "ev_xpts": 11.32,
+      "p_haul": 0.187,
+      "variance": 45.78
+    },
+    {
+      "player": "Rice",
+      "ev_xpts": 9.55,
+      "p_haul": 0.116,
+      "variance": 31.66
+    },
+    {
+      "player": "Thiaw",
+      "ev_xpts": 7.43,
+      "p_haul": 0.046,
+      "variance": 19.45
+    },
+    {
+      "player": "Saka",
+      "ev_xpts": 6.24,
+      "p_haul": 0.023,
+      "variance": 13.84
+    },
+    {
+      "player": "Thiago",
+      "ev_xpts": 5.36,
+      "p_haul": 0.013,
+      "variance": 10.32
+    }
   ],
-  "recommend_c": "M.Salah",
-  "recommend_vc": "Haaland",
-  "high_ceiling_differential": "Mbeumo"
+  "recommend_c": "Anderson",
+  "recommend_vc": "Gabriel",
+  "high_ceiling_differential": {
+    "player": "Anderson",
+    "variance": 164.79,
+    "p_haul": 0.602
+  }
 }
