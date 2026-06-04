@@ -1,31 +1,56 @@
 {
   "engine": "claude",
   "gw": 38,
-  "captain": "Bowen",
-  "vice": "B.Fernandes",
+  "captain": "Saka",
+  "vice": "Haaland",
   "transfers": {
-    "out": "Haaland",
-    "in": "João Pedro",
+    "out": null,
+    "in": null,
     "hits": 0,
-    "bank": 7.9
+    "bank": 0.6
   },
   "chip": {
     "name": "none",
     "action": "hold",
-    "reason": "No chips remaining (all 8 used). N/A for GW38."
+    "reason": "All 8 chips already used (WC x2, TC x2, FH x2, BB x2). Nothing available for GW38."
   },
-  "projected_xpts": 21.2,
+  "projected_xpts": 82,
   "starting_xi": [
-    "Verbruggen", "Hill", "Thiaw", "O'Reilly",
-    "B.Fernandes", "Anderson", "Casemiro",
-    "Thiago", "Bowen", "João Pedro", "Canvot"
+    "Verbruggen",
+    "Hill",
+    "Thiaw",
+    "Gabriel",
+    "Saka",
+    "Rice",
+    "B.Fernandes",
+    "Anderson",
+    "Bowen",
+    "Thiago",
+    "Haaland"
   ],
+  "bench": [
+    "Dubravka",
+    "O'Reilly",
+    "Canvot",
+    "Casemiro"
+  ],
+  "transfers_detail": {
+    "in": null,
+    "out": null,
+    "reason": "No free-transfer upgrade beats holding. Bank is only 0.6m; any meaningful target (Gakpo ~46% template hole, Salah) costs far more than 0.6m and forces a sideways sale that does not raise the XI ceiling. GW38 price moves carry zero in-season value. Stand pat."
+  },
+  "chip_recommendation": {
+    "name": null,
+    "action": "none",
+    "reason": "All chips exhausted. None available."
+  },
+  "key_reasoning": "INDEPENDENT CALL — I diverge from Gemini/sim-lab on the armband. sim-lab ranks Haaland top on raw EV (7.17, 36% haul) but the rotation flag is the most severe in the squad: it is Pep's final game with City's position settled, and both fixture-room and intel warn a final-day rest is likely and UNCOVERABLE. A captained Haaland who is rested or hooked early is the worst outcome for a rank-7 manager. I therefore captain SAKA: HOME vs relegated Everton (weighted FDR 2.0, joint-best fixture in the squad), elite G+A ceiling (EV 5.8, haul 19.6%), and lower rotation severity than an end-of-era Pep rest. Haaland is VICE so if Saka is confirmed rested the armband auto-transfers to the highest-ceiling asset in the game — I keep his upside as a backstop, not the headline bet. I REJECT the current Bowen armband (AWAY at Spurs, FDR 3.3, EV 5.26) on fixture and ceiling grounds. Note: squad.json lists every player AVAILABLE with no news, so I do NOT treat Haaland or the Arsenal trio as confirmed-out; they are rotation RISKS to verify on Friday/Saturday team news. XI is the standard Arsenal-heavy build; O'Reilly benched (MCI rotation) and Casemiro benched (MUN dead rubber away at BHA). Projected 82 trims ~3 off Gemini's 85 to price in the safer-but-lower captain ceiling (Saka x2 vs Haaland x2 baseline).",
+  "confidence": "medium",
   "risks": [
-    "Haaland is OUT of Man City's GW38 squad (rested pre-World Cup) — leaving him in the XI = guaranteed 0. Mandatory transfer out.",
-    "Saka, Gabriel, Rice all benched/doubtful via Arsenal UCL-final rotation — must NOT start or captain any of them. Gabriel (current VC) is a poor vice; moved VC to B.Fernandes who is a confirmed starter.",
-    "sim.json and intel.json recommend Haaland (C) / Saka (VC) but are anchored to a STALE Gemini baseline (Haaland captain_xpts=14) that predates the confirmed team news — those picks are unusable. I am overriding them.",
-    "Bowen is the correct captain: confirmed starter, on pens, WHU vs Leeds relegation six-pointer, 5 assists in last 6. Highest reliable EV among confirmed starters (sim EV 5.29, not rotation-risked).",
-    "Bench is thin once Arsenal trio is sidelined; rely on O'Reilly/Canvot/Casemiro auto-subs only as last resort (Casemiro doubtful 50%).",
-    "xpts.json values are all 0 (placeholder) — projected_xpts is derived from sim EVs for confirmed starters, captain doubled."
+    "Captaining Saka over Haaland: if Haaland starts and hauls, ~55% of the field doubles a big score and I single-count — the live downside of the differential armband.",
+    "Saka rotation: ARS title/CL context could see Saka rested too; VC Haaland is the hedge, but both ARS+MCI rotating in the same GW would hurt.",
+    "Bowen left uncaptained: if Bowen returns at Spurs the current armband would have paid off and my switch loses ground.",
+    "Gakpo (~46% owned) not in squad and uncoverable — passive template risk if he hauls.",
+    "Split call vs Gemini/sim-lab (both Haaland C) — Director should flag LOW captaincy consensus; user makes the final call after confirmed team news."
   ]
 }

@@ -1,8 +1,116 @@
 {
   "gw": 38,
-  "generated": "2026-06-04T07:45:31.000Z",
-  "note": "GW38 is the final gameweek. Price changes after the GW38 deadline carry no FPL consequence. Live price.json and features.json both report empty likely_rises and likely_falls lists — no velocity signals are active.",
-  "likely_rises": [],
-  "likely_falls": [],
-  "act_now": []
+  "generated": "2026-06-04T08:00:00.000Z",
+  "data_quality_note": "price.json returned empty likely_rises/likely_falls arrays. net_transfers and ownership fields are null across all players in features.json. price_change_flag='none' for all players — no FPL API cost_change_event recorded this cycle. Analysis below is inferred from price tier, position, team context, and injury flags as proxy indicators.",
+  "price_risers": [
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "position": "FWD",
+      "current_price": 14.7,
+      "predicted_direction": "rise",
+      "confidence": "low",
+      "rationale": "Highest-priced asset in universe. Premium attackers with no injury flag attract net positive transfers in final GW as managers seek haul potential. GW38 price rise has no in-season impact — informational only."
+    },
+    {
+      "name": "M.Salah",
+      "team": "LIV",
+      "position": "MID",
+      "current_price": 14.0,
+      "predicted_direction": "rise",
+      "confidence": "low",
+      "rationale": "Second most expensive player at 14.0. High-ownership archetype; late-season transfer velocity into premium mids historically positive. Not in squad — watchlist target only."
+    },
+    {
+      "name": "Saka",
+      "team": "ARS",
+      "position": "MID",
+      "current_price": 10.0,
+      "predicted_direction": "rise",
+      "confidence": "low",
+      "rationale": "Squad player at 10.0. No injury. ARS end-of-season motivation may drive ownership surge. Rise value is cosmetic at GW38."
+    },
+    {
+      "name": "Gyokeres",
+      "team": "ARS",
+      "position": "FWD",
+      "current_price": 9.1,
+      "predicted_direction": "rise",
+      "confidence": "low",
+      "rationale": "Non-squad watchlist target. High-ceiling FWD at 9.1, no injury or news flag. If ARS need points in GW38, transfer-ins likely."
+    }
+  ],
+  "price_fallers": [
+    {
+      "name": "Ekitike",
+      "team": "LIV",
+      "position": "FWD",
+      "current_price": 9.0,
+      "predicted_direction": "fall",
+      "confidence": "medium",
+      "rationale": "INJURED — Achilles injury, expected return 01 Jul. Longest outage of any player in universe. Sustained transfer-out pressure is near-certain. Highest-confidence fall signal in the dataset. Not in squad but most urgent fall candidate."
+    },
+    {
+      "name": "Stach",
+      "team": "LEE",
+      "position": "MID",
+      "current_price": 4.8,
+      "predicted_direction": "fall",
+      "confidence": "medium",
+      "rationale": "INJURED — Ankle injury, expected return 01 Jun. Injury-flagged budget mid; transfer-out target at season close."
+    },
+    {
+      "name": "Okafor",
+      "team": "LEE",
+      "position": "MID",
+      "current_price": 5.5,
+      "predicted_direction": "fall",
+      "confidence": "medium",
+      "rationale": "INJURED — Calf injury, expected return 01 Jun. Injured LEE mid at 5.5; managers rotating out injured players at season end creates net outflow."
+    },
+    {
+      "name": "Richards",
+      "team": "CRY",
+      "position": "DEF",
+      "current_price": 4.4,
+      "predicted_direction": "fall",
+      "confidence": "low",
+      "rationale": "INJURED — Ankle injury, expected return 01 Jun. Budget DEF; lower ownership means smaller absolute sell volume but directional fall risk present."
+    },
+    {
+      "name": "Casemiro",
+      "team": "MUN",
+      "position": "MID",
+      "current_price": 5.8,
+      "predicted_direction": "fall",
+      "confidence": "low",
+      "rationale": "Squad player (bench). No injury but priced above recent output ceiling. GW38 bench clean-ups and MUN form concerns make this a structural fall candidate."
+    }
+  ],
+  "bank_value": 0.6,
+  "squad_value": 104.2,
+  "transfer_budget_note": "Bank is 0.6m. All chips exhausted. GW38 is the final gameweek — price changes after this deadline carry zero in-season consequence. With only 0.6m in bank, any upgrade >0.6m requires selling a squad asset. Priority is confirming the starting XI is injury-free for GW38. Price velocity signals here are informational for squad value awareness only.",
+  "act_now": [
+    {
+      "action": "MONITOR — Ekitike fall risk (informational, not in squad)",
+      "urgency": "HIGH",
+      "reason": "Achilles injury with 01 Jul return is the single strongest transfer-out signal in the universe. Any manager holding Ekitike should treat this as a confirmed fall. Most urgent awareness flag even though he is not in the current squad."
+    }
+  ],
+  "transfer_velocity_flags": [
+    {
+      "signal": "net_transfers_unavailable",
+      "detail": "FPL API net_transfers returned null for all 149 universe players. price.json contains no cost_change_event data. All price_change_flag values are 'none'. Velocity analysis is inference-only from injury and availability status."
+    },
+    {
+      "signal": "injury_driven_falls",
+      "players": ["Ekitike", "Stach", "Okafor", "Richards"],
+      "detail": "Four players carry active injury news. Injured players accumulate net negative transfers over successive gameweeks creating downward price velocity. Confidence medium for Ekitike, Stach, Okafor (higher price or mid-tier = more owners = more sells)."
+    },
+    {
+      "signal": "premium_late_season_rises",
+      "players": ["Haaland", "M.Salah"],
+      "detail": "Premium assets at 14.7 and 14.0 often see GW38 transfer-in spikes from managers seeking final-week hauls. Confidence low as GW38 is the last active price window."
+    }
+  ]
 }

@@ -1,128 +1,162 @@
 {
   "gw": 38,
-  "generated": "2026-06-03T00:00:00Z",
-  "unavailable": [
+  "generated": "2026-06-04T00:00:00.000Z",
+  "availability_matrix": [
     {
-      "name": "Son Heung-min",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Foot",
-      "return": "Post-season",
-      "source": "Ange Postecoglou press conference — confirmed miss for GW38"
+      "player": "Verbruggen",
+      "team": "BHA",
+      "position": "GK",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns. FPL status clean. Starting GK for Brighton.",
+      "source": "data/cache/news.json + features.json"
     },
     {
-      "name": "Cristian Romero",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Toe (persistent)",
-      "return": "Post-season",
-      "source": "Ange Postecoglou press conference — confirmed miss for GW38"
-    },
-    {
-      "name": "Dejan Kulusevski",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Knee",
-      "return": "Post-season",
-      "source": "Spurs injury list GW38"
-    },
-    {
-      "name": "James Maddison",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Knee",
-      "return": "Post-season",
-      "source": "Spurs injury list GW38"
-    },
-    {
-      "name": "Lucas Bergvall",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Ankle",
-      "return": "Post-season",
-      "source": "Spurs injury list GW38"
-    },
-    {
-      "name": "Radu Dragusin",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Knee",
-      "return": "Post-season",
-      "source": "Spurs injury list GW38"
-    },
-    {
-      "name": "Timo Werner",
-      "team": "TOT",
-      "status": "injured",
-      "issue": "Hamstring",
-      "return": "Post-season",
-      "source": "Spurs injury list GW38"
-    },
-    {
-      "name": "Joachim Andersen",
-      "team": "CRY",
-      "status": "suspended",
-      "issue": "3-match ban (served from GW36)",
-      "return": "Post-season — ban carries into next campaign",
-      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
-    },
-    {
-      "name": "Ryan Christie",
+      "player": "Hill",
       "team": "BOU",
-      "status": "suspended",
-      "issue": "3-match ban",
-      "return": "Post-season",
-      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
+      "position": "DEF",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns reported. Nailed starter for Bournemouth.",
+      "source": "data/cache/news.json + features.json"
     },
     {
-      "name": "Dan Ballard",
-      "team": "SOU",
-      "status": "suspended",
-      "issue": "Red card violent conduct GW35",
-      "return": "Post-season",
-      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
+      "player": "Thiaw",
+      "team": "NEW",
+      "position": "DEF",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns. Confirmed World Cup 2026 selection indicates full fitness.",
+      "source": "data/cache/news.json + web (Sky Sports World Cup list)"
     },
     {
-      "name": "Mykhailo Mudryk",
-      "team": "CHE",
-      "status": "suspended",
-      "issue": "4-year doping ban (under appeal) — absent since November 2024",
-      "return": "Indefinite pending appeal outcome",
-      "source": "Fantasy Football Scout suspension tracker GW38 2024-25"
-    }
-  ],
-  "doubtful": [
-    {
-      "name": "Gabriel",
+      "player": "Gabriel",
       "team": "ARS",
-      "status": "doubtful",
-      "chance_pct": 75,
-      "issue": "FPL flag 'd', chance_next 75 — unspecified knock",
-      "note": "Arsenal have UCL final the week after GW38. Arteta confirmed cautious team selection for this dead-rubber; rotation risk compounds the injury flag. Monitor pre-GW38 press conference.",
-      "source": "FPL bootstrap data + Fantasy Football Scout GW38 team news"
+      "position": "DEF",
+      "status": "available",
+      "chance_of_playing": 90,
+      "news_snippet": "No injury flag. Arsenal managing squad ahead of Champions League final vs PSG; Arteta rotation risk is real but Gabriel likely starts. Monitor pre-match presser.",
+      "source": "data/cache/news.json + web (Arsenal.com / tribuna.com GW38 training reports)"
     },
     {
-      "name": "Yves Bissouma",
-      "team": "TOT",
-      "status": "doubtful",
-      "chance_pct": 50,
-      "issue": "Knock sustained in previous match",
-      "note": "Postecoglou confirmed 50/50 late call ahead of GW38",
-      "source": "Ange Postecoglou press conference GW38"
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "position": "MID",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns. Record 21 PL assists in 2025/26. Carrick confirmed no new issues ahead of GW38 at Brighton.",
+      "source": "data/cache/features.json + web (caughtoffside.com / fantasyfootballscout.co.uk)"
+    },
+    {
+      "player": "Rice",
+      "team": "ARS",
+      "position": "MID",
+      "status": "available",
+      "chance_of_playing": 90,
+      "news_snippet": "No injury concerns for GW38. Arsenal UCL final rotation risk applies across squad but Rice expected to start.",
+      "source": "data/cache/news.json + web (Arsenal.com GW38 training)"
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "position": "MID",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns reported. FPL status clean. Nailed Nottingham Forest starter.",
+      "source": "data/cache/news.json + features.json"
+    },
+    {
+      "player": "Saka",
+      "team": "ARS",
+      "position": "MID",
+      "status": "doubt",
+      "chance_of_playing": 60,
+      "news_snippet": "Working individually in training on May 21. Arsenal managing key assets ahead of Champions League final vs PSG. Arteta may rest Saka entirely for GW38 vs Crystal Palace. HIGH rotation risk — treat as doubt.",
+      "source": "web (readarsenal.com / tribuna.com / 3addedminutes.com - May 21-22 2026)"
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "position": "FWD",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns. Brentford's top scorer with 25 goals across all competitions in 2025/26. FPL status clean.",
+      "source": "data/cache/news.json + web (premierinjuries.com / brentfordfc.com)"
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "position": "FWD",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns. Multiple FPL sources recommend as GW38 captain option. Nailed starter vs Leeds at home. Squad captain in this team.",
+      "source": "web (premierleague.com GW37 lessons / rotowire.com GW38)"
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "position": "FWD",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No current injury concerns. Fully recovered from March knee scare; Guardiola confirmed training at 100%. 22 PL goals this season.",
+      "source": "web (goal.com / nbcsports.com Guardiola press conference)"
+    },
+    {
+      "player": "Dubravka",
+      "team": "BUR",
+      "position": "GK",
+      "status": "doubt",
+      "chance_of_playing": 75,
+      "news_snippet": "Was benched for the first time this season in a recent fixture. Starting place no longer guaranteed at Burnley. Monitor team news before deadline.",
+      "source": "web (fantasyfootballscout.co.uk FPL notes on Dubravka)"
+    },
+    {
+      "player": "O'Reilly",
+      "team": "MCI",
+      "position": "DEF",
+      "status": "available",
+      "chance_of_playing": 85,
+      "news_snippet": "Recovered from hamstring niggle (picked up vs Chelsea in GW33). Guardiola confirmed 'fine'. No new GW38 concerns. Man City bench player — starting role not guaranteed.",
+      "source": "web (fourfourtwo.com / eplindex.com GW33 injury update)"
+    },
+    {
+      "player": "Canvot",
+      "team": "CRY",
+      "position": "DEF",
+      "status": "available",
+      "chance_of_playing": 100,
+      "news_snippet": "No injury concerns reported. FPL status clean. Crystal Palace hosting Arsenal in GW38.",
+      "source": "data/cache/features.json"
+    },
+    {
+      "player": "Casemiro",
+      "team": "MUN",
+      "position": "MID",
+      "status": "out",
+      "chance_of_playing": 0,
+      "news_snippet": "CONFIRMED OUT. Manager Michael Carrick publicly confirmed Casemiro will NOT feature in GW38 at Brighton — his last Man United game was the 3-2 win vs Nottingham Forest. Leaving club June 30, 2026.",
+      "source": "web (beinsports.com / foxsports.com - Carrick press conference May 22 2026)"
     }
   ],
-  "fit_and_available": [
-    "Haaland (MCI, FWD) — FPL status 'a', 100% chance",
-    "M.Salah (LIV, MID) — FPL status 'a', 100% chance",
-    "Mbeumo (BRE, MID) — FPL status 'a', 100% chance",
-    "Mateta (CRY, FWD) — FPL status 'a', 100% chance",
-    "Rogers (AVL, MID) — FPL status 'a', 100% chance"
+  "confirmed_out": [
+    "Casemiro"
   ],
-  "notes": [
-    "GW38 is the final gameweek of the 2024-25 PL season — rotation risk is elevated across all clubs fighting for nothing or protecting European-final legs.",
-    "Tottenham are the worst-affected squad: Son, Romero, Kulusevski, Maddison, Bergvall, Dragusin, and Werner all confirmed out.",
-    "No suspensions expire entering GW38 — no returning ban assets this gameweek.",
-    "features.json is currently a SAMPLE file with only 6 tracked players. A full squad matrix requires running scripts/fpl_fetch.py against the live FPL API. The 6 featured players have been fully assessed; broader league injury intelligence is drawn from press conferences and FFS reporting.",
-    "Arsenal rotation alert: even fully-fit players (Saka, Odegaard, Gabriel) are plausible rests ahead of their UCL final. Treat all Arsenal FPL assets with caution unless Arteta confirms starts."
+  "doubts": [
+    "Saka",
+    "Dubravka"
+  ],
+  "all_clear": [
+    "Verbruggen",
+    "Hill",
+    "Thiaw",
+    "Gabriel",
+    "B.Fernandes",
+    "Rice",
+    "Anderson",
+    "Thiago",
+    "Bowen",
+    "Haaland",
+    "O'Reilly",
+    "Canvot"
   ]
 }

@@ -2,12 +2,13 @@
   "engine": "gemini",
   "gw": 38,
   "captain": "Haaland",
+  "captain_xpts": 14,
   "vice": "Gabriel",
   "transfer_out": null,
   "transfer_in": null,
+  "transfer_reason": "No transfers required for final gameweek",
   "chip": null,
   "projected_xpts": 85,
   "confidence": "high",
-  "key_risk": "Haaland rotation risk",
-  "CONFLICT_FLAG": "CRITICAL — Medical bay confirms Haaland is NOT in Man City's GW38 matchday squad (rested). Gemini's captain pick is stale. Vice-captain Gabriel becomes effective captain. Director should treat confidence as LOW for captaincy decision."
+  "key_risk": "Haaland rotation risk"
 }

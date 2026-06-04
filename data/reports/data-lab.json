@@ -1,0 +1,114 @@
+{
+  "agent": "data-lab",
+  "generated": "2026-06-04T07:45:00.000Z",
+  "gw": 38,
+  "squad": {
+    "loaded": true,
+    "player_count": 15,
+    "starting_xi": 11,
+    "bench": 4,
+    "captain": "Bowen",
+    "vice_captain": "Gabriel",
+    "bank": 0.6,
+    "squad_value": 104.2,
+    "team_name": "Puwakies Jjimyang",
+    "manager": "Puwakorn Amart",
+    "overall_rank": 1336486,
+    "total_points": 2163
+  },
+  "chips": {
+    "chips_used": [
+      "WC@GW3",
+      "TC@GW6",
+      "FH@GW10",
+      "BB@GW18",
+      "WC@GW20",
+      "TC@GW26",
+      "BB@GW33",
+      "FH@GW34"
+    ],
+    "chips_left": [],
+    "all_chips_used": true
+  },
+  "xpts": {
+    "universe_count": 149,
+    "all_zero_warning": false,
+    "nonzero_players": [
+      {
+        "name": "Sels",
+        "team": "NFO",
+        "xpts": 1
+      }
+    ],
+    "note": "All squad players show xpts=0 except Sels (not in squad). xpts field trusted as-is from cache."
+  },
+  "league": {
+    "total_managers": 15,
+    "my_rank": 7,
+    "leader": "Krisss. (2365pts)",
+    "template": "Haaland, B.Fernandes, Gabriel",
+    "top_differentials": "Rogers(6.7%), Watkins(6.7%), Enzo(6.7%), Bruno G.(6.7%), J.Timber(6.7%)",
+    "gw_context": 37
+  },
+  "news": {
+    "total_injury_flags": 40,
+    "squad_players_flagged": []
+  },
+  "price": {
+    "likely_rises": [],
+    "likely_falls": [],
+    "note": "No price change signals in cache"
+  },
+  "gemini": {
+    "captain": "Haaland",
+    "captain_xpts": 14,
+    "vice_captain": "Gabriel",
+    "projected_xpts": 85,
+    "transfer_out": null,
+    "transfer_in": null,
+    "transfer_reason": "No transfers required for final gameweek",
+    "chip": null,
+    "confidence": "high",
+    "key_risk": "Haaland rotation risk"
+  },
+  "files": {
+    "squad.json": {
+      "updated": "2026-06-04T07:45:26.171Z",
+      "rows": 15,
+      "status": "ok"
+    },
+    "xpts.json": {
+      "updated": "2026-06-04T07:45:27.236Z",
+      "rows": 149,
+      "status": "ok"
+    },
+    "league.json": {
+      "updated": "2026-06-04T07:45:28.129Z",
+      "rows": 0,
+      "status": "ok"
+    },
+    "news.json": {
+      "updated": "2026-06-04T07:45:28.969Z",
+      "rows": 40,
+      "status": "ok"
+    },
+    "price.json": {
+      "updated": "2026-06-04T07:45:30.165Z",
+      "rows": 0,
+      "status": "ok"
+    },
+    "gemini.json": {
+      "updated": "2026-06-04T07:45:31.050Z",
+      "rows": 0,
+      "status": "ok"
+    }
+  },
+  "missing_files": [],
+  "warnings": [
+    "xpts.json: ALL squad players show xpts=0 \u2014 only Sels (NFO GK, not in squad) has xpts=1. This may indicate the xPts computation produced zeroes for GW38. Downstream agents should treat all squad xpts as 0 unless this is intentional.",
+    "league.json: differentials[] and template[] arrays are empty \u2014 context block has data but structured arrays not populated.",
+    "price.json: both likely_rises and likely_falls are empty \u2014 no price change signals for GW38.",
+    "All chips used. chips_left=[]. No chip available for GW38."
+  ],
+  "features_written": "/home/user/apex-fpl-hq/data/features.json"
+}
