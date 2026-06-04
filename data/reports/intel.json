@@ -1,38 +1,21 @@
 {
   "gw": 38,
-  "generated": "2026-06-03T00:00:00Z",
-  "template_players": [
-    {"name": "M.Salah", "team": "LIV", "position": "MID", "ownership_pct": 48.9, "top10k_ownership_pct": 92.0, "verdict": "must_have"},
-    {"name": "Haaland", "team": "MCI", "position": "FWD", "ownership_pct": 61.4, "top10k_ownership_pct": 78.0, "verdict": "must_have"},
-    {"name": "Palmer", "team": "CHE", "position": "MID", "ownership_pct": 54.0, "top10k_ownership_pct": 60.0, "verdict": "template"},
-    {"name": "Isak", "team": "NEW", "position": "FWD", "ownership_pct": 28.0, "top10k_ownership_pct": 55.0, "verdict": "template"},
-    {"name": "Mbeumo", "team": "BRE", "position": "MID", "ownership_pct": 14.2, "top10k_ownership_pct": 42.0, "verdict": "template"},
-    {"name": "Saka", "team": "ARS", "position": "MID", "ownership_pct": 24.0, "top10k_ownership_pct": 40.0, "verdict": "optional"},
-    {"name": "Gabriel", "team": "ARS", "position": "DEF", "ownership_pct": 33.1, "top10k_ownership_pct": 38.0, "verdict": "optional"},
-    {"name": "Robertson", "team": "LIV", "position": "DEF", "ownership_pct": 12.0, "top10k_ownership_pct": 30.0, "verdict": "optional"},
-    {"name": "Mateta", "team": "CRY", "position": "FWD", "ownership_pct": 6.8, "top10k_ownership_pct": 18.0, "verdict": "optional"},
-    {"name": "Gabriel Jesus", "team": "ARS", "position": "FWD", "ownership_pct": 8.0, "top10k_ownership_pct": 15.0, "verdict": "optional"}
+  "generated": "2026-06-04",
+  "method": "EO estimated from overall ownership base + GW38 captaincy share (Haaland 35%, Bruno 26% per web). League is 15-man; 6.7% = exactly 1 rival owner. User owns all 3 league template players.",
+  "template_core": [
+    {"player": "Haaland", "eo_est": 90, "note": "MCI home vs Villa; top captain pick (35% C-share). EO inflated by armband. User owns and starts - protected."},
+    {"player": "B.Fernandes", "eo_est": 85, "note": "2nd captain pick (26% C-share), 31 GI this season. User owns and starts - protected."},
+    {"player": "Gabriel", "eo_est": 74, "note": "League template DEF, ~8ppg last 4, ARS. User owns and has as VC - protected."}
   ],
   "differentials": [
-    {"name": "Rogers", "team": "AVL", "position": "MID", "ownership_pct": 4.1, "potential_upside": "high", "reasoning": "Home fixture (FDR 2), set-piece role and rising net transfers; sub-5% EO gives big rank swing on a haul."},
-    {"name": "Mateta", "team": "CRY", "position": "FWD", "ownership_pct": 6.8, "potential_upside": "high", "reasoning": "Strong xGI/90 (0.55) and goal form; low top-10k EO makes him a clean differential striker."},
-    {"name": "Mbeumo", "team": "BRE", "position": "MID", "ownership_pct": 14.2, "potential_upside": "high", "reasoning": "Pens/set-pieces, home FDR 2; overall ownership lags top-10k EO, gap to exploit vs casual managers."},
-    {"name": "Gabriel Jesus", "team": "ARS", "position": "FWD", "ownership_pct": 8.0, "potential_upside": "medium", "reasoning": "Sub-8% EO Arsenal attacker at home; minutes risk caps but ceiling on a start is high."},
-    {"name": "Robertson", "team": "LIV", "position": "DEF", "ownership_pct": 12.0, "potential_upside": "medium", "reasoning": "Attacking returns plus clean-sheet upside; lower-owned than Liverpool defensive template picks."}
+    {"player": "Anderson", "eo_est": 6, "why": "Highest squad xPts (9.03), NFO MID, near-zero league ownership. User already owns - genuine low-EO ceiling and the best armband alternative (18.06 cap xpts)."},
+    {"player": "Rogers", "eo_est": 7, "why": "6.7% league EO (1 of 15 rivals), Villa attacker - sub-8% ceiling differential if chasing rank."},
+    {"player": "Bruno G.", "eo_est": 7, "why": "6.7% league EO, Newcastle MID, high ceiling; not owned by user - acquisition target only."},
+    {"player": "J.Timber", "eo_est": 7, "why": "6.7% league EO, ARS DEF with attacking + clean-sheet upside; not owned by user."}
   ],
-  "captain_ownership": [
-    {"name": "M.Salah", "captain_pct": 52.0},
-    {"name": "Haaland", "captain_pct": 30.0},
-    {"name": "Palmer", "captain_pct": 6.0},
-    {"name": "Isak", "captain_pct": 5.0},
-    {"name": "Mbeumo", "captain_pct": 2.0}
-  ],
-  "notes": [
-    "EO = ownership + captaincy share. Salah is the GW38 template anchor: ~92% top-10k ownership and ~52% captaincy puts his effective ownership well above 130% in the top 10k.",
-    "Not owning Salah is the single biggest rank risk; not captaining him is the second biggest.",
-    "Haaland is the only viable captain pivot vs the field (~30% C share).",
-    "Gabriel flagged (status 'd', 75% chance) — verify fitness before relying on his template DEF spot.",
-    "Differential value is muted in a single GW with no DGW; ceiling plays only swing rank if Salah/Haaland blank.",
-    "top10k figures are estimates blended from features.json selected_by_pct and known GW38 2024-25 elite patterns; refresh with live EO if network available."
+  "rank_risks": [
+    {"player": "Haaland", "eo_est": 90, "risk": "Highest EO in pool. Not captaining vs the field is the single biggest rank threat. User owns/starts but captained Bowen instead - correctable."},
+    {"player": "Captain choice (Bowen)", "eo_est": null, "risk": "User captained Bowen (9.66 cap xpts) while field captains Haaland/Bruno (12-18 cap xpts). Negative effective-captain EO swing - biggest correctable rank risk this GW."},
+    {"player": "B.Fernandes", "eo_est": 85, "risk": "High EO via captaincy; user owns/starts so spot is safe, only the armband decision is the leak."}
   ]
 }
