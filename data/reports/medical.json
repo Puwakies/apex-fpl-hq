@@ -1,0 +1,147 @@
+{
+  "gw": 38,
+  "generated": "2026-06-04T00:00:00.000Z",
+  "matrix": [
+    {
+      "player": "Verbruggen",
+      "team": "BHA",
+      "pos": "GK",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json; no injury reports found"
+    },
+    {
+      "player": "Hill",
+      "team": "BOU",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json; xpts null likely reflects data gap not injury"
+    },
+    {
+      "player": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json"
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "status": "doubt",
+      "chance_pct": 60,
+      "expected_return_gw": 38,
+      "note": "Arsenal rotating key players ahead of Champions League final. Gabriel (VC) and Saka both rotation risks. Arteta confirmed managing minutes.",
+      "source": "https://www.fantasyfootballscout.co.uk/2026/05/20/fpl-gameweek-38-early-scout-picks-x"
+    },
+    {
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "Played 90 mins vs Brighton (May 24). No injury flag. Contract talks ongoing but plays until season end. https://www.caughtoffside.com/2026/06/03/man-united-bruno-fernandes-contract-talks-ratcliffe-transfers/"
+    },
+    {
+      "player": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 85,
+      "expected_return_gw": 38,
+      "note": "Arsenal rotation risk but Rice less likely to be rested than Saka/Saliba. Mild concern given CL final prep.",
+      "source": "https://www.fantasyfootballscout.co.uk/2026/05/20/fpl-gameweek-38-early-scout-picks-x"
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json. Top xpts in squad (9.03)."
+    },
+    {
+      "player": "Saka",
+      "team": "ARS",
+      "pos": "MID",
+      "status": "doubt",
+      "chance_pct": 40,
+      "expected_return_gw": null,
+      "note": "SIGNIFICANT ROTATION RISK. Arsenal resting players ahead of CL final. Saka worked individually in training Thursday GW37. Multiple sources expect him benched or absent for GW38. xpts only 2.63 already flagged concern.",
+      "source": "https://www.youtube.com/watch?v=L7qgcpKh7t0 | https://www.fantasyfootballscout.co.uk/2026/05/14/saka-saliba-calafiori-arsenal-injury-latest-for-fpl-gameweek-37"
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json"
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json. User captain pick."
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "status": "doubt",
+      "chance_pct": 70,
+      "expected_return_gw": 38,
+      "note": "Missed GW37 vs Crystal Palace (fitness concern, replaced by Marmoush). Included in PL Scout Selection for GW38 vs Aston Villa. Monitoring required — fitness not fully confirmed.",
+      "source": "https://www.si.com/soccer/why-erling-haaland-isnt-starting-for-man-city-vs-crystal-palace-5-13-26 | https://www.premierleague.com/en/news/4663826/scout-selection-best-fantasy-team-for-gameweek-38"
+    },
+    {
+      "player": "Dúbravka",
+      "team": "MUN",
+      "pos": "GK",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json"
+    },
+    {
+      "player": "O'Reilly",
+      "team": "MCI",
+      "pos": "MID",
+      "status": "doubt",
+      "chance_pct": 65,
+      "expected_return_gw": 38,
+      "note": "Not in City squad vs Crystal Palace GW37 alongside Rodri. Named PL Young Player of the Season but fitness for GW38 uncertain.",
+      "source": "https://onefootball.com/en/news/pep-provides-haaland-and-oreilly-fitness-update-42497464"
+    },
+    {
+      "player": "Canvot",
+      "team": "CRY",
+      "pos": "DEF",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": 38,
+      "source": "No flag in FPL or news.json; xpts null likely reflects data gap"
+    },
+    {
+      "player": "Casemiro",
+      "team": "MUN",
+      "pos": "MID",
+      "status": "fit",
+      "chance_pct": 80,
+      "expected_return_gw": 38,
+      "note": "Had minor issue vs Sunderland but returned to training. Confirmed leaving Man United on free at end of June. Final season appearance imminent but rotation possible. xpts only 0.22 — negligible fantasy value regardless.",
+      "source": "https://www.fantasyfootballscout.co.uk/2026/05/22/casemiro-sesko-de-ligt-man-united-injury-latest-for-fpl-gameweek-38 | https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/casemiro-confirms-final-man-united-decision-amid-suggestions-of-contract-u-turn_597060.html"
+    }
+  ]
+}

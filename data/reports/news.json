@@ -1,0 +1,90 @@
+{
+  "gw": 38,
+  "generated": "2026-06-04T00:00:00.000Z",
+  "items": [
+    {
+      "player": "Saka",
+      "team": "ARS",
+      "signal": "benched",
+      "note": "Confirmed benched vs Crystal Palace. Arsenal made wholesale changes ahead of Champions League final vs PSG. Youngsters Salmon and Dowman given starts. Saka worked individually Thu and was rested.",
+      "source": "https://sports.yahoo.com/articles/arsenal-xi-v-crystal-palace-100000905.html"
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "signal": "benched",
+      "note": "Left out of Man City matchday squad entirely for final day vs Aston Villa. Guardiola made 9 changes in his farewell game. Haaland joining Norway World Cup squad was a factor. Despite this, secured Golden Boot (27 goals).",
+      "source": "https://www.goal.com/en/lists/explained-why-erling-haaland-was-left-out-of-man-city-s-final-day-clash-with-aston-villa-as-pep-guardiola-bids-farewell/blt4f2d7301edab04f0"
+    },
+    {
+      "player": "Rice",
+      "team": "ARS",
+      "signal": "rotation_risk",
+      "note": "Arsenal rotated heavily vs Crystal Palace ahead of CL final. Rice status unclear for GW38 — confirmed starter in CL final lineup but GW38 start not confirmed. High rotation risk given wholesale Arsenal changes.",
+      "source": "https://www.si.com/soccer/psg-vs-arsenal-confirmed-lineups-champions-league-final-5-30-26"
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "signal": "starts",
+      "note": "Expected to lead Arsenal backline vs Crystal Palace despite rotation. Started Champions League final. Arteta noted Gabriel as penalty taker in CL final — key player trusted to feature GW38.",
+      "source": "https://lastwordonsports.com/football/2026/05/24/crystal-palace-vs-arsenal/"
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "signal": "starts",
+      "note": "Nailed on starter. West Ham needed a result to avoid relegation. Bowen on penalties, plays 90 minutes. No rotation risk — survival stakes guarantee full commitment.",
+      "source": "https://www.fantasyfootballscout.co.uk/2026/05/22/fpl-gameweek-38-scout-picks-x"
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "signal": "starts",
+      "note": "Top xPts player in squad (9.03). No injury flag. Nottingham Forest had nothing to rest for — no European final. Anderson expected to start. Transfer speculation (Man City bid rejected) does not affect GW38 availability.",
+      "source": "https://www.caughtoffside.com/2026/06/03/man-city-elliot-anderson-bid-nottingham-forest-reject/"
+    },
+    {
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "signal": "starts",
+      "note": "Confirmed starter vs Brighton GW38. Scored in the match, broke a record. Man Utd won 3-0. Full 90 minutes expected.",
+      "source": "https://www.si.com/soccer/man-utd-player-ratings-vs-brighton-fernandes-breaks-record-dazzling-red-devils-display"
+    },
+    {
+      "player": "Verbruggen",
+      "team": "BHA",
+      "signal": "starts",
+      "note": "Confirmed starter in goal for Brighton vs Man Utd. Made smart stops though Brighton lost 0-3.",
+      "source": "https://www.espn.com/soccer/report/_/gameId/740966"
+    },
+    {
+      "player": "O'Reilly",
+      "team": "MCI",
+      "signal": "rotation_risk",
+      "note": "Man City made 9 changes for Guardiola farewell. O'Reilly's starting status uncertain. Squad heavily rotated across the board.",
+      "source": "https://www.goal.com/en/lists/explained-why-erling-haaland-was-left-out-of-man-city-s-final-day-clash-with-aston-villa-as-pep-guardiola-bids-farewell/blt4f2d7301edab04f0"
+    },
+    {
+      "player": "Thiaw",
+      "team": "NEW",
+      "signal": "starts",
+      "note": "No injury flag for Thiaw. Schaar (ankle) and Livramento (thigh) both out, meaning Thiaw's place in the backline is more secure, not less.",
+      "source": "data/cache/news.json"
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "signal": "unknown",
+      "note": "No injury flag in squad. Brentford had no major stakes — mid-table finish secured. Low rotation risk but no confirmed lineup data sourced. xPts only 2.28.",
+      "source": "data/cache/news.json"
+    },
+    {
+      "player": "Hill",
+      "team": "BOU",
+      "signal": "unknown",
+      "note": "xPts null — no data calculated. Bournemouth unbeaten in 17 games, playing at full strength in GW38 with European qualification implications. Christie suspended. Hill's status not confirmed.",
+      "source": "https://www.premierleague.com/en/news/4664153/predicted-line-ups-for-premier-league-teams-in-matchweek-38"
+    }
+  ]
+}
