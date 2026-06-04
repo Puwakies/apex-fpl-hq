@@ -1,7 +1,15 @@
 {
-  "updated": "2026-06-04T00:45:01.919Z",
+  "updated": "2026-06-04T01:50:10.452Z",
   "engine": "gemini",
   "gw": 38,
-  "error": "parse_failed",
-  "raw": ""
+  "captain": "Haaland",
+  "captain_xpts": 0,
+  "vice_captain": "B.Fernandes",
+  "transfer_out": null,
+  "transfer_in": null,
+  "transfer_reason": "No squad data provided to evaluate transfers",
+  "chip": null,
+  "projected_xpts": 0,
+  "confidence": "low",
+  "key_risk": "Insufficient squad data for accurate analysis"
 }
