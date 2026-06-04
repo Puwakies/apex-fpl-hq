@@ -1,0 +1,22 @@
+{
+  "gw": 38,
+  "note": "GW38 is the final gameweek of the 2025/26 season. No multi-GW fixture window exists beyond this point. Fixture run rankings are derived from GW38 FDR values only (single gameweek). Home/away weighting cannot be applied as per-fixture home/away data is not present in cache; raw FDR is used as proxy.",
+  "best_runs": [
+    { "team": "BUR", "fdr_avg": 1.0, "window": "GW38 only", "note": "FDR 1 — easiest fixture in the gameweek" },
+    { "team": "WHU", "fdr_avg": 2.0, "window": "GW38 only", "note": "FDR 2 — second easiest; Bowen and Mavropanos assets benefit" },
+    { "team": "ARS", "fdr_avg": 3.0, "window": "GW38 only", "note": "FDR 3 — mid-range; Gabriel, Rice, Saka all playable" },
+    { "team": "NFO", "fdr_avg": 3.0, "window": "GW38 only", "note": "FDR 3 — Anderson, Gibbs-White highest xPts in the pool" },
+    { "team": "BOU", "fdr_avg": 3.0, "window": "GW38 only", "note": "FDR 3 — Truffert and Senesi strong DEF options" },
+    { "team": "LIV", "fdr_avg": 3.0, "window": "GW38 only", "note": "FDR 3 — Virgil, Szoboszlai, Gakpo viable" },
+    { "team": "SUN", "fdr_avg": 3.0, "window": "GW38 only", "note": "FDR 3 — E.Le Fée top-10 xPts overall" }
+  ],
+  "worst_runs": [
+    { "team": "AVL", "fdr_avg": 5.0, "window": "GW38 only", "note": "FDR 5 — hardest fixture; Watkins, Rogers, Martinez, Cash all face a very tough match" },
+    { "team": "MUN", "fdr_avg": 4.0, "window": "GW38 only", "note": "FDR 4 — B.Fernandes, Casemiro, Mbeumo, Cunha, Dalot, Sesko all in a difficult fixture" },
+    { "team": "BRE", "fdr_avg": 4.0, "window": "GW38 only", "note": "FDR 4 — Thiago, Kelleher, Lewis-Potter, Collins, Kayode all face tough opposition" },
+    { "team": "CRY", "fdr_avg": 4.0, "window": "GW38 only", "note": "FDR 4 — Canvot (squad player), Muñoz, Lacroix, Mitchell, Richards, Mateta all in hard game" }
+  ],
+  "dgw_alerts": [],
+  "bgw_alerts": [],
+  "data_quality_note": "No DGW/BGW flags detected in cache data. GW38 is the season finale — all teams play exactly one match. No blank or double gameweeks apply. Multi-GW fixture run analysis (next-5 window) is not applicable as no future gameweeks exist in the dataset."
+}
