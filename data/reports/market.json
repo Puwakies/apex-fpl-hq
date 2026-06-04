@@ -1,0 +1,9 @@
+{
+  "gw": 38,
+  "note": "GW38 is the final gameweek. Price changes have no strategic impact — no transfer can be made after the season ends. Net transfer and cost_change_event data not present in cache (empty arrays in price.json and features.json). No actionable price velocity signals available.",
+  "likely_rises": [],
+  "likely_falls": [],
+  "act_now": [],
+  "data_quality": "price_data_empty",
+  "generated": "2026-06-04T00:00:00.000Z"
+}
