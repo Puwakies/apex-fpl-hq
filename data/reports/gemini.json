@@ -1,0 +1,14 @@
+{
+  "engine": "gemini",
+  "gw": 38,
+  "captain": null,
+  "vice": null,
+  "transfer_out": null,
+  "transfer_in": null,
+  "chip": null,
+  "projected_xpts": null,
+  "confidence": null,
+  "key_risk": null,
+  "parse_failed": true,
+  "error": "Gemini cache returned parse_failed with empty raw payload. No picks available for GW38."
+}
