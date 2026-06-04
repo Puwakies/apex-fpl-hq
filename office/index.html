@@ -73,7 +73,13 @@
   .director .sign{background:var(--dir)}
   .director h2{font-family:'Press Start 2P';font-size:11px;color:var(--dir);text-shadow:2px 2px 0 #000}
   .scoreboard{display:grid;grid-template-columns:1fr auto 1fr;gap:11px}
-  @media(max-width:640px){.scoreboard{grid-template-columns:1fr}}
+  .scoreboard3{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+  @media(max-width:640px){.scoreboard{grid-template-columns:1fr}.scoreboard3{grid-template-columns:1fr}}
+  .side.gem{border-color:#8b5cf6} .side.cla{border-color:var(--dir)}
+  .side.gem .who{color:#a78bfa} .side.cla .who{color:var(--dir)}
+  .consensus{margin-top:12px;background:#05070c;border:2px solid #8b5cf6;padding:11px 13px;font-size:12px;line-height:1.6}
+  .consensus .h{font-family:'Press Start 2P';font-size:8px;color:#a78bfa;display:block;margin-bottom:7px}
+  .consensus b{color:var(--gold)} .consensus .hi{color:var(--boss)} .consensus .split{color:var(--rival)}
   .side{background:#05070c;border:3px solid var(--wall);padding:12px}
   .side.you{border-color:var(--boss)} .side.them{border-color:var(--rival)}
   .side .who{font-family:'Press Start 2P';font-size:9px;display:block;margin-bottom:8px}
@@ -133,13 +139,14 @@
   </div>
 
   <div class="panel director">
-    <div class="ptop"><span class="sign">⭐ THE DIRECTOR</span><h2>HEAD-TO-HEAD — สรุปทุก AI</h2></div>
-    <div class="scoreboard">
-      <div class="side you"><span class="who">▣ YOU (GAFFER)</span><div class="pts" id="youPts">— xPts</div><div class="det" id="youDet">รอ orchestrator...</div></div>
-      <div class="vs"><span>VS</span><span style="font-size:9px;color:var(--ink-dim)">GW<span id="vsGw">38</span></span></div>
-      <div class="side them"><span class="who">▣ THE RIVAL</span><div class="pts" id="themPts">— xPts</div><div class="det" id="themDet">รอ rival agent...</div></div>
+    <div class="ptop"><span class="sign">⭐ THE DIRECTOR</span><h2>3-WAY — YOU vs GEMINI vs CLAUDE · GW<span id="vsGw">38</span></h2></div>
+    <div class="scoreboard3">
+      <div class="side you"><span class="who">▣ YOU (real)</span><div class="pts" id="youPts">— xPts</div><div class="det" id="youDet">รอ squad จริง...</div></div>
+      <div class="side gem"><span class="who">◆ GEMINI</span><div class="pts" id="gemPts">— xPts</div><div class="det" id="gemDet">รอ Apps Script...</div></div>
+      <div class="side cla"><span class="who">✦ CLAUDE</span><div class="pts" id="claPts">— xPts</div><div class="det" id="claDet">รอ the-gaffer...</div></div>
     </div>
-    <div class="verdict" id="verdict"><span class="h">⚖ DIRECTOR'S VERDICT</span>รอผลทั้งสองฝั่ง...</div>
+    <div class="consensus" id="consensus"><span class="h">⚖ AI CONSENSUS</span>รอผลทั้ง 3 ฝั่ง...</div>
+    <div class="verdict" id="verdict"><span class="h">⭐ DIRECTOR'S VERDICT</span>รอผลทั้ง 3 ฝั่ง...</div>
   </div>
 
   <div class="footer">
@@ -338,8 +345,8 @@ const DEMO_BRIEF=[
   {h:"⚑ CHIP-CAL", body:`Triple Captain ▸ <b>HOLD</b><br>save for DGW`},
   {h:"⚠ RISK", body:`<b>3</b> fitness doubts<br>check 1h pre-deadline`},
 ];
-const DEMO_DIR={you:64, them:58, youDet:"(C) top EV<br>0 hits", themDet:"(C) template<br>top10k",
-  verdict:`ทีมคุณนำ <b>+6 xPts</b> <span class="lead">▲ YOU LEAD</span> — (ข้อมูล demo)`};
+const DEMO_DIR={you:64, gem:71, cla:69, youCap:"Haaland", gemCap:"Salah", claCap:"Salah",
+  verdict:`แผนดีสุด ▸ <b>GEMINI</b> · (ข้อมูล demo) Gemini และ Claude เห็นตรงว่ากัปตัน Salah`};
 
 const short=(s,n=22)=> s? (String(s).length>n? String(s).slice(0,n-1)+'…':String(s)) : '';
 // tolerant helpers: agents may write strings OR objects, and varying key names
@@ -351,7 +358,7 @@ function banner(html,show=true){ const b=document.getElementById('banner'); b.st
 async function fetchJSON(u){ const r=await fetch(u,{cache:'no-store'}); if(!r.ok) throw new Error(r.status); return r.json(); }
 
 async function loadViaFetch(){
-  const map={news:'news',medical:'med',fixture:'fix',market:'mkt',sim:'sim',intel:'intel',rival:'rival',gaffer:'gaffer',director:'director'};
+  const map={news:'news',medical:'med',fixture:'fix',market:'mkt',sim:'sim',intel:'intel',rival:'rival',gaffer:'gaffer',claude:'claude',gemini:'gemini',director:'director'};
   const out={}; let any=false;
   try{ out.features=await fetchJSON(FEATURES_URL);}catch(e){}
   for(const f in map){ try{ out[map[f]]=await fetchJSON(REPORTS_BASE+f+'.json'); any=true; }catch(e){} }
@@ -415,18 +422,36 @@ function fillBriefFromGaffer(g){
 }
 
 function fillDirector(R){
-  const d=R.director||{}, g=R.gaffer||{}, rv=R.rival||{};
-  const you=numOf(d,['you_xpts','user_xpts'])??numOf(g,['projected_xpts'])??'—';
-  const them=numOf(d,['rival_xpts'])??numOf(rv,['projected_score','projected_xpts'])??'—';
-  document.getElementById('youPts').textContent=you+' xPts';
-  document.getElementById('themPts').textContent=them+' xPts';
-  document.getElementById('youDet').innerHTML=`(C) <b>${asName(g.captain)}</b><br>${Array.isArray(g.transfers)?(g.transfers.length+' transfers'):''}`;
-  document.getElementById('themDet').innerHTML=`(C) <b>${asName(rv.captain)}</b><br>strategy ▸ ${rv.strategy??'—'}`;
-  const gap=(typeof you==='number'&&typeof them==='number')?+(you-them).toFixed(1):(d.gap??null);
-  const tag=gap>0?'<span class="lead">▲ YOU LEAD</span>':gap<0?'<span class="trail">▼ YOU TRAIL</span>':'';
-  const verdictTxt=d.verdict||d.summary||(gap!=null?(gap>0?`ทีมคุณนำ +${gap} xPts`:gap<0?`Rival นำ ${Math.abs(gap)} xPts`:'สูสี'):'');
-  const action=(d.highest_leverage_action||d.action)?`<br><b>Action:</b> ${short(d.highest_leverage_action||d.action,90)}`:'';
-  document.getElementById('verdict').innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>${short(verdictTxt,260)} ${tag}${action}`;
+  const d=R.director||{};
+  // sources: prefer director.json 3-way shape; fall back to individual reports
+  const you = d.you    || {};
+  const gem = d.gemini || R.gemini || {};
+  const cla = d.claude || R.claude || R.gaffer || {};
+  const pts = o => numOf(o,['projected_xpts','projected_score','you_xpts'])??'—';
+
+  document.getElementById('youPts').textContent = (pts(you))+' xPts';
+  document.getElementById('gemPts').textContent = (pts(gem))+' xPts';
+  document.getElementById('claPts').textContent = (pts(cla))+' xPts';
+  document.getElementById('youDet').innerHTML = `(C) <b>${asName(you.captain)}</b><br>ทีมจริงตอนนี้`;
+  document.getElementById('gemDet').innerHTML = `(C) <b>${asName(gem.captain)}</b><br>${gem.transfer_in?('IN '+asName(gem.transfer_in)):'no transfer'}`;
+  document.getElementById('claDet').innerHTML = `(C) <b>${asName(cla.captain)}</b><br>${(cla.transfers&&cla.transfers.in)?('IN '+asName(cla.transfers.in)):(cla.transfer_in?('IN '+asName(cla.transfer_in)):'no transfer')}`;
+
+  // consensus between the two engines
+  const cons = d.consensus || {};
+  const capAgree = cons.captain_agree!=null ? cons.captain_agree
+                   : (asName(gem.captain)!=='—' && asName(gem.captain)===asName(cla.captain));
+  const conviction = cons.conviction || (capAgree?'HIGH':'SPLIT');
+  const cEl=document.getElementById('consensus');
+  if(capAgree){
+    cEl.innerHTML=`<span class="h">⚖ AI CONSENSUS</span>Gemini และ Claude เห็นตรงกัน → กัปตัน <b>${asName(gem.captain)}</b> <span class="hi">▲ ${conviction} CONVICTION</span> — เชื่อปลอกแขนนี้ได้`;
+  } else {
+    cEl.innerHTML=`<span class="h">⚖ AI CONSENSUS</span>2 เอนจินเห็นต่าง <span class="split">⚠ ${conviction}</span> — Gemini เชียร์ <b>${asName(gem.captain)}</b> · Claude เชียร์ <b>${asName(cla.captain)}</b> → คุณตัดสินใจเอง`;
+  }
+
+  const best=(d.best_plan||'').toUpperCase();
+  const verdictTxt=d.verdict||d.summary||'';
+  const action=(d.highest_leverage_action||d.action)?`<br><b>Action:</b> ${short(d.highest_leverage_action||d.action,100)}`:'';
+  document.getElementById('verdict').innerHTML=`<span class="h">⭐ DIRECTOR'S VERDICT</span>${best?('แผนดีสุด ▸ <b>'+best+'</b> · '):''}${short(verdictTxt,240)}${action}`;
 }
 
 
@@ -453,10 +478,13 @@ async function runWithReports(R, isDemo){
   clock.textContent='THE DIRECTOR comparing AIs...';
   await activate(byId.director, L.director);
   if(isDemo){ document.getElementById('youPts').textContent=DEMO_DIR.you+' xPts';
-    document.getElementById('themPts').textContent=DEMO_DIR.them+' xPts';
-    document.getElementById('youDet').innerHTML=DEMO_DIR.youDet;
-    document.getElementById('themDet').innerHTML=DEMO_DIR.themDet;
-    document.getElementById('verdict').innerHTML=`<span class="h">⚖ DIRECTOR'S VERDICT</span>${DEMO_DIR.verdict}`; }
+    document.getElementById('gemPts').textContent=DEMO_DIR.gem+' xPts';
+    document.getElementById('claPts').textContent=DEMO_DIR.cla+' xPts';
+    document.getElementById('youDet').innerHTML=`(C) <b>${DEMO_DIR.youCap}</b><br>ทีมจริงตอนนี้`;
+    document.getElementById('gemDet').innerHTML=`(C) <b>${DEMO_DIR.gemCap}</b><br>IN Mbeumo`;
+    document.getElementById('claDet').innerHTML=`(C) <b>${DEMO_DIR.claCap}</b><br>IN Mbeumo`;
+    document.getElementById('consensus').innerHTML=`<span class="h">⚖ AI CONSENSUS</span>Gemini และ Claude เห็นตรงกัน → กัปตัน <b>Salah</b> <span class="hi">▲ HIGH CONVICTION</span>`;
+    document.getElementById('verdict').innerHTML=`<span class="h">⭐ DIRECTOR'S VERDICT</span>${DEMO_DIR.verdict}`; }
   else fillDirector(R);
 
   clock.textContent='✓ ready · GW'+gw;
@@ -483,9 +511,11 @@ function reset(running){
   document.getElementById('briefgrid').innerHTML= running
     ? '<div class="bcard empty">⟳ agents working...</div>'
     : '<div class="bcard empty">กด ⬇ LOAD REPORTS เพื่อดึงผลจริง</div>';
-  ['youPts','themPts'].forEach(id=>document.getElementById(id).textContent='— xPts');
-  document.getElementById('youDet').textContent= running?'⟳ orchestrating...':'รอ orchestrator...';
-  document.getElementById('themDet').textContent= running?'⟳ drafting squad...':'รอ rival agent...';
+  ['youPts','gemPts','claPts'].forEach(id=>document.getElementById(id).textContent='— xPts');
+  document.getElementById('youDet').textContent= running?'⟳ reading squad...':'รอ squad จริง...';
+  document.getElementById('gemDet').textContent= running?'⟳ reading Gemini...':'รอ Apps Script...';
+  document.getElementById('claDet').textContent= running?'⟳ the-gaffer...':'รอ the-gaffer...';
+  document.getElementById('consensus').innerHTML='<span class="h">⚖ AI CONSENSUS</span>รอผลทั้ง 3 ฝั่ง...';
   document.getElementById('verdict').innerHTML='<span class="h">⚖ DIRECTOR\'S VERDICT</span>รอผลทั้งสองฝั่ง...';
   if(!running){ clock.textContent='awaiting reports...'; }
 }
@@ -493,7 +523,7 @@ function reset(running){
 // file picker fallback (works from file:// — bypasses fetch/CORS)
 function handleFiles(fileList){
   const files=[...fileList]; if(!files.length) return;
-  const map={news:'news',medical:'med',fixture:'fix',market:'mkt',sim:'sim',intel:'intel',rival:'rival',gaffer:'gaffer',director:'director',features:'features'};
+  const map={news:'news',medical:'med',fixture:'fix',market:'mkt',sim:'sim',intel:'intel',rival:'rival',gaffer:'gaffer',claude:'claude',gemini:'gemini',director:'director',features:'features'};
   REPORTS={}; let pending=files.length;
   files.forEach(f=>{ const rd=new FileReader();
     rd.onload=()=>{ try{ const key=f.name.replace(/\.json$/,''); REPORTS[map[key]||key]=JSON.parse(rd.result); }catch(e){}

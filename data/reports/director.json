@@ -1,33 +1,10 @@
 {
   "gw": 38,
-  "generated": "2026-06-03T00:00:00Z",
-  "you_xpts": 76,
-  "rival_xpts": 70,
-  "gap": 6,
-  "user_score": 76,
-  "rival_score": 70,
-  "winner": "user",
-  "margin": 6,
-  "captain_compare": "DRAW on the armband: both captain M.Salah (sim-lab EV 7.17, haul 0.385, FDR 1 away at Ipswich in his confirmed farewell) and both vice Mbeumo (nailed, pens, home FDR 2). Critically both correctly AVOID the Haaland trap — news-desk confirms Haaland was OMITTED from the Man City squad. Captaincy is neutralised; the contest is decided elsewhere.",
-  "scorecard": {
-    "captain_quality": {"user": 9, "rival": 9, "note": "Identical and optimal: Salah (C) / Mbeumo (VC). Both dodge the Haaland omission landmine. No edge either way."},
-    "squad_depth": {"user": 8, "rival": 7, "note": "User benches a real GK (Sels) plus Jesus/Mukiele/Kerkez and ACTIVATES them via Bench Boost. Rival's bench (doubtful Gabriel, Munoz, Rogers) is weaker and unused."},
-    "fixture_exposure": {"user": 8, "rival": 8, "note": "Shared Liverpool double-up (FDR 1 at Ipswich) and FDR 2 home assets (Mbeumo, Mateta). Comparable; user adds Joao Pedro (BHA home FDR 2)."},
-    "template_alignment": {"user": 7, "rival": 9, "note": "Rival is a deliberate top-10k mirror (Salah 92% EO, Palmer, Isak, Saka, Liverpool DEF) = strong rank protection. User leans on Joao Pedro/Rogers differentials, slightly off-template."},
-    "chip_usage": {"user": 9, "rival": 5, "note": "DECISIVE. User plays Bench Boost on the final GW, banking 4 extra starting scores at zero captaincy risk. Rival holds NO chip into GW38 = a wasted, unrecoverable asset on the last day of the season."},
-    "transfer_quality": {"user": 9, "rival": 6, "note": "User makes the high-value Gabriel->Mbeumo move (Gabriel: -140k, -0.1 price, 75% doubt, Arsenal UCL-final rotation; Mbeumo: nailed, pens, rising). Rival takes 0 transfers and still carries doubtful Gabriel."}
-  },
-  "key_differentiators": [
-    "Bench Boost on the final GW: extra bench scores the rival simply cannot match with no chip left to spend.",
-    "Proactive Gabriel->Mbeumo transfer removes a doubtful/rotation-risk asset the rival still holds.",
-    "Both neutralise the single biggest field error of GW38 (captaining the omitted Haaland), so the user's edge is additive, not defensive."
-  ],
-  "risks": [
-    "GW38 is the highest-rotation event of the season — Bench Boost value collapses if benched assets (Jesus, Kerkez, Mukiele) get zero minutes; confirm starts 1h before deadline.",
-    "User's lighter template alignment means a Salah/Liverpool blank hurts more vs the rival's rank-protected core.",
-    "Palace rotation ahead of the Conference League final threatens Mateta/Lacroix minutes on both sides."
-  ],
-  "verdict": "Gaffer ชนะ 76-70 (ห่าง 6 แต้ม). กัปตันเสมอกัน (Salah ทั้งคู่ และเลี่ยง Haaland ที่ถูกตัดชื่อได้ถูกต้อง) ดังนั้นตัวตัดสินคือชิปและการเปลี่ยนตัว: Gaffer เล่น Bench Boost ในนัดสุดท้ายเก็บแต้มสำรองทั้ง 4 คนแบบไม่มีความเสี่ยง ขณะที่ Rival ปล่อยให้ชิปเสียเปล่า บวกกับการขาย Gabriel (ติดธง+ราคาตก) มาดึง Mbeumo ที่ฟิตชัวร์เข้าแทน ความเสี่ยงเดียวคือการหมุนตัวผู้เล่นวันสุดท้ายที่อาจทำให้ Bench Boost ได้แต้มน้อยลง ต้องเช็คตัวจริง 1 ชม. ก่อนเส้นตาย",
-  "highest_leverage_action": "Confirm all four Bench Boost players (Sels, Gabriel Jesus, Mukiele, Kerkez) are STARTING via team news 1 hour before deadline; swap any confirmed non-starter into the XI to protect the chip's value.",
-  "headline": "Gaffer เฉือน Rival 76-70 ด้วยพลัง Bench Boost นัดสุดท้าย"
+  "you":    { "projected_xpts": 62, "captain": "Haaland" },
+  "gemini": { "projected_xpts": 71, "captain": "Salah", "transfer_in": "Mbeumo", "transfer_out": "Gabriel", "chip": null },
+  "claude": { "projected_xpts": 69, "captain": "Salah", "transfer_in": "Mbeumo", "transfer_out": "Gabriel", "chip": "HOLD" },
+  "consensus": { "captain_agree": true, "transfer_agree": true, "chip_agree": true, "conviction": "HIGH" },
+  "best_plan": "gemini",
+  "verdict": "Gemini และ Claude เห็นตรงกันทั้งกัปตัน (Salah) และทรานสเฟอร์ (IN Mbeumo) ความมั่นใจสูง ทีมจริงของคุณยังตั้ง Haaland อยู่ — ควรย้ายปลอกแขน",
+  "highest_leverage_action": "เปลี่ยนกัปตันเป็น Salah และ IN Mbeumo แทน Gabriel ก่อนเส้นตาย"
 }

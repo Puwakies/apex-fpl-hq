@@ -1,30 +1,36 @@
 # APEX FPL HQ — Multi-Agent Fantasy Premier League Operation
 
-A pixel-office multi-agent system. Each "character" is a Claude Code subagent that
-does one job, writes a JSON report, and the managers synthesize a weekly brief and a
-head-to-head contest against an autonomous rival AI.
+A 3-way FPL decision system. The Apps Script (Gemini) pipeline fetches FPL, computes xPts,
+and pushes JSON into data/cache/. Claude Code reads that cache, forms its own independent
+opinion, and the Director compares THREE sides — the user's real team vs Gemini vs Claude.
 
-## Run a gameweek
+## Architecture (3-way)
 ```
-/brief 38 top10k        # GW 38, rival plays the top-10k strategy
-```
-Or manually: ask Claude to "run the GW 38 briefing" and it will follow the order below.
-
-## Architecture (org chart)
-```
-THE DIRECTOR        ← summarizes every AI + judges YOU vs RIVAL (runs last)
-   ├── THE GAFFER   ← orchestrates YOUR team, writes the weekly brief
-   │     └── 6 specialists (parallel):
-   │         news-desk · medical-bay · data-lab · fixture-room · market-desk · sim-lab · intel
-   └── THE RIVAL    ← builds its OWN squad by strategy, competes head-to-head
+                 THE DIRECTOR  (3-way compare + AI consensus + verdict)
+              /         |          \
+         YOU         GEMINI        CLAUDE
+     real squad   gemini.json    the-gaffer (opus)
+     + xpts.json  (Apps Script)  + 6 specialists
 ```
 
-## Execution order (strict)
-1. `data-lab` — ETL, MUST finish first. Pulls FPL public API → `data/features.json`.
-2. Parallel fan-out: `news-desk`, `medical-bay`, `fixture-room`, `market-desk`, `sim-lab`, `intel`, `the-rival`.
-   Each reads `data/features.json`, writes `data/reports/<name>.json`.
-3. `the-gaffer` — reads all specialist reports → `data/reports/gaffer.json`.
-4. `the-director` — reads everything incl. gaffer + rival → `data/reports/director.json`.
+## Data source: Apps Script cache (no FPL API in Claude Code)
+The Apps Script weekly pipeline writes these into the repo (via GitHub API):
+  data/cache/squad.json   — user's real 15-man squad, bank, chips (team 6023024)
+  data/cache/xpts.json    — per-player xPts ALREADY CALCULATED (trust, don't recompute)
+  data/cache/league.json  — mini-league template/differential
+  data/cache/news.json, price.json, gemini.json
+Claude Code only READS these — no network/allowlist needed.
+
+## Execution order (/brief <GW>)
+1. data-lab — read data/cache/*.json
+2. specialists (parallel): news-desk, medical-bay, fixture-room, market-desk, sim-lab, intel
+3. engines (parallel): gemini-read (relay Gemini) + the-gaffer (Claude's own picks) + the-rival
+4. the-director — 3-way compare, measure consensus (do Gemini & Claude agree?), verdict
+
+## The point of 3-way
+- Gemini and Claude agree on captain → HIGH conviction, trust the pick
+- They disagree → SPLIT, Director flags it, user makes the final call
+- Always grounded in the user's REAL squad + REAL calculated xPts
 
 ## Pillars (APEX PROTOCOL v1.0) → agent mapping
 - **FDR-X** → fixture-room (weighted next-5 fixture difficulty, DGW/BGW)
