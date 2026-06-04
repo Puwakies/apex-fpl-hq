@@ -1,0 +1,25 @@
+{
+  "engine": "claude",
+  "gw": 38,
+  "captain": "Anderson",
+  "vice": "Gabriel",
+  "transfers": {
+    "out": "Saka",
+    "in": "Gibbs-White",
+    "hits": 0,
+    "bank": 3.1
+  },
+  "chip": {
+    "name": "none",
+    "action": "hold",
+    "reason": "Final gameweek of the season and all chips already used (WC/TC/FH/BB all spent). No chip value remains."
+  },
+  "projected_xpts": 70.45,
+  "risks": [
+    "Captaining Anderson is a differential (~6% owned) vs template Gabriel — high ceiling (60% haul) but higher variance (164.8).",
+    "Saka OUT loses Arsenal CL rotation lottery, but he is benched vs Crystal Palace (xPts only 2.63) so the downgrade risk is low.",
+    "Doubling up on NFO (Anderson + Gibbs-White) concentrates risk on one fixture.",
+    "Haaland kept in XI despite being left out of City's GW38 squad per news — should be benched/sold if confirmed; here he is a hold-only flag since no FT remains after the Saka move.",
+    "Bowen (4.83) and Thiago (2.28) remain weak XI starters but are non-transferable this week with a single FT."
+  ]
+}
