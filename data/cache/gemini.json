@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04T01:50:10.452Z",
+  "updated": "2026-06-04T06:42:38.388Z",
   "engine": "gemini",
   "gw": 38,
   "captain": "Haaland",
@@ -11,5 +11,5 @@
   "chip": null,
   "projected_xpts": 0,
   "confidence": "low",
-  "key_risk": "Insufficient squad data for accurate analysis"
+  "key_risk": "Insufficient squad data to calculate optimal lineup"
 }
