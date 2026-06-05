@@ -1,0 +1,7 @@
+{
+  "updated": "2026-06-05T08:35:23.855Z",
+  "season": "2025/26",
+  "last_gw": 38,
+  "n_players": 150,
+  "note": "blind backtest source. history = per-GW player stats. my_picks = YOU ground truth."
+}
