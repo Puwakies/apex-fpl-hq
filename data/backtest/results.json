@@ -34,7 +34,7 @@
       "pos": "MID"
      },
      {
-      "name": "L.Paquetá",
+      "name": "L.Paquet\u00e1",
       "pos": "MID"
      },
      {
@@ -52,11 +52,11 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -64,7 +64,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Estève",
+      "name": "Est\u00e8ve",
       "pos": "DEF"
      }
     ],
@@ -240,7 +240,7 @@
       "pos": "DEF"
      },
      {
-      "name": "L.Paquetá",
+      "name": "L.Paquet\u00e1",
       "pos": "MID"
      },
      {
@@ -252,7 +252,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -266,7 +266,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -278,7 +278,7 @@
       "pos": "MID"
      },
      {
-      "name": "Estève",
+      "name": "Est\u00e8ve",
       "pos": "DEF"
      }
     ],
@@ -331,7 +331,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -397,7 +397,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -475,11 +475,11 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -537,11 +537,11 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -611,7 +611,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -641,7 +641,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -693,11 +693,11 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -768,7 +768,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -780,11 +780,11 @@
       "pos": "FWD"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -806,7 +806,7 @@
       "pos": "MID"
      }
     ],
-    "captain": "João Pedro",
+    "captain": "Jo\u00e3o Pedro",
     "gw_points": 77,
     "captain_correct": false,
     "transfers": []
@@ -838,7 +838,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -846,7 +846,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -864,7 +864,7 @@
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -876,7 +876,7 @@
       "pos": "MID"
      }
     ],
-    "captain": "Ekitiké",
+    "captain": "Ekitik\u00e9",
     "gw_points": 61,
     "captain_correct": false,
     "transfers": []
@@ -928,7 +928,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -946,7 +946,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -986,11 +986,11 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1016,7 +1016,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -1056,7 +1056,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -1064,7 +1064,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -1086,7 +1086,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -1142,7 +1142,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -1160,7 +1160,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -1201,7 +1201,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1225,7 +1225,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -1247,7 +1247,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -1263,7 +1263,7 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1317,7 +1317,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -1373,7 +1373,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -1387,7 +1387,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -1420,7 +1420,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1452,7 +1452,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -1510,11 +1510,11 @@
       "pos": "FWD"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -1540,7 +1540,7 @@
       "pos": "MID"
      },
      {
-      "name": "Gyökeres",
+      "name": "Gy\u00f6keres",
       "pos": "FWD"
      }
     ],
@@ -1592,7 +1592,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -1610,7 +1610,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -1647,7 +1647,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1689,7 +1689,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -1717,7 +1717,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1751,11 +1751,11 @@
     ],
     "bench": [
      {
-      "name": "Petrović",
+      "name": "Petrovi\u0107",
       "pos": "GK"
      },
      {
-      "name": "E.Le Fée",
+      "name": "E.Le F\u00e9e",
       "pos": "MID"
      },
      {
@@ -1815,7 +1815,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -1833,7 +1833,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -1861,7 +1861,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -1907,7 +1907,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -1965,7 +1965,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -2001,7 +2001,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -2091,7 +2091,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -2243,7 +2243,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -2269,7 +2269,7 @@
       "pos": "MID"
      }
     ],
-    "captain": "João Pedro",
+    "captain": "Jo\u00e3o Pedro",
     "gw_points": 33,
     "captain_correct": true,
     "transfers": [
@@ -2279,7 +2279,7 @@
       "reason": "real transfer"
      },
      {
-      "out": "Ekitiké",
+      "out": "Ekitik\u00e9",
       "in": "Mateta",
       "reason": "real transfer"
      }
@@ -2300,7 +2300,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -2338,7 +2338,7 @@
       "pos": "GK"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -2356,7 +2356,7 @@
     "transfers": [
      {
       "out": "Bowen",
-      "in": "João Pedro",
+      "in": "Jo\u00e3o Pedro",
       "reason": "template upgrade: higher proven cumulative pts + fixture",
       "with_pts": 7,
       "without_pts": 2,
@@ -2443,7 +2443,7 @@
      }
     ]
    },
-   "note": "GW11: YOU 33 (C João Pedro), GEM 25 (C Haaland), CLA 45 (C Haaland)."
+   "note": "GW11: YOU 33 (C Jo\u00e3o Pedro), GEM 25 (C Haaland), CLA 45 (C Haaland)."
   },
   {
    "gw": 12,
@@ -2482,7 +2482,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -2543,7 +2543,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -2581,7 +2581,7 @@
       "pos": "GK"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -2747,7 +2747,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -2781,7 +2781,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -2819,7 +2819,7 @@
       "pos": "GK"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -2976,7 +2976,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -3006,7 +3006,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -3014,7 +3014,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -3048,7 +3048,7 @@
       "pos": "GK"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -3066,7 +3066,7 @@
     "transfers": [
      {
       "out": "Van de Ven",
-      "in": "Muñoz",
+      "in": "Mu\u00f1oz",
       "reason": "template upgrade: higher proven cumulative pts + fixture",
       "with_pts": 14,
       "without_pts": 0,
@@ -3214,7 +3214,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -3240,11 +3240,11 @@
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -3294,7 +3294,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -3319,7 +3319,7 @@
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -3383,7 +3383,7 @@
     "transfers": [
      {
       "out": "Gabriel",
-      "in": "Muñoz",
+      "in": "Mu\u00f1oz",
       "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 0,
       "without_pts": 0,
@@ -3470,7 +3470,7 @@
       "reason": "real transfer"
      },
      {
-      "out": "João Pedro",
+      "out": "Jo\u00e3o Pedro",
       "in": "Thiago",
       "reason": "real transfer"
      },
@@ -3498,11 +3498,11 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -3552,7 +3552,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -3577,7 +3577,7 @@
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -3736,7 +3736,7 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -3744,7 +3744,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -3799,7 +3799,7 @@
     "captain_correct": true,
     "transfers": [
      {
-      "out": "João Pedro",
+      "out": "Jo\u00e3o Pedro",
       "in": "Bowen",
       "reason": "template upgrade: higher proven cumulative pts + fixture",
       "with_pts": 1,
@@ -3815,7 +3815,7 @@
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -3934,7 +3934,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -3956,13 +3956,13 @@
       "pos": "DEF"
      }
     ],
-    "captain": "Ekitiké",
+    "captain": "Ekitik\u00e9",
     "gw_points": 65,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Mateta",
-      "in": "Ekitiké",
+      "in": "Ekitik\u00e9",
       "reason": "real transfer"
      }
     ]
@@ -3978,11 +3978,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -4061,7 +4061,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Mu\u00f1oz",
       "pos": "DEF"
      },
      {
@@ -4125,7 +4125,7 @@
      }
     ]
    },
-   "note": "GW18: YOU 65 (C Ekitiké), GEM 30 (C Haaland), CLA 31 (C Foden)."
+   "note": "GW18: YOU 65 (C Ekitik\u00e9), GEM 30 (C Haaland), CLA 31 (C Foden)."
   },
   {
    "gw": 19,
@@ -4172,7 +4172,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -4212,7 +4212,7 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -4275,7 +4275,7 @@
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Muñoz",
+      "out": "Mu\u00f1oz",
       "in": "Keane",
       "reason": "template upgrade: higher proven cumulative pts + fixture",
       "with_pts": 0,
@@ -4354,7 +4354,7 @@
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Muñoz",
+      "out": "Mu\u00f1oz",
       "in": "Dalot",
       "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 2,
@@ -4416,7 +4416,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -4467,7 +4467,7 @@
       "reason": "real transfer"
      },
      {
-      "out": "Ekitiké",
+      "out": "Ekitik\u00e9",
       "in": "Calvert-Lewin",
       "reason": "real transfer"
      },
@@ -4538,7 +4538,7 @@
      },
      {
       "out": "Donnarumma",
-      "in": "Dúbravka",
+      "in": "D\u00fabravka",
       "reason": "real transfer"
      },
      {
@@ -4555,7 +4555,7 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -4666,7 +4666,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -4698,7 +4698,7 @@
     "transfers": [
      {
       "out": "Wilson",
-      "in": "Ekitiké",
+      "in": "Ekitik\u00e9",
       "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 0,
       "without_pts": 2,
@@ -4759,7 +4759,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -4829,7 +4829,7 @@
     ],
     "bench": [
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -4902,7 +4902,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -4991,7 +4991,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -5027,7 +5027,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -5144,7 +5144,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -5223,7 +5223,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -5299,7 +5299,7 @@
     ],
     "bench": [
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -5382,7 +5382,7 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -5455,13 +5455,13 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -5483,7 +5483,7 @@
     "transfers": [
      {
       "out": "Haaland",
-      "in": "João Pedro",
+      "in": "Jo\u00e3o Pedro",
       "reason": "real transfer"
      },
      {
@@ -5541,7 +5541,7 @@
       "pos": "MID"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      }
     ],
@@ -5551,7 +5551,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -5569,7 +5569,7 @@
     "transfers": [
      {
       "out": "Wilson",
-      "in": "João Pedro",
+      "in": "Jo\u00e3o Pedro",
       "reason": "template: higher proven cumulative pts + fixture",
       "with_pts": 10,
       "without_pts": 1,
@@ -5634,7 +5634,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -5663,7 +5663,7 @@
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -5703,7 +5703,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -5773,7 +5773,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -5783,7 +5783,7 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -5866,7 +5866,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -5895,7 +5895,7 @@
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -5935,7 +5935,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -6011,7 +6011,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -6021,7 +6021,7 @@
       "pos": "GK"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -6100,7 +6100,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -6173,13 +6173,13 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -6195,7 +6195,7 @@
       "pos": "DEF"
      }
     ],
-    "captain": "João Pedro",
+    "captain": "Jo\u00e3o Pedro",
     "gw_points": 40,
     "captain_correct": true,
     "transfers": [
@@ -6226,7 +6226,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -6246,7 +6246,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6308,7 +6308,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6324,7 +6324,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -6346,13 +6346,13 @@
       "pos": "DEF"
      }
     ],
-    "captain": "João Pedro",
+    "captain": "Jo\u00e3o Pedro",
     "gw_points": 43,
     "captain_correct": true,
     "transfers": [
      {
       "out": "Thiago",
-      "in": "João Pedro",
+      "in": "Jo\u00e3o Pedro",
       "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 7,
       "without_pts": 2,
@@ -6360,7 +6360,7 @@
      }
     ]
    },
-   "note": "GW27: YOU 40 (C João Pedro), GEM 40 (C Haaland), CLA 43 (C João Pedro)."
+   "note": "GW27: YOU 40 (C Jo\u00e3o Pedro), GEM 40 (C Haaland), CLA 43 (C Jo\u00e3o Pedro)."
   },
   {
    "gw": 28,
@@ -6399,7 +6399,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6407,13 +6407,13 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -6435,7 +6435,7 @@
     "transfers": [
      {
       "out": "Calvert-Lewin",
-      "in": "Ekitiké",
+      "in": "Ekitik\u00e9",
       "reason": "real transfer"
      }
     ]
@@ -6455,7 +6455,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -6475,7 +6475,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6546,7 +6546,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6554,7 +6554,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -6605,7 +6605,7 @@
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -6641,11 +6641,11 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -6693,7 +6693,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -6713,7 +6713,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6784,11 +6784,11 @@
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6843,7 +6843,7 @@
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -6875,7 +6875,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6883,7 +6883,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -6905,7 +6905,7 @@
       "pos": "DEF"
      }
     ],
-    "captain": "Ekitiké",
+    "captain": "Ekitik\u00e9",
     "gw_points": 52,
     "captain_correct": false,
     "transfers": [
@@ -6947,7 +6947,7 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -6959,7 +6959,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      }
     ],
@@ -7022,11 +7022,11 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -7060,7 +7060,7 @@
       "pos": "GK"
      }
     ],
-    "captain": "João Pedro",
+    "captain": "Jo\u00e3o Pedro",
     "gw_points": 33,
     "captain_correct": false,
     "transfers": [
@@ -7074,14 +7074,14 @@
      }
     ]
    },
-   "note": "GW30: YOU 52 (C Ekitiké), GEM 46 (C Haaland), CLA 33 (C João Pedro)."
+   "note": "GW30: YOU 52 (C Ekitik\u00e9), GEM 46 (C Haaland), CLA 33 (C Jo\u00e3o Pedro)."
   },
   {
    "gw": 31,
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -7113,7 +7113,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -7121,7 +7121,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      }
     ],
@@ -7153,30 +7153,22 @@
       "reason": "real transfer",
       "with_pts": 0,
       "without_pts": 6,
-      "better": "without"
+      "better": "hold"
      }
     ]
    },
    "gemini": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Pickford",
       "pos": "GK"
      },
      {
-      "name": "Gabriel",
-      "pos": "DEF"
-     },
-     {
-      "name": "J.Timber",
-      "pos": "DEF"
-     },
-     {
-      "name": "Senesi",
-      "pos": "DEF"
-     },
-     {
       "name": "Virgil",
+      "pos": "DEF"
+     },
+     {
+      "name": "Tarkowski",
       "pos": "DEF"
      },
      {
@@ -7184,55 +7176,35 @@
       "pos": "MID"
      },
      {
-      "name": "Semenyo",
-      "pos": "MID"
-     },
-     {
-      "name": "Rice",
-      "pos": "MID"
-     },
-     {
-      "name": "Haaland",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
-     {
-      "name": "João Pedro",
-      "pos": "FWD"
-     },
-     {
-      "name": "Thiago",
-      "pos": "FWD"
-     }
-    ],
-    "bench": [
      {
       "name": "Bowen",
       "pos": "FWD"
      },
      {
-      "name": "Guéhi",
-      "pos": "DEF"
-     },
-     {
-      "name": "Wilson",
+      "name": "\u0160e\u0161ko",
       "pos": "FWD"
-     },
-     {
-      "name": "Pickford",
-      "pos": "GK"
      }
     ],
-    "captain": "Haaland",
-    "gw_points": 23,
-    "captain_correct": false,
+    "bench": [
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "B.Fernandes",
+    "gw_points": 46,
+    "captain_correct": true,
     "transfers": [
      {
-      "out": "Tarkowski",
-      "in": "Senesi",
-      "reason": "template: higher proven cumulative + form, mins-reliable",
-      "with_pts": 1,
-      "without_pts": 6,
-      "better": "without"
+      "out": "Wilson",
+      "in": "\u0160e\u0161ko",
+      "reason": "TEMPLATE: chase proven pts/form +6.8",
+      "with_pts": 0,
+      "without_pts": 1,
+      "better": "hold"
      }
     ]
    },
@@ -7243,7 +7215,7 @@
       "pos": "GK"
      },
      {
-      "name": "Truffert",
+      "name": "Thiaw",
       "pos": "DEF"
      },
      {
@@ -7263,66 +7235,49 @@
       "pos": "MID"
      },
      {
-      "name": "Summerville",
-      "pos": "MID"
+      "name": "Jo\u00e3o Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ekitik\u00e9",
+      "pos": "FWD"
      },
      {
       "name": "Rogers",
       "pos": "MID"
      },
      {
-      "name": "Enzo",
+      "name": "Summerville",
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
-      "pos": "FWD"
-     },
-     {
-      "name": "Ekitiké",
-      "pos": "FWD"
+      "name": "Enzo",
+      "pos": "MID"
      }
     ],
-    "bench": [
-     {
-      "name": "Gabriel",
-      "pos": "DEF"
-     },
-     {
-      "name": "Haaland",
-      "pos": "FWD"
-     },
-     {
-      "name": "Matheus N.",
-      "pos": "DEF"
-     },
-     {
-      "name": "Raya",
-      "pos": "GK"
-     }
-    ],
-    "captain": "João Pedro",
-    "gw_points": 35,
+    "bench": [],
+    "captain": "Jo\u00e3o Pedro",
+    "gw_points": 31,
     "captain_correct": false,
     "transfers": [
      {
       "out": "O'Reilly",
-      "in": "Truffert",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
-      "with_pts": 4,
+      "in": "Thiaw",
+      "reason": "APEX: blind xPts edge +8.9 (form*fixture*mins)",
+      "with_pts": 0,
       "without_pts": 0,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
-   "note": "GW31: YOU 44, GEMINI 23 (C:Haaland), CLAUDE 35 (C:João Pedro)."
+   "note": "YOU 44, CLAUDE 31 (C:Jo\u00e3o Pedro), GEMINI 46 (C:B.Fernandes)"
   },
   {
    "gw": 32,
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -7372,7 +7327,7 @@
       "pos": "GK"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
@@ -7380,7 +7335,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -7394,7 +7349,7 @@
       "reason": "real transfer",
       "with_pts": 14,
       "without_pts": 0,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
@@ -7409,15 +7364,11 @@
       "pos": "DEF"
      },
      {
+      "name": "O'Reilly",
+      "pos": "DEF"
+     },
+     {
       "name": "J.Timber",
-      "pos": "DEF"
-     },
-     {
-      "name": "Tarkowski",
-      "pos": "DEF"
-     },
-     {
-      "name": "Senesi",
       "pos": "DEF"
      },
      {
@@ -7429,6 +7380,10 @@
       "pos": "MID"
      },
      {
+      "name": "Jo\u00e3o Pedro",
+      "pos": "FWD"
+     },
+     {
       "name": "Rice",
       "pos": "MID"
      },
@@ -7437,43 +7392,43 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
-      "pos": "FWD"
+      "name": "Tarkowski",
+      "pos": "DEF"
      },
      {
-      "name": "Thiago",
+      "name": "Bowen",
       "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Bowen",
-      "pos": "FWD"
-     },
-     {
       "name": "Virgil",
       "pos": "DEF"
      },
      {
-      "name": "Wilson",
+      "name": "Thiago",
       "pos": "FWD"
      },
      {
       "name": "Pickford",
       "pos": "GK"
+     },
+     {
+      "name": "\u0160e\u0161ko",
+      "pos": "FWD"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 41,
+    "gw_points": 52,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Guéhi",
-      "in": "Tarkowski",
-      "reason": "template: higher proven cumulative + form, mins-reliable",
-      "with_pts": 3,
+      "out": "Gu\u00e9hi",
+      "in": "O'Reilly",
+      "reason": "TEMPLATE: chase proven pts/form +3.6",
+      "with_pts": 14,
       "without_pts": 15,
-      "better": "without"
+      "better": "hold"
      }
     ]
    },
@@ -7492,14 +7447,6 @@
       "pos": "DEF"
      },
      {
-      "name": "Truffert",
-      "pos": "DEF"
-     },
-     {
-      "name": "Matheus N.",
-      "pos": "DEF"
-     },
-     {
       "name": "Dalot",
       "pos": "DEF"
      },
@@ -7512,58 +7459,66 @@
       "pos": "MID"
      },
      {
-      "name": "Palmer",
+      "name": "Jo\u00e3o Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Summerville",
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "Matheus N.",
+      "pos": "DEF"
+     },
+     {
+      "name": "Thiaw",
+      "pos": "DEF"
      }
     ],
     "bench": [
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
      {
       "name": "Rogers",
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
-      "pos": "FWD"
-     },
-     {
-      "name": "Enzo",
-      "pos": "MID"
-     },
-     {
       "name": "Martinez",
       "pos": "GK"
+     },
+     {
+      "name": "Palmer",
+      "pos": "MID"
      }
     ],
     "captain": "B.Fernandes",
-    "gw_points": 44,
+    "gw_points": 39,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Summerville",
+      "out": "Enzo",
       "in": "B.Fernandes",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "reason": "APEX: blind xPts edge +11.4 (form*fixture*mins)",
       "with_pts": 4,
-      "without_pts": 3,
-      "better": "with"
+      "without_pts": 0,
+      "better": "transfer"
      }
     ]
    },
-   "note": "GW32: YOU 65, GEMINI 41 (C:Haaland), CLAUDE 44 (C:B.Fernandes)."
+   "note": "YOU 65, CLAUDE 39 (C:B.Fernandes), GEMINI 52 (C:Haaland)"
   },
   {
    "gw": 33,
    "you": {
     "xi": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -7621,7 +7576,7 @@
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
@@ -7635,15 +7590,15 @@
       "reason": "real transfer",
       "with_pts": 2,
       "without_pts": 9,
-      "better": "without"
+      "better": "hold"
      },
      {
-      "out": "Ekitiké",
+      "out": "Ekitik\u00e9",
       "in": "Haaland",
       "reason": "real transfer",
       "with_pts": 6,
       "without_pts": 0,
-      "better": "with"
+      "better": "transfer"
      },
      {
       "out": "Roefs",
@@ -7651,7 +7606,7 @@
       "reason": "real transfer",
       "with_pts": 2,
       "without_pts": 1,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
@@ -7666,11 +7621,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
-      "pos": "DEF"
-     },
-     {
-      "name": "J.Timber",
+      "name": "O'Reilly",
       "pos": "DEF"
      },
      {
@@ -7686,11 +7637,7 @@
       "pos": "MID"
      },
      {
-      "name": "Rice",
-      "pos": "MID"
-     },
-     {
-      "name": "Haaland",
+      "name": "Bowen",
       "pos": "FWD"
      },
      {
@@ -7698,13 +7645,25 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
      }
     ],
     "bench": [
      {
-      "name": "Bowen",
+      "name": "Beto",
+      "pos": "FWD"
+     },
+     {
+      "name": "Haaland",
       "pos": "FWD"
      },
      {
@@ -7712,44 +7671,32 @@
       "pos": "DEF"
      },
      {
-      "name": "Wilson",
-      "pos": "FWD"
-     },
-     {
       "name": "Pickford",
       "pos": "GK"
      }
     ],
-    "captain": "Haaland",
-    "gw_points": 27,
+    "captain": "B.Fernandes",
+    "gw_points": 29,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Senesi",
-      "in": "Guéhi",
-      "reason": "template: higher proven cumulative + form, mins-reliable",
-      "with_pts": 1,
+      "out": "\u0160e\u0161ko",
+      "in": "Beto",
+      "reason": "TEMPLATE: chase proven pts/form +3.3",
+      "with_pts": 9,
       "without_pts": 2,
-      "better": "without"
+      "better": "transfer"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
       "name": "N.Williams",
-      "pos": "DEF"
-     },
-     {
-      "name": "Truffert",
-      "pos": "DEF"
-     },
-     {
-      "name": "Gabriel",
       "pos": "DEF"
      },
      {
@@ -7769,6 +7716,10 @@
       "pos": "MID"
      },
      {
+      "name": "Jo\u00e3o Pedro",
+      "pos": "FWD"
+     },
+     {
       "name": "Rogers",
       "pos": "MID"
      },
@@ -7777,43 +7728,47 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Thiaw",
+      "pos": "DEF"
+     },
+     {
+      "name": "Haaland",
       "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "Gabriel",
+      "pos": "DEF"
      },
      {
-      "name": "Enzo",
+      "name": "Summerville",
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
      },
      {
-      "name": "Martinez",
+      "name": "Raya",
       "pos": "GK"
      }
     ],
     "captain": "B.Fernandes",
-    "gw_points": 52,
+    "gw_points": 50,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Dalot",
       "in": "N.Williams",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "reason": "APEX: blind xPts edge +10.3 (form*fixture*mins)",
       "with_pts": 2,
       "without_pts": 6,
-      "better": "without"
+      "better": "hold"
      }
     ]
    },
-   "note": "GW33: YOU 69, GEMINI 27 (C:Haaland), CLAUDE 52 (C:B.Fernandes). Chip(YOU):BB."
+   "note": "YOU 47 [BB], CLAUDE 50 (C:B.Fernandes), GEMINI 29 (C:B.Fernandes)"
   },
   {
    "gw": 34,
@@ -7867,7 +7822,7 @@
     "bench": [
      {
       "name": "Kinsky",
-      "pos": "GK"
+      "pos": "?"
      },
      {
       "name": "Mavropanos",
@@ -7878,7 +7833,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Mané",
+      "name": "Man\u00e9",
       "pos": "FWD"
      }
     ],
@@ -7887,500 +7842,12 @@
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Casemiro",
-      "in": "Szoboszlai",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 12,
-      "better": "without"
-     },
-     {
-      "out": "Xavi",
-      "in": "Casemiro",
-      "reason": "real transfer",
-      "with_pts": 12,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Szoboszlai",
-      "in": "Rice",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Gibbs-White",
-      "in": "Xavi",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 13,
-      "better": "without"
-     },
-     {
-      "out": "Keane",
-      "in": "Mavropanos",
-      "reason": "real transfer",
-      "with_pts": 4,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Marc Guiu",
-      "in": "Mané",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Iwobi",
-      "in": "Gibbs-White",
-      "reason": "real transfer",
-      "with_pts": 13,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Hume",
-      "in": "Alderete",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": -2,
-      "better": "with"
-     },
-     {
-      "out": "Mykolenko",
-      "in": "Keane",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Havertz",
-      "in": "Marc Guiu",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Pedro Porro",
-      "in": "Van de Ven",
-      "reason": "real transfer",
-      "with_pts": 6,
-      "without_pts": 8,
-      "better": "without"
-     },
-     {
-      "out": "Cunha",
-      "in": "Iwobi",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Gibbs-White",
-      "in": "M.Salah",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 13,
-      "better": "without"
-     },
-     {
-      "out": "Van de Ven",
-      "in": "Pedro Porro",
-      "reason": "real transfer",
-      "with_pts": 8,
-      "without_pts": 6,
-      "better": "with"
-     },
-     {
-      "out": "Wilson",
-      "in": "Rogers",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 4,
-      "better": "without"
-     },
-     {
-      "out": "Beto",
-      "in": "Watkins",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "M.Salah",
-      "in": "Gibbs-White",
-      "reason": "real transfer",
-      "with_pts": 13,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Mukiele",
-      "in": "Hume",
-      "reason": "real transfer",
-      "with_pts": -2,
-      "without_pts": 0,
-      "better": "without"
-     },
-     {
-      "out": "Casemiro",
-      "in": "Cunha",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 12,
-      "better": "without"
-     },
-     {
-      "out": "Gibbs-White",
-      "in": "Wilson",
-      "reason": "real transfer",
-      "with_pts": 4,
-      "without_pts": 13,
-      "better": "without"
-     },
-     {
-      "out": "Ballard",
-      "in": "Mykolenko",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Xavi",
-      "in": "Casemiro",
-      "reason": "real transfer",
-      "with_pts": 12,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Watkins",
-      "in": "Bowen",
-      "reason": "real transfer",
-      "with_pts": 10,
-      "without_pts": 2,
-      "better": "with"
-     },
-     {
-      "out": "Rogers",
-      "in": "Gibbs-White",
-      "reason": "real transfer",
-      "with_pts": 13,
-      "without_pts": 2,
-      "better": "with"
-     },
-     {
-      "out": "Mané",
-      "in": "Beto",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 2,
-      "better": "without"
-     },
-     {
-      "out": "Sels",
-      "in": "Kinsky",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 7,
-      "better": "without"
-     },
-     {
-      "out": "Pedro Porro",
-      "in": "Van de Ven",
-      "reason": "real transfer",
-      "with_pts": 6,
-      "without_pts": 8,
-      "better": "without"
-     },
-     {
-      "out": "Roefs",
-      "in": "Sels",
-      "reason": "real transfer",
-      "with_pts": 7,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Tarkowski",
-      "in": "Ballard",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 3,
-      "better": "without"
-     },
-     {
-      "out": "Thiago",
-      "in": "Mané",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Gibbs-White",
-      "in": "Xavi",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 13,
-      "better": "without"
-     },
-     {
-      "out": "Casemiro",
-      "in": "M.Salah",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 12,
-      "better": "without"
-     },
-     {
-      "out": "N.Williams",
-      "in": "Mukiele",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 5,
-      "better": "without"
-     },
-     {
-      "out": "Mateta",
-      "in": "Havertz",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 2,
-      "better": "without"
-     },
-     {
-      "out": "Rice",
-      "in": "Gibbs-White",
-      "reason": "real transfer",
-      "with_pts": 13,
-      "without_pts": 2,
-      "better": "with"
-     },
-     {
-      "out": "Gibbs-White",
-      "in": "Casemiro",
-      "reason": "real transfer",
-      "with_pts": 12,
-      "without_pts": 13,
-      "better": "without"
-     },
-     {
-      "out": "Lammens",
-      "in": "Raya",
-      "reason": "real transfer",
-      "with_pts": 10,
-      "without_pts": 3,
-      "better": "with"
-     },
-     {
-      "out": "Xavi",
-      "in": "Gibbs-White",
-      "reason": "real transfer",
-      "with_pts": 13,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Mukiele",
-      "in": "Pedro Porro",
-      "reason": "real transfer",
-      "with_pts": 8,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Gyökeres",
-      "in": "Mateta",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Bowen",
-      "in": "Thiago",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 10,
-      "better": "without"
-     },
-     {
-      "out": "Casemiro",
-      "in": "Rice",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 12,
-      "better": "without"
-     },
-     {
-      "out": "Wilson",
-      "in": "Rogers",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 4,
-      "better": "without"
-     },
-     {
-      "out": "J.Timber",
-      "in": "N.Williams",
-      "reason": "real transfer",
-      "with_pts": 5,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Leno",
-      "in": "Lammens",
-      "reason": "real transfer",
-      "with_pts": 3,
-      "without_pts": 7,
-      "better": "without"
-     },
-     {
-      "out": "Thiaw",
-      "in": "J.Timber",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 2,
-      "better": "without"
-     },
-     {
-      "out": "Pedro Porro",
-      "in": "Virgil",
-      "reason": "real transfer",
-      "with_pts": 4,
-      "without_pts": 8,
-      "better": "without"
-     },
-     {
-      "out": "J.Timber",
-      "in": "Pedro Porro",
-      "reason": "real transfer",
-      "with_pts": 8,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Garner",
-      "in": "Xavi",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 3,
-      "better": "without"
-     },
-     {
-      "out": "Virgil",
-      "in": "Tarkowski",
-      "reason": "real transfer",
-      "with_pts": 3,
-      "without_pts": 4,
-      "better": "without"
-     },
-     {
-      "out": "Isak",
-      "in": "Gyökeres",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Thiago",
-      "in": "Watkins",
-      "reason": "real transfer",
-      "with_pts": 2,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Rice",
-      "in": "Szoboszlai",
-      "reason": "real transfer",
-      "with_pts": 1,
-      "without_pts": 2,
-      "better": "without"
-     },
-     {
-      "out": "Anderson",
-      "in": "Garner",
-      "reason": "real transfer",
-      "with_pts": 3,
-      "without_pts": 9,
-      "better": "without"
-     },
-     {
-      "out": "João Pedro",
-      "in": "Bowen",
-      "reason": "real transfer",
-      "with_pts": 10,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Haaland",
-      "in": "Isak",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "O.Dango",
-      "in": "Wilson",
-      "reason": "real transfer",
-      "with_pts": 4,
-      "without_pts": 1,
-      "better": "with"
-     },
-     {
-      "out": "Semenyo",
-      "in": "Casemiro",
-      "reason": "real transfer",
-      "with_pts": 12,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Hill",
-      "in": "J.Timber",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "O'Reilly",
-      "in": "Mukiele",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Verbruggen",
-      "in": "Leno",
-      "reason": "real transfer",
-      "with_pts": 7,
-      "without_pts": 0,
-      "better": "with"
-     },
-     {
-      "out": "Dúbravka",
-      "in": "Roefs",
-      "reason": "real transfer",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
+      "out": "(Free Hit)",
+      "in": "(one-week squad)",
+      "reason": "FH chip - entire squad swapped for one GW, reverts after",
+      "with_pts": 52,
+      "without_pts": null,
+      "better": "n/a"
      }
     ]
    },
@@ -8395,11 +7862,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
-      "pos": "DEF"
-     },
-     {
-      "name": "O'Reilly",
+      "name": "Tarkowski",
       "pos": "DEF"
      },
      {
@@ -8411,16 +7874,8 @@
       "pos": "MID"
      },
      {
-      "name": "Semenyo",
+      "name": "Gibbs-White",
       "pos": "MID"
-     },
-     {
-      "name": "Rice",
-      "pos": "MID"
-     },
-     {
-      "name": "Haaland",
-      "pos": "FWD"
      },
      {
       "name": "Thiago",
@@ -8429,37 +7884,33 @@
      {
       "name": "Bowen",
       "pos": "FWD"
+     },
+     {
+      "name": "Beto",
+      "pos": "FWD"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
      }
     ],
     "bench": [
-     {
-      "name": "João Pedro",
-      "pos": "FWD"
-     },
-     {
-      "name": "Tarkowski",
-      "pos": "DEF"
-     },
-     {
-      "name": "Wilson",
-      "pos": "FWD"
-     },
      {
       "name": "Pickford",
       "pos": "GK"
      }
     ],
-    "captain": "Haaland",
-    "gw_points": 40,
+    "captain": "B.Fernandes",
+    "gw_points": 59,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "J.Timber",
-      "in": "O'Reilly",
-      "reason": "template: higher proven cumulative + form, mins-reliable",
-      "with_pts": 0,
-      "without_pts": 0,
-      "better": "with"
+      "out": "Rice",
+      "in": "Gibbs-White",
+      "reason": "TEMPLATE: chase proven pts/form +4.2",
+      "with_pts": 13,
+      "without_pts": 2,
+      "better": "transfer"
      }
     ]
    },
@@ -8482,10 +7933,6 @@
       "pos": "DEF"
      },
      {
-      "name": "Virgil",
-      "pos": "DEF"
-     },
-     {
       "name": "B.Fernandes",
       "pos": "MID"
      },
@@ -8494,55 +7941,47 @@
       "pos": "MID"
      },
      {
+      "name": "Ekitik\u00e9",
+      "pos": "FWD"
+     },
+     {
+      "name": "Virgil",
+      "pos": "DEF"
+     },
+     {
       "name": "Rogers",
       "pos": "MID"
      },
      {
-      "name": "Ekitiké",
-      "pos": "FWD"
+      "name": "Summerville",
+      "pos": "MID"
      },
      {
-      "name": "João Pedro",
-      "pos": "FWD"
-     },
-     {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "Thiaw",
+      "pos": "DEF"
      }
     ],
     "bench": [
-     {
-      "name": "Palmer",
-      "pos": "MID"
-     },
-     {
-      "name": "Matheus N.",
-      "pos": "DEF"
-     },
-     {
-      "name": "Enzo",
-      "pos": "MID"
-     },
      {
       "name": "Martinez",
       "pos": "GK"
      }
     ],
     "captain": "B.Fernandes",
-    "gw_points": 46,
+    "gw_points": 50,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Truffert",
+      "out": "Matheus N.",
       "in": "Mavropanos",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "reason": "APEX: blind xPts edge +10.1 (form*fixture*mins)",
       "with_pts": 4,
       "without_pts": 0,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
-   "note": "GW34: YOU 52, GEMINI 40 (C:Haaland), CLAUDE 46 (C:B.Fernandes). Chip(YOU):FH."
+   "note": "YOU 52 [FH], CLAUDE 50 (C:B.Fernandes), GEMINI 59 (C:B.Fernandes)"
   },
   {
    "gw": 35,
@@ -8589,13 +8028,13 @@
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -8621,7 +8060,7 @@
       "reason": "real transfer",
       "with_pts": 4,
       "without_pts": 6,
-      "better": "without"
+      "better": "hold"
      }
     ]
    },
@@ -8636,11 +8075,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
-      "pos": "DEF"
-     },
-     {
-      "name": "Virgil",
+      "name": "Mavropanos",
       "pos": "DEF"
      },
      {
@@ -8648,41 +8083,45 @@
       "pos": "DEF"
      },
      {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
-      "name": "Semenyo",
-      "pos": "MID"
-     },
-     {
       "name": "Gibbs-White",
       "pos": "MID"
      },
      {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "B.Fernandes",
+      "pos": "MID"
      },
      {
       "name": "Bowen",
       "pos": "FWD"
      },
      {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
       "name": "Thiago",
       "pos": "FWD"
+     },
+     {
+      "name": "Virgil",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
      }
     ],
     "bench": [
      {
-      "name": "João Pedro",
+      "name": "Beto",
       "pos": "FWD"
      },
      {
-      "name": "Tarkowski",
+      "name": "J.Timber",
       "pos": "DEF"
      },
      {
-      "name": "Wilson",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -8691,16 +8130,16 @@
      }
     ],
     "captain": "Haaland",
-    "gw_points": 51,
+    "gw_points": 46,
     "captain_correct": true,
     "transfers": [
      {
-      "out": "Rice",
-      "in": "Gibbs-White",
-      "reason": "template: higher proven cumulative + form, mins-reliable",
-      "with_pts": 4,
-      "without_pts": 5,
-      "better": "without"
+      "out": "Tarkowski",
+      "in": "Mavropanos",
+      "reason": "TEMPLATE: chase proven pts/form +5.0",
+      "with_pts": -1,
+      "without_pts": 0,
+      "better": "hold"
      }
     ]
    },
@@ -8723,15 +8162,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Virgil",
-      "pos": "DEF"
-     },
-     {
-      "name": "Matheus N.",
-      "pos": "DEF"
-     },
-     {
-      "name": "Gibbs-White",
+      "name": "Ampadu",
       "pos": "MID"
      },
      {
@@ -8739,51 +8170,59 @@
       "pos": "MID"
      },
      {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
       "name": "Rogers",
       "pos": "MID"
      },
      {
-      "name": "Garner",
-      "pos": "MID"
+      "name": "Virgil",
+      "pos": "DEF"
      },
      {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "Thiaw",
+      "pos": "DEF"
+     },
+     {
+      "name": "Garner",
+      "pos": "MID"
      }
     ],
     "bench": [
      {
-      "name": "Enzo",
+      "name": "Martinez",
+      "pos": "GK"
+     },
+     {
+      "name": "Palmer",
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Ekitiké",
+      "name": "Ekitik\u00e9",
       "pos": "FWD"
-     },
-     {
-      "name": "Martinez",
-      "pos": "GK"
      }
     ],
-    "captain": "Gibbs-White",
-    "gw_points": 40,
+    "captain": "Ampadu",
+    "gw_points": 35,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Palmer",
-      "in": "Gibbs-White",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
-      "with_pts": 4,
-      "without_pts": 0,
-      "better": "with"
+      "out": "Summerville",
+      "in": "Ampadu",
+      "reason": "APEX: blind xPts edge +7.7 (form*fixture*mins)",
+      "with_pts": 1,
+      "without_pts": 1,
+      "better": "transfer"
      }
     ]
    },
-   "note": "GW35: YOU 63, GEMINI 51 (C:Haaland), CLAUDE 40 (C:Gibbs-White)."
+   "note": "YOU 63, CLAUDE 35 (C:Ampadu), GEMINI 46 (C:Haaland)"
   },
   {
    "gw": 36,
@@ -8799,7 +8238,7 @@
      },
      {
       "name": "Canvot",
-      "pos": "DEF"
+      "pos": "?"
      },
      {
       "name": "Gabriel",
@@ -8836,7 +8275,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -8844,7 +8283,7 @@
       "pos": "MID"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -8862,7 +8301,7 @@
       "reason": "real transfer",
       "with_pts": 0,
       "without_pts": 2,
-      "better": "without"
+      "better": "hold"
      }
     ]
    },
@@ -8877,27 +8316,19 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
-      "name": "Senesi",
+      "name": "O'Reilly",
       "pos": "DEF"
-     },
-     {
-      "name": "Virgil",
-      "pos": "DEF"
-     },
-     {
-      "name": "B.Fernandes",
-      "pos": "MID"
      },
      {
       "name": "Gibbs-White",
       "pos": "MID"
      },
      {
-      "name": "Semenyo",
+      "name": "B.Fernandes",
       "pos": "MID"
      },
      {
@@ -8905,25 +8336,33 @@
       "pos": "FWD"
      },
      {
+      "name": "Bowen",
+      "pos": "FWD"
+     },
+     {
       "name": "Thiago",
       "pos": "FWD"
      },
      {
-      "name": "Bowen",
-      "pos": "FWD"
+      "name": "Virgil",
+      "pos": "DEF"
+     },
+     {
+      "name": "Mavropanos",
+      "pos": "DEF"
      }
     ],
     "bench": [
      {
-      "name": "João Pedro",
+      "name": "Beto",
       "pos": "FWD"
      },
      {
-      "name": "Tarkowski",
-      "pos": "DEF"
+      "name": "Semenyo",
+      "pos": "MID"
      },
      {
-      "name": "Wilson",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -8932,16 +8371,16 @@
      }
     ],
     "captain": "Haaland",
-    "gw_points": 71,
+    "gw_points": 69,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "O'Reilly",
-      "in": "Senesi",
-      "reason": "template: higher proven cumulative + form, mins-reliable",
-      "with_pts": 8,
-      "without_pts": 5,
-      "better": "with"
+      "out": "J.Timber",
+      "in": "Gu\u00e9hi",
+      "reason": "TEMPLATE: chase proven pts/form +6.1",
+      "with_pts": 9,
+      "without_pts": 0,
+      "better": "transfer"
      }
     ]
    },
@@ -8956,19 +8395,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Mavropanos",
-      "pos": "DEF"
-     },
-     {
       "name": "Virgil",
       "pos": "DEF"
      },
      {
       "name": "Gabriel",
-      "pos": "DEF"
-     },
-     {
-      "name": "Matheus N.",
       "pos": "DEF"
      },
      {
@@ -8980,51 +8411,59 @@
       "pos": "MID"
      },
      {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
       "name": "Rogers",
       "pos": "MID"
      },
      {
-      "name": "Welbeck",
-      "pos": "FWD"
+      "name": "Mavropanos",
+      "pos": "DEF"
      },
      {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "Ampadu",
+      "pos": "MID"
+     },
+     {
+      "name": "Garner",
+      "pos": "MID"
      }
     ],
     "bench": [
      {
-      "name": "Garner",
-      "pos": "MID"
+      "name": "Martinez",
+      "pos": "GK"
      },
      {
-      "name": "Enzo",
-      "pos": "MID"
+      "name": "Thiaw",
+      "pos": "DEF"
      },
      {
-      "name": "Ekitiké",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Martinez",
-      "pos": "GK"
+      "name": "Ekitik\u00e9",
+      "pos": "FWD"
      }
     ],
     "captain": "Gibbs-White",
-    "gw_points": 51,
+    "gw_points": 55,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "João Pedro",
-      "in": "Welbeck",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
-      "with_pts": 2,
+      "out": "Palmer",
+      "in": "Gibbs-White",
+      "reason": "APEX: blind xPts edge +8.9 (form*fixture*mins)",
+      "with_pts": 0,
       "without_pts": 2,
-      "better": "with"
+      "better": "hold"
      }
     ]
    },
-   "note": "GW36: YOU 80, GEMINI 71 (C:Haaland), CLAUDE 51 (C:Gibbs-White)."
+   "note": "YOU 67, CLAUDE 55 (C:Gibbs-White), GEMINI 69 (C:Haaland)"
   },
   {
    "gw": 37,
@@ -9077,11 +8516,11 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
-      "name": "João Pedro",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
@@ -9090,7 +8529,7 @@
      },
      {
       "name": "Canvot",
-      "pos": "DEF"
+      "pos": "?"
      }
     ],
     "captain": "Casemiro",
@@ -9103,7 +8542,7 @@
       "reason": "real transfer",
       "with_pts": 10,
       "without_pts": 1,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
@@ -9118,27 +8557,19 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
-      "name": "Senesi",
+      "name": "Mavropanos",
       "pos": "DEF"
-     },
-     {
-      "name": "Tarkowski",
-      "pos": "DEF"
-     },
-     {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
-      "name": "Semenyo",
-      "pos": "MID"
      },
      {
       "name": "Gibbs-White",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
       "pos": "MID"
      },
      {
@@ -9146,36 +8577,53 @@
       "pos": "FWD"
      },
      {
+      "name": "Bowen",
+      "pos": "FWD"
+     },
+     {
       "name": "Thiago",
       "pos": "FWD"
      },
      {
-      "name": "Bowen",
-      "pos": "FWD"
-     }
-    ],
-    "bench": [
-     {
-      "name": "João Pedro",
-      "pos": "FWD"
+      "name": "Semenyo",
+      "pos": "MID"
      },
      {
       "name": "Virgil",
       "pos": "DEF"
+     }
+    ],
+    "bench": [
+     {
+      "name": "O'Reilly",
+      "pos": "DEF"
      },
      {
-      "name": "Wilson",
+      "name": "Verbruggen",
+      "pos": "GK"
+     },
+     {
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Pickford",
-      "pos": "GK"
+      "name": "Beto",
+      "pos": "FWD"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 60,
+    "gw_points": 70,
     "captain_correct": false,
-    "transfers": []
+    "transfers": [
+     {
+      "out": "Pickford",
+      "in": "Verbruggen",
+      "reason": "TEMPLATE: chase proven pts/form +3.6",
+      "with_pts": 2,
+      "without_pts": 1,
+      "better": "transfer"
+     }
+    ]
    },
    "claude": {
     "xi": [
@@ -9196,19 +8644,11 @@
       "pos": "DEF"
      },
      {
-      "name": "N.Williams",
-      "pos": "DEF"
+      "name": "Ampadu",
+      "pos": "MID"
      },
      {
       "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
-      "name": "Rogers",
-      "pos": "MID"
-     },
-     {
-      "name": "Garner",
       "pos": "MID"
      },
      {
@@ -9216,17 +8656,11 @@
       "pos": "FWD"
      },
      {
-      "name": "Haaland",
-      "pos": "FWD"
+      "name": "Garner",
+      "pos": "MID"
      },
      {
-      "name": "Welbeck",
-      "pos": "FWD"
-     }
-    ],
-    "bench": [
-     {
-      "name": "Enzo",
+      "name": "Rogers",
       "pos": "MID"
      },
      {
@@ -9234,29 +8668,43 @@
       "pos": "MID"
      },
      {
-      "name": "Matheus N.",
-      "pos": "DEF"
-     },
+      "name": "Haaland",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
      {
       "name": "Martinez",
       "pos": "GK"
+     },
+     {
+      "name": "N.Williams",
+      "pos": "DEF"
+     },
+     {
+      "name": "Thiaw",
+      "pos": "DEF"
+     },
+     {
+      "name": "Jo\u00e3o Pedro",
+      "pos": "FWD"
      }
     ],
     "captain": "Osula",
-    "gw_points": 89,
+    "gw_points": 96,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Ekitiké",
+      "out": "Ekitik\u00e9",
       "in": "Osula",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "reason": "APEX: blind xPts edge +8.5 (form*fixture*mins)",
       "with_pts": 13,
       "without_pts": 0,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
-   "note": "GW37: YOU 50, GEMINI 60 (C:Haaland), CLAUDE 89 (C:Osula)."
+   "note": "YOU 50, CLAUDE 96 (C:Osula), GEMINI 70 (C:Haaland)"
   },
   {
    "gw": 38,
@@ -9309,7 +8757,7 @@
     ],
     "bench": [
      {
-      "name": "Dúbravka",
+      "name": "D\u00fabravka",
       "pos": "GK"
      },
      {
@@ -9318,7 +8766,7 @@
      },
      {
       "name": "Canvot",
-      "pos": "DEF"
+      "pos": "?"
      },
      {
       "name": "Casemiro",
@@ -9330,12 +8778,12 @@
     "captain_correct": false,
     "transfers": [
      {
-      "out": "João Pedro",
+      "out": "Jo\u00e3o Pedro",
       "in": "Bowen",
       "reason": "real transfer",
       "with_pts": 12,
       "without_pts": 1,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
@@ -9350,11 +8798,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
-      "pos": "DEF"
-     },
-     {
-      "name": "Senesi",
+      "name": "Gu\u00e9hi",
       "pos": "DEF"
      },
      {
@@ -9362,15 +8806,11 @@
       "pos": "DEF"
      },
      {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
-      "name": "Semenyo",
-      "pos": "MID"
-     },
-     {
       "name": "Gibbs-White",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
       "pos": "MID"
      },
      {
@@ -9378,36 +8818,53 @@
       "pos": "FWD"
      },
      {
-      "name": "Thiago",
+      "name": "Watkins",
       "pos": "FWD"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
      },
      {
       "name": "Bowen",
       "pos": "FWD"
+     },
+     {
+      "name": "O'Reilly",
+      "pos": "DEF"
      }
     ],
     "bench": [
      {
-      "name": "João Pedro",
+      "name": "Thiago",
       "pos": "FWD"
      },
      {
-      "name": "Tarkowski",
-      "pos": "DEF"
-     },
-     {
-      "name": "Wilson",
+      "name": "Jo\u00e3o Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Pickford",
+      "name": "Verbruggen",
       "pos": "GK"
+     },
+     {
+      "name": "Mavropanos",
+      "pos": "DEF"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 48,
+    "gw_points": 57,
     "captain_correct": false,
-    "transfers": []
+    "transfers": [
+     {
+      "out": "Beto",
+      "in": "Watkins",
+      "reason": "TEMPLATE: chase proven pts/form +6.6",
+      "with_pts": 13,
+      "without_pts": 1,
+      "better": "transfer"
+     }
+    ]
    },
    "claude": {
     "xi": [
@@ -9428,19 +8885,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Anderson",
-      "pos": "MID"
-     },
-     {
-      "name": "Enzo",
-      "pos": "MID"
-     },
-     {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
       "name": "Gibbs-White",
+      "pos": "MID"
+     },
+     {
+      "name": "Anderson",
       "pos": "MID"
      },
      {
@@ -9452,63 +8901,71 @@
       "pos": "FWD"
      },
      {
-      "name": "Welbeck",
-      "pos": "FWD"
-     }
-    ],
-    "bench": [
+      "name": "Ampadu",
+      "pos": "MID"
+     },
      {
-      "name": "Matheus N.",
-      "pos": "DEF"
+      "name": "B.Fernandes",
+      "pos": "MID"
      },
      {
       "name": "Garner",
       "pos": "MID"
-     },
+     }
+    ],
+    "bench": [
      {
       "name": "N.Williams",
       "pos": "DEF"
+     },
+     {
+      "name": "Thiaw",
+      "pos": "DEF"
+     },
+     {
+      "name": "Jo\u00e3o Pedro",
+      "pos": "FWD"
      },
      {
       "name": "Martinez",
       "pos": "GK"
      }
     ],
-    "captain": "Haaland",
-    "gw_points": 40,
+    "captain": "Gibbs-White",
+    "gw_points": 54,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Rogers",
       "in": "Anderson",
-      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "reason": "APEX: blind xPts edge +6.0 (form*fixture*mins)",
       "with_pts": 2,
       "without_pts": 0,
-      "better": "with"
+      "better": "transfer"
      }
     ]
    },
-   "note": "GW38: YOU 49, GEMINI 48 (C:Haaland), CLAUDE 40 (C:Haaland)."
+   "note": "YOU 49, CLAUDE 54 (C:Gibbs-White), GEMINI 57 (C:Haaland)"
   }
  ],
  "totals": {
   "you": 2163,
-  "gemini": 2007,
-  "claude": 1855
+  "gemini": 2074,
+  "claude": 1868
  },
  "season_review": {
   "best_engine": "you",
-  "you_vs_claude": 233,
-  "you_vs_gemini": 45,
+  "you_vs_claude": 295,
+  "you_vs_gemini": 89,
   "key_lessons": [
-   "YOU (real squad) leads through GW30: stable Haaland captaincy + strong mid-block beats both baselines.",
-   "GEMINI template (always-Haaland C, proven-pts core) stays close; safe captaincy avoids big misses.",
-   "CLAUDE APEX drifted into low-floor differentials (Garner/Summerville) via blind-form transfers, hurting captain EV and floor."
+   "Stable premium captaincy (Haaland/B.Fernandes) compounded: YOU and GEMINI both rode safe captains; CLAUDE's blind-form differential captains (Ampadu, Osula) added variance that mostly hurt.",
+   "Real-life YOU beat both algorithmic baselines over 38 GW because chip timing (BB GW33, FH GW34) and proactive premium transfers outweighed pure form-chasing.",
+   "Template/safe (GEMINI) consistently out-scored APEX-blind (CLAUDE): low-floor differentials and over-active transfers eroded CLAUDE's ceiling more than they helped."
   ],
   "strategy_flaws": [
-   "Blind form over-rewards recent differential hauls with low minutes-reliability.",
-   "Transfer counterfactuals show several 'ไม่เปลี่ยนดีกว่า' cases (GW23, GW25, GW29) where holding was better.",
-   "CLAUDE needs a premium-captain floor and ownership-aware filter to match template safety."
+   "YOU left points on the bench / mis-captained in 5 of last 8 GWs (captain hit-rate dipped late season) - e.g. GW36 O'Reilly, GW37 Casemiro, GW38 Bowen were not optimal captains.",
+   "Late-season transfers chasing form (GW31 Tarkowski->Thiaw) were roughly neutral; some FT spent without clear EV gain.",
+   "Reliance on a few premiums meant a quiet Haaland/Salah GW directly capped the score with no differential cover."
   ]
  }
 }
