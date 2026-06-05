@@ -1,33 +1,26 @@
 {
   "gw": 38,
   "pillar": "ELITE-OWN",
-  "generated": "2026-06-04T07:45:00Z",
-  "method": "features.json selected_by_pct is null for all players, so EO is triangulated from league.json (mini-league of 15: template = Haaland/B.Fernandes/Gabriel, differentials clustered at 6.7% = 1 of 15 managers) and GW38 web signals (Haaland ~62.5% owned and most-captained, Gakpo ~46% owned, Arsenal/Palace rotation risk after title/CL secured). EO = overall ownership + captaincy uplift.",
-  "template_players": [
-    {"name": "Haaland", "ownership_pct": 62.5, "eo_est": "~95% (62.5% owned + heavy top-10k captain share)", "template_risk": "high", "note": "Most-owned and most-captained asset GW38. User OWNS him but does NOT captain him. Pep's final game vs Villa carries rest/rotation risk."},
-    {"name": "Gakpo", "ownership_pct": 46, "eo_est": "~50%", "template_risk": "high", "note": "~46% owned at season end and NOT in user squad. Biggest pure-ownership template hole in the team; un-fixable (no transfers/chips left)."},
-    {"name": "B.Fernandes", "ownership_pct": 28, "eo_est": "~34% (owned + ~26% alt-captain share)", "template_risk": "high", "note": "Mini-league template (league.json) and popular alt-captain. User owns. Pens/set-pieces keep floor high."},
-    {"name": "Saka", "ownership_pct": 30, "eo_est": "~35%", "template_risk": "high", "note": "Core ARS template, user owns. Title secured + Euro final = GW38 rotation risk, but field-neutral since user holds him."},
-    {"name": "Gabriel", "ownership_pct": 26, "eo_est": "~28%", "template_risk": "med", "note": "Mini-league template defender, user vice-captain. ARS rotation risk; CS-dependent."}
+  "generated": "2026-06-05T08:00:00Z",
+  "method": "features.json selected_by_pct is null, so EO triangulated from league.json (15-man mini-league: template = Haaland/B.Fernandes/Gabriel; differentials clustered at 6.7% = 1 of 15 managers) plus GW38 web signals (Haaland ~35% captaincy poll + near-universal ownership; Bruno 2nd at ~26%; Salah 3rd). EO = overall ownership + captaincy uplift. Reconciled against the user's REAL GW38 squad (squad.json): Haaland is UNAVAILABLE on the bench, C=Bowen, VC=Salah.",
+  "template_core": [
+    {"player": "Haaland", "eo_est": "~145% (high ownership + ~35% captaincy share)", "note": "Most-owned and most-captained GW38 asset, home vs Villa. User OWNS him but he is UNAVAILABLE and benched — the squad gets ZERO of his points. This is the dominant rank exposure."},
+    {"player": "B.Fernandes", "eo_est": "~95% (league template + ~26% alt-captain share)", "note": "Mini-league template and 2nd-most-popular captain. NOT in user squad — uncoverable template gap in the final GW."},
+    {"player": "M.Salah", "eo_est": "~85%", "note": "3rd captaincy pick; user owns him and has him as VC, so EO exposure is favourable here."},
+    {"player": "Gabriel", "eo_est": "~55%", "note": "Mini-league template defender, user owns. DOUBTFUL — if he sits, user concedes template CS ground."}
   ],
   "differentials": [
-    {"name": "Bowen", "ownership_pct": 7, "eo_est": "~6%", "differential_upside": "high", "why": "User's captain at sub-8% EO. A Bowen haul against the Haaland-captaining field is the cleanest rank-gain lever in the squad; the leverage cuts both ways."},
-    {"name": "Thiago", "ownership_pct": 6, "eo_est": "~6%", "differential_upside": "med", "why": "BRE forward, sub-8% owned, high ceiling if BRE attack; low EO means upside is nearly all gain."},
-    {"name": "Rogers", "ownership_pct": 6.7, "eo_est": "6.7%", "differential_upside": "med", "why": "AVL attacking mid flagged by league.json; sub-8% EO, set-piece/attacking role gives real rank swing on a haul."},
-    {"name": "Watkins", "ownership_pct": 6.7, "eo_est": "6.7%", "differential_upside": "med", "why": "AVL penalty/big-chance share; genuine differential striker under 8% EO."},
-    {"name": "Anderson", "ownership_pct": 5, "eo_est": "~5%", "differential_upside": "low", "why": "NFO cheap mid enabler; differential by ownership but limited haul probability."},
-    {"name": "Thiaw", "ownership_pct": 4, "eo_est": "~4%", "differential_upside": "low", "why": "NEW cheap defender, CS leverage only; minimal but non-zero edge."}
+    {"player": "Bowen", "eo_est": "~7%", "why": "User's captain at sub-8% EO vs the ~35% Haaland field. The cleanest rank-gain lever in the squad if he hauls; leverage cuts both ways."},
+    {"player": "Rogers", "eo_est": "6.7%", "why": "League-flagged AVL attacking mid, owned by user. Sub-8% EO, set-piece/attacking role gives real rank swing on a haul."},
+    {"player": "Watkins", "eo_est": "6.7%", "why": "AVL penalty/big-chance share; genuine sub-8% differential striker (not owned)."},
+    {"player": "Enzo", "eo_est": "6.7%", "why": "CHE mid, league diff, low-EO ceiling play."},
+    {"player": "Bruno G.", "eo_est": "6.7%", "why": "NEW midfield, league diff, low EO with returns upside."},
+    {"player": "J.Timber", "eo_est": "6.7%", "why": "ARS attacking-FB differential, CS + returns leverage at sub-8% EO."}
   ],
-  "captaincy_ownership": [
-    {"name": "Haaland", "pct_of_managers": 55, "note": "Default GW38 field captain. User is NOT on this — single biggest rank swing in the squad."},
-    {"name": "B.Fernandes", "pct_of_managers": 18, "note": "Second-most popular armband; pens insurance."},
-    {"name": "Saka", "pct_of_managers": 10, "note": "Third captain pick despite ARS rotation risk."}
-  ],
-  "anti-template_opportunity": "User captains Bowen (~6-7% EO) instead of the ~55% Haaland field. This is a deliberate anti-template leverage play: if Haaland is rested/blanks in Pep's final game while Bowen returns, the user gains rank on the entire template. Crucially the user already OWNS Haaland, so a Haaland blank is rank-neutral on the field — the only live exposure is the captaincy multiplier. The cleanest differential lever available; justified only as an aggressive chase, not a defend-rank move.",
-  "template_risk_assessment": "If the popular captain (Haaland, ~55% of the field) blanks: the field loses its 2x multiplier on a ~62.5%-owned asset — a wide but uniform hit, so user (who didn't captain Haaland) is HELPED relative to the field. If Haaland hauls: ~55% of managers double a big score while the user single-counts and rides on Bowen — user is HURT. Net: the Bowen-over-Haaland armband is the dominant variance source for this rank-7 manager.",
   "rank_risks": [
-    {"risk": "Captaining Bowen over Haaland", "severity": "critical", "detail": "User C=Bowen (~6-7% EO) vs field consensus Haaland (~55%). Largest rank-swing exposure in the final GW; Haaland-haul + Bowen-blank is the worst case."},
-    {"risk": "Gakpo (~46% owned) not in squad", "severity": "high", "detail": "If Gakpo hauls, user loses ground to ~half the field with no way to cover — biggest unowned template gap."},
-    {"risk": "ARS/MCI rotation (Saka, Gabriel, Haaland)", "severity": "medium", "detail": "User holds all three, so rotation is field-neutral; only danger is a Haaland start+haul punishing the Bowen captaincy specifically."}
+    {"risk": "Haaland benched (UNAVAILABLE)", "severity": "critical", "detail": "Highest-EO asset in the game (~145% with captaincy), owned but UNAVAILABLE on the user bench. If he starts and hauls, the ~35%-captaining field doubles a big score while the user banks nothing — the single biggest rank threat in the final GW. No transfers/chips (only TC) realistically fix it pre-deadline."},
+    {"risk": "Captaining Bowen over the field", "severity": "high", "detail": "C=Bowen (~7% EO) vs consensus Haaland (~35%). Largest deliberate variance source; a Bowen blank + Haaland haul is the worst case for rank 7."},
+    {"risk": "B.Fernandes not owned", "severity": "high", "detail": "~95% EO template + alt-captain. Any returns swing the mini-league against the user with no cover."},
+    {"risk": "Gabriel DOUBTFUL", "severity": "medium", "detail": "Owned template defender flagged doubtful; if he sits, user loses CS template ground while rivals cover."}
   ]
 }

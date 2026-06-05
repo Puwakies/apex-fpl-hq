@@ -1,0 +1,25 @@
+{
+  "gw": 38,
+  "generated": "2026-06-05",
+  "note": "GW38 is the final gameweek. Price changes after tonight's deadline are commercially irrelevant — no future gameweeks exist to benefit from a risen asset. Price change tracking is moot for squad-value purposes.",
+  "likely_rises": [],
+  "likely_falls": [],
+  "act_now": [],
+  "squad_flags": [
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "status": "DOUBTFUL",
+      "note": "DOUBTFUL status may trigger heavy sell-off pre-deadline. If owned, consider whether a free transfer to a safe alternative is available before deadline."
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "status": "UNAVAILABLE",
+      "note": "Confirmed unavailable (bench). No transfer action possible given bank=0.3 — squad locked."
+    }
+  ],
+  "market_context": "GW38 final deadline. price.json shows zero movement signals — no net-transfer velocity data indicating imminent rises or falls. With bank at 0.3 and TC chip remaining, the only meaningful pre-deadline action is a reactive swap if Gabriel is ruled out."
+}
