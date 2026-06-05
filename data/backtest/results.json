@@ -2276,12 +2276,12 @@
      {
       "out": "Reijnders",
       "in": "Rice",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Ekitiké",
       "in": "Mateta",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -2304,11 +2304,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Van de Ven",
+      "name": "Calafiori",
       "pos": "DEF"
      },
      {
-      "name": "Calafiori",
+      "name": "Van de Ven",
       "pos": "DEF"
      },
      {
@@ -2320,11 +2320,11 @@
       "pos": "MID"
      },
      {
-      "name": "Mbeumo",
+      "name": "Caicedo",
       "pos": "MID"
      },
      {
-      "name": "Caicedo",
+      "name": "Mbeumo",
       "pos": "MID"
      },
      {
@@ -2338,15 +2338,15 @@
       "pos": "GK"
      },
      {
-      "name": "Xhaka",
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Anthony",
       "pos": "MID"
      },
      {
       "name": "Thiago",
-      "pos": "FWD"
-     },
-     {
-      "name": "Bowen",
       "pos": "FWD"
      }
     ],
@@ -2355,12 +2355,12 @@
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Anthony",
-      "in": "Xhaka",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 3,
+      "out": "Bowen",
+      "in": "João Pedro",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 7,
       "without_pts": 2,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
@@ -2391,11 +2391,11 @@
       "pos": "MID"
      },
      {
-      "name": "Mbeumo",
+      "name": "Neto",
       "pos": "MID"
      },
      {
-      "name": "Bruno G.",
+      "name": "Mbeumo",
       "pos": "MID"
      },
      {
@@ -2429,21 +2429,21 @@
       "pos": "MID"
      }
     ],
-    "captain": "Gabriel",
-    "gw_points": 37,
+    "captain": "Haaland",
+    "gw_points": 45,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Iwobi",
-      "in": "Bruno G.",
-      "reason": "APEX: better form x fixture EV",
-      "with_pts": 4,
+      "in": "Neto",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "with_pts": 9,
       "without_pts": 2,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 33 (cap João Pedro✓); GEM 25 (cap Haaland); CLA 37 (cap Gabriel)"
+   "note": "GW11: YOU 33 (C João Pedro), GEM 25 (C Haaland), CLA 45 (C Haaland)."
   },
   {
    "gw": 12,
@@ -2519,19 +2519,19 @@
      {
       "out": "Kudus",
       "in": "Gravenberch",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Reinildo",
       "in": "Ballard",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
    "gemini": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Roefs",
       "pos": "GK"
      },
      {
@@ -2543,15 +2543,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Calafiori",
-      "pos": "DEF"
-     },
-     {
       "name": "Guéhi",
       "pos": "DEF"
      },
      {
-      "name": "Van de Ven",
+      "name": "Calafiori",
       "pos": "DEF"
      },
      {
@@ -2567,6 +2563,10 @@
       "pos": "MID"
      },
      {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
       "name": "Haaland",
       "pos": "FWD"
      },
@@ -2577,33 +2577,33 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
-     },
-     {
-      "name": "Caicedo",
-      "pos": "MID"
      },
      {
       "name": "João Pedro",
       "pos": "FWD"
      },
      {
-      "name": "Xhaka",
+      "name": "Van de Ven",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ndiaye",
       "pos": "MID"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 29,
+    "gw_points": 30,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Bowen",
-      "in": "João Pedro",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 1,
-      "without_pts": 4,
-      "better": "no-transfer"
+      "out": "Anthony",
+      "in": "Ndiaye",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 3,
+      "without_pts": 2,
+      "better": "with"
      }
     ]
    },
@@ -2638,11 +2638,11 @@
       "pos": "MID"
      },
      {
-      "name": "Bruno G.",
+      "name": "Neto",
       "pos": "MID"
      },
      {
-      "name": "Semenyo",
+      "name": "Eze",
       "pos": "MID"
      },
      {
@@ -2656,7 +2656,7 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
@@ -2664,20 +2664,29 @@
       "pos": "DEF"
      },
      {
-      "name": "Thiago",
-      "pos": "FWD"
+      "name": "Semenyo",
+      "pos": "MID"
      },
      {
-      "name": "Eze",
-      "pos": "MID"
+      "name": "Thiago",
+      "pos": "FWD"
      }
     ],
     "captain": "Gabriel",
-    "gw_points": 36,
+    "gw_points": 54,
     "captain_correct": false,
-    "transfers": []
+    "transfers": [
+     {
+      "out": "Roefs",
+      "in": "Martinez",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "with_pts": 3,
+      "without_pts": 3,
+      "better": "with"
+     }
+    ]
    },
-   "note": "YOU 28 (cap Mateta✗); GEM 29 (cap Haaland); CLA 36 (cap Gabriel)"
+   "note": "GW12: YOU 28 (C Mateta), GEM 30 (C Haaland), CLA 54 (C Gabriel)."
   },
   {
    "gw": 13,
@@ -2753,7 +2762,7 @@
      {
       "out": "Gakpo",
       "in": "Mbeumo",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -2765,10 +2774,6 @@
      },
      {
       "name": "Gabriel",
-      "pos": "DEF"
-     },
-     {
-      "name": "Muñoz",
       "pos": "DEF"
      },
      {
@@ -2784,6 +2789,10 @@
       "pos": "DEF"
      },
      {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
       "name": "Rice",
       "pos": "MID"
      },
@@ -2792,7 +2801,7 @@
       "pos": "MID"
      },
      {
-      "name": "Semenyo",
+      "name": "Caicedo",
       "pos": "MID"
      },
      {
@@ -2814,32 +2823,23 @@
       "pos": "FWD"
      },
      {
-      "name": "Xhaka",
-      "pos": "MID"
+      "name": "Van de Ven",
+      "pos": "DEF"
      },
      {
-      "name": "Caicedo",
+      "name": "Ndiaye",
       "pos": "MID"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 27,
+    "gw_points": 24,
     "captain_correct": false,
-    "transfers": [
-     {
-      "out": "Van de Ven",
-      "in": "Muñoz",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 1,
-      "without_pts": 0,
-      "better": "transfer"
-     }
-    ]
+    "transfers": []
    },
    "claude": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
@@ -2855,19 +2855,19 @@
       "pos": "DEF"
      },
      {
-      "name": "Trossard",
-      "pos": "MID"
-     },
-     {
       "name": "Eze",
       "pos": "MID"
      },
      {
-      "name": "Mbeumo",
+      "name": "Neto",
       "pos": "MID"
      },
      {
-      "name": "Rice",
+      "name": "Rogers",
+      "pos": "MID"
+     },
+     {
+      "name": "Mbeumo",
       "pos": "MID"
      },
      {
@@ -2885,37 +2885,37 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
      },
      {
-      "name": "Bruno G.",
+      "name": "Rice",
       "pos": "MID"
-     },
-     {
-      "name": "J.Timber",
-      "pos": "DEF"
      },
      {
       "name": "James",
       "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
      }
     ],
     "captain": "Thiago",
-    "gw_points": 43,
+    "gw_points": 48,
     "captain_correct": true,
     "transfers": [
      {
       "out": "Semenyo",
-      "in": "Trossard",
-      "reason": "APEX: better form x fixture EV",
-      "with_pts": 0,
+      "in": "Rogers",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "with_pts": 3,
       "without_pts": 1,
-      "better": "no-transfer"
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 28 (cap Haaland✗); GEM 27 (cap Haaland); CLA 43 (cap Thiago)"
+   "note": "GW13: YOU 28 (C Haaland), GEM 24 (C Haaland), CLA 48 (C Thiago)."
   },
   {
    "gw": 14,
@@ -2991,22 +2991,22 @@
      {
       "out": "Vicario",
       "in": "Donnarumma",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
    "gemini": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Roefs",
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
+      "name": "Gabriel",
       "pos": "DEF"
      },
      {
-      "name": "Gabriel",
+      "name": "Muñoz",
       "pos": "DEF"
      },
      {
@@ -3018,19 +3018,19 @@
       "pos": "DEF"
      },
      {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
       "name": "Rice",
       "pos": "MID"
      },
      {
-      "name": "Eze",
-      "pos": "MID"
-     },
-     {
       "name": "Mbeumo",
-      "pos": "MID"
-     },
-     {
-      "name": "Semenyo",
       "pos": "MID"
      },
      {
@@ -3044,7 +3044,7 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
      },
      {
@@ -3052,32 +3052,32 @@
       "pos": "FWD"
      },
      {
-      "name": "Xhaka",
+      "name": "Ndiaye",
       "pos": "MID"
      },
      {
-      "name": "Calafiori",
-      "pos": "DEF"
+      "name": "Caicedo",
+      "pos": "MID"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 74,
+    "gw_points": 77,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Caicedo",
-      "in": "Eze",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 1,
+      "out": "Van de Ven",
+      "in": "Muñoz",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 14,
       "without_pts": 0,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
@@ -3085,7 +3085,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Matheus N.",
+      "name": "Gabriel",
       "pos": "DEF"
      },
      {
@@ -3097,10 +3097,6 @@
       "pos": "MID"
      },
      {
-      "name": "Bruno G.",
-      "pos": "MID"
-     },
-     {
       "name": "Rice",
       "pos": "MID"
      },
@@ -3109,7 +3105,7 @@
       "pos": "MID"
      },
      {
-      "name": "Trossard",
+      "name": "Neto",
       "pos": "MID"
      },
      {
@@ -3119,19 +3115,23 @@
      {
       "name": "Welbeck",
       "pos": "FWD"
-     }
-    ],
-    "bench": [
-     {
-      "name": "Roefs",
-      "pos": "GK"
      },
      {
       "name": "Haaland",
       "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Raya",
+      "pos": "GK"
      },
      {
-      "name": "Gabriel",
+      "name": "Rogers",
+      "pos": "MID"
+     },
+     {
+      "name": "Matheus N.",
       "pos": "DEF"
      },
      {
@@ -3140,20 +3140,20 @@
      }
     ],
     "captain": "Eze",
-    "gw_points": 33,
+    "gw_points": 38,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Mukiele",
       "in": "Lacroix",
-      "reason": "APEX: better form x fixture EV",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 8,
       "without_pts": 0,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 57 (cap Mbeumo✗); GEM 74 (cap Haaland); CLA 33 (cap Eze)"
+   "note": "GW14: YOU 57 (C Mbeumo), GEM 77 (C Haaland), CLA 38 (C Eze)."
   },
   {
    "gw": 15,
@@ -3229,7 +3229,7 @@
      {
       "out": "Gudmundsson",
       "in": "Chalobah",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -3241,10 +3241,6 @@
      },
      {
       "name": "Muñoz",
-      "pos": "DEF"
-     },
-     {
-      "name": "Lacroix",
       "pos": "DEF"
      },
      {
@@ -3260,15 +3256,19 @@
       "pos": "DEF"
      },
      {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
       "name": "Rice",
       "pos": "MID"
      },
      {
-      "name": "Eze",
-      "pos": "MID"
-     },
-     {
-      "name": "Semenyo",
+      "name": "Bruno G.",
       "pos": "MID"
      },
      {
@@ -3286,36 +3286,36 @@
       "pos": "GK"
      },
      {
-      "name": "Xhaka",
+      "name": "Mbeumo",
+      "pos": "MID"
+     },
+     {
+      "name": "Ndiaye",
       "pos": "MID"
      },
      {
       "name": "João Pedro",
       "pos": "FWD"
-     },
-     {
-      "name": "Mbeumo",
-      "pos": "MID"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 31,
+    "gw_points": 39,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Calafiori",
-      "in": "Lacroix",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 2,
-      "without_pts": 1,
-      "better": "transfer"
+      "out": "Caicedo",
+      "in": "Bruno G.",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 10,
+      "without_pts": 0,
+      "better": "with"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
@@ -3331,7 +3331,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Bruno G.",
+      "name": "Rogers",
       "pos": "MID"
      },
      {
@@ -3339,11 +3339,11 @@
       "pos": "MID"
      },
      {
-      "name": "Eze",
+      "name": "Neto",
       "pos": "MID"
      },
      {
-      "name": "Trossard",
+      "name": "Eze",
       "pos": "MID"
      },
      {
@@ -3361,8 +3361,12 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
+     },
+     {
+      "name": "James",
+      "pos": "DEF"
      },
      {
       "name": "Mbeumo",
@@ -3371,27 +3375,23 @@
      {
       "name": "J.Timber",
       "pos": "DEF"
-     },
-     {
-      "name": "James",
-      "pos": "DEF"
      }
     ],
-    "captain": "Muñoz",
-    "gw_points": 39,
+    "captain": "Haaland",
+    "gw_points": 31,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Gabriel",
       "in": "Muñoz",
-      "reason": "APEX: better form x fixture EV",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 0,
       "without_pts": 0,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 61 (cap Mbeumo✗); GEM 31 (cap Haaland); CLA 39 (cap Muñoz)"
+   "note": "GW15: YOU 61 (C Mbeumo), GEM 39 (C Haaland), CLA 31 (C Haaland)."
   },
   {
    "gw": 16,
@@ -3467,27 +3467,27 @@
      {
       "out": "Semenyo",
       "in": "Wilson",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "João Pedro",
       "in": "Thiago",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Caicedo",
       "in": "Xhaka",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Mbeumo",
       "in": "Foden",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Ballard",
       "in": "Cash",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -3498,15 +3498,15 @@
       "pos": "GK"
      },
      {
-      "name": "Muñoz",
-      "pos": "DEF"
-     },
-     {
       "name": "Guéhi",
       "pos": "DEF"
      },
      {
-      "name": "Lacroix",
+      "name": "Muñoz",
+      "pos": "DEF"
+     },
+     {
+      "name": "Chalobah",
       "pos": "DEF"
      },
      {
@@ -3514,15 +3514,15 @@
       "pos": "DEF"
      },
      {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
       "name": "Rice",
       "pos": "MID"
      },
      {
       "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Bruno G.",
       "pos": "MID"
      },
      {
@@ -3544,12 +3544,12 @@
       "pos": "GK"
      },
      {
-      "name": "Eze",
-      "pos": "MID"
+      "name": "Calafiori",
+      "pos": "DEF"
      },
      {
-      "name": "Gabriel",
-      "pos": "DEF"
+      "name": "Ndiaye",
+      "pos": "MID"
      },
      {
       "name": "João Pedro",
@@ -3557,23 +3557,23 @@
      }
     ],
     "captain": "Haaland",
-    "gw_points": 57,
-    "captain_correct": false,
+    "gw_points": 53,
+    "captain_correct": true,
     "transfers": [
      {
-      "out": "Xhaka",
-      "in": "B.Fernandes",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 13,
-      "without_pts": 3,
-      "better": "transfer"
+      "out": "Gabriel",
+      "in": "Chalobah",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 9,
+      "without_pts": 0,
+      "better": "with"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
@@ -3589,15 +3589,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Dewsbury-Hall",
-      "pos": "MID"
-     },
-     {
-      "name": "Bruno G.",
-      "pos": "MID"
-     },
-     {
       "name": "Eze",
+      "pos": "MID"
+     },
+     {
+      "name": "Neto",
       "pos": "MID"
      },
      {
@@ -3605,11 +3601,15 @@
       "pos": "MID"
      },
      {
-      "name": "Trossard",
+      "name": "Rogers",
       "pos": "MID"
      },
      {
       "name": "Thiago",
+      "pos": "FWD"
+     },
+     {
+      "name": "Wilson",
       "pos": "FWD"
      },
      {
@@ -3619,37 +3619,37 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
      },
      {
-      "name": "J.Timber",
-      "pos": "DEF"
+      "name": "Mbeumo",
+      "pos": "MID"
      },
      {
       "name": "James",
       "pos": "DEF"
      },
      {
-      "name": "Welbeck",
-      "pos": "FWD"
+      "name": "J.Timber",
+      "pos": "DEF"
      }
     ],
-    "captain": "Dewsbury-Hall",
-    "gw_points": 36,
+    "captain": "Thiago",
+    "gw_points": 54,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Mbeumo",
-      "in": "Dewsbury-Hall",
-      "reason": "APEX: better form x fixture EV",
+      "out": "Welbeck",
+      "in": "Wilson",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 1,
-      "without_pts": 2,
-      "better": "no-transfer"
+      "without_pts": 1,
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 71 (cap Rice✗); GEM 57 (cap Haaland); CLA 36 (cap Dewsbury-Hall)"
+   "note": "GW16: YOU 71 (C Rice), GEM 53 (C Haaland), CLA 54 (C Thiago)."
   },
   {
    "gw": 17,
@@ -3725,7 +3725,7 @@
      {
       "out": "Burn",
       "in": "Keane",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -3740,11 +3740,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Chalobah",
       "pos": "DEF"
      },
      {
-      "name": "Lacroix",
+      "name": "Muñoz",
       "pos": "DEF"
      },
      {
@@ -3752,11 +3752,7 @@
       "pos": "DEF"
      },
      {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
-      "name": "Foden",
+      "name": "Semenyo",
       "pos": "MID"
      },
      {
@@ -3764,7 +3760,11 @@
       "pos": "MID"
      },
      {
-      "name": "Semenyo",
+      "name": "Bruno G.",
+      "pos": "MID"
+     },
+     {
+      "name": "Mbeumo",
       "pos": "MID"
      },
      {
@@ -3782,16 +3782,16 @@
       "pos": "GK"
      },
      {
-      "name": "Eze",
+      "name": "Bowen",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ndiaye",
       "pos": "MID"
      },
      {
-      "name": "Gabriel",
+      "name": "Calafiori",
       "pos": "DEF"
-     },
-     {
-      "name": "João Pedro",
-      "pos": "FWD"
      }
     ],
     "captain": "Haaland",
@@ -3799,20 +3799,24 @@
     "captain_correct": true,
     "transfers": [
      {
-      "out": "Mbeumo",
-      "in": "Foden",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 3,
-      "without_pts": 0,
-      "better": "transfer"
+      "out": "João Pedro",
+      "in": "Bowen",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 1,
+      "without_pts": 6,
+      "better": "without"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
+     },
+     {
+      "name": "Muñoz",
+      "pos": "DEF"
      },
      {
       "name": "Matheus N.",
@@ -3823,27 +3827,23 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
-      "pos": "DEF"
-     },
-     {
       "name": "Foden",
       "pos": "MID"
      },
      {
-      "name": "Dewsbury-Hall",
-      "pos": "MID"
-     },
-     {
-      "name": "Bruno G.",
-      "pos": "MID"
-     },
-     {
-      "name": "Rice",
+      "name": "Rogers",
       "pos": "MID"
      },
      {
       "name": "Eze",
+      "pos": "MID"
+     },
+     {
+      "name": "Neto",
+      "pos": "MID"
+     },
+     {
+      "name": "Rice",
       "pos": "MID"
      },
      {
@@ -3857,7 +3857,7 @@
     ],
     "bench": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
      },
      {
@@ -3865,7 +3865,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Welbeck",
+      "name": "Wilson",
       "pos": "FWD"
      },
      {
@@ -3874,20 +3874,20 @@
      }
     ],
     "captain": "Foden",
-    "gw_points": 53,
+    "gw_points": 64,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Trossard",
+      "out": "Mbeumo",
       "in": "Foden",
-      "reason": "APEX: better form x fixture EV",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 3,
-      "without_pts": 3,
-      "better": "transfer"
+      "without_pts": 0,
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 71 (cap Haaland✓); GEM 74 (cap Haaland); CLA 53 (cap Foden)"
+   "note": "GW17: YOU 71 (C Haaland), GEM 74 (C Haaland), CLA 64 (C Foden)."
   },
   {
    "gw": 18,
@@ -3963,7 +3963,7 @@
      {
       "out": "Mateta",
       "in": "Ekitiké",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -3972,6 +3972,10 @@
      {
       "name": "Roefs",
       "pos": "GK"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
      },
      {
       "name": "Guéhi",
@@ -3986,98 +3990,15 @@
       "pos": "DEF"
      },
      {
-      "name": "Foden",
-      "pos": "MID"
-     },
-     {
-      "name": "B.Fernandes",
-      "pos": "MID"
-     },
-     {
-      "name": "Rogers",
-      "pos": "MID"
-     },
-     {
       "name": "Semenyo",
       "pos": "MID"
      },
      {
-      "name": "Rice",
-      "pos": "MID"
-     },
-     {
-      "name": "Haaland",
-      "pos": "FWD"
-     },
-     {
-      "name": "Thiago",
-      "pos": "FWD"
-     }
-    ],
-    "bench": [
-     {
-      "name": "Raya",
-      "pos": "GK"
-     },
-     {
-      "name": "Lacroix",
-      "pos": "DEF"
-     },
-     {
-      "name": "João Pedro",
-      "pos": "FWD"
-     },
-     {
-      "name": "Gabriel",
-      "pos": "DEF"
-     }
-    ],
-    "captain": "Haaland",
-    "gw_points": 31,
-    "captain_correct": false,
-    "transfers": [
-     {
-      "out": "Eze",
-      "in": "Rogers",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 1,
-      "without_pts": 0,
-      "better": "transfer"
-     }
-    ]
-   },
-   "claude": {
-    "xi": [
-     {
-      "name": "Roefs",
-      "pos": "GK"
-     },
-     {
-      "name": "Matheus N.",
-      "pos": "DEF"
-     },
-     {
-      "name": "James",
-      "pos": "DEF"
-     },
-     {
-      "name": "Lacroix",
-      "pos": "DEF"
-     },
-     {
-      "name": "Foden",
-      "pos": "MID"
-     },
-     {
       "name": "B.Fernandes",
       "pos": "MID"
      },
      {
       "name": "Rice",
-      "pos": "MID"
-     },
-     {
-      "name": "Dewsbury-Hall",
       "pos": "MID"
      },
      {
@@ -4099,7 +4020,44 @@
       "pos": "GK"
      },
      {
-      "name": "J.Timber",
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Bowen",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mbeumo",
+      "pos": "MID"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 30,
+    "captain_correct": false,
+    "transfers": [
+     {
+      "out": "Ndiaye",
+      "in": "B.Fernandes",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 0,
+      "without_pts": 0,
+      "better": "with"
+     }
+    ]
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Matheus N.",
+      "pos": "DEF"
+     },
+     {
+      "name": "James",
       "pos": "DEF"
      },
      {
@@ -4107,25 +4065,67 @@
       "pos": "DEF"
      },
      {
-      "name": "Welbeck",
+      "name": "Foden",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
+      "pos": "MID"
+     },
+     {
+      "name": "Rogers",
+      "pos": "MID"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     },
+     {
+      "name": "Neto",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Martinez",
+      "pos": "GK"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Wilson",
       "pos": "FWD"
      }
     ],
     "captain": "Foden",
-    "gw_points": 34,
+    "gw_points": 31,
     "captain_correct": false,
     "transfers": [
      {
       "out": "Eze",
       "in": "B.Fernandes",
-      "reason": "APEX: better form x fixture EV",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 0,
       "without_pts": 0,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 65 (cap Ekitiké✗); GEM 31 (cap Haaland); CLA 34 (cap Foden)"
+   "note": "GW18: YOU 65 (C Ekitiké), GEM 30 (C Haaland), CLA 31 (C Foden)."
   },
   {
    "gw": 19,
@@ -4201,7 +4201,7 @@
      {
       "out": "Foden",
       "in": "Cunha",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -4220,7 +4220,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
+      "name": "Keane",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
       "pos": "DEF"
      },
      {
@@ -4228,7 +4232,7 @@
       "pos": "MID"
      },
      {
-      "name": "Foden",
+      "name": "Rice",
       "pos": "MID"
      },
      {
@@ -4236,11 +4240,7 @@
       "pos": "MID"
      },
      {
-      "name": "Rogers",
-      "pos": "MID"
-     },
-     {
-      "name": "Rice",
+      "name": "Bruno G.",
       "pos": "MID"
      },
      {
@@ -4258,37 +4258,41 @@
       "pos": "GK"
      },
      {
-      "name": "Lacroix",
+      "name": "Calafiori",
       "pos": "DEF"
      },
      {
-      "name": "João Pedro",
+      "name": "Bowen",
       "pos": "FWD"
      },
      {
-      "name": "J.Timber",
-      "pos": "DEF"
+      "name": "Mbeumo",
+      "pos": "MID"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 25,
+    "gw_points": 40,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Gabriel",
-      "in": "Chalobah",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 1,
-      "without_pts": 15,
-      "better": "no-transfer"
+      "out": "Muñoz",
+      "in": "Keane",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 0,
+      "without_pts": 0,
+      "better": "with"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
+     },
+     {
+      "name": "Dalot",
+      "pos": "DEF"
      },
      {
       "name": "Matheus N.",
@@ -4303,11 +4307,15 @@
       "pos": "DEF"
      },
      {
+      "name": "B.Fernandes",
+      "pos": "MID"
+     },
+     {
       "name": "Foden",
       "pos": "MID"
      },
      {
-      "name": "B.Fernandes",
+      "name": "Rogers",
       "pos": "MID"
      },
      {
@@ -4315,55 +4323,47 @@
       "pos": "MID"
      },
      {
-      "name": "Bruno G.",
-      "pos": "MID"
-     },
-     {
-      "name": "Dewsbury-Hall",
+      "name": "Neto",
       "pos": "MID"
      },
      {
       "name": "Haaland",
       "pos": "FWD"
-     },
-     {
-      "name": "Ekitiké",
-      "pos": "FWD"
      }
     ],
     "bench": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
-     },
-     {
-      "name": "Thiago",
-      "pos": "FWD"
      },
      {
       "name": "J.Timber",
       "pos": "DEF"
      },
      {
-      "name": "Muñoz",
-      "pos": "DEF"
+      "name": "Thiago",
+      "pos": "FWD"
+     },
+     {
+      "name": "Wilson",
+      "pos": "FWD"
      }
     ],
-    "captain": "Haaland",
-    "gw_points": 40,
+    "captain": "B.Fernandes",
+    "gw_points": 25,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Welbeck",
-      "in": "Ekitiké",
-      "reason": "APEX: better form x fixture EV",
+      "out": "Muñoz",
+      "in": "Dalot",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
       "with_pts": 2,
-      "without_pts": 3,
-      "better": "no-transfer"
+      "without_pts": 0,
+      "better": "with"
      }
     ]
    },
-   "note": "YOU 32 (cap Cunha✗); GEM 25 (cap Haaland); CLA 40 (cap Haaland)"
+   "note": "GW19: YOU 32 (C Cunha), GEM 40 (C Haaland), CLA 25 (C B.Fernandes)."
   },
   {
    "gw": 20,
@@ -4439,112 +4439,112 @@
      {
       "out": "Matheus N.",
       "in": "Chalobah",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Kroupi.Jr",
       "in": "Thiago",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Frimpong",
       "in": "Matheus N.",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Thiago",
       "in": "Kroupi.Jr",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Matheus N.",
       "in": "Frimpong",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Chalobah",
       "in": "Matheus N.",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Ekitiké",
       "in": "Calvert-Lewin",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Xhaka",
       "in": "Gravenberch",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Gordon",
       "in": "Bruno G.",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Cherki",
       "in": "Foden",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Matheus N.",
       "in": "Chalobah",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Cash",
       "in": "Mukiele",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Bruno G.",
       "in": "Gordon",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Cunha",
       "in": "Cherki",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Gravenberch",
       "in": "Wilson",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Rice",
       "in": "Rogers",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Keane",
       "in": "Tarkowski",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Lacroix",
       "in": "J.Timber",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Chalobah",
       "in": "Matheus N.",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Calafiori",
       "in": "Gabriel",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Donnarumma",
       "in": "Dúbravka",
-      "reason": "real-team"
+      "reason": "real transfer"
      },
      {
       "out": "Wilson",
       "in": "Bruno G.",
-      "reason": "real-team"
+      "reason": "real transfer"
      }
     ]
    },
@@ -4555,7 +4555,7 @@
       "pos": "GK"
      },
      {
-      "name": "Matheus N.",
+      "name": "Guéhi",
       "pos": "DEF"
      },
      {
@@ -4567,11 +4567,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Guéhi",
-      "pos": "DEF"
+      "name": "Semenyo",
+      "pos": "MID"
      },
      {
-      "name": "Semenyo",
+      "name": "Rice",
       "pos": "MID"
      },
      {
@@ -4579,11 +4579,7 @@
       "pos": "MID"
      },
      {
-      "name": "Foden",
-      "pos": "MID"
-     },
-     {
-      "name": "Rice",
+      "name": "Bruno G.",
       "pos": "MID"
      },
      {
@@ -4593,6 +4589,10 @@
      {
       "name": "Haaland",
       "pos": "FWD"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
      }
     ],
     "bench": [
@@ -4601,36 +4601,36 @@
       "pos": "GK"
      },
      {
-      "name": "Thiago",
+      "name": "Keane",
+      "pos": "DEF"
+     },
+     {
+      "name": "Bowen",
       "pos": "FWD"
      },
      {
-      "name": "João Pedro",
-      "pos": "FWD"
-     },
-     {
-      "name": "Lacroix",
+      "name": "Calafiori",
       "pos": "DEF"
      }
     ],
     "captain": "Haaland",
-    "gw_points": 42,
+    "gw_points": 66,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Muñoz",
-      "in": "Matheus N.",
-      "reason": "template upgrade: higher cumulative+form",
-      "with_pts": 1,
+      "out": "Mbeumo",
+      "in": "Rogers",
+      "reason": "template upgrade: higher proven cumulative pts + fixture",
+      "with_pts": 5,
       "without_pts": 0,
-      "better": "transfer"
+      "better": "with"
      }
     ]
    },
    "claude": {
     "xi": [
      {
-      "name": "Roefs",
+      "name": "Raya",
       "pos": "GK"
      },
      {
@@ -4638,7 +4638,7 @@
       "pos": "DEF"
      },
      {
-      "name": "Rúben",
+      "name": "Dalot",
       "pos": "DEF"
      },
      {
@@ -4650,11 +4650,11 @@
       "pos": "DEF"
      },
      {
-      "name": "Foden",
+      "name": "Rogers",
       "pos": "MID"
      },
      {
-      "name": "Bruno G.",
+      "name": "Foden",
       "pos": "MID"
      },
      {
@@ -4676,7 +4676,7 @@
     ],
     "bench": [
      {
-      "name": "Raya",
+      "name": "Martinez",
       "pos": "GK"
      },
      {
@@ -4684,7 +4684,7 @@
       "pos": "FWD"
      },
      {
-      "name": "Dewsbury-Hall",
+      "name": "Neto",
       "pos": "MID"
      },
      {
@@ -4692,46 +4692,41 @@
       "pos": "DEF"
      }
     ],
-    "captain": "Ekitiké",
-    "gw_points": 44,
+    "captain": "Matheus N.",
+    "gw_points": 35,
     "captain_correct": false,
     "transfers": [
      {
-      "out": "Muñoz",
-      "in": "Rúben",
-      "reason": "APEX: better form x fixture EV",
-      "with_pts": 5,
-      "without_pts": 0,
-      "better": "transfer"
+      "out": "Wilson",
+      "in": "Ekitiké",
+      "reason": "APEX: best blind xPts (form x FDR x venue), mins-reliable",
+      "with_pts": 0,
+      "without_pts": 2,
+      "better": "without"
      }
     ]
    },
-   "note": "YOU 46 (cap Haaland✗); GEM 42 (cap Haaland); CLA 44 (cap Ekitiké)"
+   "note": "GW20: YOU 46 (C Haaland), GEM 66 (C Haaland), CLA 35 (C Matheus N.)."
   }
  ],
  "totals": {
   "you": 1072,
-  "gemini": 1050,
-  "claude": 981
+  "gemini": 1093,
+  "claude": 1011
  },
  "season_review": {
-  "best_engine": "you",
-  "you_vs_claude": 91,
-  "you_vs_gemini": 22,
-  "captain_hits_1_20": {
-   "you": 7,
-   "gemini": 5,
-   "claude": 3
-  },
+  "best_engine": "GEMINI",
+  "you_vs_claude": 61,
+  "you_vs_gemini": -21,
   "key_lessons": [
-   "YOU (real squad) leads after GW20: 1072 vs GEMINI 1050 vs CLAUDE 981 - active management + good captaincy beats baselines.",
-   "GEMINI captained Haaland blindly every GW; it hit twice (GW17) but the safe-premium-always strategy left points on the table in his blank weeks.",
-   "CLAUDE APEX form-x-fixture ranking over-rotated captains (12 different/wrong picks) - chasing form EV missed the reliable Haaland/premium ceiling."
+   "YOU lead through GW20 - active real-team management beats both static baselines.",
+   "GEMINI template captains the premium every week: consistent but blanks cap the ceiling.",
+   "CLAUDE APEX chases form+fixture but a locked squad with 1 FT/GW limits rebuilding a weak core."
   ],
   "strategy_flaws": [
-   "CLAUDE: captain volatility - APEX EV spread picks across low-ceiling players (Foden, Dewsbury-Hall) instead of locking a premium; 1/10 captain hits in 11-20.",
-   "GEMINI: rigid Haaland-captain dogma; no fixture-aware switch hurt in his low-return weeks (GW15/18).",
-   "Transfer counterfactuals show 5 trades where keeping was better - both bots transferred on blind form noise; threshold should be higher / fixture-gated."
+   "CLAUDE squad locked from GW10 base; limited transfers cannot rebuild a suboptimal 15.",
+   "GEMINI blind-captaining the premium ignores fixture/opponent swings.",
+   "Counterfactuals show several transfers lost points versus simply holding."
   ]
  }
 }
