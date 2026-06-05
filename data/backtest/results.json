@@ -1,0 +1,2225 @@
+{
+ "season": "2025/26",
+ "gws": [
+  {
+   "gw": 1,
+   "you": {
+    "xi": [
+     {
+      "name": "Verbruggen",
+      "pos": "GK"
+     },
+     {
+      "name": "Cucurella",
+      "pos": "DEF"
+     },
+     {
+      "name": "N.Williams",
+      "pos": "DEF"
+     },
+     {
+      "name": "Van de Ven",
+      "pos": "DEF"
+     },
+     {
+      "name": "Palmer",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "L.Paquetá",
+      "pos": "MID"
+     },
+     {
+      "name": "Dewsbury-Hall",
+      "pos": "MID"
+     },
+     {
+      "name": "Strand Larsen",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mateta",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Dúbravka",
+      "pos": "GK"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Rodon",
+      "pos": "DEF"
+     },
+     {
+      "name": "Estève",
+      "pos": "DEF"
+     }
+    ],
+    "captain": "M.Salah",
+    "gw_points": 45,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saliba",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saka",
+      "pos": "MID"
+     },
+     {
+      "name": "Trossard",
+      "pos": "MID"
+     },
+     {
+      "name": "Watkins",
+      "pos": "FWD"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cash",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     },
+     {
+      "name": "Zubimendi",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Martinez",
+      "pos": "GK"
+     },
+     {
+      "name": "Rogers",
+      "pos": "MID"
+     },
+     {
+      "name": "Evanilson",
+      "pos": "FWD"
+     },
+     {
+      "name": "Kroupi.Jr",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Saka",
+    "gw_points": 65,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Matheus N.",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saliba",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saka",
+      "pos": "MID"
+     },
+     {
+      "name": "Trossard",
+      "pos": "MID"
+     },
+     {
+      "name": "Watkins",
+      "pos": "FWD"
+     },
+     {
+      "name": "Tavernier",
+      "pos": "MID"
+     },
+     {
+      "name": "Schade",
+      "pos": "MID"
+     },
+     {
+      "name": "Palmer",
+      "pos": "MID"
+     },
+     {
+      "name": "Kroupi.Jr",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Martinez",
+      "pos": "GK"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Saka",
+    "gw_points": 43,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 45, CLAUDE 43, GEMINI 65"
+  },
+  {
+   "gw": 2,
+   "you": {
+    "xi": [
+     {
+      "name": "Verbruggen",
+      "pos": "GK"
+     },
+     {
+      "name": "N.Williams",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cucurella",
+      "pos": "DEF"
+     },
+     {
+      "name": "Hume",
+      "pos": "DEF"
+     },
+     {
+      "name": "Van de Ven",
+      "pos": "DEF"
+     },
+     {
+      "name": "L.Paquetá",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Strand Larsen",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mateta",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Dúbravka",
+      "pos": "GK"
+     },
+     {
+      "name": "Palmer",
+      "pos": "MID"
+     },
+     {
+      "name": "Dewsbury-Hall",
+      "pos": "MID"
+     },
+     {
+      "name": "Estève",
+      "pos": "DEF"
+     }
+    ],
+    "captain": "Palmer",
+    "gw_points": 55,
+    "captain_correct": false,
+    "transfers": [
+     {
+      "out": "Rodon",
+      "in": "Hume",
+      "reason": "real",
+      "with_pts": 1,
+      "without_pts": 2,
+      "better": "without"
+     }
+    ]
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Ballard",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saliba",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Richarlison",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mitchell",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cash",
+      "pos": "DEF"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Stach",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     }
+    ],
+    "captain": "Semenyo",
+    "gw_points": 61,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Ballard",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saliba",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mitchell",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Tavernier",
+      "pos": "MID"
+     },
+     {
+      "name": "Isidor",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Semenyo",
+    "gw_points": 67,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 55, CLAUDE 67, GEMINI 61"
+  },
+  {
+   "gw": 3,
+   "you": {
+    "xi": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Van de Ven",
+      "pos": "DEF"
+     },
+     {
+      "name": "Livramento",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cucurella",
+      "pos": "DEF"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "Wood",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Sarr",
+      "pos": "MID"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     }
+    ],
+    "captain": "Wood",
+    "gw_points": 39,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Pickford",
+      "pos": "GK"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ballard",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Richarlison",
+      "pos": "FWD"
+     },
+     {
+      "name": "Saliba",
+      "pos": "DEF"
+     },
+     {
+      "name": "Tavernier",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     },
+     {
+      "name": "O.Dango",
+      "pos": "MID"
+     }
+    ],
+    "captain": "Semenyo",
+    "gw_points": 29,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Pickford",
+      "pos": "GK"
+     },
+     {
+      "name": "Ballard",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Garner",
+      "pos": "MID"
+     },
+     {
+      "name": "Tavernier",
+      "pos": "MID"
+     },
+     {
+      "name": "Richarlison",
+      "pos": "FWD"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Tarkowski",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ndiaye",
+      "pos": "MID"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Richarlison",
+    "gw_points": 48,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 39, CLAUDE 48, GEMINI 29"
+  },
+  {
+   "gw": 4,
+   "you": {
+    "xi": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Livramento",
+      "pos": "DEF"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cucurella",
+      "pos": "DEF"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "Wood",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "M.Salah",
+    "gw_points": 66,
+    "captain_correct": false,
+    "transfers": [
+     {
+      "out": "Van de Ven",
+      "in": "Lacroix",
+      "reason": "real",
+      "with_pts": 6,
+      "without_pts": 14,
+      "better": "without"
+     },
+     {
+      "out": "Sarr",
+      "in": "Gakpo",
+      "reason": "real",
+      "with_pts": 3,
+      "without_pts": 0,
+      "better": "with"
+     }
+    ]
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pickford",
+      "pos": "GK"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Tavernier",
+      "pos": "MID"
+     }
+    ],
+    "captain": "João Pedro",
+    "gw_points": 77,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Sarr",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Henderson",
+      "pos": "GK"
+     },
+     {
+      "name": "Muñoz",
+      "pos": "DEF"
+     },
+     {
+      "name": "Szoboszlai",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     }
+    ],
+    "captain": "Ekitiké",
+    "gw_points": 61,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 66, CLAUDE 61, GEMINI 77"
+  },
+  {
+   "gw": 5,
+   "you": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cucurella",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "Wood",
+      "pos": "FWD"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "Livramento",
+      "pos": "DEF"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "M.Salah",
+    "gw_points": 40,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Zubimendi",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 59,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rodon",
+      "pos": "DEF"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Woltemade",
+      "pos": "FWD"
+     },
+     {
+      "name": "Muñoz",
+      "pos": "DEF"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Henderson",
+      "pos": "GK"
+     },
+     {
+      "name": "Tavernier",
+      "pos": "MID"
+     },
+     {
+      "name": "Szoboszlai",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "M.Salah",
+    "gw_points": 50,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 40, CLAUDE 50, GEMINI 59"
+  },
+  {
+   "gw": 6,
+   "you": {
+    "xi": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Livramento",
+      "pos": "DEF"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "Cucurella",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 76,
+    "captain_correct": true,
+    "transfers": [
+     {
+      "out": "Wood",
+      "in": "Haaland",
+      "reason": "real",
+      "with_pts": 16,
+      "without_pts": 0,
+      "better": "with"
+     },
+     {
+      "out": "M.Salah",
+      "in": "Caicedo",
+      "reason": "real",
+      "with_pts": 2,
+      "without_pts": 2,
+      "better": "with"
+     }
+    ]
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "M.Salah",
+      "pos": "MID"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 65,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Pickford",
+      "pos": "GK"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Van de Ven",
+      "pos": "DEF"
+     },
+     {
+      "name": "Chalobah",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Ndiaye",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Richarlison",
+      "pos": "FWD"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Pedro Porro",
+      "pos": "DEF"
+     },
+     {
+      "name": "Garner",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Donnarumma",
+      "pos": "GK"
+     },
+     {
+      "name": "J.Palhinha",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 66,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "note": "YOU 76, CLAUDE 66, GEMINI 65"
+  },
+  {
+   "gw": 7,
+   "you": {
+    "xi": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "Livramento",
+      "pos": "DEF"
+     }
+    ],
+    "captain": "Semenyo",
+    "gw_points": 91,
+    "captain_correct": true,
+    "transfers": [
+     {
+      "out": "Cucurella",
+      "in": "Calafiori",
+      "reason": "real",
+      "with_pts": 6,
+      "without_pts": 7,
+      "better": "without"
+     }
+    ]
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Alderete",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Gravenberch",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Bowen",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 66,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Pickford",
+      "pos": "GK"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Gravenberch",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Minteh",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Cash",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Gyökeres",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 55,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 91, CLAUDE 55, GEMINI 66"
+  },
+  {
+   "gw": 8,
+   "you": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "Burn",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 59,
+    "captain_correct": true,
+    "transfers": [
+     {
+      "out": "Livramento",
+      "in": "Burn",
+      "reason": "real",
+      "with_pts": 0,
+      "without_pts": 0,
+      "better": "with"
+     }
+    ]
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Enzo",
+      "pos": "MID"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Bowen",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 70,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Alderete",
+      "pos": "DEF"
+     },
+     {
+      "name": "Mukiele",
+      "pos": "DEF"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Xhaka",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Isidor",
+      "pos": "FWD"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Petrović",
+      "pos": "GK"
+     },
+     {
+      "name": "E.Le Fée",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Bowen",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 87,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 59, CLAUDE 87, GEMINI 70"
+  },
+  {
+   "gw": 9,
+   "you": {
+    "xi": [
+     {
+      "name": "Vicario",
+      "pos": "GK"
+     },
+     {
+      "name": "Gudmundsson",
+      "pos": "DEF"
+     },
+     {
+      "name": "Burn",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Reijnders",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Kudus",
+      "pos": "MID"
+     },
+     {
+      "name": "Gakpo",
+      "pos": "MID"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Reinildo",
+      "pos": "DEF"
+     },
+     {
+      "name": "Ekitiké",
+      "pos": "FWD"
+     },
+     {
+      "name": "Lacroix",
+      "pos": "DEF"
+     }
+    ],
+    "captain": "Semenyo",
+    "gw_points": 33,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Senesi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Ndiaye",
+      "pos": "MID"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     },
+     {
+      "name": "João Pedro",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 52,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "James",
+      "pos": "DEF"
+     },
+     {
+      "name": "Mukiele",
+      "pos": "DEF"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Alderete",
+      "pos": "DEF"
+     },
+     {
+      "name": "Woltemade",
+      "pos": "FWD"
+     },
+     {
+      "name": "Gravenberch",
+      "pos": "MID"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Dúbravka",
+      "pos": "GK"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Stach",
+      "pos": "MID"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 29,
+    "captain_correct": false,
+    "transfers": []
+   },
+   "note": "YOU 33, CLAUDE 29, GEMINI 52"
+  },
+  {
+   "gw": 10,
+   "you": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "Muñoz",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Saka",
+      "pos": "MID"
+     },
+     {
+      "name": "Minteh",
+      "pos": "MID"
+     },
+     {
+      "name": "Iwobi",
+      "pos": "MID"
+     },
+     {
+      "name": "Sarr",
+      "pos": "MID"
+     },
+     {
+      "name": "B.Fernandes",
+      "pos": "MID"
+     },
+     {
+      "name": "Welbeck",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mateta",
+      "pos": "FWD"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Pope",
+      "pos": "GK"
+     },
+     {
+      "name": "Burn",
+      "pos": "DEF"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     },
+     {
+      "name": "Mukiele",
+      "pos": "DEF"
+     }
+    ],
+    "captain": "Gabriel",
+    "gw_points": 76,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "gemini": {
+    "xi": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Van de Ven",
+      "pos": "DEF"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Mbeumo",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Guéhi",
+      "pos": "DEF"
+     },
+     {
+      "name": "Calafiori",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     },
+     {
+      "name": "Caicedo",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Anthony",
+      "pos": "MID"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     },
+     {
+      "name": "Bowen",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 91,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "claude": {
+    "xi": [
+     {
+      "name": "Raya",
+      "pos": "GK"
+     },
+     {
+      "name": "Gabriel",
+      "pos": "DEF"
+     },
+     {
+      "name": "J.Timber",
+      "pos": "DEF"
+     },
+     {
+      "name": "Mukiele",
+      "pos": "DEF"
+     },
+     {
+      "name": "Rice",
+      "pos": "MID"
+     },
+     {
+      "name": "Semenyo",
+      "pos": "MID"
+     },
+     {
+      "name": "Haaland",
+      "pos": "FWD"
+     },
+     {
+      "name": "Welbeck",
+      "pos": "FWD"
+     },
+     {
+      "name": "Iwobi",
+      "pos": "MID"
+     },
+     {
+      "name": "Mbeumo",
+      "pos": "MID"
+     },
+     {
+      "name": "Eze",
+      "pos": "MID"
+     }
+    ],
+    "bench": [
+     {
+      "name": "Roefs",
+      "pos": "GK"
+     },
+     {
+      "name": "James",
+      "pos": "DEF"
+     },
+     {
+      "name": "Matheus N.",
+      "pos": "DEF"
+     },
+     {
+      "name": "Thiago",
+      "pos": "FWD"
+     }
+    ],
+    "captain": "Haaland",
+    "gw_points": 80,
+    "captain_correct": true,
+    "transfers": []
+   },
+   "note": "YOU 76, CLAUDE 80, GEMINI 91"
+  }
+ ],
+ "totals": {
+  "you": 580,
+  "gemini": 635,
+  "claude": 586
+ },
+ "season_review": {
+  "best_engine": "gemini",
+  "you_vs_claude": -6,
+  "you_vs_gemini": -55,
+  "key_lessons": [
+   "Blind form x FDR ease ranks captains but early-season has thin form history.",
+   "Template (cumulative pts) baseline lags until enough GWs accumulate.",
+   "Minutes reliability filter prevents picking rotation risks after GW3."
+  ],
+  "strategy_flaws": [
+   "CLAUDE rebuilds squad each GW (no budget/transfer constraint) - upper bound, not realistic.",
+   "GEMINI cum-pts proxy biased to early hauler outliers."
+  ]
+ }
+}
