@@ -1,0 +1,232 @@
+{
+  "gw": 38,
+  "agent": "fixture-room",
+  "generated": "2026-06-05",
+  "data_note": "All player FDRs in features.json are uniform at 3 — ETL did not return per-fixture granularity. Ratings below are constructed from team tier analysis, home/away weighting, and end-of-season motivation context.",
+  "fixture_ratings": [
+    {
+      "team": "LIV",
+      "opponent": "CRY",
+      "home_away": "home",
+      "fdr_score": 2,
+      "motivation": "high",
+      "note": "Liverpool hosting Crystal Palace. LIV likely already champions or chasing final table position — strong motivation to finish season well. Palace have nothing major to play for. Easy home fixture."
+    },
+    {
+      "team": "MCI",
+      "opponent": "BUR",
+      "home_away": "home",
+      "fdr_score": 1,
+      "motivation": "medium",
+      "note": "Man City hosting relegated Burnley. Haaland listed UNAVAILABLE. City may rotate with nothing decisive at stake. BUR are relegated so low defensive effort. Easiest attacking fixture in the GW but rotation risk is significant."
+    },
+    {
+      "team": "ARS",
+      "opponent": "EVE",
+      "home_away": "home",
+      "fdr_score": 2,
+      "motivation": "high",
+      "note": "Arsenal at home vs Everton. ARS finishing in top 2, high motivation to finish strong. EVE fighting relegation or mid-table safety — could be tight but Arsenal quality should tell."
+    },
+    {
+      "team": "NFO",
+      "opponent": "BHA",
+      "home_away": "away",
+      "fdr_score": 3,
+      "motivation": "high",
+      "note": "Nottm Forest away at Brighton. NFO chasing European spots — high motivation. BHA are a solid mid-table side at home. Away factor raises difficulty. Competitive match expected, not a gimme."
+    },
+    {
+      "team": "CHE",
+      "opponent": "TOT",
+      "home_away": "home",
+      "fdr_score": 3,
+      "motivation": "high",
+      "note": "Chelsea vs Spurs, a London derby in GW38 with both sides chasing upper-table finishes. High intensity match, Chelsea at home but TOT have quality attacking threats. Balanced fixture."
+    },
+    {
+      "team": "AVL",
+      "opponent": "MUN",
+      "home_away": "home",
+      "fdr_score": 3,
+      "motivation": "high",
+      "note": "Aston Villa hosting Man United. AVL chasing European qualification — strong motivation. MUN have been inconsistent but carry attacking threat. Home advantage keeps this at medium difficulty."
+    },
+    {
+      "team": "BRE",
+      "opponent": "LEE",
+      "home_away": "away",
+      "fdr_score": 2,
+      "motivation": "medium",
+      "note": "Brentford away at Leeds. LEE are a promoted/newly promoted side with limited threat. Brentford have quality enough to perform here. Away tag adds slight risk but manageable."
+    },
+    {
+      "team": "CRY",
+      "opponent": "LIV",
+      "home_away": "away",
+      "fdr_score": 5,
+      "motivation": "medium",
+      "note": "Crystal Palace away at Liverpool. Hardest fixture in GW38. LIV at home are formidable. CRY mid-table with nothing to play for — rotation risk and low defensive intensity."
+    },
+    {
+      "team": "MUN",
+      "opponent": "AVL",
+      "home_away": "away",
+      "fdr_score": 4,
+      "motivation": "medium",
+      "note": "Man United away at Aston Villa who are motivated for European spots. MUN have been inconsistent, away from home against a motivated AVL is tough."
+    },
+    {
+      "team": "NEW",
+      "opponent": "WHU",
+      "home_away": "home",
+      "fdr_score": 2,
+      "motivation": "high",
+      "note": "Newcastle at home vs West Ham. WHU fighting relegation or lower-table security. NEW chasing European places — strong home performance expected."
+    },
+    {
+      "team": "WHU",
+      "opponent": "NEW",
+      "home_away": "away",
+      "fdr_score": 4,
+      "motivation": "high",
+      "note": "West Ham away at Newcastle. WHU in a precarious table position, need points. But away at a motivated NEW side is very hard. Bowen captained here — high-risk, high-reward scenario."
+    },
+    {
+      "team": "FUL",
+      "opponent": "SUN",
+      "home_away": "home",
+      "fdr_score": 2,
+      "motivation": "medium",
+      "note": "Fulham at home vs Sunderland. SUN are a newly promoted or lower-half side. FUL solid at Craven Cottage. Good fixture for clean sheet potential."
+    },
+    {
+      "team": "SUN",
+      "opponent": "FUL",
+      "home_away": "away",
+      "fdr_score": 3,
+      "motivation": "medium",
+      "note": "Sunderland away at Fulham. SUN in their second or third PL season, mid-table battle. Away from home limits upside for defensive assets."
+    },
+    {
+      "team": "BHA",
+      "opponent": "NFO",
+      "home_away": "home",
+      "fdr_score": 3,
+      "motivation": "medium",
+      "note": "Brighton hosting a motivated Nottm Forest chasing Europe. BHA have struggled for consistency. Competitive match expected."
+    },
+    {
+      "team": "BOU",
+      "opponent": "LEE",
+      "home_away": "home",
+      "fdr_score": 2,
+      "motivation": "medium",
+      "note": "Bournemouth at home vs Leeds. LEE are outmatched at the top level. BOU have quality to put in a performance at the Vitality."
+    },
+    {
+      "team": "TOT",
+      "opponent": "CHE",
+      "home_away": "away",
+      "fdr_score": 4,
+      "motivation": "medium",
+      "note": "Tottenham away at Chelsea in a London derby. Both sides have quality but CHE at Stamford Bridge is a tough ask. TOT motivation uncertain with squad issues."
+    },
+    {
+      "team": "EVE",
+      "opponent": "ARS",
+      "home_away": "away",
+      "fdr_score": 5,
+      "motivation": "high",
+      "note": "Everton away at Arsenal. EVE battling relegation — high motivation but going to the Emirates is among the toughest fixtures. Very difficult for EVE assets, excellent for ARS assets."
+    },
+    {
+      "team": "LEE",
+      "opponent": "BOU",
+      "home_away": "away",
+      "fdr_score": 3,
+      "motivation": "high",
+      "note": "Leeds away at Bournemouth. LEE fighting for survival or finishing respectably in first PL season back. Away from home, multiple injuries — medium difficulty fixture."
+    },
+    {
+      "team": "BUR",
+      "opponent": "MCI",
+      "home_away": "away",
+      "fdr_score": 5,
+      "motivation": "low",
+      "note": "Burnley away at Man City. BUR are relegated — no motivation, likely rotating squad. Worst fixture in GW38 for BUR assets. City even with Haaland absent still have quality to put big numbers up."
+    },
+    {
+      "team": "WOL",
+      "opponent": "FUL",
+      "home_away": "home",
+      "fdr_score": 3,
+      "motivation": "medium",
+      "note": "Wolves hosting Fulham. WOL are a struggling lower-half side. Home fixture but limited quality. Average difficulty."
+    }
+  ],
+  "dgw_teams": [],
+  "bgw_teams": [],
+  "best_fixtures": [
+    "MCI (home vs BUR — FDR 1, easiest raw fixture though Haaland is UNAVAILABLE)",
+    "ARS (home vs EVE — FDR 2, strong team vs relegation side)",
+    "LIV (home vs CRY — FDR 2, champions vs mid-table Palace)",
+    "NEW (home vs WHU — FDR 2, motivated vs struggling WHU)",
+    "FUL (home vs SUN — FDR 2, solid home banker)",
+    "BRE (away vs LEE — FDR 2, quality away at promoted side)",
+    "BOU (home vs LEE — FDR 2, home vs struggling Leeds)"
+  ],
+  "worst_fixtures": [
+    "BUR (away at MCI — FDR 5, relegated with no motivation)",
+    "EVE (away at ARS — FDR 5, relegation battle at the Emirates)",
+    "CRY (away at LIV — FDR 5, nothing to play for away at champions)",
+    "WHU (away at NEW — FDR 4, Bowen captained but brutal away trip)",
+    "MUN (away at AVL — FDR 4, inconsistent United vs motivated Villa)",
+    "TOT (away at CHE — FDR 4, tough London derby away)"
+  ],
+  "motivation_alerts": [
+    {
+      "team": "MCI",
+      "alert": "ROTATION RISK — Haaland already UNAVAILABLE. City may rotate heavily with league position secured. FDR 1 against BUR means nothing if first-team players are rested.",
+      "severity": "high"
+    },
+    {
+      "team": "BUR",
+      "alert": "RELEGATED — No motivation, expect fringe players. Avoid all BUR assets.",
+      "severity": "high"
+    },
+    {
+      "team": "CRY",
+      "alert": "MID-TABLE APATHY — Crystal Palace away at Liverpool with nothing to play for. Low effort likely.",
+      "severity": "medium"
+    },
+    {
+      "team": "WHU",
+      "alert": "Bowen is captain in the user's squad but WHU travel to a motivated Newcastle. High ceiling if WHU need points but risky away fixture.",
+      "severity": "medium"
+    },
+    {
+      "team": "NFO",
+      "alert": "NFO chasing European spots — away at Brighton. High motivation but difficult venue. Wood/Anderson/Aina all carry upside if NFO push for a result.",
+      "severity": "low"
+    }
+  ],
+  "user_squad_fixture_summary": {
+    "note": "Analysis of user's starting XI fixture outlook for GW38",
+    "players": [
+      {"name": "Raya", "team": "ARS", "fixture": "vs EVE (H)", "fdr": 2, "verdict": "Good — clean sheet contender"},
+      {"name": "Gabriel", "team": "ARS", "fixture": "vs EVE (H)", "fdr": 2, "verdict": "Good fixture but DOUBTFUL — check fitness"},
+      {"name": "Gvardiol", "team": "MCI", "fixture": "vs BUR (H)", "fdr": 1, "verdict": "Best raw fixture but rotation risk at City is HIGH"},
+      {"name": "Aina", "team": "NFO", "fixture": "vs BHA (A)", "fdr": 3, "verdict": "Tricky away — European motivation helps"},
+      {"name": "M.Salah", "team": "LIV", "fixture": "vs CRY (H)", "fdr": 2, "verdict": "Excellent — home game vs nothing-to-play-for Palace"},
+      {"name": "Mbeumo", "team": "BRE", "fixture": "vs LEE (A)", "fdr": 2, "verdict": "Good — Brentford quality should show vs Leeds"},
+      {"name": "Rogers", "team": "AVL", "fixture": "vs MUN (H)", "fdr": 3, "verdict": "Medium — Villa motivated but MUN have threat"},
+      {"name": "Anderson", "team": "NFO", "fixture": "vs BHA (A)", "fdr": 3, "verdict": "Tricky away — NFO motivation positive but Brighton solid at home"},
+      {"name": "Bowen (C)", "team": "WHU", "fixture": "vs NEW (A)", "fdr": 4, "verdict": "Difficult captain pick — away at motivated Newcastle. High risk."},
+      {"name": "Mateta", "team": "CRY", "fixture": "vs LIV (A)", "fdr": 5, "verdict": "Very tough — away at champions with nothing to play for"},
+      {"name": "Wood", "team": "NFO", "fixture": "vs BHA (A)", "fdr": 3, "verdict": "Tricky away — NFO need result which could drive Wood goal threat"}
+    ],
+    "captain_concern": "Bowen captained into a FDR 4 away trip at Newcastle is the biggest risk in the squad. M.Salah (FDR 2, home vs CRY) is the strongly preferred vice-captain option if Bowen is kept. Consider VC-swap scenario."
+  },
+  "summary": "GW38 is the final gameweek with no DGW or BGW — all 20 teams play once. The best fixtures belong to ARS (home vs EVE), LIV (home vs CRY), NEW (home vs WHU), FUL (home vs SUN), BRE (away vs LEE) and BOU (home vs LEE). MCI have the easiest opposition (relegated BUR away) but Haaland is UNAVAILABLE and rotation risk is severe — this is a trap fixture for premium assets. The worst runs are BUR (relegated, away at City), EVE (away at Arsenal), CRY (away at Liverpool), and WHU (away at motivated Newcastle). No DGW or BGW teams identified for GW38. Key user squad concern: Bowen captained into a FDR 4 away fixture at Newcastle — M.Salah at home vs Crystal Palace is the more secure option."
+}

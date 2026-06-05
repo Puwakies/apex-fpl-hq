@@ -1,39 +1,89 @@
 {
   "gw": 38,
-  "method": "Monte Carlo 10k draws; GW38 priors anchored to Gemini baseline (Haaland captain_xpts=14)",
-  "captain_ranking": [
+  "agent": "sim-lab",
+  "captain_rankings": [
     {
-      "player": "Haaland",
-      "ev_xpts": 7.17,
-      "p_haul": 0.36,
-      "variance": 22.83
+      "name": "Bowen",
+      "team": "WHU",
+      "ev_pts": 12.41,
+      "haul_prob_pct": 53.6,
+      "blank_prob_pct": 42.7,
+      "variance": 83.8,
+      "ceiling_if_starts": 12.77,
+      "notes": "Nailed talisman, must-win relegation decider vs Leeds; two double-figure home hauls in last 3; max motivation."
     },
     {
-      "player": "Saka",
-      "ev_xpts": 5.86,
-      "p_haul": 0.203,
-      "variance": 18.98
+      "name": "Mbeumo",
+      "team": "BRE",
+      "ev_pts": 10.24,
+      "haul_prob_pct": 40.8,
+      "blank_prob_pct": 55.8,
+      "variance": 76.0,
+      "ceiling_if_starts": 10.89,
+      "notes": "Brentford full-strength chasing Europe vs Liverpool; key threat, high motivation, open-game upside."
     },
     {
-      "player": "B.Fernandes",
-      "ev_xpts": 5.72,
-      "p_haul": 0.177,
-      "variance": 16.05
+      "name": "M.Salah",
+      "team": "LIV",
+      "ev_pts": 10.1,
+      "haul_prob_pct": 39.4,
+      "blank_prob_pct": 57.1,
+      "variance": 75.8,
+      "ceiling_if_starts": 10.66,
+      "notes": "Confirmed start in farewell match; elite ceiling but vs motivated Brentford and dead-rubber LIV context."
     },
     {
-      "player": "Bowen",
-      "ev_xpts": 5.29,
-      "p_haul": 0.192,
-      "variance": 14.4
+      "name": "Mateta",
+      "team": "CRY",
+      "ev_pts": 9.26,
+      "haul_prob_pct": 39.0,
+      "blank_prob_pct": 58.3,
+      "variance": 60.5,
+      "ceiling_if_starts": 9.96,
+      "notes": "Nailed Palace #9 with pride to play for; solid floor, no special fixture edge."
+    },
+    {
+      "name": "Wood",
+      "team": "NFO",
+      "ev_pts": 8.89,
+      "haul_prob_pct": 37.2,
+      "blank_prob_pct": 59.9,
+      "variance": 57.0,
+      "ceiling_if_starts": 9.65,
+      "notes": "Confirmed Forest striker vs Bournemouth; reliable starter, modest ceiling."
+    },
+    {
+      "name": "Rogers",
+      "team": "AVL",
+      "ev_pts": 4.08,
+      "haul_prob_pct": 15.0,
+      "blank_prob_pct": 83.4,
+      "variance": 47.5,
+      "ceiling_if_starts": 9.22,
+      "notes": "HIGH-CEILING DIFFERENTIAL: rotation lottery post-Europa-final, minutes managed away at Man City, no league motivation. Big rank-swing upside ONLY if he starts; otherwise zero."
+    },
+    {
+      "name": "Gabriel",
+      "team": "ARS",
+      "ev_pts": 1.39,
+      "haul_prob_pct": 6.7,
+      "blank_prob_pct": 92.9,
+      "variance": 17.0,
+      "ceiling_if_starts": 9.06,
+      "notes": "DOUBTFUL + Arsenal rotated entire XI post-title (CL final pending); did not start. Heavy availability penalty."
     }
   ],
-  "ev_captain_doubled": {
-    "Haaland": 14.35,
-    "Saka": 11.72,
-    "B.Fernandes": 11.43,
-    "Bowen": 10.57
+  "recommended_captain": "Bowen",
+  "recommended_vice": "Mbeumo",
+  "high_ceiling_differential": {
+    "name": "Rogers",
+    "team": "AVL",
+    "ev_pts": 4.08,
+    "ceiling_if_starts": 9.22,
+    "variance": 47.5,
+    "haul_prob_pct": 15.0,
+    "note": "HIGH-CEILING DIFFERENTIAL: rotation lottery post-Europa-final, minutes managed away at Man City, no league motivation. Big rank-swing upside ONLY if he starts; otherwise zero."
   },
-  "high_ceiling_differential": "Haaland",
-  "recommend_c": "Haaland",
-  "recommend_vc": "Saka"
+  "tc_chip_recommendation": "HOLD / let TC expire rather than force it. GW38 is a rotation minefield: Haaland (Gemini's TC anchor) is OUT of the MCI squad and would score zero. No elite double-fixture or banker exists. If TC is used at all, Bowen is the only defensible target given his must-win motivation and 53.6% haul rate, but the final-GW ceiling is capped vs a normal banker \u2014 expected TC gain is only ~6.2 extra pts over a standard captain, below the usual TC bar.",
+  "summary": "Monte Carlo (10k draws) ranks Bowen (WHU) as captain at EV 12.41 pts (captained), 53.6% haul \u2014 nailed in a must-win relegation decider. Mbeumo (vice) is the safest low-rotation backup. Haaland excluded (UNAVAILABLE), Gabriel near-void (avail risk). High-ceiling differential: Rogers (AVL) \u2014 EV only 4.08 from ~55% bench risk, but ceiling 9.22 captained IF he starts; pure rank-swing punt."
 }

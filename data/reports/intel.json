@@ -1,26 +1,53 @@
 {
   "gw": 38,
+  "agent": "intel",
   "pillar": "ELITE-OWN",
-  "generated": "2026-06-05T08:00:00Z",
-  "method": "features.json selected_by_pct is null, so EO triangulated from league.json (15-man mini-league: template = Haaland/B.Fernandes/Gabriel; differentials clustered at 6.7% = 1 of 15 managers) plus GW38 web signals (Haaland ~35% captaincy poll + near-universal ownership; Bruno 2nd at ~26%; Salah 3rd). EO = overall ownership + captaincy uplift. Reconciled against the user's REAL GW38 squad (squad.json): Haaland is UNAVAILABLE on the bench, C=Bowen, VC=Salah.",
-  "template_core": [
-    {"player": "Haaland", "eo_est": "~145% (high ownership + ~35% captaincy share)", "note": "Most-owned and most-captained GW38 asset, home vs Villa. User OWNS him but he is UNAVAILABLE and benched — the squad gets ZERO of his points. This is the dominant rank exposure."},
-    {"player": "B.Fernandes", "eo_est": "~95% (league template + ~26% alt-captain share)", "note": "Mini-league template and 2nd-most-popular captain. NOT in user squad — uncoverable template gap in the final GW."},
-    {"player": "M.Salah", "eo_est": "~85%", "note": "3rd captaincy pick; user owns him and has him as VC, so EO exposure is favourable here."},
-    {"player": "Gabriel", "eo_est": "~55%", "note": "Mini-league template defender, user owns. DOUBTFUL — if he sits, user concedes template CS ground."}
+  "method": "features.json carries no selected_by_pct, so EO is triangulated from league.json (15-man mini-league template = Haaland/B.Fernandes/Gabriel; differentials clustered at 6.7% = 1 of 15 managers) plus GW38 web signals (Haaland ~62.5% owned and ~35% captaincy poll; B.Fernandes 2nd at ~26%; Bowen ~10%; Salah ~5th). CRITICAL OVERRIDE: Haaland and Gabriel are CONFIRMED OUT for GW38, which collapses their effective ownership to ~0 and hollows out the template for the season finale.",
+  "template_players": [
+    {
+      "name": "Haaland",
+      "ownership_pct": 62.5,
+      "is_playing": false,
+      "risk": "low",
+      "note": "CONFIRMED OUT / rested. Season-long #1 template (62.5% own, ~35% captaincy) but blanks GW38, so real EO collapses to ~0. The biggest equaliser of the finale: ~60% of rivals carry a dead/benched asset. Owning him is NOT rank protection this week, and any (C) on him scores 0."
+    },
+    {
+      "name": "Gabriel",
+      "ownership_pct": 38.0,
+      "is_playing": false,
+      "risk": "low",
+      "note": "CONFIRMED OUT (Arsenal heavy rotation, title secured + European final). High season template ownership but blanks GW38 -> zero real EO. Not owning him costs nothing this week."
+    },
+    {
+      "name": "B.Fernandes",
+      "ownership_pct": 30.0,
+      "is_playing": true,
+      "risk": "high",
+      "note": "The ONLY genuinely live template player this GW. ~26% captaincy share and 2nd-favourite armband; with Haaland out he becomes the de facto top-10k captain. User does NOT own him -> largest single rank-swing risk if he hauls."
+    },
+    {
+      "name": "M.Salah",
+      "ownership_pct": 28.0,
+      "is_playing": true,
+      "risk": "high",
+      "note": "Semi-template among the elite and user OWNS him (as VC). Liverpool's run-in collapse lowered captaincy appeal (~5th in poll) but he is a safe, high-floor live armband now that Haaland is out."
+    }
   ],
   "differentials": [
-    {"player": "Bowen", "eo_est": "~7%", "why": "User's captain at sub-8% EO vs the ~35% Haaland field. The cleanest rank-gain lever in the squad if he hauls; leverage cuts both ways."},
-    {"player": "Rogers", "eo_est": "6.7%", "why": "League-flagged AVL attacking mid, owned by user. Sub-8% EO, set-piece/attacking role gives real rank swing on a haul."},
-    {"player": "Watkins", "eo_est": "6.7%", "why": "AVL penalty/big-chance share; genuine sub-8% differential striker (not owned)."},
-    {"player": "Enzo", "eo_est": "6.7%", "why": "CHE mid, league diff, low-EO ceiling play."},
-    {"player": "Bruno G.", "eo_est": "6.7%", "why": "NEW midfield, league diff, low EO with returns upside."},
-    {"player": "J.Timber", "eo_est": "6.7%", "why": "ARS attacking-FB differential, CS + returns leverage at sub-8% EO."}
+    {"name": "Rogers", "ownership_pct": 6.7, "upside": "OWNED by user, starts. AVL host Man City in Guardiola's final game — open, high-event fixture. Sub-8% EO so any return is net rank gain vs the field. Strong ceiling differential already held."},
+    {"name": "Mateta", "ownership_pct": 7.0, "upside": "OWNED, starts. With Haaland out he is one of the few high-ceiling forwards the user can captain. Sub-8% EO premium attacker = differential captain option."},
+    {"name": "Watkins", "ownership_pct": 6.7, "upside": "AVL forward in the same City fixture. Captain-as-differential candidate; the contrarian AVL double-up (with Rogers) on an open game is the rank-CLIMB play."},
+    {"name": "Bruno G.", "ownership_pct": 6.7, "upside": "NEW midfielder, low EO, reliable minutes + attacking returns. Safe-floor differential to gain on the leader."},
+    {"name": "Enzo", "ownership_pct": 6.7, "upside": "CHE midfielder, low ownership, set-piece and goal threat. Pure ceiling one-week punt."},
+    {"name": "J.Timber", "ownership_pct": 6.7, "upside": "ARS attacking-FB but rotation-exposed (Arsenal title secured, Euro final) — lower confidence; differential only if confirmed to start."}
   ],
-  "rank_risks": [
-    {"risk": "Haaland benched (UNAVAILABLE)", "severity": "critical", "detail": "Highest-EO asset in the game (~145% with captaincy), owned but UNAVAILABLE on the user bench. If he starts and hauls, the ~35%-captaining field doubles a big score while the user banks nothing — the single biggest rank threat in the final GW. No transfers/chips (only TC) realistically fix it pre-deadline."},
-    {"risk": "Captaining Bowen over the field", "severity": "high", "detail": "C=Bowen (~7% EO) vs consensus Haaland (~35%). Largest deliberate variance source; a Bowen blank + Haaland haul is the worst case for rank 7."},
-    {"risk": "B.Fernandes not owned", "severity": "high", "detail": "~95% EO template + alt-captain. Any returns swing the mini-league against the user with no cover."},
-    {"risk": "Gabriel DOUBTFUL", "severity": "medium", "detail": "Owned template defender flagged doubtful; if he sits, user loses CS template ground while rivals cover."}
-  ]
+  "captain_ownership": [
+    {"name": "Haaland", "estimated_captain_pct": 0, "note": "Pre-news ~35% of armbands; CONFIRMED OUT so all those captains must pivot late or score 0 — a massive auto-equaliser. Gemini's Haaland (C) pick is now INVALID and must be overridden."},
+    {"name": "B.Fernandes", "estimated_captain_pct": 40, "note": "Inherits most of Haaland's displaced armbands -> now the top-10k consensus captain. The captaincy you must match-or-beat to defend rank."},
+    {"name": "M.Salah", "estimated_captain_pct": 12, "note": "Safe live alternative the user ALREADY owns as VC. If the user does not bring in Bruno, Salah is the highest-floor in-squad captain."},
+    {"name": "Bowen", "estimated_captain_pct": 8, "note": "User's CURRENT captain (~10% poll). Mid-tier differential armband — reasonable contrarian punt but lower ceiling than Bruno; rank risk if Bruno hauls."},
+    {"name": "Watkins/Rogers (AVL)", "estimated_captain_pct": 4, "note": "Deepest differential captaincy on the open City fixture. Highest variance, biggest rank-climb potential."}
+  ],
+  "rank_strategy": "Final GW, pure rank race in a 15-man league (user 7th, leader Krisss. 2365). The template is HOLLOW: Haaland (62.5%) and Gabriel (38%) both BLANK, so ~60% of rivals waste a slot and the usual must-own protection is gone — a rare equaliser, so lean INTO differentials. Priority 1: move the captain off Haaland (Gemini's invalid pick) onto a live asset. B.Fernandes is the safe rank-DEFENCE armband; Salah (already in squad as VC) is the no-cost floor pivot; Mateta and the AVL pair (Rogers owned + Watkins) are the aggressive rank-CLIMB armbands given the open AVL v City game. Priority 2: ensure 11 live starters — bench any dead Haaland/Gabriel-type asset. Differentials already owned (Rogers, Mateta) are free upside since sub-8% EO means any return out-scores the field. Biggest single risk: NOT owning B.Fernandes while he hauls and the league captains him.",
+  "summary": "GW38 template is a mirage: Haaland (62.5% own, ~35% (C)) and Gabriel (38%) are CONFIRMED OUT and blank, neutralising their effective ownership and erasing the must-own shield — a finale equaliser. B.Fernandes is the ONLY live template player and becomes the de facto top-10k captain (~40% of armbands inherited from Haaland); user does not own him -> league's biggest rank risk. Salah (owned, VC) is the no-cost safe captain pivot now Haaland is out; Mateta and the AVL pair (Rogers owned, Watkins) are the high-ceiling sub-8% EO differential armbands to climb from 7th. Gemini's Haaland (C) pick is INVALID and must be overridden."
 }

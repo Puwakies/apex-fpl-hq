@@ -1,16 +1,44 @@
 {
   "gw": 38,
-  "you":    { "projected_xpts": 57.5, "captain": "Bowen",
-    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Bowen","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
-    "bench":[{"name":"Sels","pos":"GK"},{"name":"Haaland","pos":"FWD"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"}] },
-  "gemini": { "projected_xpts": 62.0, "captain": "M.Salah", "transfer_in": null, "transfer_out": null, "chip": null,
-    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Bowen","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
-    "bench":[{"name":"Sels","pos":"GK"},{"name":"Haaland","pos":"FWD"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"}] },
-  "claude": { "projected_xpts": 64.5, "captain": "M.Salah", "transfer_in": "Joao Pedro", "transfer_out": "Haaland", "chip": "HOLD",
-    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Joao Pedro","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
-    "bench":[{"name":"Sels","pos":"GK"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"},{"name":"Rogers2","pos":"MID"}] },
-  "consensus": { "captain_agree": true, "transfer_agree": false, "chip_agree": true, "conviction": "HIGH" },
+  "agent": "the-director",
+  "you": {
+    "captain": "Bowen",
+    "vice": "M.Salah",
+    "projected_xpts": 68.0,
+    "lineup_summary": "Real GW38 XI (3-4-3): Raya; Gabriel, Gvardiol, Aina; Salah, Mbeumo, Rogers, Anderson; Bowen (C), Mateta, Wood. Captain already correct (Bowen). Two dead starters drag the score: Raya is benched at Arsenal (0 xPts) and Gabriel had season-ending surgery (OUT). Swapping Raya->Sels in goal is the only free, legal lineup fix and recovers the lost GK points.",
+    "starting_xi": ["Raya","Gabriel","Gvardiol","Aina","M.Salah","Mbeumo","Rogers","Anderson","Bowen","Mateta","Wood"],
+    "bench": ["Sels","Haaland","Munoz","Kluivert"]
+  },
+  "gemini": {
+    "captain": "Haaland",
+    "vice": "Gabriel",
+    "projected_xpts": 85,
+    "critical_note": "INVALID PLAN. Both armband picks are confirmed absent: Haaland (C) is UNAVAILABLE / omitted from the MCI squad, and Gabriel (VC) had season-ending surgery. The 85 xPts figure assumed a Haaland haul and is void. After the cascade, Gemini's effective captain falls to Bowen anyway — converging with Claude.",
+    "starting_xi": ["Raya","Gabriel","Gvardiol","Aina","M.Salah","Mbeumo","Rogers","Anderson","Bowen","Mateta","Wood"],
+    "bench": ["Sels","Haaland","Munoz","Kluivert"],
+    "transfer_in": null,
+    "transfer_out": null,
+    "chip": null
+  },
+  "claude": {
+    "captain": "Bowen",
+    "vice": "M.Salah",
+    "projected_xpts": 71.0,
+    "starting_xi": ["Sels","Munoz","Gvardiol","Aina","M.Salah","Mbeumo","Anderson","Rogers","Bowen","Mateta","Wood"],
+    "bench": ["Raya","Kluivert","Gabriel","Haaland"],
+    "transfer_in": null,
+    "transfer_out": null,
+    "chip": null
+  },
+  "consensus": {
+    "captain_agree": true,
+    "transfer_agree": true,
+    "chip_agree": true,
+    "conviction": "HIGH"
+  },
   "best_plan": "claude",
-  "verdict": "Gemini และ Claude เห็นตรงกันว่ากัปตันคือ Salah (HIGH conviction) ต่างกันที่ Claude แนะนำขาย Haaland (dead weight) → Joao Pedro ส่วน Gemini ไม่เปลี่ยน",
-  "highest_leverage_action": "ตั้ง Salah กัปตัน และพิจารณาขาย Haaland ออกจากม้านั่ง"
+  "highest_leverage_action": "Bench Raya and start Sels (NFO) as the only available, confirmed-starting GK. This is a free, zero-risk lineup fix that converts a guaranteed 0 from Raya into real points — the single biggest gain available with no transfer cost.",
+  "chip_verdict": "HOLD / let the TC expire. Its only legal anchor (Bowen) clears the TC bar by just ~6.2 pts over a standard x2 captain, below the threshold, and Gemini's intended TC target (Haaland) would score zero. Bowen as a standard (x2) captain is the correct lower-variance play in a rotation-heavy finale.",
+  "verdict": "Both engines land on Bowen (C) once Gemini's invalid Haaland armband cascades through its dead vice (Gabriel) — genuine HIGH-conviction agreement, and it matches the user's real captain. Claude's plan projects highest at 71 xPts because it fixes the lineup (Sels in goal, least-bad legal back three) where Gemini's 85 is a phantom built on an absent captain. The user already has the right captain; they only need the free Raya->Sels GK swap to capture Claude's edge.",
+  "summary": "GW38 finale 3-way verdict: captain Bowen is unanimous and confirmed (Claude direct, Gemini after a double-absence cascade off Haaland/Gabriel, and the user's real armband). Consensus AGREE, conviction HIGH. Gemini's 85 xPts is void (absent captain); Claude's 71 is the best executable plan. Single highest-leverage action: bench Raya, start Sels in goal. Hold the TC chip and let it expire."
 }

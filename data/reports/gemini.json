@@ -1,14 +1,40 @@
 {
   "engine": "gemini",
   "gw": 38,
+  "agent": "gemini-read",
   "captain": "Haaland",
-  "vice": "Gabriel",
-  "starting_xi": [],
-  "bench": [],
+  "vice_captain": "Gabriel",
+  "starting_xi": [
+    { "name": "Raya",     "team": "ARS", "position": "GK",  "is_captain": false, "is_vice": false },
+    { "name": "Gabriel",  "team": "ARS", "position": "DEF", "is_captain": false, "is_vice": true  },
+    { "name": "Gvardiol", "team": "MCI", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "Aina",     "team": "NFO", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "M.Salah",  "team": "LIV", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Mbeumo",   "team": "BRE", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Rogers",   "team": "AVL", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Anderson", "team": "NFO", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Bowen",    "team": "WHU", "position": "FWD", "is_captain": false, "is_vice": false },
+    { "name": "Mateta",   "team": "CRY", "position": "FWD", "is_captain": false, "is_vice": false },
+    { "name": "Wood",     "team": "NFO", "position": "FWD", "is_captain": false, "is_vice": false }
+  ],
+  "bench": [
+    { "name": "Sels",     "team": "NFO", "position": "GK"  },
+    { "name": "Haaland",  "team": "MCI", "position": "FWD" },
+    { "name": "Munoz",    "team": "CRY", "position": "DEF" },
+    { "name": "Kluivert", "team": "BOU", "position": "MID" }
+  ],
   "transfer_out": null,
   "transfer_in": null,
   "chip": null,
   "projected_xpts": 85,
   "confidence": "high",
-  "key_risk": "Haaland rotation risk"
+  "key_risk": "Haaland rotation risk",
+  "transfers": [],
+  "critical_flags": [
+    "CRITICAL — CAPTAIN ABSENT: Haaland (MCI, FWD) is confirmed UNAVAILABLE in GW38. He is on the bench in squad data with status UNAVAILABLE. Gemini's projected captain xPts of 14 will not materialise. Captaincy cascades to vice captain.",
+    "CRITICAL — VICE CAPTAIN ABSENT: Gabriel (ARS, DEF) is listed DOUBTFUL in squad data, and medical-bay intelligence confirms he had season-ending surgery weeks ago. If captaincy falls to Gabriel it also scores zero.",
+    "DOUBLE FAILURE RISK: Both captain and vice captain are effectively absent. Effective captaincy will default to the next-highest ranked available player in the starting XI — Bowen (WHU, FWD) based on squad ordering.",
+    "Gemini's projected_xpts of 85 was computed assuming Haaland plays and hauls — that projection is void without him."
+  ],
+  "summary": "Gemini GW38 picks relayed exactly as cached. Captain: Haaland (projected 14 xPts), Vice: Gabriel. No transfers. No chip. Confidence: high. HOWEVER — both armband picks are confirmed absent per medical-bay intelligence. Haaland is UNAVAILABLE (MCI squad omission), Gabriel had season-ending surgery. Effective captaincy will auto-cascade to Bowen (WHU). Gemini's 85 projected xPts figure is based on a captain who will not play. Director should treat this as a broken Gemini recommendation and weight Claude's captain pick accordingly."
 }

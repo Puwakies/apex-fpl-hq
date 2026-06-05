@@ -1,25 +1,9 @@
 {
   "gw": 38,
-  "generated": "2026-06-05",
-  "note": "GW38 is the final gameweek. Price changes after tonight's deadline are commercially irrelevant — no future gameweeks exist to benefit from a risen asset. Price change tracking is moot for squad-value purposes.",
-  "likely_rises": [],
-  "likely_falls": [],
-  "act_now": [],
-  "squad_flags": [
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "status": "DOUBTFUL",
-      "note": "DOUBTFUL status may trigger heavy sell-off pre-deadline. If owned, consider whether a free transfer to a safe alternative is available before deadline."
-    },
-    {
-      "player": "Haaland",
-      "team": "MCI",
-      "pos": "FWD",
-      "status": "UNAVAILABLE",
-      "note": "Confirmed unavailable (bench). No transfer action possible given bank=0.3 — squad locked."
-    }
-  ],
-  "market_context": "GW38 final deadline. price.json shows zero movement signals — no net-transfer velocity data indicating imminent rises or falls. With bank at 0.3 and TC chip remaining, the only meaningful pre-deadline action is a reactive swap if Gabriel is ruled out."
+  "agent": "market-desk",
+  "price_rises": [],
+  "price_falls": [],
+  "transfer_velocity": [],
+  "itb_advice": "GW38 is the final gameweek of the 2025/26 season. No price changes are pending or actionable — any movement tonight has zero FPL scoring impact since no future gameweeks exist to benefit from a risen asset. Your bank stands at 0.3m. Do not make transfers purely for ITB inflation; squad value is locked for scoring purposes once GW38 kicks off. The TC chip remains unused — that decision is the only pre-deadline lever that matters, not transfer activity.",
+  "summary": "End of season confirmed: both likely_rises and likely_falls arrays are empty across all data sources. Transfer velocity signals are dormant — the market has flatlined as expected in the final week. No price-change action is warranted or possible before deadline. Bank of 0.3m is irrelevant to final-GW points. Note: Gabriel (ARS, DEF) is DOUBTFUL and Haaland (MCI, FWD) is UNAVAILABLE on bench — these are availability risks for tonight, not price signals. The sole pre-deadline priority is captain/TC chip allocation."
 }

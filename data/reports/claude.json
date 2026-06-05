@@ -1,35 +1,38 @@
 {
-  "engine": "claude",
   "gw": 38,
-  "captain": "M.Salah",
-  "vice": "Bowen",
+  "agent": "the-gaffer",
   "starting_xi": [
-    {"name": "Raya", "pos": "GK", "price": 5.6, "xpts": 3.0},
-    {"name": "Gvardiol", "pos": "DEF", "price": 6.0, "xpts": 2.5},
-    {"name": "Aina", "pos": "DEF", "price": 4.9, "xpts": 3.2},
-    {"name": "Munoz", "pos": "DEF", "price": 5.1, "xpts": 2.0},
-    {"name": "M.Salah", "pos": "MID", "price": 13.4, "xpts": 6.7},
-    {"name": "Mbeumo", "pos": "MID", "price": 7.8, "xpts": 5.71},
-    {"name": "Rogers", "pos": "MID", "price": 5.6, "xpts": 4.97},
-    {"name": "Anderson", "pos": "MID", "price": 5.5, "xpts": 3.5},
-    {"name": "Bowen", "pos": "FWD", "price": 7.8, "xpts": 5.32},
-    {"name": "Mateta", "pos": "FWD", "price": 7.5, "xpts": 4.79},
-    {"name": "Wood", "pos": "FWD", "price": 7.0, "xpts": 4.0}
+    { "name": "Sels", "team": "NFO", "position": "GK", "is_captain": false, "is_vice": false },
+    { "name": "Munoz", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "Gvardiol", "team": "MCI", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "Aina", "team": "NFO", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": false, "is_vice": true },
+    { "name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Anderson", "team": "NFO", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Rogers", "team": "AVL", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Bowen", "team": "WHU", "position": "FWD", "is_captain": true, "is_vice": false },
+    { "name": "Mateta", "team": "CRY", "position": "FWD", "is_captain": false, "is_vice": false },
+    { "name": "Wood", "team": "NFO", "position": "FWD", "is_captain": false, "is_vice": false }
   ],
   "bench": [
-    {"name": "Sels", "pos": "GK", "price": 5.0},
-    {"name": "Gabriel", "pos": "DEF", "price": 6.3},
-    {"name": "Kluivert", "pos": "MID", "price": 6.2},
-    {"name": "Haaland", "pos": "FWD", "price": 15.1}
+    { "name": "Raya", "team": "ARS", "position": "GK", "bench_order": 1 },
+    { "name": "Kluivert", "team": "BOU", "position": "MID", "bench_order": 2 },
+    { "name": "Gabriel", "team": "ARS", "position": "DEF", "bench_order": 3 },
+    { "name": "Haaland", "team": "MCI", "position": "FWD", "bench_order": 4 }
   ],
-  "transfers": {"out": null, "in": null, "hits": 0, "bank": 0.3},
-  "chip": {"name": "TC", "action": "hold", "reason": "Triple Captain is the only chip left. With Haaland OUT, the best captain is single-fixture Salah on a soft home game — a one-match TC is a coin-flip, not a high-floor play, and there is no GW38 DGW to maximise it. Defensible to fire on Salah ONLY if chasing a specific rank target; otherwise hold."},
-  "projected_xpts": 58.9,
-  "risks": [
-    "Captain switched OFF Bowen (WHU away at Spurs, FDR 3.3) ONTO M.Salah (LIV home vs CRY, FDR 2.0). sim-lab gives Salah EV 6.7 vs Bowen 5.32 with a far better fixture and higher ceiling — this is Claude's key disagreement with the current armband. Bowen kept as VC.",
-    "Gemini captained Haaland who is CONFIRMED OUT (medical 0%) — that pick is a data error and must NOT be followed.",
-    "Gabriel DOUBTFUL (50/50 knee) — benched to avoid a likely zero. If confirmed fit, he is a strong ARS-home-vs-EVE pick; swap back in for Munoz.",
-    "Gvardiol HIGH rotation risk (Man City dead-rubber rest) — confirm team news Saturday; if out, promote Gabriel or Kluivert.",
-    "Mateta away at Anfield (FDR 4.3) is the weakest attacker in the XI, but no better-fixtured FWD bench alternative exists (Haaland out)."
-  ]
+  "captain": "Bowen",
+  "vice_captain": "M.Salah",
+  "projected_xpts": 71.0,
+  "transfers": [],
+  "chip": null,
+  "chip_reasoning": "HOLD the TC chip / let it expire. Gemini's TC anchor (Haaland) is CONFIRMED OUT and would score zero. Sim-lab models the TC gain on the best available target (Bowen) at only ~6.2 pts over a standard captain, below the usual TC threshold, and GW38 is a rotation minefield with no elite double-fixture banker. Bowen as a standard (x2) captain is the correct, lower-variance play.",
+  "key_decisions": [
+    "Raya (ARS GK) benched OUT of the GW38 matchday squad — forced to start Sels (NFO), the only available, confirmed-starting GK in the squad and the only non-zero xPts GK.",
+    "Captain Bowen (WHU): sim-lab EV 12.41 captained, 53.6% haul, must-win relegation decider vs Leeds at home, max motivation. Overrides Gemini's invalid Haaland (C).",
+    "Vice Salah (M.Salah, LIV): I prefer Salah over sim-lab's Mbeumo as VC — confirmed farewell-match starter, home vs nothing-to-play-for Palace, comparable EV (10.10) with a higher floor and lower rotation risk.",
+    "Back three is forced: Gabriel (season-ending surgery, OUT) and Aina (ruled out of the finale) are flagged, Gvardiol is benched at City. With only Munoz truly nailed, I field Munoz + Gvardiol + Aina as the least-bad legal back three in a 3-4-3 and pack the attack.",
+    "Started Rogers despite ~55% bench risk: sub-8% EO differential in an open AVL v City game — any return is net rank gain from 7th, and there is no better available midfield body to replace him.",
+    "Benched the dead/unavailable assets (Raya, Gabriel, Haaland) plus Kluivert (medium rotation risk, no fixture edge)."
+  ],
+  "summary": "Claude's independent GW38 call: captain Bowen (sim EV 12.41, 53.6% haul) in a must-win West Ham relegation decider, with Salah as the higher-floor vice in his Liverpool farewell at home to Palace. No transfers — final GW, bank irrelevant. Critically, Raya is benched so Sels is the forced GK start, and the back three is a forced least-bad selection (Munoz, Gvardiol, Aina) because Gabriel and Aina are flagged out and Gvardiol benched. TC chip is held/expired: its only legal anchor (Bowen) clears the threshold by only ~6.2 pts and Gemini's Haaland TC would score zero. Lean into owned sub-8% differentials (Rogers, Mateta) to climb from 7th in a finale where the Haaland/Gabriel template is hollow."
 }
