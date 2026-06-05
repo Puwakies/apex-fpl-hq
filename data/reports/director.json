@@ -1,49 +1,16 @@
 {
   "gw": 38,
-  "user_captain": "Bowen",
-  "gemini_captain": "Haaland",
-  "claude_captain": "Saka",
-  "ai_consensus": "SPLIT",
-  "consensus_captain": "Haaland",
-  "projected_xpts_user": 78,
-  "projected_xpts_gemini_plan": 85,
-  "projected_xpts_claude_plan": 82,
-  "you": {
-    "projected_xpts": 78,
-    "captain": "Bowen"
-  },
-  "gemini": {
-    "projected_xpts": 85,
-    "captain": "Haaland",
-    "transfer_in": null,
-    "transfer_out": null,
-    "chip": null
-  },
-  "claude": {
-    "projected_xpts": 82,
-    "captain": "Saka",
-    "transfer_in": null,
-    "transfer_out": null,
-    "chip": null
-  },
-  "consensus": {
-    "captain_agree": false,
-    "transfer_agree": true,
-    "chip_agree": true,
-    "conviction": "SPLIT"
-  },
-  "best_plan": "gemini",
-  "final_verdict": "SPLIT on captain — all three sides name a different armband (You=Bowen, Gemini=Haaland, Claude=Saka). The engines AGREE on everything else: zero transfers, no chip (all 8 used). Confirmed team news is the tie-breaker and it is decisive: news-desk reports Saka was RESTED/BENCHED by Arteta ahead of the UCL final and did NOT start — this kills Claude's captain pick outright. The SAME report confirms Haaland STARTS and leads the line vs Villa (Pep's farewell, no rotation flag), validating Gemini's Haaland armband and overriding the earlier fixture-room/Claude rotation fear. Gemini's plan projects highest (85) and is the only captain still standing after team news. Your current Bowen captaincy is a sub-7% EO differential punt against a ~55% Haaland field — a high-variance rank chase, not the EV-max play. Best plan: GEMINI. Best captain: HAALAND. Your team needs ONE move: switch the armband off Bowen onto Haaland (already owned and starting).",
-  "best_captain_recommendation": "Haaland",
-  "highest_leverage_action": "Move the captain from Bowen to Haaland before the GW38 deadline. Haaland is confirmed STARTING (Pep's final game, no rotation flag) and carries the squad's top EV (7.17, 36% haul). Saka is CONFIRMED BENCHED so Claude's pick is dead, and Claude's own vice-hedge already fell back to Haaland. Captaining Bowen (sub-7% EO, away at Spurs, FDR 3.3) single-counts against a Haaland-doubling field — the largest avoidable rank exposure in the squad.",
-  "key_risks": [
-    "Saka CONFIRMED BENCHED (news-desk) — Claude's captain pick is non-viable; any plan leaning on a Saka start fails.",
-    "Gabriel (VC) is a 75% doubt plus Arsenal rotation for the UCL final — vice cover is shaky; consider moving VC to a nailed starter (B.Fernandes or Bowen).",
-    "Bowen-over-Haaland armband: if Haaland hauls, ~55% of the field doubles a big score while you single-count — the worst-case rank hit in a final GW.",
-    "Gakpo (~46% owned) not in squad and uncoverable (no transfers/chips) — passive template hole if he hauls.",
-    "All 8 chips used and bank only 0.6m — no structural lever left; the captain switch is the ONLY meaningful in-play decision."
-  ],
-  "rival_insight": "The Rival goes full contrarian: captain MATETA (CRY, ~9% owned, on penalties) on a different 15-man template, projecting just 69 xPts. Its thesis assumed Haaland rested and Saka benched, attacking the vacated armband. Team news only half-confirms it: Saka IS benched, but Haaland is NOT rested — he starts. That collapses the Rival's premise: the field's Haaland armband is live, so a sub-15% Mateta punt is pure rank-chase variance, not an EV edge. Interesting as a ceiling idea for a desperate rank chase, but the lowest-projection plan of the four and not recommended for a rank-7 manager with a settled squad.",
-  "consensus_note": "captain_agree=false (3 different picks), transfer_agree=true (all zero), chip_agree=true (none — all used). Conviction SPLIT on the armband, but confirmed team news breaks the tie decisively toward Haaland.",
-  "data_caveat": "xpts.json is all-zero for GW38 (computation gap); projected_xpts are each engine's bottom-up reconstruction, not cache-derived. User 78 estimated from the same role/fixture priors with a Bowen single-count differential captain vs Gemini's Haaland (x2) baseline of 85."
+  "you":    { "projected_xpts": 57.5, "captain": "Bowen",
+    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Bowen","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
+    "bench":[{"name":"Sels","pos":"GK"},{"name":"Haaland","pos":"FWD"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"}] },
+  "gemini": { "projected_xpts": 62.0, "captain": "M.Salah", "transfer_in": null, "transfer_out": null, "chip": null,
+    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Bowen","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
+    "bench":[{"name":"Sels","pos":"GK"},{"name":"Haaland","pos":"FWD"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"}] },
+  "claude": { "projected_xpts": 64.5, "captain": "M.Salah", "transfer_in": "Joao Pedro", "transfer_out": "Haaland", "chip": "HOLD",
+    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Joao Pedro","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
+    "bench":[{"name":"Sels","pos":"GK"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"},{"name":"Rogers2","pos":"MID"}] },
+  "consensus": { "captain_agree": true, "transfer_agree": false, "chip_agree": true, "conviction": "HIGH" },
+  "best_plan": "claude",
+  "verdict": "Gemini และ Claude เห็นตรงกันว่ากัปตันคือ Salah (HIGH conviction) ต่างกันที่ Claude แนะนำขาย Haaland (dead weight) → Joao Pedro ส่วน Gemini ไม่เปลี่ยน",
+  "highest_leverage_action": "ตั้ง Salah กัปตัน และพิจารณาขาย Haaland ออกจากม้านั่ง"
 }

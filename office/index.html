@@ -76,6 +76,32 @@
   .scoreboard3{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
   @media(max-width:640px){.scoreboard{grid-template-columns:1fr}.scoreboard3{grid-template-columns:1fr}}
   .side.gem{border-color:#8b5cf6} .side.cla{border-color:var(--dir)}
+  .side{cursor:pointer;transition:transform .06s}
+  .side:hover{transform:translateY(-2px);box-shadow:0 4px 0 #000}
+  /* team modal */
+  .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:1000;display:none;
+    align-items:center;justify-content:center;padding:18px}
+  .modal-bg.on{display:flex}
+  .modal{background:#0a0e16;border:4px solid #000;box-shadow:8px 8px 0 #000;max-width:560px;width:100%;
+    max-height:86vh;overflow:auto;padding:16px}
+  .modal h3{font-family:'Press Start 2P';font-size:12px;margin-bottom:4px;text-shadow:2px 2px 0 #000}
+  .modal .sub{font-family:'VT323';font-size:18px;color:var(--ink-dim);margin-bottom:12px}
+  .modal .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:14px}
+  .modal .mcard{background:#05070c;border:2px solid var(--wall);padding:8px 10px;font-size:11px;line-height:1.5}
+  .modal .mcard .k{font-family:'Press Start 2P';font-size:6px;color:var(--ink-dim);display:block;margin-bottom:5px}
+  .modal .mcard b{color:var(--gold)}
+  .modal .seclbl{font-family:'Press Start 2P';font-size:8px;margin:12px 0 8px;display:block}
+  .plist{display:flex;flex-direction:column;gap:4px}
+  .prow{display:grid;grid-template-columns:26px 1fr auto auto;gap:8px;align-items:center;
+    background:#05070c;border:1px solid var(--wall);padding:5px 8px;font-size:11px}
+  .prow .pos{font-family:'Press Start 2P';font-size:6px;color:#05070c;padding:2px 4px;border-radius:2px}
+  .pos.GK{background:#3dd7ff} .pos.DEF{background:#39e08a} .pos.MID{background:#ffd23f} .pos.FWD{background:#ff6b3d}
+  .prow .nm{color:var(--ink)} .prow .pr{color:var(--ink-dim)} .prow .cc{color:var(--gold);font-weight:600}
+  .prow.bench{opacity:.6}
+  .modal .closebtn{font-family:'Press Start 2P';font-size:9px;cursor:pointer;border:3px solid #000;
+    padding:9px 12px;box-shadow:3px 3px 0 #000;background:var(--rival);color:#fff;float:right;margin-top:6px}
+  .modal .note{font-family:'VT323';font-size:17px;color:var(--ink-dim);background:#05070c;
+    border:2px dashed var(--wall);padding:10px;margin-top:8px}
   .side.gem .who{color:#a78bfa} .side.cla .who{color:var(--dir)}
   .consensus{margin-top:12px;background:#05070c;border:2px solid #8b5cf6;padding:11px 13px;font-size:12px;line-height:1.6}
   .consensus .h{font-family:'Press Start 2P';font-size:8px;color:#a78bfa;display:block;margin-bottom:7px}
@@ -141,10 +167,11 @@
   <div class="panel director">
     <div class="ptop"><span class="sign">⭐ THE DIRECTOR</span><h2>3-WAY — YOU vs GEMINI vs CLAUDE · GW<span id="vsGw">38</span></h2></div>
     <div class="scoreboard3">
-      <div class="side you"><span class="who">▣ YOU (real)</span><div class="pts" id="youPts">— xPts</div><div class="det" id="youDet">รอ squad จริง...</div></div>
-      <div class="side gem"><span class="who">◆ GEMINI</span><div class="pts" id="gemPts">— xPts</div><div class="det" id="gemDet">รอ Apps Script...</div></div>
-      <div class="side cla"><span class="who">✦ CLAUDE</span><div class="pts" id="claPts">— xPts</div><div class="det" id="claDet">รอ the-gaffer...</div></div>
+      <div class="side you" data-engine="you"><span class="who">▣ YOU (real) 👁</span><div class="pts" id="youPts">— xPts</div><div class="det" id="youDet">รอ squad จริง...</div></div>
+      <div class="side gem" data-engine="gemini"><span class="who">◆ GEMINI 👁</span><div class="pts" id="gemPts">— xPts</div><div class="det" id="gemDet">รอ Apps Script...</div></div>
+      <div class="side cla" data-engine="claude"><span class="who">✦ CLAUDE 👁</span><div class="pts" id="claPts">— xPts</div><div class="det" id="claDet">รอ the-gaffer...</div></div>
     </div>
+    <div style="font-family:'VT323';font-size:15px;color:var(--ink-dim);margin-top:6px;text-align:center">👁 คลิกการ์ด (หรือตัวละคร Claude/Rival ในออฟฟิศ) เพื่อดูทีม 15 ตัวของ GW นั้น</div>
     <div class="consensus" id="consensus"><span class="h">⚖ AI CONSENSUS</span>รอผลทั้ง 3 ฝั่ง...</div>
     <div class="verdict" id="verdict"><span class="h">⭐ DIRECTOR'S VERDICT</span>รอผลทั้ง 3 ฝั่ง...</div>
   </div>
@@ -323,6 +350,7 @@ async function activate(a,lines){
 
 // ---------- data-driven loader ----------
 const REPORTS_BASE='../data/reports/';
+const CACHE_BASE='../data/cache/';
 const FEATURES_URL='../data/features.json';
 let REPORTS={};
 
@@ -362,6 +390,9 @@ async function loadViaFetch(){
   const out={}; let any=false;
   try{ out.features=await fetchJSON(FEATURES_URL);}catch(e){}
   for(const f in map){ try{ out[map[f]]=await fetchJSON(REPORTS_BASE+f+'.json'); any=true; }catch(e){} }
+  // cache files (real squad 15 + xpts) from Apps Script
+  try{ out.squad=await fetchJSON(CACHE_BASE+'squad.json'); }catch(e){}
+  try{ out.gemini_cache=await fetchJSON(CACHE_BASE+'gemini.json'); }catch(e){}
   if(!any) throw new Error('no reports found');
   return out;
 }
@@ -537,8 +568,89 @@ fileBtn.addEventListener('click', ()=>document.getElementById('filepick').click(
 document.getElementById('filepick').addEventListener('change', e=>handleFiles(e.target.files));
 resetBtn.addEventListener('click', ()=>reset(false));
 
+// ---------- TEAM MODAL: คลิก agent/การ์ด → ดูทีม 15 ตัว ----------
+const ENGINE_META={
+  you:    {title:"YOU — ทีมจริง",        color:"var(--boss)",  src:()=>REPORTS.squad},
+  gemini: {title:"GEMINI — Apps Script",  color:"#a78bfa",      src:()=>REPORTS.gemini||REPORTS.gemini_cache||(REPORTS.director&&REPORTS.director.gemini)},
+  claude: {title:"CLAUDE — the-gaffer",   color:"var(--dir)",   src:()=>REPORTS.claude||REPORTS.gaffer||(REPORTS.director&&REPORTS.director.claude)},
+  rival:  {title:"THE RIVAL",             color:"var(--rival)", src:()=>REPORTS.rival},
+};
+const POS_ORDER={GK:0,DEF:1,MID:2,FWD:3};
+
+function normalizeTeam(o){
+  if(!o) return null;
+  const cap=asName(o.captain), vc=asName(o.vice_captain||o.vice);
+  const tIn=o.transfer_in||(o.transfers&&o.transfers.in);
+  const tOut=o.transfer_out||(o.transfers&&o.transfers.out);
+  const chip=o.chip&&typeof o.chip==='object'?(o.chip.name||o.chip.action):o.chip;
+  const proj=numOf(o,['projected_xpts','projected_score','you_xpts']);
+  let xi=[],bench=[];
+  if(Array.isArray(o.squad)){
+    o.squad.forEach(p=>{ const row={name:asName(p),pos:p.pos||'',price:p.price,cap:p.is_captain,vice:p.is_vice};
+      (p.is_starting?xi:bench).push(row); });
+  } else {
+    const sx=arrOf(o,['starting_xi','xi','starting']), bn=arrOf(o,['bench','subs']);
+    xi=sx.map(p=>({name:asName(p),pos:(p&&p.pos)||'',price:p&&p.price,cap:asName(p)===cap,vice:asName(p)===vc}));
+    bench=bn.map(p=>({name:asName(p),pos:(p&&p.pos)||'',price:p&&p.price}));
+  }
+  xi.sort((a,b)=>(POS_ORDER[a.pos]??4)-(POS_ORDER[b.pos]??4));
+  return {xi,bench,cap,vc,tIn:asName(tIn),tOut:asName(tOut),chip:chip||'—',proj};
+}
+function prow(p,bench){
+  const pos=p.pos?`<span class="pos ${p.pos}">${p.pos}</span>`:'<span></span>';
+  const tag=p.cap?'<span class="cc">(C)</span>':p.vice?'<span class="cc">(V)</span>':'';
+  const pr=p.price!=null?`<span class="pr">£${p.price}m</span>`:'<span></span>';
+  return `<div class="prow${bench?' bench':''}">${pos}<span class="nm">${p.name} ${tag}</span>${pr}</div>`;
+}
+function showTeam(engine){
+  const meta=ENGINE_META[engine]; if(!meta) return;
+  const t=normalizeTeam(meta.src());
+  document.getElementById('mTitle').textContent=meta.title;
+  document.getElementById('mTitle').style.color=meta.color;
+  const gw=(REPORTS.director&&REPORTS.director.gw)||(REPORTS.squad&&REPORTS.squad.gw)||document.getElementById('gw').value||'';
+  document.getElementById('mSub').textContent='GW'+gw+' · การจัดทีม';
+  const mel=document.getElementById('mMeta'), bel=document.getElementById('mBody');
+  if(!t){ mel.innerHTML=''; bel.innerHTML='<div class="note">ยังไม่มีข้อมูลของ '+meta.title+' — รัน /brief แล้วกด LOAD REPORTS ใหม่</div>';
+    document.getElementById('teamModal').classList.add('on'); return; }
+  mel.innerHTML=
+    `<div class="mcard"><span class="k">CAPTAIN</span><b>${t.cap}</b></div>`+
+    `<div class="mcard"><span class="k">VICE</span>${t.vc}</div>`+
+    `<div class="mcard"><span class="k">TRANSFER</span>${(t.tOut!=='—'||t.tIn!=='—')?('OUT '+t.tOut+' → IN '+t.tIn):'ไม่เปลี่ยน'}</div>`+
+    `<div class="mcard"><span class="k">CHIP</span>${t.chip}</div>`+
+    (t.proj!=null?`<div class="mcard"><span class="k">PROJ xPTS</span><b>${t.proj}</b></div>`:'');
+  let html='';
+  if(t.xi.length){ html+=`<span class="seclbl" style="color:${meta.color}">STARTING XI (${t.xi.length})</span><div class="plist">`+t.xi.map(p=>prow(p,false)).join('')+`</div>`; }
+  if(t.bench.length){ html+=`<span class="seclbl" style="color:var(--ink-dim)">BENCH (${t.bench.length})</span><div class="plist">`+t.bench.map(p=>prow(p,true)).join('')+`</div>`; }
+  if(!t.xi.length&&!t.bench.length){ html=`<div class="note">${meta.title} ยังไม่ได้ส่งรายชื่อทีมเต็ม (มีแค่กัปตัน/ทรานสเฟอร์) — เพิ่ม <b>starting_xi</b> + <b>bench</b> ใน output ของ agent เพื่อโชว์ครบ 15 ตัว</div>`; }
+  bel.innerHTML=html;
+  document.getElementById('teamModal').classList.add('on');
+}
+function closeModal(){ document.getElementById('teamModal').classList.remove('on'); }
+document.getElementById('mClose').addEventListener('click', closeModal);
+document.getElementById('teamModal').addEventListener('click', e=>{ if(e.target.id==='teamModal') closeModal(); });
+document.querySelectorAll('.side[data-engine]').forEach(el=>
+  el.addEventListener('click', ()=>showTeam(el.getAttribute('data-engine'))));
+cv.addEventListener('click', e=>{
+  const rect=cv.getBoundingClientRect();
+  const x=(e.clientX-rect.left)*(W/rect.width), y=(e.clientY-rect.top)*(H/rect.height);
+  let hit=null, best=26;
+  AGENTS.forEach(a=>{ const d=Math.hypot(a.x-x,a.y-y); if(d<best){best=d;hit=a;} });
+  if(!hit) return;
+  if(hit.id==='gaffer'||hit.id==='director') showTeam('claude');
+  else if(hit.id==='rival') showTeam('rival');
+});
+
 // auto-attempt on load
 window.addEventListener('load', ()=> setTimeout(loadAndRun, 500));
 </script>
+  <div class="modal-bg" id="teamModal">
+    <div class="modal">
+      <h3 id="mTitle">TEAM</h3>
+      <div class="sub" id="mSub"></div>
+      <div class="meta" id="mMeta"></div>
+      <div id="mBody"></div>
+      <button class="closebtn" id="mClose">✕ ปิด</button>
+    </div>
+  </div>
 </body>
 </html>
