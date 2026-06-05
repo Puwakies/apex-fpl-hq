@@ -1,59 +1,43 @@
 {
   "gw": 38,
-  "strategy": "max-points-final-gw",
-  "generated": "2026-06-04T08:25:00Z",
-  "captain": "Mateta",
-  "vice_captain": "Palmer",
+  "strategy": "template",
+  "generated": "2026-06-05",
+  "captain": "M.Salah",
+  "vice": "Bowen",
   "starting_xi": [
-    "Sels",
-    "Virgil",
-    "Muñoz",
-    "Senesi",
-    "Palmer",
+    "Raya",
+    "Gabriel",
+    "Saliba",
+    "J.Timber",
+    "M.Salah",
+    "B.Fernandes",
     "Mbeumo",
-    "Sarr",
-    "Semenyo",
+    "Saka",
+    "Watkins",
     "Mateta",
-    "João Pedro",
-    "Watkins"
+    "Bowen"
   ],
   "squad": [
+    "Raya",
     "Sels",
-    "Petrović",
-    "Virgil",
+    "Gabriel",
+    "Saliba",
+    "J.Timber",
     "Muñoz",
-    "Senesi",
-    "Truffert",
-    "N.Williams",
-    "Palmer",
+    "Virgil",
+    "M.Salah",
+    "B.Fernandes",
     "Mbeumo",
-    "Sarr",
+    "Saka",
     "Semenyo",
-    "Mateta",
-    "João Pedro",
     "Watkins",
-    "Bruno G."
+    "Mateta",
+    "Bowen"
   ],
-  "formation": "3-4-3",
+  "formation": "4-4-2",
   "transfers": 0,
-  "chip": "none",
-  "projected_xpts": 69,
-  "key_differentials": [
-    {
-      "name": "Sarr",
-      "ownership_pct": 7,
-      "why": "Crystal Palace attacking mid, sub-8% EO, on set-pieces and a direct goal threat in a home final-day game; a haul swings rank hard against a Haaland-less template."
-    },
-    {
-      "name": "Mateta",
-      "ownership_pct": 9,
-      "why": "CRY penalty taker with elite box volume; captained here as a contrarian armband while the field scrambles for a Haaland replacement."
-    },
-    {
-      "name": "Watkins",
-      "ownership_pct": 6.7,
-      "why": "AVL penalty + big-chance share; genuine sub-8% striker with real haul ceiling on the final day."
-    }
-  ],
-  "notes": "FINAL-GW max-points build, adjusted for team news. The standard sim-lab/intel anchor (captain Haaland) is OFF the table: GW38 reporting has Haaland rested (Pep's last game), Saka benched, and Gabriel uncertain — so the dominant captain EV (7.17) is no longer live and the field's armband collapses onto a tiny pool. I attack that gap rather than fight over it. CAPTAIN MATETA: Crystal Palace at home, on penalties, with high penalty-box volume — a sub-15% contrarian armband while template managers scramble. Double Palace attack (Mateta + Sarr) is the punt engine; Sarr is the key sub-8% differential. Palmer (vice) and Mbeumo are the reliable nailed-on midfield floor; João Pedro, Semenyo and Watkins add further low-template attacking upside. Defence is a Liverpool/Bournemouth/Palace clean-sheet lottery kept cheap to fund the attack. Avoided the rotation-risk ARS/MCI assets entirely (no Haaland, Saka benched). xpts.json was all-zero (data gap) and sim-lab assumed a Haaland start, so projections are reconstructed bottom-up from role + fixture + ownership priors: Mateta ~4.8 base (captain doubles to ~9.6), Palmer ~5.0, Mbeumo ~4.6, Semenyo ~4.4, João Pedro ~4.5, Watkins ~4.6, Sarr ~4.0, plus the defence/keeper CS expectation. Projected XI total ~69 xPts incl. captain. High-variance by design — chasing rank, not protecting it."
+  "chip": null,
+  "projected_xpts": 76,
+  "key_differential": null,
+  "notes": "TEMPLATE build for the GW38 finale. Strategy = own the >40% core and captain the most-owned premium with zero risk. Haaland is OUT, so the template armband collapses onto the next most-owned nailed premium: M.Salah, at home vs Crystal Palace, on penalties and Liverpool's primary goal threat — the safe, highest-EO captain. Vice = Bowen (penalty duties vs relegation-threatened Leeds, near-guaranteed minutes and a real haul floor). Core = Arsenal defensive block (Gabriel/Saliba/Timber behind Raya) plus Salah/Saka/B.Fernandes/Mbeumo through the spine and Watkins/Mateta/Bowen as the heavily-owned forward line. No differentials by design — this is a variance-minimising, follow-the-field side. xpts.json was all-zero (end-of-season data gap), so projection is reconstructed from form + xgi_per90 + fixture priors: Salah ~5.4 base (captain doubles ~10.8), Bowen ~5.0, Saka ~4.8, B.Fernandes ~4.6, Mbeumo ~4.5, Watkins ~4.6, Mateta ~4.6, plus the Arsenal CS-led defence. XI total ~76 xPts including captain."
 }

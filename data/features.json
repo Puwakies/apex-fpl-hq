@@ -1,58 +1,79 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T00:00:00",
-    "target_gw": 38,
-    "source": "SAMPLE (replace by running scripts/fpl_fetch.py on a machine with open network)",
-    "n_players": 6
+    "generated": "2026-06-05",
+    "gw": 38,
+    "sources": {
+      "squad": "2026-06-04T08:00:00Z",
+      "xpts": "2026-06-04T13:46:56.943Z",
+      "league": "2026-06-04T13:46:58.524Z",
+      "news": "2026-06-04T13:47:00.424Z",
+      "price": "2026-06-04T13:47:02.002Z",
+      "gemini": "2026-06-04T13:47:03.626Z"
+    }
   },
-  "players": [
-    {"id": 1, "web_name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.1,
-     "form": 7.2, "pts": 224, "ppg": 6.3, "minutes": 3100, "starts": 35,
-     "xg": 26.4, "xa": 4.1, "xgi": 30.5, "xgi_per90": 0.89,
-     "transfers_in_event": 412000, "transfers_out_event": 90000, "net_transfers": 322000,
-     "cost_change_event": 0.1, "selected_by_pct": 61.4,
-     "status": "a", "chance_next": 100, "pens_order": 1, "set_piece_note": null,
-     "fdr": {"fdr_avg": 2.4, "n_fixtures": 5, "dgw": false,
-             "next": [{"gw": 38, "fdr": 2, "loc": "H"}]}},
-    {"id": 2, "web_name": "M.Salah", "team": "LIV", "pos": "MID", "price": 13.4,
-     "form": 6.8, "pts": 232, "ppg": 6.5, "minutes": 3200, "starts": 36,
-     "xg": 18.2, "xa": 12.4, "xgi": 30.6, "xgi_per90": 0.86,
-     "transfers_in_event": 210000, "transfers_out_event": 120000, "net_transfers": 90000,
-     "cost_change_event": 0.0, "selected_by_pct": 48.9,
-     "status": "a", "chance_next": 100, "pens_order": 1, "set_piece_note": 2,
-     "fdr": {"fdr_avg": 2.9, "n_fixtures": 5, "dgw": false,
-             "next": [{"gw": 38, "fdr": 3, "loc": "A"}]}},
-    {"id": 3, "web_name": "Mbeumo", "team": "BRE", "pos": "MID", "price": 7.8,
-     "form": 6.1, "pts": 168, "ppg": 4.7, "minutes": 3000, "starts": 34,
-     "xg": 11.8, "xa": 6.9, "xgi": 18.7, "xgi_per90": 0.56,
-     "transfers_in_event": 88000, "transfers_out_event": 30000, "net_transfers": 58000,
-     "cost_change_event": 0.1, "selected_by_pct": 14.2,
-     "status": "a", "chance_next": 100, "pens_order": 1, "set_piece_note": 1,
-     "fdr": {"fdr_avg": 2.2, "n_fixtures": 5, "dgw": false,
-             "next": [{"gw": 38, "fdr": 2, "loc": "H"}]}},
-    {"id": 4, "web_name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 6.3,
-     "form": 5.0, "pts": 146, "ppg": 4.1, "minutes": 2900, "starts": 33,
-     "xg": 3.1, "xa": 1.2, "xgi": 4.3, "xgi_per90": 0.13,
-     "transfers_in_event": 60000, "transfers_out_event": 200000, "net_transfers": -140000,
-     "cost_change_event": -0.1, "selected_by_pct": 33.1,
-     "status": "d", "chance_next": 75, "pens_order": null, "set_piece_note": null,
-     "fdr": {"fdr_avg": 2.6, "n_fixtures": 5, "dgw": false,
-             "next": [{"gw": 38, "fdr": 3, "loc": "H"}]}},
-    {"id": 5, "web_name": "Mateta", "team": "CRY", "pos": "FWD", "price": 7.5,
-     "form": 5.4, "pts": 152, "ppg": 4.3, "minutes": 2800, "starts": 31,
-     "xg": 14.0, "xa": 3.2, "xgi": 17.2, "xgi_per90": 0.55,
-     "transfers_in_event": 30000, "transfers_out_event": 22000, "net_transfers": 8000,
-     "cost_change_event": 0.0, "selected_by_pct": 6.8,
-     "status": "a", "chance_next": 100, "pens_order": 2, "set_piece_note": null,
-     "fdr": {"fdr_avg": 2.8, "n_fixtures": 5, "dgw": false,
-             "next": [{"gw": 38, "fdr": 3, "loc": "A"}]}},
-    {"id": 6, "web_name": "Rogers", "team": "AVL", "pos": "MID", "price": 5.6,
-     "form": 4.9, "pts": 128, "ppg": 3.6, "minutes": 2600, "starts": 29,
-     "xg": 6.5, "xa": 7.1, "xgi": 13.6, "xgi_per90": 0.47,
-     "transfers_in_event": 41000, "transfers_out_event": 12000, "net_transfers": 29000,
-     "cost_change_event": 0.1, "selected_by_pct": 4.1,
-     "status": "a", "chance_next": 100, "pens_order": null, "set_piece_note": 3,
-     "fdr": {"fdr_avg": 2.5, "n_fixtures": 5, "dgw": false,
-             "next": [{"gw": 38, "fdr": 2, "loc": "H"}]}}
-  ]
+  "squad_summary": {
+    "team_name": "Puwakies Jjimyang",
+    "manager": "Puwakorn",
+    "gw": 38,
+    "bank": 0.3,
+    "squad_value": 101.2,
+    "overall_rank": 250000,
+    "total_points": 2180,
+    "captain": "Bowen",
+    "vice_captain": "M.Salah",
+    "chips_used": ["WC@GW8", "BB@GW33", "FH@GW34"],
+    "chips_left": ["TC"],
+    "starting_xi": [
+      {"name": "Raya",     "team": "ARS", "pos": "GK",  "price": 5.6, "status": "AVAILABLE"},
+      {"name": "Gabriel",  "team": "ARS", "pos": "DEF", "price": 6.3, "status": "DOUBTFUL"},
+      {"name": "Gvardiol", "team": "MCI", "pos": "DEF", "price": 6.0, "status": "AVAILABLE"},
+      {"name": "Aina",     "team": "NFO", "pos": "DEF", "price": 4.9, "status": "AVAILABLE"},
+      {"name": "M.Salah",  "team": "LIV", "pos": "MID", "price": 13.4, "status": "AVAILABLE", "is_vice": true},
+      {"name": "Mbeumo",   "team": "BRE", "pos": "MID", "price": 7.8, "status": "AVAILABLE"},
+      {"name": "Rogers",   "team": "AVL", "pos": "MID", "price": 5.6, "status": "AVAILABLE"},
+      {"name": "Anderson", "team": "NFO", "pos": "MID", "price": 5.5, "status": "AVAILABLE"},
+      {"name": "Bowen",    "team": "WHU", "pos": "FWD", "price": 7.8, "status": "AVAILABLE", "is_captain": true},
+      {"name": "Mateta",   "team": "CRY", "pos": "FWD", "price": 7.5, "status": "AVAILABLE"},
+      {"name": "Wood",     "team": "NFO", "pos": "FWD", "price": 7.0, "status": "AVAILABLE"}
+    ],
+    "bench": [
+      {"name": "Sels",    "team": "NFO", "pos": "GK",  "price": 5.0, "status": "AVAILABLE"},
+      {"name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.1, "status": "UNAVAILABLE"},
+      {"name": "Munoz",   "team": "CRY", "pos": "DEF", "price": 5.1, "status": "AVAILABLE"},
+      {"name": "Kluivert","team": "BOU", "pos": "MID", "price": 6.2, "status": "AVAILABLE"}
+    ]
+  },
+  "xpts_summary": {
+    "total_players": 139,
+    "note": "Most players show xpts=0 in GW38 data — likely a placeholder or end-of-season data issue. Only Sels (GK, NFO) has xpts=1. All captain_xpts values also 0 except Sels=2.",
+    "top_xpts_in_squad": [
+      {"name": "Sels", "team": "NFO", "pos": "GK", "xpts": 1, "captain_xpts": 2}
+    ]
+  },
+  "league": {
+    "total_managers": 15,
+    "user_rank": 7,
+    "leader": "Krisss. (2365pts)",
+    "template_players": ["Haaland", "B.Fernandes", "Gabriel"],
+    "top_differentials": ["Rogers", "Watkins", "Enzo", "Bruno G.", "J.Timber"]
+  },
+  "injuries_in_squad": [
+    {"player": "Gabriel", "team": "ARS", "pos": "DEF", "status": "DOUBTFUL"}
+  ],
+  "price_changes": {
+    "likely_rises": [],
+    "likely_falls": []
+  },
+  "gemini": {
+    "captain": "Haaland",
+    "captain_xpts": 14,
+    "vice_captain": "Gabriel",
+    "transfer_out": null,
+    "transfer_in": null,
+    "transfer_reason": "No transfers required for final gameweek",
+    "chip": null,
+    "projected_xpts": 85,
+    "confidence": "high",
+    "key_risk": "Haaland rotation risk"
+  }
 }

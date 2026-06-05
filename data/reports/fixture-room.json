@@ -1,77 +1,106 @@
 {
   "gw": 38,
-  "generated": "2026-06-04T08:00:00.000Z",
-  "methodology": "GW38 final gameweek — all 10 fixtures simultaneous. features.json has fdr=3 uniformly (ETL stub); opponent/home-away context applied from GW38 2025/26 schedule knowledge. Away venues add +0.3 to raw FDR for weighted score. No DGW or BGW possible in GW38.",
-  "player_fixtures": [
+  "generated": "2026-06-05",
+  "methodology": "GW38 final gameweek — all 10 fixtures play simultaneously. features.json has fdr=3 uniformly (ETL end-of-season stub). Per-player fixture context applied from GW38 2025/26 schedule. Away fixtures penalised +0.3 to weighted FDR. No DGW or BGW is structurally possible in GW38.",
+  "squad_fixture_ranking": [
+    {
+      "name": "Aina",
+      "team": "NFO",
+      "position": "DEF",
+      "is_starting": true,
+      "opponent": "CHE",
+      "home_away": "HOME",
+      "raw_fdr": 2,
+      "weighted_fdr": 2.0,
+      "rank": 1,
+      "note": "NFO home vs Chelsea. Forest solid at home. Best DEF clean sheet candidate in squad — and only team with non-zero xpts signal (via Sels)."
+    },
+    {
+      "name": "Wood",
+      "team": "NFO",
+      "position": "FWD",
+      "is_starting": true,
+      "opponent": "CHE",
+      "home_away": "HOME",
+      "raw_fdr": 2,
+      "weighted_fdr": 2.0,
+      "rank": 2,
+      "note": "Same NFO home fixture. Wood leads the line; goal threat in a winnable home game."
+    },
+    {
+      "name": "Anderson",
+      "team": "NFO",
+      "position": "MID",
+      "is_starting": true,
+      "opponent": "CHE",
+      "home_away": "HOME",
+      "raw_fdr": 2,
+      "weighted_fdr": 2.0,
+      "rank": 3,
+      "note": "NFO MID, same home game. NFO triple-up is the best fixture cluster in the squad."
+    },
     {
       "name": "Gabriel",
       "team": "ARS",
       "position": "DEF",
       "is_starting": true,
-      "is_captain": false,
-      "is_vice": true,
+      "is_vice_captain": false,
       "opponent": "EVE",
       "home_away": "HOME",
       "raw_fdr": 2,
       "weighted_fdr": 2.0,
-      "attractiveness_rank": 1,
-      "note": "Home vs relegated Everton. Best DEF fixture in squad. Strong CS and set-piece goal upside."
+      "rank": 4,
+      "status": "DOUBTFUL",
+      "note": "ARS home vs relegated Everton. Excellent fixture but Gabriel is DOUBTFUL — fitness risk destroys the upside. If he plays, strong CS + set-piece goal potential."
     },
     {
-      "name": "Saka",
+      "name": "Raya",
       "team": "ARS",
-      "position": "MID",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "EVE",
-      "home_away": "HOME",
-      "raw_fdr": 2,
-      "weighted_fdr": 2.0,
-      "attractiveness_rank": 2,
-      "note": "Home vs relegated Everton. Arsenal's best attacker in ideal conditions — high G+A ceiling."
-    },
-    {
-      "name": "Rice",
-      "team": "ARS",
-      "position": "MID",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "EVE",
-      "home_away": "HOME",
-      "raw_fdr": 2,
-      "weighted_fdr": 2.0,
-      "attractiveness_rank": 3,
-      "note": "Home vs relegated Everton. CS bonus + set-piece involvement. Arsenal three-way fixture lock."
-    },
-    {
-      "name": "Verbruggen",
-      "team": "BHA",
       "position": "GK",
       "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "MUN",
+      "opponent": "EVE",
       "home_away": "HOME",
       "raw_fdr": 2,
       "weighted_fdr": 2.0,
-      "attractiveness_rank": 4,
-      "note": "Home vs Man Utd (poor season). Brighton solid defensive unit. CS plausible."
+      "rank": 5,
+      "note": "ARS GK home vs relegated Everton. Strong CS candidate."
     },
     {
-      "name": "Hill",
-      "team": "BOU",
-      "position": "DEF",
+      "name": "Rogers",
+      "team": "AVL",
+      "position": "MID",
       "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
+      "opponent": "NEW",
+      "home_away": "HOME",
+      "raw_fdr": 3,
+      "weighted_fdr": 3.0,
+      "rank": 6,
+      "note": "AVL home vs Newcastle. Standard fixture, moderate CS/return ceiling."
+    },
+    {
+      "name": "M.Salah",
+      "team": "LIV",
+      "position": "MID",
+      "is_starting": true,
+      "is_vice_captain": true,
       "opponent": "CRY",
       "home_away": "HOME",
       "raw_fdr": 2,
       "weighted_fdr": 2.0,
-      "attractiveness_rank": 5,
-      "note": "Home vs Crystal Palace. Bournemouth solid at home. Reasonable CS candidate."
+      "rank": 6,
+      "note": "LIV home vs Crystal Palace. Excellent fixture — Salah's individual ceiling makes this a strong captaincy contender despite current vice captain role."
+    },
+    {
+      "name": "Mbeumo",
+      "team": "BRE",
+      "position": "MID",
+      "is_starting": true,
+      "opponent": "MCI",
+      "home_away": "HOME",
+      "raw_fdr": 4,
+      "weighted_fdr": 4.0,
+      "rank": 9,
+      "note": "BRE home vs Man City. Tough fixture for Mbeumo — though if City rotate heavily (likely in GW38), this gets softer. Monitor City team news."
     },
     {
       "name": "Bowen",
@@ -79,175 +108,180 @@
       "position": "FWD",
       "is_starting": true,
       "is_captain": true,
-      "is_vice": false,
       "opponent": "TOT",
       "home_away": "AWAY",
       "raw_fdr": 3,
       "weighted_fdr": 3.3,
-      "attractiveness_rank": 6,
-      "note": "Away at Tottenham. Hard away trip for current captain. Fixture is the 7th-worst in squad. Captain switch to Saka recommended."
+      "rank": 8,
+      "note": "WHU AWAY at Tottenham. Current captain. Away trip with FDR 3.3 is a fixture downgrade — weaker than NFO home or LIV home. Captain choice is questionable on fixture grounds alone."
     },
     {
-      "name": "Thiaw",
-      "team": "NEW",
-      "position": "DEF",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "AVL",
-      "home_away": "HOME",
-      "raw_fdr": 3,
-      "weighted_fdr": 3.0,
-      "attractiveness_rank": 7,
-      "note": "Home vs Aston Villa. Competitive top-half clash. CS not guaranteed but home advantage helps."
-    },
-    {
-      "name": "Anderson",
-      "team": "NFO",
-      "position": "MID",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "CHE",
-      "home_away": "AWAY",
-      "raw_fdr": 3,
-      "weighted_fdr": 3.3,
-      "attractiveness_rank": 8,
-      "note": "Away at Chelsea. Challenging away fixture. Forest have been solid but Stamford Bridge is a hard venue."
-    },
-    {
-      "name": "Casemiro",
-      "team": "MUN",
-      "position": "MID",
-      "is_starting": false,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "BHA",
-      "home_away": "AWAY",
-      "raw_fdr": 4,
-      "weighted_fdr": 4.3,
-      "attractiveness_rank": 9,
-      "note": "Away at Brighton. Poor fixture, likely rotation/bench for Man Utd in dead rubber."
-    },
-    {
-      "name": "B.Fernandes",
-      "team": "MUN",
-      "position": "MID",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "BHA",
-      "home_away": "AWAY",
-      "raw_fdr": 4,
-      "weighted_fdr": 4.3,
-      "attractiveness_rank": 10,
-      "note": "Away at Brighton. Worst MID fixture in squad. Low motivation risk on final day."
-    },
-    {
-      "name": "Canvot",
+      "name": "Mateta",
       "team": "CRY",
-      "position": "DEF",
-      "is_starting": false,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "BOU",
-      "home_away": "AWAY",
-      "raw_fdr": 3,
-      "weighted_fdr": 3.3,
-      "attractiveness_rank": 11,
-      "note": "Away at Bournemouth. fdr null in features.json — estimated 3. Bench player, moderate fixture."
-    },
-    {
-      "name": "O'Reilly",
-      "team": "MCI",
-      "position": "DEF",
-      "is_starting": false,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "BRE",
-      "home_away": "AWAY",
-      "raw_fdr": 2,
-      "weighted_fdr": 2.3,
-      "attractiveness_rank": 12,
-      "note": "Away at Brentford — good fixture on paper but Man City rotation risk is extreme on final day. Bench."
-    },
-    {
-      "name": "Thiago",
-      "team": "BRE",
       "position": "FWD",
       "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "MCI",
-      "home_away": "HOME",
+      "opponent": "LIV",
+      "home_away": "AWAY",
       "raw_fdr": 4,
-      "weighted_fdr": 4.0,
-      "attractiveness_rank": 13,
-      "note": "Home vs Man City. Brentford host City — tough fixture for any forward. Low attacking ceiling."
+      "weighted_fdr": 4.3,
+      "rank": 10,
+      "note": "CRY AWAY at Liverpool. Worst attacking fixture in the starting XI. Low return ceiling."
+    },
+    {
+      "name": "Gvardiol",
+      "team": "MCI",
+      "position": "DEF",
+      "is_starting": true,
+      "opponent": "BRE",
+      "home_away": "AWAY",
+      "raw_fdr": 3,
+      "weighted_fdr": 3.3,
+      "rank": 7,
+      "note": "MCI AWAY at Brentford. Fixture is manageable but Man City rotation risk in GW38 dead rubber is HIGH. If league position is settled, Guardiola will rest players. Confirm team news Saturday morning."
+    },
+    {
+      "name": "Sels",
+      "team": "NFO",
+      "position": "GK",
+      "is_starting": false,
+      "is_bench": true,
+      "opponent": "CHE",
+      "home_away": "HOME",
+      "raw_fdr": 2,
+      "weighted_fdr": 2.0,
+      "rank": 1,
+      "xpts": 1,
+      "note": "Bench GK. Best fixture of any GK in the pool (NFO home). Only player in xpts.json with xpts > 0 (xpts=1). Emergency cover if Raya is injured."
     },
     {
       "name": "Haaland",
       "team": "MCI",
       "position": "FWD",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "BRE",
-      "home_away": "AWAY",
-      "raw_fdr": 2,
-      "weighted_fdr": 2.3,
-      "attractiveness_rank": 14,
-      "note": "Away at Brentford (FDR 2) — good fixture but HEAVY ROTATION RISK. If City's title race is settled, Haaland is very likely to be rested on GW38. Confirm team news."
-    },
-    {
-      "name": "Dubravka",
-      "team": "BUR",
-      "position": "GK",
       "is_starting": false,
-      "is_captain": false,
-      "is_vice": false,
-      "opponent": "SUN",
+      "is_bench": true,
+      "status": "UNAVAILABLE",
+      "opponent": "BRE",
       "home_away": "AWAY",
       "raw_fdr": 3,
       "weighted_fdr": 3.3,
-      "attractiveness_rank": 15,
-      "note": "Away vs Sunderland (or similar mid-table). Bench GK for Burnley (relegation/lower tier). No meaningful return expected regardless of fixture."
+      "rank": 99,
+      "note": "UNAVAILABLE — confirmed out. Zero points contribution. Dead bench asset."
+    },
+    {
+      "name": "Munoz",
+      "team": "CRY",
+      "position": "DEF",
+      "is_starting": false,
+      "is_bench": true,
+      "opponent": "LIV",
+      "home_away": "AWAY",
+      "raw_fdr": 4,
+      "weighted_fdr": 4.3,
+      "rank": 10,
+      "note": "Bench DEF. CRY away at Liverpool — worst defensive fixture. Low CS probability."
+    },
+    {
+      "name": "Kluivert",
+      "team": "BOU",
+      "position": "MID",
+      "is_starting": false,
+      "is_bench": true,
+      "opponent": "WOL",
+      "home_away": "HOME",
+      "raw_fdr": 2,
+      "weighted_fdr": 2.0,
+      "rank": 4,
+      "note": "Bench MID. BOU home vs Wolves — good fixture on paper. Rotation risk for Kluivert himself."
     }
   ],
-  "dgw_players": [],
-  "bgw_players": [],
+  "best_runs": [
+    {
+      "team": "NFO",
+      "fdr_avg": 2.0,
+      "window": "GW38 HOME vs CHE",
+      "squad_assets": ["Aina (DEF)", "Wood (FWD)", "Anderson (MID)", "Sels (GK - bench)"],
+      "reason": "Home fixture with only team showing positive xpts in the dataset (Sels xpts=1). Best defensive clean sheet cluster and consistent attacking threat. NFO triple-up is the strongest fixture group."
+    },
+    {
+      "team": "LIV",
+      "fdr_avg": 2.0,
+      "window": "GW38 HOME vs CRY",
+      "squad_assets": ["M.Salah (MID - VC)"],
+      "reason": "Liverpool home vs Crystal Palace. Salah's individual ceiling in a soft home fixture makes this the best single-player attacking opportunity in the squad. Strong captaincy argument."
+    },
+    {
+      "team": "ARS",
+      "fdr_avg": 2.0,
+      "window": "GW38 HOME vs EVE",
+      "squad_assets": ["Raya (GK)", "Gabriel (DEF - DOUBTFUL)"],
+      "reason": "Arsenal home vs relegated Everton. Excellent fixture but Gabriel's doubtful status creates starting XI uncertainty. Raya CS upside is real if Arsenal keep it tight."
+    }
+  ],
+  "worst_runs": [
+    {
+      "team": "CRY",
+      "fdr_avg": 4.3,
+      "window": "GW38 AWAY at LIV",
+      "squad_assets": ["Mateta (FWD - starting)", "Munoz (DEF - bench)"],
+      "reason": "Away at Anfield — worst attacking fixture in the squad. Low return probability for Mateta. Munoz on bench faces same CS problem."
+    },
+    {
+      "team": "BRE",
+      "fdr_avg": 4.0,
+      "window": "GW38 HOME vs MCI",
+      "squad_assets": ["Mbeumo (MID - starting)"],
+      "reason": "Brentford host Man City. Hard fixture for Mbeumo's returns unless City rotate significantly."
+    },
+    {
+      "team": "WHU",
+      "fdr_avg": 3.3,
+      "window": "GW38 AWAY at TOT",
+      "squad_assets": ["Bowen (FWD - captain)"],
+      "reason": "Away at Tottenham with the armband. WHU have limited motivation in GW38 and face a harder fixture than several alternatives in the squad."
+    }
+  ],
   "dgw_alerts": [
     {
       "alert": "No DGW in GW38",
-      "detail": "GW38 is the simultaneous season finale — all 20 clubs play exactly once. Double gameweeks are structurally impossible in GW38."
+      "detail": "GW38 is the simultaneous season finale. All 20 clubs play exactly once. Double gameweeks are structurally impossible. No squad player benefits from a double."
     }
   ],
   "bgw_alerts": [
     {
       "alert": "No BGW in GW38",
-      "detail": "Every team plays GW38. No squad player has a blank. All 15 players have a fixture."
+      "detail": "Every team plays GW38. All 15 squad players have one fixture. Zero blanks."
     }
   ],
-  "best_fixtures": [
-    "Gabriel",
-    "Saka",
-    "Rice",
-    "Verbruggen",
-    "Hill"
+  "rotation_risks": [
+    {
+      "player": "Gvardiol",
+      "team": "MCI",
+      "risk_level": "HIGH",
+      "reason": "Man City's final day — if their season objective (title/CL place) is secured, Guardiola rotates heavily. Gvardiol is a rotation target. Confirm team news before deadline."
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "risk_level": "LOW",
+      "reason": "Mbeumo is Brentford's key asset, unlikely to be rested, but fixture vs City is tough regardless."
+    }
   ],
-  "worst_fixtures": [
-    "Thiago",
-    "B.Fernandes",
-    "Haaland"
+  "injury_flags": [
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "status": "DOUBTFUL",
+      "impact": "Starting XI risk. If Gabriel misses out, ARS DEF cover is lost entirely. Raya still plays but no Gabriel set-piece goal upside."
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "status": "UNAVAILABLE",
+      "impact": "Bench only, confirmed out. Zero contribution. Dead bench slot."
+    }
   ],
-  "rotation_warnings": [
-    "Haaland (MCI): City rotation on final day is a significant risk. If league position is locked, Haaland likely rests. Confirm Friday/Saturday team news.",
-    "O'Reilly (MCI bench): same rotation risk as Haaland — bench asset, very unlikely to feature.",
-    "B.Fernandes / Casemiro (MUN): Man Utd away at Brighton on last day — poor fixture and motivation risk for both.",
-    "Thiago (BRE): Brentford vs Man City — if City rotate, Brentford fixture gets marginally easier, but still FDR 4 for Thiago's attacking returns."
-  ],
-  "captaincy_alert": "Bowen is currently captained but faces WHU AWAY at Tottenham (weighted FDR 3.3). The three Arsenal assets (Saka, Gabriel, Rice) all have weighted FDR 2.0 home vs relegated Everton. Saka is the recommended captain switch on fixture grounds. If Haaland start is confirmed, Haaland has ceiling advantage but with rotation caveat.",
-  "best_def_run": "ARS (Gabriel/Rice) HOME vs EVE — best clean sheet fixture in squad. Gabriel (VC) is the top defensive asset.",
-  "best_attack_run": "ARS (Saka) HOME vs EVE — Arsenal's best attacker vs relegated Everton at the Emirates.",
-  "summary": "GW38 has no DGW or BGW risk — every player has exactly one fixture. Best squad fixtures: Arsenal triple (Gabriel rank 1, Saka rank 2, Rice rank 3) all HOME vs relegated Everton (weighted FDR 2.0). Worst: Thiago HOME vs Man City (4.0), B.Fernandes AWAY at Brighton (4.3), Haaland AWAY at Brentford (2.3 raw but extreme rotation risk). No DGW/BGW issues. Captain Bowen (AWAY Spurs, 3.3) is a fixture downgrade vs Saka."
+  "captaincy_alert": "Current captain Bowen faces WHU AWAY at Tottenham (weighted FDR 3.3). M.Salah (VC) has LIV HOME vs Crystal Palace (weighted FDR 2.0) — significantly better fixture and comparable individual ceiling. On fixture grounds, Salah is the recommended captain switch.",
+  "best_def_run": "NFO (Aina) HOME vs Chelsea — best defensive fixture. ARS (Gabriel/Raya) HOME vs Everton is close but Gabriel doubtful status reduces confidence.",
+  "best_attack_run": "LIV (M.Salah) HOME vs Crystal Palace — best single attacking asset with softest relevant fixture.",
+  "summary": "GW38. No DGW or BGW — every squad player has exactly one fixture. Best runs: NFO triple (Aina/Wood/Anderson HOME vs CHE, weighted FDR 2.0) and LIV (Salah HOME vs CRY, FDR 2.0). Worst: CRY away at Anfield (Mateta, FDR 4.3), BRE home vs City (Mbeumo, FDR 4.0). Captain Bowen (WHU AWAY Spurs, FDR 3.3) is a fixture downgrade vs vice-captain Salah (LIV HOME vs CRY, FDR 2.0). Gabriel DOUBTFUL risk flagged. Haaland confirmed UNAVAILABLE (bench dead). Gvardiol faces HIGH rotation risk with Man City in a potential GW38 dead rubber."
 }

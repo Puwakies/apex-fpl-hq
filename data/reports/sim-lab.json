@@ -1,38 +1,52 @@
 {
   "gw": 38,
-  "captain_rankings": [
+  "pillar": "WRPPM-5D",
+  "method": "Monte Carlo 10k draws; priors anchored to Gemini projected_xpts (Haaland C=14) as GW38 xpts cache is placeholder",
+  "captain_ranking": [
     {
-      "name": "Haaland",
-      "ev": 7.17,
-      "haul_prob_pct": 36.0,
-      "notes": "Gemini C anchor (captain_xpts=14). Top floor+ceiling, dominant brace odds. Watch rotation risk."
+      "player": "Haaland",
+      "ev_xpts": 6.73,
+      "p_haul": 0.342,
+      "variance": 24.77,
+      "note": "Gemini C anchor (captain_xpts=14). Top floor+ceiling, best brace odds. Rotation risk on final GW."
     },
     {
-      "name": "Saka",
-      "ev": 5.8,
-      "haul_prob_pct": 19.6,
-      "notes": "Elite ceiling differential - goal+assist threat for ARS; highest variance alternative."
+      "player": "M.Salah",
+      "ev_xpts": 6.7,
+      "p_haul": 0.252,
+      "variance": 21.39,
+      "note": "Owned VC. Elite minutes + goal/assist threat -> strongest minutes-adjusted floor."
     },
     {
-      "name": "B.Fernandes",
-      "ev": 5.78,
-      "haul_prob_pct": 18.3,
-      "notes": "Pens + creativity give a stable floor; lower brace odds than the forwards."
+      "player": "Mbeumo",
+      "ev_xpts": 5.71,
+      "p_haul": 0.182,
+      "variance": 19.01,
+      "note": "In-form MUN attacker; balanced goal+assist profile."
     },
     {
-      "name": "Bowen",
-      "ev": 5.26,
-      "haul_prob_pct": 19.1,
-      "notes": "Current squad armband. Reliable minutes, decent return rate, capped ceiling vs Haaland."
+      "player": "Bowen",
+      "ev_xpts": 5.32,
+      "p_haul": 0.194,
+      "variance": 13.76,
+      "note": "Current armband. Reliable starter, decent returns, capped ceiling vs Haaland/Salah."
     },
     {
-      "name": "Thiago",
-      "ev": 4.97,
-      "haul_prob_pct": 15.9,
-      "notes": "Penalty-box poacher - good goal lambda but thin assist/bonus floor."
+      "player": "Rogers",
+      "ev_xpts": 4.97,
+      "p_haul": 0.14,
+      "variance": 16.47,
+      "note": "High-ceiling differential (AVL). Lower owned -> rank-swing upside, higher variance."
+    },
+    {
+      "player": "Mateta",
+      "ev_xpts": 4.79,
+      "p_haul": 0.152,
+      "variance": 13.77,
+      "note": "CRY penalty taker; good goal lambda, thinner assist/bonus floor."
     }
   ],
-  "recommended_captain": "Haaland",
-  "recommended_vice": "Saka",
-  "projected_squad_total": 87
+  "recommend_c": "Haaland",
+  "recommend_vc": "M.Salah",
+  "high_ceiling_differential": "Mbeumo"
 }
