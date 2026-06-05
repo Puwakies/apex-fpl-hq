@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX FPL HQ — Season Backtest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#0a0d13; --bg2:#11161f; --ink:#e8edf6; --dim:#8a98b0; --gold:#ffd23f;
+    --you:#00e0c6; --gem:#a78bfa; --cla:#ffd23f; --rival:#ff3b5c; --wall:#2b3650; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(120% 80% at 50% -10%,#14233f,var(--bg) 55%,#05070c);
+    color:var(--ink);font-family:'IBM Plex Mono',monospace;min-height:100vh;padding:20px 14px 56px}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;
+    background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px);mix-blend-mode:multiply;opacity:.4}
+  .wrap{max-width:1000px;margin:0 auto}
+  header{text-align:center;margin-bottom:14px}
+  .badge{display:inline-block;font-family:'Press Start 2P';font-size:9px;color:#05070c;background:var(--gold);
+    padding:7px 12px;border:3px solid #000;box-shadow:4px 4px 0 #000;transform:rotate(-1deg)}
+  h1{font-family:'Press Start 2P';font-size:clamp(16px,3.4vw,26px);line-height:1.4;margin:14px 0 5px;text-shadow:3px 3px 0 #000}
+  h1 .hl{color:var(--you)}
+  .tag{font-family:'VT323';font-size:19px;color:var(--dim)}
+  .control{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;margin:16px 0;
+    padding:11px 13px;background:var(--bg2);border:3px solid #000;box-shadow:5px 5px 0 #000}
+  button{font-family:'Press Start 2P';font-size:10px;cursor:pointer;border:3px solid #000;padding:11px 13px;
+    box-shadow:4px 4px 0 #000;transition:transform .06s,box-shadow .06s}
+  button:active{transform:translate(4px,4px);box-shadow:0 0 0 #000}
+  .load{background:var(--you);color:#05140b} .file{background:var(--wall);color:var(--ink)} .demo{background:var(--gold);color:#05070c}
+  input[type=file]{display:none}
+  .clock{font-family:'VT323';font-size:19px;color:var(--rival)}
+  #banner{display:none;margin:0 0 12px;padding:11px 13px;background:#1a1606;border:3px solid var(--rival);
+    box-shadow:4px 4px 0 #000;font-size:12px;line-height:1.6}
+  .panel{margin-top:16px;border:4px solid #000;box-shadow:8px 8px 0 #000;padding:15px;background:var(--bg2)}
+  .panel h2{font-family:'Press Start 2P';font-size:11px;margin-bottom:12px;text-shadow:2px 2px 0 #000;color:var(--gold)}
+  .totals{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+  @media(max-width:560px){.totals{grid-template-columns:1fr}}
+  .tcard{background:#05070c;border:3px solid var(--wall);padding:13px}
+  .tcard.you{border-color:var(--you)} .tcard.gem{border-color:var(--gem)} .tcard.cla{border-color:var(--cla)}
+  .tcard .who{font-family:'Press Start 2P';font-size:9px;display:block;margin-bottom:8px}
+  .tcard.you .who{color:var(--you)} .tcard.gem .who{color:var(--gem)} .tcard.cla .who{color:var(--cla)}
+  .tcard .pts{font-family:'Press Start 2P';font-size:22px;text-shadow:2px 2px 0 #000}
+  .tcard .sub{font-family:'IBM Plex Mono';font-size:11px;color:var(--dim);margin-top:6px}
+  .chartwrap{background:#05070c;border:3px solid var(--wall);padding:10px;margin-top:8px;overflow-x:auto}
+  svg{display:block}
+  .legend{display:flex;gap:16px;justify-content:center;margin-top:8px;font-family:'IBM Plex Mono';font-size:11px}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+  .legend i{width:16px;height:3px;display:inline-block}
+  table{width:100%;border-collapse:collapse;font-size:11px;margin-top:6px}
+  th{font-family:'Press Start 2P';font-size:7px;color:var(--dim);padding:7px 6px;text-align:left;
+    border-bottom:2px solid var(--wall);position:sticky;top:0;background:var(--bg2)}
+  td{padding:6px;border-bottom:1px solid #1a2233;color:var(--ink);vertical-align:top}
+  td.you{color:var(--you)} td.gem{color:var(--gem)} td.cla{color:var(--cla)}
+  .miss{color:var(--rival)} .win{color:var(--you)}
+  .tbl-scroll{max-height:520px;overflow:auto;border:3px solid var(--wall);background:#05070c}
+  .cf{font-size:10px;color:var(--gold)}
+  .review{background:#05070c;border:2px solid var(--gold);padding:12px;margin-top:8px;font-size:12px;line-height:1.7}
+  .review b{color:var(--gold)} .review .h{font-family:'Press Start 2P';font-size:8px;color:var(--gold);display:block;margin-bottom:8px}
+  .review ul{margin:6px 0 0 18px} .review li{margin-bottom:4px}
+  .foot{margin-top:16px;font-family:'VT323';font-size:17px;color:var(--dim);text-align:center}
+  a.back{color:var(--you);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">▸ BLIND BACKTEST · SEASON 25/26</span>
+    <h1>APEX <span class="hl">SEASON</span> REVIEW</h1>
+    <div class="tag">GW1–38 · YOU vs GEMINI vs CLAUDE · blind test + post-mortem</div>
+  </header>
+
+  <div class="control">
+    <button class="load" id="loadBtn">⬇ LOAD BACKTEST</button>
+    <button class="file" id="fileBtn">📁 จากไฟล์</button>
+    <button class="demo" id="demoBtn">▶ DEMO</button>
+    <input type="file" id="filepick" accept=".json">
+    <span class="clock" id="clock">awaiting results...</span>
+    <span style="font-family:'IBM Plex Mono';font-size:11px"><a class="back" href="index.html">← office</a></span>
+  </div>
+  <div id="banner"></div>
+
+  <div class="panel">
+    <h2>🏆 SEASON TOTALS (net points)</h2>
+    <div class="totals">
+      <div class="tcard you"><span class="who">▣ YOU (real)</span><div class="pts" id="tYou">—</div><div class="sub" id="sYou">ทีมจริงของคุณ</div></div>
+      <div class="tcard gem"><span class="who">◆ GEMINI</span><div class="pts" id="tGem">—</div><div class="sub">template / safe baseline</div></div>
+      <div class="tcard cla"><span class="who">✦ CLAUDE</span><div class="pts" id="tCla">—</div><div class="sub">APEX PROTOCOL</div></div>
+    </div>
+    <div class="chartwrap"><svg id="chart" width="960" height="280"></svg></div>
+    <div class="legend">
+      <span><i style="background:var(--you)"></i>YOU</span>
+      <span><i style="background:var(--gem)"></i>GEMINI</span>
+      <span><i style="background:var(--cla)"></i>CLAUDE</span>
+      <span style="color:var(--dim)">— เส้นประ = pace 2,500 pts</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>📋 GW-BY-GW</h2>
+    <div class="tbl-scroll">
+      <table id="tbl"><thead><tr>
+        <th>GW</th><th>YOU</th><th>GEMINI</th><th>CLAUDE</th><th>NOTE / COUNTERFACTUAL</th>
+      </tr></thead><tbody id="tbody">
+        <tr><td colspan="5" style="text-align:center;color:var(--dim);font-family:'VT323';font-size:18px;padding:20px">กด ⬇ LOAD BACKTEST</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="panel" id="reviewPanel" style="display:none">
+    <h2>🔍 SEASON REVIEW</h2>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="foot">⚠ DEMO/real toggle · backtest source = data/backtest/results.json (pushed by the-historian)</div>
+</div>
+
+<script>
+const RESULTS_URL='../data/backtest/results.json';
+const clock=document.getElementById('clock');
+const fmt=n=>n==null?'—':Math.round(n);
+function banner(html,show){ const b=document.getElementById('banner'); b.style.display=show?'block':'none'; b.innerHTML=html||''; }
+
+async function fetchJSON(u){ const r=await fetch(u,{cache:'no-store'}); if(!r.ok) throw new Error(r.status); return r.json(); }
+
+function num(o,keys){ for(const k of keys){ const v=o&&o[k]; if(typeof v==='number') return v; } return null; }
+
+// ---- render ----
+function render(R){
+  const gws=(R.gws||[]).slice().sort((a,b)=>a.gw-b.gw);
+  if(!gws.length){ banner('⚠ ไม่มี gws ใน results.json',true); return; }
+
+  // totals (use provided totals or recompute)
+  const t=R.totals||{};
+  const sum=eng=>gws.reduce((s,g)=>s+(num(g[eng]||{},['gw_points','net_points','points'])||0),0);
+  const tot={you:t.you??sum('you'), gemini:t.gemini??sum('gemini'), claude:t.claude??sum('claude')};
+  document.getElementById('tYou').textContent=fmt(tot.you);
+  document.getElementById('tGem').textContent=fmt(tot.gemini);
+  document.getElementById('tCla').textContent=fmt(tot.claude);
+  const winner=Object.entries(tot).sort((a,b)=>b[1]-a[1])[0][0];
+  document.getElementById('sYou').textContent='ทีมจริง'+(winner==='you'?' · ✦ ชนะ':'');
+
+  drawChart(gws);
+  fillTable(gws);
+  if(R.season_review) fillReview(R.season_review,tot);
+  clock.textContent='✓ '+gws.length+' GW loaded';
+}
+
+function cumul(gws,eng){ let c=0; return gws.map(g=>{ c+=num(g[eng]||{},['gw_points','net_points','points'])||0; return c; }); }
+
+function drawChart(gws){
+  const svg=document.getElementById('chart'); const W=960,H=280,PL=44,PR=12,PT=14,PB=24;
+  const xs=gws.map(g=>g.gw); const series={you:cumul(gws,'you'),gemini:cumul(gws,'gemini'),claude:cumul(gws,'claude')};
+  const maxY=Math.max(2500, ...series.you, ...series.gemini, ...series.claude, 1)*1.05;
+  const x=i=>PL+(W-PL-PR)*(i/(Math.max(xs.length-1,1)));
+  const y=v=>PT+(H-PT-PB)*(1-v/maxY);
+  const colors={you:'#00e0c6',gemini:'#a78bfa',claude:'#ffd23f'};
+  let s='';
+  // grid + y labels
+  for(let g=0; g<=maxY; g+=Math.ceil(maxY/5/100)*100){
+    s+=`<line x1="${PL}" y1="${y(g)}" x2="${W-PR}" y2="${y(g)}" stroke="#1a2233" stroke-width="1"/>`;
+    s+=`<text x="4" y="${y(g)+4}" fill="#8a98b0" font-size="10" font-family="IBM Plex Mono">${g}</text>`;
+  }
+  // pace line (2500 over 38)
+  const pace=xs.map((gw,i)=>({x:x(i),y:y(2500/38*gw)}));
+  s+=`<polyline fill="none" stroke="#8a98b0" stroke-width="1.5" stroke-dasharray="4 4" points="${pace.map(p=>p.x+','+p.y).join(' ')}"/>`;
+  // x labels (every ~5 gw)
+  xs.forEach((gw,i)=>{ if(gw%5===0||i===0||i===xs.length-1) s+=`<text x="${x(i)}" y="${H-8}" fill="#8a98b0" font-size="9" font-family="IBM Plex Mono" text-anchor="middle">${gw}</text>`; });
+  // series
+  ['gemini','claude','you'].forEach(eng=>{
+    const pts=series[eng].map((v,i)=>x(i)+','+y(v)).join(' ');
+    s+=`<polyline fill="none" stroke="${colors[eng]}" stroke-width="2.5" points="${pts}"/>`;
+    const li=series[eng].length-1;
+    s+=`<circle cx="${x(li)}" cy="${y(series[eng][li])}" r="3" fill="${colors[eng]}"/>`;
+  });
+  svg.innerHTML=s;
+}
+
+function engCell(g,eng){
+  const e=g[eng]||{}; const pts=num(e,['gw_points','net_points','points']);
+  const cap=e.captain||'—'; const cc=e.captain_correct;
+  const capTag=cc===true?'<span class="win">✓</span>':cc===false?'<span class="miss">✗</span>':'';
+  return `<b>${pts==null?'—':pts}</b> <span style="color:var(--dim)">(C)${cap} ${capTag}</span>`;
+}
+function cfText(g){
+  // collect transfer counterfactuals across engines
+  const out=[];
+  ['you','gemini','claude'].forEach(eng=>{
+    const ts=(g[eng]||{}).transfers||[];
+    ts.forEach(t=>{
+      if(t.with_pts!=null && t.without_pts!=null){
+        const better=t.better||(t.with_pts>=t.without_pts?'changed':'kept');
+        const tag=/(kept|without|ไม่เปลี่ยน)/i.test(better)?'<span class="miss">ไม่เปลี่ยนดีกว่า</span>':'<span class="win">เปลี่ยนดีกว่า</span>';
+        out.push(`${eng.toUpperCase()}: ${t.out}→${t.in} (${t.with_pts} vs ${t.without_pts}) ${tag}${t.reason?(' · '+t.reason):''}`);
+      } else if(t.out||t.in){ out.push(`${eng.toUpperCase()}: ${t.out||'?'}→${t.in||'?'}${t.reason?(' · '+t.reason):''}`); }
+    });
+  });
+  return out.length?('<div class="cf">'+out.join('<br>')+'</div>'):'';
+}
+function fillTable(gws){
+  const tb=document.getElementById('tbody'); tb.innerHTML='';
+  gws.forEach(g=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td><b>${g.gw}</b></td>
+      <td class="you">${engCell(g,'you')}</td>
+      <td class="gem">${engCell(g,'gemini')}</td>
+      <td class="cla">${engCell(g,'claude')}</td>
+      <td>${g.note?('<div>'+g.note+'</div>'):''}${cfText(g)}</td>`;
+    tb.appendChild(tr);
+  });
+}
+function fillReview(r,tot){
+  document.getElementById('reviewPanel').style.display='block';
+  const best=(r.best_engine||'').toUpperCase();
+  let html=`<span class="h">⚖ VERDICT</span>`;
+  html+=`เอนจินที่ดีที่สุด: <b>${best||'—'}</b> · `;
+  html+=`YOU ${fmt(tot.you)} / GEMINI ${fmt(tot.gemini)} / CLAUDE ${fmt(tot.claude)} pts<br>`;
+  if(r.you_vs_claude) html+=`YOU vs CLAUDE: ${r.you_vs_claude}<br>`;
+  if(r.you_vs_gemini) html+=`YOU vs GEMINI: ${r.you_vs_gemini}<br>`;
+  if(r.key_lessons&&r.key_lessons.length){ html+=`<b>บทเรียน:</b><ul>`+r.key_lessons.map(l=>`<li>${l}</li>`).join('')+`</ul>`; }
+  if(r.strategy_flaws&&r.strategy_flaws.length){ html+=`<b style="color:var(--rival)">ข้อบกพร่อง:</b><ul>`+r.strategy_flaws.map(l=>`<li>${l}</li>`).join('')+`</ul>`; }
+  document.getElementById('review').innerHTML=html;
+}
+
+// ---- demo data ----
+function demoData(){
+  const gws=[]; let cy=0,cg=0,cc=0;
+  for(let gw=1;gw<=38;gw++){
+    const you=45+Math.round(Math.random()*30), gem=44+Math.round(Math.random()*26), cla=48+Math.round(Math.random()*30);
+    cy+=you;cg+=gem;cc+=cla;
+    const g={gw,
+      you:{gw_points:you,captain:'Salah',captain_correct:Math.random()>0.4},
+      gemini:{gw_points:gem,captain:'Haaland',captain_correct:Math.random()>0.5},
+      claude:{gw_points:cla,captain:'Salah',captain_correct:Math.random()>0.35},
+      note:''};
+    if(gw%6===0){ g.claude.transfers=[{out:'Gabriel',in:'Mbeumo',reason:'fixture swing',with_pts:9,without_pts:3,better:'changed'}]; }
+    if(gw%9===0){ g.you.transfers=[{out:'Watkins',in:'Isak',reason:'form',with_pts:2,without_pts:8,better:'kept'}]; g.note='Isak blanked — ไม่เปลี่ยนดีกว่า'; }
+    gws.push(g);
+  }
+  return {season:'2025/26',gws,totals:{you:cy,gemini:cg,claude:cc},
+    season_review:{best_engine:cc>cy&&cc>cg?'claude':cy>cg?'you':'gemini',
+      you_vs_claude:`Claude นำ ${cc-cy} pts`, you_vs_gemini:`YOU นำ ${cy-cg} pts`,
+      key_lessons:['captaincy คือ swing ใหญ่สุด','contrarian จ่ายผลช่วง DGW','hit เกินจำเป็นกินคะแนนสะสม'],
+      strategy_flaws:['ตั้งกัปตันตาม template บ่อยไป','ขายเร็วเกินตอนผู้เล่นฟอร์มตก 1 เกม']}};
+}
+
+async function load(){
+  banner('',false); clock.textContent='loading...';
+  try{ const R=await fetchJSON(RESULTS_URL); render(R); }
+  catch(e){
+    banner(`⚠ อ่าน results.json ไม่ได้ (${e.message}). รัน /backtest ใน Claude Code ก่อน หรือกด 📁 เลือกไฟล์ / ▶ DEMO`,true);
+    clock.textContent='awaiting results...';
+  }
+}
+document.getElementById('loadBtn').addEventListener('click', load);
+document.getElementById('demoBtn').addEventListener('click', ()=>{ banner('',false); render(demoData()); clock.textContent='✓ DEMO'; });
+document.getElementById('fileBtn').addEventListener('click', ()=>document.getElementById('filepick').click());
+document.getElementById('filepick').addEventListener('change', e=>{
+  const f=e.target.files[0]; if(!f) return; const rd=new FileReader();
+  rd.onload=()=>{ try{ render(JSON.parse(rd.result)); banner('',false);}catch(err){ banner('⚠ ไฟล์ไม่ใช่ JSON ที่ถูกต้อง',true);} };
+  rd.readAsText(f);
+});
+window.addEventListener('load', ()=> setTimeout(load, 400));
+</script>
+</body>
+</html>

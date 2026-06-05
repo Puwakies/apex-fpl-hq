@@ -78,3 +78,12 @@ data/features.json   preprocessed feature table (data-lab output)
 data/reports/*.json  per-agent reports
 office/index.html    pixel-office UI
 ```
+
+## Season backtest (the-historian)
+Blind backtest of 2025/26 — YOU (real) vs GEMINI (template baseline) vs CLAUDE (APEX).
+1. Apps Script: run `blindSimPrep()` then `exportBacktestData()` → pushes
+   data/backtest/history.json (per-GW player stats) + my_picks.json (your real squad each GW).
+2. Claude Code: `/backtest 1 10` (run in batches) → the-historian replays under the strict BLIND rule
+   (only data gw < N when picking; results revealed only in post-mortem) → data/backtest/results.json
+3. View: office/backtest.html → cumulative chart + per-GW table + transfer counterfactuals + season review.
+Note: "GEMINI" in backtest = a template/safe strategy baseline (we do NOT call Gemini 38x); live weekly briefs use real Gemini.

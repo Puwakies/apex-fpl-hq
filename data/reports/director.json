@@ -1,72 +1,16 @@
 {
   "gw": 38,
-  "you": {
-    "projected_xpts": 51.5,
-    "captain": "Bowen",
-    "starting_xi": [
-      {"name": "Raya", "pos": "GK"},
-      {"name": "Gabriel", "pos": "DEF"},
-      {"name": "Gvardiol", "pos": "DEF"},
-      {"name": "Aina", "pos": "DEF"},
-      {"name": "M.Salah", "pos": "MID"},
-      {"name": "Mbeumo", "pos": "MID"},
-      {"name": "Rogers", "pos": "MID"},
-      {"name": "Anderson", "pos": "MID"},
-      {"name": "Bowen", "pos": "FWD"},
-      {"name": "Mateta", "pos": "FWD"},
-      {"name": "Wood", "pos": "FWD"}
-    ],
-    "bench": [
-      {"name": "Sels", "pos": "GK"},
-      {"name": "Haaland", "pos": "FWD"},
-      {"name": "Munoz", "pos": "DEF"},
-      {"name": "Kluivert", "pos": "MID"}
-    ]
-  },
-  "gemini": {
-    "projected_xpts": 85,
-    "captain": "Haaland",
-    "starting_xi": [],
-    "bench": [],
-    "transfer_in": null,
-    "transfer_out": null,
-    "chip": null,
-    "note": "INVALID — captain Haaland is CONFIRMED OUT (medical 0%). Stale pre-injury cache run; 85 xPts not credible. Excluded from best-plan ranking."
-  },
-  "claude": {
-    "projected_xpts": 58.9,
-    "captain": "M.Salah",
-    "starting_xi": [
-      {"name": "Raya", "pos": "GK", "xpts": 3.0},
-      {"name": "Gvardiol", "pos": "DEF", "xpts": 2.5},
-      {"name": "Aina", "pos": "DEF", "xpts": 3.2},
-      {"name": "Munoz", "pos": "DEF", "xpts": 2.0},
-      {"name": "M.Salah", "pos": "MID", "xpts": 6.7},
-      {"name": "Mbeumo", "pos": "MID", "xpts": 5.71},
-      {"name": "Rogers", "pos": "MID", "xpts": 4.97},
-      {"name": "Anderson", "pos": "MID", "xpts": 3.5},
-      {"name": "Bowen", "pos": "FWD", "xpts": 5.32},
-      {"name": "Mateta", "pos": "FWD", "xpts": 4.79},
-      {"name": "Wood", "pos": "FWD", "xpts": 4.0}
-    ],
-    "bench": [
-      {"name": "Sels", "pos": "GK"},
-      {"name": "Gabriel", "pos": "DEF"},
-      {"name": "Kluivert", "pos": "MID"},
-      {"name": "Haaland", "pos": "FWD"}
-    ],
-    "transfer_in": null,
-    "transfer_out": null,
-    "chip": "TC (hold — single-fixture coin-flip, no GW38 DGW; fire on Salah only if chasing a rank target)"
-  },
-  "consensus": {
-    "captain_agree": true,
-    "transfer_agree": true,
-    "chip_agree": true,
-    "conviction": "HIGH",
-    "note": "Gemini's Haaland armband is a data error and is discarded. The corrected field view — Claude and the Rival (TEMPLATE) — both captain M.Salah (LIV home vs CRY, FDR 2.0, EV 6.7). Two independent valid engines agree on captain: HIGH conviction."
-  },
+  "you":    { "projected_xpts": 57.5, "captain": "Bowen",
+    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Bowen","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
+    "bench":[{"name":"Sels","pos":"GK"},{"name":"Haaland","pos":"FWD"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"}] },
+  "gemini": { "projected_xpts": 62.0, "captain": "M.Salah", "transfer_in": null, "transfer_out": null, "chip": null,
+    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Bowen","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
+    "bench":[{"name":"Sels","pos":"GK"},{"name":"Haaland","pos":"FWD"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"}] },
+  "claude": { "projected_xpts": 64.5, "captain": "M.Salah", "transfer_in": "Joao Pedro", "transfer_out": "Haaland", "chip": "HOLD",
+    "starting_xi":[{"name":"Raya","pos":"GK"},{"name":"Gabriel","pos":"DEF"},{"name":"Gvardiol","pos":"DEF"},{"name":"Aina","pos":"DEF"},{"name":"M.Salah","pos":"MID"},{"name":"Mbeumo","pos":"MID"},{"name":"Rogers","pos":"MID"},{"name":"Anderson","pos":"MID"},{"name":"Joao Pedro","pos":"FWD"},{"name":"Mateta","pos":"FWD"},{"name":"Wood","pos":"FWD"}],
+    "bench":[{"name":"Sels","pos":"GK"},{"name":"Munoz","pos":"DEF"},{"name":"Kluivert","pos":"MID"},{"name":"Rogers2","pos":"MID"}] },
+  "consensus": { "captain_agree": true, "transfer_agree": false, "chip_agree": true, "conviction": "HIGH" },
   "best_plan": "claude",
-  "verdict": "Gemini's plan is invalid (captain Haaland, confirmed OUT) and removed from contention. Of the two credible views, Claude and the Rival both captain M.Salah — HIGH conviction. Claude's plan (Salah armband, ~58.9 xPts) beats YOUR current team (Bowen armband, ~51.5 xPts). YOUR squad structure is fine; the armband is on the wrong player — Salah's home game vs Palace out-projects Bowen's away trip by ~1.4 EV. No transfer needed.",
-  "highest_leverage_action": "Switch the captaincy from Bowen to M.Salah (LIV home vs CRY, FDR 2.0, EV 6.7 > Bowen 5.32). Salah is already your VC, so it is a one-tap zero-cost change; keep Bowen as VC. Do NOT triple-captain — no GW38 DGW makes TC a single-game coin-flip; hold the chip unless forced to chase a rank target."
+  "verdict": "Gemini และ Claude เห็นตรงกันว่ากัปตันคือ Salah (HIGH conviction) ต่างกันที่ Claude แนะนำขาย Haaland (dead weight) → Joao Pedro ส่วน Gemini ไม่เปลี่ยน",
+  "highest_leverage_action": "ตั้ง Salah กัปตัน และพิจารณาขาย Haaland ออกจากม้านั่ง"
 }

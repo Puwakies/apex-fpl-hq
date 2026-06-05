@@ -458,3 +458,126 @@ function apexTestPush() {
   Logger.log(ok ? "✅ GitHub push OK — ดูไฟล์ data/cache/_ping.json ใน repo"
                 : "❌ Push failed — เช็ค token/permission (ดู Logs)");
 }
+
+
+// ============================================================
+// 5) BACKTEST EXPORTER — push historical data ขึ้น repo
+//    ให้ the-historian (Claude Code) อ่านไปทำ blind backtest GW1-38
+// ------------------------------------------------------------
+// prerequisite: ต้องรัน blindSimPrep() ของไฟล์ใหญ่ก่อน (สร้าง BLIND_SIM_DATA)
+// รันครั้งเดียวต่อซีซัน: exportBacktestData()
+//   → data/backtest/history.json   (ผู้เล่นทุกคน per-GW: pts/min/xgi/price/fdr)
+//   → data/backtest/my_picks.json  (ทีมจริงคุณทั้ง 38 GW = ground truth ของ YOU)
+//   → data/backtest/meta.json      (ข้อมูลซีซัน + checklist)
+// ============================================================
+function exportBacktestData() {
+  Logger.log("=== EXPORT BACKTEST DATA START ===");
+  if (!APEX3.GITHUB_TOKEN) { Logger.log("❌ ใส่ APEX3.GITHUB_TOKEN ก่อน"); return; }
+  const ss = SpreadsheetApp.openById(CONFIG.SHEET_ID);
+
+  // ── 1) history.json : จาก BLIND_SIM_DATA (per-GW ของผู้เล่นทุกคน) ──
+  const ds = ss.getSheetByName("BLIND_SIM_DATA");
+  if (!ds) { Logger.log("❌ ไม่พบ BLIND_SIM_DATA — รัน blindSimPrep() ก่อน"); return; }
+  const raw = ds.getDataRange().getValues();
+  const hdr = raw[0];
+  const ci  = n => hdr.indexOf(n);
+
+  // จัดกลุ่มตามผู้เล่น → [{id,name,team,pos,gws:[{gw,pts,min,xgi,price,fdr,venue,opp,dgw}]}]
+  const byId = {};
+  raw.slice(1).forEach(r => {
+    const id = r[ci("PLAYER_ID")];
+    if (!id) return;
+    if (!byId[id]) byId[id] = {
+      id: id, name: r[ci("NAME")], team: r[ci("TEAM")], pos: String(r[ci("POS")]),
+      pen: parseInt(r[ci("PEN_ORDER")]) || 0, gws: [],
+    };
+    byId[id].gws.push({
+      gw:    parseInt(r[ci("GW")]),
+      pts:   parseInt(r[ci("PTS")])   || 0,
+      min:   parseInt(r[ci("MIN")])   || 0,
+      bps:   parseInt(r[ci("BPS")])   || 0,
+      xgi:   parseFloat(r[ci("XGI")]) || 0,
+      xgc:   parseFloat(r[ci("XGC")]) || 0,
+      price: parseFloat(r[ci("PRICE")]) || 0,
+      fdr:   parseInt(r[ci("FDR")])   || 3,
+      venue: String(r[ci("VENUE")]    || "H"),
+      opp:   String(r[ci("OPP")]      || "?"),
+      dgw:   (parseInt(r[ci("NUM_FIX")]) || 1) >= 2,
+    });
+  });
+  const players = Object.values(byId).map(p => {
+    p.gws.sort((a, b) => a.gw - b.gw);
+    return p;
+  });
+  Logger.log("history players: " + players.length);
+
+  // ── 2) my_picks.json : ทีมจริงคุณทั้ง 38 GW (ground truth ของ YOU) ──
+  const boot = fetchJSON("https://fantasy.premierleague.com/api/bootstrap-static/");
+  const pMap = {}; (boot ? boot.elements : []).forEach(e => pMap[e.id] = e);
+  const tMap = {}; (boot ? boot.teams : []).forEach(t => tMap[t.id] = t.short_name);
+  const posMap = { 1: "GK", 2: "DEF", 3: "MID", 4: "FWD" };
+  const CHIP = { bboost: "BB", "3xc": "TC", freehit: "FH", wildcard: "WC" };
+  const id = CONFIG.FPL_TEAM_ID;
+
+  const history = fetchJSON("https://fantasy.premierleague.com/api/entry/" + id + "/history/");
+  const transfers = fetchJSON("https://fantasy.premierleague.com/api/entry/" + id + "/transfers/") || [];
+  const gwHist = (history && history.current) || [];
+
+  // หา GW ที่จบแล้ว
+  const finishedGWs = boot
+    ? boot.events.filter(e => e.finished || e.data_checked).map(e => e.id)
+    : [];
+  const lastGW = finishedGWs.length ? Math.max.apply(null, finishedGWs) : 38;
+
+  const myPicks = [];
+  for (let gw = 1; gw <= lastGW; gw++) {
+    Utilities.sleep(220);
+    const pk = fetchJSON("https://fantasy.premierleague.com/api/entry/" + id + "/event/" + gw + "/picks/");
+    if (!pk || !pk.picks) continue;
+    const gwRow = gwHist.find(g => g.event === gw) || {};
+    const gwXfers = transfers.filter(t => t.event === gw).map(t => ({
+      out: (pMap[t.element_out] || {}).web_name || ("ID:" + t.element_out),
+      in:  (pMap[t.element_in]  || {}).web_name || ("ID:" + t.element_in),
+    }));
+    myPicks.push({
+      gw: gw,
+      points: gwRow.points || 0,
+      hits: gwRow.event_transfers_cost || 0,
+      net_points: (gwRow.points || 0) - (gwRow.event_transfers_cost || 0),
+      overall_rank: gwRow.overall_rank || 0,
+      chip: pk.active_chip ? (CHIP[pk.active_chip] || pk.active_chip) : "",
+      transfers: gwXfers,
+      squad: pk.picks.map(x => {
+        const p = pMap[x.element] || {};
+        return {
+          name: p.web_name || ("ID:" + x.element),
+          team: tMap[p.team] || "?", pos: posMap[p.element_type] || "?",
+          is_starting: x.position <= 11,
+          is_captain: !!x.is_captain, is_vice: !!x.is_vice_captain,
+          multiplier: x.multiplier,
+        };
+      }),
+    });
+    if (gw % 10 === 0) Logger.log("  picks " + gw + "/" + lastGW);
+  }
+  Logger.log("my_picks GWs: " + myPicks.length);
+
+  // ── 3) push ขึ้น repo ──
+  const push = (path, obj) => {
+    const b64 = Utilities.base64Encode(
+      JSON.stringify({ updated: new Date().toISOString(), ...obj }, null, 2),
+      Utilities.Charset.UTF_8);
+    return _ghPut(path, b64, "backtest: " + path.split("/").pop());
+  };
+
+  const okH = push("data/backtest/history.json", { season: "2025/26", n_players: players.length, players: players });
+  const okP = push("data/backtest/my_picks.json", { season: "2025/26", team_id: id, last_gw: lastGW, gws: myPicks });
+  const okM = push("data/backtest/meta.json", {
+    season: "2025/26", last_gw: lastGW, n_players: players.length,
+    note: "blind backtest source. history = per-GW player stats. my_picks = YOU ground truth.",
+  });
+
+  logRun(ss, "BacktestExport",
+    "players:" + players.length + " picks:" + myPicks.length, (okH && okP) ? "SUCCESS" : "PARTIAL");
+  Logger.log("=== BACKTEST EXPORT DONE | history:" + okH + " picks:" + okP + " ===");
+}
