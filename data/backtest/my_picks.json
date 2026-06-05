@@ -1,0 +1,6540 @@
+{
+  "updated": "2026-06-05T08:35:22.733Z",
+  "season": "2025/26",
+  "team_id": "6023024",
+  "last_gw": 38,
+  "gws": [
+    {
+      "gw": 1,
+      "points": 45,
+      "hits": 0,
+      "net_points": 45,
+      "overall_rank": 7165709,
+      "chip": "",
+      "transfers": [],
+      "squad": [
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cucurella",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "N.Williams",
+          "team": "NFO",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Van de Ven",
+          "team": "TOT",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Palmer",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "M.Salah",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "L.Paquetá",
+          "team": "WHU",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dewsbury-Hall",
+          "team": "EVE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Strand Larsen",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rodon",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Estève",
+          "team": "BUR",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 2,
+      "points": 55,
+      "hits": 0,
+      "net_points": 55,
+      "overall_rank": 5638964,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Rodon",
+          "in": "Hume"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "N.Williams",
+          "team": "NFO",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cucurella",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hume",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Van de Ven",
+          "team": "TOT",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "L.Paquetá",
+          "team": "WHU",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "M.Salah",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 2
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Strand Larsen",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Palmer",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Dewsbury-Hall",
+          "team": "EVE",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Estève",
+          "team": "BUR",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 3,
+      "points": 39,
+      "hits": 0,
+      "net_points": 39,
+      "overall_rank": 6632279,
+      "chip": "WC",
+      "transfers": [
+        {
+          "out": "Pedro Porro",
+          "in": "Van de Ven"
+        },
+        {
+          "out": "Agbadou",
+          "in": "Cucurella"
+        },
+        {
+          "out": "Van den Berg",
+          "in": "Gudmundsson"
+        },
+        {
+          "out": "Petrović",
+          "in": "Roefs"
+        },
+        {
+          "out": "Ndoye",
+          "in": "Sarr"
+        },
+        {
+          "out": "Caicedo",
+          "in": "Reijnders"
+        },
+        {
+          "out": "Cash",
+          "in": "Van den Berg"
+        },
+        {
+          "out": "Lacroix",
+          "in": "Agbadou"
+        },
+        {
+          "out": "Pope",
+          "in": "Petrović"
+        },
+        {
+          "out": "Saliba",
+          "in": "Livramento"
+        },
+        {
+          "out": "Diakité",
+          "in": "Saliba"
+        },
+        {
+          "out": "Livramento",
+          "in": "Lacroix"
+        },
+        {
+          "out": "Gakpo",
+          "in": "M.Salah"
+        },
+        {
+          "out": "Sarr",
+          "in": "Caicedo"
+        },
+        {
+          "out": "Cucurella",
+          "in": "Livramento"
+        },
+        {
+          "out": "Van den Berg",
+          "in": "Diakité"
+        },
+        {
+          "out": "Calafiori",
+          "in": "Van den Berg"
+        },
+        {
+          "out": "Reijnders",
+          "in": "Sarr"
+        },
+        {
+          "out": "Bruno G.",
+          "in": "Ndoye"
+        },
+        {
+          "out": "Ndoye",
+          "in": "Kudus"
+        },
+        {
+          "out": "Diakité",
+          "in": "Cash"
+        },
+        {
+          "out": "Richarlison",
+          "in": "Wood"
+        },
+        {
+          "out": "Tielemans",
+          "in": "Bruno G."
+        },
+        {
+          "out": "Saliba",
+          "in": "Calafiori"
+        },
+        {
+          "out": "O'Riley",
+          "in": "Tielemans"
+        },
+        {
+          "out": "Bruno G.",
+          "in": "O'Riley"
+        },
+        {
+          "out": "Kudus",
+          "in": "Bruno G."
+        },
+        {
+          "out": "Tielemans",
+          "in": "Reijnders"
+        },
+        {
+          "out": "Haaland",
+          "in": "Richarlison"
+        },
+        {
+          "out": "Wood",
+          "in": "Haaland"
+        },
+        {
+          "out": "Reijnders",
+          "in": "Ndoye"
+        },
+        {
+          "out": "Yoro",
+          "in": "Cucurella"
+        },
+        {
+          "out": "Palmer",
+          "in": "Reijnders"
+        },
+        {
+          "out": "Lacroix",
+          "in": "Yoro"
+        },
+        {
+          "out": "Cash",
+          "in": "Lacroix"
+        },
+        {
+          "out": "Ndoye",
+          "in": "Tielemans"
+        },
+        {
+          "out": "Gudmundsson",
+          "in": "Diakité"
+        },
+        {
+          "out": "Petrović",
+          "in": "Pope"
+        },
+        {
+          "out": "Enzo",
+          "in": "Palmer"
+        },
+        {
+          "out": "Yoro",
+          "in": "Pedro Porro"
+        },
+        {
+          "out": "Burn",
+          "in": "Cash"
+        },
+        {
+          "out": "Haaland",
+          "in": "Wood"
+        },
+        {
+          "out": "Wood",
+          "in": "Haaland"
+        },
+        {
+          "out": "Reijnders",
+          "in": "Ndoye"
+        },
+        {
+          "out": "Muñoz",
+          "in": "Gudmundsson"
+        },
+        {
+          "out": "Cash",
+          "in": "Burn"
+        },
+        {
+          "out": "Van de Ven",
+          "in": "Yoro"
+        },
+        {
+          "out": "Dúbravka",
+          "in": "Petrović"
+        },
+        {
+          "out": "Van den Berg",
+          "in": "Muñoz"
+        },
+        {
+          "out": "M.Salah",
+          "in": "Reijnders"
+        },
+        {
+          "out": "Bruno G.",
+          "in": "Semenyo"
+        },
+        {
+          "out": "O'Riley",
+          "in": "Gakpo"
+        },
+        {
+          "out": "Semenyo",
+          "in": "Bruno G."
+        },
+        {
+          "out": "Aina",
+          "in": "Reinildo"
+        },
+        {
+          "out": "Caicedo",
+          "in": "Enzo"
+        },
+        {
+          "out": "Johnson",
+          "in": "Kudus"
+        },
+        {
+          "out": "Ballard",
+          "in": "Aina"
+        },
+        {
+          "out": "Gudmundsson",
+          "in": "Ballard"
+        },
+        {
+          "out": "Lacroix",
+          "in": "Gudmundsson"
+        },
+        {
+          "out": "Rodon",
+          "in": "Lacroix"
+        },
+        {
+          "out": "Ballard",
+          "in": "Rodon"
+        },
+        {
+          "out": "Cucurella",
+          "in": "Saliba"
+        },
+        {
+          "out": "Rice",
+          "in": "Caicedo"
+        },
+        {
+          "out": "Yoro",
+          "in": "Ballard"
+        },
+        {
+          "out": "Ndoye",
+          "in": "O'Riley"
+        },
+        {
+          "out": "Lacroix",
+          "in": "Cash"
+        },
+        {
+          "out": "Diakité",
+          "in": "Lacroix"
+        },
+        {
+          "out": "Cullen",
+          "in": "Rice"
+        },
+        {
+          "out": "O.Dango",
+          "in": "Cullen"
+        },
+        {
+          "out": "Milenković",
+          "in": "Yoro"
+        },
+        {
+          "out": "Lacroix",
+          "in": "Cucurella"
+        },
+        {
+          "out": "Rice",
+          "in": "O.Dango"
+        },
+        {
+          "out": "Saliba",
+          "in": "Van den Berg"
+        },
+        {
+          "out": "Cucurella",
+          "in": "Milenković"
+        },
+        {
+          "out": "Yoro",
+          "in": "Diakité"
+        },
+        {
+          "out": "Aina",
+          "in": "Saliba"
+        },
+        {
+          "out": "L.Paquetá",
+          "in": "Rice"
+        },
+        {
+          "out": "Estève",
+          "in": "Lacroix"
+        },
+        {
+          "out": "Hume",
+          "in": "Yoro"
+        },
+        {
+          "out": "N.Williams",
+          "in": "Aina"
+        },
+        {
+          "out": "Dewsbury-Hall",
+          "in": "Semenyo"
+        },
+        {
+          "out": "B.Fernandes",
+          "in": "Ndoye"
+        },
+        {
+          "out": "Mateta",
+          "in": "Ekitiké"
+        },
+        {
+          "out": "Strand Larsen",
+          "in": "Wood"
+        },
+        {
+          "out": "Palmer",
+          "in": "Johnson"
+        },
+        {
+          "out": "Verbruggen",
+          "in": "Vicario"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Van de Ven",
+          "team": "TOT",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Livramento",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cucurella",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "M.Salah",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wood",
+          "team": "NFO",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Sarr",
+          "team": "CRY",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 4,
+      "points": 70,
+      "hits": 4,
+      "net_points": 66,
+      "overall_rank": 5908155,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Van de Ven",
+          "in": "Lacroix"
+        },
+        {
+          "out": "Sarr",
+          "in": "Gakpo"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Livramento",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cucurella",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "M.Salah",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Wood",
+          "team": "NFO",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 5,
+      "points": 40,
+      "hits": 0,
+      "net_points": 40,
+      "overall_rank": 6029098,
+      "chip": "",
+      "transfers": [],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cucurella",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "M.Salah",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wood",
+          "team": "NFO",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Livramento",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 6,
+      "points": 76,
+      "hits": 0,
+      "net_points": 76,
+      "overall_rank": 3095822,
+      "chip": "TC",
+      "transfers": [
+        {
+          "out": "Wood",
+          "in": "Haaland"
+        },
+        {
+          "out": "M.Salah",
+          "in": "Caicedo"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Livramento",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cucurella",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 3
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 7,
+      "points": 91,
+      "hits": 0,
+      "net_points": 91,
+      "overall_rank": 1527740,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Cucurella",
+          "in": "Calafiori"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Livramento",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 8,
+      "points": 59,
+      "hits": 0,
+      "net_points": 59,
+      "overall_rank": 1817027,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Livramento",
+          "in": "Burn"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 9,
+      "points": 33,
+      "hits": 0,
+      "net_points": 33,
+      "overall_rank": 2611331,
+      "chip": "",
+      "transfers": [],
+      "squad": [
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Reijnders",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 10,
+      "points": 76,
+      "hits": 0,
+      "net_points": 76,
+      "overall_rank": 2326134,
+      "chip": "FH",
+      "transfers": [
+        {
+          "out": "J.Timber",
+          "in": "Calafiori"
+        },
+        {
+          "out": "Haaland",
+          "in": "Welbeck"
+        },
+        {
+          "out": "Rice",
+          "in": "Saka"
+        },
+        {
+          "out": "Guéhi",
+          "in": "Muñoz"
+        },
+        {
+          "out": "Xhaka",
+          "in": "Sarr"
+        },
+        {
+          "out": "Mbeumo",
+          "in": "B.Fernandes"
+        },
+        {
+          "out": "Sarr",
+          "in": "Mbeumo"
+        },
+        {
+          "out": "Semenyo",
+          "in": "Rice"
+        },
+        {
+          "out": "Lacroix",
+          "in": "Burn"
+        },
+        {
+          "out": "Calafiori",
+          "in": "Guéhi"
+        },
+        {
+          "out": "Woltemade",
+          "in": "Haaland"
+        },
+        {
+          "out": "João Pedro",
+          "in": "Thiago"
+        },
+        {
+          "out": "Bruno G.",
+          "in": "Minteh"
+        },
+        {
+          "out": "Ekitiké",
+          "in": "Mateta"
+        },
+        {
+          "out": "Rice",
+          "in": "Semenyo"
+        },
+        {
+          "out": "Guéhi",
+          "in": "J.Timber"
+        },
+        {
+          "out": "Gakpo",
+          "in": "Sarr"
+        },
+        {
+          "out": "Mbeumo",
+          "in": "Xhaka"
+        },
+        {
+          "out": "Semenyo",
+          "in": "Bruno G."
+        },
+        {
+          "out": "Burn",
+          "in": "Guéhi"
+        },
+        {
+          "out": "Haaland",
+          "in": "Woltemade"
+        },
+        {
+          "out": "Kudus",
+          "in": "Mbeumo"
+        },
+        {
+          "out": "Reijnders",
+          "in": "Iwobi"
+        },
+        {
+          "out": "Caicedo",
+          "in": "Rice"
+        },
+        {
+          "out": "Reinildo",
+          "in": "Mukiele"
+        },
+        {
+          "out": "Gudmundsson",
+          "in": "Gabriel"
+        },
+        {
+          "out": "Vicario",
+          "in": "Pope"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Muñoz",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Saka",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Minteh",
+          "team": "BHA",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Iwobi",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Sarr",
+          "team": "CRY",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Welbeck",
+          "team": "BHA",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Pope",
+          "team": "NEW",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 11,
+      "points": 33,
+      "hits": 0,
+      "net_points": 33,
+      "overall_rank": 2700125,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Reijnders",
+          "in": "Rice"
+        },
+        {
+          "out": "Ekitiké",
+          "in": "Mateta"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Reinildo",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Kudus",
+          "team": "TOT",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 12,
+      "points": 32,
+      "hits": 4,
+      "net_points": 28,
+      "overall_rank": 3346453,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Kudus",
+          "in": "Gravenberch"
+        },
+        {
+          "out": "Reinildo",
+          "in": "Ballard"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ballard",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gakpo",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 13,
+      "points": 28,
+      "hits": 0,
+      "net_points": 28,
+      "overall_rank": 3750284,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Gakpo",
+          "in": "Mbeumo"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ballard",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mbeumo",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Vicario",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 14,
+      "points": 57,
+      "hits": 0,
+      "net_points": 57,
+      "overall_rank": 4139817,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Vicario",
+          "in": "Donnarumma"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Donnarumma",
+          "team": "MCI",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gudmundsson",
+          "team": "LEE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mbeumo",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ballard",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 15,
+      "points": 61,
+      "hits": 0,
+      "net_points": 61,
+      "overall_rank": 3632514,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Gudmundsson",
+          "in": "Chalobah"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Donnarumma",
+          "team": "MCI",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mbeumo",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Caicedo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ballard",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 16,
+      "points": 71,
+      "hits": 0,
+      "net_points": 71,
+      "overall_rank": 3371550,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Semenyo",
+          "in": "Wilson"
+        },
+        {
+          "out": "João Pedro",
+          "in": "Thiago"
+        },
+        {
+          "out": "Caicedo",
+          "in": "Xhaka"
+        },
+        {
+          "out": "Mbeumo",
+          "in": "Foden"
+        },
+        {
+          "out": "Ballard",
+          "in": "Cash"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Donnarumma",
+          "team": "MCI",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cash",
+          "team": "AVL",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Burn",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Xhaka",
+          "team": "SUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Foden",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 17,
+      "points": 71,
+      "hits": 0,
+      "net_points": 71,
+      "overall_rank": 3561417,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Burn",
+          "in": "Keane"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Donnarumma",
+          "team": "MCI",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cash",
+          "team": "AVL",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Xhaka",
+          "team": "SUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Foden",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mateta",
+          "team": "CRY",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Keane",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 18,
+      "points": 65,
+      "hits": 0,
+      "net_points": 65,
+      "overall_rank": 2805273,
+      "chip": "BB",
+      "transfers": [
+        {
+          "out": "Mateta",
+          "in": "Ekitiké"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Donnarumma",
+          "team": "MCI",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cash",
+          "team": "AVL",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Foden",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Xhaka",
+          "team": "SUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Keane",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        }
+      ]
+    },
+    {
+      "gw": 19,
+      "points": 32,
+      "hits": 0,
+      "net_points": 32,
+      "overall_rank": 3129638,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Foden",
+          "in": "Cunha"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Donnarumma",
+          "team": "MCI",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calafiori",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Lacroix",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Xhaka",
+          "team": "SUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Cunha",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Keane",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Cash",
+          "team": "AVL",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 20,
+      "points": 46,
+      "hits": 0,
+      "net_points": 46,
+      "overall_rank": 3113149,
+      "chip": "WC",
+      "transfers": [
+        {
+          "out": "Matheus N.",
+          "in": "Chalobah"
+        },
+        {
+          "out": "Kroupi.Jr",
+          "in": "Thiago"
+        },
+        {
+          "out": "Frimpong",
+          "in": "Matheus N."
+        },
+        {
+          "out": "Thiago",
+          "in": "Kroupi.Jr"
+        },
+        {
+          "out": "Matheus N.",
+          "in": "Frimpong"
+        },
+        {
+          "out": "Chalobah",
+          "in": "Matheus N."
+        },
+        {
+          "out": "Ekitiké",
+          "in": "Calvert-Lewin"
+        },
+        {
+          "out": "Xhaka",
+          "in": "Gravenberch"
+        },
+        {
+          "out": "Gordon",
+          "in": "Bruno G."
+        },
+        {
+          "out": "Cherki",
+          "in": "Foden"
+        },
+        {
+          "out": "Matheus N.",
+          "in": "Chalobah"
+        },
+        {
+          "out": "Cash",
+          "in": "Mukiele"
+        },
+        {
+          "out": "Bruno G.",
+          "in": "Gordon"
+        },
+        {
+          "out": "Cunha",
+          "in": "Cherki"
+        },
+        {
+          "out": "Gravenberch",
+          "in": "Wilson"
+        },
+        {
+          "out": "Rice",
+          "in": "Rogers"
+        },
+        {
+          "out": "Keane",
+          "in": "Tarkowski"
+        },
+        {
+          "out": "Lacroix",
+          "in": "J.Timber"
+        },
+        {
+          "out": "Chalobah",
+          "in": "Matheus N."
+        },
+        {
+          "out": "Calafiori",
+          "in": "Gabriel"
+        },
+        {
+          "out": "Donnarumma",
+          "in": "Dúbravka"
+        },
+        {
+          "out": "Wilson",
+          "in": "Bruno G."
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Foden",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Bruno G.",
+          "team": "NEW",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 21,
+      "points": 61,
+      "hits": 0,
+      "net_points": 61,
+      "overall_rank": 2870800,
+      "chip": "",
+      "transfers": [],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Foden",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Bruno G.",
+          "team": "NEW",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 22,
+      "points": 51,
+      "hits": 0,
+      "net_points": 51,
+      "overall_rank": 2446156,
+      "chip": "",
+      "transfers": [],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Bruno G.",
+          "team": "NEW",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Foden",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 23,
+      "points": 38,
+      "hits": 0,
+      "net_points": 38,
+      "overall_rank": 2625431,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Foden",
+          "in": "Enzo"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gravenberch",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Enzo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Bruno G.",
+          "team": "NEW",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 24,
+      "points": 76,
+      "hits": 0,
+      "net_points": 76,
+      "overall_rank": 2034272,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Haaland",
+          "in": "João Pedro"
+        },
+        {
+          "out": "Bruno G.",
+          "in": "B.Fernandes"
+        },
+        {
+          "out": "Gravenberch",
+          "in": "Rice"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Enzo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 25,
+      "points": 63,
+      "hits": 0,
+      "net_points": 63,
+      "overall_rank": 2089808,
+      "chip": "",
+      "transfers": [],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Wilson",
+          "team": "FUL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Enzo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 26,
+      "points": 73,
+      "hits": 0,
+      "net_points": 73,
+      "overall_rank": 1819427,
+      "chip": "TC",
+      "transfers": [
+        {
+          "out": "Wilson",
+          "in": "Semenyo"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 3
+        },
+        {
+          "name": "J.Timber",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Enzo",
+          "team": "CHE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 27,
+      "points": 40,
+      "hits": 0,
+      "net_points": 40,
+      "overall_rank": 1994763,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "J.Timber",
+          "in": "Hill"
+        },
+        {
+          "out": "Enzo",
+          "in": "Wirtz"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Wirtz",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 0
+        },
+        {
+          "name": "Calvert-Lewin",
+          "team": "LEE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 28,
+      "points": 80,
+      "hits": 0,
+      "net_points": 80,
+      "overall_rank": 1571383,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Calvert-Lewin",
+          "in": "Ekitiké"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Wirtz",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mukiele",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 29,
+      "points": 85,
+      "hits": 0,
+      "net_points": 85,
+      "overall_rank": 1094289,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Mukiele",
+          "in": "Virgil"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Wirtz",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 30,
+      "points": 52,
+      "hits": 0,
+      "net_points": 52,
+      "overall_rank": 1065090,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Wirtz",
+          "in": "O.Dango"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "O.Dango",
+          "team": "BRE",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Tarkowski",
+          "team": "EVE",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 31,
+      "points": 44,
+      "hits": 0,
+      "net_points": 44,
+      "overall_rank": 1214918,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Tarkowski",
+          "in": "Thiaw"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Chalobah",
+          "team": "CHE",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "O.Dango",
+          "team": "BRE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 32,
+      "points": 65,
+      "hits": 0,
+      "net_points": 65,
+      "overall_rank": 1044025,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Chalobah",
+          "in": "O'Reilly"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "O'Reilly",
+          "team": "MCI",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "O.Dango",
+          "team": "BRE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Roefs",
+          "team": "SUN",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Ekitiké",
+          "team": "LIV",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 33,
+      "points": 77,
+      "hits": 8,
+      "net_points": 69,
+      "overall_rank": 1299693,
+      "chip": "BB",
+      "transfers": [
+        {
+          "out": "Rogers",
+          "in": "Anderson"
+        },
+        {
+          "out": "Ekitiké",
+          "in": "Haaland"
+        },
+        {
+          "out": "Roefs",
+          "in": "Verbruggen"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "O'Reilly",
+          "team": "MCI",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "O.Dango",
+          "team": "BRE",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Anderson",
+          "team": "NFO",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        }
+      ]
+    },
+    {
+      "gw": 34,
+      "points": 52,
+      "hits": 0,
+      "net_points": 52,
+      "overall_rank": 1218632,
+      "chip": "FH",
+      "transfers": [
+        {
+          "out": "Casemiro",
+          "in": "Szoboszlai"
+        },
+        {
+          "out": "Xavi",
+          "in": "Casemiro"
+        },
+        {
+          "out": "Szoboszlai",
+          "in": "Rice"
+        },
+        {
+          "out": "Gibbs-White",
+          "in": "Xavi"
+        },
+        {
+          "out": "Keane",
+          "in": "Mavropanos"
+        },
+        {
+          "out": "Marc Guiu",
+          "in": "Mané"
+        },
+        {
+          "out": "Iwobi",
+          "in": "Gibbs-White"
+        },
+        {
+          "out": "Hume",
+          "in": "Alderete"
+        },
+        {
+          "out": "Mykolenko",
+          "in": "Keane"
+        },
+        {
+          "out": "Havertz",
+          "in": "Marc Guiu"
+        },
+        {
+          "out": "Pedro Porro",
+          "in": "Van de Ven"
+        },
+        {
+          "out": "Cunha",
+          "in": "Iwobi"
+        },
+        {
+          "out": "Gibbs-White",
+          "in": "M.Salah"
+        },
+        {
+          "out": "Van de Ven",
+          "in": "Pedro Porro"
+        },
+        {
+          "out": "Wilson",
+          "in": "Rogers"
+        },
+        {
+          "out": "Beto",
+          "in": "Watkins"
+        },
+        {
+          "out": "M.Salah",
+          "in": "Gibbs-White"
+        },
+        {
+          "out": "Mukiele",
+          "in": "Hume"
+        },
+        {
+          "out": "Casemiro",
+          "in": "Cunha"
+        },
+        {
+          "out": "Gibbs-White",
+          "in": "Wilson"
+        },
+        {
+          "out": "Ballard",
+          "in": "Mykolenko"
+        },
+        {
+          "out": "Xavi",
+          "in": "Casemiro"
+        },
+        {
+          "out": "Watkins",
+          "in": "Bowen"
+        },
+        {
+          "out": "Rogers",
+          "in": "Gibbs-White"
+        },
+        {
+          "out": "Mané",
+          "in": "Beto"
+        },
+        {
+          "out": "Sels",
+          "in": "Kinsky"
+        },
+        {
+          "out": "Pedro Porro",
+          "in": "Van de Ven"
+        },
+        {
+          "out": "Roefs",
+          "in": "Sels"
+        },
+        {
+          "out": "Tarkowski",
+          "in": "Ballard"
+        },
+        {
+          "out": "Thiago",
+          "in": "Mané"
+        },
+        {
+          "out": "Gibbs-White",
+          "in": "Xavi"
+        },
+        {
+          "out": "Casemiro",
+          "in": "M.Salah"
+        },
+        {
+          "out": "N.Williams",
+          "in": "Mukiele"
+        },
+        {
+          "out": "Mateta",
+          "in": "Havertz"
+        },
+        {
+          "out": "Rice",
+          "in": "Gibbs-White"
+        },
+        {
+          "out": "Gibbs-White",
+          "in": "Casemiro"
+        },
+        {
+          "out": "Lammens",
+          "in": "Raya"
+        },
+        {
+          "out": "Xavi",
+          "in": "Gibbs-White"
+        },
+        {
+          "out": "Mukiele",
+          "in": "Pedro Porro"
+        },
+        {
+          "out": "Gyökeres",
+          "in": "Mateta"
+        },
+        {
+          "out": "Bowen",
+          "in": "Thiago"
+        },
+        {
+          "out": "Casemiro",
+          "in": "Rice"
+        },
+        {
+          "out": "Wilson",
+          "in": "Rogers"
+        },
+        {
+          "out": "J.Timber",
+          "in": "N.Williams"
+        },
+        {
+          "out": "Leno",
+          "in": "Lammens"
+        },
+        {
+          "out": "Thiaw",
+          "in": "J.Timber"
+        },
+        {
+          "out": "Pedro Porro",
+          "in": "Virgil"
+        },
+        {
+          "out": "J.Timber",
+          "in": "Pedro Porro"
+        },
+        {
+          "out": "Garner",
+          "in": "Xavi"
+        },
+        {
+          "out": "Virgil",
+          "in": "Tarkowski"
+        },
+        {
+          "out": "Isak",
+          "in": "Gyökeres"
+        },
+        {
+          "out": "Thiago",
+          "in": "Watkins"
+        },
+        {
+          "out": "Rice",
+          "in": "Szoboszlai"
+        },
+        {
+          "out": "Anderson",
+          "in": "Garner"
+        },
+        {
+          "out": "João Pedro",
+          "in": "Bowen"
+        },
+        {
+          "out": "Haaland",
+          "in": "Isak"
+        },
+        {
+          "out": "O.Dango",
+          "in": "Wilson"
+        },
+        {
+          "out": "Semenyo",
+          "in": "Casemiro"
+        },
+        {
+          "out": "Hill",
+          "in": "J.Timber"
+        },
+        {
+          "out": "O'Reilly",
+          "in": "Mukiele"
+        },
+        {
+          "out": "Verbruggen",
+          "in": "Leno"
+        },
+        {
+          "out": "Dúbravka",
+          "in": "Roefs"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Raya",
+          "team": "ARS",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Van de Ven",
+          "team": "TOT",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rogers",
+          "team": "AVL",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "M.Salah",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Szoboszlai",
+          "team": "LIV",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Bowen",
+          "team": "WHU",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Watkins",
+          "team": "AVL",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Kinsky",
+          "team": "TOT",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mavropanos",
+          "team": "WHU",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Alderete",
+          "team": "SUN",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Mané",
+          "team": "WOL",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 35,
+      "points": 63,
+      "hits": 0,
+      "net_points": 63,
+      "overall_rank": 1131017,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "O.Dango",
+          "in": "Casemiro"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "O'Reilly",
+          "team": "MCI",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Casemiro",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Virgil",
+          "team": "LIV",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Anderson",
+          "team": "NFO",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 36,
+      "points": 80,
+      "hits": 0,
+      "net_points": 80,
+      "overall_rank": 1136953,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Virgil",
+          "in": "Canvot"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "O'Reilly",
+          "team": "MCI",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Canvot",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Anderson",
+          "team": "NFO",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Semenyo",
+          "team": "MCI",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Casemiro",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 37,
+      "points": 50,
+      "hits": 0,
+      "net_points": 50,
+      "overall_rank": 1304706,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "Semenyo",
+          "in": "Saka"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "O'Reilly",
+          "team": "MCI",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Casemiro",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Saka",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "João Pedro",
+          "team": "CHE",
+          "pos": "FWD",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Anderson",
+          "team": "NFO",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Canvot",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    },
+    {
+      "gw": 38,
+      "points": 49,
+      "hits": 0,
+      "net_points": 49,
+      "overall_rank": 1336486,
+      "chip": "",
+      "transfers": [
+        {
+          "out": "João Pedro",
+          "in": "Bowen"
+        }
+      ],
+      "squad": [
+        {
+          "name": "Verbruggen",
+          "team": "BHA",
+          "pos": "GK",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Hill",
+          "team": "BOU",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiaw",
+          "team": "NEW",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Gabriel",
+          "team": "ARS",
+          "pos": "DEF",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": true,
+          "multiplier": 1
+        },
+        {
+          "name": "B.Fernandes",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Rice",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Anderson",
+          "team": "NFO",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Saka",
+          "team": "ARS",
+          "pos": "MID",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Thiago",
+          "team": "BRE",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Bowen",
+          "team": "WHU",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": true,
+          "is_vice": false,
+          "multiplier": 2
+        },
+        {
+          "name": "Haaland",
+          "team": "MCI",
+          "pos": "FWD",
+          "is_starting": true,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Dúbravka",
+          "team": "BUR",
+          "pos": "GK",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "O'Reilly",
+          "team": "MCI",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Canvot",
+          "team": "CRY",
+          "pos": "DEF",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        },
+        {
+          "name": "Casemiro",
+          "team": "MUN",
+          "pos": "MID",
+          "is_starting": false,
+          "is_captain": false,
+          "is_vice": false,
+          "multiplier": 0
+        }
+      ]
+    }
+  ]
+}
