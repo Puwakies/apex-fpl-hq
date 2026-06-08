@@ -24,7 +24,13 @@ For EACH GW in the range:
 
 1) PICK (blind) — produce three lineups (valid: 1 GK + 3-5 DEF + 2-5 MID + 1-3 FWD = 11, plus 4 bench):
    - YOU    = read the real squad for this GW from my_picks.json (do NOT re-pick — it's the actual team)
-   - CLAUDE = APEX PROTOCOL: rank by blind form + fixture (FDR-X), contrarian where edge exists, captain = highest blind expected
+   - CLAUDE = APEX PROTOCOL v2 (captaincy fix from this backtest):
+       * rank by blind form + fixture (FDR-X) for the XI as before
+       * CAPTAIN default = highest FLOOR-weighted pick (cap_score = 0.65*blind_mean + 0.35*blind_floor),
+         which is normally a high-ownership premium. Do NOT pick a differential captain by default.
+       * pick a DIFFERENTIAL captain ONLY if a trigger holds: template captain has FDR>=4 or is unavailable
+         that GW, OR a DGW where the differential plays twice and the template doesn't. Record captain_type + trigger.
+       * (this replaces the old "contrarian by default" which lost ~295 pts in the v1 backtest)
    - GEMINI = baseline "template/safe": pick the highest-owned-style core (use highest cumulative pts up to gw<N as a proxy for template), captain the safest premium
    For CLAUDE and GEMINI, if you carry a squad GW-to-GW, allow at most 1 free transfer per GW (or 0); when you transfer, RECORD the reason.
 
