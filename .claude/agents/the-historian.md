@@ -24,13 +24,20 @@ For EACH GW in the range:
 
 1) PICK (blind) — produce three lineups (valid: 1 GK + 3-5 DEF + 2-5 MID + 1-3 FWD = 11, plus 4 bench):
    - YOU    = read the real squad for this GW from my_picks.json (do NOT re-pick — it's the actual team)
-   - CLAUDE = APEX PROTOCOL v2 (captaincy fix from this backtest):
-       * rank by blind form + fixture (FDR-X) for the XI as before
-       * CAPTAIN default = highest FLOOR-weighted pick (cap_score = 0.65*blind_mean + 0.35*blind_floor),
-         which is normally a high-ownership premium. Do NOT pick a differential captain by default.
-       * pick a DIFFERENTIAL captain ONLY if a trigger holds: template captain has FDR>=4 or is unavailable
-         that GW, OR a DGW where the differential plays twice and the template doesn't. Record captain_type + trigger.
-       * (this replaces the old "contrarian by default" which lost ~295 pts in the v1 backtest)
+   - CLAUDE = APEX PROTOCOL v3 (captaincy = MATCHUP/HAUL, the backtest-validated fix):
+       * build the XI by blind form + fixture (FDR-X) as before
+       * CAPTAIN = highest MATCHUP/HAUL score among owned starters:
+         cap_score = 0.45*blind_mean + 0.45*haul_score + 0.10*minutes, where haul_score rewards
+         a weak opponent defence (high opponent blind xGC / low FDR), home, and attacking upside (xGI/90).
+         Do NOT just captain the highest-form player (old APEX did that and mis-captained 8 GW);
+         do NOT use a floor bias (backtest: floor helped 0/8 fixable misses).
+       * differential captain ONLY if the matchup pick has FDR>=4/unavailable, or a DGW edge. Record captain_type+trigger.
+       * accept that ~60% of captaincy regret is irreducible variance (haulers are often DEF/budget) — don't chase it.
+
+HOLDOUT MODE: if the command says "holdout", you TUNE/justify only on GW1-26 and then REPORT results separately
+for the train window (GW1-26) and the unseen test window (GW27-38). The captaincy rule must be fixed before GW27 —
+do not change it using GW27+ information. Report regret + captain return for both windows so we can see if the rule
+generalizes (test-window improvement) rather than overfits the past.
    - GEMINI = baseline "template/safe": pick the highest-owned-style core (use highest cumulative pts up to gw<N as a proxy for template), captain the safest premium
    For CLAUDE and GEMINI, if you carry a squad GW-to-GW, allow at most 1 free transfer per GW (or 0); when you transfer, RECORD the reason.
 
