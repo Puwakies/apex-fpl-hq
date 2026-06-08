@@ -621,25 +621,646 @@
       "transfer_counterfactual": "J.Timber(6)->Calafiori(6) better=in; Haaland(13)->Welbeck(6) better=out [ไม่เปลี่ยนดีกว่า]; Rice(13)->Saka(3) better=out [ไม่เปลี่ยนดีกว่า]; Guéhi(10)->Muñoz(6) better=out [ไม่เปลี่ยนดีกว่า]; Xhaka(10)->Sarr(3) better=out [ไม่เปลี่ยนดีกว่า]; Mbeumo(2)->B.Fernandes(5) better=in; Sarr(3)->Mbeumo(2) better=out; Semenyo(2)->Rice(13) better=in; Lacroix(8)->Burn(0) better=out [ไม่เปลี่ยนดีกว่า]; Calafiori(6)->Guéhi(10) better=in; Woltemade(1)->Haaland(13) better=in; João Pedro(9)->Thiago(2) better=out [ไม่เปลี่ยนดีกว่า]; Bruno G.(4)->Minteh(9) better=in; Ekitiké(2)->Mateta(9) better=in; Rice(13)->Semenyo(2) better=out [ไม่เปลี่ยนดีกว่า]; Guéhi(10)->J.Timber(6) better=out [ไม่เปลี่ยนดีกว่า]; Gakpo(3)->Sarr(3) better=in; Mbeumo(2)->Xhaka(10) better=in; Semenyo(2)->Bruno G.(4) better=in; Burn(0)->Guéhi(10) better=in; Haaland(13)->Woltemade(1) better=out [ไม่เปลี่ยนดีกว่า]; Kudus(0)->Mbeumo(2) better=in; Reijnders(0)->Iwobi(3) better=in; Caicedo(10)->Rice(13) better=in; Reinildo(0)->Mukiele(1) better=in; Gudmundsson(0)->Gabriel(12) better=in; Vicario(0)->Pope(3) better=in",
       "claude_captain_was_differential": false,
       "postmortem": "YOU 76 / GEM 91 / CLA 82. Best cap Rice 13. CLA cap Haaland 13."
+    },
+    {
+      "gw": 11,
+      "you": {
+        "points": 33,
+        "captain": "João Pedro",
+        "captain_pts": 7,
+        "xi": [
+          "Vicario",
+          "Burn",
+          "Calafiori",
+          "Lacroix",
+          "Gudmundsson",
+          "Rice",
+          "Semenyo",
+          "Caicedo",
+          "Mateta",
+          "João Pedro",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 25,
+        "captain": "Haaland",
+        "captain_pts": 4,
+        "xi": [
+          "Roefs",
+          "Gabriel",
+          "J.Timber",
+          "Guéhi",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "Calafiori",
+          "Caicedo",
+          "Van de Ven",
+          "Mbeumo"
+        ]
+      },
+      "claude": {
+        "points": 31,
+        "captain": "Gabriel",
+        "captain_pts": 1,
+        "xi": [
+          "Raya",
+          "Gabriel",
+          "James",
+          "J.Timber",
+          "Rice",
+          "Semenyo",
+          "Haaland",
+          "Welbeck",
+          "Mbeumo",
+          "Mateta",
+          "Neto"
+        ]
+      },
+      "best_captain": "Keane",
+      "best_captain_pts": 15,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 33 / GEM 25 / CLA 31. Best cap Keane 15. CLA cap Gabriel 1 (MISS)."
+    },
+    {
+      "gw": 12,
+      "you": {
+        "points": 28,
+        "captain": "Mateta",
+        "captain_pts": 1,
+        "xi": [
+          "Roefs",
+          "Ballard",
+          "Calafiori",
+          "Lacroix",
+          "Gudmundsson",
+          "Gakpo",
+          "Rice",
+          "Gravenberch",
+          "João Pedro",
+          "Haaland",
+          "Mateta"
+        ]
+      },
+      "gemini": {
+        "points": 40,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "Gabriel",
+          "J.Timber",
+          "Guéhi",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "Calafiori",
+          "Muñoz",
+          "Mbeumo",
+          "Caicedo"
+        ]
+      },
+      "claude": {
+        "points": 39,
+        "captain": "Gabriel",
+        "captain_pts": 0,
+        "xi": [
+          "Raya",
+          "Gabriel",
+          "O'Reilly",
+          "Muñoz",
+          "Mbeumo",
+          "Rice",
+          "Haaland",
+          "Casemiro",
+          "Neto",
+          "Saka",
+          "Mateta"
+        ]
+      },
+      "best_captain": "Eze",
+      "best_captain_pts": 20,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 28 / GEM 40 / CLA 39. Best cap Eze 20. CLA cap Gabriel 0 (MISS)."
+    },
+    {
+      "gw": 13,
+      "you": {
+        "points": 28,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "Calafiori",
+          "Lacroix",
+          "Ballard",
+          "Burn",
+          "Mbeumo",
+          "Rice",
+          "Caicedo",
+          "Gravenberch",
+          "Mateta",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 30,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "Gabriel",
+          "Muñoz",
+          "J.Timber",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "Guéhi",
+          "Lacroix",
+          "Thiago",
+          "Mbeumo"
+        ]
+      },
+      "claude": {
+        "points": 34,
+        "captain": "Trossard",
+        "captain_pts": 0,
+        "xi": [
+          "Martinez",
+          "Muñoz",
+          "O'Reilly",
+          "Gabriel",
+          "Trossard",
+          "Neto",
+          "Thiago",
+          "Eze",
+          "Haaland",
+          "Welbeck",
+          "Mbeumo"
+        ]
+      },
+      "best_captain": "Thiaw",
+      "best_captain_pts": 16,
+      "transfer_counterfactual": "YOU sold Gakpo (14pts) for Mbeumo (1pts) - ไม่เปลี่ยนดีกว่า +13",
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 28 / GEM 30 / CLA 34. Best cap Thiaw 16. CLA cap Trossard 0 (MISS)."
+    },
+    {
+      "gw": 14,
+      "you": {
+        "points": 57,
+        "captain": "Mbeumo",
+        "captain_pts": 2,
+        "xi": [
+          "Donnarumma",
+          "Calafiori",
+          "Lacroix",
+          "Burn",
+          "Gudmundsson",
+          "Semenyo",
+          "Mbeumo",
+          "Rice",
+          "Gravenberch",
+          "Mateta",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 65,
+        "captain": "Haaland",
+        "captain_pts": 14,
+        "xi": [
+          "Roefs",
+          "Gabriel",
+          "Muñoz",
+          "J.Timber",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "Thiago",
+          "Chalobah",
+          "Lacroix",
+          "Minteh"
+        ]
+      },
+      "claude": {
+        "points": 53,
+        "captain": "Casemiro",
+        "captain_pts": 8,
+        "xi": [
+          "Martinez",
+          "Lacroix",
+          "Muñoz",
+          "Keane",
+          "Casemiro",
+          "Eze",
+          "Thiago",
+          "Rice",
+          "Bruno G.",
+          "Minteh",
+          "Chalobah"
+        ]
+      },
+      "best_captain": "Foden",
+      "best_captain_pts": 17,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 57 / GEM 65 / CLA 53. Best cap Foden 17. CLA cap Casemiro 8 (MISS)."
+    },
+    {
+      "gw": 15,
+      "you": {
+        "points": 61,
+        "captain": "Mbeumo",
+        "captain_pts": 8,
+        "xi": [
+          "Donnarumma",
+          "Calafiori",
+          "Lacroix",
+          "Burn",
+          "Chalobah",
+          "Semenyo",
+          "Mbeumo",
+          "Rice",
+          "Gravenberch",
+          "Mateta",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 51,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Raya",
+          "Muñoz",
+          "Guéhi",
+          "Lacroix",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "Thiago",
+          "J.Timber",
+          "Chalobah",
+          "Bruno G."
+        ]
+      },
+      "claude": {
+        "points": 72,
+        "captain": "Foden",
+        "captain_pts": 12,
+        "xi": [
+          "Verbruggen",
+          "Muñoz",
+          "Lacroix",
+          "Van Hecke",
+          "Foden",
+          "Dewsbury-Hall",
+          "Haaland",
+          "Barnes",
+          "Bruno G.",
+          "Thiago",
+          "Wilson"
+        ]
+      },
+      "best_captain": "B.Fernandes",
+      "best_captain_pts": 18,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 61 / GEM 51 / CLA 72. Best cap B.Fernandes 18. CLA cap Foden 12 (MISS)."
+    },
+    {
+      "gw": 16,
+      "you": {
+        "points": 71,
+        "captain": "Rice",
+        "captain_pts": 2,
+        "xi": [
+          "Donnarumma",
+          "Cash",
+          "Burn",
+          "Chalobah",
+          "Xhaka",
+          "Wilson",
+          "Foden",
+          "Rice",
+          "Gravenberch",
+          "Thiago",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 63,
+        "captain": "Haaland",
+        "captain_pts": 13,
+        "xi": [
+          "Raya",
+          "Guéhi",
+          "Muñoz",
+          "Chalobah",
+          "B.Fernandes",
+          "Rice",
+          "Haaland",
+          "Semenyo",
+          "Bruno G.",
+          "Lacroix",
+          "Thiago"
+        ]
+      },
+      "claude": {
+        "points": 63,
+        "captain": "Foden",
+        "captain_pts": 11,
+        "xi": [
+          "Pickford",
+          "Tarkowski",
+          "Keane",
+          "Muñoz",
+          "Foden",
+          "Dewsbury-Hall",
+          "Thiago",
+          "B.Fernandes",
+          "Saka",
+          "Bruno G.",
+          "Chalobah"
+        ]
+      },
+      "best_captain": "Wilson",
+      "best_captain_pts": 16,
+      "transfer_counterfactual": "YOU sold Ballard (8pts) for Cash (0pts) - ไม่เปลี่ยนดีกว่า +8",
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 71 / GEM 63 / CLA 63. Best cap Wilson 16. CLA cap Foden 11 (MISS)."
+    },
+    {
+      "gw": 17,
+      "you": {
+        "points": 71,
+        "captain": "Haaland",
+        "captain_pts": 16,
+        "xi": [
+          "Donnarumma",
+          "Lacroix",
+          "Calafiori",
+          "Cash",
+          "Xhaka",
+          "Wilson",
+          "Foden",
+          "Rice",
+          "Gravenberch",
+          "Thiago",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 72,
+        "captain": "Haaland",
+        "captain_pts": 16,
+        "xi": [
+          "Roefs",
+          "Guéhi",
+          "Chalobah",
+          "Muñoz",
+          "B.Fernandes",
+          "Semenyo",
+          "Haaland",
+          "Foden",
+          "Rice",
+          "Bruno G.",
+          "Thiago"
+        ]
+      },
+      "claude": {
+        "points": 67,
+        "captain": "Foden",
+        "captain_pts": 3,
+        "xi": [
+          "Sánchez",
+          "Chalobah",
+          "Rúben",
+          "Guéhi",
+          "Foden",
+          "B.Fernandes",
+          "Haaland",
+          "Wilson",
+          "Rogers",
+          "Dewsbury-Hall",
+          "Calvert-Lewin"
+        ]
+      },
+      "best_captain": "Lewis-Potter",
+      "best_captain_pts": 21,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 71 / GEM 72 / CLA 67. Best cap Lewis-Potter 21. CLA cap Foden 3 (MISS)."
+    },
+    {
+      "gw": 18,
+      "you": {
+        "points": 65,
+        "captain": "Ekitiké",
+        "captain_pts": 5,
+        "xi": [
+          "Donnarumma",
+          "Chalobah",
+          "Cash",
+          "Lacroix",
+          "Wilson",
+          "Foden",
+          "Xhaka",
+          "Rice",
+          "Gravenberch",
+          "Haaland",
+          "Ekitiké"
+        ]
+      },
+      "gemini": {
+        "points": 31,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "Chalobah",
+          "Guéhi",
+          "J.Timber",
+          "Semenyo",
+          "B.Fernandes",
+          "Haaland",
+          "Rice",
+          "Rogers",
+          "Foden",
+          "Thiago"
+        ]
+      },
+      "claude": {
+        "points": 35,
+        "captain": "Foden",
+        "captain_pts": 2,
+        "xi": [
+          "Sánchez",
+          "Chalobah",
+          "Matheus N.",
+          "Rúben",
+          "Foden",
+          "B.Fernandes",
+          "Haaland",
+          "Wilson",
+          "Calvert-Lewin",
+          "Ekitiké",
+          "Rogers"
+        ]
+      },
+      "best_captain": "Schade",
+      "best_captain_pts": 20,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 65 / GEM 31 / CLA 35. Best cap Schade 20. CLA cap Foden 2 (MISS)."
+    },
+    {
+      "gw": 19,
+      "you": {
+        "points": 32,
+        "captain": "Cunha",
+        "captain_pts": 2,
+        "xi": [
+          "Donnarumma",
+          "Chalobah",
+          "Calafiori",
+          "Lacroix",
+          "Xhaka",
+          "Cunha",
+          "Wilson",
+          "Gravenberch",
+          "Thiago",
+          "Haaland",
+          "Ekitiké"
+        ]
+      },
+      "gemini": {
+        "points": 25,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "Guéhi",
+          "Chalobah",
+          "Keane",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "B.Fernandes",
+          "Foden",
+          "Rogers",
+          "Thiago"
+        ]
+      },
+      "claude": {
+        "points": 38,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Kelleher",
+          "Dalot",
+          "Lewis-Potter",
+          "Tarkowski",
+          "Foden",
+          "B.Fernandes",
+          "Haaland",
+          "Ekitiké",
+          "Calvert-Lewin",
+          "Wilson",
+          "Wirtz"
+        ]
+      },
+      "best_captain": "Garner",
+      "best_captain_pts": 16,
+      "transfer_counterfactual": null,
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 32 / GEM 25 / CLA 38. Best cap Garner 16. CLA cap Haaland 2 (MISS)."
+    },
+    {
+      "gw": 20,
+      "you": {
+        "points": 46,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "J.Timber",
+          "Mukiele",
+          "Gabriel",
+          "Tarkowski",
+          "Rogers",
+          "Foden",
+          "Bruno G.",
+          "Gravenberch",
+          "Calvert-Lewin",
+          "Haaland"
+        ]
+      },
+      "gemini": {
+        "points": 48,
+        "captain": "Haaland",
+        "captain_pts": 2,
+        "xi": [
+          "Roefs",
+          "Guéhi",
+          "J.Timber",
+          "Chalobah",
+          "Semenyo",
+          "Rice",
+          "Haaland",
+          "B.Fernandes",
+          "Foden",
+          "Bruno G.",
+          "Tarkowski"
+        ]
+      },
+      "claude": {
+        "points": 28,
+        "captain": "Ekitiké",
+        "captain_pts": 0,
+        "xi": [
+          "Donnarumma",
+          "Matheus N.",
+          "Rúben",
+          "Lewis-Potter",
+          "Cherki",
+          "Rogers",
+          "Ekitiké",
+          "Calvert-Lewin",
+          "Haaland",
+          "Semenyo",
+          "Wilson"
+        ]
+      },
+      "best_captain": "Rice",
+      "best_captain_pts": 17,
+      "transfer_counterfactual": "YOU sold Thiago (17pts) for Kroupi.Jr (5pts) - ไม่เปลี่ยนดีกว่า +12",
+      "claude_captain_was_differential": false,
+      "postmortem": "YOU 46 / GEM 48 / CLA 28. Best cap Rice 17. CLA cap Ekitiké 0 (MISS)."
     }
   ],
   "season_totals": {
-    "you": 580,
-    "gemini": 638,
-    "claude": 607
+    "you": 1072,
+    "gemini": 1088,
+    "claude": 1067
   },
   "season_review": {
-    "best_engine": "gemini",
-    "you_vs_claude": -27,
-    "you_vs_gemini": -58,
+    "best_engine": "GEMINI",
+    "you_vs_claude": 5,
+    "you_vs_gemini": -16,
     "key_lessons": [
-      "Template/safe (GEMINI) led GW1-10 at 638 pts - chasing the highest-owned core paid off early.",
-      "CLAUDE captain misses 8/10 GWs: form+fixture EV overrated mid-tier attackers (Palhinha, Semenyo, Woltemade) vs locking Haaland/Salah.",
-      "YOU lagged both baselines (580) - too many sideways transfers; Van de Ven sold before a 14pt haul (GW4)."
+      "GEMINI template baseline leads through GW20 (1088) - safe premiums + high-EO core compounds steadily.",
+      "Captaincy is the swing factor: CLAUDE missed the top starter captain in all of GW11-20, costing the APEX edge.",
+      "YOU lost real points to bad transfers out (Gakpo +13, Thiago +12, Ballard +8) where holding was better."
     ],
     "strategy_flaws": [
-      "CLAUDE: contrarian captains cost ~10+ pts/season vs simply captaining the in-form premium (Haaland once form built).",
-      "YOU: transfer churn - several 'out' players outscored 'in' the same GW (Van de Ven GW4 ไม่เปลี่ยนดีกว่า)."
+      "CLAUDE captain pick (highest blind form+fdr) chronically wrong vs actual ceiling - needs explosiveness/xGI weighting not just mean form.",
+      "GEMINI's price-anchored captain (Haaland-type) is safer but caps differential upside.",
+      "YOU over-trades reactively, selling players right before they haul."
     ]
   }
 }
