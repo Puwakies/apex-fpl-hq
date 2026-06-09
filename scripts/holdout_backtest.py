@@ -1,213 +1,147 @@
-import json, unicodedata
-from statistics import mean
+import json, re
 
 H = json.load(open('data/backtest/history.json'))
 MP = json.load(open('data/backtest/my_picks.json'))
-
-def norm(s):
-    s = unicodedata.normalize('NFKD', s).encode('ascii','ignore').decode()
-    return s.lower().strip()
-
+OLD = json.load(open('data/backtest/results.json'))
 players = H['players']
+
+def norm(n):
+    if not n: return ''
+    return re.sub(r'[^a-z]', '', n.lower().strip())
+
 by_name = {}
 for p in players:
-    by_name[norm(p['name'])] = p
+    by_name.setdefault(norm(p['name']), p)
+    last = p['name'].split('.')[-1].split(' ')[-1]
+    by_name.setdefault(norm(last), p)
 
-# per-player gw->stat map
-for p in players:
-    p['_gmap'] = {g['gw']: g for g in p['gws']}
+def find_player(name, team=None):
+    nn = norm(name)
+    if nn in by_name: return by_name[nn]
+    last = name.split('.')[-1].split(' ')[-1]
+    if norm(last) in by_name: return by_name[norm(last)]
+    for p in players:
+        if nn and (nn in norm(p['name']) or norm(p['name']) in nn):
+            return p
+    return None
 
-def find(name):
-    n = norm(name)
-    if n in by_name: return by_name[n]
-    # loose: last token match
-    for k,v in by_name.items():
-        if k.endswith(n) or n.endswith(k): return v
+def gwrow(p, gw):
+    for r in p['gws']:
+        if r['gw'] == gw: return r
     return None
 
 def pts_at(p, gw):
-    if not p: return 0
-    g = p['_gmap'].get(gw)
-    return g['pts'] if g and g['min'] is not None else (g['pts'] if g else 0)
+    r = gwrow(p, gw)
+    return r['pts'] if r and r['pts'] is not None else 0
 
 def blind_form(p, gw):
-    past = [g for g in p['gws'] if g['gw'] < gw]
-    last5 = past[-5:]
-    return mean([g['pts'] for g in last5]) if last5 else 0.0
+    last5 = [r for r in p['gws'] if r['gw'] < gw and r['pts'] is not None][-5:]
+    return sum(r['pts'] for r in last5)/len(last5) if last5 else 0.0
 
 def blind_season_ppg(p, gw):
-    past = [g for g in p['gws'] if g['gw'] < gw and g['min'] is not None and g['min']>0]
-    return mean([g['pts'] for g in past]) if past else 0.0
+    played = [r for r in p['gws'] if r['gw'] < gw and (r.get('min') or 0) > 0]
+    return sum(r['pts'] for r in played)/len(played) if played else 0.0
 
 def blind_mins(p, gw):
-    past = [g for g in p['gws'] if g['gw'] < gw]
-    last5 = past[-5:]
-    return mean([g['min'] for g in last5]) if last5 else 0.0
+    last5 = [r for r in p['gws'] if r['gw'] < gw][-5:]
+    return sum((r.get('min') or 0) for r in last5)/len(last5) if last5 else 0.0
 
-def fdr_at(p, gw):
-    g = p['_gmap'].get(gw)
-    return g['fdr'] if g else 3
+def cum_pts(p, gw):
+    return sum((r['pts'] or 0) for r in p['gws'] if r['gw'] < gw)
 
-def cumulative_pts(p, gw):
-    return sum(g['pts'] for g in p['gws'] if g['gw'] < gw)
+# ---------- captain selectors ----------
+def claude_captain(squad, gw):
+    cands = []
+    for p in squad:
+        if p['pos'] in ('GK','DEF'): continue
+        if gw > 5 and blind_mins(p, gw) < 60: continue
+        score = 0.70*blind_season_ppg(p, gw) + 0.30*blind_form(p, gw)
+        cands.append((score, p))
+    if not cands:
+        cands = [(blind_form(p,gw), p) for p in squad if p['pos']!='GK']
+    cands.sort(key=lambda x: -x[0])
+    return cands[0][1] if cands else None
 
-# ----- Build XI from a 15-man squad using blind features -----
-def build_xi(squad_players, gw):
-    # squad_players: list of (name,pos,player_obj)
-    def score(item):
-        name,pos,p = item
-        if not p: return -1
-        return blind_form(p,gw)*0.6 + (5 - fdr_at(p,gw)) * 0.8 + (blind_mins(p,gw)/90)*1.5
-    pos_groups = {'GK':[], 'DEF':[], 'MID':[], 'FWD':[]}
-    for it in squad_players:
-        pos_groups[it[1]].append(it)
-    for k in pos_groups:
-        pos_groups[k].sort(key=score, reverse=True)
-    xi = []
-    xi += pos_groups['GK'][:1]
-    xi += pos_groups['DEF'][:3]
-    xi += pos_groups['MID'][:2]
-    xi += pos_groups['FWD'][:1]
-    rest = []
-    for k in ['DEF','MID','FWD']:
-        used = 3 if k=='DEF' else (2 if k=='MID' else 1)
-        rest += pos_groups[k][used:]
-    rest.sort(key=score, reverse=True)
-    # fill to 11 respecting max DEF5 MID5 FWD3
-    cnt = {'GK':1,'DEF':3,'MID':2,'FWD':1}
-    for it in rest:
-        if len(xi)>=11: break
-        pos=it[1]
-        cap={'DEF':5,'MID':5,'FWD':3}[pos]
-        if cnt[pos]<cap:
-            xi.append(it); cnt[pos]+=1
-    bench = [it for it in squad_players if it not in xi]
-    return xi, bench
+def gemini_captain(squad, gw):
+    cands = [(cum_pts(p, gw), p) for p in squad if p['pos']!='GK']
+    cands.sort(key=lambda x: -x[0])
+    return cands[0][1] if cands else None
 
-# ----- Captain rules -----
-def captain_claude(xi_players, gw):
-    # owned nailed premium: cap_score = .7 season_ppg + .3 recent_form, require mins reliability
-    best=None; bestv=-1
-    for name,pos,p in xi_players:
-        if not p: continue
-        if blind_mins(p,gw) < 60: continue
-        cs = 0.70*blind_season_ppg(p,gw) + 0.30*blind_form(p,gw)
-        if cs>bestv: bestv=cs; best=(name,pos,p)
-    if best is None:
-        # fallback by form
-        for name,pos,p in xi_players:
-            if not p: continue
-            cs=blind_form(p,gw)
-            if cs>bestv: bestv=cs; best=(name,pos,p)
-    return best
+# ---------- build squads ----------
+def you_for_gw(gwobj):
+    gw=gwobj['gw']; xi=[]; bench=[]; captain=None
+    for s in gwobj['squad']:
+        p=find_player(s['name'], s.get('team'))
+        entry={'name':s['name'],'pos':s['pos'],'pts':pts_at(p,gw) if p else 0}
+        (xi if s.get('is_starting') else bench).append(entry)
+        if s.get('is_captain'): captain=entry
+    if captain is None and xi: captain=max(xi,key=lambda e:e['pts'])
+    return xi, bench, captain
 
-def captain_gemini(xi_players, gw):
-    # template/safe: highest cumulative pts up to gw<N
-    best=None; bestv=-1
-    for name,pos,p in xi_players:
-        if not p: continue
-        cv = cumulative_pts(p,gw)
-        if cv>bestv: bestv=cv; best=(name,pos,p)
-    return best
+def engine_pick(gwobj, capfn):
+    gw=gwobj['gw']; xi=[]; bench=[]; entries={}; starting=set(); xi_objs=[]
+    for s in gwobj['squad']:
+        p=find_player(s['name'], s.get('team'))
+        if p is None: continue
+        e={'name':s['name'],'pos':s['pos'],'pts':pts_at(p,gw)}
+        entries[id(p)]=e
+        if s.get('is_starting'):
+            xi.append(e); starting.add(id(p)); xi_objs.append(p)
+        else: bench.append(e)
+    capp=capfn(xi_objs, gw)
+    cap_entry=entries.get(id(capp)) if capp else (max(xi,key=lambda e:e['pts']) if xi else None)
+    return xi, bench, cap_entry
 
-def captain_you(squad_players, xi_players, gw):
-    # use real captain from my_picks if present in XI; else highest cumulative
-    return None
+def captain_metrics(xi, captain):
+    if not xi or captain is None: return None,None,None,None
+    mx=max(e['pts'] for e in xi); cp=captain['pts']
+    rank=sorted((e['pts'] for e in xi),reverse=True).index(cp)+1
+    return (cp==mx), rank, mx-cp, mx
 
-# ----- Score a lineup -----
-def score_lineup(xi, bench, captain, gw, chip=''):
-    xi_entries=[]
-    for name,pos,p in xi:
-        xi_entries.append({'name':name,'pos':pos,'pts':pts_at(p,gw)})
-    bench_entries=[{'name':n,'pos':ps,'pts':pts_at(p,gw)} for n,ps,p in bench]
-    cap_pts = pts_at(captain[2],gw) if captain else 0
-    total = sum(e['pts'] for e in xi_entries) + cap_pts
-    xi_pts=[e['pts'] for e in xi_entries]
-    maxxi=max(xi_pts) if xi_pts else 0
-    # captain rank
-    srt=sorted(xi_pts,reverse=True)
-    cap_rank = srt.index(cap_pts)+1 if cap_pts in srt else len(srt)
-    return {
-        'xi':xi_entries,'bench':bench_entries,
-        'captain':captain[0] if captain else None,
-        'captain_pts':cap_pts,
-        'captain_correct': cap_pts==maxxi,
-        'captain_rank':cap_rank,
-        'regret':maxxi-cap_pts,
-        'best_xi_pts':maxxi,
-        'gw_points':total,'chip':chip,
-        'top3': cap_pts in srt[:3]
-    }
+def top3(xi, captain):
+    if not xi or captain is None: return False
+    sp=sorted((e['pts'] for e in xi),reverse=True)
+    return captain['pts']>=sp[min(2,len(sp)-1)]
 
-results={'season':'2025/26','gws':[]}
-totals={'you':0,'gemini':0,'claude':0}
+out_gws=[]
+agg={w:{m:{'cret':[],'creg':[],'t3':[]} for m in ('you','gemini','claude')} for w in ('train','test')}
 
-for gwentry in MP['gws']:
-    gw=gwentry['gw']
-    squad=[(s['name'],s['pos'],find(s['name'])) for s in gwentry['squad']]
-    real_cap=None
-    for s in gwentry['squad']:
-        if s.get('is_captain'): real_cap=(s['name'],s['pos'],find(s['name']))
+for gwobj in MP['gws']:
+    gw=gwobj['gw']; window='train' if gw<=26 else 'test'
+    picks={'you':you_for_gw(gwobj),'gemini':engine_pick(gwobj,gemini_captain),
+           'claude':engine_pick(gwobj,claude_captain)}
+    rec={'gw':gw,'window':window}
+    for tag,(xi,b,cap) in picks.items():
+        cor,rank,reg,mx=captain_metrics(xi,cap); t3=top3(xi,cap)
+        rec[tag]={'captain':cap['name'] if cap else None,'captain_pts':cap['pts'] if cap else None,
+                  'best_xi_pts':mx,'captain_correct':cor,'captain_rank':rank,'regret':reg,'top3':t3,
+                  'xi':xi,'bench':b}
+        if cap:
+            agg[window][tag]['cret'].append(cap['pts'])
+            agg[window][tag]['creg'].append(reg)
+            agg[window][tag]['t3'].append(1 if t3 else 0)
+    out_gws.append(rec)
 
-    # CLAUDE & GEMINI build own XI from same 15-man squad (blind)
-    xi_c,bench_c=build_xi(squad,gw)
-    cap_c=captain_claude(xi_c,gw)
-    res_c=score_lineup(xi_c,bench_c,cap_c,gw)
+def m(x): return round(sum(x)/len(x),2) if x else 0.0
+summary={}
+for w in ('train','test'):
+    summary[w]={}
+    for mm in ('you','gemini','claude'):
+        a=agg[w][mm]
+        summary[w][mm]={'mean_return':m(a['cret']),'mean_regret':m(a['creg']),
+                        'top3_rate':round(100*m(a['t3']),1),'n':len(a['cret'])}
 
-    xi_g,bench_g=build_xi(squad,gw)
-    cap_g=captain_gemini(xi_g,gw)
-    res_g=score_lineup(xi_g,bench_g,cap_g,gw)
+old_test=[]; old_train=[]
+for g in OLD['gws']:
+    gw=g['gw']; capp=find_player(g['claude'].get('captain') or '')
+    cp=pts_at(capp,gw) if capp else 0
+    xipts=[pts_at(find_player(e['name']),gw) if find_player(e['name']) else 0 for e in g['claude'].get('xi',[])]
+    mx=max(xipts) if xipts else cp
+    (old_test if gw>26 else old_train).append(mx-cp)
+old={'train_regret':m(old_train),'test_regret':m(old_test)}
 
-    # YOU: real XI = starting players, real captain
-    you_xi=[(s['name'],s['pos'],find(s['name'])) for s in gwentry['squad'] if s.get('is_starting')]
-    you_bench=[(s['name'],s['pos'],find(s['name'])) for s in gwentry['squad'] if not s.get('is_starting')]
-    if real_cap is None: real_cap=captain_gemini(you_xi,gw)
-    res_y=score_lineup(you_xi,you_bench,real_cap,gw,chip=gwentry.get('chip',''))
-
-    totals['you']+=res_y['gw_points']
-    totals['gemini']+=res_g['gw_points']
-    totals['claude']+=res_c['gw_points']
-
-    results['gws'].append({'gw':gw,'you':res_y,'gemini':res_g,'claude':res_c})
-
-results['totals']=totals
-
-# ---- Aggregate train/test ----
-def agg(window):
-    out={}
-    for eng in ['you','gemini','claude']:
-        rows=[g[eng] for g in results['gws'] if g['gw'] in window]
-        out[eng]={
-            'mean_return':round(mean([r['captain_pts'] for r in rows]),2),
-            'mean_regret':round(mean([r['regret'] for r in rows]),2),
-            'top3_rate':round(sum(r['top3'] for r in rows)/len(rows),3),
-            'correct_rate':round(sum(r['captain_correct'] for r in rows)/len(rows),3),
-        }
-    return out
-
-train=set(range(1,27)); test=set(range(27,39))
-results['train_metrics']=agg(train)
-results['test_metrics']=agg(test)
-
-json.dump(results,open('data/backtest/holdout_results.json','w'),indent=2)
-
-# ---- Print ----
-def ptable(title,m):
-    print(f'\n### {title}')
-    print('| Engine | Mean Return | Mean Regret | Top3 Rate | Exact Correct |')
-    print('|---|---|---|---|---|')
-    for e in ['you','gemini','claude']:
-        d=m[e]
-        print(f"| {e.upper()} | {d['mean_return']} | {d['mean_regret']} | {d['top3_rate']*100:.0f}% | {d['correct_rate']*100:.0f}% |")
-
-print('=== HOLDOUT BACKTEST 2025/26 ===')
-print('Totals:',totals)
-ptable('TRAIN (GW1-26)',results['train_metrics'])
-ptable('TEST  (GW27-38)',results['test_metrics'])
-
-# old APEX comparison
-try:
-    old=json.load(open('data/backtest/results.json'))
-    print('\nOLD results.json keys:',list(old.keys()))
-except Exception as ex:
-    print('no old results',ex)
+result={'season':'2025/26','split':{'train':'GW1-26','test':'GW27-38'},
+        'summary':summary,'old_apex_claude':old,'gws':out_gws}
+json.dump(result, open('data/backtest/holdout_results.json','w'), indent=1)
+print(json.dumps(summary,indent=2))
+print('OLD APEX CLAUDE:',old)
