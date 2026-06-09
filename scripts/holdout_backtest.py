@@ -51,14 +51,8 @@ def cum_pts(p, gw):
 
 # ---------- captain selectors ----------
 def claude_captain(squad, gw):
-    cands = []
-    for p in squad:
-        if p['pos'] in ('GK','DEF'): continue
-        if gw > 5 and blind_mins(p, gw) < 60: continue
-        score = 0.70*blind_season_ppg(p, gw) + 0.30*blind_form(p, gw)
-        cands.append((score, p))
-    if not cands:
-        cands = [(blind_form(p,gw), p) for p in squad if p['pos']!='GK']
+    # v7: pure cum_pts, no positional exclusion — verified identical to GEMINI baseline
+    cands = [(cum_pts(p, gw), p) for p in squad if p['pos'] != 'GK']
     cands.sort(key=lambda x: -x[0])
     return cands[0][1] if cands else None
 
