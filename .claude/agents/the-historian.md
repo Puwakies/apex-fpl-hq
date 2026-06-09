@@ -41,26 +41,48 @@ generalizes (test-window improvement) rather than overfits the past.
    - GEMINI = baseline "template/safe": pick the highest-owned-style core (use highest cumulative pts up to gw<N as a proxy for template), captain the safest premium
    For CLAUDE and GEMINI, if you carry a squad GW-to-GW, allow at most 1 free transfer per GW (or 0); when you transfer, RECORD the reason.
 
-2) REVEAL + POST-MORTEM — now read gw == N results:
-   - score each engine's starting XI (captain ×2, or ×3 if TC) using actual pts; bench scores 0 unless BB
-   - captain_correct = was the captain the highest-scoring starter?
-   - TRANSFER COUNTERFACTUAL: for any engine that transferred this GW, compute points WITH the transfer vs WITHOUT (keeping the old player) → say which was better and by how many pts
-   - reason: 1 short line per engine on the biggest gain/miss
+2) REVEAL + POST-MORTEM — now read gw == N results from history.json:
+   CRITICAL — to avoid the name-matching bug, resolve each XI/bench player to the SAME identity used in
+   history.json (match by player name normalized, or by id if present) and ATTACH that player's actual
+   gw==N points to each entry. Every xi/bench entry MUST carry {name, pos, pts} — never a bare string.
+   - score = sum(xi pts) + captain pts again (×2; ×3 if TC chip active) + (if BB chip: add bench pts too)
+   - captain_correct: compare the CAPTAIN's attached pts to max(pts) over the XI USING THE ATTACHED pts
+     (do NOT re-join by string — the pts are already embedded, so a name drift can't force a false).
+     captain_correct = (captain.pts == max xi pts). Also record captain_rank (1 = best in XI) and
+     regret = max_xi_pts - captain_pts.
+   - TRANSFER COUNTERFACTUAL: for any engine that transferred, points WITH vs WITHOUT (keep old player) → better + delta.
+   - reason: 1 short line per engine on the biggest gain/miss.
 
-3) ACCUMULATE running totals per engine.
+   CHIP SIMULATION (CLAUDE + GEMINI must use chips too — backtest was missing this):
+   Give each engine the standard chip set for the season (WC1,WC2,TC,BB,FH) and let it activate per simple rules:
+     * TC: on a clear DGW for the captain, or a very strong single matchup (recommend_c haul-prob high + FDR<=2 home)
+     * BB: on a DGW when most of the 15 play twice / all 15 have FDR<=3
+     * FH: on a BGW where many starters blank
+     * WC: when 3-GW rolling net points are poor or before a big fixture swing
+   Record chip used (or "") per engine per GW; once used, it's gone. Apply its scoring effect above.
+
+3) ACCUMULATE running totals per engine. Track chips_used per engine.
 
 OUTPUT — append/merge into data/backtest/results.json:
   {
     season:"2025/26",
     gws:[ { gw,
-            you:    {xi:[{name,pos}], bench:[{name,pos}], captain, gw_points, captain_correct, transfers:[{out,in,reason,with_pts,without_pts,better}] },
+            you:    { xi:[{name,pos,pts}x11], bench:[{name,pos,pts}x4], captain, captain_pts,
+                      captain_correct, captain_rank, regret, chip, gw_points,
+                      transfers:[{out,in,reason,with_pts,without_pts,better}] },
             gemini: {... same shape ...},
             claude: {... same shape ...},
             note: "1-2 line what happened this GW"
           } ],
     totals:{ you, gemini, claude },         // cumulative net points
-    season_review:{ best_engine, you_vs_claude, you_vs_gemini, key_lessons:[3 strings], strategy_flaws:[...] }
+    chips_used:{ you:[...], gemini:[...], claude:[...] },
+    season_review:{ best_engine, you_vs_claude, you_vs_gemini,
+                    captain_return:{you,gemini,claude}, captain_regret:{you,gemini,claude},
+                    top3_capt_rate:{you,gemini,claude},
+                    key_lessons:[3 strings], strategy_flaws:[...] }
   }
+Every xi/bench entry MUST include pts (the player's actual gw==N points). captain_correct/regret are computed
+from those embedded pts — never by re-joining names to history.json.
 Merge: if results.json already has earlier GWs, keep them and add the new range; recompute totals.
 
 Return a Thai summary table: per-GW points for the requested range + running totals (YOU/GEMINI/CLAUDE) + any captain misses or transfer counterfactual where "ไม่เปลี่ยนดีกว่า". Keep it tight.
