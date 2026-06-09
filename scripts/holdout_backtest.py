@@ -1,250 +1,202 @@
-import json, statistics
-from collections import defaultdict
+import json, unicodedata
+from statistics import mean
 
 H = json.load(open('data/backtest/history.json'))
-M = json.load(open('data/backtest/my_picks.json'))
+MP = json.load(open('data/backtest/my_picks.json'))
 
 players = H['players']
-by_name = {p['name']: p for p in players}
-# index gw rows per player
-def gwrow(p, gw):
+
+def norm(s):
+    s = unicodedata.normalize('NFKD', s).encode('ascii','ignore').decode().lower()
+    return ''.join(c for c in s if c.isalnum())
+
+by_name = {norm(p['name']): p for p in players}
+
+def gw_row(p, gw):
     for r in p['gws']:
         if r['gw'] == gw:
             return r
     return None
 
-# team-level blind defensive strength: mean xgc conceded by a team's opponents -> approximate via
-# opponent's own defenders xgc. Simpler: build per-team mean xgc allowed using GK/DEF rows of that team.
-def team_def_weakness(team, gw):
-    # how leaky is this team's defence based on its GK/DEF xgc in gw<N (high xgc = weak)
-    vals = []
-    for p in players:
-        if p['team'] == team and p['pos'] in ('GK','DEF'):
-            for r in p['gws']:
-                if r['gw'] < gw and r['min'] > 0:
-                    vals.append(r['xgc'])
-    return statistics.mean(vals) if vals else 1.3
+def blind_form(p, gw):
+    rows = [r for r in p['gws'] if r['gw'] < gw][-5:]
+    return mean(r['pts'] for r in rows) if rows else 0.0
 
-def blind_feat(p, gw):
-    rows = [r for r in p['gws'] if r['gw'] < gw]
-    last5 = rows[-5:]
-    form = statistics.mean([r['pts'] for r in last5]) if last5 else 0.0
-    mins = statistics.mean([r['min'] for r in last5]) if last5 else 0.0
-    price = rows[-1]['price'] if rows else (p['gws'][0]['price'])
-    cum = sum(r['pts'] for r in rows)
-    xgi5 = statistics.mean([r['xgi'] for r in last5]) if last5 else 0.0
-    fix = gwrow(p, gw)
-    return dict(form=form, mins=mins, price=price, cum=cum, xgi5=xgi5, fix=fix)
+def blind_minutes(p, gw):
+    rows = [r for r in p['gws'] if r['gw'] < gw][-5:]
+    return mean(r['min'] for r in rows) if rows else 0.0
 
-POS_MIN = {'GK':1,'DEF':3,'MID':2,'FWD':1}
-POS_MAX = {'GK':1,'DEF':5,'MID':5,'FWD':3}
+def blind_xgi90(p, gw):
+    rows = [r for r in p['gws'] if r['gw'] < gw][-5:]
+    rows = [r for r in rows if r['min'] > 0]
+    if not rows: return 0.0
+    return mean(r['xgi']/r['min']*90 for r in rows)
 
-def valid_formation(counts):
-    return (counts['GK']==1 and 3<=counts['DEF']<=5 and 2<=counts['MID']<=5
-            and 1<=counts['FWD']<=3 and sum(counts.values())==11)
+def haul_score(p, gw):
+    row = gw_row(p, gw)
+    if not row: return 0.0
+    fdr = row.get('fdr', 3); venue = row.get('venue','H')
+    opp_weak = max(0.0, (5 - fdr)/4.0)
+    home = 1.0 if venue == 'H' else 0.0
+    xgi90 = blind_xgi90(p, gw)
+    return 6.0*opp_weak + 2.0*home + min(xgi90*4.0, 6.0)
 
-def pick_xi(squad15_names, gw, score_fn):
-    # squad15_names: list of (name,pos). choose best 11 valid + 4 bench
-    enriched = []
-    for name,pos in squad15_names:
-        p = by_name.get(name)
-        if not p:
-            enriched.append((name,pos,-1,None)); continue
-        f = blind_feat(p, gw)
-        enriched.append((name,pos,score_fn(p,f,gw),f))
-    # greedy: 1 GK best, then fill mins, then best remaining
-    byp = defaultdict(list)
-    for e in enriched: byp[e[1]].append(e)
-    for k in byp: byp[k].sort(key=lambda x:-x[2])
-    xi=[]
-    counts=defaultdict(int)
-    xi.append(byp['GK'][0]); counts['GK']=1
-    for pos in ('DEF','MID','FWD'):
-        for i in range(POS_MIN[pos]):
-            if i < len(byp[pos]):
-                xi.append(byp[pos][i]); counts[pos]+=1
-    pool=[]
-    used=set(id(x) for x in xi)
-    for pos in ('DEF','MID','FWD'):
-        for e in byp[pos]:
-            if id(e) not in used: pool.append(e)
-    pool.sort(key=lambda x:-x[2])
-    for e in pool:
-        if len(xi)==11: break
-        pos=e[1]
-        if counts[pos]<POS_MAX[pos]:
-            xi.append(e); counts[pos]+=1; used.add(id(e))
-    bench=[e for e in enriched if id(e) not in set(id(x) for x in xi)]
-    return xi, bench
+POS_MIN={'GK':1,'DEF':3,'MID':2,'FWD':1}
+POS_MAX={'GK':1,'DEF':5,'MID':5,'FWD':3}
 
-def attach_pts(e, gw):
-    name,pos = e[0],e[1]
-    p=by_name.get(name)
-    pts=0
-    if p:
-        r=gwrow(p,gw)
-        if r: pts=r['pts']
-    return {'name':name,'pos':pos,'pts':pts}
+def player_value(p, gw):
+    row = gw_row(p, gw)
+    if not row: return -1
+    bm = blind_form(p, gw); fdr = row.get('fdr',3)
+    mn = blind_minutes(p, gw)
+    if mn < 30: return bm*0.3
+    return bm*0.8 + (5-fdr)/4.0*2.0
 
-# ---- CLAUDE captain: matchup/haul ----
-def claude_captain(xi_entries, gw):
-    best=None;bs=-1
-    for name,pos,sc,f in xi_entries:
-        if f is None: continue
-        p=by_name[name]
-        fix=f['fix']
-        blind_mean=f['form']
-        # haul score: weak opp defence + home + attacking upside
-        opp_weak = team_def_weakness(fix['opp'], gw) if fix else 1.3
-        fdr = fix['fdr'] if fix else 3
-        home = 1 if (fix and fix['venue']=='H') else 0
-        haul = 0.5*opp_weak + 0.3*(5-fdr) + 0.4*home + 0.6*f['xgi5']
-        minutes = f['mins']/90.0
-        cap_score = 0.45*blind_mean + 0.45*haul + 0.10*(minutes*10)
-        # differential trigger: avoid if fdr>=4
-        if fix and fix['fdr']>=4:
-            cap_score *= 0.85
-        if cap_score>bs: bs=cap_score; best=name
+def pick_xi(squad, gw, scorefn):
+    avail=[p for p in squad if gw_row(p,gw)]
+    scored=sorted([(scorefn(p,gw),p) for p in avail], key=lambda x:-x[0])
+    xi=[]; counts={'GK':0,'DEF':0,'MID':0,'FWD':0}
+    gks=[s for s in scored if s[1]['pos']=='GK']
+    if gks: xi.append(gks[0][1]); counts['GK']=1
+    for sc,p in scored:
+        if p in xi: continue
+        pos=p['pos']
+        if pos=='GK' or len(xi)>=11 or counts[pos]>=POS_MAX[pos]: continue
+        xi.append(p); counts[pos]+=1
+    for posn,mn in POS_MIN.items():
+        while counts[posn]<mn:
+            cand=[s[1] for s in scored if s[1]['pos']==posn and s[1] not in xi]
+            if not cand: break
+            xi.append(cand[0]); counts[posn]+=1
+    xi=xi[:11]
+    bench=[p for p in squad if p not in xi][:4]
+    return xi,bench
+
+def pick_captain(xi, gw):
+    best=None; bs=-1
+    for p in xi:
+        cap=0.45*blind_form(p,gw)+0.45*haul_score(p,gw)+0.10*(blind_minutes(p,gw)/90.0*5)
+        if cap>bs: bs=cap; best=p
     return best
 
-def safe_captain(xi_entries, gw):
-    # GEMINI: safest premium = highest price among high cum pts
-    best=None;bs=-1
-    for name,pos,sc,f in xi_entries:
-        if f is None: continue
-        val = f['price']*1.0 + f['cum']*0.05
-        if val>bs: bs=val; best=name
-
-    return best
-
-def claude_score(p,f,gw):
-    fix=f['fix']
-    fdr = fix['fdr'] if fix else 3
-    return 0.6*f['form'] + 0.3*(5-fdr) + 0.1*(f['mins']/9.0)
-
-def template_score(p,f,gw):
-    return f['cum']  # highest cumulative = template core
-
-# Build CLAUDE & GEMINI 15-man squads per GW from full universe (greedy by score, budget-free proxy, valid formation 15)
-def build_squad15(gw, score_fn):
-    scored=[]
-    for p in players:
-        rows=[r for r in p['gws'] if r['gw']<gw]
-        if not rows: continue
-        f=blind_feat(p,gw)
-        if f['fix'] is None: continue  # must have fixture this gw
-        scored.append((p['name'],p['pos'],score_fn(p,f,gw)))
-    byp=defaultdict(list)
-    for s in scored: byp[s[1]].append(s)
-    for k in byp: byp[k].sort(key=lambda x:-x[2])
-    squad=[]
-    # 2 GK,5 DEF,5 MID,3 FWD
-    need={'GK':2,'DEF':5,'MID':5,'FWD':3}
-    for pos,n in need.items():
-        squad += [(s[0],s[1]) for s in byp[pos][:n]]
+def build_squad(gw, scorefn):
+    cands=sorted([(scorefn(p,gw),p) for p in players if gw_row(p,gw)], key=lambda x:-x[0])
+    squad=[]; need={'GK':2,'DEF':5,'MID':5,'FWD':3}; counts={'GK':0,'DEF':0,'MID':0,'FWD':0}
+    for sc,p in cands:
+        pos=p['pos']
+        if counts[pos]>=need[pos]: continue
+        squad.append(p); counts[pos]+=1
+        if len(squad)>=15: break
     return squad
 
-def metrics(captain_entry_pts, xi_pts_list):
-    mx=max(xi_pts_list) if xi_pts_list else 0
-    regret=mx-captain_entry_pts
-    srt=sorted(xi_pts_list,reverse=True)
-    # rank
-    rank=srt.index(captain_entry_pts)+1 if captain_entry_pts in srt else len(srt)
-    top3 = captain_entry_pts >= (srt[2] if len(srt)>=3 else srt[-1])
-    correct = (captain_entry_pts==mx)
-    return regret,rank,top3,correct
+def cum_pts(p, gw):
+    return sum(r['pts'] for r in p['gws'] if r['gw']<gw)
 
-results={'season':'2025/26','gws':[]}
-agg={e:{'win':{'train':defaultdict(list),'test':defaultdict(list)}} for e in ['you','gemini','claude']}
-totals={'you':0,'gemini':0,'claude':0}
+def gemini_captain(xi, gw):
+    cands=[p for p in xi if p['pos'] in ('MID','FWD')] or xi
+    return max(cands, key=lambda p:cum_pts(p,gw))
 
-for gwentry in M['gws']:
-    gw=gwentry['gw']
+def transfer(squad, gw, scorefn):
+    if gw>=38: return squad
+    target=build_squad(gw+1, scorefn)
+    owned=set(id(p) for p in squad)
+    add=[p for p in target if id(p) not in owned]
+    if not add: return squad
+    addp=add[0]
+    same=[p for p in squad if p['pos']==addp['pos']]
+    if not same: return squad
+    drop=min(same,key=lambda p:scorefn(p,gw+1))
+    return [p for p in squad if p is not drop]+[addp]
+
+def attach(p, gw):
+    row=gw_row(p,gw)
+    return {'name':p['name'],'pos':p['pos'],'pts':row['pts'] if row else 0}
+
+def stats(xi_e, cap_pts):
+    pl=[e['pts'] for e in xi_e]; mx=max(pl) if pl else 0
+    rank=1+sum(1 for v in pl if v>cap_pts)
+    return mx, rank, mx-cap_pts, (1 if rank<=3 else 0), (cap_pts==mx)
+
+agg={e:{'cap':[],'reg':[],'t3':[],'gw':[]} for e in ['you','gemini','claude']}
+win_agg={w:{e:{'cap':[],'reg':[],'t3':[]} for e in ['you','gemini','claude']} for w in ['train','test']}
+results_gws=[]
+
+claude_squad=build_squad(1, player_value)
+gemini_squad=build_squad(1, cum_pts)
+
+for gw in range(1,39):
     win='train' if gw<=26 else 'test'
     out={'gw':gw}
 
-    # ---- YOU ----
-    sq=[(s['name'],s['pos']) for s in gwentry['squad']]
-    you_score=lambda p,f,g: f['form']  # ordering only; xi from real starting flags
-    starters=[(s['name'],s['pos']) for s in gwentry['squad'] if s['is_starting']]
-    benchnames=[(s['name'],s['pos']) for s in gwentry['squad'] if not s['is_starting']]
-    cap=next((s['name'] for s in gwentry['squad'] if s['is_captain']),None)
-    chip=gwentry.get('chip','')
-    xi_e=[attach_pts(e,gw) for e in starters]
-    bench_e=[attach_pts(e,gw) for e in benchnames]
-    cap_pts=next((x['pts'] for x in xi_e if x['name']==cap),0)
-    mult=3 if chip=='3xc' else 2
-    base=sum(x['pts'] for x in xi_e)
-    gwpts=base+cap_pts*(mult-1)
-    if chip in ('bboost','bench_boost'): gwpts+=sum(x['pts'] for x in bench_e)
-    reg,rank,top3,corr=metrics(cap_pts,[x['pts'] for x in xi_e])
-    out['you']={'xi':xi_e,'bench':bench_e,'captain':cap,'captain_pts':cap_pts,
-        'captain_correct':corr,'captain_rank':rank,'regret':reg,'chip':chip,
-        'gw_points':gwpts,'transfers':[]}
-    totals['you']+=gwpts
-    a=agg['you']['win'][win];a['regret'].append(reg);a['ret'].append(cap_pts) if False else a['regret'];a['cap'].append(cap_pts) if 'cap' in a else None
-    agg['you']['win'][win]['cap'].append(cap_pts)
-    agg['you']['win'][win]['top3'].append(1 if top3 else 0)
+    # YOU
+    mpgw=next((x for x in MP['gws'] if x['gw']==gw), None)
+    yxi=[];ybench=[];ycap=None
+    if mpgw:
+        for s in mpgw['squad']:
+            p=by_name.get(norm(s['name'])); row=gw_row(p,gw) if p else None
+            ent={'name':s['name'],'pos':s['pos'],'pts':row['pts'] if row else 0}
+            (yxi if s['is_starting'] else ybench).append(ent)
+            if s['is_captain']: ycap=ent
+        if ycap is None and yxi: ycap=yxi[0]
+    ycp=ycap['pts'] if ycap else 0
+    mx,rk,rg,t3,co=stats(yxi,ycp)
+    out['you']={'xi':yxi,'bench':ybench,'captain':ycap['name'] if ycap else '','captain_pts':ycp,
+                'captain_correct':co,'captain_rank':rk,'regret':rg,'chip':mpgw.get('chip','') if mpgw else '',
+                'gw_points':mpgw.get('points',0) if mpgw else 0,'transfers':[]}
+    for tgt in (agg['you'],win_agg[win]['you']):
+        tgt['cap'].append(ycp);tgt['reg'].append(rg);tgt['t3'].append(t3)
+    agg['you']['gw'].append(mpgw.get('points',0) if mpgw else 0)
 
-    # ---- GEMINI ----
-    gsq=build_squad15(gw,template_score)
-    xi_g,bench_g=pick_xi(gsq,gw,claude_score)
-    gcap=safe_captain(xi_g,gw)
-    xi_ge=[attach_pts(e,gw) for e in xi_g]
-    bench_ge=[attach_pts(e,gw) for e in bench_g]
-    gcp=next((x['pts'] for x in xi_ge if x['name']==gcap),0)
-    gbase=sum(x['pts'] for x in xi_ge)
-    ggw=gbase+gcp
-    reg,rank,top3,corr=metrics(gcp,[x['pts'] for x in xi_ge])
-    out['gemini']={'xi':xi_ge,'bench':bench_ge,'captain':gcap,'captain_pts':gcp,
-        'captain_correct':corr,'captain_rank':rank,'regret':reg,'chip':'','gw_points':ggw,'transfers':[]}
-    totals['gemini']+=ggw
-    agg['gemini']['win'][win]['regret'].append(reg)
-    agg['gemini']['win'][win]['cap'].append(gcp)
-    agg['gemini']['win'][win]['top3'].append(1 if top3 else 0)
+    # GEMINI
+    gxi,gbench=pick_xi(gemini_squad,gw,cum_pts)
+    gcap=gemini_captain(gxi,gw)
+    gxe=[attach(p,gw) for p in gxi]; gbe=[attach(p,gw) for p in gbench]
+    gcp=gw_row(gcap,gw)['pts'] if gw_row(gcap,gw) else 0
+    mx,rk,rg,t3,co=stats(gxe,gcp); gwp=sum(e['pts'] for e in gxe)+gcp
+    out['gemini']={'xi':gxe,'bench':gbe,'captain':gcap['name'],'captain_pts':gcp,'captain_correct':co,
+                   'captain_rank':rk,'regret':rg,'chip':'','gw_points':gwp,'transfers':[]}
+    for tgt in (agg['gemini'],win_agg[win]['gemini']):
+        tgt['cap'].append(gcp);tgt['reg'].append(rg);tgt['t3'].append(t3)
+    agg['gemini']['gw'].append(gwp)
+    gemini_squad=transfer(gemini_squad,gw,cum_pts)
 
-    # ---- CLAUDE ----
-    csq=build_squad15(gw,claude_score)
-    xi_c,bench_c=pick_xi(csq,gw,claude_score)
-    ccap=claude_captain(xi_c,gw)
-    xi_ce=[attach_pts(e,gw) for e in xi_c]
-    bench_ce=[attach_pts(e,gw) for e in bench_c]
-    ccp=next((x['pts'] for x in xi_ce if x['name']==ccap),0)
-    cbase=sum(x['pts'] for x in xi_ce)
-    cgw=cbase+ccp
-    reg,rank,top3,corr=metrics(ccp,[x['pts'] for x in xi_ce])
-    out['claude']={'xi':xi_ce,'bench':bench_ce,'captain':ccap,'captain_pts':ccp,
-        'captain_correct':corr,'captain_rank':rank,'regret':reg,'chip':'','gw_points':cgw,'transfers':[]}
-    totals['claude']+=cgw
-    agg['claude']['win'][win]['regret'].append(reg)
-    agg['claude']['win'][win]['cap'].append(ccp)
-    agg['claude']['win'][win]['top3'].append(1 if top3 else 0)
+    # CLAUDE
+    cxi,cbench=pick_xi(claude_squad,gw,player_value)
+    ccap=pick_captain(cxi,gw)
+    cxe=[attach(p,gw) for p in cxi]; cbe=[attach(p,gw) for p in cbench]
+    ccp=gw_row(ccap,gw)['pts'] if (ccap and gw_row(ccap,gw)) else 0
+    mx,rk,rg,t3,co=stats(cxe,ccp); gwp=sum(e['pts'] for e in cxe)+ccp
+    out['claude']={'xi':cxe,'bench':cbe,'captain':ccap['name'] if ccap else '','captain_pts':ccp,
+                   'captain_correct':co,'captain_rank':rk,'regret':rg,'chip':'','gw_points':gwp,'transfers':[]}
+    for tgt in (agg['claude'],win_agg[win]['claude']):
+        tgt['cap'].append(ccp);tgt['reg'].append(rg);tgt['t3'].append(t3)
+    agg['claude']['gw'].append(gwp)
+    claude_squad=transfer(claude_squad,gw,player_value)
 
-    out['note']=f"GW{gw}: cap YOU={cap}({cap_pts}) CLAUDE={ccap}({ccp}) GEM={gcap}({gcp})"
-    results['gws'].append(out)
+    out['note']=f"YOU cap {out['you']['captain']}({ycp}); CLAUDE cap {out['claude']['captain']}({ccp})"
+    results_gws.append(out)
 
-def summ(eng,win):
-    a=agg[eng]['win'][win]
-    n=len(a['cap'])
-    return dict(
-        regret=round(statistics.mean(a['regret']),2),
-        cap_return=round(statistics.mean(a['cap']),2),
-        top3_rate=round(100*statistics.mean(a['top3']),1),
-        n=n)
+def winreport(eng,w):
+    d=win_agg[w][eng]
+    return {'avg_captain_pts':round(mean(d['cap']),2),'avg_regret':round(mean(d['reg']),2),
+            'top3_rate':round(100*mean(d['t3']),1)}
 
-review={}
-for eng in ['you','gemini','claude']:
-    review[eng]={'train':summ(eng,'train'),'test':summ(eng,'test')}
+holdout={e:{'train':winreport(e,'train'),'test':winreport(e,'test')} for e in ['you','gemini','claude']}
+totals={e:sum(agg[e]['gw']) for e in agg}
 
-results['totals']=totals
-results['season_review_holdout']=review
-json.dump(results,open('data/backtest/results.json','w'),indent=1)
+OUT={'season':'2025/26','gws':results_gws,'totals':totals,
+     'chips_used':{'you':[],'gemini':[],'claude':[]},'holdout':holdout,
+     'season_review':{
+        'captain_return':{e:round(mean(agg[e]['cap']),2) for e in agg},
+        'captain_regret':{e:round(mean(agg[e]['reg']),2) for e in agg},
+        'top3_capt_rate':{e:round(100*mean(agg[e]['t3']),1) for e in agg}}}
+json.dump(OUT,open('data/backtest/results.json','w'),ensure_ascii=False,indent=1)
 
-print('TOTALS',totals)
-print()
-hdr=f"{'ENGINE':8}{'WINDOW':7}{'regret':>9}{'cap_ret':>9}{'top3%':>8}{'n':>4}"
-print(hdr); print('-'*len(hdr))
-for eng in ['you','gemini','claude']:
-    for win in ['train','test']:
-        s=review[eng][win]
-        print(f"{eng:8}{win:7}{s['regret']:>9}{s['cap_return']:>9}{s['top3_rate']:>8}{s['n']:>4}")
+print('=== HOLDOUT WINDOW REPORT ===')
+for w in ['train','test']:
+    print(f"\n--- {w.upper()} ({'GW1-26' if w=='train' else 'GW27-38'}) ---")
+    print(f"{'engine':8}{'capReturn':>11}{'regret':>9}{'top3%':>8}")
+    for e in ['you','gemini','claude']:
+        d=holdout[e][w]
+        print(f"{e:8}{d['avg_captain_pts']:>11}{d['avg_regret']:>9}{d['top3_rate']:>8}")
+print('\nTotals:',totals)
