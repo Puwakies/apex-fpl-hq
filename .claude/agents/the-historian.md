@@ -24,13 +24,14 @@ For EACH GW in the range:
 
 1) PICK (blind) — produce three lineups (valid: 1 GK + 3-5 DEF + 2-5 MID + 1-3 FWD = 11, plus 4 bench):
    - YOU    = read the real squad for this GW from my_picks.json (do NOT re-pick — it's the actual team)
-   - CLAUDE = APEX PROTOCOL v4 (captaincy = SIMPLE, holdout-validated; v3 matchup OVERFIT and was reverted):
+   - CLAUDE = APEX PROTOCOL v5 (captaincy = CUMULATIVE-SEASON-LEADER, the holdout-winning signal):
        * build the XI by blind form + fixture (FDR-X) as before
-       * CAPTAIN = highest-FORM NAILED PREMIUM owned (regular starter, not flagged, attacking premium).
-         Just blind form among nailed premiums — do NOT add a matchup/haul multiplier (it overfit: test top-3 50%->33%),
-         do NOT use floor bias (helped 0/8). A mild fixture check is a tie-breaker only.
-       * differential captain ONLY when chasing rank late-season; otherwise the form-premium pick. Record captain_type+trigger.
-       * accept the ~60% irreducible variance — a robust simple pick beats a fragile clever one.
+       * CAPTAIN = the owned nailed premium with the best SEASON points-per-game up to gw<N (blind cumulative),
+         tilted only slightly by recent form: cap_score = 0.70*blind_season_ppg + 0.30*blind_recent_form.
+         This is the "best-asset-all-season" rule that held 50% top-3 in train AND test. Do NOT use recent-form-only
+         (test 25%), matchup/haul (33%), or floor (0/8) — all lost in the holdout.
+       * differential captain ONLY when chasing rank late-season. Record captain_type+trigger.
+       * accept the ~60% irreducible variance.
 
 HOLDOUT MODE: if the command says "holdout", you TUNE/justify only on GW1-26 and then REPORT results separately
 for the train window (GW1-26) and the unseen test window (GW27-38). The captaincy rule must be fixed before GW27 —
