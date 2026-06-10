@@ -24,14 +24,24 @@ For EACH GW in the range:
 
 1) PICK (blind) — produce three lineups (valid: 1 GK + 3-5 DEF + 2-5 MID + 1-3 FWD = 11, plus 4 bench):
    - YOU    = read the real squad for this GW from my_picks.json (do NOT re-pick — it's the actual team)
-   - CLAUDE = APEX PROTOCOL v5 (captaincy = CUMULATIVE-SEASON-LEADER, the holdout-winning signal):
+
+   CONSISTENCY RULES for CLAUDE (from audit: 70% of sub-40 GWs fixable — rotation risk + blank assets):
+   Before finalising CLAUDE's XI each GW, enforce these blind checks:
+   (A) ROTATION-RISK GATE: exclude from XI any player whose blind mean mins (last 5, gw<N) < 60 OR
+       who started <60 min in 2+ of last 3 games. Move to bench, promote most-reliable bench player.
+       (B.Fernandes GW18-20, Summerville/Ekitike repeatedly were visible rotation risks before each GW)
+   (B) BLANK CHECK: any player with no fixture this GW → bench only, never XI.
+   (C) CHIP: apply chip logic per DGW/BGW conditions (same rules as the-gaffer above).
+   Log how many players were rotation-gated each GW (should be 0 in good weeks, 1-2 in rotation-heavy weeks).
+   - CLAUDE = APEX PROTOCOL v7 (captaincy LOCKED — 7 holdout rounds exhausted all signals):
        * build the XI by blind form + fixture (FDR-X) as before
-       * CAPTAIN = the owned nailed premium with the best SEASON points-per-game up to gw<N (blind cumulative),
-         tilted only slightly by recent form: cap_score = 0.70*blind_season_ppg + 0.30*blind_recent_form.
-         This is the "best-asset-all-season" rule that held 50% top-3 in train AND test. Do NOT use recent-form-only
-         (test 25%), matchup/haul (33%), or floor (0/8) — all lost in the holdout.
-       * differential captain ONLY when chasing rank late-season. Record captain_type+trigger.
-       * accept the ~60% irreducible variance.
+       * CAPTAIN = owned nailed premium with highest blind season cum_pts up to gw<N. No tilt or formula.
+         Evidence: floor failed (0/8), matchup overfit (33%), form-3/5 no effect (same=38 diff=0 GWs),
+         table/venue/composite all worse. Season cum_pts is the quantitative ceiling.
+         Human manager beat all models in TEST (47% vs 42%) using real-time injury/lineup info.
+       * DO NOT add new captain signals — always overfits without a fresh unseen season holdout.
+       * differential ONLY when chasing rank late-season. Record captain_type+trigger.
+       * ~60% regret is irreducible variance — accept it.
 
 HOLDOUT MODE: if the command says "holdout", you TUNE/justify only on GW1-26 and then REPORT results separately
 for the train window (GW1-26) and the unseen test window (GW27-38). The captaincy rule must be fixed before GW27 —
