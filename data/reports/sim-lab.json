@@ -1,52 +1,67 @@
 {
   "gw": 38,
-  "pillar": "WRPPM-5D",
-  "method": "Monte Carlo 10k draws; priors anchored to Gemini projected_xpts (Haaland C=14) as GW38 xpts cache is placeholder",
-  "captain_ranking": [
+  "agent": "sim-lab",
+  "method": "Monte Carlo (50k sims). All cache xpts=0 (only Sels=1), so candidates modeled by season-class (APEX-proven cum_pts-leader captaincy signal) + medical-confirmed start probability + role/fixture, NOT raw xpts. NOTE: prior sim-lab.json recommended Haaland C — invalid for GW38: medical-bay confirms Haaland UNAVAILABLE (rested for World Cup), cannot be captained or auto-subbed.",
+  "captain_rankings": [
     {
-      "player": "Haaland",
-      "ev_xpts": 6.73,
-      "p_haul": 0.342,
-      "variance": 24.77,
-      "note": "Gemini C anchor (captain_xpts=14). Top floor+ceiling, best brace odds. Rotation risk on final GW."
-    },
-    {
-      "player": "M.Salah",
-      "ev_xpts": 6.7,
-      "p_haul": 0.252,
-      "variance": 21.39,
-      "note": "Owned VC. Elite minutes + goal/assist threat -> strongest minutes-adjusted floor."
-    },
-    {
-      "player": "Mbeumo",
-      "ev_xpts": 5.71,
-      "p_haul": 0.182,
-      "variance": 19.01,
-      "note": "In-form MUN attacker; balanced goal+assist profile."
+      "player": "Salah",
+      "team": "LIV",
+      "floor": 2.0,
+      "ceiling": 17.0,
+      "ev": 6.75,
+      "ev_captained": 13.5,
+      "start_prob": 0.90,
+      "recommendation": "CAPTAIN. Season-long elite premium and the proven cum_pts-leader signal. Highest EV (6.75) and highest ceiling (17) of the pool. Confirmed starter in Liverpool farewell with Champions-League-qualification motivation. Also the current VC, so already auto-sub cover."
     },
     {
       "player": "Bowen",
-      "ev_xpts": 5.32,
-      "p_haul": 0.194,
-      "variance": 13.76,
-      "note": "Current armband. Reliable starter, decent returns, capped ceiling vs Haaland/Salah."
+      "team": "WHU",
+      "floor": 2.0,
+      "ceiling": 14.0,
+      "ev": 5.53,
+      "ev_captained": 11.07,
+      "start_prob": 0.92,
+      "recommendation": "STRONG VC / current C. Highest start probability (92%), confirmed starter at home vs Leeds with two recent double-figure London Stadium hauls. Excellent armband but ceiling and EV trail Salah; he is recent-form-led, the historically weaker signal."
     },
     {
-      "player": "Rogers",
-      "ev_xpts": 4.97,
-      "p_haul": 0.14,
-      "variance": 16.47,
-      "note": "High-ceiling differential (AVL). Lower owned -> rank-swing upside, higher variance."
+      "player": "Mbeumo",
+      "team": "BRE",
+      "floor": 2.0,
+      "ceiling": 15.0,
+      "ev": 5.42,
+      "ev_captained": 10.84,
+      "start_prob": 0.90,
+      "recommendation": "Differential third option. Clear to start (Brentford injury list elsewhere), good ceiling but lower season class than Salah/Bowen. Not the pick."
     },
     {
       "player": "Mateta",
-      "ev_xpts": 4.79,
-      "p_haul": 0.152,
-      "variance": 13.77,
-      "note": "CRY penalty taker; good goal lambda, thinner assist/bonus floor."
+      "team": "CRY",
+      "floor": 0.0,
+      "ceiling": 12.0,
+      "ev": 4.02,
+      "ev_captained": 8.05,
+      "start_prob": 0.90,
+      "recommendation": "Avoid as captain. Confirmed starter but faces Man City (hardest fixture in pool), capping floor and ceiling."
+    },
+    {
+      "player": "Wood",
+      "team": "NFO",
+      "floor": 0.0,
+      "ceiling": 12.0,
+      "ev": 3.73,
+      "ev_captained": 7.46,
+      "start_prob": 0.80,
+      "recommendation": "Avoid as captain. Lowest EV; Forest dead-rubber rotation risk drops start probability to 80% (worst floor in pool)."
     }
   ],
-  "recommend_c": "Haaland",
-  "recommend_vc": "M.Salah",
-  "high_ceiling_differential": "Mbeumo"
+  "tc_analysis": {
+    "should_use": true,
+    "on_whom": "Salah",
+    "rationale": "GW38 is the final gameweek — TC is a use-it-or-lose-it chip with zero opportunity cost remaining. APEX TC timing rule ideally wants a confirmed DGW (play twice); no DGW exists in GW38, so this is a sub-optimal-but-forced spot. With no future to save it for, deploying TC on the highest-EV, highest-ceiling confirmed starter is strictly +EV vs wasting the chip. Salah is the pick: EV(C) 13.5 vs EV(TC) ~20.3, season-leading premium, 90% start, elite ceiling (17). A Bowen-TC (92% start, slightly safer floor) is a defensible safer alternative, but Salah maximizes expected and ceiling points.",
+    "tc_target_ev": 20.25,
+    "note": "If confirmed lineups show Salah rested/rotated, pivot TC to Bowen (92% start)."
+  },
+  "best_captain": "Salah",
+  "best_vc": "Bowen",
+  "summary": "GW38 final-week Monte Carlo (50k sims, season-class model since all cache xpts=0): Salah is the captain — highest EV (6.75/13.5 captained), highest ceiling (17), tied-best floor (2), confirmed in his Liverpool farewell with CL motivation, and the season-long elite premium (the APEX-proven cum_pts-leader signal that generalizes on unseen data). Bowen is the VC: highest start probability (92%) and a confirmed home haul threat vs Leeds, but recent-form-led and lower ceiling. Use the Triple Captain on Salah: GW38 is the last GW so the chip has no future value, no DGW exists to optimize for, and TC on the top-EV confirmed starter (~20.3 expected) beats letting it expire. Caveat: Raya is OUT (Arsenal title rotation) so Sels is the auto-sub GK; Haaland UNAVAILABLE cannot cover captain — Salah-as-VC already gives Bowen-independent armband cover, and the prior sim-lab.json Haaland-C recommendation is invalid for GW38."
 }

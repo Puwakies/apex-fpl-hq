@@ -1,116 +1,34 @@
 {
   "gw": 38,
-  "generated": "2026-06-04T08:00:00.000Z",
-  "data_quality_note": "price.json returned empty likely_rises/likely_falls arrays. net_transfers and ownership fields are null across all players in features.json. price_change_flag='none' for all players — no FPL API cost_change_event recorded this cycle. Analysis below is inferred from price tier, position, team context, and injury flags as proxy indicators.",
-  "price_risers": [
+  "generated_at": "2026-06-12T00:00:00Z",
+  "price_movements": [],
+  "price_movement_note": "GW38 is the final gameweek. price.json confirms both likely_rises and likely_falls are empty — no price movement signals active. Price changes after GW38 deadline have zero in-season consequence. Squad value at deadline snapshot (101.2m) is the only rank-relevant number.",
+  "transfer_opportunities": [
     {
-      "name": "Haaland",
-      "team": "MCI",
-      "position": "FWD",
-      "current_price": 14.7,
-      "predicted_direction": "rise",
-      "confidence": "low",
-      "rationale": "Highest-priced asset in universe. Premium attackers with no injury flag attract net positive transfers in final GW as managers seek haul potential. GW38 price rise has no in-season impact — informational only."
-    },
-    {
-      "name": "M.Salah",
-      "team": "LIV",
-      "position": "MID",
-      "current_price": 14.0,
-      "predicted_direction": "rise",
-      "confidence": "low",
-      "rationale": "Second most expensive player at 14.0. High-ownership archetype; late-season transfer velocity into premium mids historically positive. Not in squad — watchlist target only."
-    },
-    {
-      "name": "Saka",
-      "team": "ARS",
-      "position": "MID",
-      "current_price": 10.0,
-      "predicted_direction": "rise",
-      "confidence": "low",
-      "rationale": "Squad player at 10.0. No injury. ARS end-of-season motivation may drive ownership surge. Rise value is cosmetic at GW38."
-    },
-    {
-      "name": "Gyokeres",
-      "team": "ARS",
-      "position": "FWD",
-      "current_price": 9.1,
-      "predicted_direction": "rise",
-      "confidence": "low",
-      "rationale": "Non-squad watchlist target. High-ceiling FWD at 9.1, no injury or news flag. If ARS need points in GW38, transfer-ins likely."
+      "player_out": "Haaland",
+      "player_status": "UNAVAILABLE",
+      "bench_slot": 13,
+      "price": 15.1,
+      "reason": "UNAVAILABLE — bench blocker. Scores 0 points and cannot auto-sub into the starting XI. The relevant question is whether losing this bench slot creates a structural risk to the starting XI if auto-subs are needed.",
+      "budget_ceiling_for_replacement": 15.4,
+      "calculation": "Haaland sell price 15.1m + bank 0.3m = 15.4m ceiling for a like-for-like bench FWD swap with no points hit.",
+      "emergency_transfer_needed": false,
+      "emergency_rationale": "Haaland is on the bench (slot 13), not in the starting XI. An UNAVAILABLE bench player scores 0 but only costs points if the auto-sub system needs to call on him. Auto-sub would reach Haaland only if 2 or more outfield starters fail to play and the auto-sub chain exhausts other options first. Current bench order is Sels (GK), Munoz (DEF), Kluivert (MID), Haaland (FWD). Haaland as the only bench FWD would auto-sub if a starting FWD (Bowen, Mateta, or Wood) does not play AND Kluivert has already been used for another sub. With 10 of 11 starters AVAILABLE, the probability of needing a 2nd or 3rd bench outfield sub is extremely low. A -4 hit to replace a bench player in the last GW of the season almost never recovers its cost — expected bench return is well below 4 points."
     }
   ],
-  "price_fallers": [
-    {
-      "name": "Ekitike",
-      "team": "LIV",
-      "position": "FWD",
-      "current_price": 9.0,
-      "predicted_direction": "fall",
-      "confidence": "medium",
-      "rationale": "INJURED — Achilles injury, expected return 01 Jul. Longest outage of any player in universe. Sustained transfer-out pressure is near-certain. Highest-confidence fall signal in the dataset. Not in squad but most urgent fall candidate."
-    },
-    {
-      "name": "Stach",
-      "team": "LEE",
-      "position": "MID",
-      "current_price": 4.8,
-      "predicted_direction": "fall",
-      "confidence": "medium",
-      "rationale": "INJURED — Ankle injury, expected return 01 Jun. Injury-flagged budget mid; transfer-out target at season close."
-    },
-    {
-      "name": "Okafor",
-      "team": "LEE",
-      "position": "MID",
-      "current_price": 5.5,
-      "predicted_direction": "fall",
-      "confidence": "medium",
-      "rationale": "INJURED — Calf injury, expected return 01 Jun. Injured LEE mid at 5.5; managers rotating out injured players at season end creates net outflow."
-    },
-    {
-      "name": "Richards",
-      "team": "CRY",
-      "position": "DEF",
-      "current_price": 4.4,
-      "predicted_direction": "fall",
-      "confidence": "low",
-      "rationale": "INJURED — Ankle injury, expected return 01 Jun. Budget DEF; lower ownership means smaller absolute sell volume but directional fall risk present."
-    },
-    {
-      "name": "Casemiro",
-      "team": "MUN",
-      "position": "MID",
-      "current_price": 5.8,
-      "predicted_direction": "fall",
-      "confidence": "low",
-      "rationale": "Squad player (bench). No injury but priced above recent output ceiling. GW38 bench clean-ups and MUN form concerns make this a structural fall candidate."
-    }
-  ],
-  "bank_value": 0.6,
-  "squad_value": 104.2,
-  "transfer_budget_note": "Bank is 0.6m. All chips exhausted. GW38 is the final gameweek — price changes after this deadline carry zero in-season consequence. With only 0.6m in bank, any upgrade >0.6m requires selling a squad asset. Priority is confirming the starting XI is injury-free for GW38. Price velocity signals here are informational for squad value awareness only.",
-  "act_now": [
-    {
-      "action": "MONITOR — Ekitike fall risk (informational, not in squad)",
-      "urgency": "HIGH",
-      "reason": "Achilles injury with 01 Jul return is the single strongest transfer-out signal in the universe. Any manager holding Ekitike should treat this as a confirmed fall. Most urgent awareness flag even though he is not in the current squad."
-    }
-  ],
-  "transfer_velocity_flags": [
-    {
-      "signal": "net_transfers_unavailable",
-      "detail": "FPL API net_transfers returned null for all 149 universe players. price.json contains no cost_change_event data. All price_change_flag values are 'none'. Velocity analysis is inference-only from injury and availability status."
-    },
-    {
-      "signal": "injury_driven_falls",
-      "players": ["Ekitike", "Stach", "Okafor", "Richards"],
-      "detail": "Four players carry active injury news. Injured players accumulate net negative transfers over successive gameweeks creating downward price velocity. Confidence medium for Ekitike, Stach, Okafor (higher price or mid-tier = more owners = more sells)."
-    },
-    {
-      "signal": "premium_late_season_rises",
-      "players": ["Haaland", "M.Salah"],
-      "detail": "Premium assets at 14.7 and 14.0 often see GW38 transfer-in spikes from managers seeking final-week hauls. Confidence low as GW38 is the last active price window."
-    }
-  ]
+  "gabriel_doubtful_assessment": {
+    "player": "Gabriel",
+    "status": "DOUBTFUL",
+    "starting_xi": true,
+    "first_auto_sub": "Munoz (DEF, bench slot 14, AVAILABLE)",
+    "does_gabriel_trigger_haaland_slot": false,
+    "impact": "If Gabriel does not play, Munoz is the eligible auto-sub covering the DEF position. This resolves the Gabriel risk without involving Haaland's bench slot. No transfer action required for Gabriel's doubt.",
+    "action_required": false
+  },
+  "bank_situation": "Bank: 0.3m. Squad value: 101.2m (overall rank snapshot value). No free transfers available beyond standard weekly allowance. Any transfer costs -4 points unless a free transfer is in hand. With 0.3m bank, no meaningful upgrade is possible without a sale — budget is effectively locked for GW38.",
+  "recommendation": "NO EMERGENCY TRANSFER REQUIRED. Haaland UNAVAILABLE on the bench is a dead bench slot but does not directly cost points. Do not take a -4 hit to replace a bench player in the final gameweek — expected bench FWD return is lower than the guaranteed 4-point penalty in nearly all scenarios. Gabriel DOUBTFUL is covered by Munoz in the auto-sub chain. Hold the squad as-is. Monitor Gabriel's fitness status before the GW38 deadline: if he is confirmed out, Munoz covers automatically with no transfer needed. The only scenario where action is justified is a confirmed ruling that 2+ starters are out AND Haaland is the required auto-sub — this is extremely unlikely given current squad availability. Bank 0.3m, hold position, no action.",
+  "overall_rank_note": "Squad value 101.2m is already set. GW38 price changes (empty this cycle) would not affect the deadline snapshot. Final rank is determined by GW38 points scored, not price appreciation. No price-chasing move is warranted.",
+  "likely_rises": [],
+  "likely_falls": [],
+  "act_now": []
 }
