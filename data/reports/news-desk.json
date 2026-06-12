@@ -1,111 +1,172 @@
 {
   "gw": 38,
-  "generated": "2026-06-05",
-  "items": [
+  "generated": "2026-06-12T00:00:00Z",
+  "player_flags": [
     {
-      "player": "Haaland",
-      "team": "MCI",
-      "signal": "benched",
-      "note": "Confirmed absent from Man City's GW38 matchday squad vs Aston Villa. Guardiola rested Haaland (alongside Rodri, Donnarumma, Guehi, O'Reilly) in his farewell game. Zero points guaranteed. Bench asset producing nothing — severe for anyone captaining him.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+      "name": "Gabriel",
+      "club": "ARS",
+      "status": "BENCHED_CONFIRMED",
+      "risk_level": "HIGH",
+      "notes": "Arteta made 8 changes vs Crystal Palace for GW38 to protect key players ahead of the Champions League final vs PSG. Gabriel was explicitly rested. Confirmed Arsenal XI: Arrizabalaga, Mosquera, Norgaard, Hincapie, Calafiori, Zubimendi, Lewis-Skelly, Dowman, Madueke, Martinelli, Jesus. Gabriel did NOT start GW38. He returned to the starting XI for the UCL final itself.",
+      "sources": [
+        "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts",
+        "https://www.si.com/soccer/arsenal-xi-vs-crystal-palace-wholesale-changes-made-injury-news-predicted-lineup",
+        "https://www.skysports.com/football/news/11095/13548482/champions-league-final-who-does-mikel-arteta-pick-in-his-arsenal-starting-xi-to-face-psg-in-budapest"
+      ]
     },
     {
-      "player": "Gvardiol",
-      "team": "MCI",
-      "signal": "rotation_risk",
-      "note": "Dropped to the bench for City GW38 vs Aston Villa. City made six changes with Stones and Ake starting in central defence. Gvardiol did not start.",
-      "source": "https://www.mancity.com/news/mens/manchester-city-v-crystal-palace-team-news-and-tactics-63914288"
+      "name": "Haaland",
+      "club": "MCI",
+      "status": "UNAVAILABLE_CONFIRMED",
+      "risk_level": "CONFIRMED_OUT",
+      "notes": "Ankle injury sustained in the FA Cup quarter-final at Bournemouth. Guardiola confirmed 5-7 week absence. Squad.json marks UNAVAILABLE. Confirmed absent from City's GW38 matchday squad vs Aston Villa. Zero points. Bench slot produces nothing — Kluivert is the only active non-GK bench cover.",
+      "sources": [
+        "https://www.premierleague.com/en/news/4273331",
+        "https://www.skysports.com/football/news/11679/13513633/erling-haaland-injury-pep-guardiola-unsure-on-when-man-city-striker-will-return",
+        "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+      ]
     },
     {
-      "player": "Gabriel",
-      "team": "ARS",
-      "signal": "rotation_risk",
-      "note": "Marked DOUBTFUL in squad data. Arsenal also confirmed rotating for GW38 with a UCL final vs PSG imminent. Gabriel's availability uncertain — moderate start confidence (~55%). Monitor pre-match lineup.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+      "name": "Aina",
+      "club": "NFO",
+      "status": "RULED_OUT",
+      "risk_level": "HIGH",
+      "notes": "Officially ruled out for Forest's GW38 season finale vs Bournemouth. Despite returning to light pitch training on Thursday, Vitor Pereira refused to risk him after four consecutive absences with an undisclosed issue. Auto-sub required from bench.",
+      "sources": [
+        "https://www.rotowire.com/soccer/headlines/ola-aina-injury-ruled-out-for-season-finale-517626"
+      ]
     },
     {
-      "player": "Raya",
-      "team": "ARS",
-      "signal": "rotation_risk",
-      "note": "Arsenal rotating heavily for GW38 ahead of UCL final. Raya start is not guaranteed with Arteta managing workloads. Risk is lower for a GK but Arsenal's confirmed rotation policy applies.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+      "name": "Gvardiol",
+      "club": "MCI",
+      "status": "ROTATION_RISK",
+      "risk_level": "MEDIUM_HIGH",
+      "notes": "Guardiola making heavy changes in his farewell match vs Aston Villa. Gvardiol only returned from a 5-month absence in GW35. City confirmed making 6 changes for the match with Stones and Ake starting centrally. Gvardiol was dropped to the bench and did NOT start GW38.",
+      "sources": [
+        "https://www.mancity.com/news/mens/manchester-city-v-crystal-palace-team-news-and-tactics-63914288",
+        "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      ]
     },
     {
-      "player": "M.Salah",
-      "team": "LIV",
-      "signal": "starts",
-      "note": "Confirmed starter for Liverpool GW38. FFS GW38 team news headline explicitly names Salah as starting. Liverpool have no rest incentive — fully nailed.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts"
+      "name": "Salah",
+      "club": "LIV",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Confirmed starter for Liverpool vs Brentford — his final Liverpool appearance. Provided an assist (Curtis Jones goal), subbed off at 73 minutes to a guard of honour from teammates. Liverpool drew 1-1, securing Champions League qualification. Fully nailed with emotional farewell motivation.",
+      "sources": [
+        "https://www.fantasyfootballscout.co.uk/2026/05/24/gameweek-38-team-news-city-arsenal-rotate-salah-starts",
+        "https://www.thisisanfield.com/2026/05/liverpool-confirmed-xi-vs-brentford-salah-premier-league-2026/",
+        "https://www.thisisanfield.com/2026/05/liverpool-brentford-1-1-match-report-salah-robertson-2026/"
+      ]
     },
     {
-      "player": "Bowen",
-      "team": "WHU",
-      "signal": "starts",
-      "note": "West Ham face a relegation six-pointer vs Leeds at London Stadium. Bowen is the talisman, holds penalties, 2 double-figure hauls in last 3 home games, 134k+ FPL transfers in. Captain-grade starter with maximum motivation. Nailed.",
-      "source": "https://www.rotowire.com/soccer/article/fpl-gw38-buy-hold-or-sell-best-transfer-decisions-for-gameweek-38-115416"
+      "name": "Bowen",
+      "club": "WHU",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Fully nailed and maximum motivation. West Ham face Leeds United in a relegation six-pointer — WHU need a win to survive. Bowen is the talisman, on penalties, 2 double-figure hauls in last 3 home games. 134k+ FPL managers transferred him in specifically for this fixture. No rotation risk whatsoever.",
+      "sources": [
+        "https://www.rotowire.com/soccer/article/fpl-gw38-buy-hold-or-sell-best-transfer-decisions-for-gameweek-38-115416",
+        "https://www.fantasyfootballpundit.com/fpl-gw38-tips-2025-26/"
+      ]
     },
     {
-      "player": "Mbeumo",
-      "team": "BRE",
-      "signal": "starts",
-      "note": "No injury concerns. Brentford have no relegation or European stakes but Mbeumo is a regular starter with no rotation signals found.",
-      "source": "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      "name": "Mbeumo",
+      "club": "BRE",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Brentford away at Liverpool in GW38. Brentford pushing for European qualification and playing at a high-motivation Liverpool side. Mbeumo expected to start with no injury or rotation signals flagged.",
+      "sources": [
+        "https://www.skysports.com/football/liverpool-vs-brentford/teams/531503",
+        "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      ]
     },
     {
-      "player": "Rogers",
-      "team": "AVL",
-      "signal": "starts",
-      "note": "Aston Villa travel to Man City for GW38. Rogers is a differential in the user's squad and no injury flag. Expected to start — Villa will need to be competitive despite City's rotation.",
-      "source": "https://www.premierleague.com/en/news/4664153/predicted-line-ups-for-premier-league-teams-in-matchweek-38"
+      "name": "Rogers",
+      "club": "AVL",
+      "status": "ROTATION_RISK",
+      "risk_level": "MEDIUM_HIGH",
+      "notes": "Aston Villa won the Europa League final vs SC Freiburg 3-0 on 20 May 2026, just 4 days before GW38. Rogers scored in the final and was named Europa League Player of the Season. Villa have secured CL football with no table position to defend. Both Villa and Man City are rotating heavily — this is a low-motivation fixture for Villa. Rogers start is plausible but minutes likely managed given Europa final fatigue.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Morgan_Rogers",
+        "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      ]
     },
     {
-      "player": "Anderson",
-      "team": "NFO",
-      "signal": "starts",
-      "note": "In-form and nailed for Nottingham Forest vs Brentford. No injury news. Hudson-Odoi is the only Forest midfielder flagged injured — not Anderson.",
-      "source": "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      "name": "Anderson",
+      "club": "NFO",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Elliot Anderson nailed for Forest vs Bournemouth GW38 finale — two assists in previous match at Man Utd. No injury concern. Potentially his final Forest appearance before a summer sale, adding personal motivation.",
+      "sources": [
+        "https://www.sportsmole.co.uk/football/nottingham-forest/preview/nottm-forest-vs-bournemouth-prediction-team-news-lineups_597958.html"
+      ]
     },
     {
-      "player": "Wood",
-      "team": "NFO",
-      "signal": "starts",
-      "note": "No rotation or injury signal for Wood. Nottingham Forest squad healthy bar backline injuries (Murillo, Boly, Savanova). Wood leads the line and starts.",
-      "source": "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      "name": "Mateta",
+      "club": "CRY",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Crystal Palace vs Arsenal GW38. Palace rotated but Mateta still featured and scored a late equaliser header in what ended 2-1 to Arsenal (title celebration). Despite Palace's Conference League final upcoming, Mateta started and scored. Nailed as the sole recognised striker (Nketiah out injured).",
+      "sources": [
+        "https://www.outlookindia.com/sports/football/crystal-palace-vs-arsenal-live-score-english-premier-league-2025-26-matchday-38-final-day-updates-highlights",
+        "https://www.skysports.com/football/news/11661/13353074/arsenal-2-2-crystal-palace-jean-philippe-mateta-scores-sublime-late-equaliser-but-liverpool-made-to-wait-for-premier-league-title"
+      ]
     },
     {
-      "player": "Mateta",
-      "team": "CRY",
-      "signal": "rotation_risk",
-      "note": "Crystal Palace rotated heavily in GW38 to protect players for the UEFA Conference League Final vs Rayo Vallecano. Mateta's start is uncertain — Palace may rest attacking options. Nketiah is already out injured so Mateta could still lead the line, but manager may not play a full-strength XI.",
-      "source": "https://www.premierleague.com/en/news/4664169/why-players-from-these-four-clubs-could-be-risky-final-day-picks-in-fpl"
+      "name": "Wood",
+      "club": "NFO",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Chris Wood expected to lead the line for Forest vs Bournemouth in GW38. No injury or rotation concern flagged. Forest squad healthy for attackers. Nailed starter.",
+      "sources": [
+        "https://www.sportsmole.co.uk/football/nottingham-forest/preview/nottm-forest-vs-bournemouth-prediction-team-news-lineups_597958.html"
+      ]
     },
     {
-      "player": "Aina",
-      "team": "NFO",
-      "signal": "starts",
-      "note": "No injury or rotation concern for Aina. Nottingham Forest have no reason to rest him in the final game.",
-      "source": "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      "name": "Munoz",
+      "club": "CRY",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Bench DEF cover. Crystal Palace played vs Arsenal with strong motivation (Conference League final days away). Munoz likely started at right back. Bench auto-sub cover for Aina and Gabriel.",
+      "sources": []
     },
     {
-      "player": "Munoz",
-      "team": "CRY",
-      "signal": "rotation_risk",
-      "note": "Bench asset. Crystal Palace are confirmed rotating for their Conference League Final. Munoz faces same rotation uncertainty as all Palace starters.",
-      "source": "https://www.premierleague.com/en/news/4664169/why-players-from-these-four-clubs-could-be-risky-final-day-picks-in-fpl"
+      "name": "Kluivert",
+      "club": "BOU",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Bench MID cover. Bournemouth vs Nottingham Forest — Kluivert has been a consistent nailed starter for Bournemouth all season. Low-stakes fixture for both clubs but no rotation signals flagged.",
+      "sources": []
     },
     {
-      "player": "Kluivert",
-      "team": "BOU",
-      "signal": "unknown",
-      "note": "Bench asset only. No specific GW38 lineup data found for Kluivert. Bournemouth have no survival or European concerns — low-stakes fixture, some rotation possible.",
-      "source": "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
-    },
-    {
-      "player": "Sels",
-      "team": "NFO",
-      "signal": "starts",
-      "note": "Confirmed first-choice Forest GK. No rotation concern. Only player in the squad with non-zero xpts in the cache data (xpts=1, captain_xpts=2). Nailed bench GK.",
-      "source": "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      "name": "Sels",
+      "club": "NFO",
+      "status": "STARTS",
+      "risk_level": "LOW",
+      "notes": "Confirmed first-choice Forest GK. No rotation concern. Nailed bench GK.",
+      "sources": [
+        "https://fpl.page/article/fpl-gw38-predicted-lineups-team-news-2526"
+      ]
     }
-  ]
+  ],
+  "rotation_alerts": [
+    "Gabriel (ARS) — BENCHED CONFIRMED: Arteta made 8 changes ahead of UCL final. Gabriel did not start vs Crystal Palace. Auto-sub must trigger — Munoz replaces him.",
+    "Aina (NFO) — RULED OUT CONFIRMED: Officially absent for Forest vs Bournemouth. 4-match injury layoff, Pereira refused to risk despite Thursday training return. Auto-sub required.",
+    "Haaland (MCI) — UNAVAILABLE CONFIRMED: Long-term ankle injury. Squad UNAVAILABLE. Confirmed absent from City's GW38 squad. Zero bench cover value — Kluivert is only live non-GK bench asset.",
+    "Gvardiol (MCI) — BENCHED: City made 6 changes with Stones and Ake in central defence. Gvardiol dropped to bench, did not start GW38.",
+    "Rogers (AVL) — ROTATION RISK: Villa won Europa League final 4 days before GW38. Exhaustion plus zero league motivation vs a also-rotating City side. Minutes likely managed even if he starts."
+  ],
+  "headline_news": [
+    "CONFIRMED: Gabriel benched for GW38 — Arteta made 8 changes vs Crystal Palace to protect players ahead of Champions League final vs PSG. Gabriel, Saka, Rice, Odegaard all rested. Gabriel returned for the UCL final.",
+    "CONFIRMED OUT: Aina (NFO) ruled out for season finale vs Bournemouth — undisclosed 4-match absence, Pereira refused to risk despite Thursday light training return.",
+    "CONFIRMED: Haaland UNAVAILABLE — ankle injury from FA Cup QF ruled him out 5-7 weeks. Absent from City's GW38 squad. Bench slot produces zero.",
+    "CONFIRMED: Salah STARTS — emotional final Liverpool game vs Brentford, scored an assist, subbed off 73 mins. Bowen STARTS and NAILED — West Ham in relegation six-pointer vs Leeds, maximum motivation captain pick.",
+    "ROTATION RISK DOUBLE: Gvardiol benched as City make 6 changes in Guardiola's farewell; Rogers (AVL) facing minutes management 4 days after Europa League final win over Freiburg."
+  ],
+  "auto_sub_implications": {
+    "gabriel_out": "Gabriel confirmed non-starter — Munoz (CRY DEF) auto-subs in from bench slot 14. Munoz is available and expected to start for Crystal Palace.",
+    "aina_out": "Aina confirmed absent — with both Aina and Gabriel out, Munoz is the only outfield DEF bench cover and covers one slot. Formation integrity at risk if Munoz also fails to play.",
+    "haaland_bench": "Haaland UNAVAILABLE on bench — provides zero auto-sub value as he cannot play. Kluivert (BOU MID) at slot 15 is the only live non-GK bench asset beyond Munoz."
+  }
 }
