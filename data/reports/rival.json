@@ -1,34 +1,69 @@
 {
   "gw": 38,
   "agent": "the-rival",
-  "strategy": "AGGRESSIVE DIFFERENTIAL",
+  "strategy": "top10k",
+  "squad": [
+    "Sels",
+    "Petrović",
+    "Muñoz",
+    "Lacroix",
+    "Virgil",
+    "Truffert",
+    "Konsa",
+    "M.Salah",
+    "Mbeumo",
+    "Semenyo",
+    "Sarr",
+    "Rogers",
+    "Bowen",
+    "Mateta",
+    "Welbeck"
+  ],
   "starting_xi": [
+    "Sels",
+    "Muñoz",
+    "Lacroix",
+    "Virgil",
+    "M.Salah",
+    "Mbeumo",
+    "Semenyo",
+    "Sarr",
+    "Bowen",
+    "Mateta",
+    "Welbeck"
+  ],
+  "xi": [
     { "name": "Sels", "team": "NFO", "position": "GK", "is_captain": false, "is_vice": false },
-    { "name": "Munoz", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "Aina", "team": "NFO", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "J.Timber", "team": "ARS", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice": true },
-    { "name": "Bruno G.", "team": "NEW", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Rogers", "team": "AVL", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Bowen", "team": "WHU", "position": "FWD", "is_captain": true, "is_vice": false },
+    { "name": "Muñoz", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "Lacroix", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "Virgil", "team": "LIV", "position": "DEF", "is_captain": false, "is_vice": false },
+    { "name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": true, "is_vice": false },
+    { "name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Semenyo", "team": "MCI", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Sarr", "team": "CRY", "position": "MID", "is_captain": false, "is_vice": false },
+    { "name": "Bowen", "team": "WHU", "position": "FWD", "is_captain": false, "is_vice": true },
     { "name": "Mateta", "team": "CRY", "position": "FWD", "is_captain": false, "is_vice": false },
-    { "name": "Wood", "team": "NFO", "position": "FWD", "is_captain": false, "is_vice": false }
+    { "name": "Welbeck", "team": "BHA", "position": "FWD", "is_captain": false, "is_vice": false }
   ],
   "bench": [
-    { "name": "Raya", "team": "ARS", "position": "GK" },
-    { "name": "Gvardiol", "team": "MCI", "position": "DEF" },
-    { "name": "Kluivert", "team": "BOU", "position": "MID" },
-    { "name": "Watkins", "team": "AVL", "position": "FWD" }
+    { "name": "Petrović", "team": "BOU", "position": "GK" },
+    { "name": "Truffert", "team": "BOU", "position": "DEF" },
+    { "name": "Konsa", "team": "AVL", "position": "DEF" },
+    { "name": "Rogers", "team": "AVL", "position": "MID" }
   ],
-  "captain": "Bowen",
-  "vice_captain": "Mbeumo",
-  "projected_xpts": 78.6,
-  "key_differentials": [
-    "Rogers (AVL, 6.7% own) — AVL host Man City in Guardiola's farewell, open high-event game, sub-8% EO so any return is net rank gain",
-    "Mateta (CRY, 7.0% own) — nailed Palace #9 with pride to play for, high-ceiling forward differential",
-    "Bruno G. (NEW, 6.7% own) — reliable minutes and attacking returns at home vs struggling WHU, safe-floor differential",
-    "Munoz (CRY, sub-8% own) — attacking full-back differential with set-piece and bombing-forward upside"
-  ],
-  "summary": "AGGRESSIVE DIFFERENTIAL build for the GW38 finale. The template is hollow this week — Haaland (62.5%) and Gabriel (38%) are both CONFIRMED OUT and blank, erasing the must-own shield, so I lean hard into sub-8% EO punts to climb. Captain is Bowen (WHU) at EV 12.41, 53.6% haul probability — a nailed talisman in a must-win relegation decider with max motivation, a contrarian armband (only ~8% captaincy) versus the field pivoting toward B.Fernandes. Vice is Mbeumo (BRE, full-strength chasing Europe). Differential core: Rogers + Watkins (AVL double-up on the open Man City fixture), Mateta, Bruno G. and Munoz, all under 8% owned. Salah anchors the floor at home vs nothing-to-play-for Palace. Avoided Haaland and Gabriel entirely. Projected ~78.6 xPts with a high ceiling if the AVL/WHU punts land."
+  "formation": "3-4-3",
+  "captain": "M.Salah",
+  "vice": "Bowen",
+  "vice_captain": "Bowen",
+  "transfers": 0,
+  "chip": "3xc",
+  "chip_play": "Triple Captain on M.Salah",
+  "key_differential": "Sarr",
+  "strategy_description": "TOP10K final-week build: 3-4-3 with the proven safe-haven core (Salah, Bowen, Mbeumo, Semenyo) plus a CRY attack triple-up (Munoz, Lacroix, Mateta, Sarr) exploiting form/pens, and a couple of calculated sub-8%-owned differentials (Sarr, Welbeck, Rogers on the bench) to climb rank in the finale. Haaland deliberately OMITTED (OUT, World Cup rest); Gabriel/Aina/Gvardiol avoided (out/benched). Triple Captain deployed on Salah — GW38 is use-it-or-lose-it with no future value and no DGW to optimise for, so TC on the highest-EV/ceiling confirmed starter (Liverpool CL-qualification farewell, season cum_pts leader, APEX-proven captaincy signal, EV 13.5 captained / ~20.3 tripled) is strictly +EV vs letting the chip expire. Bowen is VC as an injury-independent armband backup (92% start vs relegation-fighting Leeds, on penalties).",
+  "projected_xpts": 71.4,
+  "projected_xpts_breakdown": {
+    "xi_singles": 51.1,
+    "triple_captain_extra": 20.3,
+    "note": "XI base ~51.1 from sim-lab season-class EVs (Salah single share ~6.75); Triple Captain adds 2x extra Salah EV (~13.5) on top, plus ceiling skew, for ~71.4 projected. Captain ceiling = 51 (Salah 17 tripled)."
+  }
 }

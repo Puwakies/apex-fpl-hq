@@ -1,9 +1,8 @@
 {
   "engine": "gemini",
   "gw": 38,
-  "agent": "gemini-read",
   "captain": "Haaland",
-  "vice_captain": "Gabriel",
+  "vice": "Gabriel",
   "starting_xi": [
     { "name": "Raya",     "team": "ARS", "position": "GK",  "is_captain": false, "is_vice": false },
     { "name": "Gabriel",  "team": "ARS", "position": "DEF", "is_captain": false, "is_vice": true  },
@@ -29,12 +28,13 @@
   "projected_xpts": 85,
   "confidence": "high",
   "key_risk": "Haaland rotation risk",
-  "transfers": [],
   "critical_flags": [
-    "CRITICAL — CAPTAIN ABSENT: Haaland (MCI, FWD) is confirmed UNAVAILABLE in GW38. He is on the bench in squad data with status UNAVAILABLE. Gemini's projected captain xPts of 14 will not materialise. Captaincy cascades to vice captain.",
-    "CRITICAL — VICE CAPTAIN ABSENT: Gabriel (ARS, DEF) is listed DOUBTFUL in squad data, and medical-bay intelligence confirms he had season-ending surgery weeks ago. If captaincy falls to Gabriel it also scores zero.",
-    "DOUBLE FAILURE RISK: Both captain and vice captain are effectively absent. Effective captaincy will default to the next-highest ranked available player in the starting XI — Bowen (WHU, FWD) based on squad ordering.",
-    "Gemini's projected_xpts of 85 was computed assuming Haaland plays and hauls — that projection is void without him."
-  ],
-  "summary": "Gemini GW38 picks relayed exactly as cached. Captain: Haaland (projected 14 xPts), Vice: Gabriel. No transfers. No chip. Confidence: high. HOWEVER — both armband picks are confirmed absent per medical-bay intelligence. Haaland is UNAVAILABLE (MCI squad omission), Gabriel had season-ending surgery. Effective captaincy will auto-cascade to Bowen (WHU). Gemini's 85 projected xPts figure is based on a captain who will not play. Director should treat this as a broken Gemini recommendation and weight Claude's captain pick accordingly."
+    "CRITICAL — CAPTAIN INVALID: Haaland (MCI, FWD) is CONFIRMED OUT for GW38. World Cup rest + Guardiola tactical omission. Gemini's captain pick scores 0. Captain xPts of 14 is void.",
+    "CRITICAL — VICE CAPTAIN INVALID: Gabriel (ARS, DEF) is CONFIRMED OUT for GW38. Arteta made 8 changes; Gabriel is in the B-team and did not play. VC pick also scores 0.",
+    "DOUBLE ARMBAND FAILURE: Both armband picks are confirmed absent. Effective captaincy auto-cascades in FPL to the next available starter in squad order. Based on XI ordering that is M.Salah — who is himself 70% doubt (managed sub, muscle injury). Bowen (WHU, NAILED, on penalties) is the strongest available captain in this XI.",
+    "Aina (NFO, DEF) is CONFIRMED OUT — hamstring surgery. Starting XI starter scores 0; auto-sub rules apply.",
+    "M.Salah is 70% doubt — if he misses, Gemini loses another scoring asset.",
+    "Gemini's projected_xpts of 85 is based on Haaland captaincy and a full XI including confirmed absentees — this figure is void. Real projected output is substantially lower.",
+    "Bowen (WHU, FWD) is NAILED and on penalties — WHU vs Leeds is a relegation battle. Strongest surviving asset in this XI for captaincy cascade purposes."
+  ]
 }
