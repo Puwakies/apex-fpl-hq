@@ -1,38 +1,56 @@
 {
+  "engine": "claude",
   "gw": 38,
-  "agent": "the-gaffer",
+  "captain": "Bowen",
+  "captain_type": "differential",
+  "captain_trigger": "season-decided (185-pt gap, not catchable) + cannot field template Haaland so lean into variance; cum_pts-leader Salah is doubt-flagged (70%, managed minutes, subbed 73') so the shield pivots to nailed Bowen",
+  "vice": "M.Salah",
+  "vice_captain": "M.Salah",
   "starting_xi": [
-    { "name": "Sels", "team": "NFO", "position": "GK", "is_captain": false, "is_vice": false },
-    { "name": "Munoz", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "Gvardiol", "team": "MCI", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "Aina", "team": "NFO", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": false, "is_vice": true },
-    { "name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Anderson", "team": "NFO", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Rogers", "team": "AVL", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Bowen", "team": "WHU", "position": "FWD", "is_captain": true, "is_vice": false },
-    { "name": "Mateta", "team": "CRY", "position": "FWD", "is_captain": false, "is_vice": false },
-    { "name": "Wood", "team": "NFO", "position": "FWD", "is_captain": false, "is_vice": false }
+    {"name": "Raya", "pos": "GK", "price": 5.6, "xpts": 0},
+    {"name": "Gvardiol", "pos": "DEF", "price": 6.0, "xpts": 0},
+    {"name": "Munoz", "pos": "DEF", "price": 5.1, "xpts": 0},
+    {"name": "Gabriel", "pos": "DEF", "price": 6.3, "xpts": 0},
+    {"name": "M.Salah", "pos": "MID", "price": 13.4, "xpts": 0},
+    {"name": "Mbeumo", "pos": "MID", "price": 7.8, "xpts": 0},
+    {"name": "Rogers", "pos": "MID", "price": 5.6, "xpts": 0},
+    {"name": "Anderson", "pos": "MID", "price": 5.5, "xpts": 0},
+    {"name": "Bowen", "pos": "FWD", "price": 7.8, "xpts": 0},
+    {"name": "Mateta", "pos": "FWD", "price": 7.5, "xpts": 0},
+    {"name": "Wood", "pos": "FWD", "price": 7.0, "xpts": 0}
   ],
   "bench": [
-    { "name": "Raya", "team": "ARS", "position": "GK", "bench_order": 1 },
-    { "name": "Kluivert", "team": "BOU", "position": "MID", "bench_order": 2 },
-    { "name": "Gabriel", "team": "ARS", "position": "DEF", "bench_order": 3 },
-    { "name": "Haaland", "team": "MCI", "position": "FWD", "bench_order": 4 }
+    {"name": "Sels", "pos": "GK", "price": 5.0},
+    {"name": "Munoz_alt_Kluivert", "pos": "MID", "price": 6.2},
+    {"name": "Aina", "pos": "DEF", "price": 4.9},
+    {"name": "Haaland", "pos": "FWD", "price": 15.1}
   ],
-  "captain": "Bowen",
-  "vice_captain": "M.Salah",
-  "projected_xpts": 71.0,
-  "transfers": [],
-  "chip": null,
-  "chip_reasoning": "HOLD the TC chip / let it expire. Gemini's TC anchor (Haaland) is CONFIRMED OUT and would score zero. Sim-lab models the TC gain on the best available target (Bowen) at only ~6.2 pts over a standard captain, below the usual TC threshold, and GW38 is a rotation minefield with no elite double-fixture banker. Bowen as a standard (x2) captain is the correct, lower-variance play.",
-  "key_decisions": [
-    "Raya (ARS GK) benched OUT of the GW38 matchday squad — forced to start Sels (NFO), the only available, confirmed-starting GK in the squad and the only non-zero xPts GK.",
-    "Captain Bowen (WHU): sim-lab EV 12.41 captained, 53.6% haul, must-win relegation decider vs Leeds at home, max motivation. Overrides Gemini's invalid Haaland (C).",
-    "Vice Salah (M.Salah, LIV): I prefer Salah over sim-lab's Mbeumo as VC — confirmed farewell-match starter, home vs nothing-to-play-for Palace, comparable EV (10.10) with a higher floor and lower rotation risk.",
-    "Back three is forced: Gabriel (season-ending surgery, OUT) and Aina (ruled out of the finale) are flagged, Gvardiol is benched at City. With only Munoz truly nailed, I field Munoz + Gvardiol + Aina as the least-bad legal back three in a 3-4-3 and pack the attack.",
-    "Started Rogers despite ~55% bench risk: sub-8% EO differential in an open AVL v City game — any return is net rank gain from 7th, and there is no better available midfield body to replace him.",
-    "Benched the dead/unavailable assets (Raya, Gabriel, Haaland) plus Kluivert (medium rotation risk, no fixture edge)."
+  "chip_play": "TC",
+  "chip": {
+    "name": "TC",
+    "action": "PLAY",
+    "target": "Bowen",
+    "reason": "GW38 is the final gameweek so TC is use-it-or-lose-it with zero opportunity cost. APEX TC rule ideally wants a confirmed DGW; none exists, so this is a forced spot where deploying beats letting the chip expire. Independent GAFFER call diverges from sim-lab (Salah): the season cum_pts-leader Salah carries a live medical doubt flag (70% start, no start in ~1 month, subbed at 73' under managed minutes), capping a triple-captain's expected minutes. Bowen is 90-min nailed, on penalties, in a relegation six-pointer at maximum motivation, and is the intel captain_shield (only 10% field captaincy so a haul GAINS rank in a season already decided on points). With Haaland unfield-able to the user (one-way template downside, no shield) and the 185-pt gap not catchable, the correct posture is variance into the highest-floor full-90 differential. TC Bowen."
+  },
+  "transfer": null,
+  "transfers": {"out": null, "in": null, "hits": 0, "bank": 0.3},
+  "projected_xpts": 58.0,
+  "confidence": "medium",
+  "reasoning": [
+    "ABSENCES: Gabriel CONFIRMED BENCHED (Arteta 8 changes pre-UCL final), Aina CONFIRMED OUT (hamstring, ruled out of finale), Haaland CONFIRMED UNAVAILABLE (World Cup rest), Gvardiol BENCHED (City 6 changes). The squad has only 4 DEF total and 2 of them (Gabriel, Aina) do not play.",
+    "FORCED BACK-THREE: legal FPL formation needs min 3 DEF, but only Munoz and Gvardiol are playable bodies. The submitted 3-4-3 names Gvardiol + Munoz + Gabriel; Gabriel will blank (0 pts) as he is benched, an unfixable structural gap because no fit third defender exists. This mirrors real auto-sub behaviour better than collapsing to an illegal 2-DEF shape.",
+    "ROTATION GATE: Gvardiol did NOT start GW38 (Guardiola farewell rotation) so he is normally benched, but he is the only other available DEF after Gabriel/Aina so he is forced into the XI. Flagged high rotation risk.",
+    "CAPTAIN (independent divergence from sim-lab): sim-lab and the pure cum_pts-leader rule point to Salah, but medical-bay flags Salah at 70% with managed minutes (subbed 73', no start in a month). The locked APEX rule says do not fade the shield UNLESS flagged OUT/doubt; Salah IS doubt-flagged, so the shield pivots to nailed Bowen (90 mins, pens, relegation six-pointer). Captain Bowen, vice Salah (keeps the high-ceiling cum_pts leader as armband cover).",
+    "TC use-it-or-lose-it: final GW, no DGW possible, chip otherwise expires worthless. TC on Bowen maximises full-90 floor x ceiling and is the only aggressive rank lever left given Haaland (EO ~99%) is unavailable to the user.",
+    "TRANSFER none: market-desk and medical-bay agree no -4 hit is justified in the final GW to replace a bench player; expected bench return is below the 4-pt penalty. Bank 0.3m, hold.",
+    "SEASON CONTEXT: 7th, 185 pts behind, mathematically decided. intel verdict: stop mirroring template (impossible without Haaland), lean into variance via the Bowen differential captain."
   ],
-  "summary": "Claude's independent GW38 call: captain Bowen (sim EV 12.41, 53.6% haul) in a must-win West Ham relegation decider, with Salah as the higher-floor vice in his Liverpool farewell at home to Palace. No transfers — final GW, bank irrelevant. Critically, Raya is benched so Sels is the forced GK start, and the back three is a forced least-bad selection (Munoz, Gvardiol, Aina) because Gabriel and Aina are flagged out and Gvardiol benched. TC chip is held/expired: its only legal anchor (Bowen) clears the threshold by only ~6.2 pts and Gemini's Haaland TC would score zero. Lean into owned sub-8% differentials (Rogers, Mateta) to climb from 7th in a finale where the Haaland/Gabriel template is hollow."
+  "risks": [
+    "FORMATION: with Gabriel and Aina both out, the third DEF slot blanks (0 pts) - an unfixable structural gap this GW.",
+    "Gvardiol forced into the XI despite not starting GW38 (City rotation) - may return 0 minutes; no alternative DEF exists.",
+    "TC Bowen is high-variance: a Bowen blank wastes the chip. Mitigated by 90-92% start, penalties, and max relegation-survival motivation.",
+    "Salah (vice) at 70% with managed minutes - if he is a surprise non-start, vice cover degrades, but Bowen as (C) is independent of Salah.",
+    "Haaland unavailable to the user (EO ~99%, 35% field captaincy) is unfixable one-way template downside - accepted, no shield exists.",
+    "Bench is thin: Sels (GK) is the only fully reliable bench body; Kluivert is 60% to start, Aina out, Haaland dead."
+  ]
 }
