@@ -1,0 +1,246 @@
+{
+  "gw": 38,
+  "generated": "2026-06-12T00:00:00Z",
+  "agent": "fixture-room (PILLAR: FDR-X)",
+  "notes": "GW38 final day 2025/26. xpts all zero in cache — fixture difficulty reasoning applied from features.json fdr data plus seasonal context. Away fixtures weighted +0.5 fdr_adjusted. Rotation flags applied where teams have nothing to play for.",
+
+  "fixture_ratings": [
+    {
+      "player": "Raya",
+      "team": "ARS",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "HIGH",
+      "notes": "Arsenal home final day. Likely still fighting for title or top-4 positioning. Full-strength expected. GK clean sheet potential moderate. Features.json confirms fdr 3 H for ARS GW38."
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "HIGH",
+      "notes": "DOUBTFUL status is the primary risk, not the fixture. Arsenal home is a motivated full-strength environment. If Gabriel starts, fixture is acceptable (fdr 3 H). Availability is the 50/50, not the matchup. Features.json confirms fdr 3 H for ARS."
+    },
+    {
+      "player": "Gvardiol",
+      "team": "MCI",
+      "opponent": "TBC (A)",
+      "home_away": "A",
+      "fdr": 3,
+      "fdr_adjusted": 3.5,
+      "motivation_factor": "LOW-MEDIUM",
+      "notes": "Man City away, final day. City had a difficult 2025/26 season by their standards. If top-4 already secured or out of reach, Guardiola historically rests players on final day. Rotation risk elevated. Away +0.5 penalty applied. Do not rely on Gvardiol for captain-level returns."
+    },
+    {
+      "player": "Aina",
+      "team": "NFO",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "HIGH",
+      "notes": "Nottingham Forest home GW38. NFO strong 2025/26 campaign fighting for European spots. High motivation to finish strong. Aina a consistent starter, rotation risk low."
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "opponent": "TBC (A)",
+      "home_away": "A",
+      "fdr": 3,
+      "fdr_adjusted": 3.5,
+      "motivation_factor": "HIGH",
+      "notes": "Liverpool away final day. LIV likely in title contention or already crowned champions — either way, full-strength guaranteed. Features.json fdr 3 away for LIV GW38. Away penalty applied. Salah starts regardless. Vice-captain already; armband switch here is the recommended move given Bowen concern."
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 2,
+      "fdr_adjusted": 2.0,
+      "motivation_factor": "MEDIUM",
+      "notes": "Best raw fixture in the squad. Features.json fdr 2 H for BRE GW38. Mbeumo is a nailed starter (34 starts, 3000 mins). Top penalty taker (pens_order 1). Strong xGI per90 (0.56). Brentford may be mid-table with nothing to play for at team level, but Mbeumo's individual quality makes this the strongest attacking fixture in the XI."
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 2,
+      "fdr_adjusted": 2.0,
+      "motivation_factor": "MEDIUM-HIGH",
+      "notes": "Features.json fdr 2 H for AVL GW38. Aston Villa home final day, likely in European qualification race — adds motivation. Rogers 29 starts this season, solid creator. Joint-best fdr_adjusted in squad alongside Mbeumo."
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "HIGH",
+      "notes": "Same NFO home fixture as Aina and Wood. Forest high motivation. Anderson a regular starter in NFO's strong season. fdr 3 H acceptable. No rotation concern."
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "opponent": "TBC (A)",
+      "home_away": "A",
+      "fdr": 4,
+      "fdr_adjusted": 4.5,
+      "motivation_factor": "LOW-MEDIUM",
+      "notes": "CAPTAIN CONCERN. West Ham away on final day. WHU had a poor 2025/26 season — likely already safe from relegation with nothing left to play for. Away fixture, low stakes, estimated fdr 4 raw (WHU poor form, facing motivated home side). fdr_adjusted 4.5. Risk of Bowen blanking as captain in a dead rubber away game is high. Armband switch to Salah or Mbeumo is strongly advised."
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "opponent": "TBC (A)",
+      "home_away": "A",
+      "fdr": 3,
+      "fdr_adjusted": 3.5,
+      "motivation_factor": "LOW-MEDIUM",
+      "notes": "Crystal Palace away final day. CRY mid-table, nothing to play for. Features.json fdr 3 away. Away +0.5 applied. Mateta may start but Palace intensity likely low. Returns ceiling limited."
+    },
+    {
+      "player": "Wood",
+      "team": "NFO",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "HIGH",
+      "notes": "Same NFO home fixture. Wood is NFO's primary striker, nailed. Forest motivated. fdr 3 H with high team intensity makes this a solid forward pick."
+    },
+    {
+      "player": "Sels",
+      "team": "NFO",
+      "opponent": "TBC (H)",
+      "home_away": "H",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "HIGH",
+      "notes": "BENCH GK. Same NFO home fixture. If Raya fails to start, Sels is viable cover. NFO motivated, reasonable clean sheet potential at home."
+    },
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "opponent": "TBC (A)",
+      "home_away": "A",
+      "fdr": 3,
+      "fdr_adjusted": 3.5,
+      "motivation_factor": "N/A",
+      "notes": "UNAVAILABLE — does not factor into GW38 lineup or sub chain."
+    },
+    {
+      "player": "Munoz",
+      "team": "CRY",
+      "opponent": "TBC (A)",
+      "home_away": "A",
+      "fdr": 3,
+      "fdr_adjusted": 3.5,
+      "motivation_factor": "LOW-MEDIUM",
+      "notes": "BENCH DEF. Same CRY away fixture as Mateta. Palace nothing to play for away. Munoz bench cover only — a downgrade if he comes in for Gabriel."
+    },
+    {
+      "player": "Kluivert",
+      "team": "BOU",
+      "opponent": "TBC",
+      "home_away": "UNKNOWN",
+      "fdr": 3,
+      "fdr_adjusted": 3.0,
+      "motivation_factor": "MEDIUM",
+      "notes": "BENCH MID. Bournemouth final day — mid-table, possible rotation. Kluivert bench cover only."
+    }
+  ],
+
+  "high_value_fixtures": [
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "fdr_adjusted": 2.0,
+      "reason": "Lowest fdr_adjusted in squad (2.0 H). Nailed starter, top penalty taker (pens_order 1), strong xGI per90 (0.56). Best attacking fixture of any squad player in GW38. Viable alternative captain."
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "fdr_adjusted": 2.0,
+      "reason": "Joint-best fdr_adjusted (2.0 H). Villa likely in European push adding motivation. Rogers nailed (29 starts), good creative output. Solid floor for GW38."
+    },
+    {
+      "player": "Wood",
+      "team": "NFO",
+      "fdr_adjusted": 3.0,
+      "reason": "NFO home, high motivation for European finish. Wood is NFO's nailed striker. fdr 3 H with motivated team is a strong forward play."
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "fdr_adjusted": 3.0,
+      "reason": "Same NFO home fixture. Regular starter in a motivated side. Good returns potential in the final day context."
+    },
+    {
+      "player": "Aina",
+      "team": "NFO",
+      "fdr_adjusted": 3.0,
+      "reason": "NFO home motivated context. Aina nailed at fullback. Clean sheet bonus possible if NFO control the game."
+    }
+  ],
+
+  "risk_fixtures": [
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "risk_type": "FIXTURE + MOTIVATION",
+      "severity": "HIGH",
+      "reason": "Captain pick but WHU away with nothing to play for. Estimated fdr_adjusted 4.5. Dead rubber away game is the worst combination for FPL captaincy returns. Armband switch to Salah or Mbeumo strongly advised."
+    },
+    {
+      "player": "Gvardiol",
+      "team": "MCI",
+      "risk_type": "ROTATION",
+      "severity": "MEDIUM-HIGH",
+      "reason": "Man City away final day, potentially nothing significant at stake. Guardiola known to rotate heavily in dead rubbers. Gvardiol could be rested. Away fixture compounds downside."
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "risk_type": "AVAILABILITY",
+      "severity": "HIGH",
+      "reason": "DOUBTFUL. 25-50% non-start probability. If Gabriel misses out, sub chain activates — Munoz (CRY away, low motivation) is the likely replacement, a material downgrade."
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "risk_type": "MOTIVATION + FIXTURE",
+      "severity": "MEDIUM",
+      "reason": "Crystal Palace away, nothing at stake. Mateta may start but team intensity likely low in a dead rubber away context. fdr_adjusted 3.5 limits ceiling."
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "risk_type": "FIXTURE (AWAY)",
+      "severity": "LOW",
+      "reason": "Away fixture (fdr_adjusted 3.5) is the only concern. Salah will start and LIV motivation is high. Low risk overall but away FDR premium applies vs home alternatives like Mbeumo."
+    }
+  ],
+
+  "dgw_alerts": [],
+
+  "bgw_alerts": [],
+
+  "captain_assessment": {
+    "current_captain": "Bowen (WHU away)",
+    "recommendation": "SWITCH CAPTAIN",
+    "preferred_alternatives": [
+      "M.Salah (LIV A, fdr_adjusted 3.5) — season's top scorer, LIV game meaningful, already vice-captain",
+      "Mbeumo (BRE H, fdr_adjusted 2.0) — best fixture in squad, nailed, penalty taker"
+    ],
+    "reasoning": "Bowen away for WHU in a likely dead rubber is a poor captain pick for the final GW. WHU have nothing to play for away from home. APEX protocol explicitly notes human override is valid when real-time context (dead rubber, away, low stakes) outperforms algorithmic signals. This is exactly that scenario. Salah is the safest armband. Mbeumo is the best fixture alternative."
+  },
+
+  "summary": "GW38 final day — all 20 teams play, no DGW or BGW. Best fixtures in squad: Mbeumo (BRE H fdr 2.0) and Rogers (AVL H fdr 2.0) are the cleanest attacking matchups. NFO triple (Wood/Anderson/Aina) offers motivated home exposure at fdr 3.0. Primary risk: Bowen captained for WHU away in a probable dead rubber — fdr_adjusted 4.5, low-stakes context, armband switch to Salah or Mbeumo is strongly advised. Secondary risks: Gvardiol (MCI away rotation threat) and Gabriel (DOUBTFUL availability). No blanks or doubles to flag."
+}
