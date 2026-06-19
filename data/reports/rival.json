@@ -1,69 +1,34 @@
 {
   "gw": 38,
-  "agent": "the-rival",
+  "engine": "rival",
   "strategy": "top10k",
-  "squad": [
-    "Sels",
-    "Petrović",
-    "Muñoz",
-    "Lacroix",
-    "Virgil",
-    "Truffert",
-    "Konsa",
-    "M.Salah",
-    "Mbeumo",
-    "Semenyo",
-    "Sarr",
-    "Rogers",
-    "Bowen",
-    "Mateta",
-    "Welbeck"
-  ],
-  "starting_xi": [
-    "Sels",
-    "Muñoz",
-    "Lacroix",
-    "Virgil",
-    "M.Salah",
-    "Mbeumo",
-    "Semenyo",
-    "Sarr",
-    "Bowen",
-    "Mateta",
-    "Welbeck"
-  ],
+  "captain": "M.Salah",
+  "vice_captain": "Bowen",
   "xi": [
-    { "name": "Sels", "team": "NFO", "position": "GK", "is_captain": false, "is_vice": false },
-    { "name": "Muñoz", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "Lacroix", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "Virgil", "team": "LIV", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": true, "is_vice": false },
-    { "name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Semenyo", "team": "MCI", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Sarr", "team": "CRY", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Bowen", "team": "WHU", "position": "FWD", "is_captain": false, "is_vice": true },
-    { "name": "Mateta", "team": "CRY", "position": "FWD", "is_captain": false, "is_vice": false },
-    { "name": "Welbeck", "team": "BHA", "position": "FWD", "is_captain": false, "is_vice": false }
+    "Sels",
+    "Muñoz",
+    "Lacroix",
+    "Virgil",
+    "M.Salah",
+    "Mbeumo",
+    "Semenyo",
+    "Sarr",
+    "Bowen",
+    "Mateta",
+    "Welbeck"
   ],
   "bench": [
-    { "name": "Petrović", "team": "BOU", "position": "GK" },
-    { "name": "Truffert", "team": "BOU", "position": "DEF" },
-    { "name": "Konsa", "team": "AVL", "position": "DEF" },
-    { "name": "Rogers", "team": "AVL", "position": "MID" }
+    "Petrović",
+    "Truffert",
+    "Konsa",
+    "Rogers"
   ],
-  "formation": "3-4-3",
-  "captain": "M.Salah",
-  "vice": "Bowen",
-  "vice_captain": "Bowen",
-  "transfers": 0,
-  "chip": "3xc",
-  "chip_play": "Triple Captain on M.Salah",
-  "key_differential": "Sarr",
-  "strategy_description": "TOP10K final-week build: 3-4-3 with the proven safe-haven core (Salah, Bowen, Mbeumo, Semenyo) plus a CRY attack triple-up (Munoz, Lacroix, Mateta, Sarr) exploiting form/pens, and a couple of calculated sub-8%-owned differentials (Sarr, Welbeck, Rogers on the bench) to climb rank in the finale. Haaland deliberately OMITTED (OUT, World Cup rest); Gabriel/Aina/Gvardiol avoided (out/benched). Triple Captain deployed on Salah — GW38 is use-it-or-lose-it with no future value and no DGW to optimise for, so TC on the highest-EV/ceiling confirmed starter (Liverpool CL-qualification farewell, season cum_pts leader, APEX-proven captaincy signal, EV 13.5 captained / ~20.3 tripled) is strictly +EV vs letting the chip expire. Bowen is VC as an injury-independent armband backup (92% start vs relegation-fighting Leeds, on penalties).",
   "projected_xpts": 71.4,
-  "projected_xpts_breakdown": {
-    "xi_singles": 51.1,
-    "triple_captain_extra": 20.3,
-    "note": "XI base ~51.1 from sim-lab season-class EVs (Salah single share ~6.75); Triple Captain adds 2x extra Salah EV (~13.5) on top, plus ceiling skew, for ~71.4 projected. Captain ceiling = 51 (Salah 17 tripled)."
-  }
+  "captain_logic": "Haaland is benched (Pep World Cup rest) and scores 0, so the default premium armband is off the table. Salah is the APEX-proven captaincy signal: season cum_pts leader (232 pts), confirmed starting for champions Liverpool, elite xGI 0.86/90 on penalties. GW38 is use-it-or-lose-it, so Triple Captain is deployed on Salah (no future value, no DGW to save for) — strictly +EV vs letting the chip expire (~13.5 captained, ~20.3 tripled). Bowen is VC as injury-independent backup: nailed starter in the WHU-vs-Leeds relegation decider, on penalties, maximum motivation.",
+  "key_picks": [
+    "Bowen (WHU) - West Ham vs Leeds relegation decider = max motivation and guaranteed minutes on a final day full of dead-rubber rotation",
+    "Mateta (CRY, 6.8% owned) - low-owned differential FWD, 0.55 xGI/90, part of a CRY attack triple-up (Muñoz, Lacroix, Sarr) exploiting form and pens",
+    "Sarr (CRY, sub-8% owned) - contrarian rank-climber for the finale; Rogers (AVL) held as a cheap differential bench cover",
+    "Haaland OMITTED entirely (benched, scores 0); Gabriel avoided (OUT, hamstring); Raya avoided (Arsenal rotating)"
+  ]
 }

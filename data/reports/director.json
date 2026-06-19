@@ -1,39 +1,46 @@
 {
   "gw": 38,
+  "updated": "2026-06-19T00:00:00Z",
   "agent": "the-director",
+  "you_captain": "Bowen",
+  "gemini_captain": "Haaland (VOID - unavailable)",
+  "claude_captain": "M.Salah",
+  "consensus": "CLAUDE vs YOU disagree on captain; Gemini void",
+  "conviction": "HIGH - all valid signals (APEX cum_pts rule, sim-lab, intel) point to Salah",
   "you": {
-    "projected_xpts": 51.1,
-    "projected_xpts_note": "Raw cache xpts.json is empty for GW38 (all players xpts=0, only Sels=1). YOU base XI valued on the same sim-lab season-class model the engines use (~51.1 single XI). Current armband = Bowen (C), Salah (VC). No TC applied in this base; deploying TC Bowen lifts it toward Claude's ~58.",
+    "projected_xpts": 50.1,
+    "projected_xpts_note": "Raw xpts.json is zeroed for GW38 (all 0 except Sels=1). YOU valued on the same sim-lab season-class model the engines use. Captain = Bowen (sim-lab captain median 12.3). Bowen-as-captain is the single live error vs the best plan.",
     "captain": "Bowen",
     "vice_captain": "M.Salah",
     "chip_available": "TC",
     "starting_xi": [
-      {"name": "Raya", "pos": "GK", "team": "ARS", "note": "Arsenal title rotation risk - Sels auto-sub GK cover"},
-      {"name": "Gabriel", "pos": "DEF", "team": "ARS", "status": "OUT", "note": "CONFIRMED BENCHED - Arteta 8 changes, B-team, 0 mins"},
-      {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "status": "BENCHED", "note": "City rotation - high 0-min risk"},
-      {"name": "Aina", "pos": "DEF", "team": "NFO", "status": "OUT", "note": "CONFIRMED OUT - hamstring surgery"},
-      {"name": "M.Salah", "pos": "MID", "team": "LIV", "is_vice": true, "note": "70% start, managed minutes, muscle injury"},
+      {"name": "Raya", "pos": "GK", "team": "ARS", "note": "Not in ARS squad - returns 0; Sels auto-subs"},
+      {"name": "Gabriel", "pos": "DEF", "team": "ARS", "status": "OUT", "note": "OUT for season (hamstring surgery); Munoz auto-subs"},
+      {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "status": "BENCHED", "note": "Confirmed benched by Guardiola - expect ~0"},
+      {"name": "Aina", "pos": "DEF", "team": "NFO", "status": "OUT", "note": "Confirmed OUT (news.json)"},
+      {"name": "M.Salah", "pos": "MID", "team": "LIV", "is_vice": true, "note": "Should be captain - APEX cum_pts leader with Haaland out"},
       {"name": "Mbeumo", "pos": "MID", "team": "BRE"},
       {"name": "Rogers", "pos": "MID", "team": "AVL"},
       {"name": "Anderson", "pos": "MID", "team": "NFO"},
-      {"name": "Bowen", "pos": "FWD", "team": "WHU", "is_captain": true, "note": "NAILED, on pens, WHU v Leeds relegation six-pointer"},
+      {"name": "Bowen", "pos": "FWD", "team": "WHU", "is_captain": true, "note": "Currently (C) - demote to VICE"},
       {"name": "Mateta", "pos": "FWD", "team": "CRY"},
       {"name": "Wood", "pos": "FWD", "team": "NFO"}
     ],
     "bench": [
       {"name": "Sels", "pos": "GK", "team": "NFO"},
-      {"name": "Haaland", "pos": "FWD", "team": "MCI", "status": "UNAVAILABLE", "note": "World Cup rest - dead bench slot, un-fieldable"},
-      {"name": "Munoz", "pos": "DEF", "team": "CRY", "note": "Only fully fit playable bench defender"},
+      {"name": "Haaland", "pos": "FWD", "team": "MCI", "status": "UNAVAILABLE"},
+      {"name": "Munoz", "pos": "DEF", "team": "CRY"},
       {"name": "Kluivert", "pos": "MID", "team": "BOU"}
     ]
   },
   "gemini": {
-    "projected_xpts": 85,
+    "projected_xpts": 0,
+    "stated_projected_xpts": 85,
     "projected_xpts_status": "VOID",
     "captain": "Haaland",
-    "captain_status": "INVALID - CONFIRMED OUT (World Cup rest)",
+    "captain_status": "INVALID - CONFIRMED OUT (not in MCI squad, World Cup rest)",
     "vice_captain": "Gabriel",
-    "vice_status": "INVALID - CONFIRMED OUT (Arsenal B-team, Arteta 8 changes)",
+    "vice_status": "INVALID - OUT for season (hamstring surgery)",
     "transfer_in": null,
     "transfer_out": null,
     "chip": null,
@@ -58,66 +65,56 @@
     ]
   },
   "claude": {
-    "projected_xpts": 58.0,
-    "captain": "Bowen",
-    "captain_type": "differential (TC target)",
-    "vice_captain": "M.Salah",
+    "projected_xpts": 54.1,
+    "captain": "M.Salah",
+    "captain_type": "template (APEX cum_pts rule)",
+    "vice_captain": "Bowen",
     "transfer_in": null,
     "transfer_out": null,
-    "chip": "TC on Bowen",
+    "chip": null,
     "starting_xi": [
-      {"name": "Raya", "pos": "GK", "team": "ARS"},
-      {"name": "Gvardiol", "pos": "DEF", "team": "MCI"},
+      {"name": "Sels", "pos": "GK", "team": "NFO"},
+      {"name": "Aina", "pos": "DEF", "team": "NFO", "status": "OUT"},
       {"name": "Munoz", "pos": "DEF", "team": "CRY"},
-      {"name": "Gabriel", "pos": "DEF", "team": "ARS", "status": "OUT"},
-      {"name": "M.Salah", "pos": "MID", "team": "LIV", "is_vice": true},
+      {"name": "Gvardiol", "pos": "DEF", "team": "MCI"},
+      {"name": "M.Salah", "pos": "MID", "team": "LIV", "is_captain": true},
       {"name": "Mbeumo", "pos": "MID", "team": "BRE"},
       {"name": "Rogers", "pos": "MID", "team": "AVL"},
       {"name": "Anderson", "pos": "MID", "team": "NFO"},
-      {"name": "Bowen", "pos": "FWD", "team": "WHU", "is_captain": true},
+      {"name": "Bowen", "pos": "FWD", "team": "WHU", "is_vice": true},
       {"name": "Mateta", "pos": "FWD", "team": "CRY"},
       {"name": "Wood", "pos": "FWD", "team": "NFO"}
     ],
     "bench": [
-      {"name": "Sels", "pos": "GK", "team": "NFO"},
+      {"name": "Raya", "pos": "GK", "team": "ARS"},
       {"name": "Kluivert", "pos": "MID", "team": "BOU"},
-      {"name": "Aina", "pos": "DEF", "team": "NFO", "status": "OUT"},
+      {"name": "Gabriel", "pos": "DEF", "team": "ARS", "status": "OUT"},
       {"name": "Haaland", "pos": "FWD", "team": "MCI", "status": "UNAVAILABLE"}
     ]
   },
-  "consensus": {
+  "consensus_engines": {
     "captain_agree": false,
-    "captain_note": "Gemini's captain (Haaland) is INVALID/OUT. Gemini's own cascade flags Bowen as the strongest surviving captain, which matches Claude. On valid picks only, both converge on Bowen.",
     "transfer_agree": true,
-    "transfer_note": "Neither engine transfers - final GW, no -4 hit justified.",
-    "chip_agree": false,
-    "chip_note": "Gemini plays no chip (lets TC expire); Claude plays TC. Supporting agents SPLIT on the TC target: sim-lab + the-rival = TC Salah (EV ~20.3); intel + the-gaffer/claude = TC Bowen.",
-    "consensus_level": "SPLIT",
+    "chip_agree": true,
     "conviction": "SPLIT",
-    "consensus_detail": "AGREE that TC should be deployed (use-it-or-lose-it final GW) and that Haaland cannot be captained. SPLIT on the TC target: Salah (highest EV/ceiling, season cum_pts leader, but 70% doubt) vs Bowen (92% start, nailed full-90, on pens, low-owned differential)."
+    "note": "Engine captains disagree only because Gemini's pick (Haaland) is VOID from stale data. Among VALID signals - Claude, sim-lab, intel, the-rival - conviction is UNANIMOUS on Salah, i.e. HIGH for the actionable plan."
   },
   "best_plan": "claude",
-  "best_plan_rationale": "Gemini is INVALID (both armband picks confirmed out; projected 85 is void). Between YOU and Claude the hand is identical; the lever is the TC chip. Claude deploys TC (use-it-or-lose-it) and is the only plan that adds projected points (~58 vs ~51 base). Claude's XI also correctly drops Aina (OUT) for Munoz - a fitter back line than YOUR submitted XI, which still names Aina/Gabriel.",
-  "verdict": "Gemini's GW38 plan is INVALID and scores void (captain Haaland OUT, VC Gabriel OUT - no valid captain). YOUR squad's core is already optimal and matches the best plan on captain (Bowen) and transfers (none). Two corrections separate YOU from the best plan: (1) field a legal, fit back line - bench Aina (OUT) and Gabriel (OUT) for Munoz, since YOUR submitted XI still names two non-playing defenders; (2) DEPLOY the TC chip - it is the final GW, so a saved TC is a wasted TC. Season is mathematically decided (185 pts behind, not catchable), so play variance, not safety. Engines DISAGREE on the TC target: trust the lineup at deadline - if Salah is confirmed to START, TC Salah carries the higher EV/ceiling (sim-lab ~20.3); if Salah is rested or only 70% holds, pivot TC to Bowen (nailed 90, pens, relegation six-pointer, 92% start).",
-  "highest_leverage_action": "DEPLOY the Triple Captain this GW - it expires worthless otherwise. Default target = Salah IF confirmed in the starting lineup (EV ~20.3, season cum_pts leader); pivot to Bowen if Salah is rested/benched (nailed full-90, on pens, vs relegation-fighting Leeds). Also swap OUT Aina and Gabriel for Munoz to field a fit, legal back line.",
-  "tc_recommendation": {
-    "use_tc": true,
-    "primary_target": "Salah (if confirmed to start)",
-    "fallback_target": "Bowen (if Salah rested/benched)",
-    "why": "GW38 is the final gameweek - TC is use-it-or-lose-it with zero opportunity cost, so deploying beats letting it expire on a decided season. Engines SPLIT: sim-lab + the-rival back Salah (EV captained 13.5, TC ~20.3, ceiling 17, season cum_pts-leader, APEX-proven signal) but he is medically flagged at 70% with managed minutes (subbed 73', muscle injury). intel + the-gaffer back Bowen (92% start, nailed full 90, on penalties, WHU v Leeds relegation six-pointer, only 10% field captaincy so a haul GAINS rank). DECISION RULE: confirm the lineup at deadline - Salah STARTS => TC Salah (higher EV/ceiling); Salah rested/benched/broken-down => TC Bowen (safest 90-min floor x ceiling). Either way, USE the chip.",
-    "engines_disagree": true
-  },
-  "gemini_validity": {
-    "valid": false,
-    "status": "INVALID - DO NOT FOLLOW",
-    "reasons": [
-      "Captain Haaland is CONFIRMED OUT for GW38 (World Cup rest, Guardiola omission) - captain xPts of 14 is void, scores 0.",
-      "Vice-captain Gabriel is CONFIRMED OUT (Arsenal B-team, Arteta made 8 changes) - VC cascade also scores 0.",
-      "DOUBLE ARMBAND FAILURE: both armband picks are confirmed absent, so Gemini has no valid captain for GW38.",
-      "Starting XI also names Aina (CONFIRMED OUT, hamstring surgery) and benches Munoz, the only fully fit playable defender.",
-      "projected_xpts of 85 is built on Haaland captaincy plus confirmed absentees - the figure is VOID and materially overstated."
-    ],
-    "note": "Gemini's own critical_flags self-identify the invalidity and correctly cascade to Bowen as the strongest surviving captain - which matches Claude and the human squad."
-  },
-  "thai_summary": "GW38 (สัปดาห์สุดท้าย): แผนของ GEMINI ใช้ไม่ได้ (กัปตัน Haaland และรองกัปตัน Gabriel ยืนยันไม่ลงเล่นทั้งคู่ คะแนน 85 เป็นโมฆะ ไม่มีกัปตันที่ถูกต้อง). ทีมจริงของคุณ (YOU) แกนหลักถูกต้องอยู่แล้ว - กัปตัน Bowen และไม่ย้ายตัว ตรงกับแผนที่ดีที่สุด. แผนที่ดีที่สุด = CLAUDE เพราะใช้ชิป TC (ใช้สัปดาห์นี้ไม่งั้นหมดอายุฟรี) และจัดแนวรับที่ฟิต (เอา Munoz แทน Aina/Gabriel ที่เจ็บ). สองสิ่งที่ต้องแก้: (1) เอา Aina กับ Gabriel ออก ใส่ Munoz ให้แนวรับครบและถูกกติกา (2) ใช้ TC สัปดาห์นี้เลย. เอนจินเห็นต่างเรื่องเป้า TC: ถ้า Salah ยืนยันลงตัวจริง ให้ TC Salah (EV สูงสุด ~20.3 ผู้นำคะแนนสะสมทั้งฤดูกาล); ถ้า Salah ถูกพักหรือไม่ลง ให้เปลี่ยนเป็น TC Bowen (ลงเต็ม 90 นาที ยิงจุดโทษ เกมหนีตกชั้น WHU พบ Leeds มีแค่ 10% ของลีกตั้งเป็นกัปตัน = ได้แต้มแล้วแซงอันดับ). ฤดูกาลตัดสินแล้ว (ตามหลัง 185 แต้ม ไล่ไม่ทัน) จึงควรเล่นแบบเสี่ยง. สิ่งสำคัญที่สุด: ใช้ TC สัปดาห์นี้ - เช็กตัวจริงก่อนปิดตลาดแล้วเลือกระหว่าง Salah/Bowen."
+  "best_plan_rationale": "Gemini is VOID (captain Haaland and vice Gabriel both confirmed absent; 85 xPts invalid). YOU and CLAUDE field the same 15 players; the lever is the armband. CLAUDE captains Salah (sim-lab captain median 16.3 vs Bowen 12.3) and pre-emptively fixes the lineup (Sels for Raya, Munoz for Gabriel), projecting 54.1 vs YOUR 50.1 with Bowen (C).",
+  "verdict": "CLAUDE projects highest (54.1) vs YOU (50.1, Bowen C) vs GEMINI (0, void). YOUR current team does NOT match the best plan: identical 15 players but the captain is wrong (Bowen) and the XI still fields Raya (0) and Gabriel (OUT). Auto-subs cover Raya->Sels and Gabriel->Munoz, but the captain armband does NOT auto-cascade to a hauler - it stays on Bowen, the single avoidable rank loss. Switch (C) to Salah to match the best plan: APEX cum_pts rule, sim-lab median 16.3>12.3, and intel's must-not-miss captain shield all agree. Gemini disagrees but is VOID - disregard it.",
+  "highest_leverage_action": "Switch captain from Bowen to Salah before GW38 deadline",
+  "gemini_status": "VOID - Haaland unavailable, Gabriel OUT - Gemini picks from stale cache (last updated 2026-06-04). Captain and vice both score 0; stated 85 xPts invalid. Disregard.",
+  "auto_subs_expected": ["Sels in for Raya (GK)", "Munoz in for Gabriel (DEF)"],
+  "chip_advice": "TC chip available but no DGW for any owned player - do NOT use. APEX TC rule requires a confirmed DGW for the best captain. Single-GW TC adds only Salah's one-match captain points with downside if Liverpool rest him in a decided title race.",
+  "alerts": [
+    "URGENT: Captain is Bowen - switch to Salah before deadline (armband does not auto-cascade to a hauler).",
+    "Raya (ARS) not in Arsenal squad - returns 0; Sels auto-subs in as GK.",
+    "Gabriel (ARS) OUT for season (hamstring surgery) - Munoz auto-subs in; consider manual swap to be safe.",
+    "Aina (NFO) confirmed OUT (news.json) - thin DEF cover; Gvardiol started only to meet the 3-DEF minimum.",
+    "Gvardiol (MCI) confirmed benched by Guardiola - expect ~0.",
+    "Haaland (MCI) unavailable - correctly already on bench (slot 13); neutral as a league-wide blank.",
+    "GEMINI report is VOID (stale cache) - do not action its captain/projection."
+  ],
+  "engines_agree": false,
+  "summary_thai": "GW38: CLAUDE 54.1 xPts (กัปตัน Salah) สูงสุด, YOU 50.1 (กัปตัน Bowen ผิด), GEMINI 0 (โมฆะ - Haaland/Gabriel ไม่ลงเล่น ข้อมูลเก่า). ทีมคุณคนเดียวกับ CLAUDE ต่างแค่กัปตัน. Action เดียว: เปลี่ยนกัปตันจาก Bowen เป็น Salah ก่อนปิด deadline (APEX cum_pts + sim-lab 16.3>12.3 + intel ชี้ Salah, conviction HIGH). อย่าใช้ชิป TC - ไม่มี DGW."
 }

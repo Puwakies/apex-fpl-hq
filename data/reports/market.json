@@ -1,9 +1,138 @@
 {
   "gw": 38,
-  "agent": "market-desk",
-  "price_rises": [],
-  "price_falls": [],
-  "transfer_velocity": [],
-  "itb_advice": "GW38 is the final gameweek of the 2025/26 season. No price changes are pending or actionable — any movement tonight has zero FPL scoring impact since no future gameweeks exist to benefit from a risen asset. Your bank stands at 0.3m. Do not make transfers purely for ITB inflation; squad value is locked for scoring purposes once GW38 kicks off. The TC chip remains unused — that decision is the only pre-deadline lever that matters, not transfer activity.",
-  "summary": "End of season confirmed: both likely_rises and likely_falls arrays are empty across all data sources. Transfer velocity signals are dormant — the market has flatlined as expected in the final week. No price-change action is warranted or possible before deadline. Bank of 0.3m is irrelevant to final-GW points. Note: Gabriel (ARS, DEF) is DOUBTFUL and Haaland (MCI, FWD) is UNAVAILABLE on bench — these are availability risks for tonight, not price signals. The sole pre-deadline priority is captain/TC chip allocation."
+  "updated": "2026-06-19T00:00:00.000Z",
+  "bank": 0.3,
+  "squad_value": 101.2,
+  "squad_value_current_prices": 104.8,
+  "total_team_value": 101.5,
+  "price_changes": [
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "current_price": 15.1,
+      "cost_change_event": 0.1,
+      "net_transfers": 322000,
+      "selected_by_pct": 61.4,
+      "in_squad": true,
+      "status": "UNAVAILABLE"
+    },
+    {
+      "player": "Mbeumo",
+      "team": "BRE",
+      "pos": "MID",
+      "current_price": 7.8,
+      "cost_change_event": 0.1,
+      "net_transfers": 58000,
+      "selected_by_pct": 14.2,
+      "in_squad": true,
+      "status": "AVAILABLE"
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "pos": "MID",
+      "current_price": 5.6,
+      "cost_change_event": 0.1,
+      "net_transfers": 29000,
+      "selected_by_pct": 4.1,
+      "in_squad": true,
+      "status": "AVAILABLE"
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "current_price": 6.3,
+      "cost_change_event": -0.1,
+      "net_transfers": -140000,
+      "selected_by_pct": 33.1,
+      "in_squad": true,
+      "status": "DOUBTFUL"
+    },
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "pos": "MID",
+      "current_price": 13.4,
+      "cost_change_event": 0.0,
+      "net_transfers": 90000,
+      "selected_by_pct": 48.9,
+      "in_squad": true,
+      "status": "AVAILABLE"
+    },
+    {
+      "player": "Mateta",
+      "team": "CRY",
+      "pos": "FWD",
+      "current_price": 7.5,
+      "cost_change_event": 0.0,
+      "net_transfers": 8000,
+      "selected_by_pct": 6.8,
+      "in_squad": true,
+      "status": "AVAILABLE"
+    }
+  ],
+  "likely_rises": [
+    {
+      "player": "Haaland",
+      "net_transfers": 322000,
+      "confidence": "high",
+      "current_price": 15.1,
+      "cost_change_event": 0.1,
+      "note": "Largest net inflow in squad — already rising this event; UNAVAILABLE status caps scoring upside"
+    },
+    {
+      "player": "Mbeumo",
+      "net_transfers": 58000,
+      "confidence": "medium",
+      "current_price": 7.8,
+      "cost_change_event": 0.1,
+      "note": "Solid net inflow relative to 14.2% ownership base — confirming upward pressure"
+    },
+    {
+      "player": "Rogers",
+      "net_transfers": 29000,
+      "confidence": "medium",
+      "current_price": 5.6,
+      "cost_change_event": 0.1,
+      "note": "High net_transfers relative to low 4.1% ownership base — strong rise signal per ownership share"
+    }
+  ],
+  "likely_falls": [
+    {
+      "player": "Gabriel",
+      "net_transfers": -140000,
+      "confidence": "high",
+      "current_price": 6.3,
+      "cost_change_event": -0.1,
+      "note": "Heavy outflow + DOUBTFUL status driving falls — already moving down this event"
+    }
+  ],
+  "act_now": [
+    {
+      "player": "Gabriel",
+      "action": "MONITOR — no transfer action warranted",
+      "reason": "GW38 is final; prices freeze after tonight. Gabriel is DOUBTFUL and falling but selling costs a transfer hit with zero future benefit. Hold and rely on auto-sub cover (Munoz on bench) if he misses.",
+      "urgency": "LOW"
+    }
+  ],
+  "squad_price_breakdown": [
+    {"player": "Raya",     "pos": "GK",  "team": "ARS", "price": 5.6,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Gabriel",  "pos": "DEF", "team": "ARS", "price": 6.3,  "is_starting": true,  "status": "DOUBTFUL"},
+    {"player": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Aina",     "pos": "DEF", "team": "NFO", "price": 4.9,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "M.Salah",  "pos": "MID", "team": "LIV", "price": 13.4, "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Mbeumo",   "pos": "MID", "team": "BRE", "price": 7.8,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Rogers",   "pos": "MID", "team": "AVL", "price": 5.6,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Bowen",    "pos": "FWD", "team": "WHU", "price": 7.8,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Mateta",   "pos": "FWD", "team": "CRY", "price": 7.5,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Wood",     "pos": "FWD", "team": "NFO", "price": 7.0,  "is_starting": true,  "status": "AVAILABLE"},
+    {"player": "Sels",     "pos": "GK",  "team": "NFO", "price": 5.0,  "is_starting": false, "status": "AVAILABLE"},
+    {"player": "Haaland",  "pos": "FWD", "team": "MCI", "price": 15.1, "is_starting": false, "status": "UNAVAILABLE"},
+    {"player": "Munoz",    "pos": "DEF", "team": "CRY", "price": 5.1,  "is_starting": false, "status": "AVAILABLE"},
+    {"player": "Kluivert", "pos": "MID", "team": "BOU", "price": 6.2,  "is_starting": false, "status": "AVAILABLE"}
+  ],
+  "notes": "Final GW - prices frozen after this. Price velocity signals are informational only — no future gameweeks exist to benefit from rises. The only actionable angle is Gabriel (DOUBTFUL, falling) as a potential auto-sub risk; Munoz provides DEF bench cover. A transfer hit to sell Gabriel is not justified at GW38 deadline."
 }

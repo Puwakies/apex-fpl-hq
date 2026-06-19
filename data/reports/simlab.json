@@ -1,0 +1,28 @@
+{
+  "gw": 38,
+  "updated": "2026-06-19T00:00:00Z",
+  "captain_rankings": [
+    {
+      "player": "M.Salah",
+      "team": "LIV",
+      "median_xpts": 8.1,
+      "captain_median": 16.3,
+      "floor": 2.0,
+      "ceiling": 13.2,
+      "recommendation": "CAPTAIN - season cum_pts leader and nailed premium (APEX-locked signal). Wins MC on median, floor and ceiling. Minor 7% rotation risk if title already secured, but still the proven-best owned asset with Haaland unavailable."
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
+      "median_xpts": 6.2,
+      "captain_median": 12.3,
+      "floor": 1.0,
+      "ceiling": 11.7,
+      "recommendation": "VICE - WHU vs Leeds relegation decider lifts motivation/ceiling, but lower team quality drags floor and median below Salah on every MC metric. The motivation/matchup narrative is exactly the short-term signal the holdout proved weaker than cum_pts. Demote from C to VC."
+    }
+  ],
+  "recommended_captain": "M.Salah",
+  "recommended_vice": "Bowen",
+  "projected_total": 52.1,
+  "notes": "xpts.json zeroed (all 0 except Sels=1) - manual estimates used per confirmed player status. 50k-run Monte Carlo: Salah captain_median 16.3 vs Bowen 12.3, Salah cap_mean 16.09 vs 12.71. Recommendation flips current squad C/VC (squad has Bowen C / Salah VC) to align with APEX-locked rule: captain = season cum_pts leader (nailed premium, not matchup/motivation). Salah is the proven-best owned asset with Haaland UNAVAILABLE and Gabriel doubtful. Starters Gvardiol (benched), Rogers (75%), Aina/Anderson/Wood (~80%) carry minutes risk but are not captain candidates."
+}

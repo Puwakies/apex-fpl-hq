@@ -1,55 +1,60 @@
 {
   "engine": "claude",
   "gw": 38,
-  "captain": "Bowen",
-  "captain_type": "differential",
-  "captain_trigger": "season-decided (185-pt gap, not catchable) + cannot field template Haaland so lean into variance; cum_pts-leader Salah is doubt-flagged (medical-bay 70%, managed minutes, subbed 73') so under the locked rule the shield pivots to nailed captain_shield Bowen",
-  "vice": "M.Salah",
-  "vice_captain": "M.Salah",
+  "captain": "M.Salah",
+  "captain_type": "template",
+  "captain_trigger": "none",
+  "vice": "Bowen",
+  "vice_captain": "Bowen",
   "starting_xi": [
-    {"name": "Raya", "pos": "GK", "team": "ARS", "price": 5.6, "xpts": 0},
-    {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0, "xpts": 0},
-    {"name": "Munoz", "pos": "DEF", "team": "CRY", "price": 5.1, "xpts": 0},
-    {"name": "Gabriel", "pos": "DEF", "team": "ARS", "price": 6.3, "xpts": 0},
-    {"name": "M.Salah", "pos": "MID", "team": "LIV", "price": 13.4, "xpts": 0},
-    {"name": "Mbeumo", "pos": "MID", "team": "BRE", "price": 7.8, "xpts": 0},
-    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 0},
-    {"name": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5, "xpts": 0},
-    {"name": "Bowen", "pos": "FWD", "team": "WHU", "price": 7.8, "xpts": 0},
-    {"name": "Mateta", "pos": "FWD", "team": "CRY", "price": 7.5, "xpts": 0},
-    {"name": "Wood", "pos": "FWD", "team": "NFO", "price": 7.0, "xpts": 0}
+    {"name": "Sels", "pos": "GK", "team": "NFO", "price": 5.0, "xpts": 3.8},
+    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9, "xpts": 3.4},
+    {"name": "Munoz", "pos": "DEF", "team": "CRY", "price": 5.1, "xpts": 3.6},
+    {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0, "xpts": 0.5},
+    {"name": "M.Salah", "pos": "MID", "team": "LIV", "price": 13.4, "xpts": 7.8},
+    {"name": "Mbeumo", "pos": "MID", "team": "BRE", "price": 7.8, "xpts": 5.2},
+    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 3.9},
+    {"name": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5, "xpts": 3.7},
+    {"name": "Bowen", "pos": "FWD", "team": "WHU", "price": 7.8, "xpts": 5.6},
+    {"name": "Mateta", "pos": "FWD", "team": "CRY", "price": 7.5, "xpts": 4.6},
+    {"name": "Wood", "pos": "FWD", "team": "NFO", "price": 7.0, "xpts": 4.4}
+  ],
+  "xi": [
+    {"name": "Sels", "pos": "GK", "team": "NFO", "price": 5.0, "xpts": 3.8},
+    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9, "xpts": 3.4},
+    {"name": "Munoz", "pos": "DEF", "team": "CRY", "price": 5.1, "xpts": 3.6},
+    {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0, "xpts": 0.5},
+    {"name": "M.Salah", "pos": "MID", "team": "LIV", "price": 13.4, "xpts": 7.8},
+    {"name": "Mbeumo", "pos": "MID", "team": "BRE", "price": 7.8, "xpts": 5.2},
+    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 3.9},
+    {"name": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5, "xpts": 3.7},
+    {"name": "Bowen", "pos": "FWD", "team": "WHU", "price": 7.8, "xpts": 5.6},
+    {"name": "Mateta", "pos": "FWD", "team": "CRY", "price": 7.5, "xpts": 4.6},
+    {"name": "Wood", "pos": "FWD", "team": "NFO", "price": 7.0, "xpts": 4.4}
   ],
   "bench": [
-    {"name": "Sels", "pos": "GK", "team": "NFO", "price": 5.0},
+    {"name": "Raya", "pos": "GK", "team": "ARS", "price": 5.6},
     {"name": "Kluivert", "pos": "MID", "team": "BOU", "price": 6.2},
-    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9},
+    {"name": "Gabriel", "pos": "DEF", "team": "ARS", "price": 6.3},
     {"name": "Haaland", "pos": "FWD", "team": "MCI", "price": 15.1}
   ],
-  "chip_play": "TC on Bowen",
-  "chip": {
-    "name": "TC",
-    "action": "PLAY",
-    "target": "Bowen",
-    "reason": "GW38 is the final gameweek so TC is use-it-or-lose-it with zero opportunity cost. APEX TC rule ideally wants a confirmed DGW; none exists, so this is a forced spot where deploying beats letting the chip expire. Independent GAFFER call diverges from sim-lab (Salah): the season cum_pts-leader Salah carries a live medical doubt flag (medical-bay 70% start, no start in ~1 month, subbed at 73' under managed minutes), capping a triple-captain's expected minutes. Bowen is 90-min nailed, on penalties, in a relegation six-pointer at maximum motivation, and is the intel captain_shield (only 10% field captaincy so a haul GAINS rank in a season already decided on points). With Haaland un-fieldable to the user (one-way template downside, no shield) and the 185-pt gap not catchable, the correct posture is variance into the highest-floor full-90 differential. TC Bowen."
-  },
-  "transfer": null,
   "transfers": {"out": null, "in": null, "hits": 0, "bank": 0.3},
-  "projected_xpts": 58.0,
-  "confidence": "medium",
-  "reasoning": [
-    "ABSENCES: Gabriel CONFIRMED BENCHED (Arteta 8 changes pre-UCL final, 0 mins), Aina CONFIRMED OUT (hamstring, ruled out of finale), Haaland CONFIRMED UNAVAILABLE (World Cup rest, dead bench slot), Gvardiol BENCHED (City 6 changes). The squad holds only 4 DEF and 2 of them (Gabriel, Aina) do not play.",
-    "DEFENCE CRISIS / FORCED BACK-THREE: a legal FPL XI needs min 3 DEF, but Munoz is the only fully fit playable defender and Gvardiol did NOT start GW38 (Guardiola farewell rotation). The submitted 3-4-3 names Gvardiol + Munoz + Gabriel; Gabriel blanks (0 pts) as he is benched, and Gvardiol is high rotation risk. This is an unfixable structural gap — no fit third defender exists and auto-subs cannot manufacture defenders that are not there. The XI is effectively forced.",
-    "CAPTAIN (independent divergence from sim-lab, rule-compliant): sim-lab and the raw cum_pts-leader signal point to Salah, but medical-bay flags Salah at 70% with managed minutes (subbed 73', no start in a month). The locked APEX rule permits fading the season-leader when doubt-flagged and says NEVER fade the intel.captain_shield unless OUT/doubt — Salah is the doubt-flagged one, Bowen is the nailed captain_shield. So captain = Bowen (90 mins, pens, relegation six-pointer), vice = Salah (keeps the high-ceiling cum_pts leader as armband cover).",
-    "TC use-it-or-lose-it: final GW, no DGW possible, chip otherwise expires worthless. TC on Bowen maximises full-90 floor x ceiling and is the only aggressive rank lever left given Haaland (EO ~99%, 35% field captaincy) is unavailable to the user.",
-    "TRANSFER none: market-desk and medical-bay agree no -4 hit is justified in the final GW to replace a bench player; expected bench return is below the 4-pt penalty. Bank 0.3m, hold.",
-    "SEASON CONTEXT: 7th, 185 pts behind, mathematically decided. intel verdict: stop mirroring template (impossible without Haaland), lean into variance via the Bowen differential captain."
+  "transfer_suggestion": "None - final GW",
+  "chip": null,
+  "projected_xpts": 54.1,
+  "captain_logic": "Salah: APEX cum_pts rule + template captain with Haaland out, sim-lab median 16.3 vs Bowen 12.3",
+  "captain_reason": "APEX LOCKED rule: captain = season cum_pts leader among owned nailed premiums. Salah is AVAILABLE and confirmed the new template captain with Haaland unavailable. sim-lab captain median 16.3 (Salah) > 12.3 (Bowen). No differential trigger fired. Bowen = vice (next-best haul ceiling, 90-min nailed).",
+  "auto_subs": ["Sels in for Raya", "Munoz in for Gabriel"],
+  "key_risks": [
+    "Gvardiol started ONLY to satisfy the 3-DEF minimum (Guardiola confirmed bench, expect ~0). With Gabriel OUT for the season and the only other fit DEF being Aina+Munoz, no better third defender exists in the squad.",
+    "Liverpool likely already champions - dead-rubber/managed-minutes risk could cap Salah's ceiling below his 16.3 captain median.",
+    "Forest trio (Aina, Anderson, Wood all ~80%) plus Rogers (75%, Europa final rotation) carry correlated final-day rotation risk.",
+    "Thin bench: Raya (zero, ARS rotating), Gabriel (OUT), Haaland (unavailable) provide no real auto-sub cover beyond Kluivert - any further XI dropout is uncovered."
   ],
   "risks": [
-    "DEFENCE WIPEOUT: with Gabriel and Aina out and Gvardiol benched, up to two of the three DEF slots blank (0 pts) - the single biggest score risk, unfixable in GW38.",
-    "Gvardiol forced into the XI despite not starting GW38 (City rotation) - likely 0 minutes; no alternative DEF exists.",
-    "TC Bowen is high-variance: a Bowen blank wastes the chip. Mitigated by 90-92% start, penalties, and max relegation-survival motivation.",
-    "Salah (vice) at 70% with managed minutes - if a surprise non-start, vice cover degrades, but Bowen as (C) is independent of Salah.",
-    "Haaland unavailable to the user (EO ~99%, 35% field captaincy) is unfixable one-way template downside - accepted, no shield exists.",
-    "Bench is thin: Sels (GK) is the only fully reliable bench body; Kluivert is 60% to start, Aina out, Haaland dead - no live DEF cover remains."
+    "Gvardiol benched by Guardiola, started only to meet 3-DEF minimum (~0 expected) - no alternative DEF in squad.",
+    "Liverpool dead-rubber/managed-minutes may cap Salah ceiling vs 16.3 median.",
+    "Forest trio (Aina/Anderson/Wood ~80%) + Rogers (75%) correlated rotation risk.",
+    "Bench cover thin: Raya/Gabriel/Haaland all non-contributing."
   ]
 }
