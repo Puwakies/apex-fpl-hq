@@ -1,138 +1,76 @@
 {
   "gw": 38,
-  "updated": "2026-06-19T00:00:00.000Z",
-  "bank": 0.3,
-  "squad_value": 101.2,
-  "squad_value_current_prices": 104.8,
-  "total_team_value": 101.5,
-  "price_changes": [
+  "updated": "2026-06-26T00:00:00.000Z",
+  "price_rises": [],
+  "price_falls": [],
+  "transfer_targets": [],
+  "chip_recommendation": "DO NOT PLAY TC. GW38 is a standard single gameweek with no double gameweek confirmed. TC requires a player to play twice in the same GW to double their points — that condition does not exist this week. Activating TC would double points on a single appearance, providing minimal gain over normal captaincy. With no future GWs remaining, the chip is forfeit at season end regardless; but playing it in a non-DGW is strictly worse than holding it unused. Leave TC unplayed.",
+  "best_value_picks": [
     {
-      "player": "Haaland",
-      "team": "MCI",
+      "player": "M.Salah",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 13.4,
+      "status": "AVAILABLE",
+      "role": "Vice-captain",
+      "note": "Highest ceiling in the squad. Season elite scorer, fully available. Strong captaincy alternative to Bowen if lineup confirmation favours LIV fixture."
+    },
+    {
+      "player": "Bowen",
+      "team": "WHU",
       "pos": "FWD",
-      "current_price": 15.1,
-      "cost_change_event": 0.1,
-      "net_transfers": 322000,
-      "selected_by_pct": 61.4,
-      "in_squad": true,
-      "status": "UNAVAILABLE"
+      "price": 7.8,
+      "status": "AVAILABLE",
+      "role": "Captain (current, APEX cum_pts pick)",
+      "note": "Named captain per APEX protocol. Available and nailed. Solid floor for the final week."
     },
     {
       "player": "Mbeumo",
       "team": "BRE",
       "pos": "MID",
-      "current_price": 7.8,
-      "cost_change_event": 0.1,
-      "net_transfers": 58000,
-      "selected_by_pct": 14.2,
-      "in_squad": true,
-      "status": "AVAILABLE"
-    },
-    {
-      "player": "Rogers",
-      "team": "AVL",
-      "pos": "MID",
-      "current_price": 5.6,
-      "cost_change_event": 0.1,
-      "net_transfers": 29000,
-      "selected_by_pct": 4.1,
-      "in_squad": true,
-      "status": "AVAILABLE"
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "current_price": 6.3,
-      "cost_change_event": -0.1,
-      "net_transfers": -140000,
-      "selected_by_pct": 33.1,
-      "in_squad": true,
-      "status": "DOUBTFUL"
-    },
-    {
-      "player": "M.Salah",
-      "team": "LIV",
-      "pos": "MID",
-      "current_price": 13.4,
-      "cost_change_event": 0.0,
-      "net_transfers": 90000,
-      "selected_by_pct": 48.9,
-      "in_squad": true,
-      "status": "AVAILABLE"
+      "price": 7.8,
+      "status": "AVAILABLE",
+      "role": "Starter",
+      "note": "Reliable attacking mid, available, consistent goal threat at price point."
     },
     {
       "player": "Mateta",
       "team": "CRY",
       "pos": "FWD",
-      "current_price": 7.5,
-      "cost_change_event": 0.0,
-      "net_transfers": 8000,
-      "selected_by_pct": 6.8,
-      "in_squad": true,
-      "status": "AVAILABLE"
+      "price": 7.5,
+      "status": "AVAILABLE",
+      "role": "Starter",
+      "note": "Available striker with goal threat. Good value for final week."
+    },
+    {
+      "player": "Wood",
+      "team": "NFO",
+      "pos": "FWD",
+      "price": 7.0,
+      "status": "AVAILABLE",
+      "role": "Starter",
+      "note": "Nailed NFO starter, available. Triples NFO coverage with Anderson and Aina."
     }
   ],
-  "likely_rises": [
+  "sell_candidates": [
     {
       "player": "Haaland",
-      "net_transfers": 322000,
-      "confidence": "high",
-      "current_price": 15.1,
-      "cost_change_event": 0.1,
-      "note": "Largest net inflow in squad — already rising this event; UNAVAILABLE status caps scoring upside"
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.1,
+      "status": "UNAVAILABLE",
+      "role": "Bench (slot 13)",
+      "note": "UNAVAILABLE and benched — contributes 0 points. Would be the prime sell candidate in any normal GW but GW38 is the final gameweek. No transfer benefit exists. No action required."
     },
     {
-      "player": "Mbeumo",
-      "net_transfers": 58000,
-      "confidence": "medium",
-      "current_price": 7.8,
-      "cost_change_event": 0.1,
-      "note": "Solid net inflow relative to 14.2% ownership base — confirming upward pressure"
-    },
-    {
-      "player": "Rogers",
-      "net_transfers": 29000,
-      "confidence": "medium",
-      "current_price": 5.6,
-      "cost_change_event": 0.1,
-      "note": "High net_transfers relative to low 4.1% ownership base — strong rise signal per ownership share"
-    }
-  ],
-  "likely_falls": [
-    {
       "player": "Gabriel",
-      "net_transfers": -140000,
-      "confidence": "high",
-      "current_price": 6.3,
-      "cost_change_event": -0.1,
-      "note": "Heavy outflow + DOUBTFUL status driving falls — already moving down this event"
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 6.3,
+      "status": "DOUBTFUL",
+      "role": "Starter (slot 2)",
+      "note": "DOUBTFUL — rotation risk for the final XI. Munoz (bench, DEF, AVAILABLE) provides auto-sub cover if Gabriel misses. No transfer action needed at GW38 — taking a hit for one game in the final week is not justified."
     }
   ],
-  "act_now": [
-    {
-      "player": "Gabriel",
-      "action": "MONITOR — no transfer action warranted",
-      "reason": "GW38 is final; prices freeze after tonight. Gabriel is DOUBTFUL and falling but selling costs a transfer hit with zero future benefit. Hold and rely on auto-sub cover (Munoz on bench) if he misses.",
-      "urgency": "LOW"
-    }
-  ],
-  "squad_price_breakdown": [
-    {"player": "Raya",     "pos": "GK",  "team": "ARS", "price": 5.6,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Gabriel",  "pos": "DEF", "team": "ARS", "price": 6.3,  "is_starting": true,  "status": "DOUBTFUL"},
-    {"player": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Aina",     "pos": "DEF", "team": "NFO", "price": 4.9,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "M.Salah",  "pos": "MID", "team": "LIV", "price": 13.4, "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Mbeumo",   "pos": "MID", "team": "BRE", "price": 7.8,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Rogers",   "pos": "MID", "team": "AVL", "price": 5.6,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Bowen",    "pos": "FWD", "team": "WHU", "price": 7.8,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Mateta",   "pos": "FWD", "team": "CRY", "price": 7.5,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Wood",     "pos": "FWD", "team": "NFO", "price": 7.0,  "is_starting": true,  "status": "AVAILABLE"},
-    {"player": "Sels",     "pos": "GK",  "team": "NFO", "price": 5.0,  "is_starting": false, "status": "AVAILABLE"},
-    {"player": "Haaland",  "pos": "FWD", "team": "MCI", "price": 15.1, "is_starting": false, "status": "UNAVAILABLE"},
-    {"player": "Munoz",    "pos": "DEF", "team": "CRY", "price": 5.1,  "is_starting": false, "status": "AVAILABLE"},
-    {"player": "Kluivert", "pos": "MID", "team": "BOU", "price": 6.2,  "is_starting": false, "status": "AVAILABLE"}
-  ],
-  "notes": "Final GW - prices frozen after this. Price velocity signals are informational only — no future gameweeks exist to benefit from rises. The only actionable angle is Gabriel (DOUBTFUL, falling) as a potential auto-sub risk; Munoz provides DEF bench cover. A transfer hit to sell Gabriel is not justified at GW38 deadline."
+  "summary": "GW38 is the final gameweek of 2025/26. No price movement is active (season end confirmed, 0 rises and 0 falls in price.json). No transfers are recommended — bank is 0.3m and no future gameweeks exist. TC chip must NOT be played: GW38 is a single gameweek with no DGW, so TC adds no meaningful benefit over normal captaincy. Key risk is Gabriel (DOUBTFUL, slot 2 starter) — Munoz on bench provides DEF auto-sub cover if needed. Captaincy decision: Bowen is the APEX cum_pts protocol pick but M.Salah at 13.4m carries higher ceiling. Manager should confirm lineups before deadline and consider switching armband to Salah if fixture and team news support it."
 }

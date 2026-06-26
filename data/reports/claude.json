@@ -1,60 +1,80 @@
 {
   "engine": "claude",
   "gw": 38,
+  "updated": "2026-06-26T00:00:00Z",
   "captain": "M.Salah",
   "captain_type": "template",
   "captain_trigger": "none",
   "vice": "Bowen",
   "vice_captain": "Bowen",
+  "formation": "3-4-3",
+  "transfer": "none",
+  "chip": "none",
   "starting_xi": [
     {"name": "Sels", "pos": "GK", "team": "NFO", "price": 5.0, "xpts": 3.8},
-    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9, "xpts": 3.4},
     {"name": "Munoz", "pos": "DEF", "team": "CRY", "price": 5.1, "xpts": 3.6},
     {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0, "xpts": 0.5},
+    {"name": "Gabriel", "pos": "DEF", "team": "ARS", "price": 6.3, "xpts": 0.2},
     {"name": "M.Salah", "pos": "MID", "team": "LIV", "price": 13.4, "xpts": 7.8},
-    {"name": "Mbeumo", "pos": "MID", "team": "BRE", "price": 7.8, "xpts": 5.2},
-    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 3.9},
+    {"name": "Mbeumo", "pos": "MID", "team": "MUN", "price": 7.8, "xpts": 5.2},
     {"name": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5, "xpts": 3.7},
+    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 3.5},
     {"name": "Bowen", "pos": "FWD", "team": "WHU", "price": 7.8, "xpts": 5.6},
     {"name": "Mateta", "pos": "FWD", "team": "CRY", "price": 7.5, "xpts": 4.6},
     {"name": "Wood", "pos": "FWD", "team": "NFO", "price": 7.0, "xpts": 4.4}
   ],
   "xi": [
-    {"name": "Sels", "pos": "GK", "team": "NFO", "price": 5.0, "xpts": 3.8},
-    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9, "xpts": 3.4},
-    {"name": "Munoz", "pos": "DEF", "team": "CRY", "price": 5.1, "xpts": 3.6},
-    {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0, "xpts": 0.5},
-    {"name": "M.Salah", "pos": "MID", "team": "LIV", "price": 13.4, "xpts": 7.8},
-    {"name": "Mbeumo", "pos": "MID", "team": "BRE", "price": 7.8, "xpts": 5.2},
-    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 3.9},
-    {"name": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5, "xpts": 3.7},
-    {"name": "Bowen", "pos": "FWD", "team": "WHU", "price": 7.8, "xpts": 5.6},
-    {"name": "Mateta", "pos": "FWD", "team": "CRY", "price": 7.5, "xpts": 4.6},
-    {"name": "Wood", "pos": "FWD", "team": "NFO", "price": 7.0, "xpts": 4.4}
+    "Sels",
+    "Munoz",
+    "Gvardiol",
+    "Gabriel",
+    "M.Salah",
+    "Mbeumo",
+    "Anderson",
+    "Rogers",
+    "Bowen",
+    "Mateta",
+    "Wood"
   ],
   "bench": [
-    {"name": "Raya", "pos": "GK", "team": "ARS", "price": 5.6},
+    "Kluivert",
+    "Raya",
+    "Haaland",
+    "Aina"
+  ],
+  "bench_detail": [
     {"name": "Kluivert", "pos": "MID", "team": "BOU", "price": 6.2},
-    {"name": "Gabriel", "pos": "DEF", "team": "ARS", "price": 6.3},
-    {"name": "Haaland", "pos": "FWD", "team": "MCI", "price": 15.1}
+    {"name": "Raya", "pos": "GK", "team": "ARS", "price": 5.6},
+    {"name": "Haaland", "pos": "FWD", "team": "MCI", "price": 15.1},
+    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9}
   ],
   "transfers": {"out": null, "in": null, "hits": 0, "bank": 0.3},
-  "transfer_suggestion": "None - final GW",
-  "chip": null,
-  "projected_xpts": 54.1,
-  "captain_logic": "Salah: APEX cum_pts rule + template captain with Haaland out, sim-lab median 16.3 vs Bowen 12.3",
-  "captain_reason": "APEX LOCKED rule: captain = season cum_pts leader among owned nailed premiums. Salah is AVAILABLE and confirmed the new template captain with Haaland unavailable. sim-lab captain median 16.3 (Salah) > 12.3 (Bowen). No differential trigger fired. Bowen = vice (next-best haul ceiling, 90-min nailed).",
-  "auto_subs": ["Sels in for Raya", "Munoz in for Gabriel"],
+  "chip_detail": {"name": "TC", "action": "hold", "reason": "Single GW38, no DGW. Triple Captain has no multiplier value on a one-fixture week and is -EV vs a normal armband. Do not play per CHIP-CAL."},
+  "projected_xpts": 50.7,
+  "captain_reasoning": "APEX LOCKED rule = season cum_pts leader, nailed premium, not GK. Haaland (true #1 template) is confirmed OUT, so the de facto template captain rolls to M.Salah (~56% owned, ~22% captain share, highest season cum_pts of any owned premium, confirmed Liverpool starter in his farewell match, ceiling 16). intel.captain_shield flags Salah as MUST-NOT-MISS and the LOCKED rule says NEVER fade captain_shield unless the player is OUT/doubt — Salah is 100% confirmed to start. Aligning is FREE since Salah was already our vice. Bowen (~10% share) is the differential armband — a defensible rank-chase from 7th, but the backtest lesson is that fading the template captain costs points, so Bowen drops to vice.",
+  "captain_reason": "Salah: APEX cum_pts season-leader + template captain with Haaland out; captain_shield MUST-NOT-MISS, confirmed LIV starter. sim-lab ceiling 16 vs Bowen 14. No differential trigger fired.",
+  "captain_logic": "Salah = season cum_pts leader among owned nailed premiums; template post-Haaland; do-not-fade captain_shield.",
+  "auto_subs": ["Sels in for Raya (GK)", "Munoz in for Aina/Gabriel (DEF)"],
+  "key_decisions": [
+    "Captain moved from squad default Bowen (~10% differential) to M.Salah (template, captain_shield MUST-NOT-MISS) per LOCKED season-leader rule + do-not-fade-shield rule. Bowen = vice.",
+    "Forced 3-4-3: only one fully reliable DEF exists (Munoz). Gabriel (OUT/benched) and Aina (ruled out of Forest's finale squad) are guaranteed zeros, Gvardiol is benched (City rotated 9). With only 4 DEF in the squad and 3 unavailable/benched, the 3-DEF minimum forces Munoz + Gvardiol + Gabriel and loads MID/FWD.",
+    "Sels auto-subs in for Raya at GK: Raya omitted from Arsenal's matchday squad (zero); Sels is Forest's confirmed #1 vs Bournemouth — converts a guaranteed zero into a clean-sheet chance.",
+    "Munoz starts (auto-sub cover for the absent Aina/Gabriel DEF slot) — confirmed in Crystal Palace XI.",
+    "Rogers started ahead of Kluivert as the 4th MID: both carry rotation risk, but Rogers has the better FDR2 home fixture and higher start probability; Kluivert kept as first outfield bench cover.",
+    "Haaland held on bench (OUT, World Cup rest) — his league-wide blank zeroes the ~35% who captained him, neutral-to-positive for us.",
+    "TC chip held — single fixture, no multiplier edge."
+  ],
   "key_risks": [
-    "Gvardiol started ONLY to satisfy the 3-DEF minimum (Guardiola confirmed bench, expect ~0). With Gabriel OUT for the season and the only other fit DEF being Aina+Munoz, no better third defender exists in the squad.",
-    "Liverpool likely already champions - dead-rubber/managed-minutes risk could cap Salah's ceiling below his 16.3 captain median.",
-    "Forest trio (Aina, Anderson, Wood all ~80%) plus Rogers (75%, Europa final rotation) carry correlated final-day rotation risk.",
-    "Thin bench: Raya (zero, ARS rotating), Gabriel (OUT), Haaland (unavailable) provide no real auto-sub cover beyond Kluivert - any further XI dropout is uncovered."
+    "Two dead DEF slots (Gabriel ~0, Gvardiol ~0) unavoidable: Gabriel OUT for season, Gvardiol benched by Guardiola, and no better third defender exists in the squad.",
+    "Liverpool likely already champions — dead-rubber/managed-minutes risk could cap Salah's ceiling, though he is confirmed to start his farewell game.",
+    "Forest trio (Anderson, Wood, Sels) plus Rogers (Villa rotated 8 post-Europa-League final) carry correlated final-day rotation risk.",
+    "Thin bench: Raya (zero), Haaland (out), Aina (out) provide no real auto-sub cover beyond Kluivert — any further XI dropout is uncovered."
   ],
   "risks": [
-    "Gvardiol benched by Guardiola, started only to meet 3-DEF minimum (~0 expected) - no alternative DEF in squad.",
-    "Liverpool dead-rubber/managed-minutes may cap Salah ceiling vs 16.3 median.",
-    "Forest trio (Aina/Anderson/Wood ~80%) + Rogers (75%) correlated rotation risk.",
-    "Bench cover thin: Raya/Gabriel/Haaland all non-contributing."
-  ]
+    "Gvardiol + Gabriel both ~0, started only to meet the 3-DEF minimum — no alternative DEF in squad.",
+    "Liverpool dead-rubber/managed-minutes may cap Salah ceiling.",
+    "Forest trio + Rogers correlated rotation risk on the final day.",
+    "Bench cover thin: Raya/Haaland/Aina all non-contributing."
+  ],
+  "notes": "Final GW 2025/26 — highest-rotation week of the season. Squad has 4 absent/benched defenders (Raya, Aina, Gabriel, Gvardiol) plus Rogers at rotation risk, forcing a thin 3-4-3 with two dead DEF slots we cannot avoid (no transfers worth taking on the last day, no useful chip). Auto-sub chain (Sels for Raya, Munoz for the vacant DEF) is the critical rescue and fires cleanly. xpts.json is flat (all 0, fdr 3) for GW38 so values shown are sim-lab floor/EV-derived estimates; news signal is the differentiation layer. Captain = M.Salah (template) is the protocol-correct, floor-weighted armband; Bowen-C remains the alternative high-variance rank-chase if the manager has live intel favouring a West Ham boom — human override respected, default per LOCKED rule is Salah."
 }

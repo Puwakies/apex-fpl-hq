@@ -1,28 +1,55 @@
 {
   "gw": 38,
-  "updated": "2026-06-19T00:00:00Z",
-  "captain_rankings": [
+  "updated": "2026-06-26T00:00:00Z",
+  "captain_ranking": [
     {
-      "player": "M.Salah",
-      "team": "LIV",
-      "median_xpts": 8.1,
-      "captain_median": 16.3,
-      "floor": 2.0,
-      "ceiling": 13.2,
-      "recommendation": "CAPTAIN - season cum_pts leader and nailed premium (APEX-locked signal). Wins MC on median, floor and ceiling. Minor 7% rotation risk if title already secured, but still the proven-best owned asset with Haaland unavailable."
+      "rank": 1,
+      "name": "Bowen",
+      "team": "WHU",
+      "floor_xpts": 4.2,
+      "ceiling_xpts": 14.0,
+      "ev": 6.4,
+      "notes": "WHU vs Leeds relegation decider — highest-motivation, highest-intensity fixture in GW38. Home, confirmed full 90, West Ham's primary creative + goal threat (on pens/set pieces). Strong floor from secure minutes plus a genuine boom ceiling in a must-win. Best floor-weighted EV in the squad. Already the armband."
     },
     {
-      "player": "Bowen",
-      "team": "WHU",
-      "median_xpts": 6.2,
-      "captain_median": 12.3,
-      "floor": 1.0,
-      "ceiling": 11.7,
-      "recommendation": "VICE - WHU vs Leeds relegation decider lifts motivation/ceiling, but lower team quality drags floor and median below Salah on every MC metric. The motivation/matchup narrative is exactly the short-term signal the holdout proved weaker than cum_pts. Demote from C to VC."
+      "rank": 2,
+      "name": "M.Salah",
+      "team": "LIV",
+      "floor_xpts": 4.0,
+      "ceiling_xpts": 16.0,
+      "ev": 6.1,
+      "notes": "Highest individual ceiling of any owned asset and premium-class floor even on an off day. Confirmed LIV starter (final Liverpool appearance) with personal Golden Boot incentive. Docked for away fixture (fdr=3) and reduced team motivation if title already secured. Marginally behind Bowen on floor due to venue/stakes; clear vice."
+    },
+    {
+      "rank": 3,
+      "name": "Mbeumo",
+      "team": "MUN",
+      "floor_xpts": 3.6,
+      "ceiling_xpts": 11.0,
+      "ev": 5.2,
+      "notes": "Confirmed nailed starter, strong recent form, favourable home fixture (fdr=2), zero rotation risk. Reliable attacking returner with consistent minutes — solid floor, respectable ceiling. Third-best EV but trails the two premiums on ceiling."
+    },
+    {
+      "rank": 4,
+      "name": "Wood",
+      "team": "NFO",
+      "floor_xpts": 3.2,
+      "ceiling_xpts": 10.0,
+      "ev": 4.6,
+      "notes": "NFO home vs BOU (fdr=2), confirmed starter, reliable physical scorer. Dead-rubber context lowers intensity and caps ceiling, but minutes are secure giving a dependable floor. Good consistency play with modest upside."
+    },
+    {
+      "rank": 5,
+      "name": "Rogers",
+      "team": "AVL",
+      "floor_xpts": 2.8,
+      "ceiling_xpts": 9.5,
+      "ev": 4.1,
+      "notes": "AVL home (fdr=2) with possible European-qualification motivation. Regular starter, mid-price upside. Lower floor than the premium/forward options given less guaranteed attacking involvement, but the clean fixture keeps EV respectable."
     }
   ],
-  "recommended_captain": "M.Salah",
-  "recommended_vice": "Bowen",
-  "projected_total": 52.1,
-  "notes": "xpts.json zeroed (all 0 except Sels=1) - manual estimates used per confirmed player status. 50k-run Monte Carlo: Salah captain_median 16.3 vs Bowen 12.3, Salah cap_mean 16.09 vs 12.71. Recommendation flips current squad C/VC (squad has Bowen C / Salah VC) to align with APEX-locked rule: captain = season cum_pts leader (nailed premium, not matchup/motivation). Salah is the proven-best owned asset with Haaland UNAVAILABLE and Gabriel doubtful. Starters Gvardiol (benched), Rogers (75%), Aina/Anderson/Wood (~80%) carry minutes risk but are not captain candidates."
+  "recommended_captain": "Bowen",
+  "recommended_vice": "M.Salah",
+  "tc_recommendation": "do not play — single GW38, no DGW",
+  "summary": "GW38 floor-weighted EV (APEX: prefer consistent floor over boom-bust) ranks Bowen (C) first — WHU vs Leeds is the highest-motivation, highest-intensity fixture of the gameweek, home, confirmed full 90, with both a dependable floor and a real must-win ceiling. M.Salah (VC) carries the single highest ceiling and premium-class floor but is docked for an away trip (fdr=3) and potentially low team stakes if the title is secured. Mbeumo, Wood, Rogers fill ranks 3-5 on clean fdr=2 fixtures but trail on ceiling. Confirmed zeros (Haaland, Raya, Gabriel) excluded from the pool. TC withheld — single fixture, no DGW means no multiplier value; saving is correct."
 }

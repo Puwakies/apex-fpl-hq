@@ -1,173 +1,158 @@
 {
   "gw": 38,
-  "updated": "2026-06-19T00:00:00Z",
-  "note": "GW38 final gameweek. Fixtures and ratings updated with confirmed news: Haaland unavailable, Gabriel out for season, Raya not in squad, Gvardiol benched, Sels auto-subs in.",
+  "updated": "2026-06-26T00:00:00Z",
   "fixture_ratings": [
     {
-      "player": "Raya",
+      "name": "Raya",
       "team": "ARS",
-      "opponent": "TBC",
+      "opponent": "TBC (H)",
       "home_away": "H",
       "fdr": 3,
-      "motivation": "low",
-      "notes": "Confirmed NOT in Arsenal squad. Guaranteed zero. Sels auto-subs in as active GK replacement."
+      "notes": "Confirmed NOT in Arsenal squad for GW38. Guaranteed zero. Sels auto-subs in as active GK. fdr from features.json = 3 (H)."
     },
     {
-      "player": "Gabriel",
+      "name": "Gabriel",
       "team": "ARS",
-      "opponent": "TBC",
+      "opponent": "TBC (H)",
       "home_away": "H",
       "fdr": 3,
-      "motivation": "low",
-      "notes": "OUT for season — hamstring surgery confirmed. Guaranteed zero regardless of fixture quality. Status DOUBTFUL in cache is outdated; treat as DNP."
+      "notes": "OUT for season — hamstring surgery confirmed. squad.json DOUBTFUL is outdated. Guaranteed zero. fdr from features.json = 3 (H)."
     },
     {
-      "player": "Gvardiol",
+      "name": "Gvardiol",
       "team": "MCI",
-      "opponent": "TBC",
+      "opponent": "TBC (H)",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "low",
-      "notes": "Confirmed benched. City are rotating — season position secured, Haaland also absent. Gvardiol may not even feature as a sub. Non-appearance risk very high despite easy FDR 2 opposition."
+      "notes": "Confirmed benched — City rotating with nothing at stake. Non-appearance risk very high despite best FDR in squad (fdr=2, H per features.json via Haaland same fixture)."
     },
     {
-      "player": "Aina",
+      "name": "Aina",
       "team": "NFO",
       "opponent": "BOU",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "medium",
-      "notes": "Forest vs Bournemouth at home. Dead rubber for both sides — neither chasing European spots or fighting relegation. Aina is a regular starter and will likely play 90. Clean sheet possible in low-stakes game but intensity is limited."
+      "notes": "Forest vs Bournemouth at home. Dead rubber for both sides. Aina regular starter, likely plays 90. Clean sheet possible in low-stakes match but intensity limited. fdr=2 H."
     },
     {
-      "player": "M.Salah",
+      "name": "M.Salah",
       "team": "LIV",
-      "opponent": "TBC",
+      "opponent": "TBC (A)",
       "home_away": "A",
       "fdr": 3,
-      "motivation": "medium",
-      "notes": "Liverpool likely champions so season motivation is muted for team. However Salah has personal records and Golden Boot incentives — near-certain starter. Away fixture adds difficulty. Vice-captain; safest armband alternative if Bowen underperforms."
+      "notes": "Liverpool away, fdr=3 per features.json. Liverpool likely champions — team motivation low but Salah has personal Golden Boot incentives. Away fixture adds difficulty weighting. Vice-captain."
     },
     {
-      "player": "Mbeumo",
+      "name": "Mbeumo",
       "team": "BRE",
-      "opponent": "TBC",
+      "opponent": "TBC (H)",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "medium",
-      "notes": "Home fixture, FDR 2. Brentford mid-table with no existential stakes but Mbeumo is their key asset and will play. Home advantage helps. One of the cleanest starting spots in the squad — no rotation risk, good opponent."
+      "notes": "Brentford home, fdr=2 per features.json. Nailed starter, no rotation risk. One of the three cleanest fixtures in the squad alongside Gvardiol (unavail risk) and Rogers."
     },
     {
-      "player": "Rogers",
+      "name": "Rogers",
       "team": "AVL",
-      "opponent": "TBC",
+      "opponent": "TBC (H)",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "medium",
-      "notes": "Aston Villa home, FDR 2. European qualification may still be in play depending on final table — adds motivation relative to other dead rubbers. Rogers is a regular. Solid mid-price with upside."
+      "notes": "Aston Villa home, fdr=2 per features.json. European qualification may still be in play — added motivation. Rogers regular starter. Solid mid-price with upside."
     },
     {
-      "player": "Anderson",
+      "name": "Anderson",
       "team": "NFO",
       "opponent": "BOU",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "medium",
-      "notes": "Forest home vs Bournemouth. Same dead rubber caveat as Aina. Anderson contributes in buildup but has a limited goal/assist ceiling. Will likely start but returns may be modest."
+      "notes": "Forest home vs Bournemouth, fdr=2. Same dead rubber context as Aina and Wood. Limited goal/assist ceiling but will likely start 90. Returns may be modest."
     },
     {
-      "player": "Bowen",
+      "name": "Bowen",
       "team": "WHU",
       "opponent": "Leeds",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "high",
-      "notes": "CAPTAIN. WHU vs Leeds — West Ham in a relegation decider. This is a must-win context, meaning Bowen will be pushed forward with maximum intensity for the full 90. Home fixture. High ceiling. The one player in this squad with genuine maximum motivation in GW38. Best captaincy pick justified by stakes alone."
+      "notes": "CAPTAIN. WHU vs Leeds — West Ham in a relegation decider. Maximum team motivation; Bowen plays full 90 with highest intensity of any GW38 fixture. Home advantage. High ceiling. fdr=2 H context."
     },
     {
-      "player": "Mateta",
+      "name": "Mateta",
       "team": "CRY",
-      "opponent": "TBC",
+      "opponent": "TBC (A)",
       "home_away": "A",
       "fdr": 3,
-      "motivation": "medium",
-      "notes": "Away fixture, FDR 3. Crystal Palace mid-table with little at stake. Away game reduces clean sheet and scoring odds. Mateta will start but returns are hard to project in a low-motivation away trip."
+      "notes": "Crystal Palace away, fdr=3 per features.json. Away fixture adds difficulty. Palace mid-table with little at stake. Worst confirmed fixture for an outfield starter in the squad."
     },
     {
-      "player": "Wood",
+      "name": "Wood",
       "team": "NFO",
       "opponent": "BOU",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "medium",
-      "notes": "Forest home vs Bournemouth. Wood is a physical, reliable starter. Dead rubber context means defensive intensity on both sides will be low — which can mean more open play and goal chances but less assured outcomes. Reasonable floor."
+      "notes": "Forest home vs Bournemouth. Wood reliable starter, physical presence. Dead rubber context means open play likely — goal chances exist but not assured. fdr=2 H."
     },
     {
-      "player": "Sels",
+      "name": "Sels",
       "team": "NFO",
       "opponent": "BOU",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "medium",
-      "notes": "AUTO-SUBS IN as active GK replacing Raya. Forest home vs Bournemouth, FDR 2. Turns a guaranteed zero (Raya) into a live clean sheet chance. Forest at home in a calm match may keep things tight. Key auto-sub to confirm."
+      "notes": "Auto-subs in as active GK replacing Raya. Forest home vs Bournemouth, fdr=2. Converts guaranteed zero (Raya) into live clean sheet chance. xpts=1 in xpts.json confirms expected contribution."
     },
     {
-      "player": "Haaland",
+      "name": "Haaland",
       "team": "MCI",
-      "opponent": "TBC",
+      "opponent": "TBC (H)",
       "home_away": "H",
       "fdr": 2,
-      "motivation": "low",
-      "notes": "UNAVAILABLE — not in City squad for GW38. Guaranteed zero. FDR is irrelevant. Bench asset that cannot be utilised."
+      "notes": "UNAVAILABLE per squad.json. Guaranteed zero. MCI H fdr=2 (per features.json) is irrelevant — asset cannot be utilised."
     },
     {
-      "player": "Munoz",
+      "name": "Munoz",
       "team": "CRY",
-      "opponent": "TBC",
+      "opponent": "TBC (A)",
       "home_away": "A",
       "fdr": 3,
-      "motivation": "medium",
-      "notes": "Bench DEF. Away fixture FDR 3. Palace have nothing to play for away from home. Clean sheet odds very low. Emergency cover only — not expected to contribute."
+      "notes": "Bench DEF. Crystal Palace away, fdr=3. Same fixture as Mateta. Away trip with no stakes. Clean sheet odds very low. Emergency cover only."
     },
     {
-      "player": "Kluivert",
+      "name": "Kluivert",
       "team": "BOU",
       "opponent": "NFO",
       "home_away": "A",
       "fdr": 2,
-      "motivation": "low",
-      "notes": "Bench MID. Bournemouth away at Forest — dead rubber both teams. Kluivert may feature but returns are unpredictable. Emergency cover only. Low priority."
+      "notes": "Bench MID. Bournemouth away at Forest — dead rubber both sides. fdr=2 from Aina/Anderson/Wood reciprocal fixture. Kluivert may feature but returns unpredictable. Emergency cover only."
     }
   ],
   "best_fixtures": [
-    "Bowen (WHU H vs Leeds) — relegation decider, maximum team and player motivation, home fixture, captain",
-    "Mbeumo (BRE H, FDR 2) — home, nailed starter, no rotation risk, clean opponent",
-    "Rogers (AVL H, FDR 2) — home, possible European spot motivation, reliable starter",
-    "Aina/Anderson/Wood (NFO H vs BOU, FDR 2) — home fixture, likely starters, though dead rubber caps ceiling",
-    "Sels (NFO H vs BOU) — auto-sub insurance converts Raya zero into a live clean sheet opportunity"
+    "Bowen",
+    "Mbeumo",
+    "Rogers",
+    "Aina",
+    "Anderson",
+    "Wood",
+    "Sels"
   ],
-  "avoid": [
-    "Raya (ARS) — confirmed not in squad, guaranteed zero points",
-    "Gabriel (ARS) — out for season with hamstring surgery, guaranteed zero points",
-    "Haaland (MCI) — confirmed unavailable, guaranteed zero points",
-    "Gvardiol (MCI) — confirmed benched, Man City rotating entire squad with nothing at stake, non-appearance risk"
+  "worst_fixtures": [
+    "Mateta",
+    "Munoz",
+    "M.Salah"
   ],
-  "motivation_flags": {
-    "high_motivation": [
-      "WHU — relegation decider vs Leeds, Bowen is captain, maximum intensity expected"
-    ],
-    "low_motivation_rotation_risk": [
-      "MCI — season position secured, Haaland absent, Gvardiol benched, heavy rotation confirmed",
-      "ARS — Raya and Gabriel both out, squad rotation in progress",
-      "NFO vs BOU — mid-table dead rubber both sides, low intensity expected",
-      "LIV — likely champions, team motivation low though Salah has personal incentives"
-    ]
-  },
+  "guaranteed_zeros": [
+    "Raya (not in ARS squad)",
+    "Gabriel (out for season — hamstring)",
+    "Haaland (UNAVAILABLE per squad.json)"
+  ],
+  "high_rotation_risk": [
+    "Gvardiol (confirmed benched, MCI rotating entire squad)"
+  ],
+  "dgw_players": [],
+  "bgw_players": [],
   "captain_analysis": {
     "current_captain": "Bowen (WHU)",
-    "verdict": "Defensible. WHU vs Leeds in a relegation decider is the highest-motivation fixture in GW38. Home advantage. Bowen is West Ham's main creative threat and will play the full 90 in a must-win context. Risk: if WHU go behind early the game plan could change. High ceiling, medium floor.",
+    "verdict": "Defensible. WHU vs Leeds in a relegation decider is the highest-motivation fixture in GW38. Home advantage. Bowen is West Ham's main creative threat and plays the full 90 in a must-win context. High ceiling, medium floor.",
     "vice_captain": "M.Salah (LIV)",
-    "vc_verdict": "Reasonable fallback. Salah has personal Golden Boot incentives even if Liverpool are champions and team rotation happens. Away fixture is the main concern. If Bowen blanks, Salah at least guarantees minutes."
+    "vc_verdict": "Reasonable fallback. Salah has personal Golden Boot incentives even with team rotation risk. Away fixture is the main concern. Guarantees minutes if Bowen blanks."
   },
-  "dgw_bgw": "none for GW38 — standard single gameweek. No double or blank gameweeks confirmed. All 20 teams play exactly one fixture. No TC chip opportunity (no DGW) and no FH trigger (no BGW)."
+  "data_quality_note": "features.json is a SAMPLE file with confirmed GW38 fdr/loc data for 6 players: Haaland (MCI H fdr=2), M.Salah (LIV A fdr=3), Mbeumo (BRE H fdr=2), Gabriel (ARS H fdr=3), Mateta (CRY A fdr=3), Rogers (AVL H fdr=2). All others use contextual intel (NFO vs BOU confirmed, WHU vs Leeds confirmed) or flat fdr=3 from xpts.json.",
+  "summary": "GW38 final gameweek — no DGW, no BGW, all 20 teams play once. Best confirmed fixtures (fdr=2, H): Mbeumo (BRE), Rogers (AVL), and NFO trio (Aina/Anderson/Wood vs BOU). Bowen (WHU vs Leeds, captain) has maximum motivation via relegation decider. Worst confirmed: Mateta and Munoz (CRY A fdr=3), M.Salah (LIV A fdr=3). Three guaranteed zeros: Raya (not in squad), Gabriel (season-ending injury), Haaland (unavailable). Gvardiol is benched rotation risk despite MCI H fdr=2."
 }

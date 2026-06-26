@@ -1,40 +1,41 @@
 {
   "gw": 38,
-  "updated": "2026-06-19T00:00:00Z",
+  "updated": "2026-06-26T00:00:00Z",
   "agent": "intel",
   "pillar": "ELITE-OWN",
-  "method": "EO triangulated from league.json (15-man template = Haaland/B.Fernandes/Gabriel; differentials cluster at 6.7% = 1 of 15 managers) + GW38 web signals. CRITICAL UPDATE supersedes prior draft: confirmed news now has Haaland CONFIRMED BENCHED (Guardiola World Cup rest) - he returns 0 for the ENTIRE FIELD, not just this user. Web confirms 62.5% owned + ~35% captaincy poll going into a blank. Gabriel confirmed OUT for season (was DOUBTFUL, now ruled out).",
-  "template_captain": "Haaland was the template captain (~35% captaincy poll, 62.5% owned) but is CONFIRMED BENCHED and returns 0 for everyone. This is a LEAGUE-WIDE leveller: the ~35% who captained Haaland eat a 0. The captaincy vacuum shifts to Salah (LIV) and B.Fernandes (MUN). Salah is the smart-money pivot captain and the new de facto template armband for anyone tracking the news.",
-  "effective_ownership": [
-    {"player": "Haaland", "eo_pct": 97, "captain_eo_pct": 35, "in_squad": true, "note": "BENCHED-0 LEAGUE-WIDE. ~62.5% own + ~35% (C). His blank is NEUTRAL to us - we correctly hold him on the bench (slot 13). The 35% who armbanded him lose vs the field."},
-    {"player": "M.Salah", "eo_pct": 56, "captain_eo_pct": 22, "in_squad": true, "note": "Our VICE. Now the highest-floor pivot captain post-Haaland-blank; captaincy share rising. HIGH EO + HIGH FLOOR = captain shield."},
-    {"player": "B.Fernandes", "eo_pct": 45, "captain_eo_pct": 26, "in_squad": false, "note": "2nd in captaincy poll. We do NOT own - secondary captain-blowup exposure if he hauls (away at Brighton)."},
-    {"player": "Bowen", "eo_pct": 12, "captain_eo_pct": 10, "in_squad": true, "captain": true, "note": "Our current (C). Low-EO differential captain - home v Leeds, on pens. Lower floor than Salah."},
-    {"player": "Mbeumo", "eo_pct": 18, "captain_eo_pct": 2, "in_squad": true, "note": "MUN, owned, rarely captained - covered."},
-    {"player": "Gabriel", "eo_pct": 38, "captain_eo_pct": 0, "in_squad": true, "note": "CONFIRMED OUT for season - dead asset. Template-owned so a 0 is roughly neutral vs field, but MUST be subbed out of XI for a playing defender (Munoz)."},
-    {"player": "Rogers", "eo_pct": 7, "captain_eo_pct": 0, "in_squad": true, "note": "Sub-8% differential we own - small edge vs league (AVL away at City, ceiling capped)."}
-  ],
-  "template_core": [
-    {"player": "Haaland", "eo_est": 97},
-    {"player": "M.Salah", "eo_est": 56},
-    {"player": "B.Fernandes", "eo_est": 45},
-    {"player": "Gabriel", "eo_est": 38}
+  "template_captain": "M.Salah",
+  "template_captain_eo": "~56% owned / ~22% captain (de facto #1 once Haaland blanks)",
+  "user_captain": "Bowen",
+  "captain_aligned_with_template": false,
+  "haaland_note": "Haaland was the true #1 template captain (~62.5% owned, ~35% captain poll) but is CONFIRMED OUT GW38 (World Cup rest, Man City farewell rotation, bench slot 13). His blank is a LEAGUE-WIDE leveller: the ~35% who captained him eat a 0. With Haaland removed the de facto template captain rolls to M.Salah (highest floor, confirmed LIV starter, his final Liverpool game) with B.Fernandes (~26% poll, top of FFS poll, confirmed MUN starter) as the secondary pivot. We own Salah (vice) but NOT Bruno.",
+  "high_eo_risk_players": [
+    {"player": "Haaland", "eo_est": "~62.5% owned / 35% captain", "in_squad": true, "risk": "OUT, returns 0 for the whole field. We hold him on the bench (slot 13) so his blank is neutral to us. No action needed beyond keeping him benched."},
+    {"player": "M.Salah", "eo_est": "~56% own / ~22% (C)", "in_squad": true, "risk": "Our VICE. New de facto template captain post-Haaland. HIGH FLOOR. If the field pivots the armband to Salah and he hauls while we keep (C) on Bowen, that is the single biggest avoidable rank loss this GW."},
+    {"player": "B.Fernandes", "eo_est": "~45% own / ~26% (C)", "in_squad": false, "risk": "We do NOT own Bruno and cannot (final GW, no helpful chip). Unavoidable captain-shield exposure: a Bruno haul compounds any Salah-captain gap."},
+    {"player": "Gabriel", "eo_est": "~38% own", "in_squad": true, "risk": "Effectively OUT (leg injury + Arsenal rotation). Template-owned so a 0 is roughly neutral vs field, but the XI slot must be covered — auto-sub to Munoz (slot 14)."}
   ],
   "captain_shield": [
-    {"player": "M.Salah", "eo_est": 56, "captain_pct": 22, "why": "MUST-NOT-MISS. With Haaland blanked, Salah is the highest-floor premium and the smart-money captain pivot - share rising toward the top of the poll. We own him as VICE. If everyone pivots to Salah (C) and he hauls while we keep (C) on Bowen, that is the single biggest avoidable rank loss this GW. DO NOT FADE. APEX Protocol (cum_pts leader, nailed premium, not GK) also points to Salah. sim-lab/gaffer: keep/move (C) to Salah."}
+    {"player": "M.Salah", "eo_est": "~56% / ~22% (C)", "why": "MUST-NOT-MISS. With Haaland blanked, Salah is the highest-floor premium and the smart-money captain pivot — share rising to the top of the poll. We own him as VICE, so aligning is FREE. Backtest lesson: fading the template captain costs points. APEX Protocol (cum_pts leader, nailed premium, not GK) also points to Salah. sim-lab/gaffer: DO NOT FADE — consider moving the armband from Bowen to Salah."}
   ],
   "differentials": [
-    {"player": "Bowen", "eo_est": 12, "ceiling": "as (C) 24-40", "why": "Pens + home v Leeds (nothing to play for), survival-motivated WHU. Only 10% captain him so a Bowen haul gains rank. Rank-chasing captain lever ONLY - lower floor than Salah, so it is the high-variance option, not the safe one."},
-    {"player": "Mateta", "eo_est": 9, "ceiling": "13-16", "why": "CRY forward, low EO, pen/aerial threat - owned differential vs template-heavy rivals."},
-    {"player": "Wood", "eo_est": 8, "ceiling": "12-15", "why": "NFO target-man, low EO, goal threat - owned swing potential."}
+    {"player": "Bowen", "eo_est": "~12% own / ~10% (C)", "ceiling": "as (C) 24-40", "why": "Our current captain. Confirmed WHU starter, on pens, dual goal threat. Only ~10% captain him so a Bowen haul gains rank — but lower floor than Salah. This is the high-variance rank-CHASE lever, not the safe play."},
+    {"player": "Mateta", "eo_est": "~9%", "ceiling": "13-16", "why": "CRY forward, low EO, pen/aerial threat — owned differential vs template-heavy rivals (note: medical flags Palace bench/rotation risk)."},
+    {"player": "Wood", "eo_est": "~8%", "ceiling": "12-15", "why": "NFO target-man, low EO, confirmed starter — owned points-swing potential."},
+    {"player": "Rogers", "eo_est": "~7%", "ceiling": "10-13", "why": "Sub-8% AVL midfielder we own — small genuine edge vs the league."}
   ],
-  "captain_blowup_risk": "high",
-  "blowup_players": ["M.Salah", "B.Fernandes"],
-  "differential_opportunity": "The Haaland blank is a free leveller: the ~35% who captained him eat a 0, so simply NOT captaining Haaland already lands a top-third outcome. Our owned sub-8% edges (Rogers 7%) and low-EO forwards (Mateta 9%, Wood 8%) add raw-points swing. Bowen (C) at ~10% captaincy is a genuine differential captain IF chasing rank, but carries more floor risk than the Salah pivot.",
+  "differential_alert": "We deviate from template at the armband: Bowen (~10% captain share) instead of the de facto template captain M.Salah/B.Fernandes. Bowen-C is a justified rank-chase from 7th but carries template-captain downside per the backtest. SAFER ALTERNATIVE: move the armband to M.Salah (in-squad as vice, high floor, de facto template) to shield the captain-fade penalty. Best pure differentials we own: Wood/Anderson (NFO, low EO, confirmed starters).",
+  "mini_league_standings": [
+    {"rank": 1, "manager": "Krisss.", "points": 2365},
+    {"rank": 2, "manager": "(not populated in league.json cache)", "points": null},
+    {"rank": 3, "manager": "(not populated in league.json cache)", "points": null},
+    {"rank": 4, "manager": "(not populated in league.json cache)", "points": null},
+    {"rank": 5, "manager": "(not populated in league.json cache)", "points": null},
+    {"rank": 7, "manager": "Puwakies Jjimyang (USER)", "points": 2180}
+  ],
   "rank_risks": [
-    {"player": "M.Salah", "risk": "HIGH", "why": "If we keep (C) on Bowen and the field pivots Salah (C) into a haul, we lose ground to most of the league. Salah is in our squad as vice - the fix is free: move the armband."},
-    {"player": "B.Fernandes", "risk": "MEDIUM", "why": "26%-captained template MID we do NOT own. A Bruno haul away at Brighton compounds any Salah-captain gap."},
-    {"player": "Gabriel", "risk": "MEDIUM", "why": "CONFIRMED OUT - blanks an XI slot if not subbed. Swap to Munoz pre-deadline (auto-sub may not cover cleanly)."}
+    {"player": "M.Salah", "risk": "HIGH", "why": "If we keep (C) on Bowen and the field pivots Salah (C) into a haul, we lose ground to most of the 15-man league. Fix is FREE — Salah is already our vice; move the armband."},
+    {"player": "B.Fernandes", "risk": "MEDIUM", "why": "~26%-captained template MID we do NOT own and cannot add. A Bruno haul compounds any Salah-captain gap."},
+    {"player": "Gabriel", "risk": "MEDIUM", "why": "Effectively OUT — blanks an XI slot if the auto-sub to Munoz does not fire cleanly. Ensure Munoz starts in his place."}
   ],
-  "recommendation": "Haaland's confirmed league-wide blank neutralises our biggest template gap - holding him on the bench (slot 13) is now correct and costs nothing. The live risk has shifted to the captaincy pivot: per APEX Protocol and captain-shield logic, MOVE the armband from Bowen to M.Salah (our vice) - he is the must-not-miss, highest-floor pivot and the new template captain post-Haaland. Sub Gabriel (OUT) -> Munoz to avoid blanking an XI slot. If purely rank-chasing in a decided spot, Bowen (C)/TC is the high-variance lever, but the floor-correct, captain-shield play is Salah (C). Net: Salah (C), Bowen -> normal start, bench Haaland, start Munoz for Gabriel."
+  "summary": "GW38 final week. The true #1 template captain Haaland (~62.5% owned, 35% poll) is CONFIRMED OUT (World Cup rest / City farewell rotation) — a league-wide leveller that zeroes the ~35% who captained him, and we correctly hold him on the bench (neutral to us). The de facto template captain rolls to M.Salah (~56% own, highest floor, confirmed LIV starter in his final Liverpool game), with B.Fernandes the secondary pivot. We own Salah as vice but NOT Bruno — Bruno is the unavoidable captain-shield exposure. Our captain is Bowen (~10% share) = a differential armband NOT aligned with the template. Per the backtest lesson (fading template captains costs points), the floor-correct play is to move the armband to M.Salah; Bowen-C is a defensible rank-chase from 7th but is the high-variance option. Also sub Gabriel (out) -> Munoz, hold Haaland on bench."
 }

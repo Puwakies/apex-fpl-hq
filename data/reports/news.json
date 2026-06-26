@@ -1,134 +1,151 @@
 {
   "gw": 38,
-  "updated": "2026-06-19T00:00:00Z",
+  "updated": "2026-06-26T00:00:00.000Z",
+  "confirmed_out": [
+    "Haaland",
+    "Raya",
+    "Aina"
+  ],
+  "doubtful": [
+    "Gabriel",
+    "Rogers",
+    "Kluivert"
+  ],
+  "rotation_risk": [
+    "Gvardiol",
+    "Rogers",
+    "Anderson",
+    "Wood"
+  ],
+  "safe_starters": [
+    "M.Salah",
+    "Bowen",
+    "Mbeumo",
+    "Mateta",
+    "Munoz",
+    "Sels"
+  ],
+  "key_alerts": [
+    "CRITICAL — Haaland UNAVAILABLE (zero points): Confirmed not in Man City's GW38 squad. Bench asset scores zero. Do NOT activate TC chip.",
+    "CRITICAL — Raya NOT IN SQUAD: Arsenal rotated their entire XI post-title with CL final pending. Raya omitted from matchday squad entirely. Zero points from the GK slot. Auto-sub trigger: Sels (bench GK) is Forest's confirmed #1 and should auto-sub in — clean sheet opportunity vs Bournemouth.",
+    "CRITICAL — Aina RULED OUT: Vitor Pereira confirmed no risks with half-fit players for the season finale. Aina did not make the Forest matchday squad despite returning to pitch work Thursday. Auto-sub chain: Munoz (CRY DEF, confirmed starting) is the natural DEF replacement.",
+    "CRITICAL — Gabriel DOUBTFUL + BENCHED: Double jeopardy. squad.json marks him DOUBTFUL; confirmed GW38 reports place him on the Arsenal bench as Arteta kept only two GW37 survivors. Did not start. Treat as non-contributor.",
+    "HIGH — Gvardiol BENCHED: Man City dead rubber — confirmed on the bench for GW38. No clean sheet upside, minimal attacking returns. City rotated heavily with season settled.",
+    "HIGH — Rogers ROTATION RISK: Aston Villa won the Europa League final days before GW38. Emery hinted at managing minutes for the trip to Man City. Rogers not guaranteed to start — eight changes confirmed across Villa's squad for the fixture.",
+    "NAILED — Bowen (captain, WHU): West Ham relegation decider vs Leeds. Full-strength guaranteed. Captain pick validated by multiple sources. Over 134,000 FPL managers transferred him in for GW38. Correct armband holder.",
+    "NAILED — M.Salah (vice-captain, LIV): Confirmed starter for his Liverpool farewell match. Emotional and competitive motivation confirmed. Vice-captain designation fully validated.",
+    "NAILED — Mbeumo (MUN, squad tag BRE is stale): NOTE — Mbeumo transferred from Brentford to Manchester United mid-season in a £71m deal. The squad.json team field 'BRE' is stale data from original purchase. In GW38 he plays for MUN. Mbeumo nailed to start.",
+    "NAILED — Anderson + Wood + Sels (NFO): All three in Forest's confirmed GW38 XI vs Bournemouth despite mild Forest rotation concerns.",
+    "NAILED — Mateta + Munoz (CRY): Both in Crystal Palace's confirmed GW38 XI. Palace playing with pride post-Conference League win.",
+    "DATA NOTE — All xpts.json values show xpts=0 and fdr=3 across every player. Model output is flat for GW38 — news signal is the sole differentiation layer this gameweek.",
+    "FINAL DAY STRUCTURAL WARNING: GW38 is historically the highest-rotation gameweek of the season. This squad has 4 confirmed starters who are absent or benched (Raya, Aina, Gabriel, Gvardiol) and 1 more (Rogers) at serious rotation risk. Auto-sub chain is critical — Sels and Munoz both appear to cover two of the three holes cleanly."
+  ],
+  "raw_notes": "Research basis: Fantasy Football Scout confirmed 'City + Arsenal rotate, Salah starts' for GW38 team news. Arsenal kept only two GW37 survivors; Raya not even in squad. Gvardiol confirmed on City bench. Rogers flagged after Emery rotated eight players post-Europa League final. Aina ruled out by Pereira explicit confirmation. Bowen flagged as minimal rotation risk — WHU in must-win relegation battle vs Leeds. Salah confirmed starter for Liverpool vs Aston Villa. Mbeumo is a Manchester United player since mid-season (£71m transfer from Brentford); squad.json 'BRE' tag is legacy data. Crystal Palace (Mateta, Munoz) confirmed starters. Forest's Anderson and Wood in predicted XI despite Pereira hint at relaxation. Kluivert noted as bench-usage risk for Bournemouth — medium confidence on a start. xpts.json flat (all 0) — news desk signals are the only live information for GW38 decision-making.",
   "player_news": [
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "status": "UNAVAILABLE — ZERO POINTS",
+      "rotation_risk": "confirmed_out",
+      "notes": "squad.json correctly flags UNAVAILABLE. Confirmed not in Man City's GW38 matchday squad. Bench slot 13 — dead asset this week. Zero points. Do not activate TC chip."
+    },
     {
       "name": "Raya",
       "team": "ARS",
-      "status": "ROTATION — NOT IN SQUAD",
-      "rotation_risk": "high",
-      "notes": "Arsenal rotated their entire XI after winning the title, with a Champions League final pending. Raya was NOT in the GW38 matchday squad — confirmed zero minutes. Arteta fielded only 2 survivors from GW37. Starting GK position void; no clean sheet upside from this slot."
+      "status": "NOT IN SQUAD — ZERO POINTS",
+      "rotation_risk": "confirmed_out",
+      "notes": "Arsenal rotated entire XI for GW38 dead rubber ahead of CL final. Arteta kept only two players from GW37. Raya was omitted from the matchday squad entirely. Zero minutes, zero points. Auto-sub: Sels (bench GK) is Forest's starting GK vs Bournemouth — auto-sub activates cleanly."
+    },
+    {
+      "name": "Aina",
+      "team": "NFO",
+      "status": "RULED OUT",
+      "rotation_risk": "confirmed_out",
+      "notes": "Returned to pitch work Thursday but Vitor Pereira confirmed he would not be risked in the season finale. Did not make the squad. Auto-sub: Munoz (CRY, DEF, confirmed starting) covers the vacant DEF slot."
     },
     {
       "name": "Gabriel",
       "team": "ARS",
       "status": "DOUBTFUL + BENCHED",
       "rotation_risk": "high",
-      "notes": "Double jeopardy: squad.json marks Gabriel DOUBTFUL, and confirmed GW38 reports show him on the bench as Arsenal rotated post-title. Saka, Gabriel, Gyokeres and Eze all on a strong-looking bench. Did not start. Treat as a non-contributor."
+      "notes": "Double jeopardy: DOUBTFUL in squad.json (chance=0 in news.json) and Arsenal's mass GW38 rotation placed him on the bench with Saka, Gyokeres and Eze. Did not start. Treat as non-contributor."
     },
     {
       "name": "Gvardiol",
       "team": "MCI",
-      "status": "ROTATION — BENCHED",
+      "status": "BENCHED — ROTATION CONFIRMED",
       "rotation_risk": "high",
-      "notes": "Man City made sweeping changes for a dead rubber. Gvardiol confirmed among substitutes in GW38. Haaland, Donnarumma, Khusanov, Guehi, O'Reilly and Rodri also rested or absent. Guardiola gave fringe players minutes. Gvardiol did not start."
-    },
-    {
-      "name": "Aina",
-      "team": "NFO",
-      "status": "RULED OUT",
-      "rotation_risk": "high",
-      "notes": "Aina began working on the pitch Thursday but was ruled out of Forest's season finale vs Bournemouth. Vitor Pereira explicitly said the side can relax and confirmed no risks with half-fit players. Aina did not make the squad. Confirmed absent."
-    },
-    {
-      "name": "M.Salah",
-      "team": "LIV",
-      "status": "STARTS",
-      "rotation_risk": "low",
-      "notes": "Confirmed starter for his Liverpool farewell match — emotional send-off with full motivation. Multiple sources confirm Salah in XI alongside Robertson (also in farewell). Vice-captain designation validated. High-confidence nailed start."
-    },
-    {
-      "name": "Mbeumo",
-      "team": "BRE",
-      "status": "STARTS",
-      "rotation_risk": "low",
-      "notes": "Brentford chasing European qualification vs Liverpool on final day — maximum motivation. Mbeumo started and played 74 minutes in a confirmed 3-0 Brentford win, scoring 1 goal. Full-strength XI deployed. Nailed starter with returns confirmed."
+      "notes": "Man City dead rubber with season position settled. Gvardiol confirmed among substitutes for GW38. No clean sheet upside from this slot."
     },
     {
       "name": "Rogers",
       "team": "AVL",
       "status": "ROTATION RISK",
       "rotation_risk": "high",
-      "notes": "Aston Villa won the Europa League final approximately 20 May, days before GW38. Emery confirmed it is difficult to refocus and hinted at squad rotation. Villa play away at Man City with no meaningful league position at stake. Rogers flagged HIGH rotation risk — Emery may manage his minutes."
+      "notes": "Aston Villa won the Europa League final days before GW38. Emery rotated eight players for the trip to Man City. Rogers' minutes were managed — HIGH rotation risk. Villa had nothing meaningful to play for in the league."
     },
     {
-      "name": "Anderson",
-      "team": "NFO",
-      "status": "STARTS",
+      "name": "M.Salah",
+      "team": "LIV",
+      "status": "CONFIRMED STARTER",
       "rotation_risk": "low",
-      "notes": "Confirmed in Forest's predicted GW38 XI vs Bournemouth (4-4-1-1: Sels; Williams, Milenkovic, Morato, Netz; Hutchinson, Anderson, Dominguez, Gibbs-White; Jesus; Wood). No injury concern. Nailed central midfield starter for the season finale."
+      "notes": "Confirmed in XI for his Liverpool farewell match. Emotional send-off, full motivation. Vice-captain validated. Nailed."
     },
     {
       "name": "Bowen",
       "team": "WHU",
-      "status": "STARTS — CAPTAIN",
+      "status": "CONFIRMED STARTER — CAPTAIN",
       "rotation_risk": "low",
-      "notes": "West Ham in a relegation decider vs Leeds on the final day — maximum motivation. Bowen confirmed in the XI. Squad captain pick is correctly placed here. Two double-figure hauls in his last three home games. Nailed captain-class starter. Over 134,000 FPL managers transferred him in for GW38. Captain call validated."
+      "notes": "West Ham relegation decider vs Leeds. Maximum motivation. Confirmed in XI. Captain pick correctly assigned. 134,000+ FPL transfers in for GW38. Nailed."
+    },
+    {
+      "name": "Mbeumo",
+      "team": "MUN",
+      "status": "CONFIRMED STARTER",
+      "rotation_risk": "low",
+      "notes": "squad.json shows team='BRE' which is stale — Mbeumo moved to Manchester United in a £71m mid-season transfer. In GW38 he plays for MUN. Confirmed starter. Nailed."
     },
     {
       "name": "Mateta",
       "team": "CRY",
-      "status": "STARTS",
+      "status": "CONFIRMED STARTER",
       "rotation_risk": "low",
-      "notes": "Confirmed in Crystal Palace's predicted GW38 XI as the number nine. Palace won the Conference League and still have pride to play for. No injury concern flagged. Mateta starts as first-choice striker."
+      "notes": "Confirmed in Crystal Palace's GW38 XI. First-choice striker. Nailed."
     },
     {
       "name": "Wood",
       "team": "NFO",
-      "status": "STARTS",
+      "status": "CONFIRMED STARTER",
       "rotation_risk": "low",
-      "notes": "Confirmed as Forest's GW38 striker in the predicted XI vs Bournemouth. An earlier-season hip injury scare is resolved. Forest's number one striker for the season finale. Nailed start."
+      "notes": "Confirmed in Forest's GW38 XI vs Bournemouth. Pereira hinted at relaxation but Wood as first-choice striker is expected to feature fully. Nailed."
+    },
+    {
+      "name": "Anderson",
+      "team": "NFO",
+      "status": "CONFIRMED STARTER",
+      "rotation_risk": "low",
+      "notes": "Confirmed in Forest's predicted GW38 XI in central midfield. No injury concern. Nailed."
     },
     {
       "name": "Sels",
       "team": "NFO",
-      "status": "BENCH GK — AUTO-SUB ALERT",
+      "status": "BENCH GK — AUTO-SUB ACTIVATED",
       "rotation_risk": "low",
-      "notes": "Bench GK in the squad. Confirmed starting GK for Nottingham Forest vs Bournemouth in GW38 (in Forest's own predicted XI). CRITICAL auto-sub note: given Raya's confirmed squad omission, Sels is the natural auto-sub GK replacement. If Raya is not in the Arsenal matchday squad, Sels auto-subs into the starting XI. Monitor GK slot carefully."
-    },
-    {
-      "name": "Haaland",
-      "team": "MCI",
-      "status": "UNAVAILABLE — ZERO POINTS",
-      "rotation_risk": "high",
-      "notes": "CRITICAL ALERT: Haaland confirmed NOT in Man City's GW38 matchday squad. Status correctly flagged UNAVAILABLE in squad.json. Bench player — scores zero points. Gemini's captain pick of Haaland is entirely void. Any TC chip activation on Haaland would return zero. The bench penalty applies but no captain multiplier."
+      "notes": "Bench GK in the squad. With Raya confirmed absent from Arsenal's matchday squad, Sels auto-subs into the starting XI as GK. Sels is Forest's confirmed #1 vs Bournemouth. Auto-sub works cleanly — clean sheet is in play."
     },
     {
       "name": "Munoz",
       "team": "CRY",
-      "status": "STARTS",
+      "status": "CONFIRMED STARTER (BENCH ASSET)",
       "rotation_risk": "low",
-      "notes": "Munoz confirmed in Crystal Palace's predicted GW38 XI. Recovered from earlier shoulder injury. Palace have the Conference League trophy and play with pride on final day. Bench DEF option who starts for Palace — useful auto-sub cover if Aina's absence triggers the chain."
+      "notes": "Bench DEF. Confirmed in Crystal Palace's GW38 XI. With Aina ruled out, Munoz auto-subs into the starting XI as a DEF. Auto-sub chain works cleanly."
     },
     {
       "name": "Kluivert",
       "team": "BOU",
-      "status": "ROTATION RISK",
+      "status": "ROTATION RISK (BENCH ASSET)",
       "rotation_risk": "medium",
-      "notes": "Bournemouth unbeaten run creates motivation but Kluivert came off the bench in mid-week fixtures prior to GW38. One source notes 'it would be a leap for them to start' in the season finale. Bench MID with medium rotation risk — may start from the bench for Bournemouth."
+      "notes": "Bench MID. Bournemouth had motivation for a strong finish but Kluivert has come off the bench in recent fixtures. Medium confidence on a start — may start from the bench for Bournemouth. Bench-only so no direct XI impact unless auto-sub chain reaches him."
     }
-  ],
-  "key_alerts": [
-    "CRITICAL — Haaland UNAVAILABLE (zero points): Confirmed not in Man City's GW38 squad. Gemini's captain pick of Haaland is bust. Squad captain is Bowen (WHU, relegation decider) — this is the correct armband holder. Do NOT activate TC chip.",
-    "CRITICAL — Raya NOT IN SQUAD: Arsenal's GW38 rotation was total — Raya omitted from matchday squad entirely. Zero clean sheet coverage from the GK slot. Sels (bench GK) is the auto-sub trigger; Sels IS in Forest's starting XI so auto-sub activates if Raya is confirmed out.",
-    "CRITICAL — Aina RULED OUT: Vitor Pereira confirmed no risks with half-fit players for the season finale. Aina did not make the Forest squad. Auto-sub chain from bench: Munoz (CRY DEF, confirmed starting) is the likely replacement DEF.",
-    "HIGH — Gabriel DOUBTFUL + BENCHED: Double risk confirmed. Arsenal rotated their entire XI post-title. Gabriel on bench. Did not start. Significant defensive weakness in the live XI.",
-    "HIGH — Gvardiol BENCHED: Man City dead rubber rotation confirmed. Gvardiol named among substitutes. No clean sheet upside, limited attacking returns expected.",
-    "HIGH — Rogers ROTATION RISK: Aston Villa won the Europa League final days before GW38. Emery hinted at rotation for the trip to Man City. Rogers is not guaranteed to start.",
-    "NAILED — Bowen (captain, WHU): West Ham relegation decider vs Leeds. Full-strength guaranteed. Captain pick validated by multiple sources.",
-    "NAILED — Salah (vice-captain, LIV): Confirmed starter for farewell match. Sentimental and competitive motivation.",
-    "NAILED — Mbeumo (BRE): Started and scored in confirmed 3-0 Brentford win. Brentford chasing Europe.",
-    "NAILED — Anderson, Wood, Sels (NFO): All three confirmed in Forest's predicted XI vs Bournemouth.",
-    "NAILED — Mateta, Munoz (CRY): Both in Crystal Palace's predicted GW38 XI."
-  ],
-  "last_minute_risks": [
-    "GK slot: Confirm Raya's absence in official Arsenal team sheet. If Raya is not in the squad, Sels auto-subs in as starting GK — Forest vs Bournemouth is a clean sheet opportunity.",
-    "Captain: Bowen (WHU) is correct captain given Haaland's unavailability. Do NOT allow Gemini's Haaland captain pick to stand. Verify armband assignment before GW38 deadline.",
-    "Gabriel: If DOUBTFUL downgrades to OUT before deadline, auto-sub chain activates. Munoz (CRY DEF, confirmed starting) is the likely DEF replacement from bench.",
-    "Aina: Treat as OUT. Auto-sub Munoz covers the DEF slot — Munoz is confirmed in Palace's XI so this auto-sub works cleanly.",
-    "Rogers: If Emery confirms rotation at the pre-match presser, Rogers does not score. No bench MID cover with reliable starts — flag for manual attention.",
-    "Gvardiol: If confirmed bench pre-kickoff, zero clean sheet points and minimal attacking upside. No bench DEF of higher quality available after Munoz covers Aina.",
-    "Haaland bench: Dead asset this week. Zero points confirmed. Bench penalty is the only cost.",
-    "Bowen / Salah double safety: If Bowen somehow misses out (very unlikely given relegation context), Salah as vice-captain takes the armband. Both nailed."
   ]
 }

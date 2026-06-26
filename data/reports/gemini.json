@@ -1,8 +1,15 @@
 {
   "engine": "gemini",
   "gw": 38,
+  "updated": "2026-06-26T00:00:00Z",
   "captain": "Haaland",
+  "captain_conflict": true,
+  "captain_conflict_reason": "Haaland UNAVAILABLE — confirmed absent from Man City GW38 squad (World Cup rest with Norway). Bench slot 13, chance_pct 0.",
+  "effective_captain": "M.Salah",
   "vice_captain": "Gabriel",
+  "vice_conflict": true,
+  "vice_conflict_reason": "Gabriel OUT — right leg injury sustained Apr 5 2026, Arsenal rotating heavily for GW38. Chance_pct 0. Auto-sub to Munoz (slot 14) activates.",
+  "captain_xpts": 14,
   "starting_xi": [
     { "name": "Raya",     "team": "ARS", "position": "GK",  "is_captain": false, "is_vice": false },
     { "name": "Gabriel",  "team": "ARS", "position": "DEF", "is_captain": false, "is_vice": true  },
@@ -24,25 +31,17 @@
   ],
   "transfer_out": null,
   "transfer_in": null,
-  "transfer_suggestion": "No transfers required for final gameweek",
-  "chip": null,
-  "captain_xpts": 14,
+  "transfer": "none",
+  "chip": "none",
   "projected_xpts": 85,
   "confidence": "high",
   "key_risk": "Haaland rotation risk",
-  "key_risks": [
-    "CRITICAL: Haaland is UNAVAILABLE (not in Man City squad for GW38). If Gemini picked Haaland as captain, this is a stale data issue - Haaland will score 0.",
-    "Haaland rotation risk (flagged by Gemini itself, but the real issue is confirmed unavailability, not rotation)",
-    "Vice captain Gabriel takes the captain armband if Haaland does not play — projected xPts will collapse significantly from the stated 85"
-  ],
   "critical_flags": [
     "CRITICAL — CAPTAIN INVALID: Haaland (MCI, FWD) is CONFIRMED OUT for GW38. World Cup rest + Guardiola tactical omission. Gemini's captain pick scores 0. Captain xPts of 14 is void.",
-    "CRITICAL — VICE CAPTAIN INVALID: Gabriel (ARS, DEF) is CONFIRMED OUT for GW38. Arteta made 8 changes; Gabriel is in the B-team and did not play. VC pick also scores 0.",
-    "DOUBLE ARMBAND FAILURE: Both armband picks are confirmed absent. Effective captaincy auto-cascades in FPL to the next available starter in squad order. Based on XI ordering that is M.Salah — who is himself 70% doubt (managed sub, muscle injury). Bowen (WHU, NAILED, on penalties) is the strongest available captain in this XI.",
-    "Aina (NFO, DEF) is CONFIRMED OUT — hamstring surgery. Starting XI starter scores 0; auto-sub rules apply.",
-    "M.Salah is 70% doubt — if he misses, Gemini loses another scoring asset.",
-    "Gemini's projected_xpts of 85 is based on Haaland captaincy and a full XI including confirmed absentees — this figure is void. Real projected output is substantially lower.",
-    "Bowen (WHU, FWD) is NAILED and on penalties — WHU vs Leeds is a relegation battle. Strongest surviving asset in this XI for captaincy cascade purposes."
+    "CRITICAL — VICE CAPTAIN INVALID: Gabriel (ARS, DEF) is CONFIRMED OUT for GW38. Right leg injury (Apr 5 2026); Arsenal rotated heavily. VC pick also scores 0.",
+    "DOUBLE ARMBAND FAILURE: Both armband picks are confirmed absent. FPL auto-cascades armband to next available starter in XI order. Effective captain is M.Salah (slot 5, 100% chance, confirmed Liverpool starter, final appearance).",
+    "Projected_xpts of 85 is based on stale Haaland captaincy data — real output will be substantially lower.",
+    "Additional XI risks: Raya confirmed absent (Arsenal rotation, 0% chance) — Sels auto-subs in at GK. Gvardiol on City bench (50% chance). Mateta on Palace bench (55% chance)."
   ],
-  "notes": "CRITICAL: Haaland is UNAVAILABLE (not in Man City squad for GW38). If Gemini picked Haaland as captain, this is a stale data issue - Haaland will score 0. Gemini cache was last updated 2026-06-04T13:47:03.626Z and does not reflect current squad availability. Note: in the raw cache (gemini.json), Haaland appears on the BENCH — Gabriel is listed as the starting XI vice-captain. The captain field in the cache names Haaland but he is not in the starting_xi, suggesting Gemini's own export may have partially flagged a lineup conflict. Regardless, Haaland scoring 0 voids the stated 85 projected_xpts."
+  "notes": "Gemini cache last updated 2026-06-04T13:47:03.626Z — predates GW38 confirmed team news. Haaland is on Gemini's bench (not XI) but named captain; both captain and vice picks are confirmed unavailable per medical.json. Effective captain after cascade: M.Salah (confirmed 100% starter, LIV). Auto-sub chain: Sels covers Raya at GK; Munoz covers Gabriel at DEF. Effective post-auto-sub XI: Sels, Munoz, Gvardiol, Aina, M.Salah, Mbeumo, Rogers, Anderson, Bowen, Mateta, Wood."
 }

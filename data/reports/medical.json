@@ -1,167 +1,179 @@
 {
   "gw": 38,
-  "updated": "2026-06-19T00:00:00.000Z",
+  "updated": "2026-06-26T00:00:00Z",
   "availability_matrix": [
     {
       "name": "Raya",
       "team": "ARS",
-      "pos": "GK",
+      "position": "GK",
+      "slot": 1,
+      "is_starting": true,
       "status": "unavailable",
-      "injury_detail": "Arsenal wholesale rotation after Premier League title win. Arteta rested Raya — not selected in GW38 matchday squad. Not an injury.",
       "chance_pct": 0,
-      "expected_return": "N/A (season ends GW38)",
-      "source": "data/reports/medical.json prior run — confirmed out via Arsenal rotation GW38"
+      "notes": "Confirmed NOT in Arsenal matchday squad for GW38. Arsenal wholesale rotation after Premier League title win. Not an injury — Arteta simply omitted Raya. Starting GK in our XI triggers auto-sub to Sels (bench GK, slot 12).",
+      "source": "fantasyfootballscout.co.uk GW38 team news: Arsenal + City rotate"
     },
     {
       "name": "Gabriel",
       "team": "ARS",
-      "pos": "DEF",
+      "position": "DEF",
+      "slot": 2,
+      "is_starting": true,
       "status": "unavailable",
-      "injury_detail": "Hamstring surgery confirmed April 2026 after injury vs Fulham. Arsenal officially ruled him out for the remainder of 2025-26 season. FPL flag DOUBTFUL is critically stale — he is confirmed OUT. Targeting pre-season 2026-27 return.",
       "chance_pct": 0,
-      "expected_return": "Pre-season 2026-27",
-      "source": "https://www.premierleague.com/en/news/4277298 | https://arseblog.news/2025/04/gabriel-out-for-the-season-as-surgery-required-on-hamstring-strain/ | https://www.foxsports.com/articles/soccer/arsenal-defender-gabriel-ruled-out-for-the-season-after-hamstring-injury"
+      "notes": "FPL flags DOUBTFUL but real-world status is effectively OUT for GW38. Right leg injury sustained FA Cup vs Southampton (Apr 5 2026). Arsenal rotated heavily; Gabriel listed on bench but not expected to feature given ongoing injury. FPL flag is stale. Auto-sub to Munoz (slot 14) should activate.",
+      "source": "caughtoffside.com Apr 5 2026 + fantasyfootballscout.co.uk GW38: Gabriel on strong bench"
     },
     {
       "name": "Gvardiol",
       "team": "MCI",
-      "pos": "DEF",
-      "status": "available",
-      "injury_detail": "No injury reported. Confirmed GW38 starter for Man City vs Aston Villa.",
-      "chance_pct": 95,
-      "expected_return": "GW38",
-      "source": "squad.json | Man City GW38 confirmed XI"
+      "position": "DEF",
+      "slot": 3,
+      "is_starting": true,
+      "status": "doubtful",
+      "chance_pct": 50,
+      "notes": "FPL status AVAILABLE but Man City made 9 rotational changes for GW38 (Guardiola farewell). Gvardiol confirmed on bench — not starting XI. Points potential heavily reduced.",
+      "source": "Yahoo Sports GW38 Man City rotation coverage"
     },
     {
       "name": "Aina",
       "team": "NFO",
-      "pos": "DEF",
+      "position": "DEF",
+      "slot": 4,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury flag in FPL or news.json. Forest home vs Bournemouth. Mild dead-rubber rotation risk only.",
-      "chance_pct": 80,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no entry)"
+      "chance_pct": 90,
+      "notes": "FPL status AVAILABLE. No injury flags in news.json. NFO had full motivation for GW38. No adverse team news found.",
+      "source": "squad.json + news.json cross-check"
     },
     {
       "name": "M.Salah",
       "team": "LIV",
-      "pos": "MID",
+      "position": "MID",
+      "slot": 5,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury concern. Confirmed Liverpool GW38 starter — played farewell match at Anfield. Strong motivation (CL qualification).",
-      "chance_pct": 90,
-      "expected_return": "GW38",
-      "source": "squad.json | ESPN GW38 final day live"
+      "chance_pct": 100,
+      "notes": "Confirmed starter for Liverpool GW38 — his final Liverpool appearance before departure. No injury flags. Our vice-captain.",
+      "source": "fantasyfootballscout.co.uk GW38 team news: Salah starts"
     },
     {
       "name": "Mbeumo",
-      "team": "BRE",
-      "pos": "MID",
+      "team": "MUN",
+      "position": "MID",
+      "slot": 6,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury flag. Brentford GW38 expected starter. Team-mates Henry, Milambo, Carvalho are out but Mbeumo is clear.",
-      "chance_pct": 90,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no Mbeumo entry)"
+      "chance_pct": 100,
+      "notes": "Confirmed started for Manchester United in GW38. No injury concerns. (Note: squad.json lists him under BRE but xpts.json aligns him to MUN — transferred mid-season.)",
+      "source": "fantasyfootballscout.co.uk GW38 team news + FPL signings article confirming Mbeumo at Man Utd"
     },
     {
       "name": "Rogers",
       "team": "AVL",
-      "pos": "MID",
+      "position": "MID",
+      "slot": 7,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury flag. Aston Villa chasing Champions League spot — strong motivation to field strongest XI.",
-      "chance_pct": 75,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no entry)"
+      "chance_pct": 85,
+      "notes": "FPL status AVAILABLE. No injury flags in news.json. No Aston Villa rotation concerns flagged for GW38.",
+      "source": "squad.json + news.json cross-check"
     },
     {
       "name": "Anderson",
       "team": "NFO",
-      "pos": "MID",
+      "position": "MID",
+      "slot": 8,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury flag. Forest home vs Bournemouth. Mild dead-rubber rotation risk. No fitness concern.",
-      "chance_pct": 80,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no entry)"
+      "chance_pct": 95,
+      "notes": "Confirmed in Nottingham Forest starting XI for GW38 per FFS predicted lineup (Sels; ... Sangaré, Anderson, Gibbs-White ...).",
+      "source": "fantasyfootballscout.co.uk GW38 NFO predicted lineup"
     },
     {
       "name": "Bowen",
       "team": "WHU",
-      "pos": "FWD",
+      "position": "FWD",
+      "slot": 9,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury concern. Confirmed GW38 starter for West Ham vs Leeds. User captain. Two recent double-digit hauls at London Stadium.",
-      "chance_pct": 92,
-      "expected_return": "GW38",
-      "source": "squad.json | Fantasy Football Scout GW38 news"
+      "chance_pct": 90,
+      "notes": "FPL status AVAILABLE. Our captain for GW38. No injury flags in news.json. No West Ham rotation concerns flagged.",
+      "source": "squad.json + news.json cross-check"
     },
     {
       "name": "Mateta",
       "team": "CRY",
-      "pos": "FWD",
-      "status": "available",
-      "injury_detail": "No injury flag. Confirmed in Crystal Palace GW38 starting XI vs Man City.",
-      "chance_pct": 90,
-      "expected_return": "GW38",
-      "source": "squad.json | CPFC match centre GW38 lineup"
+      "position": "FWD",
+      "slot": 10,
+      "is_starting": true,
+      "status": "doubtful",
+      "chance_pct": 55,
+      "notes": "FPL status AVAILABLE but GW38 search results indicate Mateta on Crystal Palace bench for final day — end-of-season rotation. Benched, not starting XI. Reduced points upside if he enters as sub only.",
+      "source": "Search results confirming Mateta benched GW38; FFS Crystal Palace v Arsenal lineup"
     },
     {
       "name": "Wood",
       "team": "NFO",
-      "pos": "FWD",
+      "position": "FWD",
+      "slot": 11,
+      "is_starting": true,
       "status": "available",
-      "injury_detail": "No injury flag. Forest consistent starter. Mild dead-rubber rotation risk but no fitness concern.",
-      "chance_pct": 80,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no entry)"
+      "chance_pct": 95,
+      "notes": "Confirmed in Nottingham Forest starting lineup for GW38. No injury concerns.",
+      "source": "fantasyfootballscout.co.uk GW38 NFO predicted lineup"
     },
     {
       "name": "Sels",
       "team": "NFO",
-      "pos": "GK",
+      "position": "GK",
+      "slot": 12,
+      "is_starting": false,
       "status": "available",
-      "injury_detail": "No injury flag. Forest bench GK cover. Rotation risk minimal for GKs.",
-      "chance_pct": 82,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no entry)"
+      "chance_pct": 95,
+      "notes": "Confirmed starting GK for NFO in GW38 predicted lineup. Critical bench asset — auto-sub activates in place of Raya (confirmed absent from Arsenal squad). Sels effectively becomes our GW38 starting GK.",
+      "source": "fantasyfootballscout.co.uk GW38 NFO lineup: Sels in goal"
     },
     {
       "name": "Haaland",
       "team": "MCI",
-      "pos": "FWD",
+      "position": "FWD",
+      "slot": 13,
+      "is_starting": false,
       "status": "unavailable",
-      "injury_detail": "Deliberately omitted from Man City GW38 squad vs Aston Villa. Guardiola made 9 changes in emotional final-day farewell — Haaland rested ahead of joining Norway for World Cup qualifiers. NOT an injury. Golden Boot secured (27 goals). FPL UNAVAILABLE flag is accurate.",
       "chance_pct": 0,
-      "expected_return": "N/A (season ends GW38)",
-      "source": "https://www.goal.com/en-us/lists/explained-why-erling-haaland-was-left-out-of-man-city-s-final-day-clash-with-aston-villa-as-pep-guardiola-bids-farewell/blt4f2d7301edab04f0 | https://www.youtube.com/watch?v=wH8RPrEumso"
+      "notes": "Confirmed ABSENT from Man City GW38 squad. Strategic rest ahead of World Cup with Norway — not an injury. Guardiola made 9 changes for his farewell match. Golden Boot secured (27 goals). Bench slot 13 — zero XI impact.",
+      "source": "Yahoo Sports: Why is Haaland not playing Man City's final game? + Sky Sports Guardiola farewell coverage"
     },
     {
       "name": "Munoz",
       "team": "CRY",
-      "pos": "DEF",
+      "position": "DEF",
+      "slot": 14,
+      "is_starting": false,
       "status": "available",
-      "injury_detail": "No injury flag. Confirmed in Crystal Palace GW38 starting XI at right-back vs Man City.",
-      "chance_pct": 88,
-      "expected_return": "GW38",
-      "source": "squad.json | CPFC match centre GW38 lineup"
+      "chance_pct": 95,
+      "notes": "Confirmed starter for Crystal Palace GW38 per FFS (Henderson, Munoz, Sarr among starters listed). No injury concerns. Critical: likely auto-subs into XI in place of Gabriel.",
+      "source": "fantasyfootballscout.co.uk Crystal Palace v Arsenal GW38 lineup"
     },
     {
       "name": "Kluivert",
       "team": "BOU",
-      "pos": "MID",
-      "status": "available",
-      "injury_detail": "No injury flag. Bournemouth away fixture. No relegation or European pressure — moderate end-of-season rotation risk.",
-      "chance_pct": 78,
-      "expected_return": "GW38",
-      "source": "squad.json | news.json (no entry)"
+      "position": "MID",
+      "slot": 15,
+      "is_starting": false,
+      "status": "doubtful",
+      "chance_pct": 60,
+      "notes": "FPL status AVAILABLE but GW38 search results indicate Kluivert listed among substitutes for Bournemouth rather than starting. Bench slot 15 — no XI impact but bench cover reduced.",
+      "source": "Search results confirming Kluivert on Bournemouth bench GW38"
     }
   ],
-  "critical_absences": [
-    "Haaland (MCI, FWD, bench slot 13) — CONFIRMED UNAVAILABLE GW38. Rested by Guardiola for World Cup load management. FPL UNAVAILABLE flag is accurate. 15.1m asset, 0 points GW38.",
-    "Gabriel (ARS, DEF, slot 2, starter) — CONFIRMED OUT, season over. Hamstring surgery confirmed by Arsenal in April 2026. FPL DOUBTFUL flag is critically misleading — he is OUT for remainder of 2025-26 and into 2026-27 pre-season. Automatic sub (Munoz) should activate.",
-    "Raya (ARS, GK, slot 1, starter) — CONFIRMED UNAVAILABLE GW38. Arsenal wholesale rotation post-title — Arteta did not select Raya in matchday squad. Not injury. Sels (bench GK) is the backup."
+  "confirmed_out": ["Raya", "Haaland"],
+  "doubtful": ["Gabriel", "Gvardiol", "Mateta", "Kluivert"],
+  "all_clear": ["Aina", "M.Salah", "Mbeumo", "Rogers", "Anderson", "Bowen", "Wood", "Sels", "Munoz"],
+  "auto_sub_alerts": [
+    "Raya (GK, slot 1) confirmed absent — Sels (GK, slot 12) auto-subs into starting XI as GK.",
+    "Gabriel (DEF, slot 2) effectively out — Munoz (DEF, slot 14) auto-subs into starting XI."
   ],
-  "deadline_watches": [
-    "Gabriel vs Munoz auto-sub: Gabriel (starter, slot 2) is OUT. Munoz (bench DEF, slot 14) should auto-sub in. Confirm bench order ensures Munoz is first-off-bench DEF ahead of deadline.",
-    "Raya vs Sels: Raya (GK starter) rested by Arsenal. Sels (bench GK, slot 12) is the only GK cover and should activate automatically — no action needed unless Sels has a late fitness concern.",
-    "NFO triple rotation risk: Aina (slot 4), Anderson (slot 8), Wood (slot 11) all start from Forest in a potential dead rubber. Monitor Forest final team news — any late rotation on all three could cascade badly.",
-    "Haaland on bench: Already in bench slot 13, FPL shows UNAVAILABLE — no auto-sub risk from Haaland. He scores 0."
-  ]
+  "summary": "GW38 final gameweek 2025/26. 2 confirmed out: Raya (Arsenal rotation, not injury) and Haaland (World Cup rest, bench slot 13). 4 doubts: Gabriel (leg injury, Arsenal rotation), Gvardiol (City bench, end-of-season rotation), Mateta (Palace bench, rotation), Kluivert (Bournemouth bench). Key auto-sub chain: Sels covers Raya at GK; Munoz covers Gabriel at DEF. 9 all-clear including captain Bowen, M.Salah (confirmed Liverpool starter), Mbeumo (confirmed Man Utd starter), Anderson and Wood (confirmed NFO starters)."
 }
