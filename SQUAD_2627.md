@@ -103,4 +103,47 @@
 
 ---
 
-*Generated: 2026-07-20 · APEX FPL HQ · builder `scripts/build_2627.py` · outputs `data/reports/preseason_2627_{spread,anchor}.json`*
+---
+
+## 6) 📊 อัพเดทตลาด/ทีม/นักเตะ — ปัจจุบัน (2026-07-20, พรีซีซัน ก่อน GW1)
+
+ดึงสดจาก FPL bootstrap (`scripts/market_update.py` → `data/cache/{news,price,league}.json` + `data/reports/market_2627.json`)
+
+**สถานะตลาดราคา:** ตลาดโอน GW **ยังไม่เปิด** ก่อน GW1 → ยังไม่มี price velocity (ราคายังไม่ขึ้น/ลง) จะมีข้อมูลจริงเมื่อซีซันเริ่ม
+
+**ทีมยอดนิยม (Template / EO สูง — คนเลือกเยอะ):**
+| ผู้เล่น | ทีม | ราคา | %เลือก | ผมมีไหม |
+|---|---|---|---|---|
+| Haaland | MCI | 14.7 | 62.5% | ANCHOR เท่านั้น |
+| B.Fernandes | MUN | 10.4 | 48.0% | ✅ (กัปตัน) |
+| **Semenyo** | MCI | 8.0 | 46.2% | ❌ (MCI เปิดหิน) |
+| Gabriel | ARS | 7.3 | 45.4% | ✅ |
+| Raya | ARS | 6.2 | 36.4% | ❌ (ใช้ Roefs ถูกกว่า+ฟิกซ์เจอร์ดีกว่า) |
+| João Pedro | CHE | 7.4 | 34.8% | ✅ (ม้านั่ง SPREAD) |
+| **Guéhi** | MCI | 5.1 | 32.6% | ❌ (MCI เปิดหิน) |
+| Virgil | LIV | 6.1 | 31.5% | ✅ |
+
+> **Template risk ที่ต้องรู้:** ทีม FDR-first ของผม **ตั้งใจไม่เอาสาย MCI (Haaland/Semenyo/Guéhi)** เพราะแมนซิตี้เปิด 5 เกมยากสุด — ถ้าซิตี้ระเบิดฟอร์มช่วงต้น จะโดน template สวน นี่คือ trade-off ที่แลกมากับความชัวร์ของฟิกซ์เจอร์ (แก้ได้ด้วย 1 transfer ราว GW6)
+
+**Differentials คุณภาพ (แต้มสูงปีก่อน แต่คนเลือกน้อย) — ทีมผมมีหลายตัว:**
+Gibbs-White 9.2% · Anderson(NFO) 9.4% · Truffert 5.3% · Lacroix 7.1% · Bruno G. 6.5%
+
+**เจ็บ/แบน ปัจจุบัน (ที่เกี่ยวข้อง):**
+| ผู้เล่น | ทีม | สถานะ | โอกาสลง |
+|---|---|---|---|
+| Ekitiké | LIV | INJURED | 0% |
+| Romero | TOT | INJURED | 0% |
+| Kudus | TOT | INJURED | 0% |
+| Grealish | EVE | INJURED | 0% |
+| J.Timber | ARS | DOUBTFUL | 25% |
+| Šeško | MUN | DOUBTFUL | 50% |
+| Alderete | SUN | DOUBTFUL | 50% |
+| Aina | NFO | DOUBTFUL | 75% |
+
+✅ **เช็คแล้ว: ผู้เล่นทั้ง 18 คนในทีมแนะนำ (SPREAD+ANCHOR) สถานะ AVAILABLE ครบ ไม่มีใครติดเจ็บ/แบน**
+(หมายเหตุ: Alderete กองหลัง SUN ถูก+ฟิกซ์เจอร์ดี แต่ตอนนี้ 50% → ผมใช้ Mukiele แทนถูกต้องแล้ว)
+
+---
+
+*Generated: 2026-07-20 · APEX FPL HQ · squad `scripts/build_2627.py` · market `scripts/market_update.py`*
+*Outputs: `data/reports/preseason_2627_{spread,anchor}.json`, `data/reports/market_2627.json`, `data/cache/{news,price,league}.json`*

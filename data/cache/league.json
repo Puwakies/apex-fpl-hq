@@ -1,13 +1,209 @@
 {
-  "updated": "2026-06-04T13:46:58.524Z",
+  "updated": "2026-07-20T15:21:52Z",
+  "season": "2026/27",
+  "phase": "pre-season",
   "context": {
-    "GW": 37,
-    "My Rank": 7,
-    "League Leader": "Krisss. (2365pts)",
-    "Top Differentials": "Rogers(6.7%), Watkins(6.7%), Enzo(6.7%), Bruno G.(6.7%), J.Timber(6.7%)",
-    "Template Players": "Haaland, B.Fernandes, Gabriel",
-    "Total Managers": 15
+    "GW": 1,
+    "Template Players": "Haaland(62.5%), B.Fernandes(48.0%), Semenyo(46.2%), Gabriel(45.4%), Raya(36.4%), João Pedro(34.8%)",
+    "Top Differentials": "Gibbs-White(9.2%), Anderson(9.4%), Truffert(5.3%), Casemiro(3.8%), Garner(3.6%), Lacroix(7.1%)"
   },
-  "differentials": [],
-  "template": []
+  "template": [
+    {
+      "player": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 14.7,
+      "own": 62.5
+    },
+    {
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 10.4,
+      "own": 48.0
+    },
+    {
+      "player": "Semenyo",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 8.0,
+      "own": 46.2
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 7.3,
+      "own": 45.4
+    },
+    {
+      "player": "Raya",
+      "team": "ARS",
+      "pos": "GKP",
+      "price": 6.2,
+      "own": 36.4
+    },
+    {
+      "player": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.4,
+      "own": 34.8
+    },
+    {
+      "player": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 5.1,
+      "own": 32.6
+    },
+    {
+      "player": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.1,
+      "own": 31.5
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 7.2,
+      "own": 30.2
+    },
+    {
+      "player": "Dúbravka",
+      "team": "BUR",
+      "pos": "GKP",
+      "price": 4.0,
+      "own": 25.7
+    },
+    {
+      "player": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 7.2,
+      "own": 23.3
+    },
+    {
+      "player": "Senesi",
+      "team": "BOU",
+      "pos": "DEF",
+      "price": 5.2,
+      "own": 22.0
+    },
+    {
+      "player": "Rogers",
+      "team": "AVL",
+      "pos": "MID",
+      "price": 7.3,
+      "own": 20.2
+    }
+  ],
+  "differentials": [
+    {
+      "player": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 7.6,
+      "own": 9.2,
+      "pts_2526": 188
+    },
+    {
+      "player": "Anderson",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 5.7,
+      "own": 9.4,
+      "pts_2526": 180
+    },
+    {
+      "player": "Truffert",
+      "team": "BOU",
+      "pos": "DEF",
+      "price": 4.8,
+      "own": 5.3,
+      "pts_2526": 165
+    },
+    {
+      "player": "Casemiro",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 5.8,
+      "own": 3.8,
+      "pts_2526": 165
+    },
+    {
+      "player": "Garner",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 5.2,
+      "own": 3.6,
+      "pts_2526": 159
+    },
+    {
+      "player": "Lacroix",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 5.2,
+      "own": 7.1,
+      "pts_2526": 154
+    },
+    {
+      "player": "Matheus N.",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 5.3,
+      "own": 2.9,
+      "pts_2526": 154
+    },
+    {
+      "player": "Bruno G.",
+      "team": "NEW",
+      "pos": "MID",
+      "price": 6.9,
+      "own": 6.5,
+      "pts_2526": 154
+    },
+    {
+      "player": "Dewsbury-Hall",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 5.3,
+      "own": 7.9,
+      "pts_2526": 151
+    },
+    {
+      "player": "Mukiele",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 4.6,
+      "own": 8.7,
+      "pts_2526": 151
+    },
+    {
+      "player": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 4.8,
+      "own": 1.6,
+      "pts_2526": 147
+    },
+    {
+      "player": "Gravenberch",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 5.4,
+      "own": 3.7,
+      "pts_2526": 144
+    },
+    {
+      "player": "Cunha",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 8.1,
+      "own": 8.7,
+      "pts_2526": 143
+    }
+  ]
 }

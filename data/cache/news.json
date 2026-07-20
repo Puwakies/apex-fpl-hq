@@ -1,148 +1,34 @@
 {
-  "updated": "2026-06-04T13:47:00.424Z",
+  "updated": "2026-07-20T15:21:52Z",
+  "season": "2026/27",
+  "phase": "pre-season",
+  "note": "current availability from live FPL bootstrap",
   "items": [
     {
-      "player": "White",
+      "player": "Ekitiké",
+      "team": "LIV",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Injured — chance of playing next: 0%",
+      "signal": "out"
+    },
+    {
+      "player": "J.Timber",
       "team": "ARS",
       "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 24 May",
+      "status": "DOUBTFUL",
+      "chance": 25,
+      "news": "Doubtful — chance of playing next: 25%",
       "signal": "out"
     },
     {
-      "player": "Kamara",
-      "team": "AVL",
+      "player": "Kudus",
+      "team": "TOT",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Alysson",
-      "team": "AVL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Muscle injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Jordan",
-      "team": "BUR",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Cullen",
-      "team": "BUR",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 30 Sep",
-      "signal": "out"
-    },
-    {
-      "player": "Henry",
-      "team": "BRE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Milambo",
-      "team": "BRE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Carvalho",
-      "team": "BRE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Webster",
-      "team": "BHA",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Mitoma",
-      "team": "BHA",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Tzimas",
-      "team": "BHA",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Estêvão",
-      "team": "CHE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Richards",
-      "team": "CRY",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Doucouré",
-      "team": "CRY",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Lack of match fitness - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Nketiah",
-      "team": "CRY",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Branthwaite",
-      "team": "EVE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
@@ -151,16 +37,43 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Foot injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
-      "player": "Kusi-Asare",
-      "team": "FUL",
+      "player": "Alderete",
+      "team": "SUN",
+      "pos": "DEF",
+      "status": "DOUBTFUL",
+      "chance": 50,
+      "news": "Doubtful — chance of playing next: 50%",
+      "signal": "doubt"
+    },
+    {
+      "player": "Šeško",
+      "team": "MUN",
       "pos": "FWD",
+      "status": "DOUBTFUL",
+      "chance": 50,
+      "news": "Doubtful — chance of playing next: 50%",
+      "signal": "doubt"
+    },
+    {
+      "player": "Romero",
+      "team": "TOT",
+      "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
+      "signal": "out"
+    },
+    {
+      "player": "Andersen",
+      "team": "FUL",
+      "pos": "DEF",
+      "status": "SUSPENDED",
+      "chance": 0,
+      "news": "Suspended — chance of playing next: 0%",
       "signal": "out"
     },
     {
@@ -169,17 +82,26 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
-      "player": "Gruev",
-      "team": "LEE",
-      "pos": "MID",
+      "player": "Richards",
+      "team": "CRY",
+      "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
       "signal": "out"
+    },
+    {
+      "player": "Aina",
+      "team": "NFO",
+      "pos": "DEF",
+      "status": "DOUBTFUL",
+      "chance": 75,
+      "news": "Doubtful — chance of playing next: 75%",
+      "signal": "doubt"
     },
     {
       "player": "Stach",
@@ -187,7 +109,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Ankle injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
@@ -196,169 +118,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Calf injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Bradley",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Bajcetic",
-      "team": "LIV",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Danns",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Ekitiké",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Achilles injury - Expected back 01 Jul",
-      "signal": "out"
-    },
-    {
-      "player": "Leoni",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 01 Sep",
-      "signal": "out"
-    },
-    {
-      "player": "De Ligt",
-      "team": "MUN",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Back injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Schär",
-      "team": "NEW",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Livramento",
-      "team": "NEW",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Thigh injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Krafth",
-      "team": "NEW",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Joelinton",
-      "team": "NEW",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Thigh injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "L.Miley",
-      "team": "NEW",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Leg injury - Expected back 01 Jul",
-      "signal": "out"
-    },
-    {
-      "player": "Murillo",
-      "team": "NFO",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Muscle injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Boly",
-      "team": "NFO",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Hudson-Odoi",
-      "team": "NFO",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Muscle injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Savona",
-      "team": "NFO",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Mundle",
-      "team": "SUN",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Talbi",
-      "team": "SUN",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Muscle injury - Expected back 01 Jun",
-      "signal": "out"
-    },
-    {
-      "player": "Romero",
-      "team": "TOT",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 01 Jun",
+      "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     }
   ]
