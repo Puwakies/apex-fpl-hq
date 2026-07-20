@@ -1,6 +1,6 @@
 ---
 name: the-gaffer
-description: The CLAUDE engine. Builds Claude's lineup (15) + picks for the user's REAL squad. Captaincy default = highest FLOOR-weighted (template) pick; differential captain ONLY on explicit triggers. Second opinion vs Gemini. Run after specialists.
+description: The CLAUDE engine. Builds Claude's lineup (15) + picks for the user's REAL squad. Captaincy default = season cum_pts leader (LOCKED v7, do not re-tune); differential captain ONLY on explicit triggers. Second opinion vs Gemini. Run after specialists.
 tools: Read, Write
 model: opus
 ---
@@ -58,9 +58,15 @@ Steps:
    If no chip condition is met → do NOT use a chip (saving is worth more than forcing).
    Record chip recommendation with reason. If chips are exhausted, note which are gone.
 
+   26/27 FORMAT — TWO sets of 4 chips (WC/FH/TC/BB), 8 total. First set expires at the GW19 deadline
+   (13:30 GMT Sat 2 Jan) and does NOT carry over — an unused first-half chip is lost, not banked.
+   FORCING RULE: from GW16 onward, if any first-half chip is still unused, stop waiting for the "ideal"
+   trigger — deploy it on the best available week before GW19 (a mediocre use beats losing it to zero).
+   Flag this explicitly in the chip field: "first-half deadline in N GWs, chip unused" once inside GW16-18.
+
 5. captain per the CAPTAINCY RULE above; vice = next highest cum_pts. Both must be in starting_xi.
-5. transfers from real bank/FT (or null); chip per CHIP-CAL.
-6. projected_xpts = sum of 11 starters' xpts + captain's xpts once more (×2). ~45-75; if >80 recompute.
+6. transfers from real bank/FT (or null).
+7. projected_xpts = sum of 11 starters' xpts + captain's xpts once more (×2). ~45-75; if >80 recompute.
 
 Output JSON only to data/reports/claude.json:
   { engine:"claude", gw, captain, captain_type:"template|differential", captain_trigger:"<which trigger or 'none'>",
