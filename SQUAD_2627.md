@@ -182,5 +182,39 @@ Gibbs-White 9.2% · Anderson(NFO) 9.4% · Truffert 5.3% · Lacroix 7.1% · Bruno
 
 ---
 
-*Generated: 2026-07-20 · APEX FPL HQ · squad `scripts/build_2627.py` · market `scripts/market_update.py`*
-*Outputs: `data/reports/preseason_2627_{spread,anchor}.json`, `data/reports/market_2627.json`, `data/cache/{news,price,league}.json`*
+## 8) 🧤 เจาะลึกตัวล็อกที่ 4 (GK) — เทียบ save เผื่อ 26/27 ให้แต้ม save มากขึ้น
+
+**คำถาม:** ถ้า 26/27 การเซฟได้ bps/แต้มมากขึ้น มี GK คนอื่นที่ **saves เยอะกว่า Raya** แต่ **clean sheet ยังใกล้เคียง** ไหม?
+(ดึง saves/CS/bps ดิบจาก bootstrap — ไม่มีใน features.json · builder: `scripts/gk_compare_2627.py`)
+
+**Raya baseline:** saves=60 (น้อยสุดในกลุ่มตัวจริง เพราะ ARS เกมรับแน่นโดนยิงน้อย) · **CS=19 (สูงสุดในลีก)** · bps=633 (สูงสุด) · 162 pts · £6.2
+
+**ตารางเทียบ (proj = เอาแต้มปีก่อนมาคิดใหม่ตามเรตแต้ม/เซฟ, ถือ CS/bonus คงที่):**
+
+| GK | ทีม | £ | saves | CS | bps | ปีก่อน | @1เซฟ/2 | @1เซฟ/1 | ppm(½) |
+|---|---|---|---|---|---|---|---|---|---|
+| Kelleher | BRE | 4.8 | 109 | 10 | 570 | 143 | 161 | **216** | **33.6** |
+| Roefs | SUN | 4.8 | 109 | 10 | 573 | 136 | 154 | 209 | 32.1 |
+| Petrović | BOU | 4.6 | 109 | 11 | 512 | 124 | 142 | 197 | 30.9 |
+| Verbruggen | BHA | 4.6 | 106 | 10 | 616 | 130 | 148 | 201 | 32.1 |
+| Pickford | EVE | 5.6 | 100 | 11 | 545 | 135 | 152 | 202 | 27.1 |
+| **Donnarumma** | MCI | 5.6 | **78** | **15** | 567 | 135 | 148 | 187 | 26.4 |
+| **Raya** 🔒 | ARS | 6.2 | 60 | **19** | 633 | **162** | **172** | 202 | 27.7 |
+
+**ผลวิเคราะห์:**
+1. **CS ของ Raya (19) นำลิ่วทั้งลีก** — มีแค่ **Donnarumma (15)** ที่ใกล้เคียง ที่เหลือ ≤11 ทั้งหมด (เพราะเป็น GK ทีมเกมรับอ่อนกว่า)
+2. **คนเดียวที่ตรงโจทย์เป๊ะ (saves > Raya + CS ใกล้เคียง) = Donnarumma** (MCI, £5.6): saves 78 (+18) · CS 15 (Raya 19) · ถูกกว่า £0.6m
+3. **แต่บนแต้มรวม Raya ยังชนะ** ทั้งเรตปัจจุบันและเรต boost 1เซฟ/2 (172 vs ทุกคน) — จะโดนแซงก็ต่อเมื่อ boost แรงถึง **1แต้ม/เซฟ** (Kelleher 216, Roefs 209) ซึ่งเป็นการเปลี่ยนกฎที่สุดโต่ง
+4. Raya ยังนำ **bps (633)** ด้วย → ถ้าเซฟให้ bps มากขึ้น คนเซฟเยอะจะไต่ bonus ขึ้นมา แต่ก็ยังไม่พอแซงฐาน CS+bonus ของ Raya ที่เรตสมเหตุผล
+
+**3 ทางเลือกสำหรับตัวล็อก GK:**
+- **(A) เก็บ Raya** ✅ *(แนะนำ)* — เพดาน CS+bonus สูงสุด, set-and-forget แท้; save boost ระดับสมจริงยังไม่ล้มเขา
+- **(B) → Donnarumma £5.6** — ตรงโจทย์ "saves↑ + CS≈" ที่สุด, ประหยัด £0.6m; **ข้อเสีย:** แต้มรวมยังต่ำกว่า Raya + ซ้ำสโมสร MCI กับ Haaland + MCI เปิดหิน
+- **(C) → Kelleher/Roefs £4.8** — เดิมพันกับ save boost เต็มตัว: saves เกือบเท่าตัว (109) + ppm สูงสุด + **ปลดงบ £1.4m ไปเสริมตัวรุก**; ถ้า boost แรงจริง กลุ่มนี้แซง Raya
+
+> **สรุป:** ตอบตรงคำถาม = **Donnarumma** คือคนเดียวที่ saves มากกว่าแต่ CS ยังใกล้ Raya · แต่เชิงแต้มรวม **Raya ยังคุ้มกว่าที่เรต boost สมเหตุผล** · ถ้าจะเปลี่ยนเพื่อ save จริง ๆ ควรไป **Kelleher (£4.8) เพื่อ value + ปลดงบ** มากกว่า Donnarumma
+
+---
+
+*Generated: 2026-07-20 · APEX FPL HQ · squad `scripts/build_core_2627.py` · GK `scripts/gk_compare_2627.py` · market `scripts/market_update.py`*
+*Outputs: `data/reports/preseason_2627_{core,spread,anchor}.json`, `data/reports/gk_compare_2627.json`, `data/reports/market_2627.json`, `data/cache/{news,price,league}.json`*
