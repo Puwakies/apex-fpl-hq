@@ -436,5 +436,188 @@
       "Roefs"
     ]
   },
-  "note": "proj = 25/26 pts re-scored at new per-save rate, CS/GC/bonus constant"
+  "minutes_normalized": {
+    "Raya": {
+      "min": 3330,
+      "starts": 37,
+      "pts90": 4.38,
+      "saves90": 1.62,
+      "fs_saves": 60,
+      "fs_pts": 162,
+      "fs_@1/2": 172,
+      "fs_@1/1": 202
+    },
+    "Martinez": {
+      "min": 2835,
+      "starts": 32,
+      "pts90": 3.81,
+      "saves90": 3.02,
+      "fs_saves": 112,
+      "fs_pts": 141,
+      "fs_@1/2": 160,
+      "fs_@1/1": 215
+    },
+    "Dúbravka": {
+      "min": 3150,
+      "starts": 35,
+      "pts90": 2.74,
+      "saves90": 3.63,
+      "fs_saves": 134,
+      "fs_pts": 101,
+      "fs_@1/2": 124,
+      "fs_@1/1": 191
+    },
+    "Petrović": {
+      "min": 3420,
+      "starts": 38,
+      "pts90": 3.26,
+      "saves90": 2.87,
+      "fs_saves": 106,
+      "fs_pts": 121,
+      "fs_@1/2": 138,
+      "fs_@1/1": 191
+    },
+    "Kelleher": {
+      "min": 3330,
+      "starts": 37,
+      "pts90": 3.86,
+      "saves90": 2.95,
+      "fs_saves": 109,
+      "fs_pts": 143,
+      "fs_@1/2": 161,
+      "fs_@1/1": 216
+    },
+    "Verbruggen": {
+      "min": 3420,
+      "starts": 38,
+      "pts90": 3.42,
+      "saves90": 2.79,
+      "fs_saves": 103,
+      "fs_pts": 127,
+      "fs_@1/2": 144,
+      "fs_@1/1": 195
+    },
+    "Sánchez": {
+      "min": 3040,
+      "starts": 35,
+      "pts90": 3.35,
+      "saves90": 2.9,
+      "fs_saves": 107,
+      "fs_pts": 124,
+      "fs_@1/2": 142,
+      "fs_@1/1": 195
+    },
+    "Henderson": {
+      "min": 3330,
+      "starts": 37,
+      "pts90": 3.54,
+      "saves90": 2.86,
+      "fs_saves": 106,
+      "fs_pts": 131,
+      "fs_@1/2": 149,
+      "fs_@1/1": 202
+    },
+    "Pickford": {
+      "min": 3420,
+      "starts": 38,
+      "pts90": 3.55,
+      "saves90": 2.63,
+      "fs_saves": 97,
+      "fs_pts": 131,
+      "fs_@1/2": 148,
+      "fs_@1/1": 196
+    },
+    "Leno": {
+      "min": 3420,
+      "starts": 38,
+      "pts90": 3.21,
+      "saves90": 2.58,
+      "fs_saves": 95,
+      "fs_pts": 119,
+      "fs_@1/2": 135,
+      "fs_@1/1": 182
+    },
+    "A.Becker": {
+      "min": 2340,
+      "starts": 26,
+      "pts90": 3.5,
+      "saves90": 2.19,
+      "fs_saves": 81,
+      "fs_pts": 130,
+      "fs_@1/2": 143,
+      "fs_@1/1": 184
+    },
+    "Donnarumma": {
+      "min": 3060,
+      "starts": 34,
+      "pts90": 3.97,
+      "saves90": 2.29,
+      "fs_saves": 85,
+      "fs_pts": 147,
+      "fs_@1/2": 161,
+      "fs_@1/1": 204
+    },
+    "Lammens": {
+      "min": 2880,
+      "starts": 32,
+      "pts90": 3.41,
+      "saves90": 2.47,
+      "fs_saves": 91,
+      "fs_pts": 126,
+      "fs_@1/2": 141,
+      "fs_@1/1": 187
+    },
+    "Pope": {
+      "min": 2416,
+      "starts": 27,
+      "pts90": 3.58,
+      "saves90": 3.32,
+      "fs_saves": 123,
+      "fs_pts": 132,
+      "fs_@1/2": 153,
+      "fs_@1/1": 214
+    },
+    "Sels": {
+      "min": 2667,
+      "starts": 30,
+      "pts90": 3.54,
+      "saves90": 3.21,
+      "fs_saves": 119,
+      "fs_pts": 131,
+      "fs_@1/2": 151,
+      "fs_@1/1": 210
+    },
+    "Roefs": {
+      "min": 3150,
+      "starts": 35,
+      "pts90": 3.89,
+      "saves90": 3.11,
+      "fs_saves": 115,
+      "fs_pts": 144,
+      "fs_@1/2": 163,
+      "fs_@1/1": 221
+    },
+    "Vicario": {
+      "min": 2790,
+      "starts": 31,
+      "pts90": 2.9,
+      "saves90": 2.68,
+      "fs_saves": 99,
+      "fs_pts": 107,
+      "fs_@1/2": 124,
+      "fs_@1/1": 173
+    }
+  },
+  "beats_raya_normalized": {
+    "boost(1/2)": [],
+    "max(1/1)": [
+      "Martinez",
+      "Kelleher",
+      "Donnarumma",
+      "Pope",
+      "Sels",
+      "Roefs"
+    ]
+  },
+  "note": "proj = 25/26 pts re-scored at new per-save rate, CS/GC/bonus constant; fs_* = scaled to Raya's minutes (full nailed season)"
 }

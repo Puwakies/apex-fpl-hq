@@ -49,8 +49,26 @@ literal = [g for g in nailed if g["saves"] > raya["saves"] and g["cs"] >= raya["
 beats = {k: [g["name"] for g in nailed if proj(g, v) > proj(raya, v) and g["name"] != "Raya"]
          for k, v in scenarios.items()}
 
+# --- minutes normalization: scale everyone to Raya's minutes (removes the minutes confound) ---
+BASIS = raya["min"]
+def norm(g):
+    f = BASIS / g["min"]
+    fs_saves, fs_pts = g["saves"]*f, g["pts"]*f
+    return {"pts90": round(g["pts"]/(g["min"]/90), 2), "saves90": round(g["saves90"], 2),
+            "fs_saves": round(fs_saves), "fs_pts": round(fs_pts),
+            "fs_@1/2": round(fs_pts + fs_saves*(0.5-CUR)),
+            "fs_@1/1": round(fs_pts + fs_saves*(1.0-CUR))}
+mins_view = {g["name"]: {"min": g["min"], "starts": g["starts"], **norm(g)} for g in nailed}
+beats_norm = {k: [g["name"] for g in nailed
+                  if (norm(g)[{"boost(1/2)": "fs_@1/2", "max(1/1)": "fs_@1/1"}.get(k, "fs_@1/2")]
+                      > norm(raya)[{"boost(1/2)": "fs_@1/2", "max(1/1)": "fs_@1/1"}.get(k, "fs_@1/2")])
+                  and g["name"] != "Raya"]
+              for k in ("boost(1/2)", "max(1/1)")}
+
 out = {"raya": raya, "rows": rows, "literal_match": literal, "beats_raya": beats,
-       "note": "proj = 25/26 pts re-scored at new per-save rate, CS/GC/bonus constant"}
+       "minutes_normalized": mins_view, "beats_raya_normalized": beats_norm,
+       "note": "proj = 25/26 pts re-scored at new per-save rate, CS/GC/bonus constant; "
+               "fs_* = scaled to Raya's minutes (full nailed season)"}
 json.dump(out, open(ROOT/"data/reports/gk_compare_2627.json", "w"), ensure_ascii=False, indent=2)
 
 print(f"RAYA: saves={raya['saves']} CS={raya['cs']} (league-high) bps={raya['bps']} pts={raya['pts']} £{raya['price']}\n")
