@@ -1,36 +1,56 @@
 {
   "mode": "core",
-  "formation": "3-5-2",
+  "formation": "4-5-1",
   "spend": 100.0,
   "bank": 0.0,
   "locked": [
     "Haaland",
-    "B.Fernandes",
-    "Gabriel",
-    "Raya"
+    "B.Fernandes"
   ],
   "xi": [
     {
-      "name": "Raya",
-      "team": "ARS",
+      "name": "Verbruggen",
+      "team": "BHA",
       "pos": "GK",
-      "price": 6.0,
-      "pts": 162,
-      "starts": 37,
-      "fdr": 3.38,
-      "score": 138.97614523853002,
-      "locked": true
+      "price": 4.5,
+      "pts": 130,
+      "starts": 38,
+      "fdr": 3.12,
+      "score": 110.81919213271837,
+      "locked": false
     },
     {
-      "name": "Gabriel",
-      "team": "ARS",
+      "name": "Guéhi",
+      "team": "MCI",
       "pos": "DEF",
-      "price": 8.0,
-      "pts": 209,
-      "starts": 30,
-      "fdr": 3.38,
-      "score": 169.41258500941737,
-      "locked": true
+      "price": 6.0,
+      "pts": 179,
+      "starts": 35,
+      "fdr": 2.92,
+      "score": 171.45027979815504,
+      "locked": false
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "starts": 38,
+      "fdr": 2.78,
+      "score": 171.06678092491688,
+      "locked": false
+    },
+    {
+      "name": "Tarkowski",
+      "team": "EVE",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 170,
+      "starts": 37,
+      "fdr": 3.12,
+      "score": 159.02340055991544,
+      "locked": false
     },
     {
       "name": "Van Hecke",
@@ -41,17 +61,6 @@
       "starts": 36,
       "fdr": 2.92,
       "score": 139.44260476508353,
-      "locked": false
-    },
-    {
-      "name": "Mitchell",
-      "team": "CRY",
-      "pos": "DEF",
-      "price": 4.5,
-      "pts": 135,
-      "starts": 36,
-      "fdr": 3.18,
-      "score": 113.77369962804593,
       "locked": false
     },
     {
@@ -119,17 +128,6 @@
       "fdr": 2.92,
       "score": 226.37959769556562,
       "locked": true
-    },
-    {
-      "name": "Calvert-Lewin",
-      "team": "LEE",
-      "pos": "FWD",
-      "price": 6.0,
-      "pts": 142,
-      "starts": 30,
-      "fdr": 2.92,
-      "score": 108.2142718501957,
-      "locked": false
     }
   ],
   "bench": [
@@ -145,25 +143,25 @@
       "locked": false
     },
     {
-      "name": "Bogle",
-      "team": "LEE",
+      "name": "Mitchell",
+      "team": "CRY",
       "pos": "DEF",
       "price": 4.5,
-      "pts": 96,
-      "starts": 32,
-      "fdr": 2.92,
-      "score": 97.81606190040479,
+      "pts": 135,
+      "starts": 36,
+      "fdr": 3.18,
+      "score": 113.77369962804593,
       "locked": false
     },
     {
-      "name": "Shaw",
-      "team": "MUN",
-      "pos": "DEF",
-      "price": 4.5,
-      "pts": 113,
-      "starts": 38,
-      "fdr": 2.98,
-      "score": 96.04140940039063,
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "starts": 30,
+      "fdr": 2.92,
+      "score": 108.2142718501957,
       "locked": false
     },
     {

@@ -23,9 +23,12 @@ for p in hist["players"]:
 
 POS = {"GKP":"GK","DEF":"DEF","MID":"MID","FWD":"FWD"}
 # locked premiums resolved by (web_name, team) so it survives new-season id changes
-LOCKED_SPEC = [("Haaland","MCI"), ("B.Fernandes","MUN"), ("Gabriel","ARS"), ("Raya","ARS")]
+LOCKED_SPEC = [("Haaland","MCI"), ("B.Fernandes","MUN")]     # cut Gabriel + Raya per request
+BANNED_SPEC = [("Gabriel","ARS"), ("Raya","ARS")]            # excluded from the squad entirely
 LOCKED_IDS = [next(p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t)
               for n,t in LOCKED_SPEC]
+BANNED_IDS = {next((p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t), None)
+              for n,t in BANNED_SPEC}
 LF, A = 3.30, 0.60                      # MILD fdr tilt (was 1.35 in FDR-first build)
 
 def mk(p):
@@ -47,6 +50,8 @@ pool, byid = [], {}
 for p in feat["players"]:
     if p["pos"] not in POS:
         continue
+    if p["id"] in BANNED_IDS:
+        continue   # explicitly cut from the squad
     if p["id"] not in LOCKED_IDS and p["status"] in ("i","s","u","d"):
         continue   # set-and-forget: only fully-available players (exclude doubtful)
     fa = p["fdr"].get("fdr_avg"); n = p["fdr"].get("n_fixtures",0)
@@ -87,6 +92,9 @@ def feas(sq):
     for p in sq:
         c[p["team"]] = c.get(p["team"],0)+1
         if c[p["team"]] > 3: return False
+    pc = {"GK":0,"DEF":0,"MID":0,"FWD":0}
+    for p in sq: pc[p["pos"]] += 1
+    if pc != NEED: return False               # enforce 2/5/5/3 and exactly 15
     gks = sorted([p for p in sq if p["pos"]=="GK"], key=lambda x:-x["score"])
     if len(gks)==2 and gks[1]["price"] > 4.6: return False
     return True
@@ -97,7 +105,13 @@ def obj(sq):
 
 def rv(rng):
     sq = list(LOCKED)
-    sq.append(rng.choice(cheap_gk[:6]))                 # cheap 2nd GK
+    gneed = free_need["GK"]
+    if gneed >= 1:
+        sq.append(rng.choice(cheap_gk[:6]))             # one cheap bench GK (<=4.6)
+        gneed -= 1
+    for _ in range(gneed):                              # remaining starting GK(s)
+        c = [x for x in bypos["GK"] if x["id"] not in {p["id"] for p in sq}][:12]
+        sq.append(rng.choice(c))
     for pos in ("DEF","MID","FWD"):
         need = free_need[pos]
         if need <= 0: continue
