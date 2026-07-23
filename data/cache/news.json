@@ -1,71 +1,35 @@
 {
-  "updated": "2026-07-20T15:21:52Z",
+  "updated": "2026-07-23T12:41:46Z",
   "season": "2026/27",
   "phase": "pre-season",
   "note": "current availability from live FPL bootstrap",
   "items": [
     {
-      "player": "Ekitiké",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
       "player": "J.Timber",
       "team": "ARS",
       "pos": "DEF",
-      "status": "DOUBTFUL",
-      "chance": 25,
-      "news": "Doubtful — chance of playing next: 25%",
-      "signal": "out"
-    },
-    {
-      "player": "Kudus",
-      "team": "TOT",
-      "pos": "MID",
       "status": "INJURED",
       "chance": 0,
       "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
-      "player": "Grealish",
-      "team": "EVE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
-      "player": "Alderete",
-      "team": "SUN",
-      "pos": "DEF",
-      "status": "DOUBTFUL",
-      "chance": 50,
-      "news": "Doubtful — chance of playing next: 50%",
-      "signal": "doubt"
-    },
-    {
-      "player": "Šeško",
-      "team": "MUN",
-      "pos": "FWD",
-      "status": "DOUBTFUL",
-      "chance": 50,
-      "news": "Doubtful — chance of playing next: 50%",
-      "signal": "doubt"
-    },
-    {
-      "player": "Romero",
-      "team": "TOT",
+      "player": "Saliba",
+      "team": "ARS",
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
       "news": "Injured — chance of playing next: 0%",
       "signal": "out"
+    },
+    {
+      "player": "Wharton",
+      "team": "CRY",
+      "pos": "MID",
+      "status": "DOUBTFUL",
+      "chance": 75,
+      "news": "Doubtful — chance of playing next: 75%",
+      "signal": "doubt"
     },
     {
       "player": "Andersen",
@@ -77,49 +41,22 @@
       "signal": "out"
     },
     {
-      "player": "Gudmundsson",
-      "team": "LEE",
-      "pos": "DEF",
+      "player": "Ekitiké",
+      "team": "LIV",
+      "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
       "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
-      "player": "Richards",
-      "team": "CRY",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
-      "player": "Aina",
-      "team": "NFO",
-      "pos": "DEF",
+      "player": "Šeško",
+      "team": "MUN",
+      "pos": "FWD",
       "status": "DOUBTFUL",
       "chance": 75,
       "news": "Doubtful — chance of playing next: 75%",
       "signal": "doubt"
-    },
-    {
-      "player": "Stach",
-      "team": "LEE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
-      "player": "Okafor",
-      "team": "LEE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
     }
   ]
 }

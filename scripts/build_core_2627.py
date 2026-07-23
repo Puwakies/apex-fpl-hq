@@ -22,7 +22,10 @@ for p in hist["players"]:
                            "am": statistics.mean(g["min"] for g in pl)}
 
 POS = {"GKP":"GK","DEF":"DEF","MID":"MID","FWD":"FWD"}
-LOCKED_IDS = [430, 449, 5, 1]          # Haaland, B.Fernandes, Gabriel, Raya
+# locked premiums resolved by (web_name, team) so it survives new-season id changes
+LOCKED_SPEC = [("Haaland","MCI"), ("B.Fernandes","MUN"), ("Gabriel","ARS"), ("Raya","ARS")]
+LOCKED_IDS = [next(p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t)
+              for n,t in LOCKED_SPEC]
 LF, A = 3.30, 0.60                      # MILD fdr tilt (was 1.35 in FDR-first build)
 
 def mk(p):
@@ -137,12 +140,12 @@ def hc(sq, rng, it):
     return sq, cur
 
 rng = random.Random(5); best=None; bo=-1
-for _ in range(600):
+for _ in range(1600):
     s = rv(rng)
     if s is None: continue
-    s, v = hc(s, rng, 1200)
+    s, v = hc(s, rng, 1500)
     if v > bo: bo, best = v, s
-best, bo = hc(best, rng, 25000)
+best, bo = hc(best, rng, 80000)
 
 xv,(xi,form) = bxi(best)
 xids = {p["id"] for p in xi}

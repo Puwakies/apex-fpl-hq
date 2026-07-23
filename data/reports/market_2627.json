@@ -1,212 +1,136 @@
 {
-  "updated": "2026-07-20T15:21:52Z",
+  "updated": "2026-07-23T12:41:46Z",
   "season": "2026/27",
   "phase": "pre-season (pre-GW1)",
-  "n_players": 841,
+  "n_players": 555,
   "availability_counts": {
-    "a": 563,
-    "DOUBTFUL": 11,
-    "INJURED": 47,
-    "SUSPENDED": 4,
-    "UNAVAILABLE": 216
+    "a": 514,
+    "DOUBTFUL": 18,
+    "INJURED": 20,
+    "SUSPENDED": 2,
+    "UNAVAILABLE": 1
   },
-  "template_high_eo": [
+  "template_high_eo": [],
+  "differentials": [
     {
       "player": "Haaland",
       "team": "MCI",
       "pos": "FWD",
-      "price": 14.7,
-      "own": 62.5
+      "price": 15.5,
+      "own": 0.0,
+      "pts_2526": 239
     },
     {
       "player": "B.Fernandes",
       "team": "MUN",
       "pos": "MID",
-      "price": 10.4,
-      "own": 48.0
-    },
-    {
-      "player": "Semenyo",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 8.0,
-      "own": 46.2
+      "price": 12.0,
+      "own": 0.0,
+      "pts_2526": 235
     },
     {
       "player": "Gabriel",
       "team": "ARS",
       "pos": "DEF",
-      "price": 7.3,
-      "own": 45.4
+      "price": 8.0,
+      "own": 0.0,
+      "pts_2526": 209
     },
     {
-      "player": "Raya",
-      "team": "ARS",
-      "pos": "GKP",
-      "price": 6.2,
-      "own": 36.4
-    },
-    {
-      "player": "João Pedro",
-      "team": "CHE",
-      "pos": "FWD",
-      "price": 7.4,
-      "own": 34.8
-    },
-    {
-      "player": "Guéhi",
+      "player": "Semenyo",
       "team": "MCI",
-      "pos": "DEF",
-      "price": 5.1,
-      "own": 32.6
+      "pos": "MID",
+      "price": 8.5,
+      "own": 0.0,
+      "pts_2526": 202
     },
     {
-      "player": "Virgil",
-      "team": "LIV",
-      "pos": "DEF",
-      "price": 6.1,
-      "own": 31.5
-    },
-    {
-      "player": "Thiago",
-      "team": "BRE",
-      "pos": "FWD",
-      "price": 7.2,
-      "own": 30.2
-    },
-    {
-      "player": "Dúbravka",
-      "team": "BUR",
-      "pos": "GKP",
-      "price": 4.0,
-      "own": 25.7
+      "player": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 8.0,
+      "own": 0.0,
+      "pts_2526": 188
     },
     {
       "player": "Rice",
       "team": "ARS",
       "pos": "MID",
-      "price": 7.2,
-      "own": 23.3
+      "price": 7.5,
+      "own": 0.0,
+      "pts_2526": 184
     },
     {
-      "player": "Senesi",
-      "team": "BOU",
-      "pos": "DEF",
-      "price": 5.2,
-      "own": 22.0
-    },
-    {
-      "player": "Rogers",
-      "team": "AVL",
-      "pos": "MID",
-      "price": 7.3,
-      "own": 20.2
-    }
-  ],
-  "differentials": [
-    {
-      "player": "Gibbs-White",
-      "team": "NFO",
-      "pos": "MID",
-      "price": 7.6,
-      "own": 9.2,
-      "pts_2526": 188
+      "player": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 8.0,
+      "own": 0.0,
+      "pts_2526": 181
     },
     {
       "player": "Anderson",
-      "team": "NFO",
+      "team": "MCI",
       "pos": "MID",
-      "price": 5.7,
-      "own": 9.4,
+      "price": 6.5,
+      "own": 0.0,
       "pts_2526": 180
     },
     {
-      "player": "Truffert",
-      "team": "BOU",
-      "pos": "DEF",
-      "price": 4.8,
-      "own": 5.3,
-      "pts_2526": 165
-    },
-    {
-      "player": "Casemiro",
-      "team": "MUN",
-      "pos": "MID",
-      "price": 5.8,
-      "own": 3.8,
-      "pts_2526": 165
-    },
-    {
-      "player": "Garner",
-      "team": "EVE",
-      "pos": "MID",
-      "price": 5.2,
-      "own": 3.6,
-      "pts_2526": 159
-    },
-    {
-      "player": "Lacroix",
-      "team": "CRY",
-      "pos": "DEF",
-      "price": 5.2,
-      "own": 7.1,
-      "pts_2526": 154
-    },
-    {
-      "player": "Matheus N.",
+      "player": "Guéhi",
       "team": "MCI",
       "pos": "DEF",
-      "price": 5.3,
-      "own": 2.9,
-      "pts_2526": 154
+      "price": 6.0,
+      "own": 0.0,
+      "pts_2526": 179
     },
     {
-      "player": "Bruno G.",
-      "team": "NEW",
-      "pos": "MID",
-      "price": 6.9,
-      "own": 6.5,
-      "pts_2526": 154
+      "player": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.5,
+      "own": 0.0,
+      "pts_2526": 177
     },
     {
-      "player": "Dewsbury-Hall",
-      "team": "EVE",
-      "pos": "MID",
-      "price": 5.3,
-      "own": 7.9,
-      "pts_2526": 151
-    },
-    {
-      "player": "Mukiele",
-      "team": "SUN",
-      "pos": "DEF",
-      "price": 4.6,
-      "own": 8.7,
-      "pts_2526": 151
-    },
-    {
-      "player": "E.Le Fée",
-      "team": "SUN",
-      "pos": "MID",
-      "price": 4.8,
-      "own": 1.6,
-      "pts_2526": 147
-    },
-    {
-      "player": "Gravenberch",
+      "player": "Virgil",
       "team": "LIV",
-      "pos": "MID",
-      "price": 5.4,
-      "own": 3.7,
-      "pts_2526": 144
+      "pos": "DEF",
+      "price": 6.5,
+      "own": 0.0,
+      "pts_2526": 175
     },
     {
-      "player": "Cunha",
-      "team": "MUN",
+      "player": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0,
+      "own": 0.0,
+      "pts_2526": 175
+    },
+    {
+      "player": "Tarkowski",
+      "team": "EVE",
+      "pos": "DEF",
+      "price": 6.0,
+      "own": 0.0,
+      "pts_2526": 170
+    },
+    {
+      "player": "Rogers",
+      "team": "CHE",
       "pos": "MID",
-      "price": 8.1,
-      "own": 8.7,
-      "pts_2526": 143
+      "price": 7.5,
+      "own": 0.0,
+      "pts_2526": 169
+    },
+    {
+      "player": "Wilson",
+      "team": "LEE",
+      "pos": "MID",
+      "price": 6.5,
+      "own": 0.0,
+      "pts_2526": 168
     }
   ],
   "top_owned_by_pos": {
@@ -214,298 +138,262 @@
       {
         "player": "Raya",
         "team": "ARS",
-        "price": 6.2,
-        "own": 36.4,
+        "price": 6.0,
+        "own": 0.0,
         "pts_2526": 162
       },
       {
-        "player": "Dúbravka",
-        "team": "BUR",
+        "player": "Arrizabalaga",
+        "team": "ARS",
+        "price": 5.0,
+        "own": 0.0,
+        "pts_2526": 2
+      },
+      {
+        "player": "Meslier",
+        "team": "ARS",
+        "price": 5.0,
+        "own": 0.0,
+        "pts_2526": 0
+      },
+      {
+        "player": "Martinez",
+        "team": "AVL",
+        "price": 5.0,
+        "own": 0.0,
+        "pts_2526": 120
+      },
+      {
+        "player": "M.Bizot",
+        "team": "AVL",
+        "price": 4.5,
+        "own": 0.0,
+        "pts_2526": 16
+      },
+      {
+        "player": "Petrović",
+        "team": "BOU",
+        "price": 4.5,
+        "own": 0.0,
+        "pts_2526": 124
+      },
+      {
+        "player": "Forster",
+        "team": "BOU",
         "price": 4.0,
-        "own": 25.7,
-        "pts_2526": 96
+        "own": 0.0,
+        "pts_2526": 0
       },
       {
-        "player": "Pickford",
-        "team": "EVE",
-        "price": 5.6,
-        "own": 13.0,
-        "pts_2526": 135
-      },
-      {
-        "player": "Kelleher",
-        "team": "BRE",
-        "price": 4.8,
-        "own": 12.0,
-        "pts_2526": 143
-      },
-      {
-        "player": "Sánchez",
-        "team": "CHE",
-        "price": 4.8,
-        "own": 10.3,
-        "pts_2526": 113
-      },
-      {
-        "player": "Verbruggen",
-        "team": "BHA",
-        "price": 4.6,
-        "own": 9.3,
-        "pts_2526": 130
-      },
-      {
-        "player": "Donnarumma",
-        "team": "MCI",
-        "price": 5.6,
-        "own": 9.3,
-        "pts_2526": 135
-      },
-      {
-        "player": "Henderson",
-        "team": "CRY",
-        "price": 5.1,
-        "own": 9.0,
-        "pts_2526": 131
+        "player": "Dennis",
+        "team": "BOU",
+        "price": 4.0,
+        "own": 0.0,
+        "pts_2526": 0
       }
     ],
     "DEF": [
       {
         "player": "Gabriel",
         "team": "ARS",
-        "price": 7.3,
-        "own": 45.4,
+        "price": 8.0,
+        "own": 0.0,
         "pts_2526": 209
       },
       {
-        "player": "Guéhi",
-        "team": "MCI",
-        "price": 5.1,
-        "own": 32.6,
-        "pts_2526": 179
-      },
-      {
-        "player": "Virgil",
-        "team": "LIV",
-        "price": 6.1,
-        "own": 31.5,
-        "pts_2526": 175
-      },
-      {
-        "player": "Senesi",
-        "team": "BOU",
-        "price": 5.2,
-        "own": 22.0,
-        "pts_2526": 175
-      },
-      {
-        "player": "O'Reilly",
-        "team": "MCI",
-        "price": 5.3,
-        "own": 19.2,
-        "pts_2526": 160
-      },
-      {
-        "player": "Van de Ven",
-        "team": "TOT",
-        "price": 4.4,
-        "own": 17.6,
-        "pts_2526": 116
-      },
-      {
-        "player": "Saliba",
+        "player": "Calafiori",
         "team": "ARS",
-        "price": 6.3,
-        "own": 17.1,
-        "pts_2526": 137
+        "price": 5.5,
+        "own": 0.0,
+        "pts_2526": 109
       },
       {
-        "player": "Cucurella",
-        "team": "CHE",
-        "price": 6.1,
-        "own": 14.6,
-        "pts_2526": 104
+        "player": "Hincapie",
+        "team": "ARS",
+        "price": 5.5,
+        "own": 0.0,
+        "pts_2526": 87
+      },
+      {
+        "player": "Mosquera",
+        "team": "ARS",
+        "price": 5.5,
+        "own": 0.0,
+        "pts_2526": 40
+      },
+      {
+        "player": "Digne",
+        "team": "AVL",
+        "price": 4.5,
+        "own": 0.0,
+        "pts_2526": 97
+      },
+      {
+        "player": "Konsa",
+        "team": "AVL",
+        "price": 4.5,
+        "own": 0.0,
+        "pts_2526": 100
+      },
+      {
+        "player": "Cash",
+        "team": "AVL",
+        "price": 4.5,
+        "own": 0.0,
+        "pts_2526": 117
+      },
+      {
+        "player": "Mings",
+        "team": "AVL",
+        "price": 4.5,
+        "own": 0.0,
+        "pts_2526": 50
       }
     ],
     "MID": [
       {
-        "player": "B.Fernandes",
-        "team": "MUN",
-        "price": 10.4,
-        "own": 48.0,
-        "pts_2526": 235
+        "player": "Lewis-Skelly",
+        "team": "ARS",
+        "price": 5.5,
+        "own": 0.0,
+        "pts_2526": 29
       },
       {
-        "player": "Semenyo",
-        "team": "MCI",
-        "price": 8.0,
-        "own": 46.2,
-        "pts_2526": 202
+        "player": "Saka",
+        "team": "ARS",
+        "price": 9.5,
+        "own": 0.0,
+        "pts_2526": 157
       },
       {
         "player": "Rice",
         "team": "ARS",
-        "price": 7.2,
-        "own": 23.3,
+        "price": 7.5,
+        "own": 0.0,
         "pts_2526": 184
       },
       {
-        "player": "Rogers",
-        "team": "AVL",
-        "price": 7.3,
-        "own": 20.2,
-        "pts_2526": 169
-      },
-      {
-        "player": "Wilson",
-        "team": "FUL",
-        "price": 5.8,
-        "own": 17.4,
-        "pts_2526": 168
-      },
-      {
-        "player": "Cherki",
-        "team": "MCI",
+        "player": "Eze",
+        "team": "ARS",
         "price": 6.5,
-        "own": 17.4,
-        "pts_2526": 135
+        "own": 0.0,
+        "pts_2526": 113
       },
       {
-        "player": "M.Salah",
-        "team": "LIV",
-        "price": 14.0,
-        "own": 15.2,
-        "pts_2526": 123
+        "player": "Ødegaard",
+        "team": "ARS",
+        "price": 6.5,
+        "own": 0.0,
+        "pts_2526": 74
       },
       {
-        "player": "Szoboszlai",
-        "team": "LIV",
-        "price": 7.1,
-        "own": 15.1,
-        "pts_2526": 160
+        "player": "Madueke",
+        "team": "ARS",
+        "price": 6.5,
+        "own": 0.0,
+        "pts_2526": 72
+      },
+      {
+        "player": "Merino",
+        "team": "ARS",
+        "price": 6.0,
+        "own": 0.0,
+        "pts_2526": 67
+      },
+      {
+        "player": "Martinelli",
+        "team": "ARS",
+        "price": 6.5,
+        "own": 0.0,
+        "pts_2526": 57
       }
     ],
     "FWD": [
       {
-        "player": "Haaland",
-        "team": "MCI",
-        "price": 14.7,
-        "own": 62.5,
-        "pts_2526": 239
-      },
-      {
-        "player": "João Pedro",
-        "team": "CHE",
-        "price": 7.4,
-        "own": 34.8,
-        "pts_2526": 177
-      },
-      {
-        "player": "Thiago",
-        "team": "BRE",
-        "price": 7.2,
-        "own": 30.2,
-        "pts_2526": 181
-      },
-      {
-        "player": "Bowen",
-        "team": "WHU",
-        "price": 7.8,
-        "own": 17.5,
-        "pts_2526": 187
-      },
-      {
         "player": "Gyökeres",
         "team": "ARS",
-        "price": 9.1,
-        "own": 16.4,
+        "price": 7.5,
+        "own": 0.0,
         "pts_2526": 128
       },
       {
-        "player": "Calvert-Lewin",
-        "team": "LEE",
-        "price": 5.8,
-        "own": 13.7,
-        "pts_2526": 142
+        "player": "Havertz",
+        "team": "ARS",
+        "price": 7.5,
+        "own": 0.0,
+        "pts_2526": 36
+      },
+      {
+        "player": "G.Jesus",
+        "team": "ARS",
+        "price": 6.0,
+        "own": 0.0,
+        "pts_2526": 24
       },
       {
         "player": "Watkins",
         "team": "AVL",
-        "price": 8.7,
-        "own": 13.0,
+        "price": 8.0,
+        "own": 0.0,
         "pts_2526": 167
       },
       {
-        "player": "Richarlison",
-        "team": "TOT",
-        "price": 6.5,
-        "own": 8.7,
-        "pts_2526": 119
+        "player": "Evanilson",
+        "team": "BOU",
+        "price": 6.0,
+        "own": 0.0,
+        "pts_2526": 115
+      },
+      {
+        "player": "Enes Ünal",
+        "team": "BOU",
+        "price": 5.5,
+        "own": 0.0,
+        "pts_2526": 27
+      },
+      {
+        "player": "Rodríguez",
+        "team": "BOU",
+        "price": 6.0,
+        "own": 0.0,
+        "pts_2526": 0
+      },
+      {
+        "player": "Thiago",
+        "team": "BRE",
+        "price": 8.0,
+        "own": 0.0,
+        "pts_2526": 181
       }
     ]
   },
   "notable_unavailable": [
     {
-      "player": "Ekitiké",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
       "player": "J.Timber",
       "team": "ARS",
       "pos": "DEF",
-      "status": "DOUBTFUL",
-      "chance": 25,
-      "news": "Doubtful — chance of playing next: 25%",
-      "signal": "out"
-    },
-    {
-      "player": "Kudus",
-      "team": "TOT",
-      "pos": "MID",
       "status": "INJURED",
       "chance": 0,
       "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
-      "player": "Grealish",
-      "team": "EVE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
-      "player": "Alderete",
-      "team": "SUN",
-      "pos": "DEF",
-      "status": "DOUBTFUL",
-      "chance": 50,
-      "news": "Doubtful — chance of playing next: 50%",
-      "signal": "doubt"
-    },
-    {
-      "player": "Šeško",
-      "team": "MUN",
-      "pos": "FWD",
-      "status": "DOUBTFUL",
-      "chance": 50,
-      "news": "Doubtful — chance of playing next: 50%",
-      "signal": "doubt"
-    },
-    {
-      "player": "Romero",
-      "team": "TOT",
+      "player": "Saliba",
+      "team": "ARS",
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
       "news": "Injured — chance of playing next: 0%",
       "signal": "out"
+    },
+    {
+      "player": "Wharton",
+      "team": "CRY",
+      "pos": "MID",
+      "status": "DOUBTFUL",
+      "chance": 75,
+      "news": "Doubtful — chance of playing next: 75%",
+      "signal": "doubt"
     },
     {
       "player": "Andersen",
@@ -517,49 +405,22 @@
       "signal": "out"
     },
     {
-      "player": "Gudmundsson",
-      "team": "LEE",
-      "pos": "DEF",
+      "player": "Ekitiké",
+      "team": "LIV",
+      "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
       "news": "Injured — chance of playing next: 0%",
       "signal": "out"
     },
     {
-      "player": "Richards",
-      "team": "CRY",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
-      "player": "Aina",
-      "team": "NFO",
-      "pos": "DEF",
+      "player": "Šeško",
+      "team": "MUN",
+      "pos": "FWD",
       "status": "DOUBTFUL",
       "chance": 75,
       "news": "Doubtful — chance of playing next: 75%",
       "signal": "doubt"
-    },
-    {
-      "player": "Stach",
-      "team": "LEE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
-    },
-    {
-      "player": "Okafor",
-      "team": "LEE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Injured — chance of playing next: 0%",
-      "signal": "out"
     }
   ],
   "price_market": "no velocity pre-GW1"
