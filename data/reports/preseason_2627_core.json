@@ -16,18 +16,7 @@
       "pts": 130,
       "starts": 38,
       "fdr": 3.12,
-      "score": 110.81919213271837,
-      "locked": false
-    },
-    {
-      "name": "Guéhi",
-      "team": "MCI",
-      "pos": "DEF",
-      "price": 6.0,
-      "pts": 179,
-      "starts": 35,
-      "fdr": 2.92,
-      "score": 171.45027979815504,
+      "score": 114.61213096234441,
       "locked": false
     },
     {
@@ -38,18 +27,29 @@
       "pts": 175,
       "starts": 38,
       "fdr": 2.78,
-      "score": 171.06678092491688,
+      "score": 189.60385776042037,
       "locked": false
     },
     {
-      "name": "Tarkowski",
-      "team": "EVE",
+      "name": "Guéhi",
+      "team": "MCI",
       "pos": "DEF",
       "price": 6.0,
-      "pts": 170,
+      "pts": 179,
+      "starts": 35,
+      "fdr": 2.92,
+      "score": 184.50870098425523,
+      "locked": false
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 175,
       "starts": 37,
-      "fdr": 3.12,
-      "score": 159.02340055991544,
+      "fdr": 2.92,
+      "score": 179.84113046439305,
       "locked": false
     },
     {
@@ -60,7 +60,7 @@
       "pts": 148,
       "starts": 36,
       "fdr": 2.92,
-      "score": 139.44260476508353,
+      "score": 150.0631780674606,
       "locked": false
     },
     {
@@ -71,7 +71,7 @@
       "pts": 235,
       "starts": 35,
       "fdr": 2.98,
-      "score": 231.4334513172205,
+      "score": 246.03944427508,
       "locked": true
     },
     {
@@ -82,7 +82,7 @@
       "pts": 180,
       "starts": 37,
       "fdr": 2.92,
-      "score": 177.30841253616163,
+      "score": 190.81301534848626,
       "locked": false
     },
     {
@@ -93,18 +93,18 @@
       "pts": 159,
       "starts": 38,
       "fdr": 3.12,
-      "score": 150.51885819981473,
+      "score": 155.67057254522632,
       "locked": false
     },
     {
-      "name": "Fernandes",
-      "team": "TOT",
+      "name": "Gravenberch",
+      "team": "LIV",
       "pos": "MID",
       "price": 6.0,
-      "pts": 135,
-      "starts": 35,
-      "fdr": 2.92,
-      "score": 145.28220462631464,
+      "pts": 144,
+      "starts": 34,
+      "fdr": 2.78,
+      "score": 149.80439187974142,
       "locked": false
     },
     {
@@ -115,7 +115,7 @@
       "pts": 134,
       "starts": 35,
       "fdr": 2.92,
-      "score": 128.34825415057418,
+      "score": 138.123832021733,
       "locked": false
     },
     {
@@ -126,7 +126,7 @@
       "pts": 239,
       "starts": 34,
       "fdr": 2.92,
-      "score": 226.37959769556562,
+      "score": 243.62168174540702,
       "locked": true
     }
   ],
@@ -139,18 +139,7 @@
       "pts": 96,
       "starts": 35,
       "fdr": 2.92,
-      "score": 103.3117899564904,
-      "locked": false
-    },
-    {
-      "name": "Mitchell",
-      "team": "CRY",
-      "pos": "DEF",
-      "price": 4.5,
-      "pts": 135,
-      "starts": 36,
-      "fdr": 3.18,
-      "score": 113.77369962804593,
+      "score": 111.18047858347907,
       "locked": false
     },
     {
@@ -161,18 +150,29 @@
       "pts": 142,
       "starts": 30,
       "fdr": 2.92,
-      "score": 108.2142718501957,
+      "score": 116.45635545502053,
       "locked": false
     },
     {
-      "name": "Evanilson",
-      "team": "BOU",
+      "name": "Mitchell",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 135,
+      "starts": 36,
+      "fdr": 3.18,
+      "score": 116.33060115864144,
+      "locked": false
+    },
+    {
+      "name": "Welbeck",
+      "team": "BHA",
       "pos": "FWD",
       "price": 6.0,
-      "pts": 115,
-      "starts": 32,
-      "fdr": 3.72,
-      "score": 79.7212120127473,
+      "pts": 126,
+      "starts": 26,
+      "fdr": 3.12,
+      "score": 79.91019892490509,
       "locked": false
     }
   ]

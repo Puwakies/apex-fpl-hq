@@ -29,7 +29,7 @@ LOCKED_IDS = [next(p["id"] for p in feat["players"] if p["web_name"]==n and p["t
               for n,t in LOCKED_SPEC]
 BANNED_IDS = {next((p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t), None)
               for n,t in BANNED_SPEC}
-LF, A = 3.30, 0.60                      # MILD fdr tilt (was 1.35 in FDR-first build)
+LF, A = 3.30, 1.20                      # STRONGER first-5 FDR weight (per request), still < 1.35 FDR-first
 
 def mk(p):
     fa = p["fdr"].get("fdr_avg")

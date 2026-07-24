@@ -32,35 +32,35 @@
 
 ---
 
-## ★ 2) ทีมล่าสุด (ราคาสด LIVE) — "CORE" · 4-5-1 · £100.0m · **ตัด Gabriel+Raya แล้ว**
+## ★ 2) ทีมล่าสุด (ราคาสด LIVE) — "CORE" · 4-5-1 · £100.0m · **เน้น FDR 5 เกมแรก**
 
-**เป้าหมาย: ลด FT** → ล็อก 2 พรีเมี่ยม 🔒 (Haaland+Bruno) + ตัวยืนนิ่ง (≥30 นัดปีก่อน) · **ตัด Gabriel+Raya → เอางบไปเสริมเกมรับให้แรงขึ้น**
+**เป้าหมาย: ลด FT + อิง FDR 5 เกมแรก** → ล็อก 2 พรีเมี่ยม 🔒 (Haaland+Bruno) · ตัด Gabriel/Raya · เพิ่มน้ำหนัก FDR (ALPHA 1.2) → **avg XI FDR = 2.94 (เกือบง่ายสุดของลีก)**
 
-| ตำแหน่ง | ผู้เล่น | ทีม | ราคา(สด) | 25/26 pts | ตัวจริง | FDR5(จริง) |
-|---|---|---|---|---|---|---|
-| GK | **Verbruggen** | BHA | 4.5 | 130 | 38 | 3.12 |
-| DEF | **Guéhi** | MCI | 6.0 | 179 | 35 | 2.92 |
-| DEF | **Virgil** | LIV | 6.5 | 175 | 38 | 2.78 |
-| DEF | **Tarkowski** | EVE | 6.0 | 170 | 37 | 3.12 |
-| DEF | **Van Hecke** | TOT | 5.0 | 148 | 36 | 2.92 |
-| MID | **B.Fernandes** 🔒 (VC) | MUN | 12.0 | 235 | 35 | 2.98 |
-| MID | **Anderson** | MCI | 6.5 | 180 | 37 | 2.92 |
-| MID | **Garner** | EVE | 6.0 | 159 | 38 | 3.12 |
-| MID | **Fernandes** | TOT | 6.0 | 135 | 35 | 2.92 |
-| MID | **Ampadu** | LEE | 5.5 | 134 | 35 | 2.92 |
-| FWD | **Haaland** 🔒 (C) | MCI | 15.5 | 239 | 34 | 2.92 |
-| **ม้านั่ง** | Dúbravka | TOT | 4.0 | 96 | 35 | 2.92 |
-| ม้านั่ง | Mitchell | CRY | 4.5 | 135 | 36 | 3.18 |
-| ม้านั่ง | Calvert-Lewin | LEE | 6.0 | 142 | 30 | 2.92 |
-| ม้านั่ง | Evanilson | BOU | 6.0 | 115 | 32 | 3.72 |
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา(สด) | 25/26 pts | ตัวจริง | **FDR5** | 5 เกมแรก |
+|---|---|---|---|---|---|---|---|
+| GK | **Verbruggen** | BHA | 4.5 | 130 | 38 | 3.12 | 3H 4A 2H 2A 4H |
+| DEF | **Virgil** | LIV | 6.5 | 175 | 38 | **2.78** | 3A 3H 2A 2H 3A |
+| DEF | **Guéhi** | MCI | 6.0 | 179 | 35 | 2.92 | 3H 3A 2H 4A 2H |
+| DEF | **Senesi** | TOT | 6.0 | 175 | 37 | 2.92 | 3A 2H 3A 3H 3H |
+| DEF | **Van Hecke** | TOT | 5.0 | 148 | 36 | 2.92 | 3A 2H 3A 3H 3H |
+| MID | **B.Fernandes** 🔒 (VC) | MUN | 12.0 | 235 | 35 | 2.98 | 2A 2H 3A 4H 3A |
+| MID | **Anderson** | MCI | 6.5 | 180 | 37 | 2.92 | 3H 3A 2H 4A 2H |
+| MID | **Gravenberch** | LIV | 6.0 | 144 | 34 | **2.78** | 3A 3H 2A 2H 3A |
+| MID | **Garner** | EVE | 6.0 | 159 | 38 | 3.12 | 3H 3A 4H 3A 2H |
+| MID | **Ampadu** | LEE | 5.5 | 134 | 35 | 2.92 | 3A 3H 3A 2H 3H |
+| FWD | **Haaland** 🔒 (C) | MCI | 15.5 | 239 | 34 | 2.92 | 3H 3A 2H 4A 2H |
+| **ม้านั่ง** | Dúbravka | TOT | 4.0 | 96 | 35 | 2.92 | — |
+| ม้านั่ง | Mitchell | CRY | 4.5 | 135 | 36 | 3.18 | — |
+| ม้านั่ง | Calvert-Lewin | LEE | 6.0 | 142 | 30 | 2.92 | — |
+| ม้านั่ง | Welbeck | BHA | 6.0 | 126 | 26 | 3.12 | — |
 
-- 🔒 **ล็อก 2 พรีเมี่ยม (£27.5m):** Haaland (กัปตัน, 239) · B.Fernandes (VC, 235) · ~~Gabriel~~ ~~Raya~~ **ตัดออกแล้ว**
-- ✅ **เกมรับแข็งขึ้นชัด:** งบที่ปลดจาก Gabriel+Raya (£14m) → ได้ **Guéhi 179 + Virgil 175 + Tarkowski 170** (จากเดิม Van Hecke/Mitchell) · GK คู่ถูก Verbruggen+Dúbravka (£8.5) ปล่อยงบให้ outfield เต็มที่
-- ✅ 15/15 ลงตัวจริง ≥30 นัดปีก่อน · ทุกคน AVAILABLE · £100.0m เป๊ะ · MCI×3, TOT×3, EVE×2, LEE×2
-- ⚠️ ยังติดปัญหา**กองหน้าถูกที่ยืนตัวจริงหายาก** → 4-5-1 ใช้ Haaland ยืนเดี่ยว, กองหน้าใบ 2–3 (Calvert-Lewin/Evanilson) เป็นตัวสำรอง · มิดฟิลด์ใบท้าย (Fernandes/Ampadu) ยังเป็นตัว value
-- 💡 อยากแรงกว่านี้อีก: ปลดล็อก Bruno (£12.0) ด้วยจะได้ Semenyo/Rice + กองหน้าใบ 2 ที่ดีขึ้น — บอกได้
+- 🔒 **ล็อก 2 พรีเมี่ยม (£27.5m):** Haaland (กัปตัน) · B.Fernandes (VC) · ตัด Gabriel/Raya แล้ว
+- ✅ **อิง FDR 5 เกมแรกเต็มที่:** XI เกือบทั้งชุดเปิดฤดูกาลง่าย (FDR ≤2.92) — Virgil/Gravenberch (LIV 2.78), Guéhi/Anderson/Haaland (MCI 2.92), Senesi/Van Hecke (TOT 2.92)
+- ✅ เทียบเวอร์ชันก่อน: **Tarkowski(EVE 3.12)→Senesi(TOT 2.92)** · **Fernandes→Gravenberch(LIV 2.78)** · ตัดกองหน้าฟิกซ์เจอร์หิน **Evanilson(BOU 3.72)→Welbeck(BHA 3.12)**
+- ✅ 15/15 ลงตัวจริง (Welbeck 26 นัด สำรอง) · ทุกคน AVAILABLE · £100.0m เป๊ะ · MCI×3 TOT×3 BHA×2 LIV×2 LEE×2
+- ⚠️ กองหน้าถูกยืนตัวจริงยังหายาก → 4-5-1 Haaland เดี่ยว · มิดใบท้าย (Ampadu) ยัง value
 
-*(builder: `scripts/build_core_2627.py` → `data/reports/preseason_2627_core.json` · locked=Haaland,Bruno · banned=Gabriel,Raya)*
+*(builder: `scripts/build_core_2627.py` · ALPHA=1.2 · locked=Haaland,Bruno · banned=Gabriel,Raya · live 26/27)*
 
 ---
 
