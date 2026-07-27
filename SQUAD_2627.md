@@ -64,6 +64,39 @@
 
 ---
 
+## 🏁 2B) ทีมสปรินต์ GW1–6 (แผน WC GW7) — 3-5-2 · £100.0m
+
+**กลยุทธ์ต่าง:** จะ WC ที่ GW7 → ทีมนี้แค่ต้องชนะ **GW1–6** เท่านั้น → ทิ้ง durability ทั้งซีซัน, อิง **FDR 6 เกมแรก** (ไม่ใช่ 5), อัดค่าตัวลง XI, ม้านั่งถูกทิ้งได้
+
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา | 25/26 pts | **FDR6** | 6 เกมแรก |
+|---|---|---|---|---|---|---|
+| GK | **Verbruggen** | BHA | 4.5 | 130 | 3.15 | 3H 4A 2H 2A 4H 3A |
+| DEF | **Tarkowski** | EVE | 6.0 | 170 | 2.98 | 3H 3A 4H 3A 2H 2A |
+| DEF | **Guéhi** | MCI | 6.0 | 179 | 3.15 | 3H 3A 2H 4A 2H 4A |
+| DEF | **Mitchell** | CRY | 4.5 | 135 | 3.15 | 3A 4H 3A 2H 3A 3H |
+| MID | **B.Fernandes** 🔒 (VC) | MUN | 12.0 | 235 | 2.98 | 2A 2H 3A 4H 3A 3H |
+| MID | **Anderson** | MCI | 6.5 | 180 | 3.15 | 3H 3A 2H 4A 2H 4A |
+| MID | **Garner** | EVE | 6.0 | 159 | 2.98 | 3H 3A 4H 3A 2H 2A |
+| MID | **Dewsbury-Hall** | EVE | 6.5 | 151 | 2.98 | 3H 3A 4H 3A 2H 2A |
+| MID | **Gravenberch** | LIV | 6.0 | 144 | 2.98 | 3A 3H 2A 2H 3A 4H |
+| FWD | **Haaland** 🔒 (C) | MCI | 15.5 | 239 | 3.15 | 3H 3A 2H 4A 2H 4A |
+| FWD | **João Pedro** | CHE | 7.5 | 177 | 3.15 | 3A 2H 5A 2H 3A 3H |
+| **ม้านั่ง** | Dúbravka | TOT | 4.0 | 96 | 3.15 | — |
+| ม้านั่ง | Calvert-Lewin | LEE | 6.0 | 142 | 3.32 | — |
+| ม้านั่ง | Shaw | MUN | 4.5 | 113 | 2.98 | — |
+| ม้านั่ง | F.Kadıoğlu | BHA | 4.5 | 118 | 3.15 | — |
+
+- 🔒 ล็อก Haaland (C) + B.Fernandes (VC) · ตัด Gabriel/Raya · **avg XI FDR6 = 3.07**
+- ✅ **อัพเกรดเกมรุก:** ได้ **João Pedro (CHE £7.5)** ยืน 2 กับ Haaland (3-5-2) แทน 4-5-1 Haaland เดี่ยว — เพราะสปรินต์เอาแต้มล้วน ไม่ต้องกันงบ set-and-forget
+- ✅ **โหลด Everton ×3** (Tarkowski/Garner/Dewsbury-Hall) — EVE โปรแกรม 6 เกมแรกดี (2.98)
+- ✅ ทุกคน AVAILABLE · £100.0m เป๊ะ · MCI×3 EVE×3 MUN×2 BHA×2
+- 💡 **แผน chip:** GW1–6 ไม่มี DGW/BGW → ไม่กด chip · **WC GW7** รื้อทีมรับบล็อกฟิกซ์เจอร์ใหม่ · เก็บ BB/FH/TC ไว้ DGW/BGW ครึ่งหลัง (~GW27–35)
+- หมายเหตุ: GW1–6 มี ~5–6 FT (สัปดาห์ละ 1) พอปรับตามฟอร์ม/ข่าว lineup ก่อน WC ได้
+
+*(builder: `scripts/build_gw1_6.py` → `data/reports/gw1_6_sprint.json` · FDR 6 เกม · ALPHA=1.35)*
+
+---
+
 ## 3) SPREAD (FDR-first, เวอร์ชันเดิม) · 5-4-1 · £95.5m · เหลือ £4.5m
 
 ยึด FDR 5 เกมแรกเต็มที่ ไม่เอา Haaland (แมนซิตี้เปิดหินสุด) เอาเงินไปกระจายคุณภาพ → **ม้านั่งแรงมาก + มีเงินยืดหยุ่น**
