@@ -46,12 +46,21 @@ for p in hist["players"]:
         hcon[p["name"]] = {"b": sum(1 for g in pl if g["pts"] <= 2)/len(pl),
                            "am": statistics.mean(g["min"] for g in pl)}
 
+import os
 POS = {"GKP":"GK","DEF":"DEF","MID":"MID","FWD":"FWD"}
-LOCKED_SPEC = [("Haaland","MCI"), ("B.Fernandes","MUN")]
-BANNED_SPEC = [("Gabriel","ARS"), ("Raya","ARS")]
+def _spec(env, default):
+    v = os.environ.get(env)
+    if v is None: return default
+    v = v.strip()
+    if not v: return []
+    return [tuple(x.split(":")) for x in v.split(",")]     # "Haaland:MCI,B.Fernandes:MUN"
+LOCKED_SPEC = _spec("LOCKS", [("Haaland","MCI"), ("B.Fernandes","MUN")])
+BANNED_SPEC = _spec("BANS", [("Gabriel","ARS"), ("Raya","ARS")])
+OUT_NAME = os.environ.get("OUT", "gw1_6_sprint")
 LOCKED_IDS = [next(p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t) for n,t in LOCKED_SPEC]
 BANNED_IDS = {next((p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t), None) for n,t in BANNED_SPEC}
-LF, A = 3.30, 1.35          # STRONG fixture weight — this is a 6-GW fixture sprint
+LF = 3.30
+A = float(os.environ.get("ALPHA", "1.35"))   # STRONG fixture weight default; ~0 = pure cum_pts (Gemini baseline)
 STARTS_FLOOR = 22           # nailed-to-start proxy (season durability irrelevant pre-WC7)
 
 def mk(p):
@@ -194,4 +203,4 @@ out={"mode":"gw1-6-sprint","wc":"GW7","formation":f"{form[1]}-{form[2]}-{form[3]
      "bank":round(100-total,1),"avg_xi_fdr6":round(xi_fdr,2),
      "xi":[{k:p[k] for k in ("name","team","pos","price","pts","starts","fdr6","score")}|{"locked":p["id"] in lset} for p in xi_s],
      "bench":[{k:p[k] for k in ("name","team","pos","price","pts","starts","fdr6","score")} for p in bench_ord]}
-json.dump(out, open(ROOT/"data/reports/gw1_6_sprint.json","w"), ensure_ascii=False, indent=2)
+json.dump(out, open(ROOT/f"data/reports/{OUT_NAME}.json","w"), ensure_ascii=False, indent=2)
