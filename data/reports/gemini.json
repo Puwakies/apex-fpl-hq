@@ -1,47 +1,120 @@
 {
   "engine": "gemini",
-  "gw": 38,
-  "updated": "2026-06-26T00:00:00Z",
+  "season": "2026/27",
+  "gw": 1,
+  "updated": "2026-07-30T04:36:45Z",
+  "source": "proxy (cum_pts baseline) — Apps Script pipeline not yet run for 26/27",
+  "formation": "4-3-3",
   "captain": "Haaland",
-  "captain_conflict": true,
-  "captain_conflict_reason": "Haaland UNAVAILABLE — confirmed absent from Man City GW38 squad (World Cup rest with Norway). Bench slot 13, chance_pct 0.",
-  "effective_captain": "M.Salah",
   "vice_captain": "Gabriel",
-  "vice_conflict": true,
-  "vice_conflict_reason": "Gabriel OUT — right leg injury sustained Apr 5 2026, Arsenal rotating heavily for GW38. Chance_pct 0. Auto-sub to Munoz (slot 14) activates.",
-  "captain_xpts": 14,
+  "captain_xpts": 14.0,
   "starting_xi": [
-    { "name": "Raya",     "team": "ARS", "position": "GK",  "is_captain": false, "is_vice": false },
-    { "name": "Gabriel",  "team": "ARS", "position": "DEF", "is_captain": false, "is_vice": true  },
-    { "name": "Gvardiol", "team": "MCI", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "Aina",     "team": "NFO", "position": "DEF", "is_captain": false, "is_vice": false },
-    { "name": "M.Salah",  "team": "LIV", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Mbeumo",   "team": "BRE", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Rogers",   "team": "AVL", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Anderson", "team": "NFO", "position": "MID", "is_captain": false, "is_vice": false },
-    { "name": "Bowen",    "team": "WHU", "position": "FWD", "is_captain": false, "is_vice": false },
-    { "name": "Mateta",   "team": "CRY", "position": "FWD", "is_captain": false, "is_vice": false },
-    { "name": "Wood",     "team": "NFO", "position": "FWD", "is_captain": false, "is_vice": false }
+    {
+      "name": "Raya",
+      "team": "ARS",
+      "position": "GK",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Gabriel",
+      "team": "ARS",
+      "position": "DEF",
+      "is_captain": false,
+      "is_vice": true
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "position": "DEF",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "position": "DEF",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Truffert",
+      "team": "BOU",
+      "position": "DEF",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Rice",
+      "team": "ARS",
+      "position": "MID",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "position": "MID",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Garner",
+      "team": "EVE",
+      "position": "MID",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "position": "FWD",
+      "is_captain": true,
+      "is_vice": false
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "position": "FWD",
+      "is_captain": false,
+      "is_vice": false
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "position": "FWD",
+      "is_captain": false,
+      "is_vice": false
+    }
   ],
   "bench": [
-    { "name": "Sels",     "team": "NFO", "position": "GK"  },
-    { "name": "Haaland",  "team": "MCI", "position": "FWD" },
-    { "name": "Munoz",    "team": "CRY", "position": "DEF" },
-    { "name": "Kluivert", "team": "BOU", "position": "MID" }
+    {
+      "name": "Verbruggen",
+      "team": "BHA",
+      "position": "GK"
+    },
+    {
+      "name": "Mitchell",
+      "team": "CRY",
+      "position": "DEF"
+    },
+    {
+      "name": "Ampadu",
+      "team": "LEE",
+      "position": "MID"
+    },
+    {
+      "name": "Yarmoliuk",
+      "team": "BRE",
+      "position": "MID"
+    }
   ],
   "transfer_out": null,
   "transfer_in": null,
   "transfer": "none",
   "chip": "none",
-  "projected_xpts": 85,
-  "confidence": "high",
-  "key_risk": "Haaland rotation risk",
-  "critical_flags": [
-    "CRITICAL — CAPTAIN INVALID: Haaland (MCI, FWD) is CONFIRMED OUT for GW38. World Cup rest + Guardiola tactical omission. Gemini's captain pick scores 0. Captain xPts of 14 is void.",
-    "CRITICAL — VICE CAPTAIN INVALID: Gabriel (ARS, DEF) is CONFIRMED OUT for GW38. Right leg injury (Apr 5 2026); Arsenal rotated heavily. VC pick also scores 0.",
-    "DOUBLE ARMBAND FAILURE: Both armband picks are confirmed absent. FPL auto-cascades armband to next available starter in XI order. Effective captain is M.Salah (slot 5, 100% chance, confirmed Liverpool starter, final appearance).",
-    "Projected_xpts of 85 is based on stale Haaland captaincy data — real output will be substantially lower.",
-    "Additional XI risks: Raya confirmed absent (Arsenal rotation, 0% chance) — Sels auto-subs in at GK. Gvardiol on City bench (50% chance). Mateta on Palace bench (55% chance)."
-  ],
-  "notes": "Gemini cache last updated 2026-06-04T13:47:03.626Z — predates GW38 confirmed team news. Haaland is on Gemini's bench (not XI) but named captain; both captain and vice picks are confirmed unavailable per medical.json. Effective captain after cascade: M.Salah (confirmed 100% starter, LIV). Auto-sub chain: Sels covers Raya at GK; Munoz covers Gabriel at DEF. Effective post-auto-sub XI: Sels, Munoz, Gvardiol, Aina, M.Salah, Mbeumo, Rogers, Anderson, Bowen, Mateta, Wood."
+  "projected_xpts": 64.0,
+  "confidence": "medium",
+  "key_risk": "MCI opening fixtures middling — value engines fade Haaland at £15.5; Gemini forces him as cum_pts captain",
+  "spend": 100.0
 }

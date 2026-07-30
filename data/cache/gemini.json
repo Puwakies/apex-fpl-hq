@@ -1,15 +1,17 @@
 {
-  "updated": "2026-06-04T13:47:03.626Z",
+  "updated": "2026-07-30T04:36:45Z",
   "engine": "gemini",
-  "gw": 38,
+  "season": "2026/27",
+  "gw": 1,
+  "source": "proxy (cum_pts baseline) — Apps Script pipeline not yet run for 26/27",
   "captain": "Haaland",
-  "captain_xpts": 14,
+  "captain_xpts": 14.0,
   "vice_captain": "Gabriel",
   "transfer_out": null,
   "transfer_in": null,
-  "transfer_reason": "No transfers required for final gameweek",
+  "transfer_reason": "Fresh season — initial squad, no transfers",
   "chip": null,
-  "projected_xpts": 85,
-  "confidence": "high",
-  "key_risk": "Haaland rotation risk"
+  "projected_xpts": 64.0,
+  "confidence": "medium",
+  "key_risk": "MCI opening fixtures middling (FDR6 ~3.15) — Haaland captain premium priced at £15.5"
 }
