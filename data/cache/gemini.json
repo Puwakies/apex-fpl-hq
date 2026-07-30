@@ -1,17 +1,34 @@
 {
-  "updated": "2026-07-30T04:36:45Z",
+  "updated": "2026-07-30T04:48:21.189Z",
   "engine": "gemini",
-  "season": "2026/27",
   "gw": 1,
-  "source": "proxy (cum_pts baseline) — Apps Script pipeline not yet run for 26/27",
-  "captain": "Haaland",
-  "captain_xpts": 14.0,
-  "vice_captain": "Gabriel",
+  "captain": "B.Fernandes",
+  "captain_xpts": 18.26,
+  "vice_captain": "Raya",
+  "starting_xi": [
+    "Raya",
+    "Gabriel",
+    "Guéhi",
+    "Tarkowski",
+    "N.Williams",
+    "B.Fernandes",
+    "Rice",
+    "Gibbs-White",
+    "Semenyo",
+    "Haaland",
+    "Thiago"
+  ],
+  "bench": [
+    "Roefs",
+    "Virgil",
+    "Senesi",
+    "Milenković"
+  ],
   "transfer_out": null,
   "transfer_in": null,
-  "transfer_reason": "Fresh season — initial squad, no transfers",
+  "transfer_reason": "Initial squad selection for GW1",
   "chip": null,
-  "projected_xpts": 64.0,
-  "confidence": "medium",
-  "key_risk": "MCI opening fixtures middling (FDR6 ~3.15) — Haaland captain premium priced at £15.5"
+  "projected_xpts": 81.8,
+  "confidence": "high",
+  "key_risk": "Heavy reliance on Arsenal and United assets in early fixtures"
 }

@@ -99,33 +99,30 @@
 
 ## 🔺 2C) 3-Way GW1 — YOU vs GEMINI vs CLAUDE + ข้อพิจารณา
 
-เอนจินเดียวกันแต่คนละกติกา: **YOU** = ทีมสปรินต์ (ล็อก Haaland+Bruno, ตัด Gabriel/Raya) · **GEMINI** = cum_pts baseline (บังคับ Haaland เป็นกัปตัน) · **CLAUDE** = FDR6-optimal อิสระ (ไม่มีล็อก/แบน)
+**GEMINI = LIVE แล้ว** (Apps Script `runExport3Way()` push เข้า main 2026-07-30) · **YOU** = ทีมสปรินต์ · **CLAUDE** = FDR6-optimal อิสระ
 
-| | **YOU** | **GEMINI** | **CLAUDE** |
+| | **YOU** (สปรินต์) | **GEMINI** (LIVE) | **CLAUDE** (อิสระ) |
 |---|---|---|---|
-| Formation | 3-5-2 | 4-3-3 | 4-5-1 |
-| **กัปตัน** | **Haaland** | **Haaland** | **Bruno** (ไม่ซื้อ Haaland!) |
-| avg XI FDR6 | **3.07** (ง่ายสุด) | 3.21 | 3.09 |
-| GK | Verbruggen | Raya | Raya |
-| แนวรุกเด่น | Haaland+João Pedro | Haaland+João Pedro+CLW | João Pedro เดี่ยว + Semenyo/Rice |
+| **กัปตัน** | **Haaland** (ล็อก) | **B.Fernandes** (xPts 18.3) | **B.Fernandes** |
+| รอง | Bruno | Raya | Semenyo |
+| projected xPts | — | **81.8** | — |
+| Formation | 3-5-2 | 4-4-2* | 4-5-1 |
+| squad ถูกกติกา? | ✅ | ❌ **7DEF/4MID/2FWD** | ✅ |
 
-- **เห็นตรงกันทั้ง 3 (มั่นใจสูง):** **Guéhi · Anderson · Garner · João Pedro**
-- **เฉพาะ YOU:** Dewsbury-Hall, Gravenberch, Mitchell (+ EVE×3, สปรินต์ฟิกซ์เจอร์)
-- **เฉพาะ CLAUDE:** **Semenyo, Virgil** (มิด/แบ็คพรีเมี่ยม value)
-- **เฉพาะ GEMINI:** Gabriel, Truffert, Calvert-Lewin (เอาตัวแต้มสูงปีก่อน)
+**GEMINI (LIVE) XI:** Raya · Gabriel/Guéhi/Tarkowski/N.Williams · **B.Fernandes(C)**/Rice/Gibbs-White/Semenyo · Haaland/Thiago · ม้านั่ง: Roefs/Virgil/Senesi/Milenković
 
-### 💡 ข้อพิจารณา
-1. **กัปตัน 2/3 = Haaland** (YOU+GEMINI) → กัปตันปลอดภัย · **CLAUDE เท Haaland** ไปเลย
-2. **สัญญาณ fade-Haaland มีจริง:** ตอนปล่อยให้ optimizer หา value เต็มที่ (ทั้ง CLAUDE-FDR และ Gemini แบบไม่บังคับ) **ทั้งคู่ทิ้ง Haaland £15.5** เพราะ pts/£ ไม่คุ้ม (MCI FDR6 = 3.15 กลาง ๆ) → แต่การบังคับถือ (แบบ YOU/Gemini) ปลอดภัยกว่าเรื่องกัปตัน
-3. **Haaland + Bruno พร้อมกัน = บีบงบ:** Gemini ที่บังคับ Haaland **ต้องทิ้ง Bruno** เพื่อลงตัว → ยืนยันปม £27.5 ที่เจอมาตลอด (มีทั้งคู่ = ตัวเสริมอ่อน)
-4. **Semenyo** = ตัวที่ CLAUDE เชียร์แต่ YOU ยังไม่มี (Gemini ก็ไม่มี) → น่าพิจารณาเพิ่ม (MCI, 202pts, FDR6 ดี)
-5. **ฟิกซ์เจอร์:** ทีม YOU avg FDR6 ดีสุด (3.07) เพราะอิงฟิกซ์เจอร์ที่สุด · Gemini แย่สุด (3.21) เพราะไล่แต้มไม่ไล่โปรแกรม
+### 💡 ข้อพิจารณา (อัพเดทหลัง Gemini LIVE)
+1. 🔄 **พลิก! กัปตัน 2/3 เอนจิน = B.Fernandes** (Gemini LIVE + Claude) — ไม่ใช่ Haaland · **มีแค่ YOU (บังคับ) ที่ให้ปลอกแขน Haaland** → สัญญาณ "Bruno เป็นกัปตัน GW1 ดีกว่า" แข็งขึ้นมาก (MUN เปิดบ้านง่าย + Bruno ยิงจุดโทษ)
+2. ❌ **Gemini squad ผิดกติกา:** 2GK/**7DEF**/4MID/2FWD (ต้อง 5/5/3) — Gemini LLM อัดกองหลังเกิน → **ควรรัน Gemini ใหม่ หรือไม่นับ squad นี้** (กัปตัน Bruno ยังใช้อ้างอิงได้)
+3. **แกนร่วมทั้ง 3 (มั่นใจสูง):** **Guéhi · Semenyo · Rice · (Gabriel/Tarkowski)** — Gemini LIVE ก็เลือก Semenyo + Rice ตรงกับ Claude
+4. **Semenyo ยืนยันแล้ว 2/3 เอนจิน** (Gemini+Claude) เลือก — YOU ควรพิจารณาเพิ่ม
+5. **Haaland:** ทั้ง Gemini(LIVE) และ Claude **ถือ Haaland แต่ไม่ให้ปลอกแขน** GW1 → ตรงกับคำแนะนำก่อนหน้า (ถือได้ แต่กัปตัน Bruno ก่อน, ค่อยสลับปลอกแขนมา Haaland ช่วง run ง่าย GW24–29)
 
-**สรุป:** เก็บ Haaland(C) ตาม 2/3 เอนจิน · ตัวแกนร่วม (Guéhi/Anderson/Garner/João Pedro) มั่นใจได้ · พิจารณาดึง **Semenyo** เข้ามา (ตัวที่โมเดล value ทั้งคู่ชอบ)
+**สรุปใหม่:** 2/3 เอนจินบอก **กัปตัน GW1 = B.Fernandes** (ไม่ใช่ Haaland) · Semenyo ได้ไฟเขียว 2/3 · Gemini squad พังกติกา (แจ้งไว้)
 
-> ⚠️ **หมายเหตุ:** Gemini จริงมาจาก Apps Script pipeline (ยังไม่รันสำหรับ 26/27) — ตารางนี้เป็น **proxy = cum_pts baseline** ตามสเปกใน CLAUDE.md · pipeline จริงจะ push `data/cache/gemini.json` ตอนเปิดใช้
+> ⚠️ **YOUR real team = ยังไม่ลงทะเบียน:** `squad.json` = `"error":"no_picks"` → คุณยังไม่ได้กรอกทีม 26/27 ในเว็บ FPL · "YOU" ในตารางนี้ = ทีมสปรินต์ที่เราจัด (จนกว่าคุณจะกรอกทีมจริง)
 
-*(builders: `data/reports/{gw1_6_sprint,gemini_gw1,claude_gw1}.json` · YOU/Gemini/Claude)*
+*(sources: `data/cache/gemini.json` LIVE · `data/reports/{gw1_6_sprint,claude_gw1}.json`)*
 
 ---
 

@@ -1,8 +1,5 @@
 {
-  "updated": "2026-07-23T12:41:46Z",
-  "season": "2026/27",
-  "phase": "pre-season",
-  "note": "GW transfer market not open yet — no price velocity pre-GW1. Populated live once the season starts (net_transfers/cost_change_event).",
+  "updated": "2026-07-30T04:48:20.435Z",
   "likely_rises": [],
   "likely_falls": []
 }
