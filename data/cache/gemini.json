@@ -1,34 +1,7 @@
 {
-  "updated": "2026-07-30T04:48:21.189Z",
+  "updated": "2026-07-30T07:58:20.707Z",
   "engine": "gemini",
   "gw": 1,
-  "captain": "B.Fernandes",
-  "captain_xpts": 18.26,
-  "vice_captain": "Raya",
-  "starting_xi": [
-    "Raya",
-    "Gabriel",
-    "Guéhi",
-    "Tarkowski",
-    "N.Williams",
-    "B.Fernandes",
-    "Rice",
-    "Gibbs-White",
-    "Semenyo",
-    "Haaland",
-    "Thiago"
-  ],
-  "bench": [
-    "Roefs",
-    "Virgil",
-    "Senesi",
-    "Milenković"
-  ],
-  "transfer_out": null,
-  "transfer_in": null,
-  "transfer_reason": "Initial squad selection for GW1",
-  "chip": null,
-  "projected_xpts": 81.8,
-  "confidence": "high",
-  "key_risk": "Heavy reliance on Arsenal and United assets in early fixtures"
+  "error": "parse_failed",
+  "raw": "{\"engine\":\"gemini\",\"gw\":1,\"captain\":\"B.Fernandes\",\"captain_xpts\":9.13,\"vice_captain\":\"Raya\",\"starting_xi\":"
 }
