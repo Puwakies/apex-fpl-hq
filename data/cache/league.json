@@ -1,133 +1,17 @@
 {
-  "updated": "2026-07-23T12:41:46Z",
-  "season": "2026/27",
-  "phase": "pre-season",
+  "updated": "2026-07-30T04:48:18.776Z",
   "context": {
     "GW": 1,
+    "My Rank": "?",
+    "League Leader": "? (0pts)",
+    "Top Differentials": "",
     "Template Players": "",
-    "Top Differentials": "Haaland(0.0%), B.Fernandes(0.0%), Gabriel(0.0%), Semenyo(0.0%), Gibbs-White(0.0%), Rice(0.0%)"
+    "Total Managers": 0,
+    "My Total Pts": 0,
+    "League Leader Pts": 0,
+    "Gap To Leader": 0,
+    "Am I Leading": "YES"
   },
-  "template": [],
-  "differentials": [
-    {
-      "player": "Haaland",
-      "team": "MCI",
-      "pos": "FWD",
-      "price": 15.5,
-      "own": 0.0,
-      "pts_2526": 239
-    },
-    {
-      "player": "B.Fernandes",
-      "team": "MUN",
-      "pos": "MID",
-      "price": 12.0,
-      "own": 0.0,
-      "pts_2526": 235
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 8.0,
-      "own": 0.0,
-      "pts_2526": 209
-    },
-    {
-      "player": "Semenyo",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 8.5,
-      "own": 0.0,
-      "pts_2526": 202
-    },
-    {
-      "player": "Gibbs-White",
-      "team": "NFO",
-      "pos": "MID",
-      "price": 8.0,
-      "own": 0.0,
-      "pts_2526": 188
-    },
-    {
-      "player": "Rice",
-      "team": "ARS",
-      "pos": "MID",
-      "price": 7.5,
-      "own": 0.0,
-      "pts_2526": 184
-    },
-    {
-      "player": "Thiago",
-      "team": "BRE",
-      "pos": "FWD",
-      "price": 8.0,
-      "own": 0.0,
-      "pts_2526": 181
-    },
-    {
-      "player": "Anderson",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 6.5,
-      "own": 0.0,
-      "pts_2526": 180
-    },
-    {
-      "player": "Guéhi",
-      "team": "MCI",
-      "pos": "DEF",
-      "price": 6.0,
-      "own": 0.0,
-      "pts_2526": 179
-    },
-    {
-      "player": "João Pedro",
-      "team": "CHE",
-      "pos": "FWD",
-      "price": 7.5,
-      "own": 0.0,
-      "pts_2526": 177
-    },
-    {
-      "player": "Virgil",
-      "team": "LIV",
-      "pos": "DEF",
-      "price": 6.5,
-      "own": 0.0,
-      "pts_2526": 175
-    },
-    {
-      "player": "Senesi",
-      "team": "TOT",
-      "pos": "DEF",
-      "price": 6.0,
-      "own": 0.0,
-      "pts_2526": 175
-    },
-    {
-      "player": "Tarkowski",
-      "team": "EVE",
-      "pos": "DEF",
-      "price": 6.0,
-      "own": 0.0,
-      "pts_2526": 170
-    },
-    {
-      "player": "Rogers",
-      "team": "CHE",
-      "pos": "MID",
-      "price": 7.5,
-      "own": 0.0,
-      "pts_2526": 169
-    },
-    {
-      "player": "Wilson",
-      "team": "LEE",
-      "pos": "MID",
-      "price": 6.5,
-      "own": 0.0,
-      "pts_2526": 168
-    }
-  ]
+  "differentials": [],
+  "template": []
 }
