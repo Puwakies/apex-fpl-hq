@@ -89,6 +89,8 @@ HARD RULES (ละเมิดไม่ได้):
 - "starting_xi" = EXACTLY 11 names. Valid formation: 1 GK + 3-5 DEF + 2-5 MID + 1-3 FWD (totals 11).
   All 11 MUST be from MY_SQUAD (or "transfer_in" if you recommend one). Do NOT include a player who is flagged OUT/injured in INJURY_NEWS.
 - "bench" = EXACTLY 4 names (the remaining MY_SQUAD players not in starting_xi). starting_xi + bench = your 15.
+- SQUAD COMPOSITION (starting_xi + bench together) MUST be EXACTLY 2 GK + 5 DEF + 5 MID + 3 FWD. This is non-negotiable.
+  If MY_SQUAD is "(none)" or has fewer than 15 players, BUILD a fresh legal 15 from TOP_XPTS obeying 2/5/5/3 and max 3 per club.
 - "captain" and "vice_captain" MUST be inside "starting_xi".
 - "transfer_out" MUST be in MY_SQUAD. "transfer_in" MUST be from TOP_XPTS and not already owned. null for BOTH if no transfer is worth it.
 - "chip" is exactly one of: "TC", "BB", "FH", "WC", or null.
@@ -121,6 +123,23 @@ Return JSON with EXACTLY these keys and types:
   picks.engine = "gemini";
   if (picks.gw == null) picks.gw = gw;
 
+  // ── VALIDATE Gemini output against FPL rules (โค้ดตรวจจริง ไม่พึ่ง prompt อย่างเดียว) ──
+  // สร้าง name→pos จาก bootstrap เพื่อเช็คตำแหน่งแม้ Gemini จะแต่งชื่อ
+  const nameToPos = {};
+  if (boot) { const _pm = { 1: "GK", 2: "DEF", 3: "MID", 4: "FWD" };
+              boot.elements.forEach(e => { nameToPos[e.web_name] = _pm[e.element_type]; }); }
+  const vres = _apexValidateGeminiPicks(picks, nameToPos, squadList);
+  picks.squad_valid = vres.valid;
+  if (!vres.valid) {
+    picks.validation_error = vres.errors.join(" | ");
+    picks.validation_counts = vres.counts;
+    Logger.log("⚠ GEMINI SQUAD INVALID: " + picks.validation_error);
+  }
+  if (!squadList.length) {
+    picks.note = "MY_SQUAD empty (no_picks) — Gemini had no real squad to pick from; team may be invented. " +
+                 (picks.note || "");
+  }
+
   // เขียน tab GEMINI_PICKS (key/value → readSheetData อ่านง่าย)
   const sheet = getOrCreateSheet(ss, "GEMINI_PICKS");
   sheet.clearContents(); sheet.clearFormats();
@@ -136,6 +155,42 @@ Return JSON with EXACTLY these keys and types:
     (picks.error ? " ⚠" + picks.error : ""), picks.error ? "PARTIAL" : "SUCCESS");
   Logger.log("=== GEMINI PICKS DONE | Captain: " + (picks.captain || "?") + " ===");
   return picks;
+}
+
+// ตรวจ Gemini picks ให้ตรงกติกา FPL: XI=11, bench=4, squad=2GK/5DEF/5MID/3FWD,
+// formation XI = 1 GK + 3-5 DEF + 2-5 MID + 1-3 FWD, captain/vice อยู่ใน XI.
+// pos ดูจาก nameToPos (bootstrap) ก่อน แล้ว fallback ไป squadList ถ้าไม่เจอ.
+function _apexValidateGeminiPicks(picks, nameToPos, squadList) {
+  const errors = [];
+  const xi = Array.isArray(picks.starting_xi) ? picks.starting_xi : [];
+  const bn = Array.isArray(picks.bench) ? picks.bench : [];
+  const squadPos = {}; (squadList || []).forEach(p => { squadPos[p.name] = p.pos; });
+  const posOf = nm => nameToPos[nm] || squadPos[nm] || "?";
+  const tally = names => {
+    const c = { GK: 0, DEF: 0, MID: 0, FWD: 0, "?": 0 };
+    names.forEach(nm => { c[posOf(nm)] = (c[posOf(nm)] || 0) + 1; });
+    return c;
+  };
+  const xiC = tally(xi), fullC = tally(xi.concat(bn));
+
+  if (xi.length !== 11) errors.push("starting_xi=" + xi.length + " (ต้อง 11)");
+  if (bn.length !== 4)  errors.push("bench=" + bn.length + " (ต้อง 4)");
+  // formation ของ XI
+  if (xiC.GK !== 1)                       errors.push("XI GK=" + xiC.GK + " (ต้อง 1)");
+  if (xiC.DEF < 3 || xiC.DEF > 5)         errors.push("XI DEF=" + xiC.DEF + " (ต้อง 3-5)");
+  if (xiC.MID < 2 || xiC.MID > 5)         errors.push("XI MID=" + xiC.MID + " (ต้อง 2-5)");
+  if (xiC.FWD < 1 || xiC.FWD > 3)         errors.push("XI FWD=" + xiC.FWD + " (ต้อง 1-3)");
+  // squad ทั้ง 15 = 2/5/5/3
+  if (fullC.GK !== 2)  errors.push("squad GK=" + fullC.GK + " (ต้อง 2)");
+  if (fullC.DEF !== 5) errors.push("squad DEF=" + fullC.DEF + " (ต้อง 5)");
+  if (fullC.MID !== 5) errors.push("squad MID=" + fullC.MID + " (ต้อง 5)");
+  if (fullC.FWD !== 3) errors.push("squad FWD=" + fullC.FWD + " (ต้อง 3)");
+  if (fullC["?"])      errors.push("unknown-pos players=" + fullC["?"] + " (ชื่อไม่ตรง bootstrap)");
+  // captain / vice ต้องอยู่ใน XI
+  if (picks.captain && xi.indexOf(picks.captain) < 0)           errors.push("captain ไม่อยู่ใน XI");
+  if (picks.vice_captain && xi.indexOf(picks.vice_captain) < 0) errors.push("vice ไม่อยู่ใน XI");
+
+  return { valid: errors.length === 0, errors: errors, counts: { xi: xiC, squad: fullC } };
 }
 
 // เรียก Gemini แบบบังคับให้ตอบ JSON (เสถียรกว่า callGemini ปกติ)
