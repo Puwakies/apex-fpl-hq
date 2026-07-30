@@ -1,0 +1,311 @@
+# APEX FPL HQ — จัดทีม 26/27 (15 คนแรก)
+
+> ## 🔴 SEASON LIVE (อัพเดท 2026-07-23) — โปรแกรมจริงออกแล้ว!
+> **Deadline GW1 = ศุกร์ 21 ส.ค. 2026 17:30 UTC** (= เสาร์ 22 ส.ค. 00:30 น. เวลาไทย) · เตะนัดแรก 21 ส.ค. 19:00 UTC
+> - **เลื่อนชั้นเข้า:** COV, HUL, IPS · **ตกชั้นออก:** BUR, WHU, WOL
+> - **ตัวเดิมหลุด → หาใหม่แล้ว:** Bowen (WHU ตกชั้น), Dúbravka (BUR→ย้าย TOT กลับมาใช้ได้)
+> - **ย้ายทีม:** Senesi→TOT, Anderson→MCI · **ราคาขึ้นทุกตัว** (Haaland £15.5, Bruno £12.0, Gabriel £8.0)
+> - **FDR จริงพลิก:** MCI 3.78→**2.92 (ง่ายขึ้นมาก → ดีต่อ Haaland!)**, LIV 2.78, ส่วน BOU 2.92→**3.72 (หินขึ้น)**
+> - ราคายังไม่ขยับ (เพิ่งเปิดเกม, net_transfers=0) → ราคาปัจจุบัน = ราคาตั้งต้นทางการ
+> **→ ทีมล่าสุด(ราคาสด) = ส่วนที่ 2 (CORE) ด้านล่าง** · ส่วน 3–4 (SPREAD/ANCHOR) เป็นเวอร์ชันพรีซีซัน (proxy) **ตกยุคแล้ว** (มีตัวตกชั้น)
+
+> **วิธีคิด:** ยึดข้อมูล 25/26 เป็นตัวชี้คุณภาพ + FDR 5 เกมแรกจริง (รอง) + ล็อกพรีเมี่ยม set-and-forget เพื่อลด FT
+> **อัพเดท: ตัด Gabriel + Raya ออก** → เหลือล็อก 2 ตัว (Haaland, B.Fernandes) ปลดงบไปเสริมเกมรับ
+> Builders: `scripts/build_core_2627.py` (★ CORE) · Data: `data/features.json` (live 26/27)
+
+---
+
+## 1) ตาราง FDR 5 เกมแรก 26/27 (ต่ำ = ง่าย) — หัวใจของการจัดทีมนี้
+
+| อันดับ | ทีม | FDR avg | 5 เกมแรก (fdr+เหย้า/เยือน) | โน้ต |
+|---|---|---|---|---|
+| 1 | **SUN** | **2.72** | 2H 2A 3H 3A 3H | เปิดฤดูกาลง่ายสุด |
+| 2 | **BOU** | **2.92** | 4A 1H 3A 3H 3H | เกม 2 เจอทีมอ่อน |
+| 3 | BHA / **LIV** / WHU / WOL | 3.12 | — | กลุ่มง่าย |
+| 7 | AVL/BRE/CHE/EVE/NEW/NFO | 3.18 | — | กลาง |
+| 13 | BUR / MUN | 3.32 | — | กลาง |
+| 15 | CRY / LEE / TOT | 3.38 | — | ค่อนข้างยาก |
+| 18 | **ARS** / FUL | 3.52 | — | เปิดยาก |
+| 20 | **MCI** | **3.78** | 2A 3H 4A 4H 5A | **เปิดยากสุดในลีก** |
+
+**Insight สำคัญ:** MCI เปิดฤดูกาลยากสุด → **Haaland (£14.7) แทบไม่คุ้มใน 5 เกมแรก** ทีมที่ FDR ดีสุด (SUN/BOU) ดันมี **กองหลังถูก + ยืนตัวจริง** (Mukiele £4.6, Senesi £5.2, Truffert £4.8, Hume/Hill) → การจัดแบบ FDR-first จึงเป็น **ทีมกองหลังหนัก + ปีกทีมฟิกซ์เจอร์ดี**
+
+---
+
+## ★ 2) ทีมล่าสุด (ราคาสด LIVE) — "CORE" · 4-5-1 · £100.0m · **เน้น FDR 5 เกมแรก**
+
+**เป้าหมาย: ลด FT + อิง FDR 5 เกมแรก** → ล็อก 2 พรีเมี่ยม 🔒 (Haaland+Bruno) · ตัด Gabriel/Raya · เพิ่มน้ำหนัก FDR (ALPHA 1.2) → **avg XI FDR = 2.94 (เกือบง่ายสุดของลีก)**
+
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา(สด) | 25/26 pts | ตัวจริง | **FDR5** | 5 เกมแรก |
+|---|---|---|---|---|---|---|---|
+| GK | **Verbruggen** | BHA | 4.5 | 130 | 38 | 3.12 | 3H 4A 2H 2A 4H |
+| DEF | **Virgil** | LIV | 6.5 | 175 | 38 | **2.78** | 3A 3H 2A 2H 3A |
+| DEF | **Guéhi** | MCI | 6.0 | 179 | 35 | 2.92 | 3H 3A 2H 4A 2H |
+| DEF | **Senesi** | TOT | 6.0 | 175 | 37 | 2.92 | 3A 2H 3A 3H 3H |
+| DEF | **Van Hecke** | TOT | 5.0 | 148 | 36 | 2.92 | 3A 2H 3A 3H 3H |
+| MID | **B.Fernandes** 🔒 (VC) | MUN | 12.0 | 235 | 35 | 2.98 | 2A 2H 3A 4H 3A |
+| MID | **Anderson** | MCI | 6.5 | 180 | 37 | 2.92 | 3H 3A 2H 4A 2H |
+| MID | **Gravenberch** | LIV | 6.0 | 144 | 34 | **2.78** | 3A 3H 2A 2H 3A |
+| MID | **Garner** | EVE | 6.0 | 159 | 38 | 3.12 | 3H 3A 4H 3A 2H |
+| MID | **Ampadu** | LEE | 5.5 | 134 | 35 | 2.92 | 3A 3H 3A 2H 3H |
+| FWD | **Haaland** 🔒 (C) | MCI | 15.5 | 239 | 34 | 2.92 | 3H 3A 2H 4A 2H |
+| **ม้านั่ง** | Dúbravka | TOT | 4.0 | 96 | 35 | 2.92 | — |
+| ม้านั่ง | Mitchell | CRY | 4.5 | 135 | 36 | 3.18 | — |
+| ม้านั่ง | Calvert-Lewin | LEE | 6.0 | 142 | 30 | 2.92 | — |
+| ม้านั่ง | Welbeck | BHA | 6.0 | 126 | 26 | 3.12 | — |
+
+- 🔒 **ล็อก 2 พรีเมี่ยม (£27.5m):** Haaland (กัปตัน) · B.Fernandes (VC) · ตัด Gabriel/Raya แล้ว
+- ✅ **อิง FDR 5 เกมแรกเต็มที่:** XI เกือบทั้งชุดเปิดฤดูกาลง่าย (FDR ≤2.92) — Virgil/Gravenberch (LIV 2.78), Guéhi/Anderson/Haaland (MCI 2.92), Senesi/Van Hecke (TOT 2.92)
+- ✅ เทียบเวอร์ชันก่อน: **Tarkowski(EVE 3.12)→Senesi(TOT 2.92)** · **Fernandes→Gravenberch(LIV 2.78)** · ตัดกองหน้าฟิกซ์เจอร์หิน **Evanilson(BOU 3.72)→Welbeck(BHA 3.12)**
+- ✅ 15/15 ลงตัวจริง (Welbeck 26 นัด สำรอง) · ทุกคน AVAILABLE · £100.0m เป๊ะ · MCI×3 TOT×3 BHA×2 LIV×2 LEE×2
+- ⚠️ กองหน้าถูกยืนตัวจริงยังหายาก → 4-5-1 Haaland เดี่ยว · มิดใบท้าย (Ampadu) ยัง value
+
+*(builder: `scripts/build_core_2627.py` · ALPHA=1.2 · locked=Haaland,Bruno · banned=Gabriel,Raya · live 26/27)*
+
+---
+
+## 🏁 2B) ทีมสปรินต์ GW1–6 (แผน WC GW7) — 3-5-2 · £100.0m
+
+**กลยุทธ์ต่าง:** จะ WC ที่ GW7 → ทีมนี้แค่ต้องชนะ **GW1–6** เท่านั้น → ทิ้ง durability ทั้งซีซัน, อิง **FDR 6 เกมแรก** (ไม่ใช่ 5), อัดค่าตัวลง XI, ม้านั่งถูกทิ้งได้
+
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา | 25/26 pts | **FDR6** | 6 เกมแรก |
+|---|---|---|---|---|---|---|
+| GK | **Verbruggen** | BHA | 4.5 | 130 | 3.15 | 3H 4A 2H 2A 4H 3A |
+| DEF | **Tarkowski** | EVE | 6.0 | 170 | 2.98 | 3H 3A 4H 3A 2H 2A |
+| DEF | **Guéhi** | MCI | 6.0 | 179 | 3.15 | 3H 3A 2H 4A 2H 4A |
+| DEF | **Mitchell** | CRY | 4.5 | 135 | 3.15 | 3A 4H 3A 2H 3A 3H |
+| MID | **B.Fernandes** 🔒 (VC) | MUN | 12.0 | 235 | 2.98 | 2A 2H 3A 4H 3A 3H |
+| MID | **Anderson** | MCI | 6.5 | 180 | 3.15 | 3H 3A 2H 4A 2H 4A |
+| MID | **Garner** | EVE | 6.0 | 159 | 2.98 | 3H 3A 4H 3A 2H 2A |
+| MID | **Dewsbury-Hall** | EVE | 6.5 | 151 | 2.98 | 3H 3A 4H 3A 2H 2A |
+| MID | **Gravenberch** | LIV | 6.0 | 144 | 2.98 | 3A 3H 2A 2H 3A 4H |
+| FWD | **Haaland** 🔒 (C) | MCI | 15.5 | 239 | 3.15 | 3H 3A 2H 4A 2H 4A |
+| FWD | **João Pedro** | CHE | 7.5 | 177 | 3.15 | 3A 2H 5A 2H 3A 3H |
+| **ม้านั่ง** | Dúbravka | TOT | 4.0 | 96 | 3.15 | — |
+| ม้านั่ง | Calvert-Lewin | LEE | 6.0 | 142 | 3.32 | — |
+| ม้านั่ง | Shaw | MUN | 4.5 | 113 | 2.98 | — |
+| ม้านั่ง | F.Kadıoğlu | BHA | 4.5 | 118 | 3.15 | — |
+
+- 🔒 ล็อก Haaland (C) + B.Fernandes (VC) · ตัด Gabriel/Raya · **avg XI FDR6 = 3.07**
+- ✅ **อัพเกรดเกมรุก:** ได้ **João Pedro (CHE £7.5)** ยืน 2 กับ Haaland (3-5-2) แทน 4-5-1 Haaland เดี่ยว — เพราะสปรินต์เอาแต้มล้วน ไม่ต้องกันงบ set-and-forget
+- ✅ **โหลด Everton ×3** (Tarkowski/Garner/Dewsbury-Hall) — EVE โปรแกรม 6 เกมแรกดี (2.98)
+- ✅ ทุกคน AVAILABLE · £100.0m เป๊ะ · MCI×3 EVE×3 MUN×2 BHA×2
+- 💡 **แผน chip:** GW1–6 ไม่มี DGW/BGW → ไม่กด chip · **WC GW7** รื้อทีมรับบล็อกฟิกซ์เจอร์ใหม่ · เก็บ BB/FH/TC ไว้ DGW/BGW ครึ่งหลัง (~GW27–35)
+- หมายเหตุ: GW1–6 มี ~5–6 FT (สัปดาห์ละ 1) พอปรับตามฟอร์ม/ข่าว lineup ก่อน WC ได้
+
+*(builder: `scripts/build_gw1_6.py` → `data/reports/gw1_6_sprint.json` · FDR 6 เกม · ALPHA=1.35)*
+
+---
+
+## 🔺 2C) 3-Way GW1 — YOU vs GEMINI vs CLAUDE + ข้อพิจารณา
+
+เอนจินเดียวกันแต่คนละกติกา: **YOU** = ทีมสปรินต์ (ล็อก Haaland+Bruno, ตัด Gabriel/Raya) · **GEMINI** = cum_pts baseline (บังคับ Haaland เป็นกัปตัน) · **CLAUDE** = FDR6-optimal อิสระ (ไม่มีล็อก/แบน)
+
+| | **YOU** | **GEMINI** | **CLAUDE** |
+|---|---|---|---|
+| Formation | 3-5-2 | 4-3-3 | 4-5-1 |
+| **กัปตัน** | **Haaland** | **Haaland** | **Bruno** (ไม่ซื้อ Haaland!) |
+| avg XI FDR6 | **3.07** (ง่ายสุด) | 3.21 | 3.09 |
+| GK | Verbruggen | Raya | Raya |
+| แนวรุกเด่น | Haaland+João Pedro | Haaland+João Pedro+CLW | João Pedro เดี่ยว + Semenyo/Rice |
+
+- **เห็นตรงกันทั้ง 3 (มั่นใจสูง):** **Guéhi · Anderson · Garner · João Pedro**
+- **เฉพาะ YOU:** Dewsbury-Hall, Gravenberch, Mitchell (+ EVE×3, สปรินต์ฟิกซ์เจอร์)
+- **เฉพาะ CLAUDE:** **Semenyo, Virgil** (มิด/แบ็คพรีเมี่ยม value)
+- **เฉพาะ GEMINI:** Gabriel, Truffert, Calvert-Lewin (เอาตัวแต้มสูงปีก่อน)
+
+### 💡 ข้อพิจารณา
+1. **กัปตัน 2/3 = Haaland** (YOU+GEMINI) → กัปตันปลอดภัย · **CLAUDE เท Haaland** ไปเลย
+2. **สัญญาณ fade-Haaland มีจริง:** ตอนปล่อยให้ optimizer หา value เต็มที่ (ทั้ง CLAUDE-FDR และ Gemini แบบไม่บังคับ) **ทั้งคู่ทิ้ง Haaland £15.5** เพราะ pts/£ ไม่คุ้ม (MCI FDR6 = 3.15 กลาง ๆ) → แต่การบังคับถือ (แบบ YOU/Gemini) ปลอดภัยกว่าเรื่องกัปตัน
+3. **Haaland + Bruno พร้อมกัน = บีบงบ:** Gemini ที่บังคับ Haaland **ต้องทิ้ง Bruno** เพื่อลงตัว → ยืนยันปม £27.5 ที่เจอมาตลอด (มีทั้งคู่ = ตัวเสริมอ่อน)
+4. **Semenyo** = ตัวที่ CLAUDE เชียร์แต่ YOU ยังไม่มี (Gemini ก็ไม่มี) → น่าพิจารณาเพิ่ม (MCI, 202pts, FDR6 ดี)
+5. **ฟิกซ์เจอร์:** ทีม YOU avg FDR6 ดีสุด (3.07) เพราะอิงฟิกซ์เจอร์ที่สุด · Gemini แย่สุด (3.21) เพราะไล่แต้มไม่ไล่โปรแกรม
+
+**สรุป:** เก็บ Haaland(C) ตาม 2/3 เอนจิน · ตัวแกนร่วม (Guéhi/Anderson/Garner/João Pedro) มั่นใจได้ · พิจารณาดึง **Semenyo** เข้ามา (ตัวที่โมเดล value ทั้งคู่ชอบ)
+
+> ⚠️ **หมายเหตุ:** Gemini จริงมาจาก Apps Script pipeline (ยังไม่รันสำหรับ 26/27) — ตารางนี้เป็น **proxy = cum_pts baseline** ตามสเปกใน CLAUDE.md · pipeline จริงจะ push `data/cache/gemini.json` ตอนเปิดใช้
+
+*(builders: `data/reports/{gw1_6_sprint,gemini_gw1,claude_gw1}.json` · YOU/Gemini/Claude)*
+
+---
+
+## 3) SPREAD (FDR-first, เวอร์ชันเดิม) · 5-4-1 · £95.5m · เหลือ £4.5m
+
+ยึด FDR 5 เกมแรกเต็มที่ ไม่เอา Haaland (แมนซิตี้เปิดหินสุด) เอาเงินไปกระจายคุณภาพ → **ม้านั่งแรงมาก + มีเงินยืดหยุ่น**
+
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา | 25/26 pts | ตัวจริง | FDR5 | 5 เกมแรก |
+|---|---|---|---|---|---|---|---|
+| GK | **Roefs** | SUN | 4.8 | 136 | 35 | 2.72 | 2H 2A 3H 3A 3H |
+| DEF | **Senesi** | BOU | 5.2 | 175 | 37 | 2.92 | 4A 1H 3A 3H 3H |
+| DEF | **Gabriel** | ARS | 7.3 | 209 | 30 | 3.52 | 4A 2H 4A 3H 4H |
+| DEF | **Truffert** | BOU | 4.8 | 165 | 38 | 2.92 | 4A 1H 3A 3H 3H |
+| DEF | **Mukiele** | SUN | 4.6 | 151 | 32 | 2.72 | 2H 2A 3H 3A 3H |
+| DEF | **Virgil** | LIV | 6.1 | 175 | 38 | 3.12 | 3H 3A 4H 2A 3H |
+| MID | **B.Fernandes (C)** | MUN | 10.4 | 235 | 35 | 3.32 | 4H 3A 1H 5A 3H |
+| MID | **Anderson** | NFO | 5.7 | 180 | 37 | 3.18 | 3H 3A 2H 5A 2A |
+| MID | **Gibbs-White** | NFO | 7.6 | 188 | 35 | 3.18 | 3H 3A 2H 5A 2A |
+| MID | **E.Le Fée** | SUN | 4.8 | 147 | 33 | 2.72 | 2H 2A 3H 3A 3H |
+| FWD | **Bowen (VC)** | WHU | 7.8 | 187 | 38 | 3.12 | 3A 3H 3A 3H 3H |
+| **ม้านั่ง** | Petrović | BOU | 4.6 | 124 | 38 | 2.92 | — |
+| ม้านั่ง | Rice | ARS | 7.2 | 184 | 35 | 3.52 | — |
+| ม้านั่ง | Thiago | BRE | 7.2 | 181 | 37 | 3.18 | — |
+| ม้านั่ง | João Pedro | CHE | 7.4 | 177 | 31 | 3.18 | — |
+
+- **กัปตัน: B.Fernandes** (season leader 235 pts ในทีม + ยืนตัวจริง 35 นัด — ตรงกฎ captaincy LOCKED v7)
+- **รองกัปตัน: Bowen** (ลงครบ 38 นัด, ยิง+จ่าย, ฟิกซ์เจอร์นิ่ง)
+- **จุดเด่น:** ม้านั่ง Rice/Thiago/João Pedro เป็นตัวจริงจริงทั้งหมด → พร้อม Bench Boost / กันเจ็บ + เหลือ £4.5m ทำราคาต้นซีซัน
+- **สโมสร:** BOU×3, SUN×3, ARS×2, NFO×2
+
+---
+
+## 4) ทางเลือก — "ANCHOR" (เก็บ Haaland, FDR-first) · 5-3-2 · £99.4m · เหลือ £0.6m
+
+เหมาะถ้าอยาก **Haaland เป็นกัปตัน set-and-forget** (season leader ตัวจริง 239 pts) ยอมแลกกับม้านั่งอ่อนกว่าและฟิกซ์เจอร์เปิดหิน — แล้วรอ MCI ฟิกซ์เจอร์ดีขึ้นค่อยได้เปรียบ
+
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา | 25/26 pts | FDR5 |
+|---|---|---|---|---|---|
+| GK | Roefs | SUN | 4.8 | 136 | 2.72 |
+| DEF | Senesi | BOU | 5.2 | 175 | 2.92 |
+| DEF | Gabriel | ARS | 7.3 | 209 | 3.52 |
+| DEF | Truffert | BOU | 4.8 | 165 | 2.92 |
+| DEF | Mukiele | SUN | 4.6 | 151 | 2.72 |
+| DEF | Virgil | LIV | 6.1 | 175 | 3.12 |
+| MID | B.Fernandes | MUN | 10.4 | 235 | 3.32 |
+| MID | Anderson | NFO | 5.7 | 180 | 3.18 |
+| MID | Gibbs-White | NFO | 7.6 | 188 | 3.18 |
+| FWD | **Haaland (C)** | MCI | 14.7 | 239 | 3.78 |
+| FWD | Bowen | WHU | 7.8 | 187 | 3.12 |
+| ม้านั่ง | Petrović / Le Fée / Garner / Calvert-Lewin | | | | |
+
+- **กัปตัน: Haaland** (VC: B.Fernandes) — ตรงกฎ captaincy LOCKED v7 เป๊ะ (cum_pts leader)
+- **ข้อควรระวัง:** MCI เปิด 5 เกมยากสุด (2A 3H 4A 4H **5A**) → 5 เกมแรกอาจไม่คุ้มค่าตัว, ม้านั่งอ่อน (Calvert-Lewin/Garner)
+
+---
+
+## 5) เทียบ 3 แนวทาง — CORE / SPREAD / ANCHOR
+
+| | ★ CORE (แนะนำ) | SPREAD | ANCHOR |
+|---|---|---|---|
+| ปรัชญา | premium-anchored / set-and-forget | FDR-first (กระจาย) | FDR-first + เก็บ Haaland |
+| Formation | 4-4-2 | 5-4-1 | 5-3-2 |
+| กัปตันถาวร | Haaland 🔒 (VC Bruno) | B.Fernandes | Haaland |
+| พรีเมี่ยมล็อกทั้งซีซัน | 4 (Haaland/Bruno/Gabriel/Raya) | 0 | 1 (Haaland) |
+| ตัวจริง ≥30 นัดปีก่อน | **15/15** | 14/15 | 13/15 |
+| ต้องทำ FT บ่อยไหม | **น้อยสุด** (นิ่งทั้งทีม) | ปานกลาง (ไล่ฟิกซ์เจอร์) | ปานกลาง |
+| น้ำหนัก FDR 5 เกมแรก | รอง (มิลด์) | หลัก (สูงสุด) | หลัก |
+
+**เหตุผลที่แนะนำ CORE (ตามโจทย์ล่าสุด "ลด FT + ล็อกพรีเมี่ยม"):** ค่าตัวหลักผูกกับพรีเมี่ยม 4 ตัวที่ไม่มีวันขาย (Haaland/Bruno/Gabriel/Raya) และอีก 11 คนล้วนเป็นตัวยืน ≥30 นัด → ทีมนิ่ง ไม่ต้องไล่เปลี่ยนตามฟิกซ์เจอร์รายสัปดาห์ ประหยัด FT เก็บไว้ใช้ตอนจำเป็นจริง (เจ็บยาว/DGW/chip). ส่วน SPREAD/ANCHOR คือแนวทาง FDR-first เดิม เหมาะถ้าอยากไล่ฟิกซ์เจอร์และรับความเสี่ยง/รางวัลจากการทำ transfer บ่อยกว่า
+
+---
+
+## 6) ข้อจำกัด / จุดที่ควรใช้ human override (ปรัชญา CLAUDE.md)
+
+โมเดลนี้ **ขับด้วยข้อมูลฤดูกาลที่แล้ว** ล้วนๆ จึง **ตัดผู้เล่นเด่นที่ซีซันก่อนฟอร์มตก/เจ็บ** ออกโดยอัตโนมัติ ควรใช้วิจารณญาณจริงทับ:
+- **M.Salah (LIV £14.0)** — 25/26 ได้แค่ 123 pts (ซีซันตก) → โมเดลไม่หยิบ แต่ของจริงยังระดับพรีเมียม
+- **Palmer (CHE £10.3)** — 25/26 แค่ 114 pts → เช่นเดียวกัน
+- **Isak (LIV £10.3)** — 25/26 เจ็บ เล่นแค่ 8 นัด/41 pts → ข้อมูลต่ำ แต่ถ้าฟิต = elite (ย้ายมา LIV)
+- **Gyökeres / ตัวใหม่ / ตัวเลื่อนชั้น** — ไม่มีสถิติ PL ปีก่อน → โมเดลให้ 0 โดยธรรมชาติ
+
+> ตรงกับหลัก APEX: AI ให้ baseline เชิงปริมาณ, **มนุษย์ทับด้วยข้อมูล lineup/อาการเจ็บ real-time** (25/26: human ชนะ AI 47% vs 42%)
+
+---
+
+---
+
+## 7) 📊 อัพเดทตลาด/ทีม/นักเตะ — ปัจจุบัน (2026-07-20, พรีซีซัน ก่อน GW1)
+
+ดึงสดจาก FPL bootstrap (`scripts/market_update.py` → `data/cache/{news,price,league}.json` + `data/reports/market_2627.json`)
+
+**สถานะตลาดราคา:** ตลาดโอน GW **ยังไม่เปิด** ก่อน GW1 → ยังไม่มี price velocity (ราคายังไม่ขึ้น/ลง) จะมีข้อมูลจริงเมื่อซีซันเริ่ม
+
+**ทีมยอดนิยม (Template / EO สูง — คนเลือกเยอะ):**
+| ผู้เล่น | ทีม | ราคา | %เลือก | ผมมีไหม |
+|---|---|---|---|---|
+| Haaland | MCI | 14.7 | 62.5% | ANCHOR เท่านั้น |
+| B.Fernandes | MUN | 10.4 | 48.0% | ✅ (กัปตัน) |
+| **Semenyo** | MCI | 8.0 | 46.2% | ❌ (MCI เปิดหิน) |
+| Gabriel | ARS | 7.3 | 45.4% | ✅ |
+| Raya | ARS | 6.2 | 36.4% | ❌ (ใช้ Roefs ถูกกว่า+ฟิกซ์เจอร์ดีกว่า) |
+| João Pedro | CHE | 7.4 | 34.8% | ✅ (ม้านั่ง SPREAD) |
+| **Guéhi** | MCI | 5.1 | 32.6% | ❌ (MCI เปิดหิน) |
+| Virgil | LIV | 6.1 | 31.5% | ✅ |
+
+> **Template risk ที่ต้องรู้:** ทีม FDR-first ของผม **ตั้งใจไม่เอาสาย MCI (Haaland/Semenyo/Guéhi)** เพราะแมนซิตี้เปิด 5 เกมยากสุด — ถ้าซิตี้ระเบิดฟอร์มช่วงต้น จะโดน template สวน นี่คือ trade-off ที่แลกมากับความชัวร์ของฟิกซ์เจอร์ (แก้ได้ด้วย 1 transfer ราว GW6)
+
+**Differentials คุณภาพ (แต้มสูงปีก่อน แต่คนเลือกน้อย) — ทีมผมมีหลายตัว:**
+Gibbs-White 9.2% · Anderson(NFO) 9.4% · Truffert 5.3% · Lacroix 7.1% · Bruno G. 6.5%
+
+**เจ็บ/แบน ปัจจุบัน (ที่เกี่ยวข้อง):**
+| ผู้เล่น | ทีม | สถานะ | โอกาสลง |
+|---|---|---|---|
+| Ekitiké | LIV | INJURED | 0% |
+| Romero | TOT | INJURED | 0% |
+| Kudus | TOT | INJURED | 0% |
+| Grealish | EVE | INJURED | 0% |
+| J.Timber | ARS | DOUBTFUL | 25% |
+| Šeško | MUN | DOUBTFUL | 50% |
+| Alderete | SUN | DOUBTFUL | 50% |
+| Aina | NFO | DOUBTFUL | 75% |
+
+✅ **เช็คแล้ว: ผู้เล่นทั้ง 18 คนในทีมแนะนำ (SPREAD+ANCHOR) สถานะ AVAILABLE ครบ ไม่มีใครติดเจ็บ/แบน**
+(หมายเหตุ: Alderete กองหลัง SUN ถูก+ฟิกซ์เจอร์ดี แต่ตอนนี้ 50% → ผมใช้ Mukiele แทนถูกต้องแล้ว)
+
+---
+
+## 8) 🧤 เจาะลึกตัวล็อกที่ 4 (GK) — เทียบ save เผื่อ 26/27 ให้แต้ม save มากขึ้น
+
+**คำถาม:** ถ้า 26/27 การเซฟได้ bps/แต้มมากขึ้น มี GK คนอื่นที่ **saves เยอะกว่า Raya** แต่ **clean sheet ยังใกล้เคียง** ไหม?
+(ดึง saves/CS/bps ดิบจาก bootstrap — ไม่มีใน features.json · builder: `scripts/gk_compare_2627.py`)
+
+**Raya baseline:** saves=60 (น้อยสุดในกลุ่มตัวจริง เพราะ ARS เกมรับแน่นโดนยิงน้อย) · **CS=19 (สูงสุดในลีก)** · bps=633 (สูงสุด) · 162 pts · £6.2
+
+**ตารางเทียบ (proj = เอาแต้มปีก่อนมาคิดใหม่ตามเรตแต้ม/เซฟ, ถือ CS/bonus คงที่):**
+
+| GK | ทีม | £ | saves | CS | bps | ปีก่อน | @1เซฟ/2 | @1เซฟ/1 | ppm(½) |
+|---|---|---|---|---|---|---|---|---|---|
+| Kelleher | BRE | 4.8 | 109 | 10 | 570 | 143 | 161 | **216** | **33.6** |
+| Roefs | SUN | 4.8 | 109 | 10 | 573 | 136 | 154 | 209 | 32.1 |
+| Petrović | BOU | 4.6 | 109 | 11 | 512 | 124 | 142 | 197 | 30.9 |
+| Verbruggen | BHA | 4.6 | 106 | 10 | 616 | 130 | 148 | 201 | 32.1 |
+| Pickford | EVE | 5.6 | 100 | 11 | 545 | 135 | 152 | 202 | 27.1 |
+| **Donnarumma** | MCI | 5.6 | **78** | **15** | 567 | 135 | 148 | 187 | 26.4 |
+| **Raya** 🔒 | ARS | 6.2 | 60 | **19** | 633 | **162** | **172** | 202 | 27.7 |
+
+**ผลวิเคราะห์:**
+1. **CS ของ Raya (19) นำลิ่วทั้งลีก** — มีแค่ **Donnarumma (15)** ที่ใกล้เคียง ที่เหลือ ≤11 ทั้งหมด (เพราะเป็น GK ทีมเกมรับอ่อนกว่า)
+2. **คนเดียวที่ตรงโจทย์เป๊ะ (saves > Raya + CS ใกล้เคียง) = Donnarumma** (MCI, £5.6): saves 78 (+18) · CS 15 (Raya 19) · ถูกกว่า £0.6m
+3. **แต่บนแต้มรวม Raya ยังชนะ** ทั้งเรตปัจจุบันและเรต boost 1เซฟ/2 (172 vs ทุกคน) — จะโดนแซงก็ต่อเมื่อ boost แรงถึง **1แต้ม/เซฟ** (Kelleher 216, Roefs 209) ซึ่งเป็นการเปลี่ยนกฎที่สุดโต่ง
+4. Raya ยังนำ **bps (633)** ด้วย → ถ้าเซฟให้ bps มากขึ้น คนเซฟเยอะจะไต่ bonus ขึ้นมา แต่ก็ยังไม่พอแซงฐาน CS+bonus ของ Raya ที่เรตสมเหตุผล
+
+**3 ทางเลือกสำหรับตัวล็อก GK:**
+- **(A) เก็บ Raya** ✅ *(แนะนำ)* — เพดาน CS+bonus สูงสุด, set-and-forget แท้; save boost ระดับสมจริงยังไม่ล้มเขา
+- **(B) → Donnarumma £5.6** — ตรงโจทย์ "saves↑ + CS≈" ที่สุด, ประหยัด £0.6m; **ข้อเสีย:** แต้มรวมยังต่ำกว่า Raya + ซ้ำสโมสร MCI กับ Haaland + MCI เปิดหิน
+- **(C) → Kelleher/Roefs £4.8** — เดิมพันกับ save boost เต็มตัว: saves เกือบเท่าตัว (109) + ppm สูงสุด + **ปลดงบ £1.4m ไปเสริมตัวรุก**; ถ้า boost แรงจริง กลุ่มนี้แซง Raya
+
+> **สรุป:** ตอบตรงคำถาม = **Donnarumma** คือคนเดียวที่ saves มากกว่าแต่ CS ยังใกล้ Raya · แต่เชิงแต้มรวม **Raya ยังคุ้มกว่าที่เรต boost สมเหตุผล** · ถ้าจะเปลี่ยนเพื่อ save จริง ๆ ควรไป **Kelleher (£4.8) เพื่อ value + ปลดงบ** มากกว่า Donnarumma
+
+### 8.1) ปรับตามจำนวนนาทีที่ลงเล่น (normalize minutes)
+
+**ประเด็น:** saves ดิบอาจสูงเพราะลงเล่นเยอะ ต้องดู **saves/90** และปรับให้ทุกคนลงเต็มฤดูกาลเท่ากัน (สเกลเป็น 3330 นาที = โหลดของ Raya)
+
+| GK | ทีม | นาที | นัด | saves/90 | **pts/90** | full-season saves | full @1/2 | full @1/1 |
+|---|---|---|---|---|---|---|---|---|
+| Dúbravka | BUR | 3150 | 35 | 3.63 | 2.74 | 134 | 124 | 191 |
+| Roefs | SUN | 3150 | 35 | 3.11 | 3.89 | 115 | 163 | 221 |
+| Kelleher | BRE | 3330 | 37 | 2.95 | 3.86 | 109 | 161 | 216 |
+| Donnarumma | MCI | 3060 | 34 | 2.29 | **3.97** | 85 | 161 | 204 |
+| **Raya** 🔒 | ARS | **3330** | 37 | **1.62** | **4.38** | 60 | **172** | 202 |
+
+**ผลหลัง normalize นาที:**
+1. **saves น้อยของ Raya ไม่ใช่เพราะลงเล่นน้อย** — เขาลงเล่น **มากสุด (3330 นาที)** แต่ saves/90 ต่ำสุด (1.62) = ARS เกมรับแน่นจริง โดนยิงน้อยจริง ไม่ใช่ artifact ของนาที
+2. **pts/90 ของ Raya สูงสุด (4.38)** — ประสิทธิภาพต่อเกมดีที่สุดในบรรดา GK ทั้งหมด (เพราะ CS+bonus) แม้ยังไม่คิด save boost
+3. **สเกลทุกคนเป็นฤดูกาลเต็ม @boost 1เซฟ/2: Raya (172) ยังชนะทุกคน** — Roefs/Kelleher/Donnarumma ตันที่ ~161–163
+4. Donnarumma ลงน้อยกว่า (34 นัด) → พอสเกลเต็มฤดูกาล saves ขยับเป็น 85, แต้ม @1/2 ขึ้นเป็น 161 (ยังต่ำกว่า Raya)
+5. **จะแซง Raya ได้ต้อง boost สุดโต่ง 1แต้ม/เซฟ เท่านั้น** (แล้ว Roefs/Kelleher/Donnarumma/Pope/Sels/Martinez ถึงจะขึ้นนำ)
+
+> **สรุปเพิ่ม (หลังคิดนาที):** การ normalize นาที **ยิ่งยืนยันว่า Raya คุ้มสุด** ที่เรต boost สมจริง — saves ที่น้อยเป็นเรื่องเกมรับ ไม่ใช่นาที และ pts/90 เขานำสุด · ถ้าเดิมพัน boost แรงมาก ตัว value ที่ดีสุดคือ **Roefs (£4.8, SUN)** — saves/90 สูง + pts/90 3.89 + full-season @1/2 = 163 สูงสุดในกลุ่มท้าชิง + ปลดงบ £1.4m
+
+---
+
+*Generated: 2026-07-20 · APEX FPL HQ · squad `scripts/build_core_2627.py` · GK `scripts/gk_compare_2627.py` · market `scripts/market_update.py`*
+*Outputs: `data/reports/preseason_2627_{core,spread,anchor}.json`, `data/reports/gk_compare_2627.json`, `data/reports/market_2627.json`, `data/cache/{news,price,league}.json`*

@@ -1,0 +1,173 @@
+{
+  "mode": "gw1-6-sprint",
+  "wc": "GW7",
+  "formation": "4-5-1",
+  "spend": 100.0,
+  "bank": 0.0,
+  "avg_xi_fdr6": 3.09,
+  "xi": [
+    {
+      "name": "Raya",
+      "team": "ARS",
+      "pos": "GK",
+      "price": 6.0,
+      "pts": 162,
+      "starts": 37,
+      "fdr6": 3.15,
+      "score": 172.5001931773511,
+      "locked": false
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "starts": 38,
+      "fdr6": 2.983,
+      "score": 200.5626113166708,
+      "locked": false
+    },
+    {
+      "name": "Tarkowski",
+      "team": "EVE",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 170,
+      "starts": 37,
+      "fdr6": 2.983,
+      "score": 194.83225099333734,
+      "locked": false
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 179,
+      "starts": 35,
+      "fdr6": 3.15,
+      "score": 190.60206530090028,
+      "locked": false
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 175,
+      "starts": 37,
+      "fdr6": 3.15,
+      "score": 186.3428012718299,
+      "locked": false
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "starts": 35,
+      "fdr6": 2.983,
+      "score": 269.3269351966722,
+      "locked": false
+    },
+    {
+      "name": "Semenyo",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 8.5,
+      "pts": 202,
+      "starts": 37,
+      "fdr6": 3.15,
+      "score": 215.0928334680551,
+      "locked": false
+    },
+    {
+      "name": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 7.5,
+      "pts": 184,
+      "starts": 35,
+      "fdr6": 3.15,
+      "score": 195.9261453372383,
+      "locked": false
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 6.5,
+      "pts": 180,
+      "starts": 37,
+      "fdr6": 3.15,
+      "score": 191.6668813081679,
+      "locked": false
+    },
+    {
+      "name": "Garner",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 159,
+      "starts": 38,
+      "fdr6": 2.983,
+      "score": 182.22545828200373,
+      "locked": false
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.5,
+      "pts": 177,
+      "starts": 31,
+      "fdr6": 3.15,
+      "score": 186.46417240059105,
+      "locked": false
+    }
+  ],
+  "bench": [
+    {
+      "name": "Verbruggen",
+      "team": "BHA",
+      "pos": "GK",
+      "price": 4.5,
+      "pts": 130,
+      "starts": 38,
+      "fdr6": 3.15,
+      "score": 138.4260809447879
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 148,
+      "starts": 36,
+      "fdr6": 3.15,
+      "score": 157.5927690756047
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "starts": 30,
+      "fdr6": 3.317,
+      "score": 139.8144089816268
+    },
+    {
+      "name": "Welbeck",
+      "team": "BHA",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 126,
+      "starts": 26,
+      "fdr6": 3.15,
+      "score": 120.78585616151646
+    }
+  ]
+}

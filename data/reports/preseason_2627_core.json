@@ -1,0 +1,179 @@
+{
+  "mode": "core",
+  "formation": "4-5-1",
+  "spend": 100.0,
+  "bank": 0.0,
+  "locked": [
+    "Haaland",
+    "B.Fernandes"
+  ],
+  "xi": [
+    {
+      "name": "Verbruggen",
+      "team": "BHA",
+      "pos": "GK",
+      "price": 4.5,
+      "pts": 130,
+      "starts": 38,
+      "fdr": 3.12,
+      "score": 114.61213096234441,
+      "locked": false
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "starts": 38,
+      "fdr": 2.78,
+      "score": 189.60385776042037,
+      "locked": false
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 179,
+      "starts": 35,
+      "fdr": 2.92,
+      "score": 184.50870098425523,
+      "locked": false
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 175,
+      "starts": 37,
+      "fdr": 2.92,
+      "score": 179.84113046439305,
+      "locked": false
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 148,
+      "starts": 36,
+      "fdr": 2.92,
+      "score": 150.0631780674606,
+      "locked": false
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "starts": 35,
+      "fdr": 2.98,
+      "score": 246.03944427508,
+      "locked": true
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 6.5,
+      "pts": 180,
+      "starts": 37,
+      "fdr": 2.92,
+      "score": 190.81301534848626,
+      "locked": false
+    },
+    {
+      "name": "Garner",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 159,
+      "starts": 38,
+      "fdr": 3.12,
+      "score": 155.67057254522632,
+      "locked": false
+    },
+    {
+      "name": "Gravenberch",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 144,
+      "starts": 34,
+      "fdr": 2.78,
+      "score": 149.80439187974142,
+      "locked": false
+    },
+    {
+      "name": "Ampadu",
+      "team": "LEE",
+      "pos": "MID",
+      "price": 5.5,
+      "pts": 134,
+      "starts": 35,
+      "fdr": 2.92,
+      "score": 138.123832021733,
+      "locked": false
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5,
+      "pts": 239,
+      "starts": 34,
+      "fdr": 2.92,
+      "score": 243.62168174540702,
+      "locked": true
+    }
+  ],
+  "bench": [
+    {
+      "name": "Dubravka",
+      "team": "TOT",
+      "pos": "GK",
+      "price": 4.0,
+      "pts": 96,
+      "starts": 35,
+      "fdr": 2.92,
+      "score": 111.18047858347907,
+      "locked": false
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "starts": 30,
+      "fdr": 2.92,
+      "score": 116.45635545502053,
+      "locked": false
+    },
+    {
+      "name": "Mitchell",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 135,
+      "starts": 36,
+      "fdr": 3.18,
+      "score": 116.33060115864144,
+      "locked": false
+    },
+    {
+      "name": "Welbeck",
+      "team": "BHA",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 126,
+      "starts": 26,
+      "fdr": 3.12,
+      "score": 79.91019892490509,
+      "locked": false
+    }
+  ]
+}

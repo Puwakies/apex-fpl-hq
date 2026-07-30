@@ -1,0 +1,160 @@
+{
+  "mode": "spread",
+  "formation": "5-4-1",
+  "spend": 95.5,
+  "bank": 4.5,
+  "xi": [
+    {
+      "name": "Roefs",
+      "team": "SUN",
+      "pos": "GK",
+      "price": 4.8,
+      "pts": 136,
+      "starts": 35,
+      "fdr": 2.72,
+      "score": 150.82309574663566
+    },
+    {
+      "name": "Senesi",
+      "team": "BOU",
+      "pos": "DEF",
+      "price": 5.2,
+      "pts": 175,
+      "starts": 37,
+      "fdr": 2.92,
+      "score": 184.6678478063223
+    },
+    {
+      "name": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 7.3,
+      "pts": 209,
+      "starts": 30,
+      "fdr": 3.52,
+      "score": 177.19409380773484
+    },
+    {
+      "name": "Truffert",
+      "team": "BOU",
+      "pos": "DEF",
+      "price": 4.8,
+      "pts": 165,
+      "starts": 38,
+      "fdr": 2.92,
+      "score": 176.1918272425839
+    },
+    {
+      "name": "Mukiele",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 4.6,
+      "pts": 151,
+      "starts": 32,
+      "fdr": 2.72,
+      "score": 175.80639318025325
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.1,
+      "pts": 175,
+      "starts": 38,
+      "fdr": 3.12,
+      "score": 167.90215460426091
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 10.4,
+      "pts": 235,
+      "starts": 35,
+      "fdr": 3.32,
+      "score": 217.1074986826546
+    },
+    {
+      "name": "Anderson",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 5.7,
+      "pts": 180,
+      "starts": 37,
+      "fdr": 3.18,
+      "score": 174.2906781442096
+    },
+    {
+      "name": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 7.6,
+      "pts": 188,
+      "starts": 35,
+      "fdr": 3.18,
+      "score": 173.23846955336685
+    },
+    {
+      "name": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 4.8,
+      "pts": 147,
+      "starts": 33,
+      "fdr": 2.72,
+      "score": 161.1705322458158
+    },
+    {
+      "name": "Bowen",
+      "team": "WHU",
+      "pos": "FWD",
+      "price": 7.8,
+      "pts": 187,
+      "starts": 38,
+      "fdr": 3.12,
+      "score": 174.63811086589934
+    }
+  ],
+  "bench": [
+    {
+      "name": "Petrović",
+      "team": "BOU",
+      "pos": "GK",
+      "price": 4.6,
+      "pts": 124,
+      "starts": 38,
+      "fdr": 2.92,
+      "score": 123.17286301948079
+    },
+    {
+      "name": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 7.2,
+      "pts": 184,
+      "starts": 35,
+      "fdr": 3.52,
+      "score": 160.21480717750964
+    },
+    {
+      "name": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 7.2,
+      "pts": 181,
+      "starts": 37,
+      "fdr": 3.18,
+      "score": 158.7345434901637
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.4,
+      "pts": 177,
+      "starts": 31,
+      "fdr": 3.18,
+      "score": 151.7130512231659
+    }
+  ]
+}
