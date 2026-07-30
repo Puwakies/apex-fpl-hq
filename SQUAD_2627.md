@@ -97,6 +97,38 @@
 
 ---
 
+## 🔺 2C) 3-Way GW1 — YOU vs GEMINI vs CLAUDE + ข้อพิจารณา
+
+เอนจินเดียวกันแต่คนละกติกา: **YOU** = ทีมสปรินต์ (ล็อก Haaland+Bruno, ตัด Gabriel/Raya) · **GEMINI** = cum_pts baseline (บังคับ Haaland เป็นกัปตัน) · **CLAUDE** = FDR6-optimal อิสระ (ไม่มีล็อก/แบน)
+
+| | **YOU** | **GEMINI** | **CLAUDE** |
+|---|---|---|---|
+| Formation | 3-5-2 | 4-3-3 | 4-5-1 |
+| **กัปตัน** | **Haaland** | **Haaland** | **Bruno** (ไม่ซื้อ Haaland!) |
+| avg XI FDR6 | **3.07** (ง่ายสุด) | 3.21 | 3.09 |
+| GK | Verbruggen | Raya | Raya |
+| แนวรุกเด่น | Haaland+João Pedro | Haaland+João Pedro+CLW | João Pedro เดี่ยว + Semenyo/Rice |
+
+- **เห็นตรงกันทั้ง 3 (มั่นใจสูง):** **Guéhi · Anderson · Garner · João Pedro**
+- **เฉพาะ YOU:** Dewsbury-Hall, Gravenberch, Mitchell (+ EVE×3, สปรินต์ฟิกซ์เจอร์)
+- **เฉพาะ CLAUDE:** **Semenyo, Virgil** (มิด/แบ็คพรีเมี่ยม value)
+- **เฉพาะ GEMINI:** Gabriel, Truffert, Calvert-Lewin (เอาตัวแต้มสูงปีก่อน)
+
+### 💡 ข้อพิจารณา
+1. **กัปตัน 2/3 = Haaland** (YOU+GEMINI) → กัปตันปลอดภัย · **CLAUDE เท Haaland** ไปเลย
+2. **สัญญาณ fade-Haaland มีจริง:** ตอนปล่อยให้ optimizer หา value เต็มที่ (ทั้ง CLAUDE-FDR และ Gemini แบบไม่บังคับ) **ทั้งคู่ทิ้ง Haaland £15.5** เพราะ pts/£ ไม่คุ้ม (MCI FDR6 = 3.15 กลาง ๆ) → แต่การบังคับถือ (แบบ YOU/Gemini) ปลอดภัยกว่าเรื่องกัปตัน
+3. **Haaland + Bruno พร้อมกัน = บีบงบ:** Gemini ที่บังคับ Haaland **ต้องทิ้ง Bruno** เพื่อลงตัว → ยืนยันปม £27.5 ที่เจอมาตลอด (มีทั้งคู่ = ตัวเสริมอ่อน)
+4. **Semenyo** = ตัวที่ CLAUDE เชียร์แต่ YOU ยังไม่มี (Gemini ก็ไม่มี) → น่าพิจารณาเพิ่ม (MCI, 202pts, FDR6 ดี)
+5. **ฟิกซ์เจอร์:** ทีม YOU avg FDR6 ดีสุด (3.07) เพราะอิงฟิกซ์เจอร์ที่สุด · Gemini แย่สุด (3.21) เพราะไล่แต้มไม่ไล่โปรแกรม
+
+**สรุป:** เก็บ Haaland(C) ตาม 2/3 เอนจิน · ตัวแกนร่วม (Guéhi/Anderson/Garner/João Pedro) มั่นใจได้ · พิจารณาดึง **Semenyo** เข้ามา (ตัวที่โมเดล value ทั้งคู่ชอบ)
+
+> ⚠️ **หมายเหตุ:** Gemini จริงมาจาก Apps Script pipeline (ยังไม่รันสำหรับ 26/27) — ตารางนี้เป็น **proxy = cum_pts baseline** ตามสเปกใน CLAUDE.md · pipeline จริงจะ push `data/cache/gemini.json` ตอนเปิดใช้
+
+*(builders: `data/reports/{gw1_6_sprint,gemini_gw1,claude_gw1}.json` · YOU/Gemini/Claude)*
+
+---
+
 ## 3) SPREAD (FDR-first, เวอร์ชันเดิม) · 5-4-1 · £95.5m · เหลือ £4.5m
 
 ยึด FDR 5 เกมแรกเต็มที่ ไม่เอา Haaland (แมนซิตี้เปิดหินสุด) เอาเงินไปกระจายคุณภาพ → **ม้านั่งแรงมาก + มีเงินยืดหยุ่น**
