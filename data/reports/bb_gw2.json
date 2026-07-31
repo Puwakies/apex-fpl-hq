@@ -1,0 +1,161 @@
+{
+  "mode": "bb-gw2",
+  "chip": "BB@GW2",
+  "formation": "4-4-2",
+  "spend": 100.0,
+  "avg_squad_gw2_fdr": 2.22,
+  "xi": [
+    {
+      "name": "Roefs",
+      "team": "SUN",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 136,
+      "starts": 35,
+      "gw2_fdr": 2,
+      "gw2": "2H vs FUL"
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 175,
+      "starts": 37,
+      "gw2_fdr": 2,
+      "gw2": "2H vs NEW"
+    },
+    {
+      "name": "Mukiele",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 5.5,
+      "pts": 151,
+      "starts": 32,
+      "gw2_fdr": 2,
+      "gw2": "2H vs FUL"
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 148,
+      "starts": 36,
+      "gw2_fdr": 2,
+      "gw2": "2H vs NEW"
+    },
+    {
+      "name": "Shaw",
+      "team": "MUN",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 113,
+      "starts": 38,
+      "gw2_fdr": 2,
+      "gw2": "2H vs IPS"
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "starts": 35,
+      "gw2_fdr": 2,
+      "gw2": "2H vs IPS"
+    },
+    {
+      "name": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 147,
+      "starts": 33,
+      "gw2_fdr": 2,
+      "gw2": "2H vs FUL"
+    },
+    {
+      "name": "Fernandes",
+      "team": "TOT",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 135,
+      "starts": 35,
+      "gw2_fdr": 2,
+      "gw2": "2H vs NEW"
+    },
+    {
+      "name": "Caicedo",
+      "team": "CHE",
+      "pos": "MID",
+      "price": 5.5,
+      "pts": 110,
+      "starts": 32,
+      "gw2_fdr": 2,
+      "gw2": "2H vs BHA"
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.5,
+      "pts": 177,
+      "starts": 31,
+      "gw2_fdr": 2,
+      "gw2": "2H vs BHA"
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5,
+      "pts": 239,
+      "starts": 34,
+      "gw2_fdr": 3.3,
+      "gw2": "3A vs CRY"
+    }
+  ],
+  "bench": [
+    {
+      "name": "Sánchez",
+      "team": "CHE",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 113,
+      "starts": 35,
+      "gw2_fdr": 2,
+      "gw2": "2H vs BHA"
+    },
+    {
+      "name": "Dalot",
+      "team": "MUN",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 111,
+      "starts": 29,
+      "gw2_fdr": 2,
+      "gw2": "2H vs IPS"
+    },
+    {
+      "name": "Ampadu",
+      "team": "LEE",
+      "pos": "MID",
+      "price": 5.5,
+      "pts": 134,
+      "starts": 35,
+      "gw2_fdr": 3,
+      "gw2": "3H vs BRE"
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "starts": 30,
+      "gw2_fdr": 3,
+      "gw2": "3H vs BRE"
+    }
+  ]
+}
