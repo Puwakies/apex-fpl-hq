@@ -47,6 +47,56 @@ DO NOT add new captain signals without a holdout on a completely fresh season
 - Captaincy formula (7 rounds proved it — accept ~60% irreducible variance)
 - Transfer logic (counterfactual ≈ +34 CLAUDE vs +33 YOU — near-optimal already)
 
+## APEX Decision Principles (6 core — added 26/27, every agent must apply)
+
+### 1. Fixture + Stats > Form
+Good fixtures CREATE good form — form is a lagging, noisy output, not an input. Rank by upcoming
+FDR **and** underlying stats first; use form only as a tiebreaker.
+Rule: never transfer IN on a 2–3 GW form spike alone — fixture ease AND underlying stats must agree.
+→ Pillars: fixture-room (FDR-X) + data-lab + the-gaffer.
+
+### 2. Poker mindset — judge DECISION QUALITY, not the weekly outcome
+FPL is a long-run game. Grade yourself on the quality of the decision given the best info available
+**at the time**, not on the GW score. A bad score ≠ a wrong decision (variance); a captain haul ≠ a
+right decision (could be luck). Process > results — don't rage-transfer after one bad week, don't
+over-anchor on a lucky haul. Reinforces the "accept ~60% irreducible captaincy variance" rule.
+→ Pillars: the-gaffer + the-director (decision-quality framing in every verdict).
+
+### 3. xG delta (finishing over/underperformance, multi-year)
+xG = probability a shot becomes a goal. **xG delta = actual goals − xG, backtested over MULTIPLE
+seasons** to classify a player (like a stock's multi-year earnings record):
+- sustained POSITIVE delta → elite finisher / pen-taker → trust to keep beating xG (buy)
+- NEGATIVE delta → xG overstates them → fade / expect downward regression
+- HIGH variance → boom/bust → weight the floor (sim-lab)
+→ Pillars: sim-lab + data-lab. **DATA GAP:** needs per-player actual-goals-vs-xG history across
+seasons — NOT in the FPL bootstrap; requires an xG-history source (FBref/Understat).
+
+### 4. Attacking quality — BC, BCC, SiB (not raw xG)
+Judge the QUALITY of the xG, not the raw number: **Big Chance (BC)**, **Big Chance Created (BCC)**,
+**Shots in the Box (SiB)** alongside xG. Many BC + SiB = high-quality xG profile = more reliable
+returns than a player padding xG with low-quality long shots.
+→ Pillars: data-lab + the-gaffer (attacker selection). **DATA GAP:** BC/BCC/SiB are NOT in the FPL
+bootstrap — need Opta/FBref/Understat.
+
+### 5. Defensive-weakness targeting — BC conceded, SiB conceded, xGC
+Find teams that CONCEDE many Big Chances + Shots in the Box (high xGC) → target the OPPONENTS'
+attackers in those matchups. Inverse for clean-sheet picks: buy DEF/GK of teams that concede FEW.
+→ Pillars: fixture-room (opponent defensive quality) + data-lab. **DATA:** xGC IS available
+(expected_goals_conceded); BC-conceded / SiB-conceded need an external source.
+
+### 6. %ownership → differentials for rank climbing
+Only AFTER a player passes #1–#4 (good fixtures + strong stats), use %ownership to find low-owned
+DIFFERENTIALS. Calculated risk: right → rank jumps (gain on non-owners); wrong → just take the −4,
+remove, fix the team long-term. Cost is bounded and small vs the upside.
+→ Pillar: intel (ELITE-OWN). Guardrail: differentials MUST first pass #1–#4 (never punt on ownership
+alone), and still respect template-captain protection (backtest: fading the template captain lost pts).
+
+### Data availability for these principles
+- ✅ In pipeline now (fpl_fetch): xG, xA, xGI, xGI/90, **xGC**, %ownership, form, FDR, minutes/starts
+- ❌ Needs new source (Opta/FBref/Understat): **BC, BCC, SiB, BC-conceded, SiB-conceded, multi-year xG-delta**
+- Next step to fully enable #3/#4/#5: add an xG-history + chance-quality fetch to `scripts/` (flag values
+  as `source:external` and degrade gracefully to xG/xGC when unavailable).
+
 ## Season backtest (the-historian)
 1. Apps Script: blindSimPrep() then exportBacktestData() → data/backtest/
 2. /backtest 1 10 → ... → 31 38 (batches)
