@@ -93,9 +93,14 @@ alone), and still respect template-captain protection (backtest: fading the temp
 
 ### Data availability for these principles
 - ✅ In pipeline now (fpl_fetch): xG, xA, xGI, xGI/90, **xGC**, %ownership, form, FDR, minutes/starts
-- ❌ Needs new source (Opta/FBref/Understat): **BC, BCC, SiB, BC-conceded, SiB-conceded, multi-year xG-delta**
-- Next step to fully enable #3/#4/#5: add an xG-history + chance-quality fetch to `scripts/` (flag values
-  as `source:external` and degrade gracefully to xG/xGC when unavailable).
+- ✅ `scripts/fetch_advanced_stats.py` → `data/advanced_stats.json` (enables #3/#4/#5 with FPL proxies):
+  - #3 xG-delta: `goals − xG` per player (single-season) + finisher_class (over/under/neutral)
+  - #4 attack quality: **Threat** (≈ SiB/shot-danger) + **Creativity** (≈ BCC) + xGI → `attack_quality` z-score
+  - #5 def weakness: team `xGC/90` ranking → target opponents' attackers vs the leakiest 6
+- ❌ Still external-only (Opta/Understat/FBref): **true BC/BCC/SiB, BC-conceded, SiB-conceded, multi-year
+  xG-delta**. The fetcher ATTEMPTS Understat for multi-year xG but the egress policy blocks it here (403);
+  it degrades to the FPL proxies above and records `understat_note`. Re-run where Understat is reachable
+  to upgrade #3 to a multi-year record and #4/#5 to true Opta chance-quality.
 
 ## Season backtest (the-historian)
 1. Apps Script: blindSimPrep() then exportBacktestData() → data/backtest/
