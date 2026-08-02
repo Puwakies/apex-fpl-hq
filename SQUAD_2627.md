@@ -157,6 +157,30 @@
 
 *(builder: `scripts/build_bb_gw2.py` → `data/reports/bb_gw2.json` · GW2-fixture weighted · all-15 objective)*
 
+### 🔋+🧪 BB GW2 เวอร์ชัน + Advanced Stats (#3/#4/#5) — 4-4-2 · £100.0m *(แนะนำ)*
+ใส่ #3 (กัน overperformer) · #4 (attack quality) · #5 (**xGC คู่แข่ง GW2 โดยเฉพาะ**) · avg GW2-FDR 2.22 · ทั้ง 15 ลงเล่น
+
+| ตำแหน่ง | ผู้เล่น | ทีม | ราคา | GW2 | adj |
+|---|---|---|---|---|---|
+| GK | Roefs | SUN | 5.0 | 2H vs FUL | 1.00 |
+| DEF | Senesi | TOT | 6.0 | 2H vs NEW | 0.99 |
+| DEF | Van Hecke | TOT | 5.0 | 2H vs NEW | 0.99 |
+| DEF | Shaw | MUN | 4.5 | 2H vs IPS | 1.01 |
+| DEF | Dalot | MUN | 5.0 | 2H vs IPS | 1.01 |
+| MID | **B.Fernandes** 🔒 (C) | MUN | 12.0 | 2H vs IPS | **1.13** (AQ+1.7) |
+| MID | **Enzo** | CHE | 7.0 | 2H vs BHA | 1.03 |
+| MID | E.Le Fée | SUN | 6.0 | 2H vs FUL | 1.01 |
+| MID | Xhaka | SUN | 5.5 | 2H vs FUL | 0.97 |
+| FWD | João Pedro | CHE | 7.5 | 2H vs BHA | 1.02 |
+| FWD | **Haaland** 🔒 | MCI | 15.5 | 3A vs CRY | **1.11** |
+| **ม้านั่ง** | Dúbravka(TOT) · Truffert(BOU) · Caicedo(CHE) · Calvert-Lewin(LEE) | | | | |
+
+- เทียบ BB เดิม: **IN** Enzo/Xhaka/Truffert · **OUT** Fernandes(TOT)/Mukiele/Ampadu/Sánchez — อัปคุณภาพเล็กน้อย (Enzo 157pts, Truffert 165)
+- **#3:** ไม่มี overperformer หลุดเข้าทีม (Semenyo/Dewsbury-Hall ถูกกันออก) · **#4:** Bruno adj 1.13 · **#5:** Bruno/Haaland ได้โบนัส (คู่แข่ง GW2 = IPS/CRY รั่ว)
+- กัปตัน GW2 = **B.Fernandes** (2H เจอ IPS เลื่อนชั้น + จุดโทษ, adj สูงสุด) · กระจุก MUN×3/SUN×3/TOT×3/CHE×3
+
+*(builder: `scripts/build_bb_gw2_adv.py` → `data/reports/bb_gw2_adv.json`)*
+
 ---
 
 ## 🧪 2E) ทีมสปรินต์ + Advanced Stats (#3/#4/#5) — 5-4-1 · £100.0m
