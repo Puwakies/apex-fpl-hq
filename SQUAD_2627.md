@@ -159,6 +159,29 @@
 
 ---
 
+## 🧪 2E) ทีมสปรินต์ + Advanced Stats (#3/#4/#5) — 5-4-1 · £100.0m
+
+ใส่ 3 หลักการทับโมเดลสปรินต์: **#3** ลงโทษ overperformer (×0.88), **#4** โบนัส attack quality (Threat+Creativity), **#5** โบนัสตัวรุกที่ 6 เกมแรกเจอทีมรั่ว (opp xGC สูง) · builder `scripts/build_gw1_6_adv.py`
+
+**สิ่งที่ advanced stats เปลี่ยนจากทีมสปรินต์เดิม (§2B):**
+| ออก | เหตุผล (หลักการ) |
+|---|---|
+| **Dewsbury-Hall** (EVE) | #3 **overperformer xGΔ +3.6** → ยิงเกินคุณภาพลูก เสี่ยง regression → ตัด |
+| **João Pedro** (CHE) | โมเดลเอียงไป 5 กองหลัง (#5 opp-xGC หนุนแบ็ก) → เหลือ Haaland ยืนเดี่ยว |
+| (Semenyo ไม่เคยถูกเลือก) | #3 **overperformer xGΔ +5.9** — ตัวที่ CLAUDE เชียร์ แต่ #3 เตือน regression |
+
+**ทีม +ADV (5-4-1):** Roefs · Virgil/Guéhi/Tarkowski/Van Hecke/Mitchell · **B.Fernandes🔒**(AQ+1.7)/Anderson/Garner/Gravenberch · **Haaland🔒** · ม้านั่ง Dúbravka/Gomez/Calvert-Lewin/Welbeck
+
+- 🎯 **#3 ทำงานชัดสุด:** จับ **Dewsbury-Hall (+3.6)** และ **Semenyo (+5.9)** เป็น overperformer → เลี่ยงการจ่ายแพงกับฟอร์มยิงที่ไม่ยั่งยืน (ต้องมี multi-year ยืนยันว่าฟลุ๊คหรือของจริง)
+- 🎯 **#5:** Haaland (adj 1.15) + Anderson (1.05) ได้โบนัส (6 เกมแรกเจอทีมรั่ว opp-xGC 1.51) · Garner โดนหัก (0.92, EVE เจอทีมเกมรับแน่น 1.18)
+- 🎯 **#4:** ยืนยัน Bruno AQ+1.7 (Threat+Creativity สูง)
+- ⚠️ **ข้อสังเกต:** โมดิฟายเออร์ #5 (โบนัสแบ็กเจอทีมรั่ว) ดันเป็น 5-4-1 Haaland เดี่ยว — ถ้าชอบ 2 กองหน้า ลดน้ำหนัก #5 ฝั่ง DEF ได้ · headline value จริง = **#3 กัน overperformer** (Dewsbury-Hall/Semenyo)
+- 📌 ค่า over/under เป็น **single-season** → รัน `fetch_advanced_stats.py` ที่ network เปิด Understat จะได้ multi-year (แม่นขึ้นมาก)
+
+*(builder: `scripts/build_gw1_6_adv.py` → `data/reports/gw1_6_adv.json` · reads `data/advanced_stats.json`)*
+
+---
+
 ## 3) SPREAD (FDR-first, เวอร์ชันเดิม) · 5-4-1 · £95.5m · เหลือ £4.5m
 
 ยึด FDR 5 เกมแรกเต็มที่ ไม่เอา Haaland (แมนซิตี้เปิดหินสุด) เอาเงินไปกระจายคุณภาพ → **ม้านั่งแรงมาก + มีเงินยืดหยุ่น**
