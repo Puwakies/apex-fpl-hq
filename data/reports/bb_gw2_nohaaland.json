@@ -1,0 +1,176 @@
+{
+  "mode": "bb-gw2+adv",
+  "chip": "BB@GW2",
+  "formation": "4-5-1",
+  "spend": 100.0,
+  "avg_squad_gw2_fdr": 2.22,
+  "xi": [
+    {
+      "name": "Roefs",
+      "team": "SUN",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 136,
+      "gw2": "2H vs FUL",
+      "opp_xgc": 1.39,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 175,
+      "gw2": "2H vs NEW",
+      "opp_xgc": 1.23,
+      "adj": 0.986,
+      "tags": ""
+    },
+    {
+      "name": "Mukiele",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 5.5,
+      "pts": 151,
+      "gw2": "2H vs FUL",
+      "opp_xgc": 1.39,
+      "adj": 1.011,
+      "tags": ""
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 148,
+      "gw2": "2H vs NEW",
+      "opp_xgc": 1.23,
+      "adj": 0.986,
+      "tags": ""
+    },
+    {
+      "name": "Van de Ven",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 116,
+      "gw2": "2H vs NEW",
+      "opp_xgc": 1.23,
+      "adj": 0.986,
+      "tags": ""
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "gw2": "2H vs IPS",
+      "opp_xgc": 1.38,
+      "adj": 1.126,
+      "tags": "AQ+1.7"
+    },
+    {
+      "name": "Rogers",
+      "team": "CHE",
+      "pos": "MID",
+      "price": 7.5,
+      "pts": 169,
+      "gw2": "2H vs BHA",
+      "opp_xgc": 1.29,
+      "adj": 1.011,
+      "tags": ""
+    },
+    {
+      "name": "Enzo",
+      "team": "CHE",
+      "pos": "MID",
+      "price": 7.0,
+      "pts": 157,
+      "gw2": "2H vs BHA",
+      "opp_xgc": 1.29,
+      "adj": 1.032,
+      "tags": ""
+    },
+    {
+      "name": "Mbeumo",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 8.0,
+      "pts": 148,
+      "gw2": "2H vs IPS",
+      "opp_xgc": 1.38,
+      "adj": 1.092,
+      "tags": ""
+    },
+    {
+      "name": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 147,
+      "gw2": "2H vs FUL",
+      "opp_xgc": 1.39,
+      "adj": 1.014,
+      "tags": ""
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.5,
+      "pts": 177,
+      "gw2": "2H vs BHA",
+      "opp_xgc": 1.29,
+      "adj": 1.025,
+      "tags": ""
+    }
+  ],
+  "bench": [
+    {
+      "name": "Lammens",
+      "team": "MUN",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 109,
+      "gw2": "2H vs IPS",
+      "opp_xgc": 1.38,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "gw2": "3H vs NFO",
+      "opp_xgc": 1.52,
+      "adj": 1.029,
+      "tags": ""
+    },
+    {
+      "name": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 8.0,
+      "pts": 181,
+      "gw2": "3A vs LEE",
+      "opp_xgc": 1.35,
+      "adj": 1.04,
+      "tags": ""
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "gw2": "3H vs BRE",
+      "opp_xgc": 1.45,
+      "adj": 1.085,
+      "tags": ""
+    }
+  ]
+}

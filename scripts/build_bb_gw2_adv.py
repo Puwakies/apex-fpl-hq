@@ -9,7 +9,7 @@ Advanced layer:
 Keeps: lock Haaland + B.Fernandes; ban Gabriel + Raya.
 Output: data/reports/bb_gw2_adv.json
 """
-import json, random, statistics, urllib.request
+import json, random, statistics, urllib.request, os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -43,7 +43,13 @@ for p in hist["players"]:
     if pl: hcon[p["name"]]={"am":statistics.mean(g["min"] for g in pl)}
 
 POS={"GKP":"GK","DEF":"DEF","MID":"MID","FWD":"FWD"}
-LOCKED_SPEC=[("Haaland","MCI"),("B.Fernandes","MUN")]; BANNED_SPEC=[("Gabriel","ARS"),("Raya","ARS")]
+def _spec(env,default):
+    v=os.environ.get(env)
+    if v is None: return default
+    v=v.strip()
+    return [] if not v else [tuple(x.split(":")) for x in v.split(",")]
+LOCKED_SPEC=_spec("LOCKS",[("Haaland","MCI"),("B.Fernandes","MUN")]); BANNED_SPEC=_spec("BANS",[("Gabriel","ARS"),("Raya","ARS")])
+OUT_NAME=os.environ.get("OUT","bb_gw2_adv")
 LOCKED_IDS=[next(p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t) for n,t in LOCKED_SPEC]
 BANNED_IDS={next((p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t),None) for n,t in BANNED_SPEC}
 LF,A=3.10,1.30; STARTS_FLOOR=25
@@ -177,4 +183,4 @@ out={"mode":"bb-gw2+adv","chip":"BB@GW2","formation":f"{form[1]}-{form[2]}-{form
      "spend":round(sum(p['price'] for p in best),1),"avg_squad_gw2_fdr":round(sq_fdr,2),
      "xi":[{k:p[k] for k in ("name","team","pos","price","pts","gw2","opp_xgc","adj","tags")} for p in xi_s],
      "bench":[{k:p[k] for k in ("name","team","pos","price","pts","gw2","opp_xgc","adj","tags")} for p in bench_s]}
-json.dump(out,open(ROOT/"data/reports/bb_gw2_adv.json","w"),ensure_ascii=False,indent=2)
+json.dump(out,open(ROOT/f"data/reports/{OUT_NAME}.json","w"),ensure_ascii=False,indent=2)
