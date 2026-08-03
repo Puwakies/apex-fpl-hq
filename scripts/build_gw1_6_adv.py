@@ -53,7 +53,13 @@ for p in hist["players"]:
     if pl: hcon[p["name"]]={"am":statistics.mean(g["min"] for g in pl)}
 
 POS={"GKP":"GK","DEF":"DEF","MID":"MID","FWD":"FWD"}
-LOCKED_SPEC=[("Haaland","MCI"),("B.Fernandes","MUN")]; BANNED_SPEC=[("Gabriel","ARS"),("Raya","ARS")]
+def _spec(env,default):
+    v=os.environ.get(env)
+    if v is None: return default
+    v=v.strip()
+    return [] if not v else [tuple(x.split(":")) for x in v.split(",")]
+LOCKED_SPEC=_spec("LOCKS",[("Haaland","MCI"),("B.Fernandes","MUN")]); BANNED_SPEC=_spec("BANS",[("Gabriel","ARS"),("Raya","ARS")])
+OUT_NAME=os.environ.get("OUT","gw1_6_adv")
 LOCKED_IDS=[next(p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t) for n,t in LOCKED_SPEC]
 BANNED_IDS={next((p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t),None) for n,t in BANNED_SPEC}
 LF,A=3.30,1.35; STARTS_FLOOR=22
@@ -197,4 +203,4 @@ for lbl,grp in [("XI",xi_s),("BENCH",bench_s)]:
 out={"mode":"gw1-6+adv","formation":f"{form[1]}-{form[2]}-{form[3]}","spend":round(sum(p['price'] for p in best),1),
      "xi":[{k:p[k] for k in ("name","team","pos","price","pts","fdr6","oppxgc","adj","tags")} for p in xi_s],
      "bench":[{k:p[k] for k in ("name","team","pos","price","pts","fdr6","oppxgc","adj","tags")} for p in bench_s]}
-json.dump(out,open(ROOT/"data/reports/gw1_6_adv.json","w"),ensure_ascii=False,indent=2)
+json.dump(out,open(ROOT/f"data/reports/{OUT_NAME}.json","w"),ensure_ascii=False,indent=2)
