@@ -1,0 +1,117 @@
+{
+  "start_team": "4-5-1",
+  "gw7_transfers": [
+    [
+      "Thiago",
+      "Haaland"
+    ],
+    [
+      "Mbeumo",
+      "Gomez"
+    ],
+    [
+      "Rogers",
+      "Yarmoliuk"
+    ],
+    [
+      "João Pedro",
+      "Welbeck"
+    ],
+    [
+      "Enzo",
+      "Sangaré"
+    ]
+  ],
+  "gw7_team": [
+    {
+      "name": "Roefs",
+      "team": "SUN",
+      "pos": "GK",
+      "price": 5.0
+    },
+    {
+      "name": "Senesi",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 6.0
+    },
+    {
+      "name": "Mukiele",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 5.5
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0
+    },
+    {
+      "name": "Van de Ven",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0
+    },
+    {
+      "name": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 6.0
+    },
+    {
+      "name": "Lammens",
+      "team": "MUN",
+      "pos": "GK",
+      "price": 5.0
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5
+    },
+    {
+      "name": "Gomez",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 5.0
+    },
+    {
+      "name": "Yarmoliuk",
+      "team": "BRE",
+      "pos": "MID",
+      "price": 5.0
+    },
+    {
+      "name": "Welbeck",
+      "team": "BHA",
+      "pos": "FWD",
+      "price": 6.0
+    },
+    {
+      "name": "Sangaré",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 5.0
+    }
+  ]
+}
