@@ -23,7 +23,7 @@ def get(p):
 boot=get("bootstrap-static/"); fx=get("fixtures/")
 short={t["id"]:t["short_name"] for t in boot["teams"]}
 id_by_short={v:k for k,v in short.items()}
-start_gw=next((e["id"] for e in boot["events"] if e.get("is_next")),1)
+start_gw=int(os.environ.get("START", next((str(e["id"]) for e in boot["events"] if e.get("is_next")),"1")))
 
 # team xGC/90 (leakiness) from advanced_stats
 team_xgc={w["team"]:w["xgc_per90"] for w in adv["team_def_weakness"]}
