@@ -108,6 +108,7 @@ for p in feat["players"]:
     m=mk(p); pool.append(m); byid[p["id"]]=m
 
 LOCKED=[byid[i] for i in LOCKED_IDS]; NEED={"GK":2,"DEF":5,"MID":5,"FWD":3}
+N_LOCKED_GK=sum(1 for p in LOCKED if p["pos"]=="GK")
 free_need={k:NEED[k]-sum(1 for p in LOCKED if p["pos"]==k) for k in NEED}; lset=set(LOCKED_IDS)
 bypos={k:sorted([p for p in pool if p["pos"]==k and p["id"] not in lset],key=lambda x:-x["score"]) for k in NEED}
 cheap_gk=sorted([p for p in bypos["GK"] if p["price"]<=4.5],key=lambda x:(x["price"],-x["score"]))
@@ -134,7 +135,7 @@ def feas(sq):
     for p in sq: pc[p["pos"]]+=1
     if pc!=NEED: return False
     gks=sorted([p for p in sq if p["pos"]=="GK"],key=lambda x:-x["score"])
-    if len(gks)==2 and gks[1]["price"]>4.5: return False
+    if len(gks)==2 and gks[1]["price"]>4.5 and N_LOCKED_GK<2: return False
     return True
 def obj(sq):
     xv,_=bxi(sq); return xv+0.12*(sum(p["score"] for p in sq)-xv)
