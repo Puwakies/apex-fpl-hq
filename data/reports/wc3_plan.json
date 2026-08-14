@@ -1,0 +1,102 @@
+{
+  "chips": {
+    "BB1": "GW2",
+    "WC1": "GW3",
+    "TC1": "GW7 (Haaland H vs IPS)"
+  },
+  "captains": {
+    "GW3": {
+      "name": "Haaland",
+      "team": "MCI",
+      "fix": "2HvCOV"
+    },
+    "GW4": {
+      "name": "João Pedro",
+      "team": "CHE",
+      "fix": "2HvHUL"
+    },
+    "GW5": {
+      "name": "Haaland",
+      "team": "MCI",
+      "fix": "2HvSUN"
+    },
+    "GW6": {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "fix": "3HvTOT"
+    },
+    "GW7": {
+      "name": "Haaland",
+      "team": "MCI",
+      "fix": "2HvIPS"
+    }
+  },
+  "ft_flow": {
+    "GW4": "BANK (fresh WC team) — 1 FT saved",
+    "GW5": "BANK — 2 FT saved (unless injury/news)",
+    "GW6": "SPEND 1: Calvert-Lewin OUT -> best GW6-7 FWD IN (fix weak run before TC week)",
+    "GW7": "BANK/react + TC on Haaland (2H vs IPS)"
+  },
+  "ft_target_out": {
+    "name": "Calvert-Lewin",
+    "team": "LEE",
+    "pos": "FWD",
+    "price": 6.0
+  },
+  "ft_target_in_options": [
+    {
+      "name": "Brobbey",
+      "team": "SUN",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 92,
+      "g67": 2.4,
+      "g47": 1.006
+    },
+    {
+      "name": "Woltemade",
+      "team": "NEW",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 108,
+      "g67": 2.36,
+      "g47": 1.189
+    },
+    {
+      "name": "Evanilson",
+      "team": "BOU",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 115,
+      "g67": 2.23,
+      "g47": 1.043
+    },
+    {
+      "name": "Barry",
+      "team": "EVE",
+      "pos": "FWD",
+      "price": 5.5,
+      "pts": 95,
+      "g67": 2.16,
+      "g47": 1.14
+    },
+    {
+      "name": "Georginio",
+      "team": "BHA",
+      "pos": "FWD",
+      "price": 5.5,
+      "pts": 87,
+      "g67": 2.07,
+      "g47": 1.058
+    },
+    {
+      "name": "Welbeck",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 126,
+      "g67": 2.07,
+      "g47": 1.117
+    }
+  ]
+}
