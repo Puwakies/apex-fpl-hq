@@ -1,0 +1,174 @@
+{
+  "mode": "gw1-6+adv",
+  "formation": "4-3-3",
+  "spend": 100.0,
+  "xi": [
+    {
+      "name": "Raya",
+      "team": "ARS",
+      "pos": "GK",
+      "price": 6.0,
+      "pts": 162,
+      "fdr6": 3.15,
+      "oppxgc": 1.413,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "fdr6": 2.817,
+      "oppxgc": 1.405,
+      "adj": 1.088,
+      "tags": "ATK+3.0"
+    },
+    {
+      "name": "Mitchell",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 135,
+      "fdr6": 2.817,
+      "oppxgc": 1.36,
+      "adj": 1.055,
+      "tags": "ATK+1.9"
+    },
+    {
+      "name": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 126,
+      "fdr6": 2.817,
+      "oppxgc": 1.277,
+      "adj": 1.05,
+      "tags": "ATK+2.3"
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 148,
+      "fdr6": 3.317,
+      "oppxgc": 1.56,
+      "adj": 1.07,
+      "tags": ""
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "fdr6": 3.317,
+      "oppxgc": 1.407,
+      "adj": 1.137,
+      "tags": "AQ+1.7"
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 6.5,
+      "pts": 180,
+      "fdr6": 3.15,
+      "oppxgc": 1.483,
+      "adj": 1.043,
+      "tags": ""
+    },
+    {
+      "name": "Gravenberch",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 144,
+      "fdr6": 2.817,
+      "oppxgc": 1.405,
+      "adj": 0.979,
+      "tags": ""
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5,
+      "pts": 239,
+      "fdr6": 3.15,
+      "oppxgc": 1.483,
+      "adj": 1.143,
+      "tags": ""
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.5,
+      "pts": 177,
+      "fdr6": 3.317,
+      "oppxgc": 1.077,
+      "adj": 0.937,
+      "tags": ""
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "fdr6": 3.483,
+      "oppxgc": 1.267,
+      "adj": 1.014,
+      "tags": ""
+    }
+  ],
+  "bench": [
+    {
+      "name": "Kelleher",
+      "team": "BRE",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 143,
+      "fdr6": 3.317,
+      "oppxgc": 1.138,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Cash",
+      "team": "AVL",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 117,
+      "fdr6": 3.15,
+      "oppxgc": 1.155,
+      "adj": 1.026,
+      "tags": "ATK+2.1"
+    },
+    {
+      "name": "Gomez",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 5.0,
+      "pts": 97,
+      "fdr6": 3.15,
+      "oppxgc": 1.353,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Berge",
+      "team": "FUL",
+      "pos": "MID",
+      "price": 5.0,
+      "pts": 91,
+      "fdr6": 2.983,
+      "oppxgc": 1.25,
+      "adj": 0.902,
+      "tags": ""
+    }
+  ]
+}

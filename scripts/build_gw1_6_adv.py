@@ -25,6 +25,25 @@ short={t["id"]:t["short_name"] for t in boot["teams"]}
 id_by_short={v:k for k,v in short.items()}
 start_gw=int(os.environ.get("START", next((str(e["id"]) for e in boot["events"] if e.get("is_next")),"1")))
 
+# --- attacking-defender index (fullbacks/wingbacks pushed forward who add
+#     goals+assists on top of clean sheets, e.g. Hume SUN). Built from LIVE boot:
+#     z(threat)+z(creativity)+z(xGI/90) among defenders => higher = more attacking.
+def _z(vals):
+    m=statistics.mean(vals); s=statistics.pstdev(vals) or 1.0; return m,s
+_defel=[e for e in boot["elements"] if e["element_type"]==2 and (e.get("starts",0) or 0)>=10]
+def _x90(e): return (float(e.get("expected_goal_involvements",0) or 0)/max(e.get("minutes",0) or 1,1))*90
+def_atk={}
+if _defel:
+    mt,st_=_z([float(e.get("threat",0) or 0) for e in _defel])
+    mc,sc =_z([float(e.get("creativity",0) or 0) for e in _defel])
+    mx,sx =_z([_x90(e) for e in _defel])
+    for e in _defel:
+        z=(float(e.get("threat",0) or 0)-mt)/st_+(float(e.get("creativity",0) or 0)-mc)/sc+(_x90(e)-mx)/sx
+        def_atk[(e["web_name"],short[e["team"]])]=round(z,2)
+ATK_DEF=os.environ.get("ATK_DEF","1")!="0"   # attacking-defender boost on by default
+ATK_W  =float(os.environ.get("ATK_W","0.05")) # per-z boost weight for DEF attacking returns
+DIV_W  =float(os.environ.get("DIV","0.0"))    # diversity: reward per distinct club (spread risk)
+
 # team xGC/90 (leakiness) from advanced_stats
 team_xgc={w["team"]:w["xgc_per90"] for w in adv["team_def_weakness"]}
 LG_XGC=statistics.mean(team_xgc.values())
@@ -84,6 +103,12 @@ def mods(p, pos):
         w=0.5 if pos!="DEF" else 0.2
         ratio=team_oppxgc.get(p["team"],LG_XGC)/LG_XGC
         olF=ratio**w
+    # attacking-defender boost: advanced FBs/WBs return goals+assists (Hume-type)
+    if ATK_DEF and pos=="DEF":
+        z=def_atk.get((p["web_name"],p["team"]))
+        if z and z>0:
+            olF*=1.0+ATK_W*min(4.0,z)
+            if z>=1.5: tags.append(f"ATK+{z:.1f}")
     return fF,aqF,olF,tags
 
 def mk(p):
@@ -138,7 +163,9 @@ def feas(sq):
     if len(gks)==2 and gks[1]["price"]>4.5 and N_LOCKED_GK<2: return False
     return True
 def obj(sq):
-    xv,_=bxi(sq); return xv+0.12*(sum(p["score"] for p in sq)-xv)
+    xv,_=bxi(sq); base=xv+0.12*(sum(p["score"] for p in sq)-xv)
+    if DIV_W>0: base+=DIV_W*len({p["team"] for p in sq})   # spread across more clubs
+    return base
 def rv(rng):
     sq=list(LOCKED); gneed=free_need["GK"]
     if gneed>=1: sq.append(rng.choice(cheap_gk[:6])); gneed-=1
