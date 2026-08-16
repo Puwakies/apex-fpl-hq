@@ -26,28 +26,6 @@
       "tags": "ATK+3.0"
     },
     {
-      "name": "Guéhi",
-      "team": "MCI",
-      "pos": "DEF",
-      "price": 6.0,
-      "pts": 179,
-      "fdr6": 3.15,
-      "oppxgc": 1.483,
-      "adj": 1.096,
-      "tags": "ATK+3.5"
-    },
-    {
-      "name": "Senesi",
-      "team": "TOT",
-      "pos": "DEF",
-      "price": 6.0,
-      "pts": 175,
-      "fdr6": 3.317,
-      "oppxgc": 1.56,
-      "adj": 1.074,
-      "tags": "ATK+1.9"
-    },
-    {
       "name": "Muñoz",
       "team": "CRY",
       "pos": "DEF",
@@ -68,6 +46,28 @@
       "oppxgc": 1.36,
       "adj": 1.045,
       "tags": "ATK+1.9"
+    },
+    {
+      "name": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 126,
+      "fdr6": 2.817,
+      "oppxgc": 1.277,
+      "adj": 1.039,
+      "tags": "ATK+2.3"
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 148,
+      "fdr6": 3.317,
+      "oppxgc": 1.56,
+      "adj": 1.063,
+      "tags": ""
     },
     {
       "name": "Szoboszlai",
@@ -92,14 +92,14 @@
       "tags": "OVER Δ+5.9"
     },
     {
-      "name": "Gravenberch",
-      "team": "LIV",
+      "name": "Rice",
+      "team": "ARS",
       "pos": "MID",
-      "price": 6.0,
-      "pts": 144,
-      "fdr6": 2.817,
-      "oppxgc": 1.405,
-      "adj": 0.979,
+      "price": 7.5,
+      "pts": 184,
+      "fdr6": 3.15,
+      "oppxgc": 1.413,
+      "adj": 1.03,
       "tags": ""
     },
     {
@@ -138,6 +138,17 @@
       "tags": ""
     },
     {
+      "name": "Xhaka",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 5.5,
+      "pts": 124,
+      "fdr6": 3.317,
+      "oppxgc": 1.292,
+      "adj": 0.936,
+      "tags": ""
+    },
+    {
       "name": "Gomez",
       "team": "BHA",
       "pos": "MID",
@@ -146,17 +157,6 @@
       "fdr6": 3.15,
       "oppxgc": 1.353,
       "adj": 1.0,
-      "tags": ""
-    },
-    {
-      "name": "Berge",
-      "team": "FUL",
-      "pos": "MID",
-      "price": 5.0,
-      "pts": 91,
-      "fdr6": 2.983,
-      "oppxgc": 1.25,
-      "adj": 0.902,
       "tags": ""
     },
     {

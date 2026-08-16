@@ -45,7 +45,10 @@ ATK_W  =float(os.environ.get("ATK_W","0.05")) # per-z boost weight for DEF attac
 DIV_W  =float(os.environ.get("DIV","0.0"))    # diversity: reward per distinct club (spread risk)
 _m3=os.environ.get("MAX3_CLUBS")              # clubs allowed 3 (title contenders); others capped 2
 MAX3_CLUBS=set(_m3.split(",")) if _m3 not in (None,"") else None
-def cap_for(team): return 3 if (MAX3_CLUBS is None or team in MAX3_CLUBS) else 2
+MAXCLUB=int(os.environ.get("MAXCLUB","3"))    # global per-club cap (set 2 to force spread)
+def cap_for(team):
+    if MAX3_CLUBS is not None: return 3 if team in MAX3_CLUBS else 2
+    return MAXCLUB
 
 # team xGC/90 (leakiness) from advanced_stats
 team_xgc={w["team"]:w["xgc_per90"] for w in adv["team_def_weakness"]}
