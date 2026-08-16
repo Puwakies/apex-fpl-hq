@@ -26,6 +26,17 @@
       "tags": "ATK+3.0"
     },
     {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 179,
+      "fdr6": 3.15,
+      "oppxgc": 1.483,
+      "adj": 1.096,
+      "tags": "ATK+3.5"
+    },
+    {
       "name": "Senesi",
       "team": "TOT",
       "pos": "DEF",
@@ -59,17 +70,6 @@
       "tags": "ATK+1.9"
     },
     {
-      "name": "Thiaw",
-      "team": "NEW",
-      "pos": "DEF",
-      "price": 5.0,
-      "pts": 126,
-      "fdr6": 2.817,
-      "oppxgc": 1.277,
-      "adj": 1.039,
-      "tags": "ATK+2.3"
-    },
-    {
       "name": "Szoboszlai",
       "team": "LIV",
       "pos": "MID",
@@ -92,14 +92,14 @@
       "tags": "OVER Δ+5.9"
     },
     {
-      "name": "Anderson",
-      "team": "MCI",
+      "name": "Gravenberch",
+      "team": "LIV",
       "pos": "MID",
-      "price": 6.5,
-      "pts": 180,
-      "fdr6": 3.15,
-      "oppxgc": 1.483,
-      "adj": 1.043,
+      "price": 6.0,
+      "pts": 144,
+      "fdr6": 2.817,
+      "oppxgc": 1.405,
+      "adj": 0.979,
       "tags": ""
     },
     {
@@ -138,17 +138,6 @@
       "tags": ""
     },
     {
-      "name": "Xhaka",
-      "team": "SUN",
-      "pos": "MID",
-      "price": 5.5,
-      "pts": 124,
-      "fdr6": 3.317,
-      "oppxgc": 1.292,
-      "adj": 0.936,
-      "tags": ""
-    },
-    {
       "name": "Gomez",
       "team": "BHA",
       "pos": "MID",
@@ -157,6 +146,17 @@
       "fdr6": 3.15,
       "oppxgc": 1.353,
       "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Berge",
+      "team": "FUL",
+      "pos": "MID",
+      "price": 5.0,
+      "pts": 91,
+      "fdr6": 2.983,
+      "oppxgc": 1.25,
+      "adj": 0.902,
       "tags": ""
     },
     {
