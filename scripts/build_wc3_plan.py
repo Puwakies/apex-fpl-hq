@@ -35,8 +35,11 @@ def mult(team,gw):
 def fxs(team,gw):
     v=FX.get((team,gw)); return f"{v[0]}{v[1]}v{v[2]}" if v else "-"
 
-LOCKED={"Haaland","B.Fernandes","Joao Pedro","Joao Pedro ","João Pedro","Raya","Kelleher"}
-d=json.load(open(ROOT/"data/reports/wc_gw3_final.json"))
+import os
+TEAM=os.environ.get("TEAM","wc_gw3_prem")   # chosen WC GW3 team (default = PREM, no Bruno)
+_lk=os.environ.get("LOCKED","Haaland,João Pedro,Semenyo,Raya,Kelleher")
+LOCKED=set(_lk.split(","))|{"Joao Pedro","Joao Pedro "}
+d=json.load(open(ROOT/f"data/reports/{TEAM}.json"))
 xi=d["xi"]; bench=d["bench"]; squad=xi+bench
 def pts(p):  # season pts proxy for captain ranking
     e=elem.get((p["name"],p["team"])); return e["total_points"] if e else p.get("pts",0)
@@ -44,7 +47,7 @@ def pts(p):  # season pts proxy for captain ranking
 # ---- per-GW captain among owned XI (GW3-7) ----
 caps={}
 for gw in range(3,8):
-    c=max(xi,key=lambda p:pts(p)*mult(p["team"],gw))
+    c=max([p for p in xi if p["pos"]!="GK"],key=lambda p:pts(p)*mult(p["team"],gw))  # never (C) a keeper
     caps[gw]=c
 
 # ---- value each non-locked OUTFIELD player over GW4-7 -> weakest link ----
