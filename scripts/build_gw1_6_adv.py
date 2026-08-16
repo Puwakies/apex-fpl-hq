@@ -127,12 +127,20 @@ def mk(p):
             "pts":p["pts"],"starts":st,"fdr6":fa,"oppxgc":team_oppxgc.get(team),
             "adj":round(fF*aqF*olF,3),"tags":" ".join(tags),"score":score}
 
+# LIVE cross-check: features.json can be stale (players who changed club, e.g.
+# Lacroix CRY->CHE). Require each pool player to exist in the LIVE bootstrap with
+# matching team; use LIVE price + LIVE availability. Keeps last-season pts/starts.
+live_by={(e["web_name"],short[e["team"]]):e for e in boot["elements"]}
 pool,byid=[],{}
 for p in feat["players"]:
     if p["pos"] not in POS or p["id"] in BANNED_IDS: continue
+    lv=live_by.get((p["web_name"],p["team"]))
+    if lv is None: continue                                       # not in live (moved/left)
+    if p["id"] not in LOCKED_IDS and lv["status"]!="a": continue  # live availability
     if p["id"] not in LOCKED_IDS and p["status"] in ("i","s","u","d"): continue
     if p["team"] not in team_fdr6: continue
     if p["id"] not in LOCKED_IDS and (p.get("starts",0) or 0)<STARTS_FLOOR: continue
+    p=dict(p); p["price"]=lv["now_cost"]/10                       # use LIVE price
     m=mk(p); pool.append(m); byid[p["id"]]=m
 
 LOCKED=[byid[i] for i in LOCKED_IDS]; NEED={"GK":2,"DEF":5,"MID":5,"FWD":3}
