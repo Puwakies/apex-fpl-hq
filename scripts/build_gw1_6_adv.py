@@ -43,6 +43,9 @@ if _defel:
 ATK_DEF=os.environ.get("ATK_DEF","1")!="0"   # attacking-defender boost on by default
 ATK_W  =float(os.environ.get("ATK_W","0.05")) # per-z boost weight for DEF attacking returns
 DIV_W  =float(os.environ.get("DIV","0.0"))    # diversity: reward per distinct club (spread risk)
+_m3=os.environ.get("MAX3_CLUBS")              # clubs allowed 3 (title contenders); others capped 2
+MAX3_CLUBS=set(_m3.split(",")) if _m3 not in (None,"") else None
+def cap_for(team): return 3 if (MAX3_CLUBS is None or team in MAX3_CLUBS) else 2
 
 # team xGC/90 (leakiness) from advanced_stats
 team_xgc={w["team"]:w["xgc_per90"] for w in adv["team_def_weakness"]}
@@ -156,7 +159,7 @@ def feas(sq):
     c={}
     for p in sq:
         c[p["team"]]=c.get(p["team"],0)+1
-        if c[p["team"]]>3: return False
+        if c[p["team"]]>cap_for(p["team"]): return False
     pc={"GK":0,"DEF":0,"MID":0,"FWD":0}
     for p in sq: pc[p["pos"]]+=1
     if pc!=NEED: return False
@@ -180,7 +183,7 @@ def rv(rng):
     while not feas(sq) and t<4000:
         t+=1; cc={}
         for p in sq: cc[p["team"]]=cc.get(p["team"],0)+1
-        over=[k for k,v in cc.items() if v>3]
+        over=[k for k,v in cc.items() if v>cap_for(k)]
         if over:
             vic=[p for p in sq if p["team"]==over[0] and p["id"] not in lset]
             if not vic: return None
