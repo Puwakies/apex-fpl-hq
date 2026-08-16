@@ -71,6 +71,7 @@ def load(name):
     return sq
 
 DIV=load("wc_gw3_div"); ORIG=load("wc_gw3_final")
+PREM4=load("wc_gw3_prem4"); PREM=load("wc_gw3_prem")   # no-Bruno premium-mid variants
 _w=elem[("Woltemade","NEW")]; _wst=_w.get("starts",0) or 0
 WOLT={"name":"Woltemade","team":"NEW","pos":"FWD","xi":True,
       "ppg":min(_w["total_points"]/max(_wst,1),9.0),"nail":min(0.97,0.60+0.40*_wst/34),
@@ -94,7 +95,7 @@ def score(sq,gw,pts,played,tc):
 def simulate(strats,N=6000,seed=7):
     rng=random.Random(seed)
     union={}
-    for sq in (DIV,ORIG,[WOLT]):
+    for sq in (DIV,ORIG,PREM4,PREM,[WOLT]):
         for p in sq: union[(p["name"],p["team"])]=p
     teams=list({t for (_,t) in union})
     tot={n:[] for n in strats}
@@ -118,15 +119,15 @@ def simulate(strats,N=6000,seed=7):
                               "p90":s[int(.9*N)],"raw":tl}
     return out
 
-def S_div_bank6(gw):  return (apply_swap(DIV) if gw>=6 else DIV), (gw==7)   # MAIN plan
-def S_orig_bank6(gw): return (apply_swap(ORIG) if gw>=6 else ORIG), (gw==7)
-def S_div_swap4(gw):  return (apply_swap(DIV) if gw>=4 else DIV), (gw==7)
-def S_div_noswap(gw): return DIV, (gw==7)
+def S_div(gw):   return (apply_swap(DIV)  if gw>=6 else DIV),  (gw==7)   # Bruno-locked (winner so far)
+def S_prem4(gw): return (apply_swap(PREM4) if gw>=6 else PREM4),(gw==7)  # no-Bruno, Semenyo 4-4-2
+def S_prem(gw):  return (apply_swap(PREM) if gw>=6 else PREM), (gw==7)   # no-Bruno, 5-3-2 premium DEF
+def S_orig(gw):  return (apply_swap(ORIG) if gw>=6 else ORIG), (gw==7)
 STRATS={
- "DIV bank->swap6 +TC7":  S_div_bank6,
- "ORIG bank->swap6 +TC7": S_orig_bank6,
- "DIV swap@GW4 +TC7":     S_div_swap4,
- "DIV no-swap +TC7":      S_div_noswap,
+ "DIV (Bruno) bank->swap6":     S_div,
+ "PREM4 (Semenyo 4mid) swap6":  S_prem4,
+ "PREM (Semenyo 5-3-2) swap6":  S_prem,
+ "ORIG (Bruno) swap6":          S_orig,
 }
 N=6000
 res=simulate(STRATS,N=N,seed=7)

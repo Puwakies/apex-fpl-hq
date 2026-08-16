@@ -137,7 +137,8 @@ N_LOCKED_GK=sum(1 for p in LOCKED if p["pos"]=="GK")
 free_need={k:NEED[k]-sum(1 for p in LOCKED if p["pos"]==k) for k in NEED}; lset=set(LOCKED_IDS)
 bypos={k:sorted([p for p in pool if p["pos"]==k and p["id"] not in lset],key=lambda x:-x["score"]) for k in NEED}
 cheap_gk=sorted([p for p in bypos["GK"] if p["price"]<=4.5],key=lambda x:(x["price"],-x["score"]))
-FORMS=[(d,m,f) for d in range(3,6) for m in range(2,6) for f in range(1,4) if d+m+f==10]
+MAXDEF=int(os.environ.get("MAXDEF","5"))  # cap DEF in XI (set 4 to force a bigger midfield)
+FORMS=[(d,m,f) for d in range(3,6) for m in range(2,6) for f in range(1,4) if d+m+f==10 and d<=MAXDEF]
 
 def bxi(sq):
     g=sorted([p for p in sq if p["pos"]=="GK"],key=lambda x:-x["score"])
