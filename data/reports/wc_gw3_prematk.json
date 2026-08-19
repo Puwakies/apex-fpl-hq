@@ -1,0 +1,174 @@
+{
+  "mode": "gw1-6+adv",
+  "formation": "3-5-2",
+  "spend": 100.0,
+  "xi": [
+    {
+      "name": "Raya",
+      "team": "ARS",
+      "pos": "GK",
+      "price": 6.0,
+      "pts": 162,
+      "fdr6": 3.15,
+      "oppxgc": 1.413,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "fdr6": 2.817,
+      "oppxgc": 1.405,
+      "adj": 1.013,
+      "tags": ""
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 179,
+      "fdr6": 3.15,
+      "oppxgc": 1.483,
+      "adj": 1.024,
+      "tags": ""
+    },
+    {
+      "name": "Mitchell",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 135,
+      "fdr6": 2.817,
+      "oppxgc": 1.36,
+      "adj": 1.006,
+      "tags": ""
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "fdr6": 3.317,
+      "oppxgc": 1.407,
+      "adj": 1.137,
+      "tags": "AQ+1.7"
+    },
+    {
+      "name": "Szoboszlai",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 7.0,
+      "pts": 160,
+      "fdr6": 2.817,
+      "oppxgc": 1.405,
+      "adj": 1.057,
+      "tags": ""
+    },
+    {
+      "name": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 7.5,
+      "pts": 184,
+      "fdr6": 3.15,
+      "oppxgc": 1.413,
+      "adj": 1.03,
+      "tags": ""
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 6.5,
+      "pts": 180,
+      "fdr6": 3.15,
+      "oppxgc": 1.483,
+      "adj": 1.043,
+      "tags": ""
+    },
+    {
+      "name": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 8.0,
+      "pts": 188,
+      "fdr6": 3.15,
+      "oppxgc": 1.373,
+      "adj": 0.924,
+      "tags": "OVER Δ+4.2"
+    },
+    {
+      "name": "Watkins",
+      "team": "AVL",
+      "pos": "FWD",
+      "price": 8.0,
+      "pts": 167,
+      "fdr6": 3.15,
+      "oppxgc": 1.155,
+      "adj": 0.983,
+      "tags": ""
+    },
+    {
+      "name": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 8.0,
+      "pts": 181,
+      "fdr6": 3.317,
+      "oppxgc": 1.138,
+      "adj": 0.955,
+      "tags": ""
+    }
+  ],
+  "bench": [
+    {
+      "name": "Leno",
+      "team": "FUL",
+      "pos": "GK",
+      "price": 4.5,
+      "pts": 122,
+      "fdr6": 2.983,
+      "oppxgc": 1.25,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 126,
+      "fdr6": 2.817,
+      "oppxgc": 1.277,
+      "adj": 0.994,
+      "tags": ""
+    },
+    {
+      "name": "F.Kadıoğlu",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 118,
+      "fdr6": 3.15,
+      "oppxgc": 1.353,
+      "adj": 1.005,
+      "tags": ""
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 142,
+      "fdr6": 3.483,
+      "oppxgc": 1.267,
+      "adj": 1.014,
+      "tags": ""
+    }
+  ]
+}

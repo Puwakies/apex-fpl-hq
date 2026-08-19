@@ -73,6 +73,7 @@ def load(name):
 DIV=load("wc_gw3_div"); ORIG=load("wc_gw3_final")
 PREM4=load("wc_gw3_prem4"); PREM=load("wc_gw3_prem")   # no-Bruno premium-mid variants
 NOHAA=load("wc_gw3_nohaa_bruno")                        # no-Haaland, with-Bruno (max-2)
+PREMATK=load("wc_gw3_prematk")                          # premium-attack, no locks, cheap DEF
 _w=elem[("Woltemade","NEW")]; _wst=_w.get("starts",0) or 0
 WOLT={"name":"Woltemade","team":"NEW","pos":"FWD","xi":True,
       "ppg":min(_w["total_points"]/max(_wst,1),9.0),"nail":min(0.97,0.60+0.40*_wst/34),
@@ -96,7 +97,7 @@ def score(sq,gw,pts,played,tc):
 def simulate(strats,N=6000,seed=7):
     rng=random.Random(seed)
     union={}
-    for sq in (DIV,ORIG,PREM4,PREM,NOHAA,[WOLT]):
+    for sq in (DIV,ORIG,PREM4,PREM,NOHAA,PREMATK,[WOLT]):
         for p in sq: union[(p["name"],p["team"])]=p
     teams=list({t for (_,t) in union})
     tot={n:[] for n in strats}
@@ -120,13 +121,13 @@ def simulate(strats,N=6000,seed=7):
                               "p90":s[int(.9*N)],"raw":tl}
     return out
 
-def S_prem(gw):  return (apply_swap(PREM) if gw>=6 else PREM), (gw==7)      # chosen: max-2, Haaland+Semenyo
-def S_nohaa(gw): return (apply_swap(NOHAA) if gw>=6 else NOHAA), (gw==7)    # no-Haaland, with-Bruno, max-2
-def S_div(gw):   return (apply_swap(DIV)  if gw>=6 else DIV),  (gw==7)      # Bruno-locked, diverse 4-3-3
+def S_prem(gw):   return (apply_swap(PREM) if gw>=6 else PREM), (gw==7)      # max-2, Haaland+Semenyo
+def S_nohaa(gw):  return (apply_swap(NOHAA) if gw>=6 else NOHAA), (gw==7)    # no-Haaland, with-Bruno
+def S_prematk(gw):return (apply_swap(PREMATK) if gw>=6 else PREMATK),(gw==7) # premium-attack, no locks
 STRATS={
- "PREM  (Haaland+Semenyo) max2": S_prem,
- "NOHAA (Bruno, no Haaland) max2":S_nohaa,
- "DIV   (Haaland+Bruno)":         S_div,
+ "PREM    (Haaland+Semenyo)":    S_prem,
+ "NOHAA   (Bruno, no Haaland)":  S_nohaa,
+ "PREMATK (max attack, no lock)":S_prematk,
 }
 N=6000
 res=simulate(STRATS,N=N,seed=7)

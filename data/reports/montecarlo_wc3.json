@@ -1,20 +1,20 @@
 {
-  "PREM  (Haaland+Semenyo) max2": {
-    "mean": 365.2,
-    "p10": 294.8,
-    "p50": 358.3,
-    "p90": 443.7
+  "PREM    (Haaland+Semenyo)": {
+    "mean": 366.5,
+    "p10": 293.9,
+    "p50": 360.5,
+    "p90": 445.2
   },
-  "NOHAA (Bruno, no Haaland) max2": {
-    "mean": 370.0,
-    "p10": 303.4,
-    "p50": 366.9,
-    "p90": 439.3
+  "NOHAA   (Bruno, no Haaland)": {
+    "mean": 370.3,
+    "p10": 303.5,
+    "p50": 365.3,
+    "p90": 443.5
   },
-  "DIV   (Haaland+Bruno)": {
-    "mean": 352.1,
-    "p10": 284.0,
-    "p50": 346.7,
-    "p90": 428.5
+  "PREMATK (max attack, no lock)": {
+    "mean": 352.2,
+    "p10": 289.5,
+    "p50": 348.0,
+    "p90": 422.1
   }
 }
