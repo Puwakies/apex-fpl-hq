@@ -1,33 +1,146 @@
 {
-  "gw": 38,
-  "updated": "2026-06-26T00:00:00.000Z",
-  "engine": "rival",
+  "gw": 1,
   "strategy": "top10k",
-  "captain": "Bowen",
-  "vice_captain": "M.Salah",
-  "xi": [
-    "Sels",
-    "Muñoz",
-    "Virgil",
-    "Milenković",
-    "M.Salah",
-    "Mbeumo",
-    "Anderson",
-    "Semenyo",
-    "Bowen",
-    "Wood",
-    "Thiago"
-  ],
-  "bench": [
-    "Henderson",
-    "N.Williams",
-    "Ndiaye",
-    "Raúl"
-  ],
+  "generated": "2026-08-21T00:00:00.000Z",
+  "source": "data/cache/xpts.json (GW1 priors: form, xgi_per90, fdr) + data/cache/league.json (GW1 ownership empty -> ownership inferred from price tier / xpts rank)",
   "formation": "3-4-3",
-  "projected_xpts": 62.4,
-  "captain_reasoning": "Bowen (WHU) captained on the single highest-motivation fixture in GW38: West Ham vs Leeds is a relegation decider with maximum intensity and home advantage. He is a confirmed, nailed 90-minute starter (news.json: low rotation risk, 134k+ FPL managers transferred him in). On a final day where almost every elite side rotates (Arsenal, City, Villa all rest players), Bowen is the rare premium with both guaranteed minutes and a real ceiling. Proven top10k pattern: captain the most-motivated nailed attacker, not the highest-owned premium sitting on a benched or rotated team.",
-  "vs_user_edge": "I cannot see the user's squad — this is an honest independent build. My edge is full GW38 team-news exploitation: I carry ZERO dead assets. I avoided all confirmed non-starters (Haaland, Raya, Gabriel, Aina, Gvardiol) and every rotation trap (Rogers — Villa rested 8 post-Europa-final; Mateta — benched per medical.json; Kluivert — Bournemouth bench). All 11 starters are confirmed GW38 starters. A template manager who left Haaland/Raya/Gabriel in their XI eats three guaranteed zeros plus an auto-sub scramble; I sidestep that entirely.",
-  "notes": "xpts.json is flat (all xpts=0, fdr=3) for GW38, so the model layer is dead — team-news is the only live signal and I built purely off confirmed lineups. Safe-haven core: Sels (NFO confirmed #1, clean-sheet upside vs BOU), the NFO pair Anderson + Wood (both confirmed XI), Mbeumo (confirmed MUN starter), M.Salah (confirmed LIV farewell starter, vice for Golden Boot incentive). Calculated differentials: Semenyo and Thiago (Brentford striker, home fdr=2) for ceiling without rotation risk. Muñoz (CRY confirmed starter) covers DEF. Formation 3-4-3 is the proven elite final-day shape. Within the £100m guide; max 3 per club respected (NFO: Sels, Anderson, Wood = 3). Key differential = Thiago (BRE, low ownership, nailed home starter).",
-  "key_differential": "Thiago"
+  "squad": [
+    "Raya",
+    "Dubravka",
+    "Gabriel",
+    "Guéhi",
+    "N.Williams",
+    "Shaw",
+    "Hume",
+    "Gibbs-White",
+    "Rice",
+    "Anderson",
+    "Xhaka",
+    "Yarmoliuk",
+    "Haaland",
+    "Thiago",
+    "Calvert-Lewin"
+  ],
+  "starting_xi": [
+    "Raya",
+    "Gabriel",
+    "Guéhi",
+    "N.Williams",
+    "Gibbs-White",
+    "Rice",
+    "Anderson",
+    "Xhaka",
+    "Haaland",
+    "Thiago",
+    "Calvert-Lewin"
+  ],
+  "bench_order": [
+    "Yarmoliuk",
+    "Shaw",
+    "Hume",
+    "Dubravka"
+  ],
+  "captain": "Haaland",
+  "vice": "Gabriel",
+  "transfers": {
+    "in": [],
+    "out": [],
+    "count": 0,
+    "hit": 0,
+    "note": "GW1 initial squad build — no transfers exist. Free transfer banked for GW2 (target: react to opening-weekend minutes/lineup data before committing)."
+  },
+  "chip": "none",
+  "chip_rationale": "APEX chip-timing gates all unmet at GW1: no DGW (TC/BB), no BGW (FH), and zero rotation flags from a fresh squad (WC). Saving all four chips is strictly higher EV than a GW1 punt.",
+  "projected_xpts": 80.0,
+  "xpts_breakdown": {
+    "starting_xi_base": 71.9,
+    "captain_bonus": 8.13,
+    "total": 80.03,
+    "bench_xpts_unused": 13.49
+  },
+  "key_differential": "N.Williams (NFO, £5.0m)",
+  "differentials": [
+    {
+      "player": "N.Williams",
+      "team": "NFO",
+      "price": 5.0,
+      "xpts": 6.66,
+      "case": "Model's 8th-ranked asset overall and the single best xPts-per-million pick in the dataset outside of Raya. FDR 2 fixture, attacking full-back profile at a £5.0m entry price that almost nobody starts GW1 on."
+    },
+    {
+      "player": "Anderson",
+      "team": "MCI",
+      "price": 6.5,
+      "xpts": 5.55,
+      "case": "Cheap route into the MCI attack at 6.5. Outscores every mid priced 6.0-7.5 in the model (beats Szoboszlai 4.92, Gravenberch 4.17, Foden 3.10, Cherki 3.49) while the crowd pays 7.5-9.5 for Palmer (2.86) and Saka (4.97)."
+    },
+    {
+      "player": "Calvert-Lewin",
+      "team": "LEE",
+      "price": 6.0,
+      "xpts": 3.23,
+      "case": "Enabler forward. Best xPts of any sub-£6.5m striker and beats Gyökeres (3.14 @ 7.5) and João Pedro (3.60 @ 7.5) on value, freeing 1.5m that funds Gabriel in defence."
+    }
+  ],
+  "safe_haven_core": [
+    "Haaland",
+    "Raya",
+    "Gabriel",
+    "Rice",
+    "Gibbs-White"
+  ],
+  "captain_rationale": "APEX captaincy protocol = nailed premium, never a GK. No cum_pts table exists at GW1, so the tiebreak falls to highest captain_xpts among owned players: Haaland 16.26. B.Fernandes projects higher (18.26) but at £12.0m alongside Haaland's £15.5m the 27.5m premium spend collapses the rest of the squad to sub-5.0m filler — the model's own numbers show that trade costs ~2.2 net XI xPts. Haaland is also the top10k safe haven: captaining him caps downside vs the field.",
+  "budget": {
+    "spent": 100.0,
+    "remaining": 0.0,
+    "gk": 10.0,
+    "def": 28.0,
+    "mid": 32.5,
+    "fwd": 29.5
+  },
+  "club_counts": {
+    "ARS": 3,
+    "MCI": 3,
+    "NFO": 2,
+    "SUN": 2,
+    "BRE": 2,
+    "MUN": 1,
+    "LEE": 1,
+    "TOT": 1
+  },
+  "validation": {
+    "squad_size": 15,
+    "gk": 2,
+    "def": 5,
+    "mid": 5,
+    "fwd": 3,
+    "max_per_club_ok": true,
+    "budget_ok": true,
+    "formation_valid": true
+  },
+  "player_detail": [
+    { "name": "Raya", "team": "ARS", "pos": "GK", "price": 6.0, "xpts": 8.5, "fdr": 2, "role": "XI" },
+    { "name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 8.0, "xpts": 8.34, "fdr": 2, "role": "XI" },
+    { "name": "Guéhi", "team": "MCI", "pos": "DEF", "price": 6.0, "xpts": 7.0, "fdr": 3, "role": "XI" },
+    { "name": "N.Williams", "team": "NFO", "pos": "DEF", "price": 5.0, "xpts": 6.66, "fdr": 2, "role": "XI" },
+    { "name": "Gibbs-White", "team": "NFO", "pos": "MID", "price": 8.0, "xpts": 7.03, "fdr": 2, "role": "XI" },
+    { "name": "Rice", "team": "ARS", "pos": "MID", "price": 7.5, "xpts": 7.04, "fdr": 2, "role": "XI" },
+    { "name": "Anderson", "team": "MCI", "pos": "MID", "price": 6.5, "xpts": 5.55, "fdr": 3, "role": "XI" },
+    { "name": "Xhaka", "team": "SUN", "pos": "MID", "price": 5.5, "xpts": 4.5, "fdr": 2, "role": "XI" },
+    { "name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.5, "xpts": 8.13, "fdr": 3, "role": "XI-C" },
+    { "name": "Thiago", "team": "BRE", "pos": "FWD", "price": 8.0, "xpts": 5.92, "fdr": 3, "role": "XI" },
+    { "name": "Calvert-Lewin", "team": "LEE", "pos": "FWD", "price": 6.0, "xpts": 3.23, "fdr": 3, "role": "XI" },
+    { "name": "Shaw", "team": "MUN", "pos": "DEF", "price": 4.5, "xpts": 5.73, "fdr": 2, "role": "BENCH" },
+    { "name": "Hume", "team": "SUN", "pos": "DEF", "price": 4.5, "xpts": 5.28, "fdr": 2, "role": "BENCH" },
+    { "name": "Yarmoliuk", "team": "BRE", "pos": "MID", "price": 5.0, "xpts": 2.48, "fdr": 3, "role": "BENCH" },
+    { "name": "Dubravka", "team": "TOT", "pos": "GK", "price": 4.0, "xpts": 1.4, "fdr": 3, "role": "BENCH" }
+  ],
+  "strategy_notes": [
+    "top10k pattern: 3-4-3, safe-haven core (Haaland + Raya + Gabriel + Rice + Gibbs-White = 5 of the model's top 6 assets) plus 3 calculated sub-radar picks.",
+    "The GW1 model is defence-skewed: Raya 8.50, Gabriel 8.34, Guéhi 7.00, N.Williams 6.66 all outrank every forward except Haaland. I bought that edge rather than chasing forwards.",
+    "Deliberately skipped B.Fernandes (9.13, £12.0m). Pairing him with Haaland burns 27.5m on two players and forces four sub-5.5m starters; the model says that build lands ~69.7 XI xPts vs 71.9 for this one.",
+    "Also faded the price traps the crowd will own: Palmer 2.86 @ 9.5, Isak 0.50 @ 9.0, Ekitiké 0.00 @ 7.5, Šeško 0.67 @ 7.0, Wirtz 2.81 @ 7.5. Being underweight there is where the rank comes from.",
+    "Known cost of the mandated 3-4-3: Shaw (5.73) and Hume (5.28) sit on the bench while Calvert-Lewin (3.23) starts. A 4-4-2 or 3-5-2 would score ~2.5 higher on paper, but 3-4-3 keeps three attacking returns live and is the shape the top10k playbook specifies.",
+    "Bench order puts Yarmoliuk first so an early forward/mid non-start is covered before the defensive slots are disturbed."
+  ]
 }

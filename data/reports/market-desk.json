@@ -1,34 +1,22 @@
 {
-  "gw": 38,
-  "generated_at": "2026-06-12T00:00:00Z",
-  "price_movements": [],
-  "price_movement_note": "GW38 is the final gameweek. price.json confirms both likely_rises and likely_falls are empty — no price movement signals active. Price changes after GW38 deadline have zero in-season consequence. Squad value at deadline snapshot (101.2m) is the only rank-relevant number.",
-  "transfer_opportunities": [
-    {
-      "player_out": "Haaland",
-      "player_status": "UNAVAILABLE",
-      "bench_slot": 13,
-      "price": 15.1,
-      "reason": "UNAVAILABLE — bench blocker. Scores 0 points and cannot auto-sub into the starting XI. The relevant question is whether losing this bench slot creates a structural risk to the starting XI if auto-subs are needed.",
-      "budget_ceiling_for_replacement": 15.4,
-      "calculation": "Haaland sell price 15.1m + bank 0.3m = 15.4m ceiling for a like-for-like bench FWD swap with no points hit.",
-      "emergency_transfer_needed": false,
-      "emergency_rationale": "Haaland is on the bench (slot 13), not in the starting XI. An UNAVAILABLE bench player scores 0 but only costs points if the auto-sub system needs to call on him. Auto-sub would reach Haaland only if 2 or more outfield starters fail to play and the auto-sub chain exhausts other options first. Current bench order is Sels (GK), Munoz (DEF), Kluivert (MID), Haaland (FWD). Haaland as the only bench FWD would auto-sub if a starting FWD (Bowen, Mateta, or Wood) does not play AND Kluivert has already been used for another sub. With 10 of 11 starters AVAILABLE, the probability of needing a 2nd or 3rd bench outfield sub is extremely low. A -4 hit to replace a bench player in the last GW of the season almost never recovers its cost — expected bench return is well below 4 points."
-    }
-  ],
-  "gabriel_doubtful_assessment": {
-    "player": "Gabriel",
-    "status": "DOUBTFUL",
-    "starting_xi": true,
-    "first_auto_sub": "Munoz (DEF, bench slot 14, AVAILABLE)",
-    "does_gabriel_trigger_haaland_slot": false,
-    "impact": "If Gabriel does not play, Munoz is the eligible auto-sub covering the DEF position. This resolves the Gabriel risk without involving Haaland's bench slot. No transfer action required for Gabriel's doubt.",
-    "action_required": false
+  "gw": 1,
+  "generated_at": "2026-08-21T00:00:00Z",
+  "data_sources": {
+    "price_json": "data/cache/price.json — updated 2026-08-21T00:45:05.180Z, likely_rises: [], likely_falls: []",
+    "features_json": "data/features.json — generated_at 2026-07-23T12:40:00 (pre-season snapshot, target_gw 1)"
   },
-  "bank_situation": "Bank: 0.3m. Squad value: 101.2m (overall rank snapshot value). No free transfers available beyond standard weekly allowance. Any transfer costs -4 points unless a free transfer is in hand. With 0.3m bank, no meaningful upgrade is possible without a sale — budget is effectively locked for GW38.",
-  "recommendation": "NO EMERGENCY TRANSFER REQUIRED. Haaland UNAVAILABLE on the bench is a dead bench slot but does not directly cost points. Do not take a -4 hit to replace a bench player in the final gameweek — expected bench FWD return is lower than the guaranteed 4-point penalty in nearly all scenarios. Gabriel DOUBTFUL is covered by Munoz in the auto-sub chain. Hold the squad as-is. Monitor Gabriel's fitness status before the GW38 deadline: if he is confirmed out, Munoz covers automatically with no transfer needed. The only scenario where action is justified is a confirmed ruling that 2+ starters are out AND Haaland is the required auto-sub — this is extremely unlikely given current squad availability. Bank 0.3m, hold position, no action.",
-  "overall_rank_note": "Squad value 101.2m is already set. GW38 price changes (empty this cycle) would not affect the deadline snapshot. Final rank is determined by GW38 points scored, not price appreciation. No price-chasing move is warranted.",
+  "data_note": "Sampled features.json across GK/DEF entries early, mid, and late in the file (including high-profile players like Virgil van Dijk) — net_transfers, cost_change_event, and selected_by_pct are 0 for every player checked. This is expected at GW1: the season has not kicked off yet, so no live gameweek transfer activity has accumulated and the FPL price-change algorithm has nothing to act on. price.json (the live Apps Script cache) independently confirms zero active movers. No transfer-velocity signal currently exists to differentiate players.",
   "likely_rises": [],
   "likely_falls": [],
-  "act_now": []
+  "act_now": [],
+  "monitor": [
+    { "player": "B.Fernandes", "role": "Captain, squad", "reason": "Premium captain pick — price-sensitive if it moves once season transfer data populates; check price.json again closer to GW1 deadline." },
+    { "player": "Gabriel", "role": "Vice-captain, squad", "reason": "High-price defender, popular; watch for early-season rise once real transfer counts start." },
+    { "player": "Semenyo", "role": "Squad", "reason": "Rising ownership candidate pre-season narrative; no transfer data yet to confirm." },
+    { "player": "Mbeumo", "role": "Squad", "reason": "New MUN signing hype; monitor for early rise once transfers register." },
+    { "player": "Thiago", "role": "Squad FWD", "reason": "Budget enabler; monitor for fall risk if ownership shifts to alternatives." },
+    { "player": "João Pedro", "role": "Squad FWD", "reason": "CHE forward, price could move on pre-deadline hype; no signal yet." },
+    { "player": "Frimpong", "role": "Squad DEF", "reason": "LIV nailed pick; monitor once real transfer velocity data is available." }
+  ],
+  "recommendation": "No price-chasing action required tonight. GW1 has not generated any transfer velocity in either the live price cache (data/cache/price.json) or the features snapshot (data/features.json) — every sampled player shows net_transfers=0 and cost_change_event=0.0. This is a data-availability limitation of pre-season, not a signal of stability. Re-run this check closer to the actual GW1 deadline once real-time FPL transfer counts populate, since that is when genuine rise/fall momentum will first appear this season. Until then, hold squad as-is; no emergency transfer is price-justified."
 }

@@ -1,54 +1,57 @@
 {
   "agent": "data-lab",
-  "generated": "2026-06-04T07:45:00.000Z",
-  "gw": 38,
+  "generated": "2026-08-21T00:45:06.246Z",
+  "gw": 1,
   "squad": {
     "loaded": true,
     "player_count": 15,
     "starting_xi": 11,
     "bench": 4,
-    "captain": "Bowen",
+    "captain": "B.Fernandes",
     "vice_captain": "Gabriel",
-    "bank": 0.6,
-    "squad_value": 104.2,
+    "bank": 0,
+    "squad_value": 0,
+    "squad_value_computed_from_prices": 100.0,
     "team_name": "Puwakies Jjimyang",
     "manager": "Puwakorn Amart",
-    "overall_rank": 1336486,
-    "total_points": 2163
+    "overall_rank": 0,
+    "total_points": 0
   },
   "chips": {
-    "chips_used": [
-      "WC@GW3",
-      "TC@GW6",
-      "FH@GW10",
-      "BB@GW18",
-      "WC@GW20",
-      "TC@GW26",
-      "BB@GW33",
-      "FH@GW34"
-    ],
-    "chips_left": [],
-    "all_chips_used": true
+    "chips_used": [],
+    "chips_left": ["BB", "TC", "FH", "WC×2"],
+    "all_chips_used": false
   },
   "xpts": {
-    "universe_count": 149,
+    "universe_count": 150,
     "all_zero_warning": false,
-    "nonzero_players": [
-      {
-        "name": "Sels",
-        "team": "NFO",
-        "xpts": 1
-      }
+    "squad_players_missing_xpts": ["Frimpong", "Rushworth", "van Ewijk"],
+    "squad_xpts": [
+      {"name": "Lammens", "pos": "GK", "xpts": 5.61},
+      {"name": "Frimpong", "pos": "DEF", "xpts": null},
+      {"name": "Gabriel", "pos": "DEF", "xpts": 8.34},
+      {"name": "Calafiori", "pos": "DEF", "xpts": 4.6},
+      {"name": "Semenyo", "pos": "MID", "xpts": 6.03},
+      {"name": "E.Le Fée", "pos": "MID", "xpts": 5.28},
+      {"name": "B.Fernandes", "pos": "MID", "xpts": 9.13},
+      {"name": "Mbeumo", "pos": "MID", "xpts": 3.85},
+      {"name": "Rogers", "pos": "MID", "xpts": 4.81},
+      {"name": "Thiago", "pos": "FWD", "xpts": 5.92},
+      {"name": "João Pedro", "pos": "FWD", "xpts": 3.6},
+      {"name": "Rushworth", "pos": "GK", "xpts": null},
+      {"name": "Hume", "pos": "DEF", "xpts": 5.28},
+      {"name": "Awoniyi", "pos": "FWD", "xpts": 0.32},
+      {"name": "van Ewijk", "pos": "DEF", "xpts": null}
     ],
-    "note": "All squad players show xpts=0 except Sels (not in squad). xpts field trusted as-is from cache."
+    "note": "GW1 pre-season cache. xpts field trusted as-is from cache; not recomputed."
   },
   "league": {
-    "total_managers": 15,
-    "my_rank": 7,
-    "leader": "Krisss. (2365pts)",
-    "template": "Haaland, B.Fernandes, Gabriel",
-    "top_differentials": "Rogers(6.7%), Watkins(6.7%), Enzo(6.7%), Bruno G.(6.7%), J.Timber(6.7%)",
-    "gw_context": 37
+    "total_managers": 0,
+    "my_rank": "?",
+    "leader": "? (0pts)",
+    "template": "",
+    "top_differentials": "",
+    "gw_context": 1
   },
   "news": {
     "total_injury_flags": 40,
@@ -57,58 +60,35 @@
   "price": {
     "likely_rises": [],
     "likely_falls": [],
-    "note": "No price change signals in cache"
+    "note": "No price change signals in cache (expected pre-GW1)"
   },
   "gemini": {
-    "captain": "Haaland",
-    "captain_xpts": 14,
+    "captain": "B.Fernandes",
+    "captain_xpts": 9.13,
     "vice_captain": "Gabriel",
-    "projected_xpts": 85,
+    "projected_xpts": 49.44,
     "transfer_out": null,
     "transfer_in": null,
-    "transfer_reason": "No transfers required for final gameweek",
+    "transfer_reason": "Roll free transfer for GW1 flexibility",
     "chip": null,
-    "confidence": "high",
-    "key_risk": "Haaland rotation risk"
+    "confidence": "medium",
+    "key_risk": "Several players lack historical Premier League xPts data"
   },
   "files": {
-    "squad.json": {
-      "updated": "2026-06-04T07:45:26.171Z",
-      "rows": 15,
-      "status": "ok"
-    },
-    "xpts.json": {
-      "updated": "2026-06-04T07:45:27.236Z",
-      "rows": 149,
-      "status": "ok"
-    },
-    "league.json": {
-      "updated": "2026-06-04T07:45:28.129Z",
-      "rows": 0,
-      "status": "ok"
-    },
-    "news.json": {
-      "updated": "2026-06-04T07:45:28.969Z",
-      "rows": 40,
-      "status": "ok"
-    },
-    "price.json": {
-      "updated": "2026-06-04T07:45:30.165Z",
-      "rows": 0,
-      "status": "ok"
-    },
-    "gemini.json": {
-      "updated": "2026-06-04T07:45:31.050Z",
-      "rows": 0,
-      "status": "ok"
-    }
+    "squad.json": {"updated": "2026-08-21T00:44:59.575Z", "rows": 15, "status": "ok"},
+    "xpts.json": {"updated": "2026-08-21T00:45:01.088Z", "rows": 150, "status": "ok"},
+    "league.json": {"updated": "2026-08-21T00:45:02.509Z", "rows": 0, "status": "ok"},
+    "news.json": {"updated": "2026-08-21T00:45:03.974Z", "rows": 40, "status": "ok"},
+    "price.json": {"updated": "2026-08-21T00:45:05.180Z", "rows": 0, "status": "ok"},
+    "gemini.json": {"updated": "2026-08-21T00:45:06.246Z", "rows": 1, "status": "ok"}
   },
   "missing_files": [],
   "warnings": [
-    "xpts.json: ALL squad players show xpts=0 \u2014 only Sels (NFO GK, not in squad) has xpts=1. This may indicate the xPts computation produced zeroes for GW38. Downstream agents should treat all squad xpts as 0 unless this is intentional.",
-    "league.json: differentials[] and template[] arrays are empty \u2014 context block has data but structured arrays not populated.",
-    "price.json: both likely_rises and likely_falls are empty \u2014 no price change signals for GW38.",
-    "All chips used. chips_left=[]. No chip available for GW38."
+    "squad.json: squad_value and bank both report 0 — not yet computed by Apps Script for pre-season GW1; actual sum of 15 player prices = 100.0.",
+    "xpts.json: 3 squad players (Frimpong, Rushworth, van Ewijk) have no matching xPts row — likely new-to-PL / newly-promoted-club players lacking historical data, consistent with gemini.key_risk.",
+    "league.json: total_managers=0 and differentials[]/template[] empty — mini-league standings not yet populated for GW1 (expected pre-season/GW1 state).",
+    "price.json: both likely_rises and likely_falls are empty — no price change signals yet for GW1.",
+    "All chips available (chips_used=[]). Full arsenal (WC×2, BB, TC, FH) heading into GW1."
   ],
-  "features_written": "/home/user/apex-fpl-hq/data/features.json"
+  "features_written": null
 }

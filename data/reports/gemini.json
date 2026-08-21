@@ -1,120 +1,31 @@
 {
   "engine": "gemini",
-  "season": "2026/27",
   "gw": 1,
-  "updated": "2026-07-30T04:36:45Z",
-  "source": "proxy (cum_pts baseline) — Apps Script pipeline not yet run for 26/27",
-  "formation": "4-3-3",
-  "captain": "Haaland",
-  "vice_captain": "Gabriel",
-  "captain_xpts": 14.0,
+  "captain": "B.Fernandes",
+  "vice": "Gabriel",
   "starting_xi": [
-    {
-      "name": "Raya",
-      "team": "ARS",
-      "position": "GK",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Gabriel",
-      "team": "ARS",
-      "position": "DEF",
-      "is_captain": false,
-      "is_vice": true
-    },
-    {
-      "name": "Guéhi",
-      "team": "MCI",
-      "position": "DEF",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Senesi",
-      "team": "TOT",
-      "position": "DEF",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Truffert",
-      "team": "BOU",
-      "position": "DEF",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Rice",
-      "team": "ARS",
-      "position": "MID",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Anderson",
-      "team": "MCI",
-      "position": "MID",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Garner",
-      "team": "EVE",
-      "position": "MID",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Haaland",
-      "team": "MCI",
-      "position": "FWD",
-      "is_captain": true,
-      "is_vice": false
-    },
-    {
-      "name": "João Pedro",
-      "team": "CHE",
-      "position": "FWD",
-      "is_captain": false,
-      "is_vice": false
-    },
-    {
-      "name": "Calvert-Lewin",
-      "team": "LEE",
-      "position": "FWD",
-      "is_captain": false,
-      "is_vice": false
-    }
+    "Lammens",
+    "Gabriel",
+    "Hume",
+    "Calafiori",
+    "B.Fernandes",
+    "Semenyo",
+    "Mbeumo",
+    "Rogers",
+    "Thiago",
+    "João Pedro",
+    "Awoniyi"
   ],
   "bench": [
-    {
-      "name": "Verbruggen",
-      "team": "BHA",
-      "position": "GK"
-    },
-    {
-      "name": "Mitchell",
-      "team": "CRY",
-      "position": "DEF"
-    },
-    {
-      "name": "Ampadu",
-      "team": "LEE",
-      "position": "MID"
-    },
-    {
-      "name": "Yarmoliuk",
-      "team": "BRE",
-      "position": "MID"
-    }
+    "Rushworth",
+    "Frimpong",
+    "van Ewijk",
+    "E.Le Fée"
   ],
   "transfer_out": null,
   "transfer_in": null,
-  "transfer": "none",
-  "chip": "none",
-  "projected_xpts": 64.0,
+  "chip": null,
+  "projected_xpts": 49.44,
   "confidence": "medium",
-  "key_risk": "MCI opening fixtures middling — value engines fade Haaland at £15.5; Gemini forces him as cum_pts captain",
-  "spend": 100.0
+  "key_risk": "Several players lack historical Premier League xPts data"
 }
