@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T07:58:19.077Z",
+  "updated": "2026-08-21T00:45:03.974Z",
   "items": [
     {
       "player": "J.Timber",
@@ -7,7 +7,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Groin injury - Expected back 21 Aug",
+      "news": "Groin injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -20,15 +20,6 @@
       "signal": "out"
     },
     {
-      "player": "White",
-      "team": "ARS",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 21 Aug",
-      "signal": "out"
-    },
-    {
       "player": "Onana",
       "team": "AVL",
       "pos": "MID",
@@ -38,12 +29,57 @@
       "signal": "out"
     },
     {
-      "player": "Abraham",
+      "player": "Manzambi",
+      "team": "AVL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gomes",
+      "team": "AVL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Calf injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Madjo",
       "team": "AVL",
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
-      "news": "Shoulder injury - Expected back 23 Aug",
+      "news": "Unspecified injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Milosavljević",
+      "team": "BOU",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "J.Araujo",
+      "team": "BOU",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Adli",
+      "team": "BOU",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -56,7 +92,16 @@
       "signal": "out"
     },
     {
-      "player": "Carvalho",
+      "player": "Van den Berg",
+      "team": "BRE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Milambo",
       "team": "BRE",
       "pos": "MID",
       "status": "INJURED",
@@ -74,6 +119,24 @@
       "signal": "out"
     },
     {
+      "player": "Minteh",
+      "team": "BHA",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Leg injury - Expected back 28 Nov",
+      "signal": "out"
+    },
+    {
+      "player": "Baleba",
+      "team": "BHA",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Expected back 23 Aug",
+      "signal": "out"
+    },
+    {
       "player": "Ferguson",
       "team": "BHA",
       "pos": "FWD",
@@ -83,12 +146,66 @@
       "signal": "out"
     },
     {
+      "player": "Wright",
+      "team": "COV",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
       "player": "Garner",
       "team": "EVE",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Groin injury - Expected back 22 Aug",
+      "news": "Groin injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Iroegbunam",
+      "team": "EVE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Groin injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Cairney",
+      "team": "FUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Expected back 10 Oct",
+      "signal": "out"
+    },
+    {
+      "player": "Butland",
+      "team": "HUL",
+      "pos": "GK",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Arm injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Hughes",
+      "team": "HUL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Groin injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Drameh",
+      "team": "HUL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 29 Aug",
       "signal": "out"
     },
     {
@@ -98,6 +215,33 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Zambrano",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gyabi",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gelhardt",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Expected back 5 Sep",
       "signal": "out"
     },
     {
@@ -112,6 +256,33 @@
     {
       "player": "Taylor",
       "team": "IPS",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gudmundsson",
+      "team": "LEE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gnonto",
+      "team": "LEE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gruev",
+      "team": "LEE",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
@@ -189,177 +360,6 @@
       "chance": 0,
       "news": "Unspecified injury - Unknown return date",
       "signal": "out"
-    },
-    {
-      "player": "Rodrigo",
-      "team": "MCI",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Back injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "De Ligt",
-      "team": "MUN",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Back injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Ugarte",
-      "team": "MUN",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "L.Miley",
-      "team": "NEW",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Leg injury - Expected back 30 Aug",
-      "signal": "out"
-    },
-    {
-      "player": "Savona",
-      "team": "NFO",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Xavi",
-      "team": "TOT",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Odobert",
-      "team": "TOT",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Kulusevski",
-      "team": "TOT",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Christie",
-      "team": "BOU",
-      "pos": "MID",
-      "status": "SUSPENDED",
-      "chance": 0,
-      "news": "Suspended until 29 Aug",
-      "signal": "suspended"
-    },
-    {
-      "player": "Fofana",
-      "team": "CHE",
-      "pos": "DEF",
-      "status": "SUSPENDED",
-      "chance": 0,
-      "news": "Suspended until 6 Sep",
-      "signal": "suspended"
-    },
-    {
-      "player": "Andersen",
-      "team": "FUL",
-      "pos": "DEF",
-      "status": "SUSPENDED",
-      "chance": 0,
-      "news": "Suspended until 29 Aug",
-      "signal": "suspended"
-    },
-    {
-      "player": "Kamara",
-      "team": "AVL",
-      "pos": "MID",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Knee injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Milambo",
-      "team": "BRE",
-      "pos": "MID",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Knee injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Henderson",
-      "team": "BRE",
-      "pos": "MID",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Wrist injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Tzimas",
-      "team": "BHA",
-      "pos": "FWD",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Knee injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Quenda",
-      "team": "CHE",
-      "pos": "MID",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Unspecified injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Emegha",
-      "team": "CHE",
-      "pos": "FWD",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Hamstring injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Rudoni",
-      "team": "COV",
-      "pos": "MID",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Shoulder injury - 75% chance of playing",
-      "signal": "doubt"
-    },
-    {
-      "player": "Wharton",
-      "team": "CRY",
-      "pos": "MID",
-      "status": "DOUBTFUL",
-      "chance": 75,
-      "news": "Ankle injury - 75% chance of playing",
-      "signal": "doubt"
     }
   ]
 }
