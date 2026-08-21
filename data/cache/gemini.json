@@ -1,7 +1,34 @@
 {
-  "updated": "2026-07-30T07:58:20.707Z",
+  "updated": "2026-08-21T00:45:06.246Z",
   "engine": "gemini",
   "gw": 1,
-  "error": "parse_failed",
-  "raw": "{\"engine\":\"gemini\",\"gw\":1,\"captain\":\"B.Fernandes\",\"captain_xpts\":9.13,\"vice_captain\":\"Raya\",\"starting_xi\":"
+  "captain": "B.Fernandes",
+  "captain_xpts": 9.13,
+  "vice_captain": "Gabriel",
+  "starting_xi": [
+    "Lammens",
+    "Gabriel",
+    "Hume",
+    "Calafiori",
+    "B.Fernandes",
+    "Semenyo",
+    "Mbeumo",
+    "Rogers",
+    "Thiago",
+    "João Pedro",
+    "Awoniyi"
+  ],
+  "bench": [
+    "Rushworth",
+    "Frimpong",
+    "van Ewijk",
+    "E.Le Fée"
+  ],
+  "transfer_out": null,
+  "transfer_in": null,
+  "transfer_reason": "Roll free transfer for GW1 flexibility",
+  "chip": null,
+  "projected_xpts": 49.44,
+  "confidence": "medium",
+  "key_risk": "Several players lack historical Premier League xPts data"
 }
