@@ -1,211 +1,156 @@
 {
-  "gw": 38,
-  "generated": "2026-06-12T00:00:00Z",
-  "availability_matrix": [
+  "gw": 1,
+  "updated": "2026-08-21",
+  "matrix": [
     {
-      "name": "Raya",
-      "team": "ARS",
-      "pos": "GK",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 95,
-      "expected_return_gw": 38,
-      "notes": "No injury flag in squad.json or news.json. No fitness concern from any source. Expected starter.",
-      "source": "squad.json / news.json"
-    },
-    {
-      "name": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "squad_role": "starting",
-      "status": "doubt",
-      "play_probability": 75,
-      "expected_return_gw": 38,
-      "notes": "squad.json: DOUBTFUL. features.json: status=d, chance_next=75. Knee injury sustained April 2026 FA Cup quarter-final. Confirmed he returned and featured in Arsenal's Champions League final vs PSG on 30 May 2026, proving recovery before GW38. FPL Scout GW38 early picks cite Gabriel as one of the safest Arsenal starts. However FPL doubt flag remains on the system and Arsenal rotation risk is non-zero after title was already won. 75% start probability is the conservative hold; likelihood of playing is arguably higher but flag not officially cleared.",
-      "source": "squad.json; features.json; arsenal.com injury updates; fantasyfootballscout.co.uk GW38 early scout picks (scout.co.uk/2026/05/20/fpl-gameweek-38-early-scout-picks)"
-    },
-    {
-      "name": "Gvardiol",
-      "team": "MCI",
-      "pos": "DEF",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 80,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. No injury flag. Guardiola made 9 changes for GW38 farewell vs Aston Villa — nine tribute substitutions skew selection unpredictably. Gvardiol has no injury concern but rotation in this ceremonial fixture is a real risk.",
-      "source": "squad.json; goal.com GW38 Man City squad report"
-    },
-    {
-      "name": "Aina",
-      "team": "NFO",
-      "pos": "DEF",
-      "squad_role": "starting",
-      "status": "out",
-      "play_probability": 0,
-      "expected_return_gw": null,
-      "notes": "CONFIRMED OUT — FPL FLAG IS STALE AND INCORRECT. squad.json shows AVAILABLE but this is wrong. Multiple independent web sources confirm Aina was ruled out for Nottingham Forest's GW38 season finale vs Bournemouth. He had hamstring surgery and missed 17+ consecutive matches. Returned to pitch work on the Thursday of GW38 week but could not earn a squad place. The FPL API did not update in time. Auto-sub to Munoz (DEF, bench, fit) is available and valid.",
-      "source": "alnsports.com (NFO injury update Aina nears return); premiumtimesng.com (NFO coach fitness update); 3addedminutes.com (Gibbs-White Murillo Aina NFO injury news)"
-    },
-    {
-      "name": "M.Salah",
+      "player": "Frimpong",
       "team": "LIV",
-      "pos": "MID",
-      "squad_role": "starting (vice-captain)",
-      "status": "doubt",
-      "play_probability": 70,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. However FPL Scout GW38 injury update (fantasyfootballscout.co.uk/2026/05/22/salah-isak-frimpong-liverpool-injury-latest-for-fpl-gameweek-38) explicitly states Salah has not started a match in approximately one month following a minor muscle injury from late March 2026. He is expected to feature in his farewell appearance at Anfield but minutes are likely to be managed. Starting from the beginning of the match is not assured. Vice-captain armband carries meaningful risk.",
-      "source": "fantasyfootballscout.co.uk GW38 Salah injury latest; skysports.com Salah muscle injury; premierleague.com GW38 scout selection"
-    },
-    {
-      "name": "Mbeumo",
-      "team": "BRE",
-      "pos": "MID",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 97,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. features.json: status=a, chance_next=100. No injury concerns from any source. Injured BRE teammates (Henry, Milambo, Carvalho) are separate players. Expected starter.",
-      "source": "squad.json; features.json; news.json"
-    },
-    {
-      "name": "Rogers",
-      "team": "AVL",
-      "pos": "MID",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 90,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. features.json: status=a, chance_next=100. No injury flag. Aston Villa hosting Man City in GW38. AVL motivated for European position finish. No concern raised by any source.",
-      "source": "squad.json; features.json"
-    },
-    {
-      "name": "Anderson",
-      "team": "NFO",
-      "pos": "MID",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 88,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. Not listed in news.json. NFO injured players (Murillo, Boly, Hudson-Odoi, Savona) are separate. No fitness concern flagged. Nottingham Forest home vs Bournemouth. Expected to feature.",
-      "source": "squad.json; news.json"
-    },
-    {
-      "name": "Bowen",
-      "team": "WHU",
-      "pos": "FWD",
-      "squad_role": "starting (captain)",
-      "status": "fit",
-      "play_probability": 90,
-      "expected_return_gw": 38,
-      "notes": "CAPTAIN. squad.json: AVAILABLE. No injury flag in news.json. West Ham were relegated to the Championship on 24 May 2026 — GW38 is their final top-flight match this season. Bowen expected to play as club captain. No WHU players appear in news.json injury list. Captain selection is medically sound.",
-      "source": "squad.json; news.json; wikipedia Jarrod Bowen (WHU relegation confirmation)"
-    },
-    {
-      "name": "Mateta",
-      "team": "CRY",
-      "pos": "FWD",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 90,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. features.json: status=a, chance_next=100. CRY flagged injured players (Richards, Doucoure, Nketiah) are separate. No fitness concern. Expected starter.",
-      "source": "squad.json; features.json; news.json"
-    },
-    {
-      "name": "Wood",
-      "team": "NFO",
-      "pos": "FWD",
-      "squad_role": "starting",
-      "status": "fit",
-      "play_probability": 88,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE. Not listed in news.json. Mid-season rescan was positive per web sources. Consistent starter for Nottingham Forest. No concern for GW38.",
-      "source": "squad.json; news.json"
-    },
-    {
-      "name": "Sels",
-      "team": "NFO",
-      "pos": "GK",
-      "squad_role": "bench",
-      "status": "fit",
-      "play_probability": 95,
-      "expected_return_gw": 38,
-      "notes": "Bench GK. squad.json: AVAILABLE. No injury flag. Nottingham Forest first-choice GK. Ready to play.",
-      "source": "squad.json"
-    },
-    {
-      "name": "Haaland",
-      "team": "MCI",
-      "pos": "FWD",
-      "squad_role": "bench",
+      "role": "starting_xi",
       "status": "out",
-      "play_probability": 0,
-      "expected_return_gw": null,
-      "notes": "CONFIRMED OUT. DISCREPANCY RESOLVED. squad.json: UNAVAILABLE. news.json: NOT listed — this gap created the apparent conflict. Full explanation: Haaland was deliberately OMITTED from the Man City matchday squad for GW38 vs Aston Villa. Guardiola made 9 changes for his farewell match, resting Haaland ahead of Norway 2026 World Cup duty. There is NO injury. Haaland had already secured the Premier League Golden Boot with 27 goals. FPL marks non-selected players UNAVAILABLE regardless of the reason (injury vs tactical omission). news.json only records FPL-flagged injury statuses, not tactical squad decisions — this explains the gap. Both data points are individually correct; they reflect different information types. The UNAVAILABLE flag in squad.json is accurate.",
-      "source": "goal.com (Explained: Why Erling Haaland was left out of Man City GW38 vs Aston Villa); yahoo sports; tribalfootball.com; premierleague.com (Haaland wins 2025-26 Golden Boot)"
+      "chance_pct": 0,
+      "expected_return_gw": 5,
+      "fpl_flag": "AVAILABLE (stale)",
+      "source": "Hamstring injury sustained vs Bournemouth (preseason); Liverpool officially ruled him out for Newcastle (GW1, Aug 23) and Arsenal (GW2), sidelined until after the September international break. https://www.skysports.com/football/news/12040/13415711/jeremie-frimpong-injury-liverpool-defender-ruled-out-until-after-the-international-break-missing-games-against-newcastle-and-arsenal ; https://feeds.bbci.co.uk/sport/football/articles/cgm2endg7e0o"
     },
     {
-      "name": "Munoz",
-      "team": "CRY",
-      "pos": "DEF",
-      "squad_role": "bench",
+      "player": "Gabriel",
+      "team": "ARS",
+      "role": "starting_xi (vice-captain)",
       "status": "fit",
-      "play_probability": 88,
-      "expected_return_gw": 38,
-      "notes": "Bench DEF and effective auto-sub replacement for Aina (confirmed OUT). squad.json: AVAILABLE. No injury flag in news.json. Crystal Palace GW38 fixture. Fit and available — will be the auto-sub into the XI in place of Aina.",
-      "source": "squad.json; news.json"
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Expected in Arsenal's back four (White-Gabriel-Mosquera-Calafiori) vs Coventry GW1; no current injury listed despite Timber/Saliba both out. https://www.fantasyfootballscout.co.uk/2026/08/14/fpl-2026-27-arsenal-best-players-set-piece-takers-predicted-xi-more"
     },
     {
-      "name": "Kluivert",
-      "team": "BOU",
-      "pos": "MID",
-      "squad_role": "bench",
-      "status": "doubt",
-      "play_probability": 60,
-      "expected_return_gw": 38,
-      "notes": "squad.json: AVAILABLE but actual starting fitness is limited. Web sources confirm Kluivert returned from absence only as a substitute in Bournemouth's midweek match ahead of GW38 — starting probability is explicitly described as low and 'a leap'. Cannot be relied upon as an auto-sub vehicle for Haaland since he occupies a MID slot and cannot fill the FWD gap in standard FPL auto-sub rules.",
-      "source": "premierleague.com GW38 predicted lineups; FPL player data via fplform.com"
-    }
-  ],
-  "critical_absences": [
+      "player": "Calafiori",
+      "team": "ARS",
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Scored in Community Shield vs Man City, predicted starting left-back for GW1 vs Coventry. Earlier mid-Aug report of him missing a matchday squad appears to be preseason rotation, not injury. https://www.rotowire.com/soccer/article/arsenal-vs-coventry-city-preview-lineups-team-news-128753"
+    },
     {
-      "name": "Haaland",
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "role": "starting_xi (captain)",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "No current injury concerns; expected to start and captain-eligible for GW1. https://www.rotowire.com/soccer/article/fpl-tips-6-highly-owned-players-to-avoid-in-gameweek-1-gw1-128567"
+    },
+    {
+      "player": "Mbeumo",
+      "team": "MUN",
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Sharp in preseason; used as a late sub in final friendly (workload management, not injury). https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-another-bruno-pen-miss-mbeumo-a-sub"
+    },
+    {
+      "player": "Semenyo",
       "team": "MCI",
-      "pos": "FWD",
-      "play_probability": 0,
-      "reason": "Deliberate squad omission by Guardiola for GW38 vs Aston Villa. Load management ahead of Norway 2026 World Cup. NOT an injury. Golden Boot (27 goals) already secured. Confirmed by goal.com, yahoo sports, tribalfootball.com.",
-      "fpl_data_note": "squad.json UNAVAILABLE is ACCURATE. news.json absence of injury flag is also correct — news.json only captures FPL injury records, not tactical omissions. No data conflict; two sources tracking two different things."
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Completed permanent transfer BOU to MCI (Jan 2026, confirms squad.json team tag is correct); no current injury news. https://www.skysports.com/football/news/11095/13491956/antoine-semenyo-joins-man-city-bournemouth-forward-signs-in-lb64m-transfer-to-take-city-spending-over-lb425m-in-12-months"
     },
     {
-      "name": "Aina",
-      "team": "NFO",
-      "pos": "DEF",
-      "play_probability": 0,
-      "reason": "Hamstring surgery. Missed 17+ consecutive matches. Returned to pitch work Thursday GW38 week but could not earn squad place for season finale vs Bournemouth. Confirmed absent by alnsports.com, premiumtimesng.com, 3addedminutes.com.",
-      "fpl_data_note": "squad.json AVAILABLE is STALE and WRONG. FPL API did not update in time. Treat as confirmed OUT. Auto-sub: Munoz (DEF, bench) is fit and covers this absence correctly."
+      "player": "E.Le Fée",
+      "team": "SUN",
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Missed a preseason game with a minor issue in early Aug, but recovered and started the following friendly vs Rennes. https://www.sunderlandecho.com/sport/football/sunderland-afc/sunderland-fans-handed-encouraging-enzo-le-fee-injury-update-after-wrexham-absence-8835381"
+    },
+    {
+      "player": "Rogers",
+      "team": "CHE",
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Morgan Rogers expected to start GW1 after starting vs Real Sociedad in preseason and scoring in first minutes post-World Cup. No injury concerns. https://www.foxsports.com/soccer/marc-guehi-3-player"
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Igor Thiago had a minor issue described as normal end-of-preseason management, unrelated to last season's injury; played and scored in preseason. https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-thiago-schade-braces-sangare-impact-bournemouth-injuries"
+    },
+    {
+      "player": "João Pedro",
+      "team": "CHE",
+      "role": "starting_xi",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Earlier thigh/knock issues (Apr/May 2026) resolved; featured in GW1 preseason team-news discussion with no current fitness flag. https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-pedro-again-rogers-debut-munoz-returns"
+    },
+    {
+      "player": "Lammens",
+      "team": "MUN",
+      "role": "bench (GK2 for club, backup in FPL squad)",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Established United no.1 since 2025/26; no fitness concerns found. https://www.manutd.com/en/news/senne-lammens-new-goalkeeper-profile-piece-after-sunderland-debut"
+    },
+    {
+      "player": "Rushworth",
+      "team": "COV",
+      "role": "bench (backup GK)",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "No injury news found; FPL lists AVAILABLE. Low relevance (bench GK)."
+    },
+    {
+      "player": "Hume",
+      "team": "SUN",
+      "role": "bench",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "No injury news found; FPL lists AVAILABLE. Low relevance (bench fodder)."
+    },
+    {
+      "player": "Awoniyi",
+      "team": "COV",
+      "role": "bench",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "Fresh transfer from Nottingham Forest to newly-promoted Coventry (Aug 2026); recovered from serious 2025 abdominal surgery, no current injury reported. https://www.ccfc.co.uk/news/2026/august/17/coventry-city-sign-taiwo-awoniyi-from-nottingham-forest/"
+    },
+    {
+      "player": "van Ewijk",
+      "team": "COV",
+      "role": "bench",
+      "status": "fit",
+      "chance_pct": 100,
+      "expected_return_gw": null,
+      "fpl_flag": "AVAILABLE",
+      "source": "No injury news found; FPL lists AVAILABLE. Low relevance (bench fodder)."
     }
-  ],
-  "doubtful_list": [
-    {
-      "name": "Gabriel",
-      "chance_pct": 75,
-      "concern": "FPL DOUBTFUL flag active. Knee injury April 2026; recovered for UCL final 30 May. Likely to start but Arsenal rotation risk post-title is real and flag not cleared.",
-      "action": "Check pre-deadline lineup leaks Thursday evening. If absent, no clean DEF auto-sub cover remains (Munoz is already covering Aina)."
-    },
-    {
-      "name": "M.Salah",
-      "chance_pct": 70,
-      "concern": "Minor muscle injury since late March; not started in ~1 month. Farewell home game motivation but minutes likely managed. Starting from kick-off is not guaranteed.",
-      "action": "Consider switching vice-captain to Mbeumo (97% fit, confirmed no concerns). Salah may enter as second-half substitute."
-    },
-    {
-      "name": "Kluivert",
-      "chance_pct": 60,
-      "concern": "Only returned from absence as a sub midweek. Starting probability low per GW38 preview sources.",
-      "action": "Bench asset only. Cannot serve as effective FWD auto-sub cover for Haaland under FPL position rules."
-    }
-  ],
-  "haaland_discrepancy_resolution": "squad.json UNAVAILABLE + news.json silence is NOT a data conflict. squad.json records the FPL matchday squad status (unavailable = not selected). news.json records FPL injury flags only. Haaland had no injury flag because he was not injured — Guardiola chose to rest him for the final-day ceremonial fixture ahead of the World Cup. The two caches track different information categories. Both are correct in isolation. The combined reading: Haaland is OUT for GW38 due to tactical omission, confirmed by multiple external sources.",
-  "recommendation": "Two confirmed absences hit the squad. (1) Haaland (bench FWD): out via Guardiola squad omission — not injury-related but points impact is identical. Auto-sub chain cannot provide a valid FWD replacement: Kluivert (MID, 60% to start) occupies a MID bench slot and cannot auto-sub into a FWD position under FPL rules; Munoz (DEF) also cannot cover FWD. Effective bench replacement for Haaland does not exist in this squad. (2) Aina (starting DEF): FPL shows AVAILABLE but confirmed OUT by web sources — auto-sub to Munoz (DEF, 88% fit) is valid and should be treated as the effective XI. Starting XI medical summary: Bowen (captain, 90% fit, no concerns) is the correct armband holder medically. Gabriel (75%, doubt flag active) is the critical pre-deadline check — if he is rested by Arteta, the squad has no remaining DEF auto-sub. Salah (70%, vice-captain) carries enough fitness uncertainty that Mbeumo (97%) is a safer vice-captain from a medical standpoint. Gvardiol (80%) carries Man City rotation risk in Guardiola's farewell tribute lineup. All other XI starters (Mbeumo, Rogers, Anderson, Mateta, Wood) carry no medical flags and are expected to play."
+  ]
 }
