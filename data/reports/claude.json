@@ -1,80 +1,122 @@
 {
   "engine": "claude",
-  "gw": 38,
-  "updated": "2026-06-26T00:00:00Z",
-  "captain": "M.Salah",
+  "gw": 1,
+  "generated": "2026-08-21",
+  "season": "2026/27",
+  "formation": "3-5-2",
+  "captain": "B.Fernandes",
   "captain_type": "template",
   "captain_trigger": "none",
-  "vice": "Bowen",
-  "vice_captain": "Bowen",
-  "formation": "3-4-3",
-  "transfer": "none",
-  "chip": "none",
+  "captain_reason": "LOCKED protocol default = sim-lab.recommend_c = highest season cum_pts among owned nailed premiums. GW1 has no live cum_pts, so sim-lab's 25/26 season_ppg proxy applies: B.Fernandes 6.71 ppg / 235 pts / 34-of-38 starts, cap_score 6.86, MC EV 6.42 (12.85 captained), P(haul 10+) 0.326. Also the squad's highest GW1 xPts (9.13), FDR 2 away, penalties + set pieces. intel flags him as the captain_shield we actually own (EO ~63%, #2 public armband) with must_not_fade=true, and medical-bay has him 100% fit. No differential trigger: GW1, no rank deficit to chase. Protocol, model, intel, squad.json and Gemini all converge — no reason to be clever.",
+  "vice": "Gabriel",
+  "vice_reason": "Second on the season-class proxy (209 pts, 6.53 ppg, cap_score 6.492), xPts 8.34, ARS home FDR 2, and minutes now near-certain with Saliba + J.Timber both confirmed out. Both C and VC are in the starting XI.",
   "starting_xi": [
-    {"name": "Sels", "pos": "GK", "team": "NFO", "price": 5.0, "xpts": 3.8},
-    {"name": "Munoz", "pos": "DEF", "team": "CRY", "price": 5.1, "xpts": 3.6},
-    {"name": "Gvardiol", "pos": "DEF", "team": "MCI", "price": 6.0, "xpts": 0.5},
-    {"name": "Gabriel", "pos": "DEF", "team": "ARS", "price": 6.3, "xpts": 0.2},
-    {"name": "M.Salah", "pos": "MID", "team": "LIV", "price": 13.4, "xpts": 7.8},
-    {"name": "Mbeumo", "pos": "MID", "team": "MUN", "price": 7.8, "xpts": 5.2},
-    {"name": "Anderson", "pos": "MID", "team": "NFO", "price": 5.5, "xpts": 3.7},
-    {"name": "Rogers", "pos": "MID", "team": "AVL", "price": 5.6, "xpts": 3.5},
-    {"name": "Bowen", "pos": "FWD", "team": "WHU", "price": 7.8, "xpts": 5.6},
-    {"name": "Mateta", "pos": "FWD", "team": "CRY", "price": 7.5, "xpts": 4.6},
-    {"name": "Wood", "pos": "FWD", "team": "NFO", "price": 7.0, "xpts": 4.4}
-  ],
-  "xi": [
-    "Sels",
-    "Munoz",
-    "Gvardiol",
-    "Gabriel",
-    "M.Salah",
-    "Mbeumo",
-    "Anderson",
-    "Rogers",
-    "Bowen",
-    "Mateta",
-    "Wood"
+    { "name": "Lammens", "pos": "GK", "price": 5.0, "xpts": 5.61 },
+    { "name": "Gabriel", "pos": "DEF", "price": 8.0, "xpts": 8.34 },
+    { "name": "N.Williams", "pos": "DEF", "price": 5.0, "xpts": 6.66 },
+    { "name": "Calafiori", "pos": "DEF", "price": 5.5, "xpts": 4.60 },
+    { "name": "B.Fernandes", "pos": "MID", "price": 12.0, "xpts": 9.13 },
+    { "name": "Semenyo", "pos": "MID", "price": 8.5, "xpts": 6.03 },
+    { "name": "E.Le Fée", "pos": "MID", "price": 6.0, "xpts": 5.28 },
+    { "name": "Rogers", "pos": "MID", "price": 7.5, "xpts": 4.81 },
+    { "name": "Mbeumo", "pos": "MID", "price": 8.0, "xpts": 3.85 },
+    { "name": "Thiago", "pos": "FWD", "price": 8.0, "xpts": 5.92 },
+    { "name": "João Pedro", "pos": "FWD", "price": 7.5, "xpts": 3.60 }
   ],
   "bench": [
-    "Kluivert",
-    "Raya",
-    "Haaland",
-    "Aina"
+    { "name": "Rushworth", "pos": "GK", "price": 4.5, "order": "GK" },
+    { "name": "Hume", "pos": "DEF", "price": 4.5, "order": 1 },
+    { "name": "van Ewijk", "pos": "DEF", "price": 4.0, "order": 2 },
+    { "name": "Awoniyi", "pos": "FWD", "price": 5.5, "order": 3 }
   ],
-  "bench_detail": [
-    {"name": "Kluivert", "pos": "MID", "team": "BOU", "price": 6.2},
-    {"name": "Raya", "pos": "GK", "team": "ARS", "price": 5.6},
-    {"name": "Haaland", "pos": "FWD", "team": "MCI", "price": 15.1},
-    {"name": "Aina", "pos": "DEF", "team": "NFO", "price": 4.9}
-  ],
-  "transfers": {"out": null, "in": null, "hits": 0, "bank": 0.3},
-  "chip_detail": {"name": "TC", "action": "hold", "reason": "Single GW38, no DGW. Triple Captain has no multiplier value on a one-fixture week and is -EV vs a normal armband. Do not play per CHIP-CAL."},
-  "projected_xpts": 50.7,
-  "captain_reasoning": "APEX LOCKED rule = season cum_pts leader, nailed premium, not GK. Haaland (true #1 template) is confirmed OUT, so the de facto template captain rolls to M.Salah (~56% owned, ~22% captain share, highest season cum_pts of any owned premium, confirmed Liverpool starter in his farewell match, ceiling 16). intel.captain_shield flags Salah as MUST-NOT-MISS and the LOCKED rule says NEVER fade captain_shield unless the player is OUT/doubt — Salah is 100% confirmed to start. Aligning is FREE since Salah was already our vice. Bowen (~10% share) is the differential armband — a defensible rank-chase from 7th, but the backtest lesson is that fading the template captain costs points, so Bowen drops to vice.",
-  "captain_reason": "Salah: APEX cum_pts season-leader + template captain with Haaland out; captain_shield MUST-NOT-MISS, confirmed LIV starter. sim-lab ceiling 16 vs Bowen 14. No differential trigger fired.",
-  "captain_logic": "Salah = season cum_pts leader among owned nailed premiums; template post-Haaland; do-not-fade captain_shield.",
-  "auto_subs": ["Sels in for Raya (GK)", "Munoz in for Aina/Gabriel (DEF)"],
-  "key_decisions": [
-    "Captain moved from squad default Bowen (~10% differential) to M.Salah (template, captain_shield MUST-NOT-MISS) per LOCKED season-leader rule + do-not-fade-shield rule. Bowen = vice.",
-    "Forced 3-4-3: only one fully reliable DEF exists (Munoz). Gabriel (OUT/benched) and Aina (ruled out of Forest's finale squad) are guaranteed zeros, Gvardiol is benched (City rotated 9). With only 4 DEF in the squad and 3 unavailable/benched, the 3-DEF minimum forces Munoz + Gvardiol + Gabriel and loads MID/FWD.",
-    "Sels auto-subs in for Raya at GK: Raya omitted from Arsenal's matchday squad (zero); Sels is Forest's confirmed #1 vs Bournemouth — converts a guaranteed zero into a clean-sheet chance.",
-    "Munoz starts (auto-sub cover for the absent Aina/Gabriel DEF slot) — confirmed in Crystal Palace XI.",
-    "Rogers started ahead of Kluivert as the 4th MID: both carry rotation risk, but Rogers has the better FDR2 home fixture and higher start probability; Kluivert kept as first outfield bench cover.",
-    "Haaland held on bench (OUT, World Cup rest) — his league-wide blank zeroes the ~35% who captained him, neutral-to-positive for us.",
-    "TC chip held — single fixture, no multiplier edge."
-  ],
-  "key_risks": [
-    "Two dead DEF slots (Gabriel ~0, Gvardiol ~0) unavoidable: Gabriel OUT for season, Gvardiol benched by Guardiola, and no better third defender exists in the squad.",
-    "Liverpool likely already champions — dead-rubber/managed-minutes risk could cap Salah's ceiling, though he is confirmed to start his farewell game.",
-    "Forest trio (Anderson, Wood, Sels) plus Rogers (Villa rotated 8 post-Europa-League final) carry correlated final-day rotation risk.",
-    "Thin bench: Raya (zero), Haaland (out), Aina (out) provide no real auto-sub cover beyond Kluivert — any further XI dropout is uncovered."
-  ],
+  "transfers": {
+    "out": "Frimpong",
+    "in": "N.Williams",
+    "hits": 0,
+    "bank": 0.5,
+    "reason": "medical-bay: Frimpong confirmed OUT (hamstring) — Liverpool have ruled him out of GW1 (Newcastle) and GW2 (Arsenal), sidelined until after the September international break, expected_return_gw 5. The cache 'AVAILABLE' flag is stale. Holding him parks 5.5m of dead value for ~4 GWs on a bench that is otherwise three sub-1%-owned Coventry assets, which breaks Consistency Rule (C) bench depth (we would have had only ONE bench player with a realistic start). N.Williams (NFO, 5.0m) is intel's flagged target: xPts 6.66 (8th overall in the model), FDR 2, clean-sheet + attacking-return profile at enabler price, and he walks straight into the XI rather than sitting on the bench. Uses the GW1 free transfer, no hit, and banks 0.5m toward the GW2/GW3 Haaland re-evaluation intel flags as critical."
+  },
+  "chip": {
+    "name": null,
+    "action": "SAVE",
+    "reason": "No trigger met. fixture-room confirms dgw:false and n_fixtures:5 for all 8 squad clubs across GW1-5 — no DGW (blocks TC and BB) and no BGW (blocks FH). Only one starter is rotation-flagged after the Frimpong transfer (blocks WC, which needs 3+), and there is no 3-GW rolling average yet in GW1. 26/27 two-chip-set format: the first set (WC/FH/TC/BB) expires at the GW19 deadline and does not carry over, but with 18 GWs of runway the forcing rule (GW16+) is not yet live. Chips left: WC x2, BB, TC, FH — all unused."
+  },
+  "projected_xpts": 72.96,
+  "consistency_checks": {
+    "rule_A_rotation_gate": {
+      "verdict": "APPLIED — 2 players gated out of the XI",
+      "gated": [
+        {
+          "player": "Frimpong",
+          "action": "transferred out",
+          "why": "Confirmed OUT (hamstring), 0% chance, blind mins for GW1 = 0. Cache flag stale."
+        },
+        {
+          "player": "Hume",
+          "action": "benched (bench order 1)",
+          "why": "news-desk signal = 'unknown': one predicted Sunderland XI has Meunier at RB with Hume pushed into a wide midfield/wing-back role — positional ambiguity, i.e. not a guaranteed starter in the role his 5.28 xPts (clean-sheet weighted) is priced on. Rule (A) says bench a not-guaranteed starter and promote the most reliable alternative. Promoted Mbeumo (start_prob 0.87, named in MUN's predicted front line, FDR 2, no medical flag) despite Mbeumo's lower raw xPts (3.85 vs 5.28). This is a deliberate reliability-over-projection call and the main point of divergence from Gemini."
+        }
+      ],
+      "checked_and_cleared": [
+        {
+          "player": "Calafiori",
+          "why": "sim-lab's blind 25/26 proxy shows start_prob 0.55 and nailed:false (19 starts / 26 apps) — that would normally trip the gate. Overridden UP because three independent live sources (news-desk, medical-bay, fixture-room) all confirm Saliba AND J.Timber are out, leaving Calafiori as one of Arsenal's only fit senior defenders and a named GW1 starter who scored in the Community Shield. This is exactly the real-time context the protocol says to trust over the blind proxy. Flagged as the XI's one residual rotation risk."
+        },
+        {
+          "player": "Mbeumo",
+          "why": "Late-sub appearance in the final friendly was workload management per medical-bay, not injury. Named in the predicted MUN XI. Cleared."
+        }
+      ]
+    },
+    "rule_B_blank_check": {
+      "verdict": "PASS",
+      "detail": "fixture-room confirms n_fixtures:5 for all 8 squad clubs across GW1-5 — every XI player has a GW1 fixture. No BGW. Only one XI player faces FDR 5 (none — highest XI FDR is 3), well under the 3+ FDR-5 high-blank-risk threshold. The FDR-5 exposure (COV away) is entirely on the bench."
+    },
+    "rule_C_bench_depth": {
+      "verdict": "PASS (only after the Frimpong transfer)",
+      "detail": "Bench = 1 reliable GK (Rushworth, nailed COV no.1) + 2 players with realistic starts (Hume, SUN, 32 starts in 25/26 and 89% start prob; van Ewijk, named as Coventry's predicted GW1 left-back). Awoniyi is the dead slot at bench 3 — news-desk has him outside Coventry's predicted front three (Tchaouna-Simms-Thomas-Asante) and xPts 0.32. Had we kept Frimpong, the bench would have been Rushworth + a 0-minute injured player + Awoniyi + van Ewijk = only ONE credible autosub, which fails this rule."
+    }
+  },
+  "vs_gemini": {
+    "agree": [
+      "Captain B.Fernandes — same pick, arrived at independently via the locked cum_pts (25/26 ppg proxy) rule plus intel's captain_shield must-not-fade flag.",
+      "Vice-captain Gabriel.",
+      "Benching Frimpong out of the XI (Gemini correctly caught the stale AVAILABLE flag).",
+      "Core XI spine: Lammens, Gabriel, Calafiori, B.Fernandes, Semenyo, Mbeumo, Rogers, Thiago, João Pedro."
+    ],
+    "disagree": [
+      {
+        "item": "Gemini STARTS Awoniyi (FWD) and BENCHES E.Le Fée",
+        "claude": "Reversed. Awoniyi has xPts 0.32, is on a newly-promoted side away at FDR 5, and news-desk explicitly has him OUTSIDE Coventry's predicted GW1 front three (signal: 'benched'). E.Le Fée has xPts 5.28, is a predicted Sunderland starter (33 starts in 25/26, start_prob 0.92) at FDR 2, and is intel's #2 owned differential at ~5% EO. Starting a likely-benched FDR-5 promoted-club forward over a nailed FDR-2 creative midfielder is a direct Consistency Rule (A) violation and is worth roughly +5 xPts on its own. This is the single biggest gap between the two engines.",
+        "swing_xpts": 4.96
+      },
+      {
+        "item": "Gemini STARTS Hume",
+        "claude": "Benched under Rule (A). news-desk's positional-ambiguity flag means his clean-sheet-weighted 5.28 xPts may be priced on a role he does not play. Mbeumo (nailed, FDR 2) starts instead. Costs ~1.4 raw xPts but buys minutes certainty — the 25/26 audit found rotation risk, not projection error, caused 70% of sub-40 GWs.",
+        "swing_xpts": -1.43
+      },
+      {
+        "item": "Gemini ROLLS the free transfer ('GW1 flexibility')",
+        "claude": "Uses it: Frimpong OUT → N.Williams IN. Rolling leaves a confirmed ~4-GW absentee (return GW5) inside a 15 that already carries three sub-1%-owned COV bench assets — effectively a 13-man squad with no autosub cover. N.Williams enters the XI immediately at xPts 6.66, banks 0.5m, and there is no price-rise cost to acting now (market-desk: zero transfer velocity in the entire market pre-deadline). A rolled FT is only worth keeping if the squad is whole; ours is not.",
+        "swing_xpts": 6.66
+      },
+      {
+        "item": "Formation",
+        "claude": "Gemini 3-4-3 (forced by starting Awoniyi). CLAUDE 3-5-2 — plays the five best midfielders, which is where this squad's value is concentrated (B.Fernandes 9.13, Semenyo 6.03, Le Fée 5.28, Rogers 4.81, Mbeumo 3.85)."
+      },
+      {
+        "item": "Projected xPts",
+        "claude": "72.96 vs Gemini 49.44. The gap is mostly the Awoniyi/Le Fée swap, the Frimpong→N.Williams transfer, and Gemini appearing to count the captain only once."
+      }
+    ]
+  },
   "risks": [
-    "Gvardiol + Gabriel both ~0, started only to meet the 3-DEF minimum — no alternative DEF in squad.",
-    "Liverpool dead-rubber/managed-minutes may cap Salah ceiling.",
-    "Forest trio + Rogers correlated rotation risk on the final day.",
-    "Bench cover thin: Raya/Haaland/Aina all non-contributing."
-  ],
-  "notes": "Final GW 2025/26 — highest-rotation week of the season. Squad has 4 absent/benched defenders (Raya, Aina, Gabriel, Gvardiol) plus Rogers at rotation risk, forcing a thin 3-4-3 with two dead DEF slots we cannot avoid (no transfers worth taking on the last day, no useful chip). Auto-sub chain (Sels for Raya, Munoz for the vacant DEF) is the critical rescue and fires cleanly. xpts.json is flat (all 0, fdr 3) for GW38 so values shown are sim-lab floor/EV-derived estimates; news signal is the differentiation layer. Captain = M.Salah (template) is the protocol-correct, floor-weighted armband; Bowen-C remains the alternative high-variance rank-chase if the manager has live intel favouring a West Ham boom — human override respected, default per LOCKED rule is Salah."
+    "NO HAALAND — intel's critical rank risk. EO ~125% (~70% owned, ~55% captain share). A GW1 brace is a 24-30pt swing against us and, with everyone level on points, a six-figure OR move. Squad value cannot absorb 15.5m this week without a double downgrade, so this is explicitly ACCEPTED, not solved. Mitigation applied per intel: keep the armband on the highest-EO asset we do own (B.Fernandes) rather than compounding a second fade. The 0.5m banked from the Frimpong transfer is the first step toward funding him in GW2-GW3 — make that the priority.",
+    "MUN concentration — Lammens, B.Fernandes (doubled) and Mbeumo are all Manchester United. A heavy defeat away at Hull torches the GK clean sheet, two midfielders and the captain simultaneously. Genuinely two-sided variance: the same cluster is the softest FDR-2 opener in the squad.",
+    "Calafiori is the one XI player who fails the blind rotation proxy (start_prob 0.55, 19/26 starts). Started only because Saliba and Timber are both out. If Arsenal name an unexpected back four at 90 minutes to kickoff, swap him for Hume.",
+    "Season-class proxy risk (sim-lab PROXY_WARNING): every captaincy and reliability number here is derived from FINAL 25/26 data, not live 26/27 form. It does not capture club moves (Semenyo BOU→MCI, Awoniyi NFO→COV), new roles or pre-season drift. Confidence LOW-MEDIUM until roughly GW6, when real 26/27 cum_pts should replace the proxy. Do not treat this week's ranking as settled.",
+    "Three squad players (Frimpong pre-transfer, Rushworth, van Ewijk) have no xPts row at all — new-to-PL or promoted-club assets. The bench is genuinely unmodelled, so autosub outcomes are close to a coin flip.",
+    "Bench 3 (Awoniyi) is effectively dead weight this GW: 5.5m tied up in a player his own club is not predicted to start, away at FDR 5. A GW2-GW3 downgrade candidate to help fund Haaland.",
+    "N.Williams is an unowned incoming asset — verify he is actually available at 5.0m and named in Forest's XI before confirming the transfer at the deadline."
+  ]
 }
