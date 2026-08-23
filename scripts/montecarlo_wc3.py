@@ -39,8 +39,10 @@ def mult(team,gw):
 
 # attacking-DEF z-index from live boot (same formula as the builder)
 def _z(vals):
+    if not vals: return 0.0,1.0
     m=statistics.mean(vals); s=statistics.pstdev(vals) or 1.0; return m,s
 _de=[e for e in boot["elements"] if e["element_type"]==2 and (e.get("starts",0) or 0)>=10]
+if not _de: _de=[e for e in boot["elements"] if e["element_type"]==2]  # early-season fallback (starts=0)
 def _x90(e): return (float(e.get("expected_goal_involvements",0) or 0)/max(e.get("minutes",0) or 1,1))*90
 mt,st_=_z([float(e.get("threat",0) or 0) for e in _de])
 mc,sc =_z([float(e.get("creativity",0) or 0) for e in _de])
@@ -74,6 +76,7 @@ DIV=load("wc_gw3_div"); ORIG=load("wc_gw3_final")
 PREM4=load("wc_gw3_prem4"); PREM=load("wc_gw3_prem")   # no-Bruno premium-mid variants
 NOHAA=load("wc_gw3_nohaa_bruno")                        # no-Haaland, with-Bruno (max-2)
 PREMATK=load("wc_gw3_prematk")                          # premium-attack, no locks, cheap DEF
+NOBRUNO=load("wc_gw3_nobruno_free")                     # no-Bruno (Haaland kept), no locks
 _w=elem[("Woltemade","NEW")]; _wst=_w.get("starts",0) or 0
 WOLT={"name":"Woltemade","team":"NEW","pos":"FWD","xi":True,
       "ppg":min(_w["total_points"]/max(_wst,1),9.0),"nail":min(0.97,0.60+0.40*_wst/34),
@@ -97,7 +100,7 @@ def score(sq,gw,pts,played,tc):
 def simulate(strats,N=6000,seed=7):
     rng=random.Random(seed)
     union={}
-    for sq in (DIV,ORIG,PREM4,PREM,NOHAA,PREMATK,[WOLT]):
+    for sq in (DIV,ORIG,PREM4,PREM,NOHAA,PREMATK,NOBRUNO,[WOLT]):
         for p in sq: union[(p["name"],p["team"])]=p
     teams=list({t for (_,t) in union})
     tot={n:[] for n in strats}
@@ -110,7 +113,7 @@ def simulate(strats,N=6000,seed=7):
                 pl=rng.random()<=p["nail"]; played[key]=pl
                 if not pl: pts[key]=0.0
                 else:
-                    mu=p["ppg"]*p["mub"]*mult(p["team"],gw)*tshock[p["team"]]
+                    mu=max(0.05, p["ppg"]*p["mub"]*mult(p["team"],gw)*tshock[p["team"]])
                     pts[key]=rng.gammavariate(p["k"], mu/p["k"])
             for n,fn in strats.items():
                 sqn,tc=fn(gw); run[n]+=score(sqn,gw,pts,played,tc)
@@ -124,8 +127,10 @@ def simulate(strats,N=6000,seed=7):
 def S_prem(gw):   return (apply_swap(PREM) if gw>=6 else PREM), (gw==7)      # max-2, Haaland+Semenyo
 def S_nohaa(gw):  return (apply_swap(NOHAA) if gw>=6 else NOHAA), (gw==7)    # no-Haaland, with-Bruno
 def S_prematk(gw):return (apply_swap(PREMATK) if gw>=6 else PREMATK),(gw==7) # premium-attack, no locks
+def S_nobruno(gw):return (apply_swap(NOBRUNO) if gw>=6 else NOBRUNO),(gw==7) # no-Bruno, Haaland kept, no locks
 STRATS={
  "PREM    (Haaland+Semenyo)":    S_prem,
+ "NOBRUNO (Haaland, no Bruno)":  S_nobruno,
  "NOHAA   (Bruno, no Haaland)":  S_nohaa,
  "PREMATK (max attack, no lock)":S_prematk,
 }

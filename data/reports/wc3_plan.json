@@ -6,19 +6,19 @@
   },
   "captains": {
     "GW3": {
-      "name": "Haaland",
-      "team": "MCI",
-      "fix": "2HvCOV"
+      "name": "Rice",
+      "team": "ARS",
+      "fix": "4HvCHE"
     },
     "GW4": {
-      "name": "João Pedro",
-      "team": "CHE",
-      "fix": "2HvHUL"
+      "name": "Rice",
+      "team": "ARS",
+      "fix": "3AvSUN"
     },
     "GW5": {
-      "name": "Haaland",
-      "team": "MCI",
-      "fix": "2HvSUN"
+      "name": "Rice",
+      "team": "ARS",
+      "fix": "3AvBHA"
     },
     "GW6": {
       "name": "Rice",
@@ -26,9 +26,9 @@
       "fix": "2HvLEE"
     },
     "GW7": {
-      "name": "Haaland",
-      "team": "MCI",
-      "fix": "2HvIPS"
+      "name": "Rice",
+      "team": "ARS",
+      "fix": "3AvNFO"
     }
   },
   "ft_flow": {
@@ -43,60 +43,5 @@
     "pos": "MID",
     "price": 5.5
   },
-  "ft_target_in_options": [
-    {
-      "name": "Iwobi",
-      "team": "FUL",
-      "pos": "MID",
-      "price": 5.5,
-      "pts": 103,
-      "g67": 2.69,
-      "g47": 1.098
-    },
-    {
-      "name": "Smith Rowe",
-      "team": "FUL",
-      "pos": "MID",
-      "price": 5.5,
-      "pts": 80,
-      "g67": 2.69,
-      "g47": 1.098
-    },
-    {
-      "name": "Berge",
-      "team": "FUL",
-      "pos": "MID",
-      "price": 5.0,
-      "pts": 91,
-      "g67": 2.69,
-      "g47": 1.098
-    },
-    {
-      "name": "Zubimendi",
-      "team": "ARS",
-      "pos": "MID",
-      "price": 5.5,
-      "pts": 133,
-      "g67": 2.4,
-      "g47": 1.1
-    },
-    {
-      "name": "E.Le Fée",
-      "team": "SUN",
-      "pos": "MID",
-      "price": 6.0,
-      "pts": 147,
-      "g67": 2.4,
-      "g47": 1.006
-    },
-    {
-      "name": "Sadiki",
-      "team": "SUN",
-      "pos": "MID",
-      "price": 5.0,
-      "pts": 80,
-      "g67": 2.4,
-      "g47": 1.006
-    }
-  ]
+  "ft_target_in_options": []
 }
