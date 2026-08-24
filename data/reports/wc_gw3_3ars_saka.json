@@ -1,6 +1,6 @@
 {
   "mode": "gw1-6+adv",
-  "formation": "3-4-3",
+  "formation": "4-4-2",
   "spend": 100.0,
   "xi": [
     {
@@ -48,6 +48,28 @@
       "tags": ""
     },
     {
+      "name": "Calafiori",
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 5.5,
+      "pts": 109,
+      "fdr6": 3.15,
+      "oppxgc": 0.548,
+      "adj": 0.925,
+      "tags": ""
+    },
+    {
+      "name": "Saka",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 9.5,
+      "pts": 157,
+      "fdr6": 3.15,
+      "oppxgc": 0.548,
+      "adj": 0.824,
+      "tags": ""
+    },
+    {
       "name": "Semenyo",
       "team": "MCI",
       "pos": "MID",
@@ -81,14 +103,14 @@
       "tags": ""
     },
     {
-      "name": "Enzo",
-      "team": "CHE",
-      "pos": "MID",
-      "price": 7.0,
-      "pts": 157,
+      "name": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 8.0,
+      "pts": 181,
       "fdr6": 3.317,
-      "oppxgc": 1.167,
-      "adj": 1.202,
+      "oppxgc": 0.957,
+      "adj": 1.088,
       "tags": ""
     },
     {
@@ -101,74 +123,53 @@
       "oppxgc": 1.167,
       "adj": 1.202,
       "tags": ""
-    },
-    {
-      "name": "Thiago",
-      "team": "BRE",
-      "pos": "FWD",
-      "price": 8.0,
-      "pts": 181,
-      "fdr6": 3.317,
-      "oppxgc": 0.957,
-      "adj": 1.088,
-      "tags": ""
-    },
-    {
-      "name": "Watkins",
-      "team": "AVL",
-      "pos": "FWD",
-      "price": 8.0,
-      "pts": 167,
-      "fdr6": 3.15,
-      "oppxgc": 0.818,
-      "adj": 1.006,
-      "tags": ""
     }
   ],
   "bench": [
     {
-      "name": "Leno",
-      "team": "FUL",
+      "name": "Dubravka",
+      "team": "TOT",
       "pos": "GK",
-      "price": 4.5,
-      "pts": 122,
-      "fdr6": 2.983,
-      "oppxgc": 0.978,
+      "price": 4.0,
+      "pts": 96,
+      "fdr6": 3.317,
+      "oppxgc": 0.605,
       "adj": 1.0,
       "tags": ""
     },
     {
-      "name": "Mitchell",
-      "team": "CRY",
+      "name": "Thiaw",
+      "team": "NEW",
       "pos": "DEF",
-      "price": 4.5,
-      "pts": 135,
+      "price": 5.0,
+      "pts": 126,
       "fdr6": 2.817,
-      "oppxgc": 0.358,
-      "adj": 0.85,
+      "oppxgc": 0.907,
+      "adj": 1.023,
       "tags": ""
     },
     {
-      "name": "Calafiori",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 5.5,
-      "pts": 109,
-      "fdr6": 3.15,
-      "oppxgc": 0.548,
-      "adj": 0.925,
-      "tags": ""
-    },
-    {
-      "name": "Ødegaard",
-      "team": "ARS",
+      "name": "Garner",
+      "team": "EVE",
       "pos": "MID",
-      "price": 6.5,
-      "pts": 74,
+      "price": 6.0,
+      "pts": 159,
+      "fdr6": 3.483,
+      "oppxgc": 1.002,
+      "adj": 1.114,
+      "tags": ""
+    },
+    {
+      "name": "Igor Jesus",
+      "team": "NFO",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 114,
       "fdr6": 3.15,
-      "oppxgc": 0.548,
-      "adj": 0.824,
+      "oppxgc": 1.18,
+      "adj": 1.208,
       "tags": ""
     }
-  ]
+  ],
+  "override": "human: force all 3 locked ARS to start (Raya/Calafiori/Saka) — early-season opponent-xGC noise unfairly benched ARS attackers"
 }
