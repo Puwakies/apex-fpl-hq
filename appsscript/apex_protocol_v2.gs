@@ -4218,6 +4218,9 @@ function onOpen() {
     .addItem("Next-Week Blind Test (3 ทีม)", "runNextWeekBlindTest")
     .addItem("Refresh Dashboard", "refreshDashboard")
     .addSeparator()
+    .addItem("📊 Full Player Data 26/27 (ปัจจุบัน)", "runFullPlayerData2627")
+    .addItem("📚 Full Player Data 25/26 (baseline)", "runFullPlayerData2526")
+    .addSeparator()
     .addItem("⚙ Setup Triggers", "setupTriggers")
     .addItem("🧹 Emergency: Clean All Triggers", "cleanupAllTriggers")
     .addSeparator()
@@ -6824,13 +6827,14 @@ function runFullPlayerData2526() {
   // ถ้าซีซันปัจจุบันไม่ใช่ PREV_SEASON (เช่นตอนนี้ = 26/27) การรันจะเขียนทับ
   // FULL_PLAYER_DATA_2526 ด้วยข้อมูล 26/27 ที่ยังไม่จบ → baseline GW1-5 พัง
   // จึง SKIP เพื่อรักษาข้อมูล 25/26 เดิมไว้ (ต้องเก็บ baseline ตั้งแต่ปลายซีซัน 25/26)
+  // หมายเหตุ: ถ้าต้องการข้อมูลปัจจุบัน 26/27 ให้ใช้ runFullPlayerData2627() (แยกชีท)
   const _seasonNow = currentSeasonLabel(boot);
   if (_seasonNow !== CONFIG.PREV_SEASON) {
     const _ex = ss.getSheetByName("FULL_PLAYER_DATA_2526");
     if (_ex && _ex.getLastRow() > 1) {
       Logger.log("⚠ ซีซันตอนนี้ "+_seasonNow+" ≠ baseline "+CONFIG.PREV_SEASON+
-        " — SKIP รักษา FULL_PLAYER_DATA_2526 (25/26) ไว้เป็น baseline");
-      ss.toast("⚠ SKIP: รักษา baseline 25/26 (ซีซันตอนนี้ "+_seasonNow+")", "FULL DATA", 8);
+        " — SKIP รักษา FULL_PLAYER_DATA_2526 (25/26) ไว้เป็น baseline (ใช้ runFullPlayerData2627 สำหรับข้อมูลปัจจุบัน)");
+      ss.toast("⚠ SKIP: รักษา baseline 25/26 — ใช้เมนู 'Full Player Data 26/27' แทน", "FULL DATA", 8);
       return;
     }
     Logger.log("⚠ ไม่มี baseline 25/26 + bootstrap เป็น "+_seasonNow+" แล้ว — " +
@@ -6839,13 +6843,42 @@ function runFullPlayerData2526() {
 
   ss.toast("ดึงข้อมูลผู้เล่นทุกคน ("+_seasonNow+")...", "FULL DATA", 30);
 
-  const teamMap = {};
-  boot.teams.forEach(t => teamMap[t.id] = t.short_name);
-  const posMap  = { 1:"GK", 2:"DEF", 3:"MID", 4:"FWD" };
-
   // กรองเฉพาะนักเตะที่เล่นจริง (minutes > 0)
   const players = boot.elements.filter(p => p.minutes > 0);
   Logger.log("Players with minutes: " + players.length);
+  _writeFullPlayerData(ss, boot, players, _seasonNow, "FULL_PLAYER_DATA_2526", "FULL_DATA_SUMMARY");
+}
+
+// ── ดึง Full Player Data ของซีซันปัจจุบัน 26/27 (แยกชีท ไม่ทับ baseline 25/26) ──
+// เขียนลง FULL_PLAYER_DATA_2627 + FULL_DATA_SUMMARY_2627 — ปลอดภัยต่อ baseline GW1-5
+function runFullPlayerData2627() {
+  Logger.log("=== FULL PLAYER DATA 26/27 START ===");
+  const ss   = SpreadsheetApp.openById(CONFIG.SHEET_ID);
+  const boot = fetchJSON("https://fantasy.premierleague.com/api/bootstrap-static/");
+  if (!boot) { Logger.log("❌ API failed"); return; }
+
+  const seasonNow = currentSeasonLabel(boot);
+  if (seasonNow !== CONFIG.CURRENT_SEASON) {
+    Logger.log("⚠ bootstrap ยังเป็นซีซัน "+seasonNow+" (คาดว่า "+CONFIG.CURRENT_SEASON+") — เขียนตามข้อมูลจริงที่ได้");
+  }
+  ss.toast("ดึงข้อมูลผู้เล่นทุกคน ("+seasonNow+")...", "FULL DATA 26/27", 30);
+
+  // ต้นซีซัน: กรองเฉพาะคนที่ลงเล่นจริง (minutes>0); ถ้ายังไม่มีใครลง (pre-season)
+  // → fallback เป็นผู้เล่นทั้งหมด เพื่อให้ยังเห็นราคา/ownership สำหรับสร้างทีม
+  let players = boot.elements.filter(p => p.minutes > 0);
+  if (!players.length) {
+    players = boot.elements.slice();
+    Logger.log("⚠ pre-season: ไม่มีใคร minutes>0 → แสดงผู้เล่นทั้งหมด "+players.length+" คน");
+  }
+  Logger.log("Players 26/27: " + players.length);
+  _writeFullPlayerData(ss, boot, players, seasonNow, "FULL_PLAYER_DATA_2627", "FULL_DATA_SUMMARY_2627");
+}
+
+// ── ตัวเขียนข้อมูลผู้เล่นเต็ม (ใช้ร่วมทั้ง 25/26 baseline และ 26/27 ปัจจุบัน) ──
+function _writeFullPlayerData(ss, boot, players, seasonLabel, dataSheetName, sumSheetName) {
+  const teamMap = {};
+  boot.teams.forEach(t => teamMap[t.id] = t.short_name);
+  const posMap  = { 1:"GK", 2:"DEF", 3:"MID", 4:"FWD" };
 
   const HEADERS = [
     "NAME","TEAM","POS","PRICE",
@@ -6914,7 +6947,7 @@ function runFullPlayerData2526() {
   rows.sort((a, b) => b[4] - a[4]);
 
   // เขียน sheet
-  const sheet = getOrCreateSheet(ss, "FULL_PLAYER_DATA_2526");
+  const sheet = getOrCreateSheet(ss, dataSheetName);
   sheet.clearContents(); sheet.clearFormats();
 
   // Header row
@@ -6944,6 +6977,12 @@ function runFullPlayerData2526() {
   // Data
   if (rows.length > 0) {
     sheet.getRange(2, 1, rows.length, HEADERS.length).setValues(rows);
+  } else {
+    // ไม่มีข้อมูล — เขียนแค่ header แล้วจบ (กัน summary หาร 0 / Math.max([]))
+    logRun(ss, "FullPlayerData", "0 players | "+dataSheetName, "EMPTY");
+    ss.toast("⚠ ไม่มีข้อมูลผู้เล่น ("+seasonLabel+") — "+dataSheetName+" ว่าง", "FULL DATA", 8);
+    Logger.log("=== FULL PLAYER DATA: 0 rows → "+dataSheetName+" ===");
+    return 0;
   }
 
   // Color POS column
@@ -6964,12 +7003,12 @@ function runFullPlayerData2526() {
   sheet.autoResizeColumns(1, HEADERS.length);
 
   // ── เพิ่ม Summary Stats ──────────────────────────
-  const sumSheet = getOrCreateSheet(ss, "FULL_DATA_SUMMARY");
+  const sumSheet = getOrCreateSheet(ss, sumSheetName);
   sumSheet.clearContents(); sumSheet.clearFormats();
   let sr = 1;
 
   sumSheet.getRange(sr,1,1,4).merge()
-          .setValue("FULL PLAYER DATA 25/26 — SUMMARY STATS")
+          .setValue("FULL PLAYER DATA "+seasonLabel+" — SUMMARY STATS")
           .setBackground("#050810").setFontColor("#00f5ff").setFontWeight("bold").setFontSize(13);
   sumSheet.setRowHeight(sr, 32); sr += 2;
 
@@ -7030,9 +7069,10 @@ function runFullPlayerData2526() {
 
   sumSheet.autoResizeColumns(1,7);
 
-  logRun(ss, "FullPlayerData2526", players.length+" players | "+HEADERS.length+" columns", "SUCCESS");
-  ss.toast("✅ "+players.length+" players | "+HEADERS.length+" stats | FULL_PLAYER_DATA_2526", "FULL DATA", 10);
-  Logger.log("=== FULL PLAYER DATA DONE | " + players.length + " players ===");
+  logRun(ss, "FullPlayerData", players.length+" players | "+HEADERS.length+" columns | "+dataSheetName, "SUCCESS");
+  ss.toast("✅ "+players.length+" players | "+HEADERS.length+" stats | "+dataSheetName, "FULL DATA", 10);
+  Logger.log("=== FULL PLAYER DATA DONE | " + players.length + " players → "+dataSheetName+" ===");
+  return players.length;
 }
 
 // ============================================================
