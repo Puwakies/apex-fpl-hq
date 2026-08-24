@@ -2123,7 +2123,7 @@ function runQuant(mode) {
 
   const playerData = readSheetData(ss, "PLAYER_POOL");
   const newsData   = readSheetData(ss, "NEWS");
-  const squadData  = readSheetData(ss, "SQUAD");
+  const squadData  = _readSquadRows(ss);   // ── Fix 2: อ่าน SQUAD แบบทนทาน (row 1 เป็น title)
 
   if (!playerData.length) { Logger.log("❌ ไม่พบ PLAYER_POOL"); return; }
 
@@ -2163,24 +2163,108 @@ function runQuantDifferential() { runQuant("differential"); }
 function runQuantChip()         { runQuant("chip"); }
 function runQuantPreseason()    { runQuant("preseason"); }
 
+// ── Fix 2: อ่าน XPTS แบบทนทาน ──────────────────────────────────────────────
+// XPTS sheet มี "แถวหัวเรื่อง (merged title)" ที่ row 1 → readSheetData() เดิม
+// เข้าใจผิดว่าเป็น header ทำให้ r["NAME"]/r["xPTS"] เป็น undefined ทั้งหมด
+// (จึงเลือกกัปตันจาก POOL ไม่ใช่จากทีมจริง). ฟังก์ชันนี้สแกนหาแถว header จริง
+// (แถวที่มีทั้ง "NAME" และ "XPTS") แล้ว map name -> {xpts, cap_xpts, fdr, venue, cs_prob}
+function _readXptsMap(ss) {
+  const map = {};
+  const sheet = ss && ss.getSheetByName("XPTS");
+  if (!sheet) return map;
+  const data = sheet.getDataRange().getValues();
+  let hdr = null;
+  for (const rrow of data) {
+    const up = rrow.map(c => String(c).trim().toUpperCase());
+    if (up.includes("NAME") && up.includes("XPTS")) { hdr = up; continue; }   // header row จริง (ซ้ำได้ต่อ section)
+    if (!hdr) continue;
+    const idx  = (nm) => hdr.indexOf(nm);
+    const name = String(rrow[idx("NAME")] || "").trim();
+    if (!name || name.toUpperCase() === "NAME") continue;                      // ข้าม header ซ้ำ / แถวว่าง
+    const xp = parseFloat(rrow[idx("XPTS")]);
+    if (isNaN(xp)) continue;                                                    // ข้าม section-title (cell อื่นว่าง)
+    if (!(name in map)) {                                                       // section กัปตันอยู่บนสุด → เก็บอันแรก
+      const capI = idx("CAPTAIN_XPTS");
+      map[name] = {
+        xpts: xp,
+        cap_xpts: (capI >= 0 && !isNaN(parseFloat(rrow[capI]))) ? parseFloat(rrow[capI]) : xp * 2,
+        fdr:   idx("FDR")>=0     ? rrow[idx("FDR")]     : "",
+        venue: idx("VENUE")>=0   ? rrow[idx("VENUE")]   : "",
+        cs_prob: idx("CS_PROB")>=0 ? rrow[idx("CS_PROB")] : "",
+        team:  idx("TEAM")>=0    ? String(rrow[idx("TEAM")]||"") : "",
+        pos:   idx("POS")>=0     ? String(rrow[idx("POS")]||"").toUpperCase() : "",
+      };
+    }
+  }
+  return map;
+}
+
+// ── Fix 2: จัดอันดับกัปตันจาก "ทีมปัจจุบัน" (starting XI, ไม่รวม GK) ──────────
+// SQUAD sheet ก็มี merged title ที่ row 1 เช่นกัน → หา header จริง (NAME + SLOT)
+// แล้ว join กับ xPts map, กรอง SLOT<=11, เรียงตาม cap_xPts (fixture + xPts) มาก→น้อย
+function _getSquadCaptainRanked(ss) {
+  const xmap  = _readXptsMap(ss);
+  const sheet = ss && ss.getSheetByName("SQUAD");
+  if (!sheet) return [];
+  const data = sheet.getDataRange().getValues();
+  let hdr = null; const out = [];
+  for (const rrow of data) {
+    const up = rrow.map(c => String(c).trim().toUpperCase());
+    if (up.includes("NAME") && up.includes("SLOT")) { hdr = up; continue; }
+    if (!hdr) continue;
+    const idx  = (nm) => hdr.indexOf(nm);
+    const name = String(rrow[idx("NAME")] || "").trim();
+    const slot = parseInt(rrow[idx("SLOT")]);
+    if (!name || name.toUpperCase() === "NAME" || isNaN(slot)) continue;
+    const pos  = String(rrow[idx("POS")]  || "").toUpperCase();
+    const team = String(rrow[idx("TEAM")] || "");
+    const x    = xmap[name] || {};
+    out.push({
+      name, team, pos, slot,
+      xpts:     (x.xpts     != null) ? x.xpts     : null,
+      cap_xpts: (x.cap_xpts != null) ? x.cap_xpts : (x.xpts != null ? x.xpts*2 : null),
+      fdr: x.fdr, venue: x.venue, cs_prob: x.cs_prob,
+    });
+  }
+  const xi     = out.filter(p => p.slot <= 11 && p.pos !== "GK");   // ตัวจริง ไม่นับ GK
+  const withX  = xi.filter(p => p.cap_xpts != null).sort((a,b) => b.cap_xpts - a.cap_xpts);
+  return withX.length ? withX : xi;                                 // fallback: ถ้าไม่ match xPts ก็ยังคืน XI
+}
+
+// ── Fix 2: ข้อความตัวเลือกกัปตันจากทีมปัจจุบัน (ใช้ร่วมทั้ง brief + captain) ──
+function _squadCaptainOptionsText(ss, n) {
+  const owned = _getSquadCaptainRanked(ss);
+  if (!owned.length) return "";
+  return owned.slice(0, n || 6).map((p,i) =>
+    (i+1)+". "+p.name+" ("+p.team+","+p.pos+")"
+    + (p.cap_xpts != null ? " cap_xPts:"+Number(p.cap_xpts).toFixed(1) : "")
+    + (p.xpts     != null ? " xPts:"+Number(p.xpts).toFixed(1) : "")
+    + (p.fdr   !== "" && p.fdr   != null ? " FDR:"+p.fdr : "")
+    + (p.venue ? " "+p.venue : "")
+    + (p.cs_prob !== "" && p.cs_prob != null ? " CS:"+p.cs_prob : "")
+  ).join("\n");
+}
+
 function promptBrief(playerCSV, newsCtx, squadCtx, ss) {
   const leagueCtx = buildLeagueContext(ss);
   const priceCtx  = buildPriceContext(ss);
   const rotCtx    = buildRotationContext(ss);
   const targetCtx = buildTargetContext(ss);
+  const capCtx    = _squadCaptainOptionsText(ss, 6);   // ── Fix 2: กัปตันจากทีมปัจจุบัน
   return `คุณคือ APEX QUANT วิเคราะห์ FPL ระดับสูง เป้าหมาย: Top 100 / ${CONFIG.TARGET_PTS}+ pts
 
 ${squadCtx  ? "SQUAD:\n"         + squadCtx  + "\n" : ""}
+${capCtx    ? "MY CAPTAIN OPTIONS (ตัวจริงในทีมฉัน — เรียงตาม cap_xPts = fixture + xPts):\n" + capCtx + "\n" : ""}
 ${newsCtx   ? "INJURY/NEWS (ทีมฉัน):\n" + newsCtx   + "\n" : ""}
 ${leagueCtx ? "MINI-LEAGUE:\n"   + leagueCtx + "\n" : ""}
 ${priceCtx  ? "PRICE ALERTS:\n"  + priceCtx  + "\n" : ""}
 ${rotCtx    ? "ROTATION RISK:\n" + rotCtx    + "\n" : ""}
 ${targetCtx ? "SEASON TARGET:\n" + targetCtx + "\n" : ""}
 
-PLAYER POOL (Top 100):
+PLAYER POOL (Top 100 — สำหรับ TRANSFER/DIFFERENTIAL เท่านั้น ไม่ใช่ตัวเลือกกัปตัน):
 ${playerCSV}
 
-**1. CAPTAIN PICK** — Top 3, FDR-X+PPM+rotation risk
+**1. CAPTAIN PICK** — Top 3 เลือกจาก "MY CAPTAIN OPTIONS" (ตัวจริงในทีมฉัน) เท่านั้น เกณฑ์ fixture ดี + xPts สูง + rotation risk ต่ำ ระบุ (C)/(VC)${capCtx ? "" : " [ยังไม่มีข้อมูลทีม — รัน Squad Tracker + xPts ก่อน]"}
 **2. TRANSFER** — IN: BUY_NOW+FDR ดี | OUT: SELL_NOW+rotation HIGH (เฉพาะทีมฉัน)
 **3. DIFFERENTIAL** — OWN%<5% diff score สูง
 **4. SEASON TARGET** — on track? ถ้า BEHIND -> aggressive play
@@ -2190,10 +2274,27 @@ ${playerCSV}
 }
 
 function promptCaptain(playerCSV, newsCtx, ss) {
-  const xptsData = readSheetData(ss, "XPTS");
-  const top5xpts = xptsData.filter(r => r["xPTS"]).sort((a,b) => parseFloat(b["xPTS"])-parseFloat(a["xPTS"])).slice(0,5);
-  const xptsCtx  = top5xpts.map(p => p["NAME"]+" xPts:"+p["xPTS"]+" cap:"+p["CAPTAIN_xPTS"]+" fdr:"+p["FDR"]).join("\n");
-  return `APEX QUANT — Captain Pick\n${newsCtx?"NEWS:\n"+newsCtx+"\n":""}\nTOP xPTS:\n${xptsCtx}\nPLAYER POOL:\n${playerCSV}\n\nTop 5 captain candidates (FDRX_3 30%+PPM 40%+OWN% 30%)\nตรวจ rotation risk ก่อน\nตอบภาษาไทย กระชับ`;
+  // ── Fix 2: กัปตันต้องมาจาก "ทีมปัจจุบัน" (ตัวจริง 11 คน) เท่านั้น ──
+  // เดิมอ่าน XPTS ด้วย readSheetData → header เพี้ยน (row 1 เป็น title) → xPts ว่าง
+  // → เสนอกัปตันจาก POOL (ตัวที่ไม่ได้อยู่ในทีม). ตอนนี้ join SQUAD × XPTS โดยตรง
+  const ownedCtx = _squadCaptainOptionsText(ss, 8);
+  if (!ownedCtx) {
+    return `APEX QUANT — Captain Pick\n${newsCtx?"NEWS:\n"+newsCtx+"\n":""}\n`+
+      `⚠ อ่านทีมปัจจุบันไม่ได้ (ยังไม่ได้รัน Squad Tracker + xPts) — ใช้ POOL ชั่วคราว:\n${playerCSV}\n\n`+
+      `เลือก Top 3 กัปตัน (fixture ดี + xPts สูง + rotation ต่ำ)\nตอบภาษาไทย กระชับ`;
+  }
+  return `APEX QUANT — Captain Pick (จากทีมปัจจุบันเท่านั้น)
+${newsCtx?"NEWS (ทีมฉัน):\n"+newsCtx+"\n":""}
+กัปตันต้องเลือกจาก "ตัวจริง 11 คนในทีมฉัน" ด้านล่างเท่านั้น — ห้ามเสนอผู้เล่นนอกทีม
+MY XI CAPTAIN OPTIONS (เรียงตาม cap_xPts = fixture + xPts):
+${ownedCtx}
+
+(POOL ด้านล่างใช้เป็นบริบทราคา/คู่แข่งเท่านั้น ไม่ใช่ตัวเลือกกัปตัน):
+${playerCSV}
+
+เลือก Top 3 กัปตันจาก MY XI เท่านั้น เกณฑ์: fixture ดี (FDR ต่ำ/เหย้า) + xPts สูง + rotation risk ต่ำ
+ระบุ (C) อันดับ 1 และ (VC) อันดับ 2 พร้อมเหตุผลสั้นๆ มีตัวเลข
+ตอบภาษาไทย กระชับ`;
 }
 
 function promptTransfer(playerCSV, newsCtx, squadCtx, ss) {
@@ -2266,11 +2367,34 @@ function buildNewsContext(ss, rows) {
     .join("\n") || "ไม่มีนักเตะในทีมที่บาดเจ็บ";
 }
 
+// ── Fix 2: อ่าน SQUAD sheet แบบทนทาน — หา header จริง (NAME + SLOT) ข้าม title/summary
+// คืน array ของ object {SLOT,NAME,TEAM,POS,PRICE,TOTAL_PTS,FLAGS}
+function _readSquadRows(ss) {
+  const sheet = ss && ss.getSheetByName("SQUAD");
+  if (!sheet) return [];
+  const data = sheet.getDataRange().getValues();
+  let hdr = null; const out = [];
+  for (const rrow of data) {
+    const up = rrow.map(c => String(c).trim().toUpperCase());
+    if (up.includes("NAME") && up.includes("SLOT")) { hdr = up; continue; }
+    if (!hdr) continue;
+    const obj = {}; hdr.forEach((h,i) => { if (h) obj[h] = rrow[i]; });
+    const nm = String(obj["NAME"]||"").trim();
+    if (!nm || nm.toUpperCase()==="NAME" || isNaN(parseInt(obj["SLOT"]))) continue;
+    out.push(obj);
+  }
+  return out;
+}
+
 function buildSquadContext(rows) {
-  if (!rows.length) return "";
-  return rows.filter(r => r["NAME"]&&r["SLOT"]).slice(0,15)
-    .map(r => (r["SLOT"]<=11?"XI":"BN")+" "+r["NAME"]+"("+r["TEAM"]+","+r["POS"]+",£"+r["PRICE"]+")"+
-               (r["IS_CAPTAIN"]==="TRUE"?" [C]":r["IS_VICE"]==="TRUE"?" [V]":""))
+  if (!rows || !rows.length) return "";
+  return rows.filter(r => r["NAME"] && r["SLOT"]!=null).slice(0,15)
+    .map(r => {
+      const flags = String(r["FLAGS"]||"");
+      const cap   = flags.includes("[C]") ? " [C]" : flags.includes("[V]") ? " [V]" : "";
+      return (parseInt(r["SLOT"])<=11?"XI":"BN")+" "+r["NAME"]+"("+r["TEAM"]+","+r["POS"]+",£"+
+             String(r["PRICE"]||"").replace("£","").replace("m","")+"m)"+cap;
+    })
     .join("\n");
 }
 
@@ -2410,6 +2534,8 @@ function runAITeamManager() {
     aiSquad = []; aiState.budget = AI_TEAM_CONFIG.budget; budget = AI_TEAM_CONFIG.budget;
   }
 
+  let aiTransfers = [];   // ── Fix 1: จับ transfer ของ ai_team ไว้เพื่อแสดง + เก็บ history
+
   if (!aiSquad.length) {
     const result = buildAISquad(players);
     aiSquad = result.squad; budget = result.itb;
@@ -2470,7 +2596,8 @@ function runAITeamManager() {
   } else {
     const xferResult = makeAITransfers(aiSquad, players, budget, AI_TEAM_CONFIG.freeTransfers, tactical.mode);
     aiSquad = xferResult.squad; budget = xferResult.itb;
-    if (xferResult.transfers.length) Logger.log("✓ Transfers ["+tactical.mode+"]: " + xferResult.transfers.join(", "));
+    aiTransfers = xferResult.transfers || [];
+    if (aiTransfers.length) Logger.log("✓ Transfers ["+tactical.mode+"]: " + aiTransfers.join(", "));
     else if (tactical.mode==="AGGRESSIVE") Logger.log("⚠ AGGRESSIVE mode แต่ไม่มี transfer ที่คุ้ม");
   }
 
@@ -2482,8 +2609,10 @@ function runAITeamManager() {
 
   aiState.squad=aiSquad; aiState.budget=budget; aiState.chips=chips; aiState.last_gw=currentGW;
   aiState.tactical_mode=tactical.mode;
+  aiState.last_transfers=aiTransfers;   // ── Fix 1: เก็บ transfer ล่าสุดไว้ใน state
   saveAIState(aiStateSheet, aiState);
-  writeAITeamSheet(ss, aiSquad, capPick, vicePick, budget, chips, null, currentGW, tactical);
+  writeAITeamSheet(ss, aiSquad, capPick, vicePick, budget, chips, null, currentGW, tactical, aiTransfers);
+  _writeAITransferHistory(ss, currentGW, aiTransfers, tactical.mode);   // ── Fix 1: append ประวัติ transfer
 
   logRun(ss, "AITeamManager", "GW"+currentGW+" | Cap:"+capPick?.name+" | Mode:"+tactical.mode, "SUCCESS");
   Logger.log("=== AI TEAM DONE ===");
@@ -2751,7 +2880,7 @@ function saveAIState(sheet, state) {
   sheet.getRange(1,1).setValue(JSON.stringify(state));
 }
 
-function writeAITeamSheet(ss, squad, cap, vice, itb, chips, chipPlayed, gw, tactical) {
+function writeAITeamSheet(ss, squad, cap, vice, itb, chips, chipPlayed, gw, tactical, transfers) {
   const sheet = getOrCreateSheet(ss, "AI_TEAM");
   sheet.clearContents(); sheet.clearFormats();
   let row = 1;
@@ -2781,6 +2910,36 @@ function writeAITeamSheet(ss, squad, cap, vice, itb, chips, chipPlayed, gw, tact
   }
   row++;
 
+  // ── Fix 1: TRANSFERS THIS GW — ให้เห็นชัดว่า ai_team เปลี่ยนตัวไหนเป็นใคร ──
+  row = writeSectionHeader(sheet, row, "🔁 TRANSFERS THIS GW", "#1a1000", "#ffb020");
+  const xferHdr = ["OUT","xPTS","IN","xPTS","TYPE"];
+  sheet.getRange(row,1,1,xferHdr.length).setValues([xferHdr])
+       .setBackground("#2a1c00").setFontColor("#ffb020").setFontWeight("bold");
+  row++;
+  const xfers = transfers || [];
+  if (!xfers.length) {
+    sheet.getRange(row,1,1,5).merge().setValue("ไม่มี transfer (bank FT / no worthwhile move)")
+         .setBackground("#0a0a0a").setFontColor("#7a8fba").setFontStyle("italic");
+    row++;
+  } else {
+    xfers.forEach(t => {
+      // t = "OUT:Name(4.5xPts) -> IN:Name(7.2xPts) [FT] 🎯DIFF"
+      const m = String(t).match(/OUT:(.+?)\(([\d.]+)xPts\)\s*->\s*IN:(.+?)\(([\d.]+)xPts\)\s*(.*)$/);
+      if (m) {
+        const isHit = /HIT/.test(m[5]);
+        sheet.getRange(row,1,1,5).setValues([[m[1], m[2], m[3], m[4], m[5].trim()||"[FT]"]])
+             .setBackground("#0a0a0a")
+             .setFontColor(isHit ? "#ff9500" : "#c5d4f0");
+        sheet.getRange(row,3).setFontColor("#00ff9d").setFontWeight("bold");  // IN player highlighted
+      } else {
+        sheet.getRange(row,1,1,5).merge().setValue(String(t))
+             .setBackground("#0a0a0a").setFontColor("#c5d4f0");
+      }
+      row++;
+    });
+  }
+  row++;
+
   const sqHeaders = ["NAME","TEAM","POS","PRICE","xPTS","ROLE"];
   row = writeSectionHeader(sheet, row, "STARTING XI", "#001a00", "#00ff9d");
   sheet.getRange(row,1,1,sqHeaders.length).setValues([sqHeaders])
@@ -2802,6 +2961,39 @@ function writeAITeamSheet(ss, squad, cap, vice, itb, chips, chipPlayed, gw, tact
     row++;
   });
   sheet.autoResizeColumns(1,6);
+}
+
+// ── Fix 1: AI_TEAM_XFERS — ประวัติ transfer สะสมทุก GW (ไว้ติดตามย้อนหลัง) ──
+// append เท่านั้น: 1 แถวต่อ 1 transfer, พร้อม GW/mode/timestamp
+// กัน dup: ถ้า GW เดิมเคยถูกบันทึกแล้วจะไม่ append ซ้ำ (กรณีกดรันซ้ำใน GW เดียว)
+function _writeAITransferHistory(ss, gw, transfers, mode) {
+  try {
+    const xfers = transfers || [];
+    if (!xfers.length) return;
+    const sheet = getOrCreateSheet(ss, "AI_TEAM_XFERS");
+    if (sheet.getLastRow() === 0) {
+      sheet.getRange(1,1,1,6).setValues([["GW","OUT","IN","xPTS_GAIN","TYPE","TIMESTAMP"]])
+           .setBackground("#1c2a50").setFontColor("#b44eff").setFontWeight("bold");
+    }
+    // กัน dup GW เดิม
+    const existing = sheet.getLastRow() > 1 ? sheet.getRange(2,1,sheet.getLastRow()-1,1).getValues() : [];
+    if (existing.some(r => String(r[0]) === "GW"+gw)) {
+      Logger.log("↺ AI_TEAM_XFERS: GW"+gw+" มีอยู่แล้ว — ข้ามการบันทึกซ้ำ");
+      return;
+    }
+    xfers.forEach(t => {
+      const m = String(t).match(/OUT:(.+?)\(([\d.]+)xPts\)\s*->\s*IN:(.+?)\(([\d.]+)xPts\)\s*(.*)$/);
+      if (m) {
+        const gain = (parseFloat(m[4]) - parseFloat(m[2])).toFixed(1);
+        sheet.appendRow(["GW"+gw, m[1], m[3], (gain>0?"+":"")+gain, (m[5].trim()||"[FT]")+" · "+(mode||"STD"), new Date()]);
+      } else {
+        sheet.appendRow(["GW"+gw, String(t), "", "", mode||"STD", new Date()]);
+      }
+    });
+    Logger.log("✓ AI_TEAM_XFERS: บันทึก "+xfers.length+" transfer สำหรับ GW"+gw);
+  } catch (e) {
+    Logger.log("⚠ _writeAITransferHistory error: "+e);
+  }
 }
 
 function runAITeamPostMortem() {
@@ -3284,6 +3476,41 @@ function _writeBlindTeamBlock(sheet, col, title, squad, projXpts, itb, ftRemaini
   return row;
 }
 
+// ── Fix 3: สร้าง picks object จาก SQUAD sheet เมื่อ picks API ใช้ไม่ได้ ──
+// map web_name → element id (จับคู่ทีมด้วยเมื่อชื่อซ้ำ), อ่าน bank จาก entry endpoint
+function _blindPicksFromSquadSheet(ss, boot) {
+  try {
+    const rows = _readSquadRows(ss);
+    if (!rows.length) return null;
+    const short  = {}; boot.teams.forEach(t => short[t.id] = t.short_name);
+    const byName = {};
+    boot.elements.forEach(e => { (byName[e.web_name] = byName[e.web_name] || []).push(e); });
+
+    const picksArr = [];
+    rows.forEach(r => {
+      const nm = String(r["NAME"]||"").trim();
+      const tm = String(r["TEAM"]||"").trim().toUpperCase();
+      const cands = byName[nm] || [];
+      const e = cands.find(x => String(short[x.team]||"").toUpperCase() === tm) || cands[0];
+      if (e) {
+        const flags = String(r["FLAGS"]||"");
+        picksArr.push({ element:e.id, position:parseInt(r["SLOT"])||99,
+          is_captain:flags.includes("[C]"), is_vice_captain:flags.includes("[V]") });
+      }
+    });
+    if (picksArr.length < 15) { Logger.log("⚠ SQUAD sheet map ได้ "+picksArr.length+"/15 — fallback ไม่พอ"); return null; }
+
+    let bank = 0;
+    const entry = fetchJSON("https://fantasy.premierleague.com/api/entry/"+CONFIG.FPL_TEAM_ID+"/");
+    if (entry && entry.last_deadline_bank != null) bank = entry.last_deadline_bank;
+    Logger.log("✓ สร้าง squad จาก SQUAD sheet ("+picksArr.length+" คน, bank £"+(bank/10)+"m)");
+    return { picks: picksArr.slice(0,15), entry_history:{ bank, event_transfers:1 } };
+  } catch (e) {
+    Logger.log("⚠ _blindPicksFromSquadSheet error: "+e);
+    return null;
+  }
+}
+
 function runNextWeekBlindTest() {
   Logger.log("=== NEXT-WEEK BLIND TEST START ===");
   const ss   = SpreadsheetApp.openById(CONFIG.SHEET_ID);
@@ -3302,19 +3529,35 @@ function runNextWeekBlindTest() {
     .sort((a,b)=>b.id-a.id)[0];
   const lastGW = lastGWEvent?.id;
 
+  // ── Fix 3: หา squad ปัจจุบันแบบทนทาน ──────────────────────────────────────
+  // สาเหตุเดิมที่ขึ้น "ไม่พบ squad": ช่วงหลัง deadline แต่ก่อน FPL mark GW เป็น
+  // finished/data_checked → lastGW = undefined → ข้ามการดึง แล้วไปลอง targetGW
+  // (GW อนาคต) ซึ่ง endpoint picks/ คืน 404. แก้โดยไล่สแกน GW ที่ "มีจริง" จากใหม่→เก่า
+  // (รวม is_current) แล้ว fallback ไปอ่าน SQUAD sheet ถ้า API ว่างทั้งหมด
   let picks = null;
-  if (lastGW) {
-    picks = fetchJSON("https://fantasy.premierleague.com/api/entry/"+CONFIG.FPL_TEAM_ID+"/event/"+lastGW+"/picks/");
+  const curEv = boot.events.find(e => e.is_current);
+  const hiGW  = Math.max(curEv?.id || 0, lastGW || 0, targetGW - 1, 1);
+  const loGW  = Math.max(1, hiGW - 6);
+  for (let g = hiGW; g >= loGW && !(picks?.picks?.length >= 15); g--) {
+    const r = fetchJSON("https://fantasy.premierleague.com/api/entry/"+CONFIG.FPL_TEAM_ID+"/event/"+g+"/picks/");
+    if (r?.picks?.length >= 15) { picks = r; Logger.log("✓ พบ squad จาก GW"+g+" picks"); }
   }
-  if (!picks?.picks) {
-    // preseason fallback: ลอง targetGW (เช่น GW1) ตรงๆ — เผื่อตั้งทีมไว้แล้วแต่ยังไม่มี GW จบ
-    picks = fetchJSON("https://fantasy.premierleague.com/api/entry/"+CONFIG.FPL_TEAM_ID+"/event/"+targetGW+"/picks/");
+  // preseason: ยังไม่มี GW จบ — ลอง targetGW ตรงๆ (เผื่อ deadline ผ่านแล้ว)
+  if (!(picks?.picks?.length >= 15)) {
+    const r = fetchJSON("https://fantasy.premierleague.com/api/entry/"+CONFIG.FPL_TEAM_ID+"/event/"+targetGW+"/picks/");
+    if (r?.picks?.length >= 15) { picks = r; Logger.log("✓ พบ squad จาก targetGW"+targetGW+" picks"); }
   }
+  // Fallback สุดท้าย: อ่านจาก SQUAD sheet (map ชื่อ → element id ผ่าน boot)
+  if (!(picks?.picks?.length >= 15)) {
+    Logger.log("⚠ picks API ว่างทุก GW ("+loGW+"→"+hiGW+") — ลอง fallback จาก SQUAD sheet");
+    picks = _blindPicksFromSquadSheet(ss, boot);
+  }
+
   if (!picks?.picks || picks.picks.length < 15) {
-    Logger.log("❌ ไม่พบ squad ปัจจุบัน (FPL_TEAM_ID="+CONFIG.FPL_TEAM_ID+") — ตรวจสอบว่าตั้งทีมแล้วหรือยัง");
+    Logger.log("❌ ไม่พบ squad ปัจจุบัน (FPL_TEAM_ID="+CONFIG.FPL_TEAM_ID+") — ทั้ง picks API และ SQUAD sheet");
     const sheet = getOrCreateSheet(ss, "NEXT_WEEK_BLIND_TEST");
     sheet.clearContents();
-    sheet.getRange(1,1).setValue("❌ ไม่พบ squad ปัจจุบัน — ตรวจสอบ CONFIG.FPL_TEAM_ID และว่าตั้งทีมในเว็บ FPL แล้ว");
+    sheet.getRange(1,1).setValue("❌ ไม่พบ squad ปัจจุบัน — ตรวจ CONFIG.FPL_TEAM_ID (ต้องเป็นเลข entry ของคุณ) แล้วรัน '🔄 Update Squad' (Squad Tracker) หรือยืนยันว่าตั้งทีมในเว็บ FPL แล้ว");
     return;
   }
 
