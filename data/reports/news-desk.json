@@ -1,110 +1,118 @@
 {
-  "gw": 1,
+  "generated_by": "news-desk",
+  "gw": 2,
+  "deadline_utc": "2026-08-28T17:30:00Z",
   "items": [
     {
       "player": "Lammens",
       "team": "MUN",
       "signal": "starts",
-      "note": "Confirmed no.1 shirt and named in predicted XI vs Hull City (22 Aug); has moved ahead of Bayindir in the pecking order pre-season.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/08/20/fpl-2026-27-man-utd-best-players-set-piece-takers-predicted-xi-more; https://www.sportsmole.co.uk/football/man-utd/top-four-race/predicted-lineups/debuts-for-tielemans-santos-how-man-united-could-line-up-vs-hull_603359.html"
+      "note": "Predicted GK vs Ipswich (H, Sun). No fresh MUN injury concerns.",
+      "source": "manunews.com predicted lineup vs Ipswich"
     },
     {
-      "player": "Frimpong",
+      "player": "Kerkez",
       "team": "LIV",
       "signal": "starts",
-      "note": "Nailed at right-back with Conor Bradley still out injured (knee); predicted Liverpool XI vs opener has him starting.",
-      "source": "https://www.thisisanfield.com/2026/07/jeremie-frimpong-liverpool-tactical-role-right-back-iraola/"
+      "note": "Predicted starting LB vs Nottingham Forest (H, Sat). Kept his place after GW1 start; no injury flag.",
+      "source": "ESPN/the4thofficial.net Liverpool vs Nottingham Forest predicted XI"
+    },
+    {
+      "player": "Hume",
+      "team": "SUN",
+      "signal": "starts",
+      "note": "Predicted starting RB in Sunderland's 4-2-3-1 vs Fulham (H, Sun). No fitness concerns after GW1.",
+      "source": "Squawka/Sports Mole Sunderland vs Fulham predicted lineup"
     },
     {
       "player": "Gabriel",
       "team": "ARS",
       "signal": "starts",
-      "note": "Fit and in predicted back four (with White/Mosquera/Calafiori) covering for Saliba (back, out weeks/months) and Timber (groin, weeks away) vs Coventry 21 Aug.",
-      "source": "https://www.espn.com/soccer/story/_/id/49654779/arsenal-vs-coventry-city-2026-27-premier-league-tv-channel-how-watch-kick-live-stream-referee-injury-predicted-lineups; https://www.beinsports.com/en-us/soccer/premier-league/articles/timber-still-weeks-away-from-arsenal-return-says-arteta-2026-08-10"
-    },
-    {
-      "player": "Calafiori",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Fielded in Arsenal's makeshift back four (with White, Mosquera, Gabriel) during preseason with Saliba/Timber both out; expected to start GW1.",
-      "source": "https://www.si.com/soccer/mikel-arteta-latest-saliba-timber-injury-update"
-    },
-    {
-      "player": "Semenyo",
-      "team": "MCI",
-      "signal": "starts",
-      "note": "Now a Man City player (£64m move from Bournemouth, Jan 2026). Predicted starter in a front line with Foden/Doku/Haaland; was City's top preseason scorer.",
-      "source": "https://www.skysports.com/football/news/11095/13491956/antoine-semenyo-joins-man-city-bournemouth-forward-signs-in-lb64m-transfer-to-take-city-spending-over-lb425m-in-12-months"
-    },
-    {
-      "player": "E.Le Fée",
-      "team": "SUN",
-      "signal": "starts",
-      "note": "Predicted attacking-mid starter for Sunderland's GW1 XI.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/08/20/fpl-2026-27-man-utd-best-players-set-piece-takers-predicted-xi-more (Sunderland preview cross-ref); https://www.fantasyfootballhub.co.uk/sunderland-fpl-team-preview-2026-27-article"
+      "note": "Predicted starting CB vs Aston Villa (A, Mon). Nailed at CB despite Saliba/Timber both still out (increases Gabriel's defensive workload/importance, not a risk to his minutes).",
+      "source": "Yahoo Sports Arsenal XI vs Aston Villa confirmed/predicted lineup"
     },
     {
       "player": "B.Fernandes",
       "team": "MUN",
       "signal": "starts",
-      "note": "Nailed, club captain, expected to start and captain vs Hull; no fitness concerns flagged for United's front line.",
-      "source": "https://www.sportsmole.co.uk/football/man-utd/top-four-race/predicted-lineups/debuts-for-tielemans-santos-how-man-united-could-line-up-vs-hull_603359.html"
+      "note": "Nailed - MUN's primary attacking outlet and set-piece taker on everything (corners, FKs, pens). Predicted to start centrally vs Ipswich. No rotation risk.",
+      "source": "manunews.com / RotoWire Man Utd vs Ipswich predicted lineup"
     },
     {
       "player": "Mbeumo",
       "team": "MUN",
       "signal": "starts",
-      "note": "Nailed in predicted United front line alongside Fernandes; no fitness concerns.",
-      "source": "https://www.sportsmole.co.uk/football/man-utd/top-four-race/predicted-lineups/debuts-for-tielemans-santos-how-man-united-could-line-up-vs-hull_603359.html"
+      "note": "Predicted starter vs Ipswich, ahead of Cunha in pecking order per pre-season reports.",
+      "source": "manunews.com predicted lineup vs Ipswich"
+    },
+    {
+      "player": "Semenyo",
+      "team": "MCI",
+      "signal": "starts",
+      "note": "Predicted starter in Man City's 3-man attack (with Foden, O'Reilly) behind Haaland vs Crystal Palace - City are short of attacking depth (Doku injured, Savio/Marmoush departed), boosting Semenyo's nailed status.",
+      "source": "beIN Sports / yen.com.gh Crystal Palace vs Man City predicted lineup"
+    },
+    {
+      "player": "E.Le Fée",
+      "team": "SUN",
+      "signal": "starts",
+      "note": "Predicted starting attacking mid vs Fulham (H, Sun), part of Sunderland's settled front line.",
+      "source": "Squawka Sunderland vs Fulham predicted lineup"
     },
     {
       "player": "Rogers",
       "team": "CHE",
       "signal": "starts",
-      "note": "Expected to start in a narrow front three with Palmer and João Pedro vs Fulham (24 Aug), despite limited preseason minutes after World Cup break.",
-      "source": "https://sports.yahoo.com/articles/morgan-rogers-sends-clear-message-141756106.html"
+      "note": "Nailed and in-form - scored in Chelsea's 5-goal derby win last match alongside Joao Pedro and Palmer. Vs Brighton (H, Sun). Palmer is under assessment for a groin issue (possible surgery) which could mean MORE Chelsea creative burden shifts to Rogers - upside signal, not a risk.",
+      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
     },
     {
       "player": "Thiago",
       "team": "BRE",
       "signal": "starts",
-      "note": "Undisputed no.9 in Brentford's predicted GW1 XI after a Golden-Boot-challenging 2025/26 season.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/08/18/fpl-2026-27-brentford-best-players-set-piece-takers-predicted-xi-more"
+      "note": "Brentford have a settled team after 3-0 win over Tottenham and are likely to stick with it vs Leeds (A, Sun). No injury flag for Thiago.",
+      "source": "Yorkshire Evening Post / Squawka Leeds vs Brentford preview"
     },
     {
       "player": "João Pedro",
       "team": "CHE",
       "signal": "starts",
-      "note": "Expected first-choice no.9 ahead of Delap in Xabi Alonso's front three for the Fulham opener.",
-      "source": "https://sports.yahoo.com/articles/morgan-rogers-sends-clear-message-141756106.html; https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-pedro-again-rogers-debut-munoz-returns"
+      "note": "Nailed - scored in Chelsea's last match. Starts vs Brighton (H, Sun).",
+      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
     },
     {
-      "player": "Rushworth",
-      "team": "COV",
-      "signal": "starts",
-      "note": "Bench player for our squad, but nailed as Coventry's GK1 on merit of Championship form; no impact unless forced to field.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/08/15/fpl-pre-season-5-0m-forward-boost-4-0m-coventry-defender-clues"
-    },
-    {
-      "player": "Hume",
-      "team": "SUN",
-      "signal": "unknown",
-      "note": "Bench player. One predicted Sunderland XI has Meunier at RB with Hume pushed into a wide midfield/wing-back role rather than his usual full-back slot - positional ambiguity, worth rechecking closer to deadline.",
-      "source": "https://www.fantasyfootballhub.co.uk/sunderland-fpl-team-preview-2026-27-article"
+      "player": "Palestra",
+      "team": "CHE",
+      "signal": "benched",
+      "note": "ESCALATION beyond data-lab's 75%-chance flag: Palestra has missed Chelsea's last matchday squad entirely (EFL Cup vs Luton) due to a minor fitness setback per Alonso, and in his absence Malo Gusto has taken the right wing-back slot. Even set aside injury, Gusto looks first-choice there. Treat as a likely non-starter/bench risk for GW2, not just a fitness coin-flip - lower confidence than the 75% number implies.",
+      "source": "Fantasy Football Scout 'Fulham v Chelsea: No Caicedo or Palestra' + FPL GW2 Thursday/Wednesday live injury updates"
     },
     {
       "player": "Awoniyi",
       "team": "COV",
-      "signal": "benched",
-      "note": "Bench player for our squad. Despite his £9m transfer from Nottingham Forest, Coventry's predicted GW1 front three is Tchaouna-Simms-Thomas-Asante; Awoniyi not currently a starting XI lock at kickoff.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/08/15/fpl-pre-season-5-0m-forward-boost-4-0m-coventry-defender-clues"
+      "signal": "starts",
+      "note": "Bench player upside note: predicted to lead the line for Coventry ahead of Ellis Simms vs Hull (H, Sat) - not a squad risk since he is already benched by manager, but strong bench-enabler signal if a Chelsea/Coventry punt is needed later.",
+      "source": "Yahoo Sports / thehardtackle.com Coventry vs Hull preview"
     },
     {
       "player": "van Ewijk",
       "team": "COV",
       "signal": "starts",
-      "note": "Bench player, but predicted as Coventry's starting left-back for GW1; no impact unless forced to field.",
-      "source": "https://www.fantasyfootballscout.co.uk/2026/08/15/fpl-pre-season-5-0m-forward-boost-4-0m-coventry-defender-clues"
+      "note": "Predicted starting RB for Coventry vs Hull (H, Sat). Bench player, no action needed.",
+      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
+    },
+    {
+      "player": "Rushworth",
+      "team": "COV",
+      "signal": "starts",
+      "note": "Predicted starting GK for Coventry vs Hull. Bench GK, no action needed.",
+      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
     }
-  ]
+  ],
+  "summary_notes": {
+    "captain_bfernandes_nailed": true,
+    "vice_gabriel_nailed": true,
+    "new_risk_beyond_datalab": "Palestra (bench DEF) risk is worse than the 75% doubtful flag suggests - repeated squad omissions this week and Gusto ahead of him in the pecking order at RWB. Low priority since he's on the bench, not starting XI.",
+    "notable_positive": "Semenyo and Rogers both look more nailed than usual this week due to teammate absences/departures (City attacking depth thin; Palmer groin concern at Chelsea)."
+  }
 }
