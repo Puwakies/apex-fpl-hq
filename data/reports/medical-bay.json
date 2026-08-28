@@ -1,156 +1,166 @@
 {
-  "gw": 1,
-  "updated": "2026-08-21",
+  "gw": 2,
+  "deadline_utc": "2026-08-28T17:30:00Z",
+  "generated_by": "medical-bay",
   "matrix": [
-    {
-      "player": "Frimpong",
-      "team": "LIV",
-      "role": "starting_xi",
-      "status": "out",
-      "chance_pct": 0,
-      "expected_return_gw": 5,
-      "fpl_flag": "AVAILABLE (stale)",
-      "source": "Hamstring injury sustained vs Bournemouth (preseason); Liverpool officially ruled him out for Newcastle (GW1, Aug 23) and Arsenal (GW2), sidelined until after the September international break. https://www.skysports.com/football/news/12040/13415711/jeremie-frimpong-injury-liverpool-defender-ruled-out-until-after-the-international-break-missing-games-against-newcastle-and-arsenal ; https://feeds.bbci.co.uk/sport/football/articles/cgm2endg7e0o"
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "role": "starting_xi (vice-captain)",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Expected in Arsenal's back four (White-Gabriel-Mosquera-Calafiori) vs Coventry GW1; no current injury listed despite Timber/Saliba both out. https://www.fantasyfootballscout.co.uk/2026/08/14/fpl-2026-27-arsenal-best-players-set-piece-takers-predicted-xi-more"
-    },
-    {
-      "player": "Calafiori",
-      "team": "ARS",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Scored in Community Shield vs Man City, predicted starting left-back for GW1 vs Coventry. Earlier mid-Aug report of him missing a matchday squad appears to be preseason rotation, not injury. https://www.rotowire.com/soccer/article/arsenal-vs-coventry-city-preview-lineups-team-news-128753"
-    },
-    {
-      "player": "B.Fernandes",
-      "team": "MUN",
-      "role": "starting_xi (captain)",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "No current injury concerns; expected to start and captain-eligible for GW1. https://www.rotowire.com/soccer/article/fpl-tips-6-highly-owned-players-to-avoid-in-gameweek-1-gw1-128567"
-    },
-    {
-      "player": "Mbeumo",
-      "team": "MUN",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Sharp in preseason; used as a late sub in final friendly (workload management, not injury). https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-another-bruno-pen-miss-mbeumo-a-sub"
-    },
-    {
-      "player": "Semenyo",
-      "team": "MCI",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Completed permanent transfer BOU to MCI (Jan 2026, confirms squad.json team tag is correct); no current injury news. https://www.skysports.com/football/news/11095/13491956/antoine-semenyo-joins-man-city-bournemouth-forward-signs-in-lb64m-transfer-to-take-city-spending-over-lb425m-in-12-months"
-    },
-    {
-      "player": "E.Le Fée",
-      "team": "SUN",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Missed a preseason game with a minor issue in early Aug, but recovered and started the following friendly vs Rennes. https://www.sunderlandecho.com/sport/football/sunderland-afc/sunderland-fans-handed-encouraging-enzo-le-fee-injury-update-after-wrexham-absence-8835381"
-    },
-    {
-      "player": "Rogers",
-      "team": "CHE",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Morgan Rogers expected to start GW1 after starting vs Real Sociedad in preseason and scoring in first minutes post-World Cup. No injury concerns. https://www.foxsports.com/soccer/marc-guehi-3-player"
-    },
-    {
-      "player": "Thiago",
-      "team": "BRE",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Igor Thiago had a minor issue described as normal end-of-preseason management, unrelated to last season's injury; played and scored in preseason. https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-thiago-schade-braces-sangare-impact-bournemouth-injuries"
-    },
-    {
-      "player": "João Pedro",
-      "team": "CHE",
-      "role": "starting_xi",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Earlier thigh/knock issues (Apr/May 2026) resolved; featured in GW1 preseason team-news discussion with no current fitness flag. https://www.fantasyfootballscout.co.uk/2026/08/16/fpl-pre-season-pedro-again-rogers-debut-munoz-returns"
-    },
     {
       "player": "Lammens",
       "team": "MUN",
-      "role": "bench (GK2 for club, backup in FPL squad)",
-      "status": "fit",
+      "pos": "GK",
+      "role": "starting",
+      "status": "AVAILABLE",
       "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Established United no.1 since 2025/26; no fitness concerns found. https://www.manutd.com/en/news/senne-lammens-new-goalkeeper-profile-piece-after-sunderland-debut"
+      "source": "FPL news.json (no flag); no club news found",
+      "confidence": "high"
     },
     {
-      "player": "Rushworth",
-      "team": "COV",
-      "role": "bench (backup GK)",
-      "status": "fit",
+      "player": "Kerkez",
+      "team": "LIV",
+      "pos": "DEF",
+      "role": "starting",
+      "status": "AVAILABLE",
       "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "No injury news found; FPL lists AVAILABLE. Low relevance (bench GK)."
+      "source": "FPL news.json (no flag); reported fit/active in recent match",
+      "confidence": "high"
     },
     {
       "player": "Hume",
       "team": "SUN",
-      "role": "bench",
-      "status": "fit",
+      "pos": "DEF",
+      "role": "starting",
+      "status": "AVAILABLE",
       "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "No injury news found; FPL lists AVAILABLE. Low relevance (bench fodder)."
+      "source": "FPL news.json (no flag); no injury news found",
+      "confidence": "medium"
+    },
+    {
+      "player": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "role": "starting (vice-captain)",
+      "status": "AVAILABLE",
+      "chance_pct": 90,
+      "source": "FPL news.json (no flag); WEB: forced off late in GW1 vs Liverpool after collision with Nunez, severity unclear at the time, but not mentioned in Arteta's GW2 (27 Aug) press conference and not listed in Arsenal's injury news alongside Timber/Saliba",
+      "confidence": "medium",
+      "note": "minor watch item - no formal doubt flag issued, monitor Arsenal team news right up to deadline"
+    },
+    {
+      "player": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "role": "starting (captain)",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB confirms fit and central to United's GW2 plans",
+      "confidence": "high"
+    },
+    {
+      "player": "Mbeumo",
+      "team": "MUN",
+      "pos": "MID",
+      "role": "starting",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB confirms starting role (No.9) for GW2",
+      "confidence": "high"
+    },
+    {
+      "player": "Semenyo",
+      "team": "MCI",
+      "pos": "MID",
+      "role": "starting",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); no injury news found",
+      "confidence": "medium"
+    },
+    {
+      "player": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "role": "starting",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB: recovered from prior issue, expected available",
+      "confidence": "medium"
+    },
+    {
+      "player": "Rogers",
+      "team": "CHE",
+      "pos": "MID",
+      "role": "starting (Gemini vice-captain pick)",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB: named in predicted Chelsea XI for GW2 vs Brighton, scored in GW1",
+      "confidence": "high"
+    },
+    {
+      "player": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "role": "starting",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB confirms fit, scoring in pre-season",
+      "confidence": "high"
+    },
+    {
+      "player": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "role": "starting",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB: named in predicted Chelsea XI for GW2 vs Brighton, scored in GW1 win over Fulham",
+      "confidence": "high"
+    },
+    {
+      "player": "Rushworth",
+      "team": "COV",
+      "pos": "GK",
+      "role": "bench",
+      "status": "AVAILABLE",
+      "chance_pct": 100,
+      "source": "FPL news.json (no flag); WEB confirms ever-present, no injury",
+      "confidence": "high"
+    },
+    {
+      "player": "Palestra",
+      "team": "CHE",
+      "pos": "DEF",
+      "role": "bench",
+      "status": "DOUBTFUL",
+      "chance_pct": 50,
+      "source": "FPL squad.json flag: 'Unspecified injury - 75% chance of playing'. WEB (27 Aug, Sports Mole/Goal/CaughtOffside/FFS): Xabi Alonso confirmed Palestra missed the Luton EFL Cup tie with a fitness setback and 'will require further assessment' before his availability for Brighton is determined; not included in GW2 predicted Chelsea XI.",
+      "confidence": "medium",
+      "note": "UPGRADE FROM FPL FLAG: news suggests genuine uncertainty, likely below the 75% FPL currently shows - treat as a coinflip doubt, not a near-certain starter/returner. Low fantasy relevance as bench-only fringe defender."
     },
     {
       "player": "Awoniyi",
       "team": "COV",
+      "pos": "FWD",
       "role": "bench",
-      "status": "fit",
+      "status": "AVAILABLE",
       "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "Fresh transfer from Nottingham Forest to newly-promoted Coventry (Aug 2026); recovered from serious 2025 abdominal surgery, no current injury reported. https://www.ccfc.co.uk/news/2026/august/17/coventry-city-sign-taiwo-awoniyi-from-nottingham-forest/"
+      "source": "FPL news.json (no flag); WEB confirms fit, expected available (Wright is Coventry's injured forward, not Awoniyi)",
+      "confidence": "high"
     },
     {
       "player": "van Ewijk",
       "team": "COV",
+      "pos": "DEF",
       "role": "bench",
-      "status": "fit",
+      "status": "AVAILABLE",
       "chance_pct": 100,
-      "expected_return_gw": null,
-      "fpl_flag": "AVAILABLE",
-      "source": "No injury news found; FPL lists AVAILABLE. Low relevance (bench fodder)."
+      "source": "FPL news.json (no flag); WEB confirms regular starter, no injury",
+      "confidence": "high"
     }
-  ]
+  ],
+  "summary": {
+    "doubts": 1,
+    "confirmed_out": 0,
+    "confirmed_suspended": 0,
+    "flagged_players": ["Palestra"],
+    "new_watch_items_not_in_fpl_flags": ["Gabriel (ARS) - GW1 knock, no formal flag issued yet"]
+  }
 }
