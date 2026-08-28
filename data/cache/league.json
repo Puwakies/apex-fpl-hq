@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-21T00:45:02.509Z",
+  "updated": "2026-08-28T02:32:05.041Z",
   "context": {
     "GW": 1,
-    "My Rank": "?",
-    "League Leader": "? (0pts)",
+    "My Rank": 17,
+    "League Leader": "Looksua (92pts)",
     "Top Differentials": "",
-    "Template Players": "",
-    "Total Managers": 0,
-    "My Total Pts": 0,
-    "League Leader Pts": 0,
-    "Gap To Leader": 0,
-    "Am I Leading": "YES"
+    "Template Players": "João Pedro",
+    "Total Managers": 17,
+    "My Total Pts": 37,
+    "League Leader Pts": 92,
+    "Gap To Leader": 55,
+    "Am I Leading": "NO"
   },
   "differentials": [],
   "template": []
