@@ -1,22 +1,57 @@
 {
-  "gw": 1,
-  "generated_at": "2026-08-21T00:00:00Z",
-  "data_sources": {
-    "price_json": "data/cache/price.json — updated 2026-08-21T00:45:05.180Z, likely_rises: [], likely_falls: []",
-    "features_json": "data/features.json — generated_at 2026-07-23T12:40:00 (pre-season snapshot, target_gw 1)"
+  "gw": 2,
+  "deadline_utc": "2026-08-28T17:30:00Z",
+  "updated": "2026-08-28T02:32:06.738Z",
+  "source": "data/cache/price.json net_transfers/net_rate (price.json was NOT empty - populated with rise/fall candidates)",
+  "squad_at_risk": {
+    "likely_rises": [],
+    "likely_falls": [],
+    "note": "None of the 15 squad players (Lammens, Kerkez, Hume, Gabriel, B.Fernandes, Mbeumo, Semenyo, E.Le Fée, Rogers, Thiago, João Pedro, Rushworth, Palestra, Awoniyi, van Ewijk) appear in cache likely_rises/likely_falls lists. No squad player flagged for a price change tonight."
   },
-  "data_note": "Sampled features.json across GK/DEF entries early, mid, and late in the file (including high-profile players like Virgil van Dijk) — net_transfers, cost_change_event, and selected_by_pct are 0 for every player checked. This is expected at GW1: the season has not kicked off yet, so no live gameweek transfer activity has accumulated and the FPL price-change algorithm has nothing to act on. price.json (the live Apps Script cache) independently confirms zero active movers. No transfer-velocity signal currently exists to differentiate players.",
-  "likely_rises": [],
-  "likely_falls": [],
-  "act_now": [],
-  "monitor": [
-    { "player": "B.Fernandes", "role": "Captain, squad", "reason": "Premium captain pick — price-sensitive if it moves once season transfer data populates; check price.json again closer to GW1 deadline." },
-    { "player": "Gabriel", "role": "Vice-captain, squad", "reason": "High-price defender, popular; watch for early-season rise once real transfer counts start." },
-    { "player": "Semenyo", "role": "Squad", "reason": "Rising ownership candidate pre-season narrative; no transfer data yet to confirm." },
-    { "player": "Mbeumo", "role": "Squad", "reason": "New MUN signing hype; monitor for early rise once transfers register." },
-    { "player": "Thiago", "role": "Squad FWD", "reason": "Budget enabler; monitor for fall risk if ownership shifts to alternatives." },
-    { "player": "João Pedro", "role": "Squad FWD", "reason": "CHE forward, price could move on pre-deadline hype; no signal yet." },
-    { "player": "Frimpong", "role": "Squad DEF", "reason": "LIV nailed pick; monitor once real transfer velocity data is available." }
+  "gemini_transfer_target": {
+    "player": "Mendy",
+    "team": "HUL",
+    "pos": "DEF",
+    "price": 4.0,
+    "net_transfers": 115894,
+    "net_rate": 34.086,
+    "price_change_so_far": 0,
+    "confidence": "medium",
+    "assessment": "Mendy sits mid-pack (#8) in the likely_rises list with a positive but not extreme net_rate. Price has not yet ticked up today. Real risk of a 0.1 rise tonight but not imminent/certain like top-tier candidates (De Cuyper, Janelt, King, Hinshelwood already at higher net_rate, with De Cuyper/M.Sangaré/Kayode having already moved +0.1 today)."
+  },
+  "likely_rises": [
+    { "player": "De Cuyper", "team": "BHA", "net_transfers": 404601, "net_rate": 53.947, "confidence": "high", "price_change_so_far": 0.1 },
+    { "player": "Janelt", "team": "BRE", "net_transfers": 21166, "net_rate": 52.915, "confidence": "high", "price_change_so_far": 0 },
+    { "player": "King", "team": "FUL", "net_transfers": 23773, "net_rate": 47.546, "confidence": "high", "price_change_so_far": 0 },
+    { "player": "Hinshelwood", "team": "BHA", "net_transfers": 117223, "net_rate": 45.086, "confidence": "high", "price_change_so_far": 0 },
+    { "player": "M.Sangaré", "team": "BRE", "net_transfers": 341616, "net_rate": 42.702, "confidence": "high", "price_change_so_far": 0.1 },
+    { "player": "Armstrong", "team": "EVE", "net_transfers": 7868, "net_rate": 39.34, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Kayode", "team": "BRE", "net_transfers": 253250, "net_rate": 35.174, "confidence": "medium", "price_change_so_far": 0.1 },
+    { "player": "Mendy", "team": "HUL", "net_transfers": 115894, "net_rate": 34.086, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Elanga", "team": "NEW", "net_transfers": 64422, "net_rate": 33.906, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Bijol", "team": "LEE", "net_transfers": 29995, "net_rate": 33.328, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Lewis-Potter", "team": "BRE", "net_transfers": 33026, "net_rate": 33.026, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Angulo", "team": "SUN", "net_transfers": 3202, "net_rate": 32.02, "confidence": "medium", "price_change_so_far": 0 }
   ],
-  "recommendation": "No price-chasing action required tonight. GW1 has not generated any transfer velocity in either the live price cache (data/cache/price.json) or the features snapshot (data/features.json) — every sampled player shows net_transfers=0 and cost_change_event=0.0. This is a data-availability limitation of pre-season, not a signal of stability. Re-run this check closer to the actual GW1 deadline once real-time FPL transfer counts populate, since that is when genuine rise/fall momentum will first appear this season. Until then, hold squad as-is; no emergency transfer is price-justified."
+  "likely_falls": [
+    { "player": "Gibbs-White", "team": "NFO", "net_transfers": -221089, "net_rate": -25.124, "confidence": "high", "price_change_so_far": 0 },
+    { "player": "Maddison", "team": "TOT", "net_transfers": -24744, "net_rate": -22.495, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Hincapie", "team": "ARS", "net_transfers": -32155, "net_rate": -21.437, "confidence": "medium", "price_change_so_far": -0.1 },
+    { "player": "Anderson", "team": "MCI", "net_transfers": -131309, "net_rate": -21.179, "confidence": "medium", "price_change_so_far": -0.1 },
+    { "player": "Madueke", "team": "ARS", "net_transfers": -5797, "net_rate": -19.323, "confidence": "medium", "price_change_so_far": -0.1 },
+    { "player": "Merino", "team": "ARS", "net_transfers": -11493, "net_rate": -19.155, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Eze", "team": "ARS", "net_transfers": -32880, "net_rate": -18.267, "confidence": "medium", "price_change_so_far": 0 },
+    { "player": "Dorgu", "team": "MUN", "net_transfers": -19490, "net_rate": -17.718, "confidence": "low", "price_change_so_far": 0 },
+    { "player": "Zubimendi", "team": "ARS", "net_transfers": -16071, "net_rate": -16.071, "confidence": "low", "price_change_so_far": 0 },
+    { "player": "Gomes", "team": "AVL", "net_transfers": -1563, "net_rate": -15.63, "confidence": "low", "price_change_so_far": 0 },
+    { "player": "Okafor", "team": "LEE", "net_transfers": -5954, "net_rate": -14.885, "confidence": "low", "price_change_so_far": 0 },
+    { "player": "Fernandes", "team": "TOT", "net_transfers": -22626, "net_rate": -13.309, "confidence": "low", "price_change_so_far": 0 }
+  ],
+  "act_now": [
+    { "player": "Janelt", "reason": "high net_rate, price_change still 0 - rise imminent tonight", "confidence": "high" },
+    { "player": "King", "reason": "high net_rate, price_change still 0 - rise imminent tonight", "confidence": "high" },
+    { "player": "Hinshelwood", "reason": "high net_rate, price_change still 0 - rise imminent tonight", "confidence": "high" },
+    { "player": "Mendy", "reason": "Gemini's suggested transfer target; medium net_rate, not yet risen - worth bringing in tonight before deadline rather than waiting, but not a top-tier lock like De Cuyper/Janelt", "confidence": "medium" },
+    { "player": "Gibbs-White", "reason": "largest negative net_rate not yet reflected in price - fall imminent", "confidence": "high" }
+  ]
 }
