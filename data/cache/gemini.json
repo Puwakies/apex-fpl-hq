@@ -1,34 +1,34 @@
 {
-  "updated": "2026-08-21T00:45:06.246Z",
+  "updated": "2026-08-28T02:32:07.581Z",
   "engine": "gemini",
-  "gw": 1,
-  "captain": "B.Fernandes",
-  "captain_xpts": 9.13,
-  "vice_captain": "Gabriel",
+  "gw": 2,
+  "captain": "Mendy",
+  "captain_xpts": 16.42,
+  "vice_captain": "Rogers",
   "starting_xi": [
     "Lammens",
+    "Mendy",
     "Gabriel",
+    "Kerkez",
     "Hume",
-    "Calafiori",
-    "B.Fernandes",
-    "Semenyo",
-    "Mbeumo",
     "Rogers",
-    "Thiago",
+    "B.Fernandes",
+    "Mbeumo",
+    "Semenyo",
     "João Pedro",
-    "Awoniyi"
+    "Thiago"
   ],
   "bench": [
     "Rushworth",
-    "Frimpong",
     "van Ewijk",
-    "E.Le Fée"
+    "E.Le Fée",
+    "Awoniyi"
   ],
-  "transfer_out": null,
-  "transfer_in": null,
-  "transfer_reason": "Roll free transfer for GW1 flexibility",
+  "transfer_out": "Palestra",
+  "transfer_in": "Mendy",
+  "transfer_reason": "Replace doubtful player with high xPts defender Mendy",
   "chip": null,
-  "projected_xpts": 49.44,
+  "projected_xpts": 45.34,
   "confidence": "medium",
-  "key_risk": "Several players lack historical Premier League xPts data"
+  "key_risk": "Multiple players in squad lack xPts data"
 }
