@@ -1,244 +1,31 @@
 {
-  "gw": 1,
-  "generated": "2026-08-21",
-  "window": "GW1-GW5",
-  "methodology": "Source: data/features.json fdr block per player (fdr_avg, dgw, next[] GW1-5). fdr_avg already applies an away-fixture penalty (+0.3 per away leg) baked into the weighted average, verified by manual recomputation matching the stored fdr_avg exactly for all 8 squad clubs. Lower fdr_avg = easier run. Ranked all 15 real-squad players' clubs (LIV, MCI, MUN, BRE, CHE, ARS, SUN, COV) by weighted next-5 fdr_avg.",
-  "squad_fixture_ranking": [
-    {
-      "name": "Frimpong",
-      "team": "LIV",
-      "position": "DEF",
-      "is_starting": true,
-      "fdr_avg": 2.78,
-      "rank": 1,
-      "next5": ["GW1 A(3)", "GW2 H(3)", "GW3 A(2)", "GW4 H(2)", "GW5 A(3)"],
-      "note": "Easiest run in the squad. Liverpool defense/attack both benefit — best single-club fixture swing for transfer-in consideration."
-    },
-    {
-      "name": "Semenyo",
-      "team": "MCI",
-      "position": "MID",
-      "is_starting": true,
-      "fdr_avg": 2.92,
-      "rank": 2,
-      "next5": ["GW1 H(3)", "GW2 A(3)", "GW3 H(2)", "GW4 A(4)", "GW5 H(2)"],
-      "note": "Strong run apart from a tough GW4 away trip. Home GW3/GW5 (fdr 2) are the standout return windows."
-    },
-    {
-      "name": "Lammens",
-      "team": "MUN",
-      "position": "GK",
-      "is_starting": true,
-      "fdr_avg": 2.98,
-      "rank": 3,
-      "next5": ["GW1 A(2)", "GW2 H(2)", "GW3 A(3)", "GW4 H(4)", "GW5 A(3)"],
-      "note": "MUN cluster (Lammens/Fernandes/Mbeumo) — soft opening two GWs, toughens from GW4."
-    },
-    {
-      "name": "B.Fernandes",
-      "team": "MUN",
-      "position": "MID",
-      "is_starting": true,
-      "is_captain": true,
-      "fdr_avg": 2.98,
-      "rank": 3,
-      "next5": ["GW1 A(2)", "GW2 H(2)", "GW3 A(3)", "GW4 H(4)", "GW5 A(3)"],
-      "note": "Captain. Favourable GW1-GW2 fixtures support the armband; GW4 home vs tougher opposition (fdr 4) is the one flag in the run."
-    },
-    {
-      "name": "Mbeumo",
-      "team": "MUN",
-      "position": "MID",
-      "is_starting": true,
-      "fdr_avg": 2.98,
-      "rank": 3,
-      "next5": ["GW1 A(2)", "GW2 H(2)", "GW3 A(3)", "GW4 H(4)", "GW5 A(3)"],
-      "note": "Same MUN run as Fernandes — early-season attacking window."
-    },
-    {
-      "name": "Thiago",
-      "team": "BRE",
-      "position": "FWD",
-      "is_starting": true,
-      "fdr_avg": 3.12,
-      "rank": 6,
-      "next5": ["GW1 H(3)", "GW2 A(3)", "GW3 H(2)", "GW4 A(3)", "GW5 H(4)"],
-      "note": "Middling run; GW3 home (fdr 2) is the pick of it, GW5 home turns hard (fdr 4)."
-    },
-    {
-      "name": "Rogers",
-      "team": "CHE",
-      "position": "MID",
-      "is_starting": true,
-      "fdr_avg": 3.18,
-      "rank": 7,
-      "next5": ["GW1 A(3)", "GW2 H(2)", "GW3 A(5)", "GW4 H(2)", "GW5 A(3)"],
-      "note": "Volatile run — two very soft home fixtures (fdr 2) bookended by a brutal GW3 away (fdr 5)."
-    },
-    {
-      "name": "João Pedro",
-      "team": "CHE",
-      "position": "FWD",
-      "is_starting": true,
-      "fdr_avg": 3.18,
-      "rank": 7,
-      "next5": ["GW1 A(3)", "GW2 H(2)", "GW3 A(5)", "GW4 H(2)", "GW5 A(3)"],
-      "note": "Same CHE swing as Rogers — target the GW2/GW4 home fixtures, expect a blank-risk dip GW3."
-    },
-    {
-      "name": "Gabriel",
-      "team": "ARS",
-      "position": "DEF",
-      "is_starting": true,
-      "is_vice_captain": true,
-      "fdr_avg": 3.38,
-      "rank": 9,
-      "next5": ["GW1 H(2)", "GW2 A(4)", "GW3 H(4)", "GW4 A(3)", "GW5 A(3)"],
-      "note": "Good GW1 opener only — GW2/GW3 are tough (fdr 4 each). Note: Saliba AND J.Timber both confirmed OUT (news.json) — reduces rotation risk for Gabriel/Calafiori as ARS's only fit senior CBs, offsetting the harder fixtures somewhat."
-    },
-    {
-      "name": "Calafiori",
-      "team": "ARS",
-      "position": "DEF",
-      "is_starting": true,
-      "fdr_avg": 3.38,
-      "rank": 9,
-      "next5": ["GW1 H(2)", "GW2 A(4)", "GW3 H(4)", "GW4 A(3)", "GW5 A(3)"],
-      "note": "Same ARS run as Gabriel. Nailed minutes near-certain given Saliba/Timber both out."
-    },
-    {
-      "name": "E.Le Fée",
-      "team": "SUN",
-      "position": "MID",
-      "is_starting": true,
-      "fdr_avg": 3.38,
-      "rank": 9,
-      "next5": ["GW1 A(2)", "GW2 H(2)", "GW3 A(3)", "GW4 H(4)", "GW5 A(5)"],
-      "note": "Soft opening two GWs then escalates sharply — GW5 away is the joint-hardest single fixture (fdr 5) in the whole squad run."
-    },
-    {
-      "name": "Hume",
-      "team": "SUN",
-      "position": "DEF",
-      "is_starting": false,
-      "is_bench": true,
-      "fdr_avg": 3.38,
-      "rank": 9,
-      "next5": ["GW1 A(2)", "GW2 H(2)", "GW3 A(3)", "GW4 H(4)", "GW5 A(5)"],
-      "note": "Bench DEF, same SUN run as Le Fée."
-    },
-    {
-      "name": "Rushworth",
-      "team": "COV",
-      "position": "GK",
-      "is_starting": false,
-      "is_bench": true,
-      "fdr_avg": 3.58,
-      "rank": 13,
-      "next5": ["GW1 A(5)", "GW2 H(2)", "GW3 A(5)", "GW4 H(2)", "GW5 A(3)"],
-      "note": "Bench GK. Hardest run in the squad — two away fdr-5 fixtures (GW1, GW3)."
-    },
-    {
-      "name": "Awoniyi",
-      "team": "COV",
-      "position": "FWD",
-      "is_starting": false,
-      "is_bench": true,
-      "fdr_avg": 3.58,
-      "rank": 13,
-      "next5": ["GW1 A(5)", "GW2 H(2)", "GW3 A(5)", "GW4 H(2)", "GW5 A(3)"],
-      "note": "Bench FWD, same brutal COV run — avoid captaining/starting until GW2/GW4 home fixtures."
-    },
-    {
-      "name": "van Ewijk",
-      "team": "COV",
-      "position": "DEF",
-      "is_starting": false,
-      "is_bench": true,
-      "fdr_avg": 3.58,
-      "rank": 13,
-      "note": "Bench DEF, same COV run — worst defensive fixture cluster in the squad."
-    }
+  "gw": 2,
+  "window": "GW2-GW6",
+  "data_note": "Cache files (squad.json, xpts.json, gemini.json) only expose a single snapshot 'fdr' rating per player/club, not a next-5 GW array or explicit dgw/bgw booleans. Rankings below are built from that snapshot (lower = easier) and cross-checked for missing/blank-fixture risk by absence from the xpts.json player pool.",
+  "squad_club_fdr": [
+    { "team": "CHE", "fdr": 2, "players": ["Rogers", "João Pedro", "Palestra"] },
+    { "team": "MUN", "fdr": 2, "players": ["Lammens", "B.Fernandes", "Mbeumo"] },
+    { "team": "SUN", "fdr": 2, "players": ["Hume", "E.Le Fée"] },
+    { "team": "LIV", "fdr": 3, "players": ["Kerkez"] },
+    { "team": "MCI", "fdr": 3, "players": ["Semenyo"] },
+    { "team": "BRE", "fdr": 3, "players": ["Thiago"] },
+    { "team": "ARS", "fdr": 4, "players": ["Gabriel"] },
+    { "team": "COV", "fdr": null, "players": ["Rushworth", "Awoniyi", "van Ewijk"], "flag": "no xpts/fdr entry found in cache - data gap, treat as blank-gameweek/rotation risk, all bench-only already" }
   ],
   "best_runs": [
-    {
-      "team": "LIV",
-      "fdr_avg": 2.78,
-      "window": "GW1-5 (A3/H3/A2/H2/A3)",
-      "squad_assets": ["Frimpong (DEF - starting)"],
-      "reason": "Easiest weighted run of any squad club. Two fdr-2 fixtures (GW3 A, GW4 H) support both clean-sheet and attacking-return upside."
-    },
-    {
-      "team": "MCI",
-      "fdr_avg": 2.92,
-      "window": "GW1-5 (H3/A3/H2/A4/H2)",
-      "squad_assets": ["Semenyo (MID - starting)"],
-      "reason": "Two soft home fixtures (fdr 2, GW3/GW5) frame a single tough away (GW4, fdr 4). Strong differential/captaincy pool on the home weeks."
-    },
-    {
-      "team": "MUN",
-      "fdr_avg": 2.98,
-      "window": "GW1-5 (A2/H2/A3/H4/A3)",
-      "squad_assets": ["Lammens (GK - starting)", "B.Fernandes (MID - captain)", "Mbeumo (MID - starting)"],
-      "reason": "Best fixture cluster by squad-asset count — three starters including the captain. Soft opening double (fdr 2/2) backs the early-season armband choice; only GW4 home (fdr 4) is a concern."
-    }
+    { "team": "CHE", "fdr_avg": 2, "window": "GW2-GW6", "note": "easiest tier tied with MUN/SUN" },
+    { "team": "MUN", "fdr_avg": 2, "window": "GW2-GW6" },
+    { "team": "SUN", "fdr_avg": 2, "window": "GW2-GW6" }
   ],
   "worst_runs": [
-    {
-      "team": "COV",
-      "fdr_avg": 3.58,
-      "window": "GW1-5 (A5/H2/A5/H2/A3)",
-      "squad_assets": ["Rushworth (GK - bench)", "Awoniyi (FWD - bench)", "van Ewijk (DEF - bench)"],
-      "reason": "Hardest run in the squad — two away fdr-5 fixtures (GW1, GW3). All three assets are bench-only so limited live impact, but avoid using FH/bringing any COV player into the XI before GW2/GW4."
-    },
-    {
-      "team": "ARS",
-      "fdr_avg": 3.38,
-      "window": "GW1-5 (H2/A4/H4/A3/A3)",
-      "squad_assets": ["Gabriel (DEF - VC, starting)", "Calafiori (DEF - starting)"],
-      "reason": "Only GW1 is soft; GW2 and GW3 both carry fdr 4. Partially offset by Saliba + J.Timber both confirmed OUT (news.json), which locks in nailed minutes for Gabriel/Calafiori despite the harder fixtures."
-    },
-    {
-      "team": "SUN",
-      "fdr_avg": 3.38,
-      "window": "GW1-5 (A2/H2/A3/H4/A5)",
-      "squad_assets": ["E.Le Fée (MID - starting)", "Hume (DEF - bench)"],
-      "reason": "Tied-worst fdr_avg with ARS. Backloaded difficulty — GW5 away is the single hardest fixture (fdr 5) anywhere in the squad run. CHE (fdr_avg 3.18) is close behind and worth monitoring too given its GW3 fdr-5 spike."
-    }
+    { "team": "ARS", "fdr_avg": 4, "window": "GW2-GW6", "note": "hardest tier of squad clubs - Gabriel starter exposed" }
   ],
-  "dgw_alerts": [
-    {
-      "alert": "No DGW in next 5 GWs",
-      "detail": "dgw:false confirmed in features.json for every squad club (ARS, BRE, CHE, COV, LIV, MCI, MUN, SUN) across GW1-5. No double-gameweek TC/BB planning trigger yet this early in the season."
-    }
-  ],
+  "dgw_alerts": [],
   "bgw_alerts": [
-    {
-      "alert": "No BGW in next 5 GWs",
-      "detail": "n_fixtures:5 confirmed for all 8 squad clubs — every club has exactly one fixture in each of GW1-5. Zero blank risk detected in the current data window."
-    }
+    { "team": "COV", "note": "no fixture/fdr data found for Rushworth, Awoniyi, van Ewijk in xpts.json - possible blank/unlisted fixture, but all three are bench-only so limited xPts impact" }
   ],
-  "rotation_risks": [
-    {
-      "player": "Gabriel / Calafiori",
-      "team": "ARS",
-      "risk_level": "LOW",
-      "reason": "Both ARS starting CBs, but Saliba and J.Timber are confirmed OUT (news.json, status INJURED, chance 0%) — reduces rotation risk despite the tougher GW2/GW3 fixtures."
-    }
-  ],
-  "injury_flags": [
-    {
-      "player": "Saliba",
-      "team": "ARS",
-      "status": "INJURED",
-      "impact": "Back injury, unknown return — not in the real squad but thins ARS CB depth, benefiting Gabriel/Calafiori's minutes security."
-    },
-    {
-      "player": "J.Timber",
-      "team": "ARS",
-      "status": "INJURED",
-      "impact": "Groin injury, unknown return — same effect, further secures Gabriel/Calafiori starts."
-    }
-  ],
-  "summary": "GW1 (next-5 window GW1-GW5). Easiest weighted runs: LIV (Frimpong, fdr_avg 2.78), MCI (Semenyo, 2.92), MUN (Lammens/B.Fernandes-captain/Mbeumo, 2.98). Hardest: COV (bench-only assets, 3.58), ARS (Gabriel VC/Calafiori, 3.38, cushioned by Saliba+Timber both out), SUN (E.Le Fée/Hume, 3.38, backloaded to a brutal GW5 away fdr-5). No DGW and no BGW flagged for any squad club across GW1-5."
+  "transfer_targets": {
+    "transfer_in": { "name": "Mendy", "team": "HUL", "fdr": 2, "note": "easiest fixture tier, supports Gemini's suggestion on fixtures + xPts (16.42)" },
+    "transfer_out": { "name": "Palestra", "team": "CHE", "fdr": 2, "note": "CHE fixtures are actually easy - reason for transfer out is injury doubt (75% chance of playing), not fixture difficulty" }
+  }
 }
