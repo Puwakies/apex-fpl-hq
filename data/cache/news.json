@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T00:45:03.974Z",
+  "updated": "2026-08-28T02:32:05.903Z",
   "items": [
     {
       "player": "J.Timber",
@@ -35,15 +35,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Gomes",
-      "team": "AVL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Calf injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -97,7 +88,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Groin injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -128,12 +119,12 @@
       "signal": "out"
     },
     {
-      "player": "Baleba",
+      "player": "Tzimas",
       "team": "BHA",
-      "pos": "MID",
+      "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
-      "news": "Ankle injury - Expected back 23 Aug",
+      "news": "Knee injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -146,6 +137,24 @@
       "signal": "out"
     },
     {
+      "player": "Kesler-Hayden",
+      "team": "COV",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Woolfenden",
+      "team": "COV",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
       "player": "Wright",
       "team": "COV",
       "pos": "FWD",
@@ -155,12 +164,30 @@
       "signal": "out"
     },
     {
-      "player": "Garner",
-      "team": "EVE",
+      "player": "Chadi Riad",
+      "team": "CRY",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Sarr",
+      "team": "CRY",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
       "news": "Groin injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Nørgaard",
+      "team": "EVE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -169,7 +196,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Groin injury - Unknown return date",
+      "news": "Thigh injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -200,12 +227,12 @@
       "signal": "out"
     },
     {
-      "player": "Drameh",
+      "player": "Jacob",
       "team": "HUL",
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 29 Aug",
+      "news": "Hip injury - Expected back 5 Sep",
       "signal": "out"
     },
     {
@@ -260,6 +287,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Philogene",
+      "team": "IPS",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -323,42 +359,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Leoni",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Bajcetic",
-      "team": "LIV",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 23 Aug",
-      "signal": "out"
-    },
-    {
-      "player": "Ekitiké",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Achilles injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Danns",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
       "signal": "out"
     }
   ]
