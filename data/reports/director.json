@@ -1,29 +1,33 @@
 {
-  "gw": 1,
-  "generated": "2026-08-21",
+  "gw": 2,
+  "generated": "2026-08-28",
   "season": "2026/27",
   "agent": "the-director",
-  "scoring_note": "All three plans re-scored on one common basis from data/cache/xpts.json: sum(starting XI xpts) + captain counted twice. Players with no xpts row (Frimpong, Rushworth, van Ewijk) score 0. Gemini's self-reported 49.44 is NOT on this basis (it appears to single-count the captain and to miss rows); its normalised score on the common basis is 66.62 and that is the number used for ranking.",
+  "deadline_utc": "2026-08-28T17:30:00Z",
+  "scoring_note": "TWO bases are reported this week because data/cache/xpts.json is confirmed miscalibrated at GW2 (sim-lab + intel + the-rival all flag it independently). RAW basis = sum(starting XI xpts from xpts.json) + captain counted twice; players with no row score 0 — on this basis only 3 of YOUR 11 starters even have a row (Gabriel 5.76, Rogers 6.74, Joao Pedro 5.53) and B.Fernandes has NO row at all, so RAW scores 18.03 and is meaningless. PRIMARY basis used for ranking = sim-lab Monte Carlo mc_ev, which covers all 15 squad players and is the basis CLAUDE already reports. Gemini's self-reported 45.34 is on the raw xpts basis and is NOT comparable; its normalised mc_ev score is ~50.43 (Mendy carries no cumulative record at all, so he is assigned a conservative 2.5 proxy for a 4.0m promoted-side defender rather than the artifact 16.42).",
+  "basis": "sim-lab mc_ev (Monte Carlo EV), captain x2",
+
   "you": {
-    "projected_xpts": 66.3,
+    "projected_xpts": 55.7,
+    "projected_xpts_raw_xpts_basis": 18.03,
     "captain": "B.Fernandes",
     "vice": "Gabriel",
     "starting_xi": [
       "Lammens",
-      "Frimpong",
+      "Kerkez",
+      "Hume",
       "Gabriel",
-      "Calafiori",
-      "Semenyo",
-      "E.Le Fée",
       "B.Fernandes",
       "Mbeumo",
+      "Semenyo",
+      "E.Le Fée",
       "Rogers",
       "Thiago",
       "João Pedro"
     ],
     "bench": [
       "Rushworth",
-      "Hume",
+      "Palestra",
       "Awoniyi",
       "van Ewijk"
     ],
@@ -31,147 +35,153 @@
     "transfer_in": null,
     "transfer_out": null,
     "chip": null,
-    "note": "Real squad as it stands. Starts Frimpong, who medical-bay has CONFIRMED OUT (hamstring, expected_return_gw 5) — the cache AVAILABLE flag is stale. That slot is a guaranteed 0 and there is no autosub cover for it in a bench of three sub-1%-owned Coventry assets."
+    "note": "Real squad, no transfer made yet, 1 FT available, bank 0.0. YOUR starting XI and captain are IDENTICAL to CLAUDE's recommendation — same 11 names, same armband, same vice. The only difference anywhere in the plan is bench ORDER: you have Palestra as first outfield sub, Claude has him last. Captain B.Fernandes is the season cum_pts leader (235) and therefore already satisfies the LOCKED APEX captaincy protocol — sim-lab's current_captain_check returns matches_protocol: true, no change required."
   },
+
   "gemini": {
-    "projected_xpts": 66.62,
-    "projected_xpts_self_reported": 49.44,
-    "captain": "B.Fernandes",
-    "vice": "Gabriel",
+    "projected_xpts": 50.43,
+    "projected_xpts_self_reported": 45.34,
+    "projected_xpts_raw_xpts_basis": 50.87,
+    "captain": "Mendy",
+    "vice": "Rogers",
     "starting_xi": [
       "Lammens",
+      "Mendy",
       "Gabriel",
+      "Kerkez",
       "Hume",
-      "Calafiori",
-      "B.Fernandes",
-      "Semenyo",
-      "Mbeumo",
       "Rogers",
-      "Thiago",
+      "B.Fernandes",
+      "Mbeumo",
+      "Semenyo",
       "João Pedro",
-      "Awoniyi"
+      "Thiago"
     ],
     "bench": [
       "Rushworth",
-      "Frimpong",
       "van Ewijk",
-      "E.Le Fée"
+      "E.Le Fée",
+      "Awoniyi"
     ],
-    "formation": "3-4-3",
-    "transfer_in": null,
-    "transfer_out": null,
+    "formation": "3-5-2",
+    "transfer_in": "Mendy",
+    "transfer_out": "Palestra",
+    "hits": 0,
     "chip": null,
     "confidence": "medium",
-    "key_risk": "Several players lack historical Premier League xPts data",
-    "note": "Gemini DOES bench Frimpong, so it partly handles the injury — but it holds him in the squad and rolls the free transfer, parking 5.5m of dead value for ~4 GWs. It then fills the vacated slot by starting Awoniyi (xPts 0.32, away at FDR 5, news-desk has him outside Coventry's predicted front three) and benching E.Le Fée (xPts 5.28, nailed, FDR 2). That single swap is the biggest engine gap this week."
+    "key_risk": "Multiple players in squad lack xPts data",
+    "note": "REJECTED PLAN. Gemini is driven entirely by xpts.json, which has no row for B.Fernandes at all — so it could not even consider the squad's actual captain. It then captains Mendy: a 4.0m HUL defender who (a) is not owned and only enters via the proposed transfer, (b) is absent from all 555 players in features.json so has ZERO cumulative-season record, (c) is not a nailed premium, and (d) whose 16.42 xPts projects above Haaland (6.43) and every premium in the pool. sim-lab rules him eligible_under_locked_protocol: FALSE. intel rates captaining him a CRITICAL blowup risk at ~0% EO — it fades an ~80 EO B.Fernandes AND an ~111 EO Haaland simultaneously with no real-world signal. Gemini additionally benches E.Le Fée (mc_ev 4.00, nailed, intel's ~4% EO owned differential with a partial pen role) to fit Mendy in, a second self-inflicted loss."
   },
+
   "claude": {
-    "projected_xpts": 72.96,
+    "projected_xpts": 55.7,
     "captain": "B.Fernandes",
     "vice": "Gabriel",
     "starting_xi": [
       "Lammens",
+      "Kerkez",
+      "Hume",
       "Gabriel",
-      "N.Williams",
-      "Calafiori",
       "B.Fernandes",
+      "Mbeumo",
       "Semenyo",
       "E.Le Fée",
       "Rogers",
-      "Mbeumo",
       "Thiago",
       "João Pedro"
     ],
     "bench": [
       "Rushworth",
-      "Hume",
       "van Ewijk",
-      "Awoniyi"
+      "Awoniyi",
+      "Palestra"
     ],
     "formation": "3-5-2",
-    "transfer_in": "N.Williams",
-    "transfer_out": "Frimpong",
+    "transfer_in": null,
+    "transfer_out": null,
     "hits": 0,
-    "bank_after": 0.5,
+    "transfer_action": "ROLL FT to GW3 (2 FTs)",
     "chip": null,
     "chip_action": "SAVE",
-    "note": "Resolves the injury with the free transfer instead of absorbing it. N.Williams (NFO, 5.0m, xPts 6.66, FDR 2) walks straight into the XI, banks 0.5m toward the GW2/GW3 Haaland re-evaluation, and restores a bench with real autosub cover. Also benches Hume under Rule (A) for news-desk positional ambiguity and drops Awoniyi to bench 3."
+    "note": "Holds the XI, keeps B.Fernandes (C) / Gabriel (VC), rolls the free transfer, saves all chips. Explicitly rejects Palestra->Mendy: burning the only FT on a like-for-like BENCH defender buys ~0 xPts, and the projection driving it is a confirmed model artifact. Rolling gives 2 FTs in GW3 to attack the real structural problem (no Haaland, ~111 EO) with genuine 26/27 minutes data instead of a preseason-corrupted cache. market-desk confirms zero price pressure on any squad player, so waiting is free. Only delta vs YOUR live team is bench order: Palestra demoted to sub 4 because medical-bay downgrades him from FPL's 75% to a ~50/50."
   },
+
   "consensus": {
-    "captain_agree": true,
+    "captain_agree": false,
     "transfer_agree": false,
     "chip_agree": true,
-    "conviction": "HIGH",
-    "captain_detail": "Unanimous three-way on B.Fernandes (C) / Gabriel (VC). YOU, Gemini and Claude all land on it, and it is independently confirmed by sim-lab (cap_score 6.86, MC EV captained 12.85, P(haul 10+) 0.326) and intel (captain_shield, EO ~63%, must_not_fade). Only the-rival captains Haaland — and the-rival owns him, we do not, so that is not a real disagreement about our squad.",
-    "transfer_detail": "REAL DISAGREEMENT. Gemini rolls the FT ('GW1 flexibility'); Claude spends it on Frimpong OUT -> N.Williams IN. medical-bay is unambiguous — Frimpong ruled out of GW1 (Newcastle) and GW2 (Arsenal), out until after the September break, expected_return_gw 5, with the FPL AVAILABLE flag marked stale. Rolling an FT is only correct when the squad is whole; ours is not.",
-    "chip_detail": "Unanimous: no chip. fixture-room has dgw:false and n_fixtures:5 for all 8 squad clubs across GW1-5, so no TC/BB/FH trigger, and only one rotation flag (vs the 3+ needed for WC). Protocol says save. Chips left: WC x2, BB, TC, FH.",
+    "conviction": "SPLIT",
+    "captain_detail": "REAL DISAGREEMENT — DO NOT PAPER OVER. Gemini says Mendy (C) / Rogers (VC). Claude says B.Fernandes (C) / Gabriel (VC), which is also YOUR current armband. This is not a stylistic split; it is a protocol violation on Gemini's side. CLAUDE.md locks captaincy to the season cum_pts leader among nailed premiums (never a GK, never a raw differential). B.Fernandes leads on cum_pts 235 / ppg 6.7 / cap_score 4.69 / mc_captain_ev 12.52. Mendy has NO cum_pts row whatsoever. sim-lab's gemini_pick_check returns eligible_under_locked_protocol: false on four separate grounds; intel returns REJECT at severity critical. The-rival (context only, not part of the 3-way) captains Haaland — but the-rival owns him and this squad does not, so that is not a live disagreement about our team. Score: 2 of 3 on B.Fernandes, and the third is out of protocol.",
+    "transfer_detail": "REAL DISAGREEMENT. Gemini spends the FT on Palestra OUT -> Mendy IN. Claude rolls the FT to GW3. Claude is right on both halves of the trade: Palestra is a bench-only 4th defender, so his doubt costs ~0 xPts and creates no forced action; and Mendy is only attractive because of a corrupted row. Note the two engines do NOT even disagree about Palestra being droppable — intel says 'replacing him is fine, the objection is to the specific replacement'. If you ever clear Palestra it must be as a cash-freeing swap to a nailed cheap defender, never as a captaincy play.",
+    "chip_detail": "UNANIMOUS: no chip, all four APEX gates unmet. fixture-room dgw_alerts is empty (no TC/BB trigger), no true BGW with 4+ starters blanking (no FH trigger), no starter rotation-flagged and no 3-GW rolling average exists yet (no WC trigger). 26/27 first-half chip set expires at the GW19 deadline, so 17 GWs of runway remain and the forcing rule does not apply until ~GW16. Chips left: WC x2, BB, TC, FH.",
     "lineup_agreement": {
       "all_three_start": [
         "Lammens",
+        "Kerkez",
+        "Hume",
         "Gabriel",
-        "Calafiori",
         "B.Fernandes",
-        "Semenyo",
         "Mbeumo",
+        "Semenyo",
         "Rogers",
         "Thiago",
         "João Pedro"
       ],
       "contested": [
         {
-          "player": "Frimpong",
-          "you": "START",
-          "gemini": "BENCH",
-          "claude": "TRANSFER OUT",
-          "resolution": "Both engines agree he must not start. Claude goes further and removes him. medical-bay confirms 0% chance of playing."
-        },
-        {
           "player": "E.Le Fée",
           "you": "START",
           "gemini": "BENCH",
           "claude": "START",
-          "resolution": "2-1 to START. xPts 5.28, start_prob 0.92, FDR 2, intel's #2 owned differential at ~5% EO. Gemini benching him is the weakest call of the week."
+          "resolution": "2-1 to START. mc_ev 4.00, nailed, news-desk has him as predicted starting AM vs Fulham (H), intel lists him as an already-owned ~4% EO differential with a partial pen role. Gemini only benches him to make room for Mendy. YOU and Claude agree — keep him in."
         },
         {
-          "player": "Awoniyi",
-          "you": "BENCH",
-          "gemini": "START",
-          "claude": "BENCH (order 3)",
-          "resolution": "2-1 to BENCH. xPts 0.32, away at FDR 5, not in Coventry's predicted front three. Swing vs E.Le Fée ~4.96 xPts."
-        },
-        {
-          "player": "Hume",
-          "you": "BENCH",
-          "gemini": "START",
-          "claude": "BENCH (order 1)",
-          "resolution": "2-1 to BENCH, but this one is close. Raw xPts 5.28 favours starting him; news-desk flags positional ambiguity (Meunier at RB, Hume possibly pushed wide), so his clean-sheet-weighted projection may be priced on a role he does not play. Low-stakes divergence (~1.4 xPts) — either choice is defensible."
-        },
-        {
-          "player": "N.Williams",
+          "player": "Mendy",
           "you": "not owned",
-          "gemini": "not owned",
-          "claude": "START (transfer in)",
-          "resolution": "Only Claude has him — but sim-lab/the-rival independently built him into the top10k squad and intel lists him as a target. Three of our own agents converge on the same 5.0m enabler."
+          "gemini": "START + CAPTAIN (transfer in)",
+          "claude": "do not buy",
+          "resolution": "1-2 REJECT. Zero cumulative record, ~0% EO, 4.0m defender, and the source projection is the single strongest symptom of the GW2 xPts miscalibration. Even the-rival, who DOES buy Hull cheap defenders for the fdr 2 fixture, explicitly refuses to captain him and caps HUL exposure at 2 for exactly this reason."
+        },
+        {
+          "player": "Palestra",
+          "you": "BENCH (sub 1)",
+          "gemini": "TRANSFER OUT",
+          "claude": "BENCH (sub 4)",
+          "resolution": "All three agree he does not start. The live-team fix is free: demote him to sub 4 so a ~50/50 doubt is never first in the autosub queue. This is the one place YOUR live team differs from the best plan."
+        },
+        {
+          "player": "van Ewijk",
+          "you": "BENCH (sub 4)",
+          "gemini": "BENCH (sub 1)",
+          "claude": "BENCH (sub 1)",
+          "resolution": "2-1 to promote. medical-bay 100%, news-desk has him a regular COV starter. He is the correct first outfield sub and the correct cover if Gabriel is ruled out."
         }
       ]
     }
   },
+
   "best_plan": "claude",
   "ranking": [
-    { "plan": "claude", "projected_xpts": 72.96, "gap_vs_you": 6.66 },
-    { "plan": "gemini", "projected_xpts": 66.62, "gap_vs_you": 0.32 },
-    { "plan": "you", "projected_xpts": 66.3, "gap_vs_you": 0 }
+    { "plan": "claude", "projected_xpts": 55.7, "gap_vs_you": 0.0 },
+    { "plan": "you", "projected_xpts": 55.7, "gap_vs_you": 0.0 },
+    { "plan": "gemini", "projected_xpts": 50.43, "gap_vs_you": -5.27 }
   ],
-  "verdict": "CLAUDE wins on a common scoring basis at 72.96 xPts, +6.66 over YOUR current team (66.30) and +6.34 over Gemini normalised (66.62). Your team does NOT already match the best plan — it needs a move. The engines agree on everything that is normally contentious (captain B.Fernandes, vice Gabriel, no chip, nine of eleven XI slots) which is why conviction is HIGH: this is not a week where the models are pulling in opposite directions on strategy. The entire gap is one operational fact — Frimpong is confirmed injured and your cache says AVAILABLE. YOU are currently starting a player who will score 0. Gemini catches half the problem (it benches him) but then rolls the transfer and, forced to fill the slot, starts Awoniyi (xPts 0.32, FDR 5 away, not in his club's predicted XI) over E.Le Fée (5.28, nailed, FDR 2) — a direct Consistency Rule (A) violation worth ~4.96 xPts. Claude fixes the whole problem: spends the free transfer, upgrades the dead slot into an XI starter (N.Williams 6.66), banks 0.5m and restores bench autosub cover. FLAGGED DISAGREEMENTS: (1) transfer — roll vs spend, Claude is right because medical-bay is a confirmed source, not a projection; (2) Awoniyi vs E.Le Fée — YOU and Claude agree, Gemini is the outlier and should be overruled; (3) Hume — genuine coin flip, ~1.4 xPts, safe to ignore either way. Gemini's self-reported 49.44 should not be compared directly to 72.96; its method under-counts. The honest engine gap is 6.34, not 23.5. STANDING RISK, unsolved by all three plans: no Haaland (EO ~125%, ~55% captain share) — a GW1 brace is a 24-30pt hit to rank. Accept it this week, do not compound it by moving the armband, and make funding him the GW2/GW3 priority. Also note sim-lab's PROXY_WARNING: every ranking here is built on FINAL 25/26 data, so treat the whole week as LOW-MEDIUM confidence until real 26/27 cum_pts exists around GW6.",
-  "highest_leverage_action": "Make the transfer: Frimpong OUT -> N.Williams IN (0 hits, banks 0.5m). It is worth +6.66 xPts on its own, is the only move all week backed by a confirmed real-world fact rather than a projection, and it simultaneously removes a guaranteed 0 from your XI, adds the model's 8th-ranked asset at FDR 2, and repairs a bench that currently has no credible autosub. Verify N.Williams is priced at 5.0m and named in Forest's XI before the deadline; then also swap E.Le Fée in for Awoniyi if you have not already (you have this right — do not follow Gemini here). Leave the captain on B.Fernandes and save all chips.",
+  "you_matches_best_plan": true,
+  "action_required": "NO TRANSFER. Bench re-order only, plus a deadline fitness check.",
+
+  "verdict": "CLAUDE wins at 55.70 mc_ev xPts — but the headline is that YOUR live team ALREADY IS the winning plan. Same eleven starters, same captain (B.Fernandes), same vice (Gabriel), same decision to make no transfer and play no chip. There is no move to make this week; the correct action is deliberate inaction. GEMINI comes third at 50.43 normalised (-5.27) and its self-reported 45.34 should not be compared to anything, because it is computed off a cache that has no row for B.Fernandes at all. FLAGGED: THE TWO ENGINES DISAGREE ON BOTH CAPTAIN AND TRANSFER THIS WEEK — conviction is SPLIT, not HIGH. That split is not a genuine 50/50. Gemini captains Mendy, a 4.0m Hull defender at ~0% EO with zero cumulative-season record, who is not even in the squad until its own proposed transfer is executed, off a 16.42 xPts row that sim-lab, intel and the-rival independently classify as a model artifact (five of the top six xPts rows in the whole GW2 pool are cheap promoted-side defenders). CLAUDE.md locks the armband to the season cum_pts leader among nailed premiums; B.Fernandes (cum_pts 235, ppg 6.7, mc_captain_ev 12.52, ~80 EO, home to promoted Ipswich, on pens and every set piece) is that player and Mendy is disqualified on four counts. Captaining Mendy would fade an ~80 EO Bruno and an ~111 EO Haaland in the same click. OVERRULE GEMINI ON BOTH COUNTS. On the transfer, roll the FT: Palestra is a bench-only 4th defender whose doubt costs ~0 xPts, market-desk shows no price pressure on any squad asset, and 2 FTs in GW3 with real 26/27 minutes data is the right weapon for the actual structural hole — you do not own Haaland (69.3% owned, ~42% captained, ~111 EO, every return effectively doubled against you). That is a transfer problem for GW3, not a captain problem for GW2, and it must not be solved by moving the armband. TRUST-THE-HUMAN OVERRIDE, LIVE THIS WEEK: Gabriel is your vice-captain AND a starter, and he was forced off late in GW1 vs Liverpool after a collision with Nunez. FPL has issued no flag and the cache says AVAILABLE; Arteta did not mention him in the 27 Aug presser and news-desk has him in the predicted ARS XI at CB (Saliba and Timber both out raises his importance), so medical-bay holds him at 90% with MEDIUM confidence. That is exactly the class of real-time information CLAUDE.md says the human must resolve, because the model cannot. Arsenal play Aston Villa away on Monday, which is AFTER the 17:30 UTC deadline today — so you must decide on incomplete information and cannot wait for the teamsheet. Two consequences follow: (1) re-check Arsenal news right up to 17:30 UTC and if Gabriel is flagged, take him out for van Ewijk and move the vice armband to Semenyo (cum_pts 202, next in the locked ranking); (2) regardless of Gabriel, fix the bench order now — Palestra is currently your FIRST outfield sub, and medical-bay downgrades him from FPL's stated 75% to a ~50/50 coinflip after Alonso confirmed he missed the Luton EFL Cup tie and needs 'further assessment'. If Gabriel blanks, your autosub is currently a player who may not play either. DATA CAVEAT ON THE WHOLE WEEK: xpts.json is miscalibrated at GW2 (only 4 of 15 squad players have a row), cache team labels are corrupted (Semenyo->MCI, Rogers->CHE), and sim-lab's cum_pts proxy is a 2026-07-23 preseason build with form=0.0 for every player. Treat all three projections as LOW-MEDIUM confidence and lean on the locked protocol plus real-world team news, which is exactly what the winning plan does.",
+
+  "highest_leverage_action": "DO NOT MAKE GEMINI'S TRANSFER. Leave the team exactly as it is — B.Fernandes (C), Gabriel (VC), no transfer, no chip — and spend your remaining time before 17:30 UTC on the two free protective moves: (1) re-order the bench to Rushworth / van Ewijk / Awoniyi / Palestra so your first outfield autosub is a confirmed 100% starter instead of a ~50/50 doubt; (2) check Arsenal team news on Gabriel one last time before the deadline — he took a knock in GW1 vs Liverpool, carries no FPL flag, and Arsenal play Monday so the teamsheet lands too late to help you. If Gabriel gets flagged, van Ewijk comes into the XI and the vice armband moves to Semenyo. Both moves cost 0 points and 0 transfers. Rejecting the Mendy captaincy is worth ~5.3 xPts on the common basis and, far more importantly, removes a ~0% EO blowup risk that could cost 20-30 rank-adjusted points in a single week.",
+
   "sources": [
     "data/cache/squad.json",
     "data/cache/xpts.json",
     "data/reports/gemini.json",
     "data/reports/claude.json",
-    "data/reports/medical-bay.json",
-    "data/reports/intel.json",
     "data/reports/sim-lab.json",
+    "data/reports/intel.json",
+    "data/reports/medical-bay.json",
+    "data/reports/news-desk.json",
     "data/reports/rival.json"
   ]
 }
