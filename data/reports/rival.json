@@ -1,112 +1,130 @@
 {
-  "gw": 1,
+  "gw": 2,
   "strategy": "top10k",
-  "generated": "2026-08-21T00:00:00.000Z",
-  "source": "data/cache/xpts.json (GW1 priors: form, xgi_per90, fdr) + data/cache/league.json (GW1 ownership empty -> ownership inferred from price tier / xpts rank)",
+  "generated": "2026-08-28T00:00:00.000Z",
+  "agent": "the-rival",
+  "source": "data/cache/xpts.json (GW2 priors: form, xgi_per90, fdr) + data/reports/fixture-room.json (FDR tiers) + data/reports/intel.json (ownership/EO market context). User squad NOT read - this is an independent build.",
   "formation": "3-4-3",
   "squad": [
-    "Raya",
-    "Dubravka",
+    "Tzolakis",
+    "Sánchez",
+    "Mendy",
+    "Muharemović",
     "Gabriel",
     "Guéhi",
-    "N.Williams",
-    "Shaw",
-    "Hume",
-    "Gibbs-White",
-    "Rice",
-    "Anderson",
+    "Kayode",
+    "M.Sangaré",
+    "Rogers",
+    "Szoboszlai",
     "Xhaka",
-    "Yarmoliuk",
+    "Stach",
     "Haaland",
-    "Thiago",
-    "Calvert-Lewin"
+    "Gonzalo",
+    "João Pedro"
   ],
   "starting_xi": [
-    "Raya",
+    "Tzolakis",
+    "Mendy",
+    "Muharemović",
     "Gabriel",
-    "Guéhi",
-    "N.Williams",
-    "Gibbs-White",
-    "Rice",
-    "Anderson",
+    "M.Sangaré",
+    "Rogers",
+    "Szoboszlai",
     "Xhaka",
     "Haaland",
-    "Thiago",
-    "Calvert-Lewin"
+    "Gonzalo",
+    "João Pedro"
   ],
   "bench_order": [
-    "Yarmoliuk",
-    "Shaw",
-    "Hume",
-    "Dubravka"
+    "Guéhi",
+    "Kayode",
+    "Stach",
+    "Sánchez"
   ],
   "captain": "Haaland",
-  "vice": "Gabriel",
+  "vice": "João Pedro",
   "transfers": {
-    "in": [],
-    "out": [],
-    "count": 0,
+    "in": ["Tzolakis", "Gonzalo"],
+    "out": ["Raya", "Calvert-Lewin"],
+    "count": 2,
     "hit": 0,
-    "note": "GW1 initial squad build — no transfers exist. Free transfer banked for GW2 (target: react to opening-weekend minutes/lineup data before committing)."
+    "note": "2 FTs available (1 banked from GW1 + 1 GW2 free). (1) Raya 6.0 -> Tzolakis 4.5: ARS are the worst FDR tier of my GW1 holdings (fdr 4) while HUL are fdr 2; model has Tzolakis 14.22 vs Raya 5.07 and the move frees 1.5m. (2) Calvert-Lewin 6.0 -> Gonzalo 6.0: straight-price forward swap, +3.53 xPts (7.38 vs 3.85), no budget cost. Zero hits taken - APEX transfer logic is already near-optimal, do not pay 4 pts to force a third move."
   },
   "chip": "none",
-  "chip_rationale": "APEX chip-timing gates all unmet at GW1: no DGW (TC/BB), no BGW (FH), and zero rotation flags from a fresh squad (WC). Saving all four chips is strictly higher EV than a GW1 punt.",
-  "projected_xpts": 80.0,
+  "chip_rationale": "All four APEX chip gates unmet at GW2. fixture-room reports dgw_alerts: [] (no TC/BB trigger) and only a single soft COV data-gap flag rather than a true BGW with 4+ starters blanking (no FH trigger). No starter is rotation-flagged and there is no 3-GW rolling average yet, so no WC trigger. Saving beats a speculative early burn.",
+  "projected_xpts": 106.2,
+  "projected_xpts_calibrated": 75.0,
   "xpts_breakdown": {
-    "starting_xi_base": 71.9,
-    "captain_bonus": 8.13,
-    "total": 80.03,
-    "bench_xpts_unused": 13.49
+    "starting_xi_base_raw": 99.77,
+    "captain_bonus_raw": 6.43,
+    "total_raw": 106.2,
+    "bench_xpts_unused": 23.92,
+    "starting_xi_base_calibrated": 68.54,
+    "total_calibrated": 74.97,
+    "calibration_note": "RAW uses the unmodified xpts.json priors (same inputs Sim Lab consumes) so the 3-way scoreboard compares like-for-like. CALIBRATED applies intel's documented artifact warning: any GK/DEF/sub-6.0m MID projecting above 6.0 is capped at 6.0, because a 4.0m defender does not have a 16.4-point expectation. I report both rather than hiding behind the inflated number - the calibrated 75.0 is my honest expectation."
   },
-  "key_differential": "N.Williams (NFO, £5.0m)",
+  "key_differential": "M.Sangaré (BRE, MID, £5.6m)",
   "differentials": [
     {
-      "player": "N.Williams",
-      "team": "NFO",
-      "price": 5.0,
-      "xpts": 6.66,
-      "case": "Model's 8th-ranked asset overall and the single best xPts-per-million pick in the dataset outside of Raya. FDR 2 fixture, attacking full-back profile at a £5.0m entry price that almost nobody starts GW1 on."
+      "player": "M.Sangaré",
+      "team": "BRE",
+      "price": 5.6,
+      "xpts": 15.95,
+      "eo_est": "<3%",
+      "case": "The model's #2 asset overall and by a distance the best xPts-per-million pick in the entire GW2 pool (2.85 pts/m). Nobody at 5.6m in midfield is in the conversation - Xhaka is next best value at 1.15 pts/m. Even after applying the artifact cap he clears every mid I could buy for the money. This is the pick that has to land for me to beat the template."
     },
     {
-      "player": "Anderson",
-      "team": "MCI",
-      "price": 6.5,
-      "xpts": 5.55,
-      "case": "Cheap route into the MCI attack at 6.5. Outscores every mid priced 6.0-7.5 in the model (beats Szoboszlai 4.92, Gravenberch 4.17, Foden 3.10, Cherki 3.49) while the crowd pays 7.5-9.5 for Palmer (2.86) and Saka (4.97)."
+      "player": "Gonzalo",
+      "team": "FUL",
+      "price": 6.0,
+      "xpts": 7.38,
+      "eo_est": "low",
+      "case": "Top-projecting forward in the whole dataset ahead of Haaland (6.43) at 9.5m less. Sub-radar third striker that lets me carry Haaland AND João Pedro without gutting the defence."
     },
     {
-      "player": "Calvert-Lewin",
+      "player": "Stach",
       "team": "LEE",
       "price": 6.0,
-      "xpts": 3.23,
-      "case": "Enabler forward. Best xPts of any sub-£6.5m striker and beats Gyökeres (3.14 @ 7.5) and João Pedro (3.60 @ 7.5) on value, freeing 1.5m that funds Gabriel in defence."
+      "xpts": 5.06,
+      "eo_est": "1.5%",
+      "case": "Intel's flagged sub-2% EO rank-chaser - GW1 direct free-kick match-winner, on set pieces, defensive-contribution points upside, soft Leeds run. Held on the bench as first midfield cover; promoted to the XI the moment his minutes are confirmed nailed."
     }
   ],
   "safe_haven_core": [
     "Haaland",
-    "Raya",
+    "João Pedro",
     "Gabriel",
-    "Rice",
-    "Gibbs-White"
+    "Guéhi",
+    "Szoboszlai"
   ],
-  "captain_rationale": "APEX captaincy protocol = nailed premium, never a GK. No cum_pts table exists at GW1, so the tiebreak falls to highest captain_xpts among owned players: Haaland 16.26. B.Fernandes projects higher (18.26) but at £12.0m alongside Haaland's £15.5m the 27.5m premium spend collapses the rest of the squad to sub-5.0m filler — the model's own numbers show that trade costs ~2.2 net XI xPts. Haaland is also the top10k safe haven: captaining him caps downside vs the field.",
+  "captain_rationale": "Haaland. Intel puts him at 69.3% owned / ~42% captained = ~111 EO and names him the outright template captain for GW2 at CRY (A). APEX captaincy protocol is explicit: nailed premium, never a GK, never a differential armband without a strong real-world signal. The raw cache would point the armband at Mendy (captain_xpts 32.84), but intel classifies that row as a corrupted artifact and rates captaining him a CRITICAL blowup risk - a 4.0m defender at ~0 EO. I own Haaland precisely so I can neutralise the single largest standing rank risk in the game this week, and captaining him caps my downside against the field. Vice is João Pedro: fdr 2, ~40 EO template core, and the highest-floor non-Haaland attacker I own (Gabriel was the alternative but ARS are the worst fixture tier at fdr 4).",
+  "strategy_notes": [
+    "STRATEGY = top10k: mandated 3-4-3, safe-haven core plus a small number of calculated differentials. I own the three template assets that actually exist in the GW2 pool (Haaland, João Pedro, Gabriel) so I am never more than one captain-return away from the field, then take my rank swing in the cheap slots.",
+    "Structural bet: the GW2 model is bottom-heavy. HUL (fdr 2) and cheap value assets outrank almost every premium - Palmer projects 5.74 at 9.5m, Saka 4.03 at 9.5m, Isak 0.55 at 9.0m. I am deliberately underweight the premium mid/forward tier apart from Haaland and paying for a Hull goalkeeper + defender instead.",
+    "I capped my HUL exposure at 2 (Tzolakis + Mendy) rather than the legal 3. The raw model would have me stack Egan (11.18) and Giles (9.31) too, but intel explicitly warns those rows are inflated. Stacking a projection artifact three deep is how you lose a season, not win a week - so I took the fixture (fdr 2, cheap clean-sheet route) and left the artifact upside on the table.",
+    "Known cost of the mandated 3-4-3: Guéhi (7.31) sits on the bench while Xhaka (6.30) starts, because the shape caps me at three defenders. A 4-4-2 would score ~1.0 higher on the raw sheet, but 3-4-3 keeps three attacking returns live, which is the top10k playbook.",
+    "Club counts sit right on the limit at CHE 3 (Sánchez, Rogers, João Pedro). Any further CHE move requires a swap-out first - flagged for GW3 planning.",
+    "2.2m left in the bank, and that is on purpose. The premium tier projects so badly in this cache that there is nothing worth upgrading into; I would rather hold the liquidity for a GW3 reaction once real GW2 minutes data lands.",
+    "Data-continuity disclosure: 8 of my GW1 XV (Dubravka, N.Williams, Shaw, Hume, Gibbs-White, Anderson, Yarmoliuk, Thiago) have no entry at all in the GW2 xpts.json pool. Those slots were re-anchored to the GW2 pool out of necessity, not choice - the 2 declared transfers above are the moves I would genuinely be making. Treat the transfer block as the real decision and the re-anchoring as a cache artifact."
+  ],
   "budget": {
-    "spent": 100.0,
-    "remaining": 0.0,
-    "gk": 10.0,
-    "def": 28.0,
-    "mid": 32.5,
-    "fwd": 29.5
+    "spent": 97.8,
+    "remaining": 2.2,
+    "gk": 9.5,
+    "def": 27.6,
+    "mid": 31.6,
+    "fwd": 29.1
   },
   "club_counts": {
-    "ARS": 3,
-    "MCI": 3,
-    "NFO": 2,
-    "SUN": 2,
+    "CHE": 3,
+    "HUL": 2,
+    "LEE": 2,
+    "MCI": 2,
     "BRE": 2,
-    "MUN": 1,
-    "LEE": 1,
-    "TOT": 1
+    "ARS": 1,
+    "LIV": 1,
+    "SUN": 1,
+    "FUL": 1
   },
   "validation": {
     "squad_size": 15,
@@ -114,33 +132,26 @@
     "def": 5,
     "mid": 5,
     "fwd": 3,
+    "xi_shape": "1-3-4-3",
     "max_per_club_ok": true,
     "budget_ok": true,
     "formation_valid": true
   },
   "player_detail": [
-    { "name": "Raya", "team": "ARS", "pos": "GK", "price": 6.0, "xpts": 8.5, "fdr": 2, "role": "XI" },
-    { "name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 8.0, "xpts": 8.34, "fdr": 2, "role": "XI" },
-    { "name": "Guéhi", "team": "MCI", "pos": "DEF", "price": 6.0, "xpts": 7.0, "fdr": 3, "role": "XI" },
-    { "name": "N.Williams", "team": "NFO", "pos": "DEF", "price": 5.0, "xpts": 6.66, "fdr": 2, "role": "XI" },
-    { "name": "Gibbs-White", "team": "NFO", "pos": "MID", "price": 8.0, "xpts": 7.03, "fdr": 2, "role": "XI" },
-    { "name": "Rice", "team": "ARS", "pos": "MID", "price": 7.5, "xpts": 7.04, "fdr": 2, "role": "XI" },
-    { "name": "Anderson", "team": "MCI", "pos": "MID", "price": 6.5, "xpts": 5.55, "fdr": 3, "role": "XI" },
-    { "name": "Xhaka", "team": "SUN", "pos": "MID", "price": 5.5, "xpts": 4.5, "fdr": 2, "role": "XI" },
-    { "name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.5, "xpts": 8.13, "fdr": 3, "role": "XI-C" },
-    { "name": "Thiago", "team": "BRE", "pos": "FWD", "price": 8.0, "xpts": 5.92, "fdr": 3, "role": "XI" },
-    { "name": "Calvert-Lewin", "team": "LEE", "pos": "FWD", "price": 6.0, "xpts": 3.23, "fdr": 3, "role": "XI" },
-    { "name": "Shaw", "team": "MUN", "pos": "DEF", "price": 4.5, "xpts": 5.73, "fdr": 2, "role": "BENCH" },
-    { "name": "Hume", "team": "SUN", "pos": "DEF", "price": 4.5, "xpts": 5.28, "fdr": 2, "role": "BENCH" },
-    { "name": "Yarmoliuk", "team": "BRE", "pos": "MID", "price": 5.0, "xpts": 2.48, "fdr": 3, "role": "BENCH" },
-    { "name": "Dubravka", "team": "TOT", "pos": "GK", "price": 4.0, "xpts": 1.4, "fdr": 3, "role": "BENCH" }
-  ],
-  "strategy_notes": [
-    "top10k pattern: 3-4-3, safe-haven core (Haaland + Raya + Gabriel + Rice + Gibbs-White = 5 of the model's top 6 assets) plus 3 calculated sub-radar picks.",
-    "The GW1 model is defence-skewed: Raya 8.50, Gabriel 8.34, Guéhi 7.00, N.Williams 6.66 all outrank every forward except Haaland. I bought that edge rather than chasing forwards.",
-    "Deliberately skipped B.Fernandes (9.13, £12.0m). Pairing him with Haaland burns 27.5m on two players and forces four sub-5.5m starters; the model says that build lands ~69.7 XI xPts vs 71.9 for this one.",
-    "Also faded the price traps the crowd will own: Palmer 2.86 @ 9.5, Isak 0.50 @ 9.0, Ekitiké 0.00 @ 7.5, Šeško 0.67 @ 7.0, Wirtz 2.81 @ 7.5. Being underweight there is where the rank comes from.",
-    "Known cost of the mandated 3-4-3: Shaw (5.73) and Hume (5.28) sit on the bench while Calvert-Lewin (3.23) starts. A 4-4-2 or 3-5-2 would score ~2.5 higher on paper, but 3-4-3 keeps three attacking returns live and is the shape the top10k playbook specifies.",
-    "Bench order puts Yarmoliuk first so an early forward/mid non-start is covered before the defensive slots are disturbed."
+    { "name": "Tzolakis", "team": "HUL", "pos": "GK", "price": 4.5, "xpts": 14.22, "fdr": 2, "role": "XI" },
+    { "name": "Mendy", "team": "HUL", "pos": "DEF", "price": 4.0, "xpts": 16.42, "fdr": 2, "role": "XI" },
+    { "name": "Muharemović", "team": "LEE", "pos": "DEF", "price": 5.0, "xpts": 8.64, "fdr": 3, "role": "XI" },
+    { "name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 8.0, "xpts": 5.76, "fdr": 4, "role": "XI" },
+    { "name": "M.Sangaré", "team": "BRE", "pos": "MID", "price": 5.6, "xpts": 15.95, "fdr": 3, "role": "XI" },
+    { "name": "Rogers", "team": "CHE", "pos": "MID", "price": 7.5, "xpts": 6.74, "fdr": 2, "role": "XI" },
+    { "name": "Szoboszlai", "team": "LIV", "pos": "MID", "price": 7.0, "xpts": 6.40, "fdr": 3, "role": "XI" },
+    { "name": "Xhaka", "team": "SUN", "pos": "MID", "price": 5.5, "xpts": 6.30, "fdr": 2, "role": "XI" },
+    { "name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.5, "xpts": 6.43, "fdr": 3, "role": "XI-C" },
+    { "name": "Gonzalo", "team": "FUL", "pos": "FWD", "price": 6.0, "xpts": 7.38, "fdr": 3, "role": "XI" },
+    { "name": "João Pedro", "team": "CHE", "pos": "FWD", "price": 7.6, "xpts": 5.53, "fdr": 2, "role": "XI-VC" },
+    { "name": "Guéhi", "team": "MCI", "pos": "DEF", "price": 6.0, "xpts": 7.31, "fdr": 3, "role": "BENCH" },
+    { "name": "Kayode", "team": "BRE", "pos": "DEF", "price": 4.6, "xpts": 6.29, "fdr": 3, "role": "BENCH" },
+    { "name": "Stach", "team": "LEE", "pos": "MID", "price": 6.0, "xpts": 5.06, "fdr": 3, "role": "BENCH" },
+    { "name": "Sánchez", "team": "CHE", "pos": "GK", "price": 5.0, "xpts": 5.26, "fdr": 2, "role": "BENCH" }
   ]
 }
