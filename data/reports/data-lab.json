@@ -1,94 +1,80 @@
 {
-  "agent": "data-lab",
-  "generated": "2026-08-21T00:45:06.246Z",
-  "gw": 1,
+  "generated_by": "data-lab",
+  "gw": 2,
+  "source_files": {
+    "squad.json": "2026-08-28T02:32:03.180Z",
+    "xpts.json": "2026-08-28T02:32:04.135Z",
+    "league.json": "2026-08-28T02:32:05.041Z",
+    "news.json": "2026-08-28T02:32:05.903Z",
+    "price.json": "2026-08-28T02:32:06.738Z",
+    "gemini.json": "2026-08-28T02:32:07.581Z"
+  },
+  "all_files_parsed": true,
   "squad": {
-    "loaded": true,
-    "player_count": 15,
-    "starting_xi": 11,
-    "bench": 4,
-    "captain": "B.Fernandes",
-    "vice_captain": "Gabriel",
-    "bank": 0,
-    "squad_value": 0,
-    "squad_value_computed_from_prices": 100.0,
     "team_name": "Puwakies Jjimyang",
     "manager": "Puwakorn Amart",
-    "overall_rank": 0,
-    "total_points": 0
-  },
-  "chips": {
-    "chips_used": [],
-    "chips_left": ["BB", "TC", "FH", "WC×2"],
-    "all_chips_used": false
-  },
-  "xpts": {
-    "universe_count": 150,
-    "all_zero_warning": false,
-    "squad_players_missing_xpts": ["Frimpong", "Rushworth", "van Ewijk"],
-    "squad_xpts": [
-      {"name": "Lammens", "pos": "GK", "xpts": 5.61},
-      {"name": "Frimpong", "pos": "DEF", "xpts": null},
-      {"name": "Gabriel", "pos": "DEF", "xpts": 8.34},
-      {"name": "Calafiori", "pos": "DEF", "xpts": 4.6},
-      {"name": "Semenyo", "pos": "MID", "xpts": 6.03},
-      {"name": "E.Le Fée", "pos": "MID", "xpts": 5.28},
-      {"name": "B.Fernandes", "pos": "MID", "xpts": 9.13},
-      {"name": "Mbeumo", "pos": "MID", "xpts": 3.85},
-      {"name": "Rogers", "pos": "MID", "xpts": 4.81},
-      {"name": "Thiago", "pos": "FWD", "xpts": 5.92},
-      {"name": "João Pedro", "pos": "FWD", "xpts": 3.6},
-      {"name": "Rushworth", "pos": "GK", "xpts": null},
-      {"name": "Hume", "pos": "DEF", "xpts": 5.28},
-      {"name": "Awoniyi", "pos": "FWD", "xpts": 0.32},
-      {"name": "van Ewijk", "pos": "DEF", "xpts": null}
-    ],
-    "note": "GW1 pre-season cache. xpts field trusted as-is from cache; not recomputed."
-  },
-  "league": {
-    "total_managers": 0,
-    "my_rank": "?",
-    "leader": "? (0pts)",
-    "template": "",
-    "top_differentials": "",
-    "gw_context": 1
-  },
-  "news": {
-    "total_injury_flags": 40,
-    "squad_players_flagged": []
-  },
-  "price": {
-    "likely_rises": [],
-    "likely_falls": [],
-    "note": "No price change signals in cache (expected pre-GW1)"
-  },
-  "gemini": {
+    "overall_rank": 7658231,
+    "total_points": 37,
+    "bank": 0,
+    "squad_value": 100,
     "captain": "B.Fernandes",
-    "captain_xpts": 9.13,
     "vice_captain": "Gabriel",
-    "projected_xpts": 49.44,
-    "transfer_out": null,
-    "transfer_in": null,
-    "transfer_reason": "Roll free transfer for GW1 flexibility",
+    "chips_used": [],
+    "chips_left": ["BB", "TC", "FH", "WCx2"],
+    "starting_xi": [
+      {"name": "Lammens", "team": "MUN", "pos": "GK", "price": 5, "status": "AVAILABLE", "xpts": null},
+      {"name": "Kerkez", "team": "LIV", "pos": "DEF", "price": 5.5, "status": "AVAILABLE", "xpts": null},
+      {"name": "Hume", "team": "SUN", "pos": "DEF", "price": 4.5, "status": "AVAILABLE", "xpts": null},
+      {"name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 8, "status": "AVAILABLE", "xpts": 5.76},
+      {"name": "B.Fernandes", "team": "MUN", "pos": "MID", "price": 12, "status": "AVAILABLE", "is_captain": true, "xpts": null},
+      {"name": "Mbeumo", "team": "MUN", "pos": "MID", "price": 8, "status": "AVAILABLE", "xpts": null},
+      {"name": "Semenyo", "team": "MCI", "pos": "MID", "price": 8.5, "status": "AVAILABLE", "xpts": null},
+      {"name": "E.Le Fée", "team": "SUN", "pos": "MID", "price": 6, "status": "AVAILABLE", "xpts": null},
+      {"name": "Rogers", "team": "CHE", "pos": "MID", "price": 7.5, "status": "AVAILABLE", "xpts": 6.74},
+      {"name": "Thiago", "team": "BRE", "pos": "FWD", "price": 8, "status": "AVAILABLE", "xpts": null},
+      {"name": "João Pedro", "team": "CHE", "pos": "FWD", "price": 7.6, "status": "AVAILABLE", "xpts": 5.53}
+    ],
+    "bench": [
+      {"name": "Rushworth", "team": "COV", "pos": "GK", "price": 4.5, "status": "AVAILABLE", "xpts": null},
+      {"name": "Palestra", "team": "CHE", "pos": "DEF", "price": 5.5, "status": "DOUBTFUL", "news": "Unspecified injury - 75% chance of playing", "xpts": null},
+      {"name": "Awoniyi", "team": "COV", "pos": "FWD", "price": 5.5, "status": "AVAILABLE", "xpts": 0.54},
+      {"name": "van Ewijk", "team": "COV", "pos": "DEF", "price": 4, "status": "AVAILABLE", "xpts": null}
+    ]
+  },
+  "xpts_coverage_note": "Only 4 of 15 squad players (Gabriel, Rogers, Joao Pedro, Awoniyi) found in xpts.json player pool (140 players total). 11 squad players (Lammens, Kerkez, Hume, B.Fernandes, Mbeumo, Semenyo, E.Le Fee, Thiago, Rushworth, Palestra, van Ewijk) have no matching xPts row - matches Gemini's own flagged key_risk.",
+  "league": {
+    "gw": 1,
+    "my_rank": 17,
+    "total_managers": 17,
+    "my_total_pts": 37,
+    "league_leader": "Looksua",
+    "league_leader_pts": 92,
+    "gap_to_leader": 55,
+    "am_i_leading": false,
+    "differentials": [],
+    "template": ["João Pedro"]
+  },
+  "news_flags_relevant_to_squad": {
+    "in_news_json": "none of the 15 squad players appear in news.json's injury list",
+    "in_squad_json_own_status": [
+      {"name": "Palestra", "status": "DOUBTFUL", "news": "Unspecified injury - 75% chance of playing", "slot": "bench (13)"}
+    ]
+  },
+  "price_watch": {
+    "squad_players_in_likely_rises": [],
+    "squad_players_in_likely_falls": [],
+    "note": "No squad player appears in the top likely_rises/likely_falls lists this GW. Note: 'Fernandes' in likely_falls is Tottenham's Fernandes, not squad's B.Fernandes (MUN) - not a match."
+  },
+  "gemini_picks": {
+    "captain": "Mendy",
+    "captain_xpts": 16.42,
+    "vice_captain": "Rogers",
+    "transfer_out": "Palestra",
+    "transfer_in": "Mendy",
+    "transfer_reason": "Replace doubtful player with high xPts defender Mendy",
     "chip": null,
+    "projected_xpts": 45.34,
     "confidence": "medium",
-    "key_risk": "Several players lack historical Premier League xPts data"
-  },
-  "files": {
-    "squad.json": {"updated": "2026-08-21T00:44:59.575Z", "rows": 15, "status": "ok"},
-    "xpts.json": {"updated": "2026-08-21T00:45:01.088Z", "rows": 150, "status": "ok"},
-    "league.json": {"updated": "2026-08-21T00:45:02.509Z", "rows": 0, "status": "ok"},
-    "news.json": {"updated": "2026-08-21T00:45:03.974Z", "rows": 40, "status": "ok"},
-    "price.json": {"updated": "2026-08-21T00:45:05.180Z", "rows": 0, "status": "ok"},
-    "gemini.json": {"updated": "2026-08-21T00:45:06.246Z", "rows": 1, "status": "ok"}
-  },
-  "missing_files": [],
-  "warnings": [
-    "squad.json: squad_value and bank both report 0 — not yet computed by Apps Script for pre-season GW1; actual sum of 15 player prices = 100.0.",
-    "xpts.json: 3 squad players (Frimpong, Rushworth, van Ewijk) have no matching xPts row — likely new-to-PL / newly-promoted-club players lacking historical data, consistent with gemini.key_risk.",
-    "league.json: total_managers=0 and differentials[]/template[] empty — mini-league standings not yet populated for GW1 (expected pre-season/GW1 state).",
-    "price.json: both likely_rises and likely_falls are empty — no price change signals yet for GW1.",
-    "All chips available (chips_used=[]). Full arsenal (WC×2, BB, TC, FH) heading into GW1."
-  ],
-  "features_written": null
+    "key_risk": "Multiple players in squad lack xPts data"
+  }
 }
