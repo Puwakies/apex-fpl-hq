@@ -1,0 +1,110 @@
+{
+  "tzolis_sensitivity": [
+    {
+      "tzolis_pts": 80,
+      "bal_mean": 474.4,
+      "delta_vs_lock4": 44.2,
+      "p_beat_lock4": 0.879,
+      "gw10_cap_mean": 4.3
+    },
+    {
+      "tzolis_pts": 110,
+      "bal_mean": 477.1,
+      "delta_vs_lock4": 46.9,
+      "p_beat_lock4": 0.892,
+      "gw10_cap_mean": 5.9
+    },
+    {
+      "tzolis_pts": 140,
+      "bal_mean": 479.8,
+      "delta_vs_lock4": 49.6,
+      "p_beat_lock4": 0.902,
+      "gw10_cap_mean": 7.4
+    },
+    {
+      "tzolis_pts": 170,
+      "bal_mean": 482.5,
+      "delta_vs_lock4": 52.3,
+      "p_beat_lock4": 0.911,
+      "gw10_cap_mean": 9.0
+    },
+    {
+      "tzolis_pts": 200,
+      "bal_mean": 485.2,
+      "delta_vs_lock4": 55.0,
+      "p_beat_lock4": 0.917,
+      "gw10_cap_mean": 10.6
+    }
+  ],
+  "entrant_compare": [
+    {
+      "variant": "no ARS — keep Anderson, cap Haaland",
+      "bal_mean": 482.7,
+      "delta_vs_lock4": 52.9,
+      "p_beat_lock4": 0.916,
+      "gw10_cap_mean": 9.4
+    },
+    {
+      "variant": "no ARS — keep Anderson, cap Bruno",
+      "bal_mean": 482.8,
+      "delta_vs_lock4": 53.0,
+      "p_beat_lock4": 0.92,
+      "gw10_cap_mean": 9.6
+    },
+    {
+      "variant": "Tzolis  raw~120",
+      "bal_mean": 478.0,
+      "delta_vs_lock4": 47.8,
+      "p_beat_lock4": 0.896,
+      "gw10_cap_mean": 6.4
+    },
+    {
+      "variant": "Eze     raw 113",
+      "bal_mean": 477.9,
+      "delta_vs_lock4": 47.4,
+      "p_beat_lock4": 0.896,
+      "gw10_cap_mean": 6.1
+    },
+    {
+      "variant": "Eze     fit ~160",
+      "bal_mean": 482.1,
+      "delta_vs_lock4": 51.6,
+      "p_beat_lock4": 0.912,
+      "gw10_cap_mean": 8.6
+    },
+    {
+      "variant": "Ødegaard raw 74",
+      "bal_mean": 473.8,
+      "delta_vs_lock4": 43.6,
+      "p_beat_lock4": 0.877,
+      "gw10_cap_mean": 3.9
+    },
+    {
+      "variant": "Ødegaard fit ~185",
+      "bal_mean": 483.8,
+      "delta_vs_lock4": 53.6,
+      "p_beat_lock4": 0.915,
+      "gw10_cap_mean": 9.8
+    }
+  ],
+  "tc_gw7": [
+    {
+      "setup": "no TC",
+      "bal_mean": 478.9,
+      "lock4_mean": 430.2,
+      "delta": 48.7,
+      "bal_p90": 562.0,
+      "lock4_p90": 505.8,
+      "bal_p_beat": 0.898
+    },
+    {
+      "setup": "TC@GW7",
+      "bal_mean": 485.3,
+      "lock4_mean": 436.7,
+      "delta": 48.7,
+      "bal_p90": 571.7,
+      "lock4_p90": 516.0,
+      "bal_p_beat": 0.898
+    }
+  ]
+}
