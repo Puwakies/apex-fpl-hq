@@ -1,0 +1,256 @@
+{
+  "mode": "gw1-6+adv",
+  "formation": "4-3-3",
+  "spend": 99.9,
+  "xi": [
+    {
+      "name": "Henderson",
+      "team": "CRY",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 131,
+      "fdr6": 2.817,
+      "oppxgc": 0.358,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "pts": 175,
+      "fdr6": 2.817,
+      "oppxgc": 0.647,
+      "adj": 0.957,
+      "tags": ""
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6.0,
+      "pts": 179,
+      "fdr6": 3.15,
+      "oppxgc": 1.2,
+      "adj": 1.082,
+      "tags": ""
+    },
+    {
+      "name": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 126,
+      "fdr6": 2.817,
+      "oppxgc": 0.907,
+      "adj": 1.023,
+      "tags": ""
+    },
+    {
+      "name": "Mitchell",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 135,
+      "fdr6": 2.817,
+      "oppxgc": 0.358,
+      "adj": 0.85,
+      "tags": ""
+    },
+    {
+      "name": "Palmer",
+      "team": "CHE",
+      "pos": "MID",
+      "price": 9.6,
+      "pts": 114,
+      "fdr6": 3.317,
+      "oppxgc": 1.167,
+      "adj": 1.202,
+      "tags": ""
+    },
+    {
+      "name": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 7.9,
+      "pts": 188,
+      "fdr6": 3.15,
+      "oppxgc": 1.18,
+      "adj": 1.208,
+      "tags": ""
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 6.4,
+      "pts": 180,
+      "fdr6": 3.15,
+      "oppxgc": 1.2,
+      "adj": 1.219,
+      "tags": ""
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5,
+      "pts": 239,
+      "fdr6": 3.15,
+      "oppxgc": 1.2,
+      "adj": 1.219,
+      "tags": ""
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.6,
+      "pts": 177,
+      "fdr6": 3.317,
+      "oppxgc": 1.167,
+      "adj": 1.202,
+      "tags": ""
+    },
+    {
+      "name": "Igor Jesus",
+      "team": "NFO",
+      "pos": "FWD",
+      "price": 6.0,
+      "pts": 114,
+      "fdr6": 3.15,
+      "oppxgc": 1.18,
+      "adj": 1.208,
+      "tags": ""
+    }
+  ],
+  "bench": [
+    {
+      "name": "Leno",
+      "team": "FUL",
+      "pos": "GK",
+      "price": 4.5,
+      "pts": 122,
+      "fdr6": 2.983,
+      "oppxgc": 0.978,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "F.Kadıoğlu",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.4,
+      "pts": 118,
+      "fdr6": 3.15,
+      "oppxgc": 1.11,
+      "adj": 1.066,
+      "tags": ""
+    },
+    {
+      "name": "Garner",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 159,
+      "fdr6": 3.483,
+      "oppxgc": 1.002,
+      "adj": 1.114,
+      "tags": ""
+    },
+    {
+      "name": "Berge",
+      "team": "FUL",
+      "pos": "MID",
+      "price": 5.0,
+      "pts": 91,
+      "fdr6": 2.983,
+      "oppxgc": 0.978,
+      "adj": 1.1,
+      "tags": ""
+    }
+  ],
+  "override": "human: start Palmer (nailed CHE, GW4 captain) — 25/26 pts injury-deflated",
+  "captain_matrix": [
+    {
+      "gw": 3,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H COV",
+      "own": "GW3 (WC)"
+    },
+    {
+      "gw": 4,
+      "captain": "Palmer",
+      "team": "CHE",
+      "fixture": "2H HUL",
+      "own": "GW3 (WC)"
+    },
+    {
+      "gw": 5,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H SUN",
+      "own": "GW3"
+    },
+    {
+      "gw": 6,
+      "captain": "Bruno",
+      "team": "MUN",
+      "fixture": "3H TOT",
+      "own": "เข้า GW6 (FT)"
+    },
+    {
+      "gw": 7,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H IPS",
+      "own": "GW3"
+    },
+    {
+      "gw": 8,
+      "captain": "Bruno",
+      "team": "MUN",
+      "fixture": "3H BOU",
+      "own": "GW6"
+    },
+    {
+      "gw": 9,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H BHA",
+      "own": "GW3"
+    },
+    {
+      "gw": 10,
+      "captain": "Saka",
+      "team": "ARS",
+      "fixture": "2H HUL",
+      "own": "เข้า GW10 (FT)"
+    },
+    {
+      "gw": 11,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H FUL",
+      "own": "GW3"
+    },
+    {
+      "gw": 12,
+      "captain": "Bruno",
+      "team": "MUN",
+      "fixture": "3H BRE",
+      "own": "GW6"
+    }
+  ],
+  "phasing": {
+    "GW3_own": [
+      "Haaland",
+      "Palmer"
+    ],
+    "GW6_in": "Bruno (B.Fernandes) — sell Gibbs-White + bank/downgrade",
+    "GW10_in": "Saka — sell Anderson + bank/downgrade"
+  },
+  "note": "Balanced WC GW3 team: own Haaland+Palmer only; phase Bruno in @GW6 and prem ARS (Saka) in @GW10 via rolled FTs. MUN/ARS empty now so later adds stay legal (3/club)."
+}
