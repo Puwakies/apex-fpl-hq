@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T02:32:05.903Z",
+  "updated": "2026-08-31T03:19:34.128Z",
   "items": [
     {
       "player": "J.Timber",
@@ -182,21 +182,21 @@
       "signal": "out"
     },
     {
+      "player": "Mateta",
+      "team": "CRY",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 11 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Nørgaard",
       "team": "EVE",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Iroegbunam",
-      "team": "EVE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Thigh injury - Unknown return date",
+      "news": "Groin injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -299,33 +299,6 @@
       "signal": "out"
     },
     {
-      "player": "Gudmundsson",
-      "team": "LEE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Gnonto",
-      "team": "LEE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Gruev",
-      "team": "LEE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
       "player": "Mateo Joseph",
       "team": "LEE",
       "pos": "FWD",
@@ -359,6 +332,33 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Leoni",
+      "team": "LIV",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Chiesa",
+      "team": "LIV",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Back injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Bajcetic",
+      "team": "LIV",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
       "signal": "out"
     }
   ]
