@@ -224,10 +224,10 @@
     },
     {
       "gw": 10,
-      "captain": "Saka",
+      "captain": "Tzolis",
       "team": "ARS",
       "fixture": "2H HUL",
-      "own": "เข้า GW10 (FT)"
+      "own": "เข้า GW10 (FT, ~£0.1 gap)"
     },
     {
       "gw": 11,
@@ -249,8 +249,8 @@
       "Haaland",
       "Palmer"
     ],
-    "GW6_in": "Bruno (B.Fernandes) — sell Gibbs-White + bank/downgrade",
-    "GW10_in": "Saka — sell Anderson + bank/downgrade"
+    "GW6_in": "Bruno £12.0 — OUT Gibbs-White £7.9 (+downgrade Virgil £6.5->£4.5 def), 2 rolled FT",
+    "GW10_in": "Tzolis (ARS £6.5) — OUT Anderson £6.4, gap เพียง £0.1 (single FT); ปลด MCI 3->2 ด้วย"
   },
   "note": "Balanced WC GW3 team: own Haaland+Palmer only; phase Bruno in @GW6 and prem ARS (Saka) in @GW10 via rolled FTs. MUN/ARS empty now so later adds stay legal (3/club)."
 }

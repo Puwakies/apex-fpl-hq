@@ -1,0 +1,29 @@
+{
+  "LOCK4 (fab-four, Saka@10)": {
+    "mean": 422.5,
+    "early_mean": 127.1,
+    "late_mean": 295.4,
+    "p10": 331.1,
+    "p50": 415.3,
+    "p90": 522.5,
+    "std": 75.6
+  },
+  "BAL fund (Bruno@6 Tzolis@10)": {
+    "mean": 451.3,
+    "early_mean": 135.7,
+    "late_mean": 315.6,
+    "p10": 355.7,
+    "p50": 444.5,
+    "p90": 556.3,
+    "std": 80.4
+  },
+  "BAL pure (no funding cost)": {
+    "mean": 445.6,
+    "early_mean": 135.7,
+    "late_mean": 309.9,
+    "p10": 350.2,
+    "p50": 438.9,
+    "p90": 549.5,
+    "std": 79.6
+  }
+}
