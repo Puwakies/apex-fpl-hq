@@ -87,7 +87,7 @@ LOCKED_SPEC=_spec("LOCKS",[("Haaland","MCI"),("B.Fernandes","MUN")]); BANNED_SPE
 OUT_NAME=os.environ.get("OUT","gw1_6_adv")
 LOCKED_IDS=[next(p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t) for n,t in LOCKED_SPEC]
 BANNED_IDS={next((p["id"] for p in feat["players"] if p["web_name"]==n and p["team"]==t),None) for n,t in BANNED_SPEC}
-LF,A=3.30,1.35; STARTS_FLOOR=22
+LF,A=3.30,1.35; STARTS_FLOOR=int(os.environ.get("SFLOOR","22"))  # min last-season starts for FREE (non-locked) picks; lower to afford cheap enablers in premium-heavy builds
 
 def mods(p, pos):
     """return (finisher_factor#3, aq_factor#4, opp_leak_factor#5, tags)"""

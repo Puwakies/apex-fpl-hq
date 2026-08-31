@@ -1,0 +1,253 @@
+{
+  "mode": "gw1-6+adv",
+  "formation": "4-5-1",
+  "spend": 99.9,
+  "xi": [
+    {
+      "name": "Henderson",
+      "team": "CRY",
+      "pos": "GK",
+      "price": 5.0,
+      "pts": 131,
+      "fdr6": 2.817,
+      "oppxgc": 0.358,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5.0,
+      "pts": 126,
+      "fdr6": 2.817,
+      "oppxgc": 0.907,
+      "adj": 1.023,
+      "tags": ""
+    },
+    {
+      "name": "Mitchell",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 135,
+      "fdr6": 2.817,
+      "oppxgc": 0.358,
+      "adj": 0.85,
+      "tags": ""
+    },
+    {
+      "name": "F.Kadıoğlu",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.4,
+      "pts": 118,
+      "fdr6": 3.15,
+      "oppxgc": 1.11,
+      "adj": 1.066,
+      "tags": ""
+    },
+    {
+      "name": "Cash",
+      "team": "AVL",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 117,
+      "fdr6": 3.15,
+      "oppxgc": 0.818,
+      "adj": 1.002,
+      "tags": ""
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 12.0,
+      "pts": 235,
+      "fdr6": 3.317,
+      "oppxgc": 1.16,
+      "adj": 1.198,
+      "tags": ""
+    },
+    {
+      "name": "Garner",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 6.0,
+      "pts": 159,
+      "fdr6": 3.483,
+      "oppxgc": 1.002,
+      "adj": 1.114,
+      "tags": ""
+    },
+    {
+      "name": "Saka",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 9.5,
+      "pts": 157,
+      "fdr6": 3.15,
+      "oppxgc": 0.548,
+      "adj": 0.824,
+      "tags": ""
+    },
+    {
+      "name": "Palmer",
+      "team": "CHE",
+      "pos": "MID",
+      "price": 9.6,
+      "pts": 114,
+      "fdr6": 3.317,
+      "oppxgc": 1.167,
+      "adj": 1.202,
+      "tags": ""
+    },
+    {
+      "name": "Berge",
+      "team": "FUL",
+      "pos": "MID",
+      "price": 5.0,
+      "pts": 91,
+      "fdr6": 2.983,
+      "oppxgc": 0.978,
+      "adj": 1.1,
+      "tags": ""
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5,
+      "pts": 239,
+      "fdr6": 3.15,
+      "oppxgc": 1.2,
+      "adj": 1.219,
+      "tags": ""
+    }
+  ],
+  "bench": [
+    {
+      "name": "Dubravka",
+      "team": "TOT",
+      "pos": "GK",
+      "price": 4.0,
+      "pts": 96,
+      "fdr6": 3.317,
+      "oppxgc": 0.605,
+      "adj": 1.0,
+      "tags": ""
+    },
+    {
+      "name": "Diop",
+      "team": "IPS",
+      "pos": "DEF",
+      "price": 4.0,
+      "pts": 31,
+      "fdr6": 3.483,
+      "oppxgc": 0.42,
+      "adj": 0.877,
+      "tags": ""
+    },
+    {
+      "name": "Barry",
+      "team": "EVE",
+      "pos": "FWD",
+      "price": 5.5,
+      "pts": 95,
+      "fdr6": 3.483,
+      "oppxgc": 1.002,
+      "adj": 1.114,
+      "tags": ""
+    },
+    {
+      "name": "Beto",
+      "team": "EVE",
+      "pos": "FWD",
+      "price": 5.4,
+      "pts": 104,
+      "fdr6": 3.483,
+      "oppxgc": 1.002,
+      "adj": 1.114,
+      "tags": ""
+    }
+  ],
+  "captain_matrix": [
+    {
+      "gw": 3,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H COV",
+      "why": "เหย้า fdr2"
+    },
+    {
+      "gw": 4,
+      "captain": "Palmer",
+      "team": "CHE",
+      "fixture": "2H HUL",
+      "why": "Haaland เยือน MUN(4) เลี่ยง"
+    },
+    {
+      "gw": 5,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H SUN",
+      "why": "เหย้า fdr2"
+    },
+    {
+      "gw": 6,
+      "captain": "Bruno",
+      "team": "MUN",
+      "fixture": "3H TOT",
+      "why": "Haaland เยือน LIV(4) เลี่ยง"
+    },
+    {
+      "gw": 7,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H IPS",
+      "why": "เหย้า fdr2 (จุด TC)"
+    },
+    {
+      "gw": 8,
+      "captain": "Bruno",
+      "team": "MUN",
+      "fixture": "3H BOU",
+      "why": "Haaland เยือน AVL(4) เลี่ยง"
+    },
+    {
+      "gw": 9,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H BHA",
+      "why": "เหย้า fdr2"
+    },
+    {
+      "gw": 10,
+      "captain": "Saka",
+      "team": "ARS",
+      "fixture": "2H HUL",
+      "why": "ARS เหย้า fdr2 ดีกว่า Haaland/Bruno"
+    },
+    {
+      "gw": 11,
+      "captain": "Haaland",
+      "team": "MCI",
+      "fixture": "2H FUL",
+      "why": "เหย้า fdr2"
+    },
+    {
+      "gw": 12,
+      "captain": "Bruno",
+      "team": "MUN",
+      "fixture": "3H BRE",
+      "why": "Haaland เยือน ARS(5) เลี่ยง"
+    }
+  ],
+  "locks": [
+    "Haaland (MCI)",
+    "B.Fernandes (MUN)",
+    "Palmer (CHE)",
+    "Saka (ARS)"
+  ],
+  "note": "WC GW3 captain-matrix team. Locks = the 4 captain-rotation core (Haaland odd GWs / Bruno even GWs / Palmer GW4 / Saka GW10). Rest optimized for GW3-8 on ~£53m (fab-four structure: cheap DEF + bench)."
+}
