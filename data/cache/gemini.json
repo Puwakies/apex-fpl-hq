@@ -1,34 +1,34 @@
 {
-  "updated": "2026-08-28T02:32:07.581Z",
+  "updated": "2026-08-31T03:19:35.802Z",
   "engine": "gemini",
-  "gw": 2,
-  "captain": "Mendy",
-  "captain_xpts": 16.42,
-  "vice_captain": "Rogers",
+  "gw": 3,
+  "captain": "Tzolakis",
+  "captain_xpts": 26.2,
+  "vice_captain": "B.Fernandes",
   "starting_xi": [
-    "Lammens",
-    "Mendy",
+    "Tzolakis",
+    "Calafiori",
     "Gabriel",
-    "Kerkez",
     "Hume",
+    "Mbeumo",
     "Rogers",
     "B.Fernandes",
-    "Mbeumo",
     "Semenyo",
-    "João Pedro",
-    "Thiago"
+    "Thiago",
+    "Awoniyi",
+    "João Pedro"
   ],
   "bench": [
-    "Rushworth",
+    "Lammens",
     "van Ewijk",
-    "E.Le Fée",
-    "Awoniyi"
+    "Kerkez",
+    "E.Le Fée"
   ],
-  "transfer_out": "Palestra",
-  "transfer_in": "Mendy",
-  "transfer_reason": "Replace doubtful player with high xPts defender Mendy",
+  "transfer_out": "Rushworth",
+  "transfer_in": "Tzolakis",
+  "transfer_reason": "Upgrade goalkeeper to highest projected xPts player",
   "chip": null,
-  "projected_xpts": 45.34,
+  "projected_xpts": 43.9,
   "confidence": "medium",
-  "key_risk": "Multiple players in squad lack xPts data"
+  "key_risk": "Multiple starting players lack xPts data"
 }
