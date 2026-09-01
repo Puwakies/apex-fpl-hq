@@ -24,6 +24,12 @@ boot=get("bootstrap-static/"); fx=get("fixtures/")
 short={t["id"]:t["short_name"] for t in boot["teams"]}
 id_by_short={v:k for k,v in short.items()}
 start_gw=int(os.environ.get("START", next((str(e["id"]) for e in boot["events"] if e.get("is_next")),"1")))
+# --- FORM blend (data update): fold GW1-2 actual pace into the last-season pts baseline.
+#     Fixture+Stats>Form => keep the weight modest & cap the 2-GW pace (avoid hot-start noise).
+GW_ELAPSED=sum(1 for e in boot["events"] if e.get("finished") or e.get("data_checked")
+               or (e.get("is_current") and __import__("datetime").datetime.now().isoformat()>e.get("deadline_time","")))
+FORM_W  =float(os.environ.get("FORM","0"))     # 0=off; 0.3 = 30% weight on GW1-2 pace
+FORM_CAP=float(os.environ.get("FORMCAP","260")) # cap extrapolated season pace (Bruno 25pts/2*38=475 -> 260)
 
 # --- attacking-defender index (fullbacks/wingbacks pushed forward who add
 #     goals+assists on top of clean sheets, e.g. Hume SUN). Built from LIVE boot:
@@ -144,6 +150,9 @@ for p in feat["players"]:
     if p["team"] not in team_fdr6: continue
     if p["id"] not in LOCKED_IDS and (p.get("starts",0) or 0)<STARTS_FLOOR: continue
     p=dict(p); p["price"]=lv["now_cost"]/10                       # use LIVE price
+    if FORM_W>0 and GW_ELAPSED>0:                                  # blend GW1-2 actual pace
+        pace=min(FORM_CAP,(lv.get("total_points",0) or 0)/GW_ELAPSED*38)
+        p["pts"]=(1-FORM_W)*p["pts"]+FORM_W*pace
     m=mk(p); pool.append(m); byid[p["id"]]=m
 
 LOCKED=[byid[i] for i in LOCKED_IDS]; NEED={"GK":2,"DEF":5,"MID":5,"FWD":3}
@@ -242,8 +251,10 @@ print(f"{'PLAYER':15s}{'TM':5s}{'POS':4s}{'£':>6s}{'pts':>5s}{'FDR6':>6s}{'oppx
 for lbl,grp in [("XI",xi_s),("BENCH",bench_s)]:
     print(f"-- {lbl} --")
     for p in grp:
-        print(f"{p['name']+tag(p):17s}{p['team']:5s}{p['pos']:4s}{p['price']:>6.1f}{p['pts']:>5d}{p['fdr6']:>6.2f}{(p['oppxgc'] or 0):>7.2f}{p['adj']:>6.2f}  {p['tags']}")
+        print(f"{p['name']+tag(p):17s}{p['team']:5s}{p['pos']:4s}{p['price']:>6.1f}{p['pts']:>5.0f}{p['fdr6']:>6.2f}{(p['oppxgc'] or 0):>7.2f}{p['adj']:>6.2f}  {p['tags']}")
+def _r(p):
+    q={k:p[k] for k in ("name","team","pos","price","pts","fdr6","oppxgc","adj","tags")}; q["pts"]=round(q["pts"],1); return q
 out={"mode":"gw1-6+adv","formation":f"{form[1]}-{form[2]}-{form[3]}","spend":round(sum(p['price'] for p in best),1),
-     "xi":[{k:p[k] for k in ("name","team","pos","price","pts","fdr6","oppxgc","adj","tags")} for p in xi_s],
-     "bench":[{k:p[k] for k in ("name","team","pos","price","pts","fdr6","oppxgc","adj","tags")} for p in bench_s]}
+     "xi":[_r(p) for p in xi_s],
+     "bench":[_r(p) for p in bench_s]}
 json.dump(out,open(ROOT/f"data/reports/{OUT_NAME}.json","w"),ensure_ascii=False,indent=2)
