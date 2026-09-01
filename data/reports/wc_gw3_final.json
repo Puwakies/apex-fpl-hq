@@ -1,16 +1,16 @@
 {
   "mode": "gw1-6+adv",
-  "formation": "4-4-2",
-  "spend": 99.6,
+  "formation": "3-5-2",
+  "spend": 100.0,
   "xi": [
     {
-      "name": "Kelleher",
-      "team": "BRE",
+      "name": "Raya",
+      "team": "ARS",
       "pos": "GK",
-      "price": 5.0,
-      "pts": 151.4,
-      "fdr6": 3.317,
-      "oppxgc": 0.957,
+      "price": 6.0,
+      "pts": 181.8,
+      "fdr6": 3.15,
+      "oppxgc": 0.548,
       "adj": 1.0,
       "tags": ""
     },
@@ -48,17 +48,6 @@
       "tags": ""
     },
     {
-      "name": "N.Williams",
-      "team": "NFO",
-      "pos": "DEF",
-      "price": 5.0,
-      "pts": 135.2,
-      "fdr6": 3.15,
-      "oppxgc": 1.18,
-      "adj": 1.079,
-      "tags": ""
-    },
-    {
       "name": "Gibbs-White",
       "team": "NFO",
       "pos": "MID",
@@ -67,17 +56,6 @@
       "fdr6": 3.15,
       "oppxgc": 1.18,
       "adj": 1.208,
-      "tags": ""
-    },
-    {
-      "name": "Rogers",
-      "team": "CHE",
-      "pos": "MID",
-      "price": 7.5,
-      "pts": 192.4,
-      "fdr6": 3.317,
-      "oppxgc": 1.167,
-      "adj": 1.202,
       "tags": ""
     },
     {
@@ -92,6 +70,17 @@
       "tags": ""
     },
     {
+      "name": "Szoboszlai",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 7.0,
+      "pts": 180.4,
+      "fdr6": 2.817,
+      "oppxgc": 0.647,
+      "adj": 0.895,
+      "tags": ""
+    },
+    {
       "name": "Palmer",
       "team": "CHE",
       "pos": "MID",
@@ -100,6 +89,17 @@
       "fdr6": 3.317,
       "oppxgc": 1.167,
       "adj": 1.202,
+      "tags": ""
+    },
+    {
+      "name": "Gomez",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 5.0,
+      "pts": 130.6,
+      "fdr6": 3.15,
+      "oppxgc": 1.11,
+      "adj": 1.172,
       "tags": ""
     },
     {
@@ -127,13 +127,13 @@
   ],
   "bench": [
     {
-      "name": "Dubravka",
-      "team": "TOT",
+      "name": "Verbruggen",
+      "team": "BHA",
       "pos": "GK",
-      "price": 4.0,
-      "pts": 67.2,
-      "fdr6": 3.317,
-      "oppxgc": 0.605,
+      "price": 4.5,
+      "pts": 125.2,
+      "fdr6": 3.15,
+      "oppxgc": 1.11,
       "adj": 1.0,
       "tags": ""
     },
@@ -149,107 +149,101 @@
       "tags": ""
     },
     {
-      "name": "Gomez",
-      "team": "BHA",
-      "pos": "MID",
-      "price": 5.0,
-      "pts": 130.6,
-      "fdr6": 3.15,
-      "oppxgc": 1.11,
-      "adj": 1.172,
+      "name": "Hume",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 4.5,
+      "pts": 122.6,
+      "fdr6": 3.317,
+      "oppxgc": 0.692,
+      "adj": 0.969,
       "tags": ""
     },
     {
-      "name": "Calvert-Lewin",
-      "team": "LEE",
+      "name": "Woltemade",
+      "team": "NEW",
       "pos": "FWD",
-      "price": 6.0,
-      "pts": 150.7,
-      "fdr6": 3.483,
-      "oppxgc": 0.673,
-      "adj": 0.913,
+      "price": 5.9,
+      "pts": 98.4,
+      "fdr6": 2.817,
+      "oppxgc": 0.907,
+      "adj": 1.059,
       "tags": ""
     }
   ],
-  "data_update": "form-blend GW1-2 actuals (FORM=0.3, cap 260) folded into last-season baseline",
+  "data_update": "form-blend GW1-2 (FORM=0.3). GK=Raya locked (set & forget, long-term nailed premium + ARS/CS exposure)",
   "gw12_actuals_validation": {
-    "Haaland": "15pts (haul GW2 13) nailed",
-    "Palmer": "20pts form10 (baseline 114->158 boosted->starts)",
-    "Bruno_in_GW6": "25pts haul GW2=23 form12.5",
-    "Gibbs-White": "15pts form7.5",
-    "João Pedro": "20pts form10",
-    "Guéhi": "12pts",
-    "dropped_Virgil": "3pts form1.5 cold",
-    "Anderson": "5pts rot143min (GW10 swap-out)"
+    "Raya": "182 blended, nailed 90min, ARS title-fav CS",
+    "Haaland": "15pts haul",
+    "Palmer": "20pts form10 (114->158)",
+    "Bruno_in_GW6": "25pts haul GW2=23",
+    "Gibbs-White": "15pts",
+    "João Pedro": "20pts",
+    "Guéhi": "12pts"
   },
   "captain_matrix": [
     {
       "gw": 3,
       "captain": "Haaland",
-      "fixture": "2H COV",
-      "own": "GW3 (WC)"
+      "fixture": "2H COV"
     },
     {
       "gw": 4,
       "captain": "Palmer",
-      "fixture": "2H HUL",
-      "own": "GW3 (WC)"
+      "fixture": "2H HUL"
     },
     {
       "gw": 5,
       "captain": "Haaland",
-      "fixture": "2H SUN",
-      "own": "GW3"
+      "fixture": "2H SUN"
     },
     {
       "gw": 6,
       "captain": "Bruno",
       "fixture": "3H TOT",
-      "own": "เข้า GW6 (FT)"
+      "own": "เข้า GW6"
     },
     {
       "gw": 7,
       "captain": "Haaland",
       "fixture": "2H IPS",
-      "own": "GW3 (จุด TC)"
+      "note": "TC spot"
     },
     {
       "gw": 8,
       "captain": "Bruno",
-      "fixture": "3H BOU",
-      "own": "GW6"
+      "fixture": "3H BOU"
     },
     {
       "gw": 9,
       "captain": "Haaland",
-      "fixture": "2H BHA",
-      "own": "GW3"
+      "fixture": "2H BHA"
     },
     {
       "gw": 10,
       "captain": "Bruno",
       "fixture": "3H AVL",
-      "own": "GW6 (ไม่ดึง ARS punt — MC+data ยืนยัน)"
+      "note": "no ARS punt"
     },
     {
       "gw": 11,
       "captain": "Haaland",
-      "fixture": "2H FUL",
-      "own": "GW3"
+      "fixture": "2H FUL"
     },
     {
       "gw": 12,
       "captain": "Bruno",
-      "fixture": "3H BRE",
-      "own": "GW6"
+      "fixture": "3H BRE"
     }
   ],
   "phasing": {
+    "GK": "Raya set & forget — ไม่ย้าย GK ทั้งซีซัน (+ Verbruggen £4.5 สำรอง)",
     "GW3_own": [
+      "Raya",
       "Haaland",
       "Palmer"
     ],
-    "GW6_in": "Bruno £12.0 — OUT Anderson £6.4 (rot) +1 bench downgrade, 2 rolled FT + bank £0.4",
-    "GW10": "NO Tzolis (GW2=0, rot). เก็บทีม (C)Bruno 🏠AVL; ออปชัน: ดึง Gabriel £8.0 (13pts nailed) เสริมแนวรับ+ARS"
+    "GW6_in": "Bruno £12.0 — OUT Anderson £6.4 (rot) +1 downgrade, 2 rolled FT",
+    "GW10": "ไม่ดึง Tzolis; (C) Bruno 🏠AVL; ออปชัน Gabriel £8.0 (ARS→2)"
   }
 }
