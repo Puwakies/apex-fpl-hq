@@ -1,34 +1,34 @@
 {
-  "updated": "2026-08-31T03:19:35.802Z",
+  "updated": "2026-09-03T17:25:40.151Z",
   "engine": "gemini",
   "gw": 3,
-  "captain": "Tzolakis",
-  "captain_xpts": 26.2,
+  "captain": "Kayode",
+  "captain_xpts": 9.54,
   "vice_captain": "B.Fernandes",
   "starting_xi": [
-    "Tzolakis",
-    "Calafiori",
+    "Lammens",
     "Gabriel",
+    "Calafiori",
     "Hume",
-    "Mbeumo",
-    "Rogers",
+    "Kayode",
     "B.Fernandes",
+    "Mbeumo",
     "Semenyo",
-    "Thiago",
-    "Awoniyi",
-    "João Pedro"
+    "Rogers",
+    "João Pedro",
+    "Thiago"
   ],
   "bench": [
-    "Lammens",
+    "Rushworth",
     "van Ewijk",
-    "Kerkez",
-    "E.Le Fée"
+    "E.Le Fée",
+    "Awoniyi"
   ],
-  "transfer_out": "Rushworth",
-  "transfer_in": "Tzolakis",
-  "transfer_reason": "Upgrade goalkeeper to highest projected xPts player",
+  "transfer_out": "Kerkez",
+  "transfer_in": "Kayode",
+  "transfer_reason": "Bring in top xPts defender to maximize GW return",
   "chip": null,
-  "projected_xpts": 43.9,
+  "projected_xpts": 9.54,
   "confidence": "medium",
-  "key_risk": "Multiple starting players lack xPts data"
+  "key_risk": "Lack of explicit xPts metrics for remaining squad members"
 }
