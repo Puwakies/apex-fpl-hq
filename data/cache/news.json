@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T03:19:34.128Z",
+  "updated": "2026-09-03T17:25:37.453Z",
   "items": [
     {
       "player": "J.Timber",
@@ -227,15 +227,6 @@
       "signal": "out"
     },
     {
-      "player": "Jacob",
-      "team": "HUL",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hip injury - Expected back 5 Sep",
-      "signal": "out"
-    },
-    {
       "player": "Matazo",
       "team": "HUL",
       "pos": "MID",
@@ -263,15 +254,6 @@
       "signal": "out"
     },
     {
-      "player": "Gelhardt",
-      "team": "HUL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Expected back 5 Sep",
-      "signal": "out"
-    },
-    {
       "player": "Matusiwa",
       "team": "IPS",
       "pos": "MID",
@@ -296,6 +278,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Ankle injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Rodon",
+      "team": "LEE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 21 Nov",
       "signal": "out"
     },
     {
@@ -353,12 +344,21 @@
       "signal": "out"
     },
     {
-      "player": "Bajcetic",
+      "player": "Ekitiké",
       "team": "LIV",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Achilles injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Doku",
+      "team": "MCI",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
+      "news": "Calf injury - Expected back 5 Sep",
       "signal": "out"
     }
   ]
