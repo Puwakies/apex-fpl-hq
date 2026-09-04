@@ -1,80 +1,108 @@
 {
-  "generated_by": "data-lab",
-  "gw": 2,
+  "agent": "data-lab",
+  "gw": 3,
+  "generated": "2026-09-04",
   "source_files": {
-    "squad.json": "2026-08-28T02:32:03.180Z",
-    "xpts.json": "2026-08-28T02:32:04.135Z",
-    "league.json": "2026-08-28T02:32:05.041Z",
-    "news.json": "2026-08-28T02:32:05.903Z",
-    "price.json": "2026-08-28T02:32:06.738Z",
-    "gemini.json": "2026-08-28T02:32:07.581Z"
+    "squad.json": "OK - updated 2026-09-03T17:25:33.236Z",
+    "xpts.json": "OK - updated 2026-09-03T17:25:35.036Z, 143 players",
+    "league.json": "OK - updated 2026-09-03T17:25:36.287Z",
+    "news.json": "OK - updated 2026-09-03T17:25:37.453Z, 39 injury items",
+    "price.json": "OK - updated 2026-09-03T17:25:38.927Z, 12 rises / 12 falls",
+    "gemini.json": "OK - updated 2026-09-03T17:25:40.151Z",
+    "player_pool.json": "OK - updated same run, 364 players, source pool for transfer targets"
   },
-  "all_files_parsed": true,
-  "squad": {
+  "team": {
     "team_name": "Puwakies Jjimyang",
     "manager": "Puwakorn Amart",
-    "overall_rank": 7658231,
-    "total_points": 37,
+    "overall_rank": 1833593,
+    "total_points": 152,
     "bank": 0,
-    "squad_value": 100,
+    "squad_value": 100.2,
     "captain": "B.Fernandes",
     "vice_captain": "Gabriel",
-    "chips_used": [],
-    "chips_left": ["BB", "TC", "FH", "WCx2"],
-    "starting_xi": [
-      {"name": "Lammens", "team": "MUN", "pos": "GK", "price": 5, "status": "AVAILABLE", "xpts": null},
-      {"name": "Kerkez", "team": "LIV", "pos": "DEF", "price": 5.5, "status": "AVAILABLE", "xpts": null},
-      {"name": "Hume", "team": "SUN", "pos": "DEF", "price": 4.5, "status": "AVAILABLE", "xpts": null},
-      {"name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 8, "status": "AVAILABLE", "xpts": 5.76},
-      {"name": "B.Fernandes", "team": "MUN", "pos": "MID", "price": 12, "status": "AVAILABLE", "is_captain": true, "xpts": null},
-      {"name": "Mbeumo", "team": "MUN", "pos": "MID", "price": 8, "status": "AVAILABLE", "xpts": null},
-      {"name": "Semenyo", "team": "MCI", "pos": "MID", "price": 8.5, "status": "AVAILABLE", "xpts": null},
-      {"name": "E.Le Fée", "team": "SUN", "pos": "MID", "price": 6, "status": "AVAILABLE", "xpts": null},
-      {"name": "Rogers", "team": "CHE", "pos": "MID", "price": 7.5, "status": "AVAILABLE", "xpts": 6.74},
-      {"name": "Thiago", "team": "BRE", "pos": "FWD", "price": 8, "status": "AVAILABLE", "xpts": null},
-      {"name": "João Pedro", "team": "CHE", "pos": "FWD", "price": 7.6, "status": "AVAILABLE", "xpts": 5.53}
-    ],
-    "bench": [
-      {"name": "Rushworth", "team": "COV", "pos": "GK", "price": 4.5, "status": "AVAILABLE", "xpts": null},
-      {"name": "Palestra", "team": "CHE", "pos": "DEF", "price": 5.5, "status": "DOUBTFUL", "news": "Unspecified injury - 75% chance of playing", "xpts": null},
-      {"name": "Awoniyi", "team": "COV", "pos": "FWD", "price": 5.5, "status": "AVAILABLE", "xpts": 0.54},
-      {"name": "van Ewijk", "team": "COV", "pos": "DEF", "price": 4, "status": "AVAILABLE", "xpts": null}
-    ]
+    "chips_used": ["BB@GW2"],
+    "chips_left": ["TC", "FH", "WC", "WC"]
   },
-  "xpts_coverage_note": "Only 4 of 15 squad players (Gabriel, Rogers, Joao Pedro, Awoniyi) found in xpts.json player pool (140 players total). 11 squad players (Lammens, Kerkez, Hume, B.Fernandes, Mbeumo, Semenyo, E.Le Fee, Thiago, Rushworth, Palestra, van Ewijk) have no matching xPts row - matches Gemini's own flagged key_risk.",
+  "squad_15": [
+    {"slot": 1, "name": "Lammens", "team": "MUN", "pos": "GK", "price": 5, "starting": true, "status": "AVAILABLE", "xpts": 1.90},
+    {"slot": 2, "name": "Kerkez", "team": "LIV", "pos": "DEF", "price": 5.5, "starting": true, "status": "AVAILABLE", "xpts": null, "flag": "not found in xpts.json"},
+    {"slot": 3, "name": "Gabriel", "team": "ARS", "pos": "DEF", "price": 8, "starting": true, "status": "AVAILABLE", "xpts": 2.39, "is_vice": true},
+    {"slot": 4, "name": "Calafiori", "team": "ARS", "pos": "DEF", "price": 5.6, "starting": true, "status": "AVAILABLE", "xpts": 2.91},
+    {"slot": 5, "name": "Semenyo", "team": "MCI", "pos": "MID", "price": 8.5, "starting": true, "status": "AVAILABLE", "xpts": 1.29},
+    {"slot": 6, "name": "E.Le Fée", "team": "SUN", "pos": "MID", "price": 5.9, "starting": true, "status": "AVAILABLE", "xpts": null, "flag": "not found in xpts.json; price.json shows likely_falls net_rate -29.17"},
+    {"slot": 7, "name": "B.Fernandes", "team": "MUN", "pos": "MID", "price": 12, "starting": true, "status": "AVAILABLE", "xpts": 2.82, "is_captain": true},
+    {"slot": 8, "name": "Mbeumo", "team": "MUN", "pos": "MID", "price": 8, "starting": true, "status": "AVAILABLE", "xpts": 1.43},
+    {"slot": 9, "name": "Rogers", "team": "CHE", "pos": "MID", "price": 7.5, "starting": true, "status": "AVAILABLE", "xpts": 0.91},
+    {"slot": 10, "name": "Thiago", "team": "BRE", "pos": "FWD", "price": 8, "starting": true, "status": "AVAILABLE", "xpts": 0.24},
+    {"slot": 11, "name": "João Pedro", "team": "CHE", "pos": "FWD", "price": 7.7, "starting": true, "status": "AVAILABLE", "xpts": 1.25},
+    {"slot": 12, "name": "Rushworth", "team": "COV", "pos": "GK", "price": 4.5, "starting": false, "status": "AVAILABLE", "xpts": 0.92},
+    {"slot": 13, "name": "Hume", "team": "SUN", "pos": "DEF", "price": 4.5, "starting": false, "status": "AVAILABLE", "xpts": 2.33},
+    {"slot": 14, "name": "Awoniyi", "team": "COV", "pos": "FWD", "price": 5.5, "starting": false, "status": "AVAILABLE", "xpts": 0.18},
+    {"slot": 15, "name": "van Ewijk", "team": "COV", "pos": "DEF", "price": 4, "starting": false, "status": "AVAILABLE", "xpts": null, "flag": "not found in xpts.json"}
+  ],
+  "squad_xpts_missing": ["Kerkez", "E.Le Fée", "van Ewijk"],
+  "squad_injury_news": "None of the 15 squad players appear in news.json injury list (39 items, all 'out' signal, none match current squad names) - no injury/suspension flags this GW",
+  "xpts_top_overall": [
+    {"name": "Kayode", "team": "BRE", "pos": "DEF", "price": 4.6, "xpts": 4.77, "captain_xpts": 9.54, "fdr": 2},
+    {"name": "Gvardiol", "team": "MCI", "pos": "DEF", "price": 5.6, "xpts": 4.67, "captain_xpts": 9.34, "fdr": 2},
+    {"name": "De Cuyper", "team": "BHA", "pos": "DEF", "price": 4.7, "xpts": 4.51, "captain_xpts": 9.02, "fdr": 2},
+    {"name": "Guéhi", "team": "MCI", "pos": "DEF", "price": 6, "xpts": 4.46, "captain_xpts": 8.92, "fdr": 2},
+    {"name": "Ajer", "team": "BRE", "pos": "DEF", "price": 4.5, "xpts": 4.35, "captain_xpts": 8.70, "fdr": 2},
+    {"name": "Kelleher", "team": "BRE", "pos": "GK", "price": 5, "xpts": 4.15, "captain_xpts": 8.30, "fdr": 2},
+    {"name": "Collins", "team": "BRE", "pos": "DEF", "price": 5.5, "xpts": 4.15, "captain_xpts": 8.30, "fdr": 2},
+    {"name": "Tzolakis", "team": "HUL", "pos": "GK", "price": 4.6, "xpts": 4.14, "captain_xpts": 8.28, "fdr": 3},
+    {"name": "Ajayi", "team": "HUL", "pos": "DEF", "price": 4.1, "xpts": 4.09, "captain_xpts": 8.18, "fdr": 3},
+    {"name": "Egan", "team": "HUL", "pos": "DEF", "price": 4, "xpts": 3.82, "captain_xpts": 7.64, "fdr": 3},
+    {"name": "Mendy", "team": "HUL", "pos": "DEF", "price": 4, "xpts": 3.73, "captain_xpts": 7.46, "fdr": 3},
+    {"name": "Donnarumma", "team": "MCI", "pos": "GK", "price": 5.5, "xpts": 3.52, "captain_xpts": 7.04, "fdr": 2}
+  ],
+  "xpts_note": "Top xPts pool is heavily DEF/GK weighted this GW (BRE/MCI/HUL/BHA fixtures rated FDR 2-3). Highest-owned/premium squad players (B.Fernandes 2.82, Semenyo 1.29, Rogers 0.91, Thiago 0.24) rank well outside the top 30, driven by tougher fixtures (fdr 3-5).",
   "league": {
-    "gw": 1,
-    "my_rank": 17,
+    "gw_context": 2,
+    "my_rank": 10,
     "total_managers": 17,
-    "my_total_pts": 37,
-    "league_leader": "Looksua",
-    "league_leader_pts": 92,
-    "gap_to_leader": 55,
+    "my_total_pts": 152,
+    "league_leader": "xCunhAON FC",
+    "league_leader_pts": 206,
+    "gap_to_leader": 54,
     "am_i_leading": false,
+    "template_players": ["Calafiori", "João Pedro"],
     "differentials": [],
-    "template": ["João Pedro"]
+    "template": []
   },
-  "news_flags_relevant_to_squad": {
-    "in_news_json": "none of the 15 squad players appear in news.json's injury list",
-    "in_squad_json_own_status": [
-      {"name": "Palestra", "status": "DOUBTFUL", "news": "Unspecified injury - 75% chance of playing", "slot": "bench (13)"}
-    ]
+  "news_injuries_all": {
+    "count": 39,
+    "note": "None affect current 15-man squad. Notable league-relevant outs: J.Timber (ARS, groin), Saliba (ARS, back), Doku (MCI, calf, expected back 5 Sep), Mitoma (BHA, hamstring), Minteh (BHA, expected back 28 Nov), Ekitiké (LIV, Achilles), Chiesa (LIV, back)."
   },
-  "price_watch": {
-    "squad_players_in_likely_rises": [],
-    "squad_players_in_likely_falls": [],
-    "note": "No squad player appears in the top likely_rises/likely_falls lists this GW. Note: 'Fernandes' in likely_falls is Tottenham's Fernandes, not squad's B.Fernandes (MUN) - not a match."
+  "price_changes": {
+    "likely_rises_top5": [
+      {"player": "Yalcouyé", "team": "BHA", "pos": "MID", "net_rate": 72.6, "price": 4.5},
+      {"player": "Dedić", "team": "NEW", "pos": "DEF", "net_rate": 71.29, "price": 4.5},
+      {"player": "Braithwaite", "team": "MCI", "pos": "DEF", "net_rate": 63.59, "price": 4},
+      {"player": "Elanga", "team": "NEW", "pos": "MID", "net_rate": 59.98, "price": 6.1, "price_change": 0.1},
+      {"player": "Wissa", "team": "NEW", "pos": "FWD", "net_rate": 57.2, "price": 6.1, "price_change": 0.1}
+    ],
+    "likely_falls_top5": [
+      {"player": "Mateta", "team": "CRY", "pos": "FWD", "net_rate": -77.89, "price": 6.4, "price_change": -0.1},
+      {"player": "Hinshelwood", "team": "BHA", "pos": "MID", "net_rate": -55.09, "price": 6},
+      {"player": "Osula", "team": "NEW", "pos": "FWD", "net_rate": -53.09, "price": 5.9, "price_change": -0.1},
+      {"player": "Maddison", "team": "TOT", "pos": "MID", "net_rate": -51.48, "price": 6.4, "price_change": -0.1},
+      {"player": "Richarlison", "team": "TOT", "pos": "FWD", "net_rate": -41.32, "price": 5.9, "price_change": -0.1}
+    ],
+    "own_squad_price_flag": "E.Le Fée (owned) is in likely_falls list, net_rate -29.17, price_change -0.1 already applied"
   },
-  "gemini_picks": {
-    "captain": "Mendy",
-    "captain_xpts": 16.42,
-    "vice_captain": "Rogers",
-    "transfer_out": "Palestra",
-    "transfer_in": "Mendy",
-    "transfer_reason": "Replace doubtful player with high xPts defender Mendy",
+  "gemini_picks_gw3": {
+    "captain": "Kayode",
+    "captain_xpts": 9.54,
+    "vice_captain": "B.Fernandes",
+    "starting_xi": ["Lammens", "Gabriel", "Calafiori", "Hume", "Kayode", "B.Fernandes", "Mbeumo", "Semenyo", "Rogers", "João Pedro", "Thiago"],
+    "bench": ["Rushworth", "van Ewijk", "E.Le Fée", "Awoniyi"],
+    "transfer_out": "Kerkez",
+    "transfer_in": "Kayode",
+    "transfer_reason": "Bring in top xPts defender to maximize GW return",
     "chip": null,
-    "projected_xpts": 45.34,
+    "projected_xpts": 9.54,
     "confidence": "medium",
-    "key_risk": "Multiple players in squad lack xPts data"
+    "key_risk": "Lack of explicit xPts metrics for remaining squad members"
   }
 }
