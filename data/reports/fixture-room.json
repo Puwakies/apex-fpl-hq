@@ -1,31 +1,48 @@
 {
-  "gw": 2,
-  "window": "GW2-GW6",
-  "data_note": "Cache files (squad.json, xpts.json, gemini.json) only expose a single snapshot 'fdr' rating per player/club, not a next-5 GW array or explicit dgw/bgw booleans. Rankings below are built from that snapshot (lower = easier) and cross-checked for missing/blank-fixture risk by absence from the xpts.json player pool.",
-  "squad_club_fdr": [
-    { "team": "CHE", "fdr": 2, "players": ["Rogers", "João Pedro", "Palestra"] },
-    { "team": "MUN", "fdr": 2, "players": ["Lammens", "B.Fernandes", "Mbeumo"] },
-    { "team": "SUN", "fdr": 2, "players": ["Hume", "E.Le Fée"] },
-    { "team": "LIV", "fdr": 3, "players": ["Kerkez"] },
-    { "team": "MCI", "fdr": 3, "players": ["Semenyo"] },
-    { "team": "BRE", "fdr": 3, "players": ["Thiago"] },
-    { "team": "ARS", "fdr": 4, "players": ["Gabriel"] },
-    { "team": "COV", "fdr": null, "players": ["Rushworth", "Awoniyi", "van Ewijk"], "flag": "no xpts/fdr entry found in cache - data gap, treat as blank-gameweek/rotation risk, all bench-only already" }
+  "agent": "fixture-room",
+  "gw": 3,
+  "generated": "2026-09-04",
+  "data_limitation": "features.json (meta.target_gw=1, generated 2026-07-23) only carries fixture-level 'next' data for GW1-GW5 (n_fixtures=5 per team) - GW6/GW7 fixture-level data is NOT present in this file. Analysis below covers the available GW3-GW5 window (3 fixtures) rather than the requested GW3-GW7 (5 fixtures). No DGW/BGW conclusions can be made for GW6-GW7 from this source - flag for data-lab/pipeline to source extended fixtures next run.",
+  "methodology": "Per-team FDR pulled from features.json fdr.next[] (identical across all players of a team). Ranked on an away-weighted score = avg(fdr + 0.4 if away else 0) over GW3,GW4,GW5. Raw (unweighted) 3-GW average also shown for reference.",
+  "all_teams_gw3_5": [
+    {"team": "ARS", "raw_avg": 3.33, "weighted": 3.60, "fixtures": [{"gw":3,"fdr":4,"loc":"H"},{"gw":4,"fdr":3,"loc":"A"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "AVL", "raw_avg": 2.67, "weighted": 2.93, "fixtures": [{"gw":3,"fdr":2,"loc":"A"},{"gw":4,"fdr":3,"loc":"H"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "BOU", "raw_avg": 3.33, "weighted": 3.47, "fixtures": [{"gw":3,"fdr":3,"loc":"A"},{"gw":4,"fdr":3,"loc":"H"},{"gw":5,"fdr":4,"loc":"H"}]},
+    {"team": "BRE", "raw_avg": 3.00, "weighted": 3.13, "fixtures": [{"gw":3,"fdr":2,"loc":"H"},{"gw":4,"fdr":3,"loc":"A"},{"gw":5,"fdr":4,"loc":"H"}]},
+    {"team": "BHA", "raw_avg": 2.67, "weighted": 2.80, "fixtures": [{"gw":3,"fdr":2,"loc":"H"},{"gw":4,"fdr":2,"loc":"A"},{"gw":5,"fdr":4,"loc":"H"}]},
+    {"team": "CHE", "raw_avg": 3.33, "weighted": 3.60, "fixtures": [{"gw":3,"fdr":5,"loc":"A"},{"gw":4,"fdr":2,"loc":"H"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "COV", "raw_avg": 3.33, "weighted": 3.60, "fixtures": [{"gw":3,"fdr":5,"loc":"A"},{"gw":4,"fdr":2,"loc":"H"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "CRY", "raw_avg": 2.67, "weighted": 2.93, "fixtures": [{"gw":3,"fdr":3,"loc":"A"},{"gw":4,"fdr":2,"loc":"H"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "EVE", "raw_avg": 3.00, "weighted": 3.13, "fixtures": [{"gw":3,"fdr":4,"loc":"H"},{"gw":4,"fdr":3,"loc":"A"},{"gw":5,"fdr":2,"loc":"H"}]},
+    {"team": "FUL", "raw_avg": 3.67, "weighted": 3.80, "fixtures": [{"gw":3,"fdr":3,"loc":"H"},{"gw":4,"fdr":4,"loc":"A"},{"gw":5,"fdr":4,"loc":"H"}]},
+    {"team": "HUL", "raw_avg": 3.33, "weighted": 3.60, "fixtures": [{"gw":3,"fdr":3,"loc":"H"},{"gw":4,"fdr":4,"loc":"A"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "IPS", "raw_avg": 3.33, "weighted": 3.60, "fixtures": [{"gw":3,"fdr":4,"loc":"H"},{"gw":4,"fdr":3,"loc":"A"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "LEE", "raw_avg": 2.67, "weighted": 2.80, "fixtures": [{"gw":3,"fdr":3,"loc":"A"},{"gw":4,"fdr":2,"loc":"H"},{"gw":5,"fdr":3,"loc":"H"}]},
+    {"team": "LIV", "raw_avg": 2.33, "weighted": 2.60, "fixtures": [{"gw":3,"fdr":2,"loc":"A"},{"gw":4,"fdr":2,"loc":"H"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "MCI", "raw_avg": 2.67, "weighted": 2.80, "fixtures": [{"gw":3,"fdr":2,"loc":"H"},{"gw":4,"fdr":4,"loc":"A"},{"gw":5,"fdr":2,"loc":"H"}]},
+    {"team": "MUN", "raw_avg": 3.33, "weighted": 3.60, "fixtures": [{"gw":3,"fdr":3,"loc":"A"},{"gw":4,"fdr":4,"loc":"H"},{"gw":5,"fdr":3,"loc":"A"}]},
+    {"team": "NEW", "raw_avg": 2.67, "weighted": 2.80, "fixtures": [{"gw":3,"fdr":3,"loc":"H"},{"gw":4,"fdr":3,"loc":"A"},{"gw":5,"fdr":2,"loc":"H"}]},
+    {"team": "NFO", "raw_avg": 3.00, "weighted": 3.13, "fixtures": [{"gw":3,"fdr":3,"loc":"H"},{"gw":4,"fdr":4,"loc":"A"},{"gw":5,"fdr":2,"loc":"H"}]},
+    {"team": "TOT", "raw_avg": 3.00, "weighted": 3.13, "fixtures": [{"gw":3,"fdr":3,"loc":"A"},{"gw":4,"fdr":3,"loc":"H"},{"gw":5,"fdr":3,"loc":"H"}]},
+    {"team": "SUN", "raw_avg": 4.00, "weighted": 4.27, "fixtures": [{"gw":3,"fdr":3,"loc":"A"},{"gw":4,"fdr":4,"loc":"H"},{"gw":5,"fdr":5,"loc":"A"}]}
   ],
   "best_runs": [
-    { "team": "CHE", "fdr_avg": 2, "window": "GW2-GW6", "note": "easiest tier tied with MUN/SUN" },
-    { "team": "MUN", "fdr_avg": 2, "window": "GW2-GW6" },
-    { "team": "SUN", "fdr_avg": 2, "window": "GW2-GW6" }
+    {"team": "LIV", "fdr_avg": 2.60, "window": "GW3(A2)-GW4(H2)-GW5(A3)", "squad_relevance": "Kerkez (DEF, owned)"},
+    {"team": "BHA", "fdr_avg": 2.80, "window": "GW3(H2)-GW4(A2)-GW5(H4)", "squad_relevance": "player-pool target (De Cuyper etc.)"},
+    {"team": "LEE", "fdr_avg": 2.80, "window": "GW3(A3)-GW4(H2)-GW5(H3)", "squad_relevance": "none owned"},
+    {"team": "MCI", "fdr_avg": 2.80, "window": "GW3(H2)-GW4(A4)-GW5(H2)", "squad_relevance": "Semenyo (MID, owned); pool target (Gvardiol, Guéhi, Donnarumma)"},
+    {"team": "NEW", "fdr_avg": 2.80, "window": "GW3(H3)-GW4(A3)-GW5(H2)", "squad_relevance": "none owned"}
   ],
   "worst_runs": [
-    { "team": "ARS", "fdr_avg": 4, "window": "GW2-GW6", "note": "hardest tier of squad clubs - Gabriel starter exposed" }
+    {"team": "SUN", "fdr_avg": 4.27, "window": "GW3(A3)-GW4(H4)-GW5(A5)", "squad_relevance": "E.Le Fée, Hume (owned) - worst run in the pool, GW5 away fdr5"},
+    {"team": "FUL", "fdr_avg": 3.80, "window": "GW3(H3)-GW4(A4)-GW5(H4)", "squad_relevance": "none owned"},
+    {"team": "MUN", "fdr_avg": 3.60, "window": "GW3(A3)-GW4(H4)-GW5(A3)", "squad_relevance": "Lammens, B.Fernandes (C), Mbeumo (all owned) - captaincy fixture risk building"},
+    {"team": "CHE", "fdr_avg": 3.60, "window": "GW3(A5)-GW4(H2)-GW5(A3)", "squad_relevance": "Rogers, João Pedro (owned) - toughest immediate fixture (GW3 away fdr5) then eases"},
+    {"team": "ARS", "fdr_avg": 3.60, "window": "GW3(H4)-GW4(A3)-GW5(A3)", "squad_relevance": "Gabriel, Calafiori (owned) - GW3 tough home fdr4 vs template CS expectation"}
   ],
+  "also_tough_tier_3.60": ["COV (Rushworth/Awoniyi/van Ewijk bench)", "HUL (pool)", "IPS (pool)"],
   "dgw_alerts": [],
-  "bgw_alerts": [
-    { "team": "COV", "note": "no fixture/fdr data found for Rushworth, Awoniyi, van Ewijk in xpts.json - possible blank/unlisted fixture, but all three are bench-only so limited xPts impact" }
-  ],
-  "transfer_targets": {
-    "transfer_in": { "name": "Mendy", "team": "HUL", "fdr": 2, "note": "easiest fixture tier, supports Gemini's suggestion on fixtures + xPts (16.42)" },
-    "transfer_out": { "name": "Palestra", "team": "CHE", "fdr": 2, "note": "CHE fixtures are actually easy - reason for transfer out is injury doubt (75% chance of playing), not fixture difficulty" }
-  }
+  "bgw_alerts": [],
+  "dgw_bgw_note": "dgw:false confirmed for every team sampled (ARS, AVL, BOU, BRE, BHA, CHE, COV, CRY, EVE, FUL, HUL, IPS, LEE, LIV, MCI, MUN, NEW, NFO, TOT, SUN - all 20 teams). All teams show 5 continuous fixtures GW1-GW5 with no gaps, so no BGW risk detected in that window. GW6/GW7 cannot be checked - features.json has no fixture data past GW5 (see data_limitation).",
+  "refinement_of_data_lab": "data-lab flagged BRE/MCI/HUL/BHA as the heavily-favoured DEF/GK fixture run. FDR-X analysis CONFIRMS BRE (weighted 3.13), MCI (2.80) and BHA (2.80) as genuinely easy over GW3-5, but HUL is actually mid-pack/tough (weighted 3.60, tied with MUN/CHE/ARS) - GW3 is only fdr3 (not fdr2) and GW4 is a tough away fdr4. Recommend treating HUL defenders as a one-week (GW3-only) play rather than a 3-5 week hold; BRE/MCI/BHA remain the stronger multi-week fixture-run holds. LIV is the single best fixture run in the whole player pool (weighted 2.60) and isn't on data-lab's radar - Kerkez (owned) benefits directly."
 }
