@@ -1,118 +1,120 @@
 {
-  "generated_by": "news-desk",
-  "gw": 2,
-  "deadline_utc": "2026-08-28T17:30:00Z",
+  "agent": "news-desk",
+  "gw": 3,
+  "generated": "2026-09-04",
+  "scope": "User's 15-man squad + Gemini transfer target (Kayode)",
   "items": [
     {
-      "player": "Lammens",
-      "team": "MUN",
+      "player": "Kayode",
+      "team": "BRE",
       "signal": "starts",
-      "note": "Predicted GK vs Ipswich (H, Sun). No fresh MUN injury concerns.",
-      "source": "manunews.com predicted lineup vs Ipswich"
+      "note": "Predicted to start at RB in Brentford's back four vs Sunderland (GW3). One stale indexed result claimed an injury layoff since Aug 2025 (44 games missed) - this appears outdated/mis-indexed and is contradicted by the current GW3 preview, which lists no fitness doubt. Treat as nailed for Gemini's Kerkez->Kayode transfer.",
+      "source": "https://thehardtackle.com/round-up/2026/09/03/brentford-vs-sunderland-preview-and-prediction-2/"
     },
     {
       "player": "Kerkez",
       "team": "LIV",
       "signal": "starts",
-      "note": "Predicted starting LB vs Nottingham Forest (H, Sat). Kept his place after GW1 start; no injury flag.",
-      "source": "ESPN/the4thofficial.net Liverpool vs Nottingham Forest predicted XI"
-    },
-    {
-      "player": "Hume",
-      "team": "SUN",
-      "signal": "starts",
-      "note": "Predicted starting RB in Sunderland's 4-2-3-1 vs Fulham (H, Sun). No fitness concerns after GW1.",
-      "source": "Squawka/Sports Mole Sunderland vs Fulham predicted lineup"
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Predicted starting CB vs Aston Villa (A, Mon). Nailed at CB despite Saliba/Timber both still out (increases Gabriel's defensive workload/importance, not a risk to his minutes).",
-      "source": "Yahoo Sports Arsenal XI vs Aston Villa confirmed/predicted lineup"
+      "note": "Confirmed first-choice LB following Robertson's exit. Tsimikas back from loan as depth cover but no immediate threat to his starting berth.",
+      "source": "https://www.liverpool.com/liverpool-fc-news/features/milos-kerkez-reveals-key-change-34474160"
     },
     {
       "player": "B.Fernandes",
       "team": "MUN",
       "signal": "starts",
-      "note": "Nailed - MUN's primary attacking outlet and set-piece taker on everything (corners, FKs, pens). Predicted to start centrally vs Ipswich. No rotation risk.",
-      "source": "manunews.com / RotoWire Man Utd vs Ipswich predicted lineup"
+      "note": "Named in predicted 4-2-3-1 XI vs Everton (GW3), central attacking role behind Cunha. Captaincy pick unaffected.",
+      "source": "https://www.footballdream.in/blog/everton-vs-manchester-united-gw3-premier-league-2026-27"
     },
     {
       "player": "Mbeumo",
       "team": "MUN",
       "signal": "starts",
-      "note": "Predicted starter vs Ipswich, ahead of Cunha in pecking order per pre-season reports.",
-      "source": "manunews.com predicted lineup vs Ipswich"
+      "note": "Predicted starter on the right of United's front four vs Everton GW3.",
+      "source": "https://sports.yahoo.com/articles/dalot-mbeumo-start-4-2-180500369.html"
     },
     {
-      "player": "Semenyo",
-      "team": "MCI",
+      "player": "Lammens",
+      "team": "MUN",
       "signal": "starts",
-      "note": "Predicted starter in Man City's 3-man attack (with Foden, O'Reilly) behind Haaland vs Crystal Palace - City are short of attacking depth (Doku injured, Savio/Marmoush departed), boosting Semenyo's nailed status.",
-      "source": "beIN Sports / yen.com.gh Crystal Palace vs Man City predicted lineup"
+      "note": "Confirmed long-term #1 GK (wearing the No.1 shirt), 32 PL apps last season. No goalkeeper competition threat.",
+      "source": "https://strettynews.com/2026/09/01/senne-lammens-manchester-united/"
     },
     {
-      "player": "E.Le Fée",
-      "team": "SUN",
+      "player": "Gabriel",
+      "team": "ARS",
       "signal": "starts",
-      "note": "Predicted starting attacking mid vs Fulham (H, Sun), part of Sunderland's settled front line.",
-      "source": "Squawka Sunderland vs Fulham predicted lineup"
+      "note": "Predicted starting CB vs Chelsea GW3. Saliba (back) and Timber (groin surgery recovery) both still out, cementing his and Calafiori's starts.",
+      "source": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768"
+    },
+    {
+      "player": "Calafiori",
+      "team": "ARS",
+      "signal": "starts",
+      "note": "Predicted starting LB vs Chelsea GW3, benefiting from Timber's continued absence (weeks from full training post groin surgery).",
+      "source": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768"
     },
     {
       "player": "Rogers",
       "team": "CHE",
       "signal": "starts",
-      "note": "Nailed and in-form - scored in Chelsea's 5-goal derby win last match alongside Joao Pedro and Palmer. Vs Brighton (H, Sun). Palmer is under assessment for a groin issue (possible surgery) which could mean MORE Chelsea creative burden shifts to Rogers - upside signal, not a risk.",
-      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
-    },
-    {
-      "player": "Thiago",
-      "team": "BRE",
-      "signal": "starts",
-      "note": "Brentford have a settled team after 3-0 win over Tottenham and are likely to stick with it vs Leeds (A, Sun). No injury flag for Thiago.",
-      "source": "Yorkshire Evening Post / Squawka Leeds vs Brentford preview"
+      "note": "Predicted starting attacking midfielder alongside Palmer for Chelsea vs Arsenal GW3 (same fixture as Gabriel/Calafiori).",
+      "source": "https://sports.yahoo.com/articles/chelsea-projected-lineup-2026-27-062001630.html"
     },
     {
       "player": "João Pedro",
       "team": "CHE",
       "signal": "starts",
-      "note": "Nailed - scored in Chelsea's last match. Starts vs Brighton (H, Sun).",
-      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
+      "note": "Predicted lone striker for Chelsea vs Arsenal GW3.",
+      "source": "https://sports.yahoo.com/articles/chelsea-projected-lineup-2026-27-062001630.html"
     },
     {
-      "player": "Palestra",
-      "team": "CHE",
-      "signal": "benched",
-      "note": "ESCALATION beyond data-lab's 75%-chance flag: Palestra has missed Chelsea's last matchday squad entirely (EFL Cup vs Luton) due to a minor fitness setback per Alonso, and in his absence Malo Gusto has taken the right wing-back slot. Even set aside injury, Gusto looks first-choice there. Treat as a likely non-starter/bench risk for GW2, not just a fitness coin-flip - lower confidence than the 75% number implies.",
-      "source": "Fantasy Football Scout 'Fulham v Chelsea: No Caicedo or Palestra' + FPL GW2 Thursday/Wednesday live injury updates"
-    },
-    {
-      "player": "Awoniyi",
-      "team": "COV",
+      "player": "Thiago",
+      "team": "BRE",
       "signal": "starts",
-      "note": "Bench player upside note: predicted to lead the line for Coventry ahead of Ellis Simms vs Hull (H, Sat) - not a squad risk since he is already benched by manager, but strong bench-enabler signal if a Chelsea/Coventry punt is needed later.",
-      "source": "Yahoo Sports / thehardtackle.com Coventry vs Hull preview"
+      "note": "Confirmed to lead the line for Brentford vs Sunderland GW3. Note: 7 shots without a goal this season (2nd-most in PL) - profligate but role/minutes not in doubt.",
+      "source": "https://thehardtackle.com/round-up/2026/09/03/brentford-vs-sunderland-preview-and-prediction-2/"
     },
     {
-      "player": "van Ewijk",
-      "team": "COV",
+      "player": "Semenyo",
+      "team": "MCI",
       "signal": "starts",
-      "note": "Predicted starting RB for Coventry vs Hull (H, Sat). Bench player, no action needed.",
-      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
+      "note": "Expected to start vs Coventry GW3, no fitness/rotation concerns flagged. Modest early returns (0G, 1A in 180 mins) is a form issue, not a team-news/starts risk.",
+      "source": "https://www.premierleague.com/en/players/437730/antoine-semenyo/stats"
+    },
+    {
+      "player": "E.Le Fée",
+      "team": "SUN",
+      "signal": "starts",
+      "note": "Starting in Sunderland's attacking trio vs Brentford GW3 (with Hume, Angulo, behind Brobbey). Watch list: new signing Malick Fofana adds competition for advanced/wide slots from GW4 onward - not an immediate GW3 risk.",
+      "source": "https://www.sunderlandecho.com/sport/football/sunderland-afc/sunderland-wolves-team-news-confirmed-8480716"
+    },
+    {
+      "player": "Hume",
+      "team": "SUN",
+      "signal": "rotation_risk",
+      "note": "Currently starting further forward as an auxiliary attacking outlet, but FF Scout explicitly flags that incoming winger Malick Fofana 'makes Hume's continued use further forward less certain.' Combined with a tough run (BRE, ARS, MCI), his advanced/attacking-return role is the most exposed asset in the squad - bench-appropriate already, but monitor for a positional demotion that would also cut his defensive FPL points.",
+      "source": "https://fantasysixpack.net/2026-27-fpl-gameweek-3-tips/"
     },
     {
       "player": "Rushworth",
       "team": "COV",
       "signal": "starts",
-      "note": "Predicted starting GK for Coventry vs Hull. Bench GK, no action needed.",
-      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
+      "note": "Predicted starting GK for Coventry vs Man City GW3.",
+      "source": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html"
+    },
+    {
+      "player": "van Ewijk",
+      "team": "COV",
+      "signal": "starts",
+      "note": "Predicted starting RB in Coventry's back four vs Man City GW3.",
+      "source": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html"
+    },
+    {
+      "player": "Awoniyi",
+      "team": "COV",
+      "signal": "starts",
+      "note": "Predicted lone striker for Coventry vs Man City GW3; noted as 'one of the most productive outlets' in a stretched squad missing Wright, Kesler-Hayden and Woolfenden.",
+      "source": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html"
     }
-  ],
-  "summary_notes": {
-    "captain_bfernandes_nailed": true,
-    "vice_gabriel_nailed": true,
-    "new_risk_beyond_datalab": "Palestra (bench DEF) risk is worse than the 75% doubtful flag suggests - repeated squad omissions this week and Gusto ahead of him in the pecking order at RWB. Low priority since he's on the bench, not starting XI.",
-    "notable_positive": "Semenyo and Rogers both look more nailed than usual this week due to teammate absences/departures (City attacking depth thin; Palmer groin concern at Chelsea)."
-  }
+  ]
 }
