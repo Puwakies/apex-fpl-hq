@@ -1,79 +1,130 @@
 {
   "engine": "claude",
-  "gw": 2,
+  "gw": 3,
+  "generated": "2026-09-04",
   "captain": "B.Fernandes",
   "captain_type": "template",
   "captain_trigger": "none",
-  "vice": "Gabriel",
+  "captain_reasoning": "LOCKED rule applied without tilt: season cum_pts leader among owned nailed non-GK premiums = B.Fernandes (25 pts, 12.5 ppg, 180/180 mins, 105 bps = highest in the 364-player pool). sim-lab's 50k-draw MC independently agrees (EV 8.76, p10 floor 3.0, P(haul>=10) 40.4%, +3.85 captain-EV over next best) so there is zero EV/floor conflict to arbitrate. intel also names him the captain_shield at 56% EO — NEVER fade a shield without an OUT/doubt flag, and medical-bay has him fit at 100%. HARD REJECT of Gemini's Kayode (C): captaining a 4.6m defender is (a) a direct violation of the locked rule, (b) sourced from an xpts.json model that intel proved is clean-sheet-biased this week (it rates Haaland 1.80 and 4.0m defenders 3.7-4.8), and (c) caps our ceiling at ~13 in the exact GW we need 20+ variance to claw back the unowned-Haaland gap. Not a differential week: we sit 10/17 in-league and only 2 GWs are played — no late-season rank chase exists, so no differential trigger fires.",
+  "vice": "João Pedro",
+  "vice_change_required": true,
+  "vice_reasoning": "squad.json currently has Gabriel (VC). Per the rule (vice = next highest cum_pts) that is wrong: João Pedro 20 pts / 10.0 ppg / MC EV 6.84 vs Gabriel 13 pts / 6.5 ppg / MC EV 2.62. Calafiori also has 20 pts but João Pedro wins the tiebreak on EV (6.84 vs 4.95) and on attacking ceiling. ACTION FOR MANAGER: change VC to João Pedro before the deadline.",
   "starting_xi": [
-    { "name": "Lammens", "pos": "GK", "price": 5.0, "xpts": 4.0 },
-    { "name": "Kerkez", "pos": "DEF", "price": 5.5, "xpts": 2.72 },
-    { "name": "Hume", "pos": "DEF", "price": 4.5, "xpts": 3.35 },
-    { "name": "Gabriel", "pos": "DEF", "price": 8.0, "xpts": 5.55 },
-    { "name": "B.Fernandes", "pos": "MID", "price": 12.0, "xpts": 6.26 },
-    { "name": "Mbeumo", "pos": "MID", "price": 8.0, "xpts": 4.06 },
-    { "name": "Semenyo", "pos": "MID", "price": 8.5, "xpts": 5.39 },
-    { "name": "E.Le Fée", "pos": "MID", "price": 6.0, "xpts": 4.0 },
-    { "name": "Rogers", "pos": "MID", "price": 7.5, "xpts": 4.48 },
-    { "name": "Thiago", "pos": "FWD", "price": 8.0, "xpts": 4.84 },
-    { "name": "João Pedro", "pos": "FWD", "price": 7.6, "xpts": 4.78 }
-  ],
-  "bench": [
-    { "name": "Rushworth", "pos": "GK", "price": 4.5 },
-    { "name": "van Ewijk", "pos": "DEF", "price": 4.0 },
-    { "name": "Awoniyi", "pos": "FWD", "price": 5.5 },
-    { "name": "Palestra", "pos": "DEF", "price": 5.5 }
+    {"name": "Lammens", "pos": "GK", "price": 5.0, "xpts": 2.57},
+    {"name": "Kayode", "pos": "DEF", "price": 4.6, "xpts": 4.20},
+    {"name": "Gabriel", "pos": "DEF", "price": 8.0, "xpts": 2.62},
+    {"name": "Calafiori", "pos": "DEF", "price": 5.6, "xpts": 4.95},
+    {"name": "B.Fernandes", "pos": "MID", "price": 12.0, "xpts": 8.76},
+    {"name": "Mbeumo", "pos": "MID", "price": 8.0, "xpts": 5.47},
+    {"name": "Rogers", "pos": "MID", "price": 7.5, "xpts": 5.15},
+    {"name": "Semenyo", "pos": "MID", "price": 8.5, "xpts": 4.34},
+    {"name": "E.Le Fée", "pos": "MID", "price": 5.9, "xpts": 2.63},
+    {"name": "João Pedro", "pos": "FWD", "price": 7.7, "xpts": 6.84},
+    {"name": "Thiago", "pos": "FWD", "price": 8.0, "xpts": 2.81}
   ],
   "formation": "3-5-2",
+  "bench": [
+    {"name": "Rushworth", "pos": "GK", "price": 4.5},
+    {"name": "Hume", "pos": "DEF", "price": 4.5},
+    {"name": "van Ewijk", "pos": "DEF", "price": 4.0},
+    {"name": "Awoniyi", "pos": "FWD", "price": 5.5}
+  ],
+  "bench_order_note": "Outfield order: 1) Hume (169/180 mins, SUN away fdr3, MC EV 3.04 — highest-EV bench outfielder despite the role flag), 2) van Ewijk (180/180 mins, nailed, but COV away at MCI fdr5), 3) Awoniyi (110 mins, start_rate 0.61 — only autosub if two starters are scratched). Bench-depth rule satisfied: 1 reliable GK + 2 outfielders with blind mins >45 (Hume 169, van Ewijk 180).",
+  "consistency_checks": {
+    "rotation_risk_gate": {
+      "verdict": "PASS — all 11 starters clear",
+      "detail": "Every starter has blind mins >=160/180 (Lammens 180, Gabriel 180, Calafiori 170, B.Fernandes 180, Mbeumo 180, Rogers 171, Semenyo 180, E.Le Fée 168, João Pedro 180, Thiago 172) and none were subbed <60 in 2+ of the last 3. Kayode is confirmed by news-desk as the starting RB in Brentford's back four vs Sunderland (the stale 'Aug 2025 layoff' hit is mis-indexed and contradicted by the current preview) and by medical-bay at 100%.",
+      "gated_to_bench": [
+        {"player": "Hume", "reason": "news-desk signal = rotation_risk. FF Scout: Malick Fofana's arrival 'makes Hume's continued use further forward less certain' — his FPL value is the advanced role, and a positional demotion also cuts his attacking returns. Gate (A) is a hard bench, no override."},
+        {"player": "Awoniyi", "reason": "sim-lab has him nailed=false, 110 mins across 2 GWs, start_rate 0.61 — fails the <60 mean-minutes test outright."}
+      ]
+    },
+    "blank_check": {
+      "verdict": "PASS",
+      "detail": "fixture-room confirms all 20 teams have 5 continuous fixtures GW1-GW5 — no BGW, no DGW. Zero starters without a fixture. High-blank-risk trigger (3+ starters at FDR 5) NOT met: only Rogers and João Pedro sit at fdr 5 (CHE away at ARS), so 2 of 11."
+    },
+    "xi_is_forced": "After the Kerkez->Kayode transfer, the rotation gate and blank check leave exactly 11 eligible players (1 GK / 3 DEF / 5 MID / 2 FWD). No discretionary swap remains. I explicitly tested benching E.Le Fée (MC EV 2.63, SUN away fdr3) for a 4th defender and rejected it: van Ewijk (EV 2.81) is COV away at the Etihad in the very fixture ~55% of the field is captaining Haaland into — a near-zero-CS spot — and Hume is gate-blocked. Net EV gain is inside noise and the downside tail is worse."
+  },
   "transfers": {
-    "out": null,
-    "in": null,
+    "out": "Kerkez",
+    "in": "Kayode",
     "hits": 0,
-    "bank": 0.0,
-    "action": "ROLL FT to GW3 (2 FTs)",
-    "reason": "Palestra is a bench-only 4th defender; a doubt there costs ~0 xPts. Spending the only FT on him buys nothing this week. Rolling gives 2 FTs in GW3 to attack the real structural problem (no Haaland, ~111 EO) with real 26/27 minutes data instead of a preseason-corrupted xPts file. Market-desk confirms zero price pressure on any squad player, so there is no cost to waiting.",
-    "rejected_alternative": {
-      "move": "Palestra -> Mendy (HUL, 4.0)",
-      "verdict": "not endorsed",
-      "why": "Mendy's 16.42 xPts is a confirmed model artifact (sim-lab: absent from features.json entirely, zero cumulative record, projected above Haaland's 6.43; 5 of the top 6 xPts rows are cheap promoted-side defenders). Buying a bench defender off a broken projection burns a FT for a like-for-like bench slot. If the manager insists on clearing Palestra, do it as a cash-freeing swap to a nailed cheap defender - never as a captaincy play."
-    }
+    "bank": 0.9,
+    "free_transfers_used": 1,
+    "reasoning": "APPROVED, independently of Gemini's reasoning (which was captain-driven and unsound). Kerkez is the clear sale on merit: 1 season pt, 160/180 mins, start_rate 0.89 (lowest in the squad), MC EV 2.64, 3.2% EO — pure dead weight. Kayode wins on BOTH axes the protocol trusts: season pedigree (15 pts vs 1) and this-week matchup (BRE at home to Sunderland, fdr 2 — Sunderland own the worst 3-GW run in the league at 4.27). fixture-room's LIV-best-run (2.60) argument is the one real counter, but a best-run fixture is worthless attached to a defender producing 0.5 ppg, and BRE's own run (3.13) is comfortably better than the tier the sale funds. The 0.9m banked is the first brick in the Haaland-funding wall (intel's rank_risk #1: 125% EO unowned, unbuyable at 15.5m this week).",
+    "alternative_considered": {
+      "in": "Ajayi (HUL, 4.1m)",
+      "verdict": "Close second, rejected",
+      "why": "Ajayi actually LEADS Kayode on the locked signal (20 season pts vs 15, joint-top scorer in the whole pool, best ppm at 4.88) and banks 1.4m instead of 0.9m. Rejected on two grounds fixture-room established: HUL is mid/tough (weighted 3.60, tied with MUN/CHE/ARS) with GW3 only fdr3 and a nasty away fdr4 in GW4 — explicitly a one-week play, not a hold — while BRE is a genuine multi-week run at 3.13. Ajayi is also 153/180 mins vs Kayode's expected 90s. If the manager is deliberately maximising the Haaland fund, the Ajayi variant is defensible and I would not argue against it.",
+      "also_rejected": ["Egan (HUL 4.0) — same HUL fixture problem, lower ceiling", "Ajer (BRE 4.5) — same fixture as Kayode but 0.1m dearer and less nailed to 90s"]
+    },
+    "no_transfer_option": "Rolling the FT was considered and rejected: Kerkez has no path back into the XI, so the FT buys a guaranteed ~+1.6 EV upgrade in the XI this week at zero cost. Rolling only pays if a 2-FT move is queued, and the Haaland move needs ~2.0m more than we can raise regardless."
   },
   "chip": {
     "name": null,
-    "action": "SAVE",
-    "reason": "No trigger met. No DGW/BGW in GW2 (fixture-room: dgw_alerts empty), no starter is rotation-flagged, and there is no 3-GW rolling history yet to justify a WC. 26/27 first-half chip set expires at the GW19 deadline - 17 GWs of runway remains, so forcing rule does not apply until GW16. Chips left: WC x2, BB, TC, FH."
+    "action": "hold",
+    "reason": "No chip condition is met. TC requires a confirmed DGW where the captain plays twice — fixture-room confirms dgw:false for all 20 teams GW1-GW5, and the community's TC-on-Haaland debate is irrelevant to us since we do not own him. BB is already spent (BB@GW2) and would be dead anyway (bench is Rushworth/Hume/van Ewijk/Awoniyi, combined xpts 3.43, three of them COV away at MCI). FH needs 4+ starters blanking — we have zero. WC needs 3+ rotation-flagged starters (we have zero after the gate) or a 3-GW rolling average under 55/GW — we are at 152 pts through 2 GWs (76.0/GW), nowhere near the trigger. Chips left: TC, FH, WC x2. 26/27 FORMAT NOTE: the first-half set expires at the GW19 deadline and does NOT carry over. We are at GW3 with 16 GWs of runway — the forcing rule does not engage until GW16. No action, but the-director should start tracking it from GW14."
   },
-  "projected_xpts": 55.7,
+  "projected_xpts": 59.1,
+  "projected_xpts_method": "Sum of the 11 starters' calibrated MC expected values + B.Fernandes counted once more for the armband (50.34 + 8.76). Kayode is not in sim-lab's MC (unowned at run time) so he is estimated at 4.20 by deflating his cache xpts 4.77 toward the pool mean. IMPORTANT: I did NOT use raw cache/xpts.json for this total — that model is clean-sheet-weighted and systematically deflated (it prices B.Fernandes at 2.82 against an MC EV of 8.76, and Haaland at 1.80). Summing it yields ~24.7, less than half the 45-75 sanity band the protocol expects, which is itself proof the cache figures are not a points forecast. Gemini's 9.54 'projected_xpts' is not a squad projection at all — it is one player's doubled captain score.",
   "risks": [
     {
-      "risk": "Gabriel (vice-captain) GW1 knock",
+      "id": 1,
+      "severity": "critical",
+      "risk": "Haaland unowned at ~125% effective ownership (69.9% owned + ~55% captaincy), at home to Coventry, with mainstream outlets debating Triple Captain on him.",
+      "impact": "A 12+ pt Haaland return costs roughly 25 net points against the field. Unfixable this week — 15.5m in with 5.5m out and 0.0 bank.",
+      "mitigation": "ACCEPT, DO NOT COMPOUND. The one genuine error available here is fading B.Fernandes on top of it (Gemini's Kayode captaincy), which loses twice. Bank the 0.9m and treat Thiago (8.0m, 2 pts, 1.8 xG, 0 goals) as the GW4-6 funding lever."
+    },
+    {
+      "id": 2,
+      "severity": "high",
+      "risk": "ARS v CHE fixture collision — Gabriel + Calafiori (fdr 4) and Rogers + João Pedro (fdr 5) are 4 of 11 starters in one match at the Emirates.",
+      "impact": "Structurally guaranteed partial failure: the clean-sheet pair and the attacking pair cannot both pay off. Correlated variance, not additive EV.",
+      "mitigation": "Not resolvable with one FT. João Pedro must start regardless (69.6% EO — benching the 2nd most-owned player in the game is a template fade with the same asymmetry as fading a template captain). Rogers is the only defensible fade at 25.6% EO, but his MC EV of 5.15 is the 3rd highest in the squad, so benching him is EV-negative. Hold both."
+    },
+    {
+      "id": 3,
       "severity": "medium",
-      "detail": "Forced off late vs Liverpool after collision with Nunez. No formal FPL flag, not named in Arteta's 27 Aug presser, and news-desk has him in the predicted ARS XI at CB (Saliba/Timber both out increases his importance). Medical-bay holds him at 90%. ACTION: re-check Arsenal team news before the 17:30 UTC deadline; if he is flagged, promote van Ewijk into the XI and move the armband's backup to Semenyo (202 cum_pts, next in the locked ranking)."
+      "risk": "Zero usable cover. The bench is Rushworth/van Ewijk/Awoniyi all COV away at Man City (fdr 5) plus a role-flagged Hume — combined cache xpts 3.43.",
+      "impact": "A late scratch to any starter autosubs into an effectively dead player. Bench Boost is already spent so there is no chip exposure, but the safety net is worthless.",
+      "mitigation": "Re-check confirmed lineups at 1 hour before kickoff. This is exactly the real-time information edge the protocol says belongs to the human manager, not the model."
     },
     {
-      "risk": "xpts.json is miscalibrated at GW2",
-      "severity": "high",
-      "detail": "Only 4 of 15 squad players have an xPts row, and the top of the pool is dominated by 4.0m promoted-side defenders. Ranking and captaincy this week are driven by season cum_pts (locked protocol) and sim-lab Monte Carlo EV, not by xpts.json. Projected xPts uses mc_ev as the per-player proxy."
+      "id": 4,
+      "severity": "medium",
+      "risk": "MUN's fixture run is tightening (weighted 3.60: GW3 away fdr3, GW4 home fdr4, GW5 away fdr3) and we hold three MUN assets including the captain.",
+      "impact": "Captaincy fixture risk builds over the next 3 GWs, not this one.",
+      "mitigation": "No action — the locked rule is explicitly fixture-blind and 7 holdout rounds proved fixture-chasing the armband underperforms. Monitor only; revisit if B.Fernandes loses the cum_pts lead."
     },
     {
-      "risk": "Not owning Haaland",
-      "severity": "high",
-      "detail": "69.3% owned, ~42% captained, ~111 EO. Every Haaland return is effectively doubled against this squad. This is a transfer problem, not a captain problem - it is the reason the FT is being rolled."
+      "id": 5,
+      "severity": "medium",
+      "risk": "Hume's role. He is benched on the rotation gate, but if Fofana displaces him permanently his floor drops as well as his ceiling.",
+      "impact": "A 4.5m bench defender turning into a non-starter erodes squad depth already thinned by the triple-Coventry bench.",
+      "mitigation": "Watch GW4 lineup. SUN also carry the league's worst 3-GW run (4.27, including an away fdr5 in GW5) — Hume and E.Le Fée are both natural GW4-5 sale candidates."
     },
     {
-      "risk": "ARS have the hardest GW2-GW6 run (fdr 4)",
+      "id": 6,
       "severity": "low",
-      "detail": "Gabriel at 8.0m is the squad's most fixture-exposed starter over the next five. Watch as a GW3-GW4 downgrade candidate to fund a Haaland move; no action in GW2."
+      "risk": "Mbeumo is the most-sold player in FPL since the GW2 deadline (31.5% EO and falling), converting him from a template asset into an unintended differential.",
+      "impact": "Mildly rank-positive if he returns, mildly negative if he blanks. MC EV 5.47 with a 30.7% blank probability.",
+      "mitigation": "Hold and monitor. Kerkez was the unambiguous sale this week; Mbeumo is not a GW3 priority."
     },
     {
-      "risk": "COV bench block (Rushworth, van Ewijk, Awoniyi) has no fdr/xpts row",
-      "severity": "low",
-      "detail": "Fixture-room flagged a possible blank, but news-desk has all three as predicted GW2 starters vs Hull, so this reads as a cache data gap rather than a real BGW. All three are bench-only regardless. Bench-depth rule satisfied: reliable GK plus two predicted starters."
-    },
-    {
-      "risk": "Palestra likely out of the CHE picture beyond injury",
-      "severity": "low",
-      "detail": "Missed the Luton EFL Cup squad, Alonso wants 'further assessment', and Gusto is ahead of him at RWB. Medical-bay downgrades him from FPL's 75% to a ~50/50. He is the last bench slot, so no forced action; he is the first player out when the GW3 double-FT move is made."
+      "id": 7,
+      "severity": "info",
+      "risk": "Data integrity: cache/xpts.json is missing Kerkez, E.Le Fée and van Ewijk entirely, and data/reports/news.json + medical.json are stale (2026-06-26, last-season GW38 content: 'Gabriel out', 'Bowen captain'). medical-bay also found team-code mismatches (Rushworth listed COV in squad.json but BHA in features.json; Awoniyi COV vs NFO).",
+      "impact": "Any engine reading the stale report files instead of the live cache would produce a corrupted brief. The team-code mismatch means Rushworth's and Awoniyi's fixtures may not actually be the MCI away game assumed above.",
+      "mitigation": "All three affected players are benched, so the mismatch is non-load-bearing this week. Flag to the pipeline: refresh news.json/medical.json and reconcile team codes before GW4."
     }
-  ]
+  ],
+  "agreement_with_gemini": {
+    "agree": ["Kerkez -> Kayode transfer", "Start Lammens, Gabriel, Calafiori, Kayode, B.Fernandes, Mbeumo, Semenyo, Rogers, João Pedro, Thiago", "No chip"],
+    "disagree": [
+      {"item": "Captain", "gemini": "Kayode", "claude": "B.Fernandes", "why": "Violates the locked cum_pts rule; sourced from a defence-biased xpts model; caps ceiling at ~13 in the week we need 20+."},
+      {"item": "XI slot 11", "gemini": "Hume starts, E.Le Fée benched", "claude": "E.Le Fée starts, Hume benched", "why": "Hume carries an explicit news-desk rotation_risk flag (Fofana threatens his advanced role) — Rule (A) is a hard bench. Gemini's version also produces a 4-4-2 that starts a flagged player over an unflagged one."},
+      {"item": "Vice-captain", "gemini": "B.Fernandes", "claude": "João Pedro", "why": "Consequence of Gemini's captain error — with B.Fernandes correctly on the armband, VC goes to the next-highest cum_pts (João Pedro, 20)."},
+      {"item": "projected_xpts", "gemini": "9.54", "claude": "59.1", "why": "Gemini reported one player's doubled captain score, not a squad total."}
+    ]
+  }
 }
