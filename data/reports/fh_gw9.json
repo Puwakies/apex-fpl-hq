@@ -1,0 +1,159 @@
+{
+  "chip": "Free Hit",
+  "gw": 9,
+  "formation": "4-5-1",
+  "spend": 99.6,
+  "captain": {
+    "name": "Haaland",
+    "team": "MCI",
+    "fix": "2HvBHA"
+  },
+  "crossfire_avoided": [
+    "CHE v MUN (fdr4)",
+    "LIV v ARS (fdr4)"
+  ],
+  "xi": [
+    {
+      "name": "Roefs",
+      "team": "SUN",
+      "pos": "GK",
+      "price": 5.0,
+      "fix": "2AvCOV",
+      "mult": 1.36,
+      "bp": 143.0
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6.0,
+      "fix": "2HvBHA",
+      "mult": 1.45,
+      "bp": 179.2
+    },
+    {
+      "name": "Truffert",
+      "team": "BOU",
+      "pos": "DEF",
+      "price": 5.5,
+      "fix": "2HvLEE",
+      "mult": 1.45,
+      "bp": 151.0
+    },
+    {
+      "name": "Mukiele",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 5.5,
+      "fix": "2AvCOV",
+      "mult": 1.36,
+      "bp": 156.8
+    },
+    {
+      "name": "Cash",
+      "team": "AVL",
+      "pos": "DEF",
+      "price": 4.5,
+      "fix": "2HvFUL",
+      "mult": 1.45,
+      "bp": 120.2
+    },
+    {
+      "name": "Semenyo",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 8.4,
+      "fix": "2HvBHA",
+      "mult": 1.45,
+      "bp": 197.6
+    },
+    {
+      "name": "Tavernier",
+      "team": "BOU",
+      "pos": "MID",
+      "price": 6.0,
+      "fix": "2HvLEE",
+      "mult": 1.45,
+      "bp": 145.6
+    },
+    {
+      "name": "Scott",
+      "team": "BOU",
+      "pos": "MID",
+      "price": 6.0,
+      "fix": "2HvLEE",
+      "mult": 1.45,
+      "bp": 144.8
+    },
+    {
+      "name": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 5.9,
+      "fix": "2AvCOV",
+      "mult": 1.36,
+      "bp": 153.6
+    },
+    {
+      "name": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 7.9,
+      "fix": "3AvBRE",
+      "mult": 1.0,
+      "bp": 186.4
+    },
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "pos": "FWD",
+      "price": 15.5,
+      "fix": "2HvBHA",
+      "mult": 1.45,
+      "bp": 227.2
+    }
+  ],
+  "bench": [
+    {
+      "name": "Verbruggen",
+      "team": "BHA",
+      "pos": "GK",
+      "price": 4.5,
+      "fix": "5AvMCI",
+      "mult": 0.7,
+      "bp": 138.2
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 4.9,
+      "fix": "3HvCRY",
+      "mult": 1.08,
+      "bp": 154.4
+    },
+    {
+      "name": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 8.0,
+      "fix": "3HvNFO",
+      "mult": 1.08,
+      "bp": 160.0
+    },
+    {
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6.0,
+      "fix": "3AvBOU",
+      "mult": 1.0,
+      "bp": 149.6
+    }
+  ],
+  "thesis": "FH GW9 = crossfire dodge (ไม่ใช่ BGW). GW9 มี CHE v MUN + LIV v ARS (fdr4 ทั้งคู่) ทีมใหญ่ฆ่ากันเอง",
+  "fh_gain_expected": "+13.9 pts vs ทีมปกติที่จม crossfire (กัปตัน Haaland เท่ากัน — กำไรจาก 10 ตัวรอง)",
+  "chip_sequence": "WC@GW3 → TC@GW7 → FH@GW9 (ต่าง GW กันหมด, ใช้ครบก่อน set1 หมดอายุ GW19)",
+  "risk_note": "โหลด SUN 3 + BOU 3 (เกมง่ายแต่ทีมคุณภาพกลาง) — เป็น 1-week bet, ต้นทุนจำกัด",
+  "protocol_note": "ตำรา APEX ให้เก็บ FH ไว้ BGW; แต่ FH1 หมดอายุ GW19 + ต้นซีซันแทบไม่มี BGW → ใช้เลี่ยง crossfire GW9 คุ้มกว่าปล่อยหมดอายุ (ถ้ามีประกาศ BGW/DGW ก่อน GW19 ค่อยพิจารณาเลื่อน)"
+}
