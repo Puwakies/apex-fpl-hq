@@ -1,15 +1,6 @@
 {
-  "updated": "2026-09-03T17:25:37.453Z",
+  "updated": "2026-09-10T17:23:31.286Z",
   "items": [
-    {
-      "player": "J.Timber",
-      "team": "ARS",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Groin injury - Unknown return date",
-      "signal": "out"
-    },
     {
       "player": "Saliba",
       "team": "ARS",
@@ -34,7 +25,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Unknown return date",
+      "news": "Knee injury - Expected back 12 Sep",
       "signal": "out"
     },
     {
@@ -44,6 +35,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Unspecified injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Goretzka",
+      "team": "AVL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -79,7 +79,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Foot injury - Unknown return date",
+      "news": "Foot injury - Expected back 7 Nov",
       "signal": "out"
     },
     {
@@ -92,6 +92,15 @@
       "signal": "out"
     },
     {
+      "player": "Jensen",
+      "team": "BRE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Expected back 18 Sep",
+      "signal": "out"
+    },
+    {
       "player": "Milambo",
       "team": "BRE",
       "pos": "MID",
@@ -101,12 +110,21 @@
       "signal": "out"
     },
     {
+      "player": "Dasilva",
+      "team": "BRE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 10 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Mitoma",
       "team": "BHA",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
+      "news": "Hamstring injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -116,6 +134,24 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Leg injury - Expected back 28 Nov",
+      "signal": "out"
+    },
+    {
+      "player": "Wieffer",
+      "team": "BHA",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Yohanna",
+      "team": "BHA",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -236,7 +272,7 @@
       "signal": "out"
     },
     {
-      "player": "Zambrano",
+      "player": "Gyabi",
       "team": "HUL",
       "pos": "MID",
       "status": "INJURED",
@@ -245,12 +281,21 @@
       "signal": "out"
     },
     {
-      "player": "Gyabi",
+      "player": "Morita",
       "team": "HUL",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Thigh injury - Unknown return date",
+      "news": "Calf injury - Expected back 11 Oct",
+      "signal": "out"
+    },
+    {
+      "player": "Ansah",
+      "team": "HUL",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Back injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -314,51 +359,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Muscular injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Bradley",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Leoni",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Chiesa",
-      "team": "LIV",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Back injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Ekitiké",
-      "team": "LIV",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Achilles injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Doku",
-      "team": "MCI",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Calf injury - Expected back 5 Sep",
       "signal": "out"
     }
   ]
