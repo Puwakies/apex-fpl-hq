@@ -1,79 +1,98 @@
 {
   "engine": "claude",
-  "gw": 2,
-  "captain": "B.Fernandes",
+  "gw": 4,
+  "generated": "2026-09-11",
+  "captain": "Haaland",
   "captain_type": "template",
   "captain_trigger": "none",
-  "vice": "Gabriel",
+  "captain_rationale": "LOCKED rule: captain = season cum_pts leader among owned nailed premiums. Haaland 24 pts / 3 GWs (8.0 ppg), 270/270 mins, AVAILABLE, ~71% owned / ~111% EO. GW4 xPts of 3.75 (fdr 4, away derby) is a fixture/matchup signal — matchup captaincy tested at 33% top-3 on holdout vs 42-50% for cum_pts and is on the explicitly-failed list. sim-lab trigger audit cleared NOTHING; intel captain_shield says DO NOT FADE. Armband does not move.",
+  "vice": "Saka",
+  "vice_rationale": "ACTION vs squad.json. Current VC Gakpo is DOUBTFUL (thigh/adductor, 75%), MC floor p10 = 0, genuine 50/50 for kickoff — a broken safety net behind a 111% EO armband. Saka is the next nailed premium by cum_pts (22 pts, 246/270 mins, AVAILABLE, cap_score 7.55).",
   "starting_xi": [
-    { "name": "Lammens", "pos": "GK", "price": 5.0, "xpts": 4.0 },
-    { "name": "Kerkez", "pos": "DEF", "price": 5.5, "xpts": 2.72 },
-    { "name": "Hume", "pos": "DEF", "price": 4.5, "xpts": 3.35 },
-    { "name": "Gabriel", "pos": "DEF", "price": 8.0, "xpts": 5.55 },
-    { "name": "B.Fernandes", "pos": "MID", "price": 12.0, "xpts": 6.26 },
-    { "name": "Mbeumo", "pos": "MID", "price": 8.0, "xpts": 4.06 },
-    { "name": "Semenyo", "pos": "MID", "price": 8.5, "xpts": 5.39 },
-    { "name": "E.Le Fée", "pos": "MID", "price": 6.0, "xpts": 4.0 },
-    { "name": "Rogers", "pos": "MID", "price": 7.5, "xpts": 4.48 },
-    { "name": "Thiago", "pos": "FWD", "price": 8.0, "xpts": 4.84 },
-    { "name": "João Pedro", "pos": "FWD", "price": 7.6, "xpts": 4.78 }
+    { "name": "Raya", "pos": "GK", "price": 6.0, "xpts": 4.48 },
+    { "name": "De Cuyper", "pos": "DEF", "price": 4.8, "xpts": 6.20 },
+    { "name": "Hall", "pos": "DEF", "price": 5.1, "xpts": 4.77 },
+    { "name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 4.08 },
+    { "name": "Ajer", "pos": "DEF", "price": 4.5, "xpts": 4.00 },
+    { "name": "Palmer", "pos": "MID", "price": 9.6, "xpts": 5.18 },
+    { "name": "Scott", "pos": "MID", "price": 6.0, "xpts": 4.40 },
+    { "name": "Saka", "pos": "MID", "price": 9.5, "xpts": 4.35 },
+    { "name": "Groß", "pos": "MID", "price": 5.6, "xpts": 3.72 },
+    { "name": "João Pedro", "pos": "FWD", "price": 7.7, "xpts": 4.11 },
+    { "name": "Haaland", "pos": "FWD", "price": 15.5, "xpts": 3.75 }
   ],
+  "formation": "4-4-2",
   "bench": [
-    { "name": "Rushworth", "pos": "GK", "price": 4.5 },
-    { "name": "van Ewijk", "pos": "DEF", "price": 4.0 },
-    { "name": "Awoniyi", "pos": "FWD", "price": 5.5 },
-    { "name": "Palestra", "pos": "DEF", "price": 5.5 }
+    { "name": "Wissa", "pos": "FWD", "price": 6.2, "bench_order": 1, "note": "Nailed (261/270 mins) — most reliable auto-sub. Benched on xPts (2.10) not on reliability." },
+    { "name": "Gakpo", "pos": "MID", "price": 7.2, "bench_order": 2, "note": "Rotation-Risk Gate (A): DOUBTFUL 75%, news-desk signal rotation_risk, MC p10 = 0. Benched despite 6.00 xPts. If Fri/Sat presser confirms he STARTS, promote him over Groß." },
+    { "name": "Konsa", "pos": "DEF", "price": 4.4, "bench_order": 3, "note": "Gate (A) hard fail — 101/270 mins (33.7/gw). Bench-only asset." },
+    { "name": "Leno", "pos": "GK", "price": 4.5, "bench_order": "GK", "note": "Confirmed FUL #1, 270/270 — reliable bench GK per Bench Depth Rule." }
   ],
-  "formation": "3-5-2",
   "transfers": {
-    "out": null,
-    "in": null,
+    "out": "M.Sangaré",
+    "in": "Scott",
     "hits": 0,
-    "bank": 0.0,
-    "action": "ROLL FT to GW3 (2 FTs)",
-    "reason": "Palestra is a bench-only 4th defender; a doubt there costs ~0 xPts. Spending the only FT on him buys nothing this week. Rolling gives 2 FTs in GW3 to attack the real structural problem (no Haaland, ~111 EO) with real 26/27 minutes data instead of a preseason-corrupted xPts file. Market-desk confirms zero price pressure on any squad player, so there is no cost to waiting.",
-    "rejected_alternative": {
-      "move": "Palestra -> Mendy (HUL, 4.0)",
-      "verdict": "not endorsed",
-      "why": "Mendy's 16.42 xPts is a confirmed model artifact (sim-lab: absent from features.json entirely, zero cumulative record, projected above Haaland's 6.43; 5 of the top 6 xPts rows are cheap promoted-side defenders). Buying a bench defender off a broken projection burns a FT for a like-for-like bench slot. If the manager insists on clearing Palestra, do it as a cash-freeing swap to a nailed cheap defender - never as a captaincy play."
-    }
+    "bank": 0.4,
+    "free_transfers_used": 1,
+    "reason": "Sangaré is the lowest-xPts asset in the squad (1.85), 70 mins/gw (below the 75-min nailed bar), news-desk signal rotation_risk, ~0% ownership — a hole, not a differential. Scott (BOU, £6.0m) is nailed, xPts 4.40, ~6% EO, and market-desk has him at net_rate +44.7 (high-confidence rise tonight — buy now, not tomorrow). Straight upgrade inside the 0.7 bank, no hit. Runner-up considered: Stach (LEE, £6.0m, xPts 4.34, fdr 2)."
   },
   "chip": {
-    "name": null,
-    "action": "SAVE",
-    "reason": "No trigger met. No DGW/BGW in GW2 (fixture-room: dgw_alerts empty), no starter is rotation-flagged, and there is no 3-GW rolling history yet to justify a WC. 26/27 first-half chip set expires at the GW19 deadline - 17 GWs of runway remains, so forcing rule does not apply until GW16. Chips left: WC x2, BB, TC, FH."
+    "name": "none",
+    "action": "HOLD",
+    "reason": "TC requires a confirmed DGW for the best captain — GW4 is a single GW, so the public 'TC on Palmer' chatter is explicitly rejected. FH requires 4+ starters blanking — no BGW. WC requires 3+ rotation-flagged starters or a 3-GW rolling avg <55 — neither trips (only Gakpo/Sangaré flagged, and both are handled by bench + transfer). Chips remaining: TC, FH, WC×1 (BB@GW2 and WC@GW3 already spent). 26/27 first-half chip set expires at the GW19 deadline — 15 GWs of runway, so no forcing pressure yet; revisit from GW16 if TC/FH are still unused.",
+    "chips_left": ["TC", "FH", "WC×1"],
+    "chips_gone": ["BB (GW2)", "WC (GW3, first-half)"]
   },
-  "projected_xpts": 55.7,
+  "projected_xpts": 52.8,
+  "consistency_check": {
+    "rule_A_rotation_gate": "Applied. Benched: Konsa (33.7 mins/gw, hard fail), Gakpo (DOUBTFUL 75% + rotation_risk signal), Sangaré (70 mins/gw + rotation_risk signal — transferred out entirely). All 11 starters have >=81 mins/gw and no injury flag.",
+    "rule_B_blank_check": "Passed. fixture-room confirms no BGW/DGW alerts for GW4; all 15 have a fixture. No 3+ fdr-5 cluster (worst in squad is fdr 4: Haaland, Egan, Leno).",
+    "rule_C_bench_depth": "Passed. Bench GK = Leno (nailed FUL #1, 270 mins). Bench outfield >45 mins: Wissa (87/gw), Gakpo (83/gw). Bench not over-optimised."
+  },
+  "real_squad_recommendation": {
+    "headline": "Three no-cost actions, ranked. Captain stays put.",
+    "actions": [
+      {
+        "priority": 1,
+        "severity": "CRITICAL",
+        "action": "Start João Pedro, bench Wissa",
+        "detail": "João Pedro: 4.11 xPts, home to Hull (fdr 2, league's worst xG side), 270/270 mins, 2G 2A, ~72% owned. Wissa: 2.10 xPts, fdr 3. You lose on BOTH axes — xPts and a 72% EO fade. Worth ~+2.0 xPts and closes the squad's single largest EO leak. This is a free lineup change, no transfer needed."
+      },
+      {
+        "priority": 2,
+        "severity": "HIGH",
+        "action": "Move vice-captain Gakpo → Saka",
+        "detail": "Your VC is the insurance policy on a 111% EO armband, and it is currently a 75%-doubtful thigh injury with an MC floor of 0. If Haaland is withdrawn late in a derby week the armband falls to a player who may not start. Saka is nailed, AVAILABLE, next-highest cum_pts (22). Palmer or João Pedro are acceptable alternates if you prefer the CHE-v-HUL fixture; Saka is the protocol-correct pick."
+      },
+      {
+        "priority": 3,
+        "severity": "MEDIUM",
+        "action": "Bench M.Sangaré, start Egan",
+        "detail": "Sangaré is the lowest-xPts starter in your XI (1.85) with 70 mins/gw and a news-desk rotation_risk flag. Egan (4.08 xPts, 270/270, nailed HUL CB) is sat on your bench. Free swap, ~+2.2 xPts. Combined with action 1 your XI becomes 4-3-3: Raya; De Cuyper, Hall, Egan, Ajer; Palmer, Saka, Groß; Haaland, João Pedro, + Gakpo-or-Wissa."
+      },
+      {
+        "priority": 4,
+        "severity": "OPTIONAL",
+        "action": "Transfer M.Sangaré → Scott (£6.0m), 1 FT, bank 0.7 → 0.4, no hit",
+        "detail": "Only if you want to spend the FT. Upgrades the weakest slot permanently (1.85 → 4.40 xPts) and Scott is a near-certain riser tonight (net_rate +44.7). Holding the FT for a GW5 double-move is also defensible — this is not urgent. Do NOT take a hit for it."
+      }
+    ],
+    "gakpo_decision": {
+      "default": "BENCH — Rotation-Risk Gate (A) says a doubtful/rotation-flagged player does not start.",
+      "override": "If the Friday/Saturday Liverpool press conference or a confirmed lineup says Gakpo STARTS vs Fulham, put him back in the XI (6.00 xPts, fdr 2, season cum_pts leader at 28) over Groß (3.72). This is exactly the real-time-info human override the protocol trusts you on — CLAUDE cannot see the presser.",
+      "warning": "Do not leave him as VICE either way. A cameo (sub-on <60) gives 1 pt with no auto-sub protection."
+    },
+    "captain": "Haaland (unchanged). Do not switch to Palmer or João Pedro despite the better fixtures — no holdout-proven trigger authorises it, and the 25/26 backtest shows fading the highest-EO captain lost points on net. Your mini-league gap is 48 pts over 35 GWs (~1.4/GW): that is a compounding problem, not a captaincy-coinflip problem. Shield first.",
+    "chip": "Hold TC, FH and WC×1. Ignore the 'TC on Palmer' chatter — TC on a single GW burns your last high-leverage first-half chip. Re-examine from GW16 if TC/FH are still unused (first-half set dies at the GW19 deadline)."
+  },
   "risks": [
-    {
-      "risk": "Gabriel (vice-captain) GW1 knock",
-      "severity": "medium",
-      "detail": "Forced off late vs Liverpool after collision with Nunez. No formal FPL flag, not named in Arteta's 27 Aug presser, and news-desk has him in the predicted ARS XI at CB (Saliba/Timber both out increases his importance). Medical-bay holds him at 90%. ACTION: re-check Arsenal team news before the 17:30 UTC deadline; if he is flagged, promote van Ewijk into the XI and move the armband's backup to Semenyo (202 cum_pts, next in the locked ranking)."
-    },
-    {
-      "risk": "xpts.json is miscalibrated at GW2",
-      "severity": "high",
-      "detail": "Only 4 of 15 squad players have an xPts row, and the top of the pool is dominated by 4.0m promoted-side defenders. Ranking and captaincy this week are driven by season cum_pts (locked protocol) and sim-lab Monte Carlo EV, not by xpts.json. Projected xPts uses mc_ev as the per-player proxy."
-    },
-    {
-      "risk": "Not owning Haaland",
-      "severity": "high",
-      "detail": "69.3% owned, ~42% captained, ~111 EO. Every Haaland return is effectively doubled against this squad. This is a transfer problem, not a captain problem - it is the reason the FT is being rolled."
-    },
-    {
-      "risk": "ARS have the hardest GW2-GW6 run (fdr 4)",
-      "severity": "low",
-      "detail": "Gabriel at 8.0m is the squad's most fixture-exposed starter over the next five. Watch as a GW3-GW4 downgrade candidate to fund a Haaland move; no action in GW2."
-    },
-    {
-      "risk": "COV bench block (Rushworth, van Ewijk, Awoniyi) has no fdr/xpts row",
-      "severity": "low",
-      "detail": "Fixture-room flagged a possible blank, but news-desk has all three as predicted GW2 starters vs Hull, so this reads as a cache data gap rather than a real BGW. All three are bench-only regardless. Bench-depth rule satisfied: reliable GK plus two predicted starters."
-    },
-    {
-      "risk": "Palestra likely out of the CHE picture beyond injury",
-      "severity": "low",
-      "detail": "Missed the Luton EFL Cup squad, Alonso wants 'further assessment', and Gusto is ahead of him at RWB. Medical-bay downgrades him from FPL's 75% to a ~50/50. He is the last bench slot, so no forced action; he is the first player out when the GW3 double-FT move is made."
-    }
+    "Haaland captain at fdr 4 away in the Manchester derby — model xPts only 3.75, MC blank prob 14.9%. Accepted knowingly: the lock is the ceiling for quantitative captaincy and intel rates the fade as negative EV.",
+    "Gakpo benched by Rule (A) could start and haul (6.00 xPts, fdr 2, squad cum_pts leader at 28 pts). Mitigation: human override if the presser confirms he starts — flagged explicitly.",
+    "Scott is a GW4 buy on a single-GW xPts + price-rise signal, not a season-long cum_pts signal; if BOU rotate him the transfer is a wash. Minutes are reported nailed.",
+    "Egan starts at fdr 4 (HUL) purely on cum_pts (23 pts, 3 CS in 3 GWs) — sim-lab flags his MC as un-calibrated and clean-sheet-driven, so his true floor may be softer than 4.08 suggests.",
+    "Squad is under-hedged on the template midfield: missing Calafiori (22%), B.Fernandes (20%), Mbeumo (19%), Ndiaye (17%), Szoboszlai (16%) — ~73pp of un-hedged EO. Not fixable with 1 FT and £0.4m; queue for GW5-6.",
+    "B.Fernandes (20% owned) hosts City in the same fixture Haaland attacks — a MUN home win scenario is a double negative for this squad.",
+    "fixture-room has no multi-GW FDR array in the data model, so all fixture reads are single-GW and directional only.",
+    "Several stale GW38/GW2 files remain in data/reports/ (news.json, medical.json, fixture.json/fixtures.json, market.json, simlab.json, _sim_raw.json, gaffer.json) that wrongly list Haaland and Raya as OUT. Any downstream agent reading them will produce a broken brief — recommend the Apps Script export purge or namespace them."
   ]
 }
