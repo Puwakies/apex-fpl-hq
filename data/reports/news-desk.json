@@ -1,118 +1,71 @@
 {
-  "generated_by": "news-desk",
-  "gw": 2,
-  "deadline_utc": "2026-08-28T17:30:00Z",
-  "items": [
-    {
-      "player": "Lammens",
-      "team": "MUN",
-      "signal": "starts",
-      "note": "Predicted GK vs Ipswich (H, Sun). No fresh MUN injury concerns.",
-      "source": "manunews.com predicted lineup vs Ipswich"
-    },
-    {
-      "player": "Kerkez",
-      "team": "LIV",
-      "signal": "starts",
-      "note": "Predicted starting LB vs Nottingham Forest (H, Sat). Kept his place after GW1 start; no injury flag.",
-      "source": "ESPN/the4thofficial.net Liverpool vs Nottingham Forest predicted XI"
-    },
-    {
-      "player": "Hume",
-      "team": "SUN",
-      "signal": "starts",
-      "note": "Predicted starting RB in Sunderland's 4-2-3-1 vs Fulham (H, Sun). No fitness concerns after GW1.",
-      "source": "Squawka/Sports Mole Sunderland vs Fulham predicted lineup"
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Predicted starting CB vs Aston Villa (A, Mon). Nailed at CB despite Saliba/Timber both still out (increases Gabriel's defensive workload/importance, not a risk to his minutes).",
-      "source": "Yahoo Sports Arsenal XI vs Aston Villa confirmed/predicted lineup"
-    },
-    {
-      "player": "B.Fernandes",
-      "team": "MUN",
-      "signal": "starts",
-      "note": "Nailed - MUN's primary attacking outlet and set-piece taker on everything (corners, FKs, pens). Predicted to start centrally vs Ipswich. No rotation risk.",
-      "source": "manunews.com / RotoWire Man Utd vs Ipswich predicted lineup"
-    },
-    {
-      "player": "Mbeumo",
-      "team": "MUN",
-      "signal": "starts",
-      "note": "Predicted starter vs Ipswich, ahead of Cunha in pecking order per pre-season reports.",
-      "source": "manunews.com predicted lineup vs Ipswich"
-    },
-    {
-      "player": "Semenyo",
+  "gw": 4,
+  "generated": "2026-09-11T00:00:00Z",
+  "captain_vice_check": {
+    "captain": {
+      "player": "Haaland",
       "team": "MCI",
+      "status": "AVAILABLE",
       "signal": "starts",
-      "note": "Predicted starter in Man City's 3-man attack (with Foden, O'Reilly) behind Haaland vs Crystal Palace - City are short of attacking depth (Doku injured, Savio/Marmoush departed), boosting Semenyo's nailed status.",
-      "source": "beIN Sports / yen.com.gh Crystal Palace vs Man City predicted lineup"
+      "note": "Locked captain per protocol (season cum_pts leader). 270/270 minutes played across GW1-3 (100% nailed). No injury news. Man City derby fixture this GW - explosive fixture, high shot volume expected.",
+      "source": "data/cache/squad.json, data/cache/player_pool.json"
+    },
+    "vice_captain": {
+      "player": "Gakpo",
+      "team": "LIV",
+      "status": "DOUBTFUL",
+      "signal": "rotation_risk",
+      "note": "Squad flags 75% chance (thigh). WebSearch corroborates: adductor issue vs Ipswich, missed UCL clash with Atletico Madrid. Not considered serious - Iraola/Slot camp suggest he 'could be back in contention' for the Fulham game (Liverpool's GW4 fixture), decision expected close to kickoff. RECOMMENDATION: monitor Friday/Saturday press conference and lineups before kickoff; vice-captaincy could fall to next eligible player (Saka or Palmer) if Gakpo is ruled out or starts on the bench.",
+      "source": "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-calafiori-rested-gakpo-barcola-white-injury-updates ; https://onefpl.com/blog/cody-gakpo-fpl-injury-update-gameweek-4-2026-27 ; https://anfieldindex.com/99841/liverpool-injury-update-confirmed-latest-on-bradley-barcola-cody-gakpo-and-more.html"
+    }
+  },
+  "squad_review": [
+    { "player": "Raya", "team": "ARS", "pos": "GK", "starting": true, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Full minutes all 3 GWs. Fully nailed, no injury news." },
+    { "player": "De Cuyper", "team": "BHA", "pos": "DEF", "starting": true, "status": "AVAILABLE", "mp_last3": 243, "signal": "starts", "note": "Nailed (avg ~81 min/gw). 1G 2A, 21 pts - standout budget enabler at 4.8. Brighton (Hurzeler) confirmed no fresh injury concerns in presser." },
+    { "player": "Ajer", "team": "BRE", "pos": "DEF", "starting": true, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Full 270/270 minutes, fully nailed. No current injury flag found (older broken-nose incident was resolved, not recent)." },
+    { "player": "Hall", "team": "NEW", "pos": "DEF", "starting": true, "status": "AVAILABLE", "mp_last3": 269, "signal": "starts", "note": "Essentially ever-present (269/270). No injury news found for GW4." },
+    { "player": "Palmer", "team": "CHE", "pos": "MID", "starting": true, "status": "AVAILABLE", "mp_last3": 262, "signal": "starts", "note": "Nailed attacker, 262/270 mins, 21 pts. No rotation concern." },
+    { "player": "M.Sangaré", "team": "BRE", "pos": "MID", "starting": true, "status": "AVAILABLE", "mp_last3": 210, "signal": "rotation_risk", "note": "Only 210/270 mins over 3 GWs (avg 70/game) vs teammates at 270 - lowest minutes total among starting XI. Andrews (Brentford boss) praised him as 'a talented midfielder on an upward trajectory' but has rotated Brentford's midfield. WATCH - could not confirm a specific benching/sub pattern per individual GW (season-aggregate data only); recommend checking Friday teamsheet leak before deadline." },
+    { "player": "Groß", "team": "BHA", "pos": "MID", "starting": true, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Full minutes, set-piece taker, fully nailed." },
+    { "player": "Gakpo", "team": "LIV", "pos": "MID", "starting": true, "status": "DOUBTFUL", "signal": "rotation_risk", "note": "See vice-captain section above - thigh/adductor knock, 75% per club medical, borderline for Fulham (GW4)." },
+    { "player": "Saka", "team": "ARS", "pos": "MID", "starting": true, "status": "AVAILABLE", "mp_last3": 246, "signal": "starts", "note": "246/270 mins, nailed. No fresh injury news (unrelated Arsenal defender White mentioned in an injury note, not Saka)." },
+    { "player": "Haaland", "team": "MCI", "pos": "FWD", "starting": true, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Captain - see above. 100% nailed." },
+    { "player": "Wissa", "team": "NEW", "pos": "FWD", "starting": true, "status": "AVAILABLE", "mp_last3": 261, "signal": "starts", "note": "261/270 mins, 1G 1A, nailed starter this season. CAUTION: search turned up an older/stale article referencing a PCL injury and 'yet to make Newcastle debut' - this contradicts both official squad news.json (no injury flag) and the actual minutes-played data (261/270 across 3 GWs), so it is almost certainly a leftover/mis-dated article from his transfer window and NOT current GW4 signal. No action needed but flagged for transparency." },
+    { "player": "Leno", "team": "FUL", "pos": "GK", "starting": false, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Confirmed #1 for Fulham, full minutes every game - solid bench GK cover, not needed to start over Raya." },
+    { "player": "Egan", "team": "HUL", "pos": "DEF", "starting": false, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Full minutes, nailed CB for Hull, but on bench in this squad behind starting back-line." },
+    { "player": "Konsa", "team": "ARS", "pos": "DEF", "starting": false, "status": "AVAILABLE", "mp_last3": 101, "signal": "benched", "note": "Only 101/270 mins over 3 GWs (avg ~34/gw) - fringe/rotation squad player at club level. Fine as a bench-only asset in this squad; do not consider promoting to the XI." },
+    { "player": "João Pedro", "team": "CHE", "pos": "FWD", "starting": false, "status": "AVAILABLE", "mp_last3": 270, "signal": "starts", "note": "Full minutes, 2G 2A, actually one of the most nailed/productive assets in the whole 15 - currently on the bench only due to formation math, not fitness. Strong differential if a swap-in is considered." }
+  ],
+  "league_wide_injury_scan": {
+    "total_items_checked": 39,
+    "squad_matches": 0,
+    "note": "Cross-referenced all ~39 league-wide OUT/injured entries in data/cache/news.json against the 15-man squad - no direct name matches (all flagged players are on other clubs/positions not in this squad)."
+  },
+  "lineup_leak_intel": [
+    {
+      "topic": "Liverpool vs Fulham (Gakpo)",
+      "note": "Liverpool's GW4 fixture is home to Fulham. Gakpo's fitness decision expected close to kickoff; manager sounded cautiously optimistic ('if not for the weekend, for the next one, but even for the weekend he has a chance').",
+      "source": "https://anfieldindex.com/99841/liverpool-injury-update-confirmed-latest-on-bradley-barcola-cody-gakpo-and-more.html"
     },
     {
-      "player": "E.Le Fée",
-      "team": "SUN",
-      "signal": "starts",
-      "note": "Predicted starting attacking mid vs Fulham (H, Sun), part of Sunderland's settled front line.",
-      "source": "Squawka Sunderland vs Fulham predicted lineup"
+      "topic": "Man City derby (Haaland)",
+      "note": "GW4 includes the Manchester City derby - high-tempo, high-shot-volume fixture context for captain pick.",
+      "source": "https://allaboutfpl.com/2026/09/fpl-gw4-fixtures-players-to-target-for-gameweek-4/"
     },
     {
-      "player": "Rogers",
-      "team": "CHE",
-      "signal": "starts",
-      "note": "Nailed and in-form - scored in Chelsea's 5-goal derby win last match alongside Joao Pedro and Palmer. Vs Brighton (H, Sun). Palmer is under assessment for a groin issue (possible surgery) which could mean MORE Chelsea creative burden shifts to Rogers - upside signal, not a risk.",
-      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
+      "topic": "Brighton presser",
+      "note": "Hurzeler confirmed no fresh injury concerns for Brighton ahead of GW4 - good news for De Cuyper and Groß starts.",
+      "source": "https://www.fantasyfootballscout.co.uk/fpl-gameweek-4-tips-best-players-predicted-line-ups-team-news-more-4"
     },
     {
-      "player": "Thiago",
-      "team": "BRE",
-      "signal": "starts",
-      "note": "Brentford have a settled team after 3-0 win over Tottenham and are likely to stick with it vs Leeds (A, Sun). No injury flag for Thiago.",
-      "source": "Yorkshire Evening Post / Squawka Leeds vs Brentford preview"
-    },
-    {
-      "player": "João Pedro",
-      "team": "CHE",
-      "signal": "starts",
-      "note": "Nailed - scored in Chelsea's last match. Starts vs Brighton (H, Sun).",
-      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
-    },
-    {
-      "player": "Palestra",
-      "team": "CHE",
-      "signal": "benched",
-      "note": "ESCALATION beyond data-lab's 75%-chance flag: Palestra has missed Chelsea's last matchday squad entirely (EFL Cup vs Luton) due to a minor fitness setback per Alonso, and in his absence Malo Gusto has taken the right wing-back slot. Even set aside injury, Gusto looks first-choice there. Treat as a likely non-starter/bench risk for GW2, not just a fitness coin-flip - lower confidence than the 75% number implies.",
-      "source": "Fantasy Football Scout 'Fulham v Chelsea: No Caicedo or Palestra' + FPL GW2 Thursday/Wednesday live injury updates"
-    },
-    {
-      "player": "Awoniyi",
-      "team": "COV",
-      "signal": "starts",
-      "note": "Bench player upside note: predicted to lead the line for Coventry ahead of Ellis Simms vs Hull (H, Sat) - not a squad risk since he is already benched by manager, but strong bench-enabler signal if a Chelsea/Coventry punt is needed later.",
-      "source": "Yahoo Sports / thehardtackle.com Coventry vs Hull preview"
-    },
-    {
-      "player": "van Ewijk",
-      "team": "COV",
-      "signal": "starts",
-      "note": "Predicted starting RB for Coventry vs Hull (H, Sat). Bench player, no action needed.",
-      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
-    },
-    {
-      "player": "Rushworth",
-      "team": "COV",
-      "signal": "starts",
-      "note": "Predicted starting GK for Coventry vs Hull. Bench GK, no action needed.",
-      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
+      "topic": "Brentford midfield rotation",
+      "note": "No explicit GW4 confirmation found for M.Sangaré's starting status; general commentary is positive on his development but Brentford have rotated the middle of the park this season.",
+      "source": "https://www.brentfordfc.com/en/news/article/first-team-brentford-v-tottenham-hotspur-premier-league-team-news-mamadou-sangar%C3%A9"
     }
   ],
-  "summary_notes": {
-    "captain_bfernandes_nailed": true,
-    "vice_gabriel_nailed": true,
-    "new_risk_beyond_datalab": "Palestra (bench DEF) risk is worse than the 75% doubtful flag suggests - repeated squad omissions this week and Gusto ahead of him in the pecking order at RWB. Low priority since he's on the bench, not starting XI.",
-    "notable_positive": "Semenyo and Rogers both look more nailed than usual this week due to teammate absences/departures (City attacking depth thin; Palmer groin concern at Chelsea)."
+  "summary_flags": {
+    "rotation_risk_count": 2,
+    "biggest_lineup_leak": "Gakpo (VC) doubtful, thigh/adductor - genuine 50/50 for kickoff vs Fulham; recommend checking final press conference before deadline in case vice-captaincy needs reassigning.",
+    "nailed_budget_enabler": "De Cuyper (BHA, 4.8) - 21 pts, 1G 2A, ~81 min/gw avg, no injury concerns, best-value nailed enabler in the squad."
   }
 }

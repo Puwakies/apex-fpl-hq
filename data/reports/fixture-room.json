@@ -1,31 +1,36 @@
 {
-  "gw": 2,
-  "window": "GW2-GW6",
-  "data_note": "Cache files (squad.json, xpts.json, gemini.json) only expose a single snapshot 'fdr' rating per player/club, not a next-5 GW array or explicit dgw/bgw booleans. Rankings below are built from that snapshot (lower = easier) and cross-checked for missing/blank-fixture risk by absence from the xpts.json player pool.",
-  "squad_club_fdr": [
-    { "team": "CHE", "fdr": 2, "players": ["Rogers", "João Pedro", "Palestra"] },
-    { "team": "MUN", "fdr": 2, "players": ["Lammens", "B.Fernandes", "Mbeumo"] },
-    { "team": "SUN", "fdr": 2, "players": ["Hume", "E.Le Fée"] },
-    { "team": "LIV", "fdr": 3, "players": ["Kerkez"] },
-    { "team": "MCI", "fdr": 3, "players": ["Semenyo"] },
-    { "team": "BRE", "fdr": 3, "players": ["Thiago"] },
-    { "team": "ARS", "fdr": 4, "players": ["Gabriel"] },
-    { "team": "COV", "fdr": null, "players": ["Rushworth", "Awoniyi", "van Ewijk"], "flag": "no xpts/fdr entry found in cache - data gap, treat as blank-gameweek/rotation risk, all bench-only already" }
+  "gw": 4,
+  "note": "Cache files (squad.json/xpts.json/player_pool.json) only expose a single-GW FDR value per player (no fdr.next[] 5-GW window or dgw/bgw flags in this data model). Rankings below reflect GW4 fdr only; treat as directional, not a full 5-week run.",
+  "squad_fdr_gw4": [
+    { "name": "De Cuyper", "team": "BHA", "pos": "DEF", "fdr": 2 },
+    { "name": "Gakpo", "team": "LIV", "pos": "MID", "fdr": 2 },
+    { "name": "Palmer", "team": "CHE", "pos": "MID", "fdr": 2 },
+    { "name": "Groß", "team": "BHA", "pos": "MID", "fdr": 2 },
+    { "name": "João Pedro", "team": "CHE", "pos": "FWD", "fdr": 2 },
+    { "name": "Ajer", "team": "BRE", "pos": "DEF", "fdr": 3 },
+    { "name": "Hall", "team": "NEW", "pos": "DEF", "fdr": 3 },
+    { "name": "Saka", "team": "ARS", "pos": "MID", "fdr": 3 },
+    { "name": "M.Sangaré", "team": "BRE", "pos": "MID", "fdr": 3 },
+    { "name": "Wissa", "team": "NEW", "pos": "FWD", "fdr": 3 },
+    { "name": "Raya", "team": "ARS", "pos": "GK", "fdr": 3 },
+    { "name": "Haaland", "team": "MCI", "pos": "FWD", "fdr": 4 },
+    { "name": "Egan", "team": "HUL", "pos": "DEF", "fdr": 4 },
+    { "name": "Leno", "team": "FUL", "pos": "GK", "fdr": 4 },
+    { "name": "Konsa", "team": "ARS", "pos": "DEF", "fdr": null }
   ],
   "best_runs": [
-    { "team": "CHE", "fdr_avg": 2, "window": "GW2-GW6", "note": "easiest tier tied with MUN/SUN" },
-    { "team": "MUN", "fdr_avg": 2, "window": "GW2-GW6" },
-    { "team": "SUN", "fdr_avg": 2, "window": "GW2-GW6" }
+    { "team": "BHA", "player": "De Cuyper", "fdr_avg": 2, "window": "GW4" },
+    { "team": "LIV", "player": "Gakpo", "fdr_avg": 2, "window": "GW4" },
+    { "team": "CHE", "player": "Palmer / João Pedro", "fdr_avg": 2, "window": "GW4" },
+    { "team": "BHA", "player": "Groß", "fdr_avg": 2, "window": "GW4" }
   ],
   "worst_runs": [
-    { "team": "ARS", "fdr_avg": 4, "window": "GW2-GW6", "note": "hardest tier of squad clubs - Gabriel starter exposed" }
+    { "team": "MCI", "player": "Haaland", "fdr_avg": 4, "window": "GW4" },
+    { "team": "HUL", "player": "Egan", "fdr_avg": 4, "window": "GW4" },
+    { "team": "FUL", "player": "Leno", "fdr_avg": 4, "window": "GW4" },
+    { "team": "NEW", "player": "Wissa / Hall", "fdr_avg": 3, "window": "GW4" }
   ],
   "dgw_alerts": [],
-  "bgw_alerts": [
-    { "team": "COV", "note": "no fixture/fdr data found for Rushworth, Awoniyi, van Ewijk in xpts.json - possible blank/unlisted fixture, but all three are bench-only so limited xPts impact" }
-  ],
-  "transfer_targets": {
-    "transfer_in": { "name": "Mendy", "team": "HUL", "fdr": 2, "note": "easiest fixture tier, supports Gemini's suggestion on fixtures + xPts (16.42)" },
-    "transfer_out": { "name": "Palestra", "team": "CHE", "fdr": 2, "note": "CHE fixtures are actually easy - reason for transfer out is injury doubt (75% chance of playing), not fixture difficulty" }
-  }
+  "bgw_alerts": [],
+  "data_gap": "No dgw/bgw or multi-GW fixture fields found in squad.json, xpts.json, or player_pool.json for GW4 pull. Recommend Apps Script export a fixtures.json with next-5 FDR arrays for true run analysis."
 }
