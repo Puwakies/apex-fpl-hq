@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-10T17:23:33.535Z",
+  "updated": "2026-09-17T08:19:18.886Z",
   "engine": "gemini",
-  "gw": 4,
+  "gw": 5,
   "captain": "Bogle",
   "captain_xpts": 7.27,
   "vice_captain": "De Cuyper",
@@ -14,21 +14,21 @@
     "Palmer",
     "Saka",
     "Groß",
+    "M.Sangaré",
     "Haaland",
-    "João Pedro",
     "Wissa"
   ],
   "bench": [
     "Leno",
-    "Ajer",
+    "João Pedro",
     "Egan",
-    "M.Sangaré"
+    "Ajer"
   ],
   "transfer_out": "Konsa",
   "transfer_in": "Bogle",
-  "transfer_reason": "Replace Konsa (NO_XPTS_DATA) with Bogle who has the highest projected xPts (7.27) in TOP_XPTS.",
+  "transfer_reason": "Replace Konsa (no xPts data) with Bogle who has highest xPts (7.27)",
   "chip": null,
   "projected_xpts": 41.17,
   "confidence": "medium",
-  "key_risk": "Gakpo is marked doubtful and several key starters lack xPts data in TOP_XPTS."
+  "key_risk": "João Pedro is doubtful and key premium players lack explicit xPts entries in TOP_XPTS"
 }
