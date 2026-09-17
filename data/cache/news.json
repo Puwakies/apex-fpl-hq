@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T17:23:31.286Z",
+  "updated": "2026-09-17T08:19:16.855Z",
   "items": [
     {
       "player": "Saliba",
@@ -17,15 +17,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Manzambi",
-      "team": "AVL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Expected back 12 Sep",
       "signal": "out"
     },
     {
@@ -52,7 +43,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Thigh injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -70,7 +61,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Calf injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -80,6 +71,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Foot injury - Expected back 7 Nov",
+      "signal": "out"
+    },
+    {
+      "player": "Collins",
+      "team": "BRE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Calf injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -119,6 +119,15 @@
       "signal": "out"
     },
     {
+      "player": "Furo",
+      "team": "BRE",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "signal": "out"
+    },
+    {
       "player": "Mitoma",
       "team": "BHA",
       "pos": "MID",
@@ -134,6 +143,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Leg injury - Expected back 28 Nov",
+      "signal": "out"
+    },
+    {
+      "player": "Hinshelwood",
+      "team": "BHA",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -173,6 +191,42 @@
       "signal": "out"
     },
     {
+      "player": "Henderson",
+      "team": "CHE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Wrist injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Palestra",
+      "team": "CHE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Expected back 18 Sep",
+      "signal": "out"
+    },
+    {
+      "player": "Caicedo",
+      "team": "CHE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Calf injury - Expected back 18 Sep",
+      "signal": "out"
+    },
+    {
+      "player": "Emegha",
+      "team": "CHE",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 18 Sep",
+      "signal": "out"
+    },
+    {
       "player": "Kesler-Hayden",
       "team": "COV",
       "pos": "DEF",
@@ -191,6 +245,15 @@
       "signal": "out"
     },
     {
+      "player": "Eccles",
+      "team": "COV",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Expected back 12 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Wright",
       "team": "COV",
       "pos": "FWD",
@@ -200,21 +263,21 @@
       "signal": "out"
     },
     {
+      "player": "Henderson",
+      "team": "CRY",
+      "pos": "GK",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Foot injury - Expected back 11 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Chadi Riad",
       "team": "CRY",
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Sarr",
-      "team": "CRY",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Groin injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -296,69 +359,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Back injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Matusiwa",
-      "team": "IPS",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Muscular injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Taylor",
-      "team": "IPS",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Philogene",
-      "team": "IPS",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Rodon",
-      "team": "LEE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 21 Nov",
-      "signal": "out"
-    },
-    {
-      "player": "Mateo Joseph",
-      "team": "LEE",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Jaros",
-      "team": "LIV",
-      "pos": "GK",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Gomez",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Muscular injury - Unknown return date",
       "signal": "out"
     }
   ]
