@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T08:19:16.855Z",
+  "updated": "2026-09-17T17:23:55.374Z",
   "items": [
     {
       "player": "Saliba",
@@ -97,7 +97,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Expected back 18 Sep",
+      "news": "Unspecified injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -188,33 +188,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Ankle injury - Expected back 10 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Henderson",
-      "team": "CHE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Wrist injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Palestra",
-      "team": "CHE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Thigh injury - Expected back 18 Sep",
-      "signal": "out"
-    },
-    {
-      "player": "Caicedo",
-      "team": "CHE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Calf injury - Expected back 18 Sep",
       "signal": "out"
     },
     {
@@ -353,12 +326,39 @@
       "signal": "out"
     },
     {
+      "player": "Mendy",
+      "team": "HUL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Concussion - Expected back 11 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Ansah",
       "team": "HUL",
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
       "news": "Back injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Taylor",
+      "team": "IPS",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Rodon",
+      "team": "LEE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 21 Nov",
       "signal": "out"
     }
   ]
