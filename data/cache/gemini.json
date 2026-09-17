@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-17T08:19:18.886Z",
+  "updated": "2026-09-17T17:23:57.479Z",
   "engine": "gemini",
   "gw": 5,
-  "captain": "Bogle",
-  "captain_xpts": 7.27,
-  "vice_captain": "De Cuyper",
+  "captain": "Gvardiol",
+  "captain_xpts": 20.64,
+  "vice_captain": "Raya",
   "starting_xi": [
     "Raya",
-    "Bogle",
-    "De Cuyper",
+    "Gvardiol",
     "Hall",
-    "Gakpo",
-    "Palmer",
+    "De Cuyper",
     "Saka",
+    "Palmer",
+    "Gakpo",
     "Groß",
     "M.Sangaré",
     "Haaland",
@@ -20,15 +20,15 @@
   ],
   "bench": [
     "Leno",
-    "João Pedro",
+    "Ajer",
     "Egan",
-    "Ajer"
+    "João Pedro"
   ],
   "transfer_out": "Konsa",
-  "transfer_in": "Bogle",
-  "transfer_reason": "Replace Konsa (no xPts data) with Bogle who has highest xPts (7.27)",
+  "transfer_in": "Gvardiol",
+  "transfer_reason": "Bring in top xPts defender Gvardiol for Konsa",
   "chip": null,
-  "projected_xpts": 41.17,
+  "projected_xpts": 53.74,
   "confidence": "medium",
-  "key_risk": "João Pedro is doubtful and key premium players lack explicit xPts entries in TOP_XPTS"
+  "key_risk": "Several starting players lack explicit xPts entries in TOP_XPTS"
 }
