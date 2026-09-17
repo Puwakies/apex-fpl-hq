@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-17T08:19:17.954Z",
+  "updated": "2026-09-17T17:23:56.459Z",
   "likely_rises": [
     {
       "player": "Belloumi",
       "team": "HUL",
       "pos": "MID",
-      "net_transfers": 230024,
-      "net_rate": 65.721,
+      "net_transfers": 242619,
+      "net_rate": 65.573,
       "price": 5.1,
       "price_change": 0.1
     },
@@ -14,8 +14,8 @@
       "player": "J.Timber",
       "team": "ARS",
       "pos": "DEF",
-      "net_transfers": 11017,
-      "net_rate": 55.085,
+      "net_transfers": 12025,
+      "net_rate": 60.125,
       "price": 6.5,
       "price_change": 0
     },
@@ -23,8 +23,8 @@
       "player": "Delap",
       "team": "NFO",
       "pos": "FWD",
-      "net_transfers": 72389,
-      "net_rate": 42.582,
+      "net_transfers": 86027,
+      "net_rate": 47.793,
       "price": 5.5,
       "price_change": 0
     },
@@ -32,8 +32,8 @@
       "player": "Bogle",
       "team": "LEE",
       "pos": "DEF",
-      "net_transfers": 171163,
-      "net_rate": 41.747,
+      "net_transfers": 201035,
+      "net_rate": 45.69,
       "price": 4.5,
       "price_change": 0
     },
@@ -41,35 +41,53 @@
       "player": "Schade",
       "team": "BRE",
       "pos": "MID",
-      "net_transfers": 250813,
-      "net_rate": 38.587,
+      "net_transfers": 264894,
+      "net_rate": 39.536,
       "price": 6.1,
       "price_change": 0.1
-    },
-    {
-      "player": "Mykolenko",
-      "team": "EVE",
-      "pos": "DEF",
-      "net_transfers": 113667,
-      "net_rate": 35.521,
-      "price": 4.5,
-      "price_change": 0
     },
     {
       "player": "Maitland-Niles",
       "team": "EVE",
       "pos": "DEF",
-      "net_transfers": 28081,
-      "net_rate": 35.101,
+      "net_transfers": 30190,
+      "net_rate": 37.738,
       "price": 4.5,
+      "price_change": 0
+    },
+    {
+      "player": "Mykolenko",
+      "team": "EVE",
+      "pos": "DEF",
+      "net_transfers": 123735,
+      "net_rate": 37.495,
+      "price": 4.5,
+      "price_change": 0
+    },
+    {
+      "player": "Kostoulas",
+      "team": "BHA",
+      "pos": "FWD",
+      "net_transfers": 26959,
+      "net_rate": 33.699,
+      "price": 5.5,
+      "price_change": 0
+    },
+    {
+      "player": "Emersonn",
+      "team": "IPS",
+      "pos": "FWD",
+      "net_transfers": 95677,
+      "net_rate": 32.992,
+      "price": 5.5,
       "price_change": 0
     },
     {
       "player": "Giles",
       "team": "HUL",
       "pos": "DEF",
-      "net_transfers": 80410,
-      "net_rate": 32.164,
+      "net_transfers": 85080,
+      "net_rate": 32.723,
       "price": 4,
       "price_change": 0
     },
@@ -77,35 +95,17 @@
       "player": "Tavernier",
       "team": "BOU",
       "pos": "MID",
-      "net_transfers": 183025,
-      "net_rate": 32.11,
+      "net_transfers": 192890,
+      "net_rate": 32.693,
       "price": 6.1,
       "price_change": 0.1
-    },
-    {
-      "player": "Emersonn",
-      "team": "IPS",
-      "pos": "FWD",
-      "net_transfers": 89334,
-      "net_rate": 31.905,
-      "price": 5.5,
-      "price_change": 0
-    },
-    {
-      "player": "Kostoulas",
-      "team": "BHA",
-      "pos": "FWD",
-      "net_transfers": 23581,
-      "net_rate": 29.476,
-      "price": 5.5,
-      "price_change": 0
     },
     {
       "player": "Vaz",
       "team": "HUL",
       "pos": "FWD",
-      "net_transfers": 2826,
-      "net_rate": 28.26,
+      "net_transfers": 3034,
+      "net_rate": 30.34,
       "price": 5,
       "price_change": 0
     }
@@ -115,8 +115,8 @@
       "player": "Foden",
       "team": "MCI",
       "pos": "MID",
-      "net_transfers": -118286,
-      "net_rate": -42.245,
+      "net_transfers": -127278,
+      "net_rate": -47.14,
       "price": 7,
       "price_change": 0
     },
@@ -124,35 +124,44 @@
       "player": "Elanga",
       "team": "NEW",
       "pos": "MID",
-      "net_transfers": -287894,
-      "net_rate": -33.87,
+      "net_transfers": -325349,
+      "net_rate": -40.167,
       "price": 6.2,
+      "price_change": 0
+    },
+    {
+      "player": "Disasi",
+      "team": "CRY",
+      "pos": "DEF",
+      "net_transfers": -3434,
+      "net_rate": -34.34,
+      "price": 4.5,
       "price_change": 0
     },
     {
       "player": "Mosquera",
       "team": "ARS",
       "pos": "DEF",
-      "net_transfers": -60157,
-      "net_rate": -31.662,
+      "net_transfers": -64040,
+      "net_rate": -33.705,
       "price": 5.3,
       "price_change": -0.1
     },
     {
-      "player": "Disasi",
+      "player": "Henderson",
       "team": "CRY",
-      "pos": "DEF",
-      "net_transfers": -3139,
-      "net_rate": -31.39,
-      "price": 4.5,
+      "pos": "GK",
+      "net_transfers": -44674,
+      "net_rate": -29.783,
+      "price": 5,
       "price_change": 0
     },
     {
       "player": "Hinshelwood",
       "team": "BHA",
       "pos": "MID",
-      "net_transfers": -19789,
-      "net_rate": -28.27,
+      "net_transfers": -20817,
+      "net_rate": -29.739,
       "price": 5.9,
       "price_change": -0.1
     },
@@ -160,26 +169,17 @@
       "player": "Nketiah",
       "team": "CRY",
       "pos": "FWD",
-      "net_transfers": -16090,
-      "net_rate": -26.817,
+      "net_transfers": -17417,
+      "net_rate": -29.028,
       "price": 5.5,
-      "price_change": 0
-    },
-    {
-      "player": "Henderson",
-      "team": "CRY",
-      "pos": "GK",
-      "net_transfers": -41951,
-      "net_rate": -26.219,
-      "price": 5,
       "price_change": 0
     },
     {
       "player": "Maatsen",
       "team": "AVL",
       "pos": "DEF",
-      "net_transfers": -17909,
-      "net_rate": -25.584,
+      "net_transfers": -19609,
+      "net_rate": -28.013,
       "price": 4.5,
       "price_change": 0
     },
@@ -187,8 +187,8 @@
       "player": "Awoniyi",
       "team": "COV",
       "pos": "FWD",
-      "net_transfers": -12720,
-      "net_rate": -25.44,
+      "net_transfers": -13896,
+      "net_rate": -27.792,
       "price": 5.5,
       "price_change": 0
     },
@@ -196,26 +196,26 @@
       "player": "Wieffer",
       "team": "BHA",
       "pos": "DEF",
-      "net_transfers": -5009,
-      "net_rate": -25.045,
+      "net_transfers": -5308,
+      "net_rate": -26.54,
       "price": 4.9,
       "price_change": -0.1
     },
     {
-      "player": "Beto",
-      "team": "EVE",
-      "pos": "FWD",
-      "net_transfers": -16740,
-      "net_rate": -23.914,
+      "player": "Collins",
+      "team": "BRE",
+      "pos": "DEF",
+      "net_transfers": -28665,
+      "net_rate": -26.059,
       "price": 5.4,
-      "price_change": 0
+      "price_change": -0.1
     },
     {
       "player": "Milenković",
       "team": "NFO",
       "pos": "DEF",
-      "net_transfers": -30804,
-      "net_rate": -23.695,
+      "net_transfers": -33417,
+      "net_rate": -25.705,
       "price": 5.5,
       "price_change": 0
     }
