@@ -1,76 +1,45 @@
 {
-  "gw": 38,
-  "updated": "2026-06-26T00:00:00.000Z",
-  "price_rises": [],
-  "price_falls": [],
-  "transfer_targets": [],
-  "chip_recommendation": "DO NOT PLAY TC. GW38 is a standard single gameweek with no double gameweek confirmed. TC requires a player to play twice in the same GW to double their points — that condition does not exist this week. Activating TC would double points on a single appearance, providing minimal gain over normal captaincy. With no future GWs remaining, the chip is forfeit at season end regardless; but playing it in a non-DGW is strictly worse than holding it unused. Leave TC unplayed.",
-  "best_value_picks": [
-    {
-      "player": "M.Salah",
-      "team": "LIV",
-      "pos": "MID",
-      "price": 13.4,
-      "status": "AVAILABLE",
-      "role": "Vice-captain",
-      "note": "Highest ceiling in the squad. Season elite scorer, fully available. Strong captaincy alternative to Bowen if lineup confirmation favours LIV fixture."
-    },
-    {
-      "player": "Bowen",
-      "team": "WHU",
-      "pos": "FWD",
-      "price": 7.8,
-      "status": "AVAILABLE",
-      "role": "Captain (current, APEX cum_pts pick)",
-      "note": "Named captain per APEX protocol. Available and nailed. Solid floor for the final week."
-    },
-    {
-      "player": "Mbeumo",
-      "team": "BRE",
-      "pos": "MID",
-      "price": 7.8,
-      "status": "AVAILABLE",
-      "role": "Starter",
-      "note": "Reliable attacking mid, available, consistent goal threat at price point."
-    },
-    {
-      "player": "Mateta",
-      "team": "CRY",
-      "pos": "FWD",
-      "price": 7.5,
-      "status": "AVAILABLE",
-      "role": "Starter",
-      "note": "Available striker with goal threat. Good value for final week."
-    },
-    {
-      "player": "Wood",
-      "team": "NFO",
-      "pos": "FWD",
-      "price": 7.0,
-      "status": "AVAILABLE",
-      "role": "Starter",
-      "note": "Nailed NFO starter, available. Triples NFO coverage with Anderson and Aina."
-    }
+  "gw": 5,
+  "generated": "2026-09-18T00:00:00Z",
+  "source": "data/cache/price.json",
+  "squad_overlap": {
+    "on_likely_rises": [],
+    "on_likely_falls": [],
+    "note": "None of the 15 real-squad players (Raya, De Cuyper, Ajer, Konsa, Hall, Palmer, Groß, Saka, João Pedro, Haaland, Wissa, Leno, M.Sangaré, Gakpo, Egan) appear on either the likely_rises or likely_falls list. No direct hold/sell price risk to the current squad tonight."
+  },
+  "likely_rises": [
+    { "player": "Belloumi", "net_transfers": 242619, "confidence": "high", "note": "cost_change_event already +0.1 today — rise has already landed" },
+    { "player": "J.Timber", "net_transfers": 12025, "confidence": "high", "note": "top net_rate (60.1), price_change still 0 — rise pending tonight" },
+    { "player": "Delap", "net_transfers": 86027, "confidence": "medium", "note": "price_change still 0 — pending" },
+    { "player": "Bogle", "net_transfers": 201035, "confidence": "medium", "note": "large volume, price_change still 0 — pending" },
+    { "player": "Schade", "net_transfers": 264894, "confidence": "medium", "note": "cost_change_event already +0.1 today — rise has already landed" },
+    { "player": "Maitland-Niles", "net_transfers": 30190, "confidence": "medium" },
+    { "player": "Mykolenko", "net_transfers": 123735, "confidence": "medium" },
+    { "player": "Kostoulas", "net_transfers": 26959, "confidence": "medium" },
+    { "player": "Emersonn", "net_transfers": 95677, "confidence": "medium" },
+    { "player": "Giles", "net_transfers": 85080, "confidence": "medium" },
+    { "player": "Tavernier", "net_transfers": 192890, "confidence": "medium", "note": "cost_change_event already +0.1 today — rise has already landed" },
+    { "player": "Vaz", "net_transfers": 3034, "confidence": "low", "note": "high net_rate but very low absolute transfer volume — low ownership base, noisy signal" }
   ],
-  "sell_candidates": [
-    {
-      "player": "Haaland",
-      "team": "MCI",
-      "pos": "FWD",
-      "price": 15.1,
-      "status": "UNAVAILABLE",
-      "role": "Bench (slot 13)",
-      "note": "UNAVAILABLE and benched — contributes 0 points. Would be the prime sell candidate in any normal GW but GW38 is the final gameweek. No transfer benefit exists. No action required."
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 6.3,
-      "status": "DOUBTFUL",
-      "role": "Starter (slot 2)",
-      "note": "DOUBTFUL — rotation risk for the final XI. Munoz (bench, DEF, AVAILABLE) provides auto-sub cover if Gabriel misses. No transfer action needed at GW38 — taking a hit for one game in the final week is not justified."
-    }
+  "likely_falls": [
+    { "player": "Foden", "net_transfers": -127278, "confidence": "high", "note": "price_change still 0 — drop pending tonight" },
+    { "player": "Elanga", "net_transfers": -325349, "confidence": "high", "note": "largest net outflow on the board, price_change still 0 — drop pending tonight" },
+    { "player": "Disasi", "net_transfers": -3434, "confidence": "low", "note": "high net_rate but very low absolute transfer volume — noisy signal" },
+    { "player": "Mosquera", "net_transfers": -64040, "confidence": "medium", "note": "cost_change_event already -0.1 today — fall has already landed" },
+    { "player": "Henderson", "net_transfers": -44674, "confidence": "medium" },
+    { "player": "Hinshelwood", "net_transfers": -20817, "confidence": "medium", "note": "cost_change_event already -0.1 today — fall has already landed" },
+    { "player": "Nketiah", "net_transfers": -17417, "confidence": "medium" },
+    { "player": "Maatsen", "net_transfers": -19609, "confidence": "medium" },
+    { "player": "Awoniyi", "net_transfers": -13896, "confidence": "medium" },
+    { "player": "Wieffer", "net_transfers": -5308, "confidence": "medium", "note": "cost_change_event already -0.1 today — fall has already landed" },
+    { "player": "Collins", "net_transfers": -28665, "confidence": "medium", "note": "cost_change_event already -0.1 today — fall has already landed" },
+    { "player": "Milenković", "net_transfers": -33417, "confidence": "medium" }
   ],
-  "summary": "GW38 is the final gameweek of 2025/26. No price movement is active (season end confirmed, 0 rises and 0 falls in price.json). No transfers are recommended — bank is 0.3m and no future gameweeks exist. TC chip must NOT be played: GW38 is a single gameweek with no DGW, so TC adds no meaningful benefit over normal captaincy. Key risk is Gabriel (DOUBTFUL, slot 2 starter) — Munoz on bench provides DEF auto-sub cover if needed. Captaincy decision: Bowen is the APEX cum_pts protocol pick but M.Salah at 13.4m carries higher ceiling. Manager should confirm lineups before deadline and consider switching armband to Salah if fixture and team news support it."
+  "act_now": [
+    { "player": "Elanga", "direction": "fall", "net_transfers": -325349, "confidence": "high", "action": "Not owned in squad — avoid as a transfer target tonight; single most urgent market move on the board (largest net outflow, price still unchanged)." },
+    { "player": "Foden", "direction": "fall", "net_transfers": -127278, "confidence": "high", "action": "Not owned in squad — avoid picking up before deadline; drop still pending." },
+    { "player": "J.Timber", "direction": "rise", "net_transfers": 12025, "confidence": "high", "action": "Not owned in squad — if considering as a future target, buy before tonight's likely rise." },
+    { "player": "Bogle", "direction": "rise", "net_transfers": 201035, "confidence": "medium", "action": "Not owned in squad — budget-enabler DEF, rise still pending tonight." },
+    { "player": "Delap", "direction": "rise", "net_transfers": 86027, "confidence": "medium", "action": "Not owned in squad — rise still pending tonight." }
+  ]
 }
