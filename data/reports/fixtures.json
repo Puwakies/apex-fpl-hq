@@ -1,158 +1,41 @@
 {
-  "gw": 38,
-  "updated": "2026-06-26T00:00:00Z",
-  "fixture_ratings": [
-    {
-      "name": "Raya",
-      "team": "ARS",
-      "opponent": "TBC (H)",
-      "home_away": "H",
-      "fdr": 3,
-      "notes": "Confirmed NOT in Arsenal squad for GW38. Guaranteed zero. Sels auto-subs in as active GK. fdr from features.json = 3 (H)."
-    },
-    {
-      "name": "Gabriel",
-      "team": "ARS",
-      "opponent": "TBC (H)",
-      "home_away": "H",
-      "fdr": 3,
-      "notes": "OUT for season — hamstring surgery confirmed. squad.json DOUBTFUL is outdated. Guaranteed zero. fdr from features.json = 3 (H)."
-    },
-    {
-      "name": "Gvardiol",
-      "team": "MCI",
-      "opponent": "TBC (H)",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Confirmed benched — City rotating with nothing at stake. Non-appearance risk very high despite best FDR in squad (fdr=2, H per features.json via Haaland same fixture)."
-    },
-    {
-      "name": "Aina",
-      "team": "NFO",
-      "opponent": "BOU",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Forest vs Bournemouth at home. Dead rubber for both sides. Aina regular starter, likely plays 90. Clean sheet possible in low-stakes match but intensity limited. fdr=2 H."
-    },
-    {
-      "name": "M.Salah",
-      "team": "LIV",
-      "opponent": "TBC (A)",
-      "home_away": "A",
-      "fdr": 3,
-      "notes": "Liverpool away, fdr=3 per features.json. Liverpool likely champions — team motivation low but Salah has personal Golden Boot incentives. Away fixture adds difficulty weighting. Vice-captain."
-    },
-    {
-      "name": "Mbeumo",
-      "team": "BRE",
-      "opponent": "TBC (H)",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Brentford home, fdr=2 per features.json. Nailed starter, no rotation risk. One of the three cleanest fixtures in the squad alongside Gvardiol (unavail risk) and Rogers."
-    },
-    {
-      "name": "Rogers",
-      "team": "AVL",
-      "opponent": "TBC (H)",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Aston Villa home, fdr=2 per features.json. European qualification may still be in play — added motivation. Rogers regular starter. Solid mid-price with upside."
-    },
-    {
-      "name": "Anderson",
-      "team": "NFO",
-      "opponent": "BOU",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Forest home vs Bournemouth, fdr=2. Same dead rubber context as Aina and Wood. Limited goal/assist ceiling but will likely start 90. Returns may be modest."
-    },
-    {
-      "name": "Bowen",
-      "team": "WHU",
-      "opponent": "Leeds",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "CAPTAIN. WHU vs Leeds — West Ham in a relegation decider. Maximum team motivation; Bowen plays full 90 with highest intensity of any GW38 fixture. Home advantage. High ceiling. fdr=2 H context."
-    },
-    {
-      "name": "Mateta",
-      "team": "CRY",
-      "opponent": "TBC (A)",
-      "home_away": "A",
-      "fdr": 3,
-      "notes": "Crystal Palace away, fdr=3 per features.json. Away fixture adds difficulty. Palace mid-table with little at stake. Worst confirmed fixture for an outfield starter in the squad."
-    },
-    {
-      "name": "Wood",
-      "team": "NFO",
-      "opponent": "BOU",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Forest home vs Bournemouth. Wood reliable starter, physical presence. Dead rubber context means open play likely — goal chances exist but not assured. fdr=2 H."
-    },
-    {
-      "name": "Sels",
-      "team": "NFO",
-      "opponent": "BOU",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "Auto-subs in as active GK replacing Raya. Forest home vs Bournemouth, fdr=2. Converts guaranteed zero (Raya) into live clean sheet chance. xpts=1 in xpts.json confirms expected contribution."
-    },
-    {
-      "name": "Haaland",
-      "team": "MCI",
-      "opponent": "TBC (H)",
-      "home_away": "H",
-      "fdr": 2,
-      "notes": "UNAVAILABLE per squad.json. Guaranteed zero. MCI H fdr=2 (per features.json) is irrelevant — asset cannot be utilised."
-    },
-    {
-      "name": "Munoz",
-      "team": "CRY",
-      "opponent": "TBC (A)",
-      "home_away": "A",
-      "fdr": 3,
-      "notes": "Bench DEF. Crystal Palace away, fdr=3. Same fixture as Mateta. Away trip with no stakes. Clean sheet odds very low. Emergency cover only."
-    },
-    {
-      "name": "Kluivert",
-      "team": "BOU",
-      "opponent": "NFO",
-      "home_away": "A",
-      "fdr": 2,
-      "notes": "Bench MID. Bournemouth away at Forest — dead rubber both sides. fdr=2 from Aina/Anderson/Wood reciprocal fixture. Kluivert may feature but returns unpredictable. Emergency cover only."
-    }
+  "gw": 5,
+  "window_requested": "GW5-9",
+  "window_actual": "GW5 only",
+  "generated": "2026-09-18T00:00:00Z",
+  "agent": "fixture-room (PILLAR: FDR-X)",
+  "data_quality_note": "No multi-GW (GW5-9) fixture schedule exists in the current cache. data/cache/squad.json, xpts.json and player_pool.json carry no fixture/opponent/loc fields at all — xpts.json only has a single scalar 'fdr' per player (this week's difficulty), and player_pool.json is pure season-to-date performance stats (no fdr field). data/features.json does contain a real fdr.next[] 5-fixture look-ahead structure, but it was generated pre-season with meta.target_gw=1, so its 'next' array covers GW1-GW5, NOT the requested GW5-GW9 window. Cross-check: for ARS, features.json's GW5 entry (fdr 3, loc 'A') matches xpts.json's current fdr=3 for Raya/Konsa/Saka, confirming the single data point we do have is reliable, but GW6-9 simply are not present anywhere in the repo cache. This report therefore ranks the real squad by the one live figure available (xpts.json fdr for GW5) and flags DGW/BGW as UNVERIFIABLE rather than guessing. Recommend Apps Script regenerate features.json against target_gw=5 before next week's run so a true rolling 5-GW FDR-X window can be produced.",
+  "squad_fixture_ratings": [
+    { "name": "Haaland", "team": "MCI", "pos": "FWD", "fdr_gw5": 2, "tier": "BEST" },
+    { "name": "Hall", "team": "NEW", "pos": "DEF", "fdr_gw5": 2, "tier": "BEST" },
+    { "name": "Wissa", "team": "NEW", "pos": "FWD", "fdr_gw5": 2, "tier": "BEST" },
+    { "name": "Raya", "team": "ARS", "pos": "GK", "fdr_gw5": 3, "tier": "MID" },
+    { "name": "Konsa", "team": "ARS", "pos": "DEF", "fdr_gw5": 3, "tier": "MID" },
+    { "name": "Saka", "team": "ARS", "pos": "MID", "fdr_gw5": 3, "tier": "MID" },
+    { "name": "Egan", "team": "HUL", "pos": "DEF", "fdr_gw5": 3, "tier": "MID" },
+    { "name": "Palmer", "team": "CHE", "pos": "MID", "fdr_gw5": 3, "tier": "MID" },
+    { "name": "João Pedro", "team": "CHE", "pos": "FWD", "fdr_gw5": 3, "tier": "MID", "note": "Also DOUBTFUL (75% chance) per squad.json — availability risk, not a fixture risk" },
+    { "name": "Gakpo", "team": "LIV", "pos": "MID", "fdr_gw5": 3, "tier": "MID" },
+    { "name": "De Cuyper", "team": "BHA", "pos": "DEF", "fdr_gw5": 4, "tier": "WORST" },
+    { "name": "Groß", "team": "BHA", "pos": "MID", "fdr_gw5": 4, "tier": "WORST" },
+    { "name": "Ajer", "team": "BRE", "pos": "DEF", "fdr_gw5": 4, "tier": "WORST" },
+    { "name": "M.Sangaré", "team": "BRE", "pos": "MID", "fdr_gw5": 4, "tier": "WORST" },
+    { "name": "Leno", "team": "FUL", "pos": "GK", "fdr_gw5": 4, "tier": "WORST" }
   ],
-  "best_fixtures": [
-    "Bowen",
-    "Mbeumo",
-    "Rogers",
-    "Aina",
-    "Anderson",
-    "Wood",
-    "Sels"
+  "best_runs": [
+    { "team": "NEW", "fdr_avg": 2, "window": "GW5", "players": ["Hall (DEF)", "Wissa (FWD)"], "note": "Best combined DEF+attack run in the squad this week" },
+    { "team": "MCI", "fdr_avg": 2, "window": "GW5", "players": ["Haaland (FWD)"], "note": "Best pure attacking fixture in the squad" }
   ],
-  "worst_fixtures": [
-    "Mateta",
-    "Munoz",
-    "M.Salah"
+  "worst_runs": [
+    { "team": "BHA", "fdr_avg": 4, "window": "GW5", "players": ["De Cuyper (DEF)", "Groß (MID)"] },
+    { "team": "BRE", "fdr_avg": 4, "window": "GW5", "players": ["Ajer (DEF)", "M.Sangaré (MID)"] },
+    { "team": "FUL", "fdr_avg": 4, "window": "GW5", "players": ["Leno (GK)"] }
   ],
-  "guaranteed_zeros": [
-    "Raya (not in ARS squad)",
-    "Gabriel (out for season — hamstring)",
-    "Haaland (UNAVAILABLE per squad.json)"
+  "dgw_alerts": [
+    { "status": "UNVERIFIABLE", "reason": "No fixture-count/opponent data in cache for GW5-9 — cannot confirm or rule out doubles for any squad team." }
   ],
-  "high_rotation_risk": [
-    "Gvardiol (confirmed benched, MCI rotating entire squad)"
+  "bgw_alerts": [
+    { "status": "UNVERIFIABLE", "reason": "No fixture-count/opponent data in cache for GW5-9. Weak positive signal only: player_pool.json shows gw_last=4 for all 15 squad players, meaning every one of them played in GW4 with no blank recorded there." }
   ],
-  "dgw_players": [],
-  "bgw_players": [],
-  "captain_analysis": {
-    "current_captain": "Bowen (WHU)",
-    "verdict": "Defensible. WHU vs Leeds in a relegation decider is the highest-motivation fixture in GW38. Home advantage. Bowen is West Ham's main creative threat and plays the full 90 in a must-win context. High ceiling, medium floor.",
-    "vice_captain": "M.Salah (LIV)",
-    "vc_verdict": "Reasonable fallback. Salah has personal Golden Boot incentives even with team rotation risk. Away fixture is the main concern. Guarantees minutes if Bowen blanks."
-  },
-  "data_quality_note": "features.json is a SAMPLE file with confirmed GW38 fdr/loc data for 6 players: Haaland (MCI H fdr=2), M.Salah (LIV A fdr=3), Mbeumo (BRE H fdr=2), Gabriel (ARS H fdr=3), Mateta (CRY A fdr=3), Rogers (AVL H fdr=2). All others use contextual intel (NFO vs BOU confirmed, WHU vs Leeds confirmed) or flat fdr=3 from xpts.json.",
-  "summary": "GW38 final gameweek — no DGW, no BGW, all 20 teams play once. Best confirmed fixtures (fdr=2, H): Mbeumo (BRE), Rogers (AVL), and NFO trio (Aina/Anderson/Wood vs BOU). Bowen (WHU vs Leeds, captain) has maximum motivation via relegation decider. Worst confirmed: Mateta and Munoz (CRY A fdr=3), M.Salah (LIV A fdr=3). Three guaranteed zeros: Raya (not in squad), Gabriel (season-ending injury), Haaland (unavailable). Gvardiol is benched rotation risk despite MCI H fdr=2."
+  "summary": "Best DEF/attack run this week: NEW (Hall DEF + Wissa FWD, fdr 2) and MCI (Haaland FWD, fdr 2) are the squad's easiest fixtures; worst are BHA (De Cuyper/Groß) and BRE (Ajer/M.Sangaré) at fdr 4, plus Leno (FUL, fdr 4). No DGW or BGW confirmed for GW5-9 — the cache (squad.json/xpts.json/player_pool.json) contains no forward fixture calendar, and features.json's fixture look-ahead is a stale pre-season snapshot covering GW1-5 only, so DGW/BGW status is UNVERIFIABLE pending a features.json refresh at target_gw=5."
 }
