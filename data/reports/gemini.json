@@ -1,37 +1,31 @@
 {
   "engine": "gemini",
-  "gw": 2,
-  "captain": "Mendy",
-  "vice": "Rogers",
+  "gw": 5,
+  "captain": "Gvardiol",
+  "vice": "Raya",
   "starting_xi": [
-    "Lammens",
-    "Mendy",
-    "Gabriel",
-    "Kerkez",
-    "Hume",
-    "Rogers",
-    "B.Fernandes",
-    "Mbeumo",
-    "Semenyo",
-    "João Pedro",
-    "Thiago"
+    "Raya",
+    "Gvardiol",
+    "Hall",
+    "De Cuyper",
+    "Saka",
+    "Palmer",
+    "Gakpo",
+    "Groß",
+    "M.Sangaré",
+    "Haaland",
+    "Wissa"
   ],
   "bench": [
-    "Rushworth",
-    "van Ewijk",
-    "E.Le Fée",
-    "Awoniyi"
+    "Leno",
+    "Ajer",
+    "Egan",
+    "João Pedro"
   ],
-  "transfer_out": "Palestra",
-  "transfer_in": "Mendy",
+  "transfer_out": "Konsa",
+  "transfer_in": "Gvardiol",
   "chip": null,
-  "projected_xpts": 45.34,
+  "projected_xpts": 53.74,
   "confidence": "medium",
-  "key_risk": "Multiple players in squad lack xPts data",
-  "caveats": [
-    "sim-lab: Mendy has zero cumulative-season record in features.json (absent from all 555 players) and is not a nailed premium - fails the LOCKED cum_pts captaincy protocol entirely.",
-    "sim-lab: Mendy's 16.42 xPts is the strongest symptom of a GW2 xPts miscalibration - a GBP4.0 defender projecting above Haaland (6.43) and every premium in the pool is a model artifact, not a real signal.",
-    "intel: Mendy sits at ~0% EO and isn't even owned yet (requires the Palestra transfer to be made first) - captaining him fades both B.Fernandes (~80 EO) and Haaland (~111 EO) simultaneously with zero supporting real-world signal.",
-    "intel: B.Fernandes (~52% owned, home vs promoted Ipswich, tops GW2 projections) is the safe template captain and the closest-to-template option this squad can actually pick; both sim-lab and intel recommend keeping B.Fernandes as captain instead of Mendy."
-  ]
+  "key_risk": "Several starting players lack explicit xPts entries in TOP_XPTS"
 }
