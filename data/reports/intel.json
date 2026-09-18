@@ -1,98 +1,84 @@
 {
-  "gw": 2,
-  "generated": "2026-08-28",
+  "gw": 5,
+  "generated": "2026-09-18",
   "agent": "intel",
   "pillar": "ELITE-OWN",
-  "method": "xpts.json has no selected_by_percent field, so ownership is sourced from web (FFFix GW1 ownership/captaincy stats, OneFPL template team, FFScout ownership watch). EO = own% + captain%.",
-  "data_quality_warnings": [
-    "xpts.json contains NO entry for B.Fernandes - Gemini's captain pick is xPts-driven, so it could not even consider the squad's current captain.",
-    "xpts.json top xPts is Mendy (HUL, DEF, 4.0m) at 16.42. A 4.0m defender projecting 16.4 pts is a model artifact, not a real signal - defender realistic ceiling is ~12-15 and modal outcome is 2-6.",
-    "Cache team labels look corrupted vs real 26/27 (Semenyo->MCI, Rogers->CHE, Munoz->LIV as MID). Player-level EO still usable; team-level FDR is not trustworthy."
-  ],
-
-  "template_captain": {
-    "player": "Haaland",
-    "own_est": 69.3,
-    "captain_est": 42,
-    "eo_est": 111,
-    "fixture": "CRY (A)",
-    "note": "Was 50%+ captained in GW1 with 3x Bruno's backing. Away at Palace softens the share slightly but he remains top of most GW2 captaincy metrics. Squad does NOT own him."
+  "method": "xpts.json rank + league.json template flags as EO proxy; WebSearch cross-check of overall ownership/captaincy polls (Haaland ~72% owned, ~55% captain share GW5). Elite (top-10k) EO estimated as overall +10-20% on nailed premiums, -30-50% on price-driven budget picks.",
+  "squad_context": {
+    "current_captain": "Palmer",
+    "current_vice": "João Pedro",
+    "overall_rank": 1011463,
+    "league_rank": "9 / 18",
+    "gap_to_leader": 49
   },
 
   "template_core": [
-    { "player": "Haaland", "eo_est": 111, "owned_by_squad": false },
-    { "player": "B.Fernandes", "eo_est": 80, "owned_by_squad": true },
-    { "player": "João Pedro", "eo_est": 40, "owned_by_squad": true },
-    { "player": "Gabriel", "eo_est": 37, "owned_by_squad": true },
-    { "player": "Semenyo", "eo_est": 35, "owned_by_squad": true },
-    { "player": "Mbeumo", "eo_est": 33, "owned_by_squad": true }
+    { "player": "Haaland", "team": "MCI", "eo_est": 130, "own_est": 72, "capt_est": 58, "owned_by_squad": true,
+      "note": "Overall 72% owned, ~55-60% captain share vs SUN (H). EO well over 100% — the single largest EO block in the game this GW." },
+    { "player": "Gvardiol", "team": "MCI", "eo_est": 34, "own_est": 32, "capt_est": 2, "owned_by_squad": false,
+      "note": "Top xPts in the entire pool (10.32). Premium City defender vs SUN (FDR 2). Biggest non-owned template hole." },
+    { "player": "Semenyo", "team": "MCI", "eo_est": 28, "own_est": 26, "capt_est": 2, "owned_by_squad": false,
+      "note": "Confirmed ~26% ownership pre-season and rising. City attacker vs SUN. Owned by most rivals; xPts only 3.79 so damage is capped." },
+    { "player": "Saka", "team": "ARS", "eo_est": 33, "own_est": 30, "capt_est": 3, "owned_by_squad": true, "note": "Core premium mid, covered." },
+    { "player": "Raya", "team": "ARS", "eo_est": 24, "own_est": 24, "capt_est": 0, "owned_by_squad": true, "note": "Template premium GK, xPts 8.27. Covered." },
+    { "player": "B.Fernandes", "team": "MUN", "eo_est": 26, "own_est": 24, "capt_est": 2, "owned_by_squad": false,
+      "note": "12.0m premium, second in captaincy metrics (CRF 11). Moderate EO leak, xPts 5.74." },
+    { "player": "Palmer", "team": "CHE", "eo_est": 27, "own_est": 25, "capt_est": 2, "owned_by_squad": true, "note": "Owned. Captained here at ~2% field captain share — see captain_shield." },
+    { "player": "João Pedro", "team": "CHE", "eo_est": 21, "own_est": 20, "capt_est": 1, "owned_by_squad": true,
+      "note": "League-flagged template. DOUBTFUL 75%, xPts 2.70. High EO means a blank is shared pain, not rank damage — but he is our VICE, which is the real problem." }
   ],
 
   "captain_shield": [
-    {
-      "player": "B.Fernandes",
-      "eo_est": 80,
-      "own_est": 52,
-      "captain_est": 28,
-      "why": "DO NOT FADE. Home vs newly-promoted Ipswich. Tops the GW2 points projection (6.7) and is tied-top on model overall score; ranked 1st among mids for home FPL points (235) and assists (12) last season. Penalties + set pieces = highest floor of any GW2 captain option. Captaincy share is rising off 17.2% in GW1 toward high-20s. This is the correct armband for a squad that does not own Haaland - it is the closest-to-template captain actually available."
-    },
-    {
-      "player": "Haaland",
-      "eo_est": 111,
-      "own_est": 69.3,
-      "captain_est": 42,
-      "why": "The genuine template captain, but UNOWNED by this squad. Cannot be shielded via armband this week - only via a transfer. Flag as the single largest standing rank risk, not as a GW2 captain decision."
+    { "player": "Haaland", "team": "MCI", "eo_est": 130, "capt_share_est": 58, "xpts": 7.45, "captain_xpts": 14.90, "fdr": 2,
+      "floor": "HIGH — nailed 90min penalty-taking striker, 4 goals in last 3, MCI at home vs SUN (SUN carry FDR 5 this GW, i.e. worst matchup in the pool)",
+      "why": "MUST-NOT-MISS. ~58% of the field has the armband on him. If he hauls 15+, every manager who captained elsewhere loses ~8-10 net points to the field in one stroke. The 25/26 backtest lesson is explicit: fading the template captain cost points. He is also the highest captain_xpts of any nailed attacker in xpts.json.",
+      "directive": "DO NOT FADE. sim-lab / the-gaffer: Haaland is the default armband unless a confirmed lineup absence lands. Any alternative must clear him on cum_pts AND xPts, not on 'differential' reasoning."
     }
   ],
 
   "differentials": [
-    {
-      "player": "Stach",
-      "eo_est": 1.5,
-      "ceiling": "high",
-      "why": "Leeds GW1 match-winner via direct free-kick. On set pieces with defensive-contribution points upside and a soft Leeds fixture run. Best pure rank-chasing asset at sub-2% EO. Squad does not own."
-    },
-    {
-      "player": "Ødegaard",
-      "eo_est": 5.5,
-      "ceiling": "high",
-      "why": "11-pt haul in GW1 (goal + max bonus) at 6.5m. Safer high-upside differential than Stach if his form is genuinely back. Note: xpts.json rates him only 1.45 - treat that projection as unreliable given the cache issues."
-    },
-    {
-      "player": "E.Le Fée",
-      "eo_est": 4,
-      "ceiling": "medium-high",
-      "why": "ALREADY OWNED and already in the starting XI. Creativity plus a partial penalty role. A free differential the squad is holding - Gemini benches him for Mendy, which trades a real sub-5% differential for a projection artifact."
-    }
+    { "player": "Bogle", "team": "LEE", "eo_est": 4, "pos": "DEF", "price": 4.5, "xpts": 8.57, "ceiling": 13,
+      "why": "3rd-highest xPts in the pool at 4.5m and effectively unowned. Attacking full-back — CS + attacking return double-up is the ceiling path. Best pure rank-gain punt available." },
+    { "player": "Mykolenko", "team": "EVE", "eo_est": 5, "pos": "DEF", "price": 4.5, "xpts": 6.83, "ceiling": 11,
+      "why": "Everton defence is on FDR 2 and owns four of the top-14 xPts slots (Tarkowski 8.17, Mykolenko 6.83, Maitland-Niles 6.44, Branthwaite 6.17). The field is not on Everton. Cheapest route into that block." },
+    { "player": "Tarkowski", "team": "EVE", "eo_est": 7, "pos": "DEF", "price": 6.1, "xpts": 8.17, "ceiling": 12,
+      "why": "Highest-xPts EVE defender, set-piece aerial goal threat on top of the clean-sheet base. Sub-8% EO with a top-5 projection is the definition of a rank-gain asset." },
+    { "player": "Gibbs-White", "team": "NFO", "eo_est": 16, "pos": "MID", "price": 8.0, "xpts": 6.12, "ceiling": 16,
+      "why": "Took 24% of a GW5 captaincy poll — he is the field's designated Haaland alternative, so he is a semi-differential with real captain-day upside. Highest-ceiling mid outside the premiums. NOTE: at 16% EO he is not cheap rank insurance; own-but-don't-captain is the correct posture." },
+    { "player": "Murillo", "team": "NFO", "eo_est": 9, "pos": "DEF", "price": 5.5, "xpts": 6.25, "ceiling": 11,
+      "why": "NFO on FDR 2. Borderline differential (just over the 8% line) with a goal-threat profile from set pieces." },
+    { "player": "Guéhi", "team": "MCI", "eo_est": 14, "pos": "DEF", "price": 6.0, "xpts": 9.00, "ceiling": 13,
+      "why": "2nd-highest xPts in the pool. Cheaper and much lower-owned route into the City clean sheet than Gvardiol — a way to close the City gap without buying the template." }
   ],
 
   "rank_risks": [
-    {
-      "risk": "Not owning Haaland",
-      "severity": "high",
-      "detail": "69.3% owned, ~42% captained => ~111 EO. Every Haaland return is effectively doubled against this squad. This is the structural gap, and it is a transfer problem, not a captain problem."
-    },
-    {
-      "risk": "Captaining Mendy (Gemini pick)",
-      "severity": "critical",
-      "detail": "Mendy is a 4.0m defender at effectively 0% EO, and is not even in the squad - he requires the transfer. Captaining him fades an ~80 EO Bruno AND an ~111 EO Haaland simultaneously with zero supporting real-world signal. The 16.42 xPts is a data artifact. Backtest lesson applies directly: never go differential captain without a strong signal. REJECT."
-    },
-    {
-      "risk": "Benching E.Le Fée for Mendy",
-      "severity": "medium",
-      "detail": "Swaps a genuine sub-5% differential with a penalty role for an unproven 4.0m defender."
-    },
-    {
-      "risk": "Palestra DOUBTFUL (75%)",
-      "severity": "low",
-      "detail": "Bench player, low EO. Replacing him is fine - the objection is to the specific replacement, not the transfer."
-    }
+    { "risk": "VICE-CAPTAIN ON A DOUBT", "severity": "HIGH", "players": ["João Pedro", "Palmer"],
+      "detail": "Captain Palmer + Vice João Pedro (DOUBTFUL, 75% chance, xPts 2.70). If Palmer is a late absentee the armband falls to a player who may also not start — worst case the captaincy evaporates to 0 doubled while ~58% of the field doubles Haaland.",
+      "action": "Move VICE to Haaland immediately. This is free insurance and costs nothing if Palmer plays." },
+
+    { "risk": "CAPTAIN EO EXPOSURE", "severity": "HIGH", "players": ["Palmer", "Haaland"],
+      "detail": "Captaining Palmer (captain_xpts 10.26, ~2% field capt share) instead of Haaland (captain_xpts 14.90, ~58% field capt share) is a -56% effective-ownership short on the most-captained asset in the game, against a home fixture vs the worst-rated opponent in the pool. Expected cost vs field ≈ -4.6 xPts; tail cost on a Haaland brace/hattrick ≈ -10 to -18 rank-adjusted points.",
+      "action": "Per APEX protocol this is not a 'fade the template' call to make. Unless Palmer is the season cum_pts leader by a clear margin AND Haaland has a confirmed fitness flag, hand the armband to Haaland. Backtest evidence: avoiding high-EO captains cost points." },
+
+    { "risk": "CITY COVERAGE GAP", "severity": "MEDIUM", "players": ["Gvardiol", "Guéhi", "Donnarumma", "Rúben"],
+      "detail": "MCI occupy 4 of the top 8 xPts slots vs SUN (FDR 2 / SUN FDR 5) and the squad holds exactly one City asset (Haaland). Rivals doubling or tripling up on the City defence will bank a shared clean sheet the squad does not have.",
+      "action": "market-desk: one City defender (Guéhi 6.0 at ~14% EO preferred over Gvardiol 5.7 at ~34% EO on differential grounds; Gvardiol preferred on raw xPts 10.32) is the highest-value single transfer this GW. Bank is 0.7m — funding likely requires a downgrade." },
+
+    { "risk": "DEAD WEIGHT IN THE XI", "severity": "MEDIUM", "players": ["Ajer", "Wissa", "João Pedro"],
+      "detail": "Three starters project under 3.2 xPts: Ajer 3.10 (BRE, FDR 4), Wissa 2.85 (NEW), João Pedro 2.70 (CHE, DOUBTFUL). Egan (5.37) and Gakpo (4.96) are on the bench above two of them.",
+      "action": "Swap Egan in for Ajer at minimum. If João Pedro is not cleared by the Friday presser, bench him for Gakpo — the Rotation-Risk/availability gate covers this." },
+
+    { "risk": "TEMPLATE BLANK — LOW CONCERN", "severity": "LOW", "players": ["João Pedro", "Haaland"],
+      "detail": "Both league-flagged template players are owned. A blank from either is absorbed by the field and does not move rank. No defensive action required on ownership grounds — only on availability grounds." },
+
+    { "risk": "CHIP DEPLETION", "severity": "LOW", "players": [],
+      "detail": "BB, WC and TC already spent by GW4; only FH and one WC remain. No chip lever available to rescue a bad GW5 — makes the vice-captain and availability fixes above more important than usual, since there is no safety net."}
   ],
 
-  "verdict": {
-    "template_captain_this_gw": "Haaland (unowned)",
-    "safest_available_captain": "B.Fernandes",
-    "closer_to_template": "B.Fernandes",
-    "recommendation": "KEEP B.Fernandes (C). He is ~80 EO with the highest floor of any captain this squad can actually pick, and he tops the GW2 projections. Mendy is a ~0 EO blowup risk driven by a corrupted xPts row - do not let sim-lab or the-gaffer promote it."
+  "eo_summary": {
+    "squad_eo_covered": ["Haaland", "Saka", "Raya", "Palmer", "João Pedro", "Hall"],
+    "squad_eo_missing": ["Gvardiol", "Semenyo", "B.Fernandes", "Guéhi"],
+    "net_eo_position": "Roughly template-neutral on assets, but SHORT ~56% EO on the captaincy and SHORT the City defensive block. Captaincy is the dominant term — fix that first.",
+    "must_own_count": 4
   }
 }
