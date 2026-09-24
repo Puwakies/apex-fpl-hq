@@ -1,48 +1,138 @@
 {
-  "updated": "2026-09-17T17:23:53.355Z",
-  "gw": 5,
+  "updated": "2026-09-24T17:24:22.852Z",
+  "gw": 6,
   "players": [
-    {
-      "name": "Gvardiol",
-      "team": "MCI",
-      "pos": "DEF",
-      "price": 5.7,
-      "xpts": 10.32,
-      "captain_xpts": 20.64,
-      "fdr": 2
-    },
-    {
-      "name": "Guéhi",
-      "team": "MCI",
-      "pos": "DEF",
-      "price": 6,
-      "xpts": 9,
-      "captain_xpts": 18,
-      "fdr": 2
-    },
-    {
-      "name": "Bogle",
-      "team": "LEE",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 8.57,
-      "captain_xpts": 17.14,
-      "fdr": 3
-    },
-    {
-      "name": "Raya",
-      "team": "ARS",
-      "pos": "GK",
-      "price": 6,
-      "xpts": 8.27,
-      "captain_xpts": 16.54,
-      "fdr": 3
-    },
     {
       "name": "Tarkowski",
       "team": "EVE",
       "pos": "DEF",
       "price": 6.1,
+      "xpts": 12.76,
+      "captain_xpts": 25.52,
+      "fdr": 2
+    },
+    {
+      "name": "Raya",
+      "team": "ARS",
+      "pos": "GK",
+      "price": 6.1,
+      "xpts": 11.88,
+      "captain_xpts": 23.76,
+      "fdr": 2
+    },
+    {
+      "name": "Groß",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 5.8,
+      "xpts": 11.83,
+      "captain_xpts": 23.66,
+      "fdr": 3
+    },
+    {
+      "name": "Calafiori",
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 5.8,
+      "xpts": 11.31,
+      "captain_xpts": 22.62,
+      "fdr": 2
+    },
+    {
+      "name": "Tzolakis",
+      "team": "HUL",
+      "pos": "GK",
+      "price": 4.6,
+      "xpts": 10.43,
+      "captain_xpts": 20.86,
+      "fdr": 3
+    },
+    {
+      "name": "Saka",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 9.5,
+      "xpts": 10.19,
+      "captain_xpts": 20.38,
+      "fdr": 2
+    },
+    {
+      "name": "Hall",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5.3,
+      "xpts": 10.03,
+      "captain_xpts": 20.06,
+      "fdr": 2
+    },
+    {
+      "name": "De Cuyper",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.9,
+      "xpts": 9.93,
+      "captain_xpts": 19.86,
+      "fdr": 3
+    },
+    {
+      "name": "Gabriel",
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 8,
+      "xpts": 9.63,
+      "captain_xpts": 19.26,
+      "fdr": 2
+    },
+    {
+      "name": "Maitland-Niles",
+      "team": "EVE",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 9.54,
+      "captain_xpts": 19.08,
+      "fdr": 2
+    },
+    {
+      "name": "Branthwaite",
+      "team": "EVE",
+      "pos": "DEF",
+      "price": 5.5,
+      "xpts": 8.58,
+      "captain_xpts": 17.16,
+      "fdr": 2
+    },
+    {
+      "name": "Mykolenko",
+      "team": "EVE",
+      "pos": "DEF",
+      "price": 4.6,
+      "xpts": 8.58,
+      "captain_xpts": 17.16,
+      "fdr": 2
+    },
+    {
+      "name": "Davis",
+      "team": "IPS",
+      "pos": "DEF",
+      "price": 4,
+      "xpts": 8.49,
+      "captain_xpts": 16.98,
+      "fdr": 2
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 11.9,
+      "xpts": 8.28,
+      "captain_xpts": 16.56,
+      "fdr": 3
+    },
+    {
+      "name": "Ødegaard",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 6.8,
       "xpts": 8.17,
       "captain_xpts": 16.34,
       "fdr": 2
@@ -51,117 +141,18 @@
       "name": "Haaland",
       "team": "MCI",
       "pos": "FWD",
-      "price": 15.5,
-      "xpts": 7.45,
-      "captain_xpts": 14.9,
-      "fdr": 2
+      "price": 15.6,
+      "xpts": 8.15,
+      "captain_xpts": 16.3,
+      "fdr": 4
     },
     {
-      "name": "Donnarumma",
-      "team": "MCI",
-      "pos": "GK",
-      "price": 5.5,
-      "xpts": 7.29,
-      "captain_xpts": 14.58,
-      "fdr": 2
-    },
-    {
-      "name": "Rúben",
-      "team": "MCI",
+      "name": "Vuskovic",
+      "team": "BHA",
       "pos": "DEF",
-      "price": 5.5,
-      "xpts": 7.11,
-      "captain_xpts": 14.22,
-      "fdr": 2
-    },
-    {
-      "name": "Calafiori",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 5.8,
-      "xpts": 6.89,
-      "captain_xpts": 13.78,
-      "fdr": 3
-    },
-    {
-      "name": "Mykolenko",
-      "team": "EVE",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 6.83,
-      "captain_xpts": 13.66,
-      "fdr": 2
-    },
-    {
-      "name": "Maitland-Niles",
-      "team": "EVE",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 6.44,
-      "captain_xpts": 12.88,
-      "fdr": 2
-    },
-    {
-      "name": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 8,
-      "xpts": 6.25,
-      "captain_xpts": 12.5,
-      "fdr": 3
-    },
-    {
-      "name": "Murillo",
-      "team": "NFO",
-      "pos": "DEF",
-      "price": 5.5,
-      "xpts": 6.25,
-      "captain_xpts": 12.5,
-      "fdr": 2
-    },
-    {
-      "name": "Branthwaite",
-      "team": "EVE",
-      "pos": "DEF",
-      "price": 5.5,
-      "xpts": 6.17,
-      "captain_xpts": 12.34,
-      "fdr": 2
-    },
-    {
-      "name": "Gibbs-White",
-      "team": "NFO",
-      "pos": "MID",
-      "price": 8,
-      "xpts": 6.12,
-      "captain_xpts": 12.24,
-      "fdr": 2
-    },
-    {
-      "name": "Hall",
-      "team": "NEW",
-      "pos": "DEF",
-      "price": 5.2,
-      "xpts": 5.97,
-      "captain_xpts": 11.94,
-      "fdr": 2
-    },
-    {
-      "name": "Tzolakis",
-      "team": "HUL",
-      "pos": "GK",
-      "price": 4.6,
-      "xpts": 5.96,
-      "captain_xpts": 11.92,
-      "fdr": 3
-    },
-    {
-      "name": "Ajayi",
-      "team": "HUL",
-      "pos": "DEF",
-      "price": 4.2,
-      "xpts": 5.92,
-      "captain_xpts": 11.84,
+      "price": 5,
+      "xpts": 8.14,
+      "captain_xpts": 16.28,
       "fdr": 3
     },
     {
@@ -169,197 +160,89 @@
       "team": "EVE",
       "pos": "GK",
       "price": 5.5,
-      "xpts": 5.89,
-      "captain_xpts": 11.78,
+      "xpts": 8.1,
+      "captain_xpts": 16.2,
       "fdr": 2
     },
     {
-      "name": "N.Williams",
-      "team": "NFO",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 5.89,
-      "captain_xpts": 11.78,
-      "fdr": 2
-    },
-    {
-      "name": "Giles",
-      "team": "HUL",
+      "name": "Thomas",
+      "team": "COV",
       "pos": "DEF",
       "price": 4,
-      "xpts": 5.88,
-      "captain_xpts": 11.76,
-      "fdr": 3
+      "xpts": 7.87,
+      "captain_xpts": 15.74,
+      "fdr": 2
     },
     {
-      "name": "Saka",
-      "team": "ARS",
-      "pos": "MID",
-      "price": 9.5,
-      "xpts": 5.8,
-      "captain_xpts": 11.6,
-      "fdr": 3
-    },
-    {
-      "name": "B.Fernandes",
-      "team": "MUN",
-      "pos": "MID",
-      "price": 12,
-      "xpts": 5.74,
-      "captain_xpts": 11.48,
-      "fdr": 3
-    },
-    {
-      "name": "De Cuyper",
-      "team": "BHA",
+      "name": "Gvardiol",
+      "team": "MCI",
       "pos": "DEF",
-      "price": 4.9,
-      "xpts": 5.61,
-      "captain_xpts": 11.22,
-      "fdr": 4
-    },
-    {
-      "name": "Muharemović",
-      "team": "LEE",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 5.56,
-      "captain_xpts": 11.12,
-      "fdr": 3
-    },
-    {
-      "name": "Groß",
-      "team": "BHA",
-      "pos": "MID",
       "price": 5.7,
-      "xpts": 5.46,
-      "captain_xpts": 10.92,
+      "xpts": 7.85,
+      "captain_xpts": 15.7,
       "fdr": 4
     },
     {
-      "name": "Egan",
+      "name": "Ajayi",
       "team": "HUL",
       "pos": "DEF",
-      "price": 4.1,
-      "xpts": 5.37,
-      "captain_xpts": 10.74,
-      "fdr": 3
-    },
-    {
-      "name": "Palmer",
-      "team": "CHE",
-      "pos": "MID",
-      "price": 9.7,
-      "xpts": 5.13,
-      "captain_xpts": 10.26,
-      "fdr": 3
-    },
-    {
-      "name": "Trafford",
-      "team": "LEE",
-      "pos": "GK",
-      "price": 5,
-      "xpts": 5.08,
-      "captain_xpts": 10.16,
-      "fdr": 3
-    },
-    {
-      "name": "Justin",
-      "team": "LEE",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 4.99,
-      "captain_xpts": 9.98,
-      "fdr": 3
-    },
-    {
-      "name": "Davis",
-      "team": "IPS",
-      "pos": "DEF",
-      "price": 4,
-      "xpts": 4.98,
-      "captain_xpts": 9.96,
-      "fdr": 3
-    },
-    {
-      "name": "Gakpo",
-      "team": "LIV",
-      "pos": "MID",
-      "price": 7.2,
-      "xpts": 4.96,
-      "captain_xpts": 9.92,
-      "fdr": 3
-    },
-    {
-      "name": "Sels",
-      "team": "NFO",
-      "pos": "GK",
-      "price": 5,
-      "xpts": 4.87,
-      "captain_xpts": 9.74,
-      "fdr": 2
-    },
-    {
-      "name": "Ødegaard",
-      "team": "ARS",
-      "pos": "MID",
-      "price": 6.7,
-      "xpts": 4.8,
-      "captain_xpts": 9.6,
-      "fdr": 3
-    },
-    {
-      "name": "Tavernier",
-      "team": "BOU",
-      "pos": "MID",
-      "price": 6.1,
-      "xpts": 4.71,
-      "captain_xpts": 9.42,
-      "fdr": 4
-    },
-    {
-      "name": "Dedić",
-      "team": "NEW",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 4.68,
-      "captain_xpts": 9.36,
-      "fdr": 2
-    },
-    {
-      "name": "Belloumi",
-      "team": "HUL",
-      "pos": "MID",
-      "price": 5.1,
-      "xpts": 4.64,
-      "captain_xpts": 9.28,
-      "fdr": 3
-    },
-    {
-      "name": "Konsa",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 4.58,
-      "captain_xpts": 9.16,
+      "price": 4.2,
+      "xpts": 7.63,
+      "captain_xpts": 15.26,
       "fdr": 3
     },
     {
       "name": "Schade",
       "team": "BRE",
       "pos": "MID",
-      "price": 6.1,
-      "xpts": 4.51,
-      "captain_xpts": 9.02,
+      "price": 6.2,
+      "xpts": 7.47,
+      "captain_xpts": 14.94,
       "fdr": 4
     },
     {
-      "name": "A.Becker",
-      "team": "LIV",
-      "pos": "GK",
-      "price": 5.5,
-      "xpts": 4.5,
-      "captain_xpts": 9,
+      "name": "Giles",
+      "team": "HUL",
+      "pos": "DEF",
+      "price": 4,
+      "xpts": 7.39,
+      "captain_xpts": 14.78,
+      "fdr": 3
+    },
+    {
+      "name": "Egan",
+      "team": "HUL",
+      "pos": "DEF",
+      "price": 4.1,
+      "xpts": 7.25,
+      "captain_xpts": 14.5,
+      "fdr": 3
+    },
+    {
+      "name": "Belloumi",
+      "team": "HUL",
+      "pos": "MID",
+      "price": 5.1,
+      "xpts": 7.21,
+      "captain_xpts": 14.42,
+      "fdr": 3
+    },
+    {
+      "name": "Barnes",
+      "team": "NEW",
+      "pos": "MID",
+      "price": 6.1,
+      "xpts": 6.93,
+      "captain_xpts": 13.86,
+      "fdr": 2
+    },
+    {
+      "name": "Gibbs-White",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 8,
+      "xpts": 6.9,
+      "captain_xpts": 13.8,
       "fdr": 3
     },
     {
@@ -367,125 +250,143 @@
       "team": "CHE",
       "pos": "MID",
       "price": 7.7,
-      "xpts": 4.45,
-      "captain_xpts": 8.9,
+      "xpts": 6.79,
+      "captain_xpts": 13.58,
       "fdr": 3
     },
     {
-      "name": "Jacquet",
-      "team": "LIV",
+      "name": "Dasilva",
+      "team": "COV",
       "pos": "DEF",
-      "price": 5,
-      "xpts": 4.43,
-      "captain_xpts": 8.86,
-      "fdr": 3
-    },
-    {
-      "name": "Horníček",
-      "team": "NEW",
-      "pos": "GK",
-      "price": 5,
-      "xpts": 4.3,
-      "captain_xpts": 8.6,
+      "price": 4,
+      "xpts": 6.73,
+      "captain_xpts": 13.46,
       "fdr": 2
     },
     {
-      "name": "Botman",
-      "team": "NEW",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 4.3,
-      "captain_xpts": 8.6,
-      "fdr": 2
-    },
-    {
-      "name": "Van de Ven",
-      "team": "TOT",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 4.26,
-      "captain_xpts": 8.52,
-      "fdr": 3
-    },
-    {
-      "name": "Vuskovic",
-      "team": "BHA",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 4.24,
-      "captain_xpts": 8.48,
-      "fdr": 4
-    },
-    {
-      "name": "Virgil",
-      "team": "LIV",
-      "pos": "DEF",
-      "price": 6.5,
-      "xpts": 4.2,
-      "captain_xpts": 8.4,
-      "fdr": 3
-    },
-    {
-      "name": "Scott",
-      "team": "BOU",
-      "pos": "MID",
-      "price": 6.1,
-      "xpts": 4.2,
-      "captain_xpts": 8.4,
-      "fdr": 4
-    },
-    {
-      "name": "Van Hecke",
-      "team": "TOT",
-      "pos": "DEF",
-      "price": 4.9,
-      "xpts": 4.18,
-      "captain_xpts": 8.36,
-      "fdr": 3
-    },
-    {
-      "name": "White",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 5.5,
-      "xpts": 4.17,
-      "captain_xpts": 8.34,
-      "fdr": 3
-    },
-    {
-      "name": "Stach",
-      "team": "LEE",
-      "pos": "MID",
-      "price": 6,
-      "xpts": 4.17,
-      "captain_xpts": 8.34,
-      "fdr": 3
-    },
-    {
-      "name": "Suzuki",
-      "team": "AVL",
-      "pos": "GK",
-      "price": 5,
-      "xpts": 4.08,
-      "captain_xpts": 8.16,
-      "fdr": 3
-    },
-    {
-      "name": "Dunk",
-      "team": "BHA",
+      "name": "Mitchell",
+      "team": "CRY",
       "pos": "DEF",
       "price": 4.5,
-      "xpts": 4.07,
-      "captain_xpts": 8.14,
-      "fdr": 4
+      "xpts": 6.65,
+      "captain_xpts": 13.3,
+      "fdr": 3
+    },
+    {
+      "name": "Murillo",
+      "team": "NFO",
+      "pos": "DEF",
+      "price": 5.5,
+      "xpts": 6.52,
+      "captain_xpts": 13.04,
+      "fdr": 3
     },
     {
       "name": "Isak",
       "team": "LIV",
       "pos": "FWD",
       "price": 9.1,
-      "xpts": 4.02,
-      "captain_xpts": 8.04,
+      "xpts": 6.49,
+      "captain_xpts": 12.98,
+      "fdr": 4
+    },
+    {
+      "name": "Guéhi",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 6,
+      "xpts": 6.37,
+      "captain_xpts": 12.74,
+      "fdr": 4
+    },
+    {
+      "name": "Verbruggen",
+      "team": "BHA",
+      "pos": "GK",
+      "price": 4.5,
+      "xpts": 6.29,
+      "captain_xpts": 12.58,
+      "fdr": 3
+    },
+    {
+      "name": "Castagne",
+      "team": "FUL",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 6.24,
+      "captain_xpts": 12.48,
+      "fdr": 2
+    },
+    {
+      "name": "Tavernier",
+      "team": "BOU",
+      "pos": "MID",
+      "price": 6.1,
+      "xpts": 6.21,
+      "captain_xpts": 12.42,
+      "fdr": 4
+    },
+    {
+      "name": "A.Becker",
+      "team": "LIV",
+      "pos": "GK",
+      "price": 5.5,
+      "xpts": 6.08,
+      "captain_xpts": 12.16,
+      "fdr": 4
+    },
+    {
+      "name": "White",
+      "team": "ARS",
+      "pos": "DEF",
+      "price": 5.5,
+      "xpts": 6.06,
+      "captain_xpts": 12.12,
+      "fdr": 2
+    },
+    {
+      "name": "Meunier",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 6.06,
+      "captain_xpts": 12.12,
+      "fdr": 2
+    },
+    {
+      "name": "Mendy",
+      "team": "HUL",
+      "pos": "DEF",
+      "price": 4.1,
+      "xpts": 6.05,
+      "captain_xpts": 12.1,
+      "fdr": 3
+    },
+    {
+      "name": "Brobbey",
+      "team": "SUN",
+      "pos": "FWD",
+      "price": 5.7,
+      "xpts": 5.97,
+      "captain_xpts": 11.94,
+      "fdr": 2
+    },
+    {
+      "name": "King",
+      "team": "FUL",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 5.96,
+      "captain_xpts": 11.92,
+      "fdr": 2
+    },
+    {
+      "name": "Cunha",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 7.9,
+      "xpts": 5.94,
+      "captain_xpts": 11.88,
       "fdr": 3
     },
     {
@@ -493,9 +394,486 @@
       "team": "MUN",
       "pos": "MID",
       "price": 7.9,
-      "xpts": 3.99,
-      "captain_xpts": 7.98,
+      "xpts": 5.84,
+      "captain_xpts": 11.68,
       "fdr": 3
+    },
+    {
+      "name": "Rushworth",
+      "team": "COV",
+      "pos": "GK",
+      "price": 4.5,
+      "xpts": 5.76,
+      "captain_xpts": 11.52,
+      "fdr": 2
+    },
+    {
+      "name": "Xhaka",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 5.76,
+      "captain_xpts": 11.52,
+      "fdr": 2
+    },
+    {
+      "name": "Scott",
+      "team": "BOU",
+      "pos": "MID",
+      "price": 6.1,
+      "xpts": 5.74,
+      "captain_xpts": 11.48,
+      "fdr": 4
+    },
+    {
+      "name": "Jacquet",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 5.73,
+      "captain_xpts": 11.46,
+      "fdr": 4
+    },
+    {
+      "name": "Virgil",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 6.5,
+      "xpts": 5.71,
+      "captain_xpts": 11.42,
+      "fdr": 4
+    },
+    {
+      "name": "N.Williams",
+      "team": "NFO",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 5.67,
+      "captain_xpts": 11.34,
+      "fdr": 3
+    },
+    {
+      "name": "Ballard",
+      "team": "SUN",
+      "pos": "DEF",
+      "price": 4.9,
+      "xpts": 5.65,
+      "captain_xpts": 11.3,
+      "fdr": 2
+    },
+    {
+      "name": "Leno",
+      "team": "FUL",
+      "pos": "GK",
+      "price": 4.5,
+      "xpts": 5.6,
+      "captain_xpts": 11.2,
+      "fdr": 2
+    },
+    {
+      "name": "Khalaili",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 5.6,
+      "captain_xpts": 11.2,
+      "fdr": 3
+    },
+    {
+      "name": "Boscagli",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 5.46,
+      "captain_xpts": 10.92,
+      "fdr": 3
+    },
+    {
+      "name": "Barry",
+      "team": "EVE",
+      "pos": "FWD",
+      "price": 5.6,
+      "xpts": 5.45,
+      "captain_xpts": 10.9,
+      "fdr": 2
+    },
+    {
+      "name": "Bogle",
+      "team": "LEE",
+      "pos": "DEF",
+      "price": 4.6,
+      "xpts": 5.36,
+      "captain_xpts": 10.72,
+      "fdr": 5
+    },
+    {
+      "name": "Buendía",
+      "team": "AVL",
+      "pos": "MID",
+      "price": 5.9,
+      "xpts": 5.34,
+      "captain_xpts": 10.68,
+      "fdr": 3
+    },
+    {
+      "name": "Botman",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 5.24,
+      "captain_xpts": 10.48,
+      "fdr": 2
+    },
+    {
+      "name": "Dewsbury-Hall",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 6.6,
+      "xpts": 5.24,
+      "captain_xpts": 10.48,
+      "fdr": 2
+    },
+    {
+      "name": "Cherki",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 7.8,
+      "xpts": 5.23,
+      "captain_xpts": 10.46,
+      "fdr": 4
+    },
+    {
+      "name": "E.Le Fée",
+      "team": "SUN",
+      "pos": "MID",
+      "price": 5.7,
+      "xpts": 5.21,
+      "captain_xpts": 10.42,
+      "fdr": 2
+    },
+    {
+      "name": "Gomez",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 5,
+      "xpts": 5.2,
+      "captain_xpts": 10.4,
+      "fdr": 3
+    },
+    {
+      "name": "Janelt",
+      "team": "BRE",
+      "pos": "MID",
+      "price": 5,
+      "xpts": 5.06,
+      "captain_xpts": 10.12,
+      "fdr": 4
+    },
+    {
+      "name": "Horníček",
+      "team": "NEW",
+      "pos": "GK",
+      "price": 5,
+      "xpts": 5.01,
+      "captain_xpts": 10.02,
+      "fdr": 2
+    },
+    {
+      "name": "Thiaw",
+      "team": "NEW",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 5.01,
+      "captain_xpts": 10.02,
+      "fdr": 2
+    },
+    {
+      "name": "Emersonn",
+      "team": "IPS",
+      "pos": "FWD",
+      "price": 5.5,
+      "xpts": 5,
+      "captain_xpts": 10,
+      "fdr": 2
+    },
+    {
+      "name": "Van Hecke",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 4.9,
+      "xpts": 4.93,
+      "captain_xpts": 9.86,
+      "fdr": 4
+    },
+    {
+      "name": "Kamada",
+      "team": "CRY",
+      "pos": "MID",
+      "price": 5,
+      "xpts": 4.81,
+      "captain_xpts": 9.62,
+      "fdr": 3
+    },
+    {
+      "name": "Bassey",
+      "team": "FUL",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 4.79,
+      "captain_xpts": 9.58,
+      "fdr": 2
+    },
+    {
+      "name": "Gakpo",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 7.2,
+      "xpts": 4.76,
+      "captain_xpts": 9.52,
+      "fdr": 4
+    },
+    {
+      "name": "Havertz",
+      "team": "ARS",
+      "pos": "FWD",
+      "price": 7.6,
+      "xpts": 4.73,
+      "captain_xpts": 9.46,
+      "fdr": 2
+    },
+    {
+      "name": "Trafford",
+      "team": "LEE",
+      "pos": "GK",
+      "price": 5,
+      "xpts": 4.62,
+      "captain_xpts": 9.24,
+      "fdr": 5
+    },
+    {
+      "name": "Araujo",
+      "team": "LIV",
+      "pos": "DEF",
+      "price": 5.4,
+      "xpts": 4.62,
+      "captain_xpts": 9.24,
+      "fdr": 4
+    },
+    {
+      "name": "Ajer",
+      "team": "BRE",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 4.54,
+      "captain_xpts": 9.08,
+      "fdr": 4
+    },
+    {
+      "name": "Suzuki",
+      "team": "AVL",
+      "pos": "GK",
+      "price": 5,
+      "xpts": 4.5,
+      "captain_xpts": 9,
+      "fdr": 3
+    },
+    {
+      "name": "Kelleher",
+      "team": "BRE",
+      "pos": "GK",
+      "price": 5,
+      "xpts": 4.47,
+      "captain_xpts": 8.94,
+      "fdr": 4
+    },
+    {
+      "name": "Muharemović",
+      "team": "LEE",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 4.47,
+      "captain_xpts": 8.94,
+      "fdr": 5
+    },
+    {
+      "name": "Donnarumma",
+      "team": "MCI",
+      "pos": "GK",
+      "price": 5.5,
+      "xpts": 4.45,
+      "captain_xpts": 8.9,
+      "fdr": 4
+    },
+    {
+      "name": "Szoboszlai",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 7,
+      "xpts": 4.45,
+      "captain_xpts": 8.9,
+      "fdr": 4
+    },
+    {
+      "name": "Sels",
+      "team": "NFO",
+      "pos": "GK",
+      "price": 5,
+      "xpts": 4.44,
+      "captain_xpts": 8.88,
+      "fdr": 3
+    },
+    {
+      "name": "Pinnock",
+      "team": "COV",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 4.44,
+      "captain_xpts": 8.88,
+      "fdr": 2
+    },
+    {
+      "name": "Lewis-Potter",
+      "team": "BRE",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 4.35,
+      "captain_xpts": 8.7,
+      "fdr": 4
+    },
+    {
+      "name": "Justin",
+      "team": "LEE",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 4.33,
+      "captain_xpts": 8.66,
+      "fdr": 5
+    },
+    {
+      "name": "Willock",
+      "team": "NEW",
+      "pos": "MID",
+      "price": 5,
+      "xpts": 4.33,
+      "captain_xpts": 8.66,
+      "fdr": 2
+    },
+    {
+      "name": "Kostoulas",
+      "team": "BHA",
+      "pos": "FWD",
+      "price": 5.6,
+      "xpts": 4.33,
+      "captain_xpts": 8.66,
+      "fdr": 3
+    },
+    {
+      "name": "Kayode",
+      "team": "BRE",
+      "pos": "DEF",
+      "price": 4.6,
+      "xpts": 4.3,
+      "captain_xpts": 8.6,
+      "fdr": 4
+    },
+    {
+      "name": "Stach",
+      "team": "LEE",
+      "pos": "MID",
+      "price": 6,
+      "xpts": 4.3,
+      "captain_xpts": 8.6,
+      "fdr": 5
+    },
+    {
+      "name": "Richards",
+      "team": "CRY",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 4.27,
+      "captain_xpts": 8.54,
+      "fdr": 3
+    },
+    {
+      "name": "Enciso",
+      "team": "IPS",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 4.11,
+      "captain_xpts": 8.22,
+      "fdr": 2
+    },
+    {
+      "name": "Armstrong",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 5,
+      "xpts": 4.04,
+      "captain_xpts": 8.08,
+      "fdr": 2
+    },
+    {
+      "name": "Rúben",
+      "team": "MCI",
+      "pos": "DEF",
+      "price": 5.5,
+      "xpts": 4.01,
+      "captain_xpts": 8.02,
+      "fdr": 4
+    },
+    {
+      "name": "Coyle",
+      "team": "HUL",
+      "pos": "DEF",
+      "price": 4,
+      "xpts": 4,
+      "captain_xpts": 8,
+      "fdr": 3
+    },
+    {
+      "name": "Ndiaye",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 5.8,
+      "xpts": 4,
+      "captain_xpts": 8,
+      "fdr": 4
+    },
+    {
+      "name": "McGinn",
+      "team": "AVL",
+      "pos": "MID",
+      "price": 5.4,
+      "xpts": 3.95,
+      "captain_xpts": 7.9,
+      "fdr": 3
+    },
+    {
+      "name": "Lammens",
+      "team": "MUN",
+      "pos": "GK",
+      "price": 4.9,
+      "xpts": 3.92,
+      "captain_xpts": 7.84,
+      "fdr": 3
+    },
+    {
+      "name": "Palmer",
+      "team": "CHE",
+      "pos": "MID",
+      "price": 9.7,
+      "xpts": 3.89,
+      "captain_xpts": 7.78,
+      "fdr": 3
+    },
+    {
+      "name": "George",
+      "team": "EVE",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 3.89,
+      "captain_xpts": 7.78,
+      "fdr": 2
     },
     {
       "name": "Kinsky",
@@ -504,573 +882,24 @@
       "price": 4.5,
       "xpts": 3.88,
       "captain_xpts": 7.76,
-      "fdr": 3
-    },
-    {
-      "name": "Emersonn",
-      "team": "IPS",
-      "pos": "FWD",
-      "price": 5.5,
-      "xpts": 3.86,
-      "captain_xpts": 7.72,
-      "fdr": 3
-    },
-    {
-      "name": "Barnes",
-      "team": "NEW",
-      "pos": "MID",
-      "price": 6,
-      "xpts": 3.85,
-      "captain_xpts": 7.7,
-      "fdr": 2
-    },
-    {
-      "name": "George",
-      "team": "EVE",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 3.83,
-      "captain_xpts": 7.66,
-      "fdr": 2
-    },
-    {
-      "name": "Coyle",
-      "team": "HUL",
-      "pos": "DEF",
-      "price": 4,
-      "xpts": 3.79,
-      "captain_xpts": 7.58,
-      "fdr": 3
-    },
-    {
-      "name": "Dewsbury-Hall",
-      "team": "EVE",
-      "pos": "MID",
-      "price": 6.5,
-      "xpts": 3.79,
-      "captain_xpts": 7.58,
-      "fdr": 2
-    },
-    {
-      "name": "Semenyo",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 8.4,
-      "xpts": 3.79,
-      "captain_xpts": 7.58,
-      "fdr": 2
-    },
-    {
-      "name": "Kayode",
-      "team": "BRE",
-      "pos": "DEF",
-      "price": 4.6,
-      "xpts": 3.76,
-      "captain_xpts": 7.52,
       "fdr": 4
     },
     {
-      "name": "Mendy",
-      "team": "HUL",
-      "pos": "DEF",
-      "price": 4.1,
-      "xpts": 3.73,
-      "captain_xpts": 7.46,
-      "fdr": 3
-    },
-    {
-      "name": "Mitchell",
-      "team": "CRY",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 3.72,
-      "captain_xpts": 7.44,
-      "fdr": 3
-    },
-    {
-      "name": "Ndiaye",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 5.9,
-      "xpts": 3.71,
-      "captain_xpts": 7.42,
-      "fdr": 2
-    },
-    {
-      "name": "Thomas",
-      "team": "COV",
-      "pos": "DEF",
-      "price": 4,
-      "xpts": 3.69,
-      "captain_xpts": 7.38,
-      "fdr": 3
-    },
-    {
-      "name": "Janelt",
-      "team": "BRE",
-      "pos": "MID",
-      "price": 5,
-      "xpts": 3.68,
-      "captain_xpts": 7.36,
-      "fdr": 4
-    },
-    {
-      "name": "Calvert-Lewin",
-      "team": "LEE",
-      "pos": "FWD",
-      "price": 6,
-      "xpts": 3.67,
-      "captain_xpts": 7.34,
-      "fdr": 3
-    },
-    {
-      "name": "Rice",
-      "team": "ARS",
-      "pos": "MID",
-      "price": 7.4,
-      "xpts": 3.6,
-      "captain_xpts": 7.2,
-      "fdr": 3
-    },
-    {
-      "name": "Robertson",
-      "team": "TOT",
-      "pos": "DEF",
-      "price": 4.4,
-      "xpts": 3.58,
-      "captain_xpts": 7.16,
-      "fdr": 3
-    },
-    {
-      "name": "Castagne",
-      "team": "FUL",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 3.57,
-      "captain_xpts": 7.14,
-      "fdr": 4
-    },
-    {
-      "name": "Bijol",
-      "team": "LEE",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 3.56,
-      "captain_xpts": 7.12,
-      "fdr": 3
-    },
-    {
-      "name": "Cherki",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 7.8,
-      "xpts": 3.54,
-      "captain_xpts": 7.08,
-      "fdr": 2
-    },
-    {
-      "name": "Szoboszlai",
-      "team": "LIV",
-      "pos": "MID",
-      "price": 7,
-      "xpts": 3.52,
-      "captain_xpts": 7.04,
-      "fdr": 3
-    },
-    {
-      "name": "Verbruggen",
-      "team": "BHA",
-      "pos": "GK",
-      "price": 4.5,
-      "xpts": 3.38,
-      "captain_xpts": 6.76,
-      "fdr": 4
-    },
-    {
-      "name": "M.Sangaré",
-      "team": "BRE",
-      "pos": "MID",
-      "price": 5.7,
-      "xpts": 3.3,
-      "captain_xpts": 6.6,
-      "fdr": 4
-    },
-    {
-      "name": "Milenković",
-      "team": "NFO",
-      "pos": "DEF",
-      "price": 5.5,
-      "xpts": 3.21,
-      "captain_xpts": 6.42,
-      "fdr": 2
-    },
-    {
-      "name": "King",
-      "team": "FUL",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 3.21,
-      "captain_xpts": 6.42,
-      "fdr": 4
-    },
-    {
-      "name": "Araujo",
-      "team": "LIV",
-      "pos": "DEF",
-      "price": 5.4,
-      "xpts": 3.17,
-      "captain_xpts": 6.34,
-      "fdr": 3
-    },
-    {
-      "name": "Lacroix",
-      "team": "CHE",
-      "pos": "DEF",
-      "price": 6,
-      "xpts": 3.17,
-      "captain_xpts": 6.34,
-      "fdr": 3
-    },
-    {
-      "name": "Khalaili",
-      "team": "CRY",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 3.13,
-      "captain_xpts": 6.26,
-      "fdr": 3
-    },
-    {
-      "name": "Mainoo",
-      "team": "MUN",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 3.13,
-      "captain_xpts": 6.26,
-      "fdr": 3
-    },
-    {
-      "name": "Ndoye",
-      "team": "NFO",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 3.13,
-      "captain_xpts": 6.26,
-      "fdr": 2
-    },
-    {
-      "name": "Anderson",
-      "team": "MCI",
-      "pos": "MID",
-      "price": 6.3,
-      "xpts": 3.13,
-      "captain_xpts": 6.26,
-      "fdr": 2
-    },
-    {
-      "name": "Kelleher",
-      "team": "BRE",
-      "pos": "GK",
-      "price": 5,
-      "xpts": 3.1,
-      "captain_xpts": 6.2,
-      "fdr": 4
-    },
-    {
-      "name": "Ajer",
+      "name": "Schuster",
       "team": "BRE",
       "pos": "DEF",
       "price": 4.5,
-      "xpts": 3.1,
-      "captain_xpts": 6.2,
+      "xpts": 3.82,
+      "captain_xpts": 7.64,
       "fdr": 4
-    },
-    {
-      "name": "Mosquera",
-      "team": "ARS",
-      "pos": "DEF",
-      "price": 5.3,
-      "xpts": 3.01,
-      "captain_xpts": 6.02,
-      "fdr": 3
-    },
-    {
-      "name": "Lewis-Potter",
-      "team": "BRE",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 3,
-      "captain_xpts": 6,
-      "fdr": 4
-    },
-    {
-      "name": "Kamada",
-      "team": "CRY",
-      "pos": "MID",
-      "price": 5,
-      "xpts": 2.99,
-      "captain_xpts": 5.98,
-      "fdr": 3
-    },
-    {
-      "name": "Barry",
-      "team": "EVE",
-      "pos": "FWD",
-      "price": 5.6,
-      "xpts": 2.97,
-      "captain_xpts": 5.94,
-      "fdr": 2
-    },
-    {
-      "name": "Ampadu",
-      "team": "LEE",
-      "pos": "MID",
-      "price": 5.4,
-      "xpts": 2.9,
-      "captain_xpts": 5.8,
-      "fdr": 3
-    },
-    {
-      "name": "Leno",
-      "team": "FUL",
-      "pos": "GK",
-      "price": 4.5,
-      "xpts": 2.87,
-      "captain_xpts": 5.74,
-      "fdr": 4
-    },
-    {
-      "name": "Wissa",
-      "team": "NEW",
-      "pos": "FWD",
-      "price": 6.2,
-      "xpts": 2.85,
-      "captain_xpts": 5.7,
-      "fdr": 2
-    },
-    {
-      "name": "Yalcouyé",
-      "team": "BHA",
-      "pos": "MID",
-      "price": 4.5,
-      "xpts": 2.83,
-      "captain_xpts": 5.66,
-      "fdr": 4
-    },
-    {
-      "name": "Okafor",
-      "team": "LEE",
-      "pos": "MID",
-      "price": 5.8,
-      "xpts": 2.8,
-      "captain_xpts": 5.6,
-      "fdr": 3
-    },
-    {
-      "name": "Boscagli",
-      "team": "BHA",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 2.77,
-      "captain_xpts": 5.54,
-      "fdr": 4
-    },
-    {
-      "name": "Cunha",
-      "team": "MUN",
-      "pos": "MID",
-      "price": 7.9,
-      "xpts": 2.77,
-      "captain_xpts": 5.54,
-      "fdr": 3
-    },
-    {
-      "name": "João Pedro",
-      "team": "CHE",
-      "pos": "FWD",
-      "price": 7.8,
-      "xpts": 2.7,
-      "captain_xpts": 5.4,
-      "fdr": 3
-    },
-    {
-      "name": "Havertz",
-      "team": "ARS",
-      "pos": "FWD",
-      "price": 7.6,
-      "xpts": 2.65,
-      "captain_xpts": 5.3,
-      "fdr": 3
-    },
-    {
-      "name": "Tzolis",
-      "team": "ARS",
-      "pos": "MID",
-      "price": 6.4,
-      "xpts": 2.54,
-      "captain_xpts": 5.08,
-      "fdr": 3
-    },
-    {
-      "name": "Kostoulas",
-      "team": "BHA",
-      "pos": "FWD",
-      "price": 5.5,
-      "xpts": 2.43,
-      "captain_xpts": 4.86,
-      "fdr": 4
-    },
-    {
-      "name": "Munoz",
-      "team": "LIV",
-      "pos": "MID",
-      "price": 6.5,
-      "xpts": 2.41,
-      "captain_xpts": 4.82,
-      "fdr": 3
     },
     {
       "name": "Slater",
       "team": "HUL",
       "pos": "MID",
       "price": 4.5,
-      "xpts": 2.4,
-      "captain_xpts": 4.8,
-      "fdr": 3
-    },
-    {
-      "name": "Silva",
-      "team": "BOU",
-      "pos": "DEF",
-      "price": 5,
-      "xpts": 2.35,
-      "captain_xpts": 4.7,
-      "fdr": 4
-    },
-    {
-      "name": "Gomez",
-      "team": "BHA",
-      "pos": "MID",
-      "price": 5,
-      "xpts": 2.35,
-      "captain_xpts": 4.7,
-      "fdr": 4
-    },
-    {
-      "name": "Xhaka",
-      "team": "SUN",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 2.26,
-      "captain_xpts": 4.52,
-      "fdr": 5
-    },
-    {
-      "name": "Kluivert",
-      "team": "BOU",
-      "pos": "MID",
-      "price": 6,
-      "xpts": 2.26,
-      "captain_xpts": 4.52,
-      "fdr": 4
-    },
-    {
-      "name": "Enciso",
-      "team": "IPS",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 2.22,
-      "captain_xpts": 4.44,
-      "fdr": 3
-    },
-    {
-      "name": "Yeremy",
-      "team": "CRY",
-      "pos": "MID",
-      "price": 5.5,
-      "xpts": 2.2,
-      "captain_xpts": 4.4,
-      "fdr": 3
-    },
-    {
-      "name": "Evanilson",
-      "team": "BOU",
-      "pos": "FWD",
-      "price": 6,
-      "xpts": 2.18,
-      "captain_xpts": 4.36,
-      "fdr": 4
-    },
-    {
-      "name": "Neto",
-      "team": "CHE",
-      "pos": "MID",
-      "price": 6.5,
-      "xpts": 2.15,
-      "captain_xpts": 4.3,
-      "fdr": 3
-    },
-    {
-      "name": "Wirtz",
-      "team": "LIV",
-      "pos": "MID",
-      "price": 7.4,
-      "xpts": 2.15,
-      "captain_xpts": 4.3,
-      "fdr": 3
-    },
-    {
-      "name": "McBurnie",
-      "team": "HUL",
-      "pos": "FWD",
-      "price": 5.5,
-      "xpts": 2.1,
-      "captain_xpts": 4.2,
-      "fdr": 3
-    },
-    {
-      "name": "Mukiele",
-      "team": "SUN",
-      "pos": "DEF",
-      "price": 5.4,
-      "xpts": 2.01,
-      "captain_xpts": 4.02,
-      "fdr": 5
-    },
-    {
-      "name": "Igor Jesus",
-      "team": "NFO",
-      "pos": "FWD",
-      "price": 5.8,
-      "xpts": 2.01,
-      "captain_xpts": 4.02,
-      "fdr": 2
-    },
-    {
-      "name": "Petrović",
-      "team": "BOU",
-      "pos": "GK",
-      "price": 4.5,
-      "xpts": 1.95,
-      "captain_xpts": 3.9,
-      "fdr": 4
-    },
-    {
-      "name": "Ballard",
-      "team": "SUN",
-      "pos": "DEF",
-      "price": 4.9,
-      "xpts": 1.9,
-      "captain_xpts": 3.8,
-      "fdr": 5
-    },
-    {
-      "name": "McGinn",
-      "team": "AVL",
-      "pos": "MID",
-      "price": 5.4,
-      "xpts": 1.9,
-      "captain_xpts": 3.8,
+      "xpts": 3.7,
+      "captain_xpts": 7.4,
       "fdr": 3
     },
     {
@@ -1078,134 +907,314 @@
       "team": "FUL",
       "pos": "FWD",
       "price": 6,
-      "xpts": 1.88,
-      "captain_xpts": 3.76,
-      "fdr": 4
+      "xpts": 3.7,
+      "captain_xpts": 7.4,
+      "fdr": 2
     },
     {
-      "name": "Ayari",
-      "team": "BHA",
+      "name": "Tzolis",
+      "team": "ARS",
       "pos": "MID",
-      "price": 5.4,
-      "xpts": 1.86,
-      "captain_xpts": 3.72,
+      "price": 6.3,
+      "xpts": 3.67,
+      "captain_xpts": 7.34,
+      "fdr": 2
+    },
+    {
+      "name": "Wirtz",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 7.3,
+      "xpts": 3.63,
+      "captain_xpts": 7.26,
       "fdr": 4
-    },
-    {
-      "name": "Roefs",
-      "team": "SUN",
-      "pos": "GK",
-      "price": 4.9,
-      "xpts": 1.8,
-      "captain_xpts": 3.6,
-      "fdr": 5
-    },
-    {
-      "name": "Meunier",
-      "team": "SUN",
-      "pos": "DEF",
-      "price": 4.5,
-      "xpts": 1.8,
-      "captain_xpts": 3.6,
-      "fdr": 5
     },
     {
       "name": "N.Angulo",
       "team": "SUN",
       "pos": "MID",
       "price": 5,
-      "xpts": 1.8,
-      "captain_xpts": 3.6,
-      "fdr": 5
-    },
-    {
-      "name": "Armstrong",
-      "team": "EVE",
-      "pos": "MID",
-      "price": 5,
-      "xpts": 1.74,
-      "captain_xpts": 3.48,
+      "xpts": 3.58,
+      "captain_xpts": 7.16,
       "fdr": 2
     },
     {
-      "name": "Willock",
+      "name": "Wissa",
       "team": "NEW",
-      "pos": "MID",
-      "price": 5,
-      "xpts": 1.72,
-      "captain_xpts": 3.44,
+      "pos": "FWD",
+      "price": 6.2,
+      "xpts": 3.55,
+      "captain_xpts": 7.1,
       "fdr": 2
     },
     {
-      "name": "E.Le Fée",
-      "team": "SUN",
-      "pos": "MID",
-      "price": 5.8,
-      "xpts": 1.59,
-      "captain_xpts": 3.18,
+      "name": "Calvert-Lewin",
+      "team": "LEE",
+      "pos": "FWD",
+      "price": 6,
+      "xpts": 3.54,
+      "captain_xpts": 7.08,
       "fdr": 5
     },
     {
-      "name": "Collins",
-      "team": "BRE",
-      "pos": "DEF",
-      "price": 5.4,
-      "xpts": 1.43,
-      "captain_xpts": 2.86,
-      "fdr": 4
-    },
-    {
-      "name": "Tanaka",
-      "team": "LEE",
+      "name": "Kamara",
+      "team": "AVL",
       "pos": "MID",
-      "price": 4.9,
-      "xpts": 1.43,
-      "captain_xpts": 2.86,
+      "price": 5,
+      "xpts": 3.51,
+      "captain_xpts": 7.02,
       "fdr": 3
     },
     {
-      "name": "Flemming",
-      "team": "IPS",
+      "name": "F.Kadıoğlu",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.4,
+      "xpts": 3.5,
+      "captain_xpts": 7,
+      "fdr": 3
+    },
+    {
+      "name": "Rice",
+      "team": "ARS",
+      "pos": "MID",
+      "price": 7.4,
+      "xpts": 3.37,
+      "captain_xpts": 6.74,
+      "fdr": 2
+    },
+    {
+      "name": "Yalcouyé",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 4.5,
+      "xpts": 3.35,
+      "captain_xpts": 6.7,
+      "fdr": 3
+    },
+    {
+      "name": "Semenyo",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 8.4,
+      "xpts": 3.28,
+      "captain_xpts": 6.56,
+      "fdr": 4
+    },
+    {
+      "name": "Dunk",
+      "team": "BHA",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 3.25,
+      "captain_xpts": 6.5,
+      "fdr": 3
+    },
+    {
+      "name": "McBurnie",
+      "team": "HUL",
       "pos": "FWD",
       "price": 5.5,
-      "xpts": 1.24,
-      "captain_xpts": 2.48,
+      "xpts": 3.14,
+      "captain_xpts": 6.28,
+      "fdr": 3
+    },
+    {
+      "name": "Ampadu",
+      "team": "LEE",
+      "pos": "MID",
+      "price": 5.4,
+      "xpts": 3.13,
+      "captain_xpts": 6.26,
+      "fdr": 5
+    },
+    {
+      "name": "M.Sangaré",
+      "team": "BRE",
+      "pos": "MID",
+      "price": 5.6,
+      "xpts": 3.08,
+      "captain_xpts": 6.16,
+      "fdr": 4
+    },
+    {
+      "name": "Robertson",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 4.4,
+      "xpts": 3.07,
+      "captain_xpts": 6.14,
+      "fdr": 4
+    },
+    {
+      "name": "Van de Ven",
+      "team": "TOT",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 3.07,
+      "captain_xpts": 6.14,
+      "fdr": 4
+    },
+    {
+      "name": "Evanilson",
+      "team": "BOU",
+      "pos": "FWD",
+      "price": 6,
+      "xpts": 3.06,
+      "captain_xpts": 6.12,
+      "fdr": 4
+    },
+    {
+      "name": "Silva",
+      "team": "BOU",
+      "pos": "DEF",
+      "price": 5,
+      "xpts": 2.94,
+      "captain_xpts": 5.88,
+      "fdr": 4
+    },
+    {
+      "name": "Anderson",
+      "team": "MCI",
+      "pos": "MID",
+      "price": 6.3,
+      "xpts": 2.82,
+      "captain_xpts": 5.64,
+      "fdr": 4
+    },
+    {
+      "name": "João Pedro",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 7.7,
+      "xpts": 2.78,
+      "captain_xpts": 5.56,
+      "fdr": 3
+    },
+    {
+      "name": "Ayari",
+      "team": "BHA",
+      "pos": "MID",
+      "price": 5.4,
+      "xpts": 2.62,
+      "captain_xpts": 5.24,
+      "fdr": 3
+    },
+    {
+      "name": "Ndoye",
+      "team": "NFO",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 2.58,
+      "captain_xpts": 5.16,
       "fdr": 3
     },
     {
       "name": "Damsgaard",
       "team": "BRE",
       "pos": "MID",
-      "price": 5.5,
-      "xpts": 1.2,
-      "captain_xpts": 2.4,
+      "price": 5.4,
+      "xpts": 2.33,
+      "captain_xpts": 4.66,
       "fdr": 4
     },
     {
-      "name": "Tonali",
-      "team": "TOT",
-      "pos": "MID",
-      "price": 5.4,
-      "xpts": 1.17,
-      "captain_xpts": 2.34,
-      "fdr": 3
+      "name": "Gudmundsson",
+      "team": "LEE",
+      "pos": "DEF",
+      "price": 4.5,
+      "xpts": 2.29,
+      "captain_xpts": 4.58,
+      "fdr": 5
     },
     {
-      "name": "Marmoush",
-      "team": "TOT",
-      "pos": "FWD",
-      "price": 7,
-      "xpts": 0.98,
-      "captain_xpts": 1.96,
-      "fdr": 3
+      "name": "Munoz",
+      "team": "LIV",
+      "pos": "MID",
+      "price": 6.5,
+      "xpts": 2.23,
+      "captain_xpts": 4.46,
+      "fdr": 4
     },
     {
       "name": "Strand Larsen",
       "team": "CRY",
       "pos": "FWD",
       "price": 6,
-      "xpts": 0.97,
-      "captain_xpts": 1.94,
+      "xpts": 2.21,
+      "captain_xpts": 4.42,
+      "fdr": 3
+    },
+    {
+      "name": "Anthony",
+      "team": "BRE",
+      "pos": "MID",
+      "price": 5.9,
+      "xpts": 2.14,
+      "captain_xpts": 4.28,
+      "fdr": 4
+    },
+    {
+      "name": "Mainoo",
+      "team": "MUN",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 2.1,
+      "captain_xpts": 4.2,
+      "fdr": 3
+    },
+    {
+      "name": "Okafor",
+      "team": "LEE",
+      "pos": "MID",
+      "price": 5.8,
+      "xpts": 2.09,
+      "captain_xpts": 4.18,
+      "fdr": 5
+    },
+    {
+      "name": "Bentancur",
+      "team": "TOT",
+      "pos": "MID",
+      "price": 5.5,
+      "xpts": 2.05,
+      "captain_xpts": 4.1,
+      "fdr": 4
+    },
+    {
+      "name": "Thiago",
+      "team": "BRE",
+      "pos": "FWD",
+      "price": 7.8,
+      "xpts": 1.95,
+      "captain_xpts": 3.9,
+      "fdr": 4
+    },
+    {
+      "name": "Igor Jesus",
+      "team": "NFO",
+      "pos": "FWD",
+      "price": 5.8,
+      "xpts": 1.8,
+      "captain_xpts": 3.6,
+      "fdr": 3
+    },
+    {
+      "name": "Thomas-Asante",
+      "team": "COV",
+      "pos": "FWD",
+      "price": 5,
+      "xpts": 1.63,
+      "captain_xpts": 3.26,
+      "fdr": 2
+    },
+    {
+      "name": "N.Jackson",
+      "team": "AVL",
+      "pos": "FWD",
+      "price": 6.5,
+      "xpts": 1.62,
+      "captain_xpts": 3.24,
       "fdr": 3
     },
     {
@@ -1213,71 +1222,53 @@
       "team": "SUN",
       "pos": "FWD",
       "price": 5.5,
-      "xpts": 0.8,
-      "captain_xpts": 1.6,
-      "fdr": 5
+      "xpts": 1.45,
+      "captain_xpts": 2.9,
+      "fdr": 2
     },
     {
       "name": "Delap",
       "team": "NFO",
       "pos": "FWD",
-      "price": 5.5,
-      "xpts": 0.78,
-      "captain_xpts": 1.56,
-      "fdr": 2
+      "price": 5.6,
+      "xpts": 1.35,
+      "captain_xpts": 2.7,
+      "fdr": 3
     },
     {
-      "name": "Thiago",
-      "team": "BRE",
+      "name": "Marmoush",
+      "team": "TOT",
       "pos": "FWD",
-      "price": 7.9,
-      "xpts": 0.78,
-      "captain_xpts": 1.56,
+      "price": 7,
+      "xpts": 1.05,
+      "captain_xpts": 2.1,
       "fdr": 4
     },
     {
-      "name": "N.Jackson",
-      "team": "AVL",
+      "name": "Flemming",
+      "team": "IPS",
       "pos": "FWD",
-      "price": 6.5,
-      "xpts": 0.77,
-      "captain_xpts": 1.54,
-      "fdr": 3
-    },
-    {
-      "name": "Brobbey",
-      "team": "SUN",
-      "pos": "FWD",
-      "price": 5.8,
-      "xpts": 0.75,
-      "captain_xpts": 1.5,
-      "fdr": 5
-    },
-    {
-      "name": "Šeško",
-      "team": "MUN",
-      "pos": "FWD",
-      "price": 7,
-      "xpts": 0.64,
-      "captain_xpts": 1.28,
-      "fdr": 3
-    },
-    {
-      "name": "Nmecha",
-      "team": "LEE",
-      "pos": "FWD",
-      "price": 5.4,
-      "xpts": 0.53,
-      "captain_xpts": 1.06,
-      "fdr": 3
+      "price": 5.5,
+      "xpts": 0.97,
+      "captain_xpts": 1.94,
+      "fdr": 2
     },
     {
       "name": "Akpom",
       "team": "IPS",
       "pos": "FWD",
       "price": 5,
-      "xpts": 0.49,
-      "captain_xpts": 0.98,
+      "xpts": 0.68,
+      "captain_xpts": 1.36,
+      "fdr": 2
+    },
+    {
+      "name": "Nketiah",
+      "team": "CRY",
+      "pos": "FWD",
+      "price": 5.5,
+      "xpts": 0.67,
+      "captain_xpts": 1.34,
       "fdr": 3
     },
     {
@@ -1285,72 +1276,81 @@
       "team": "TOT",
       "pos": "FWD",
       "price": 5.8,
-      "xpts": 0.49,
-      "captain_xpts": 0.98,
+      "xpts": 0.55,
+      "captain_xpts": 1.1,
+      "fdr": 4
+    },
+    {
+      "name": "Georginio",
+      "team": "BHA",
+      "pos": "FWD",
+      "price": 5.3,
+      "xpts": 0.48,
+      "captain_xpts": 0.96,
       "fdr": 3
     },
     {
       "name": "Elanga",
       "team": "NEW",
       "pos": "MID",
-      "price": 6.2,
-      "xpts": 0.45,
-      "captain_xpts": 0.9,
+      "price": 6.1,
+      "xpts": 0.43,
+      "captain_xpts": 0.86,
       "fdr": 2
     },
     {
-      "name": "Thomas-Asante",
-      "team": "COV",
-      "pos": "FWD",
-      "price": 5,
-      "xpts": 0.41,
-      "captain_xpts": 0.82,
-      "fdr": 3
-    },
-    {
-      "name": "Georginio",
-      "team": "BHA",
+      "name": "Nmecha",
+      "team": "LEE",
       "pos": "FWD",
       "price": 5.4,
-      "xpts": 0.37,
-      "captain_xpts": 0.74,
-      "fdr": 4
-    },
-    {
-      "name": "Nketiah",
-      "team": "CRY",
-      "pos": "FWD",
-      "price": 5.5,
-      "xpts": 0.28,
-      "captain_xpts": 0.56,
-      "fdr": 3
+      "xpts": 0.4,
+      "captain_xpts": 0.8,
+      "fdr": 5
     },
     {
       "name": "Hinshelwood",
       "team": "BHA",
       "pos": "MID",
       "price": 5.9,
-      "xpts": 0.24,
-      "captain_xpts": 0.48,
+      "xpts": 0.36,
+      "captain_xpts": 0.72,
+      "fdr": 3
+    },
+    {
+      "name": "Šeško",
+      "team": "MUN",
+      "pos": "FWD",
+      "price": 7,
+      "xpts": 0.34,
+      "captain_xpts": 0.68,
+      "fdr": 3
+    },
+    {
+      "name": "Abraham",
+      "team": "AVL",
+      "pos": "FWD",
+      "price": 5.5,
+      "xpts": 0.34,
+      "captain_xpts": 0.68,
+      "fdr": 3
+    },
+    {
+      "name": "Welbeck",
+      "team": "CHE",
+      "pos": "FWD",
+      "price": 5.9,
+      "xpts": 0.34,
+      "captain_xpts": 0.68,
+      "fdr": 3
+    },
+    {
+      "name": "Kluivert",
+      "team": "BOU",
+      "pos": "MID",
+      "price": 6,
+      "xpts": 0.14,
+      "captain_xpts": 0.28,
       "fdr": 4
-    },
-    {
-      "name": "Woltemade",
-      "team": "NEW",
-      "pos": "FWD",
-      "price": 5.9,
-      "xpts": 0,
-      "captain_xpts": 0,
-      "fdr": 2
-    },
-    {
-      "name": "Osula",
-      "team": "NEW",
-      "pos": "FWD",
-      "price": 5.9,
-      "xpts": 0,
-      "captain_xpts": 0,
-      "fdr": 2
     }
   ]
 }
