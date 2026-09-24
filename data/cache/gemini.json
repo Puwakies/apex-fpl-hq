@@ -1,34 +1,7 @@
 {
-  "updated": "2026-09-17T17:23:57.479Z",
+  "updated": "2026-09-24T17:24:27.319Z",
   "engine": "gemini",
-  "gw": 5,
-  "captain": "Gvardiol",
-  "captain_xpts": 20.64,
-  "vice_captain": "Raya",
-  "starting_xi": [
-    "Raya",
-    "Gvardiol",
-    "Hall",
-    "De Cuyper",
-    "Saka",
-    "Palmer",
-    "Gakpo",
-    "Groß",
-    "M.Sangaré",
-    "Haaland",
-    "Wissa"
-  ],
-  "bench": [
-    "Leno",
-    "Ajer",
-    "Egan",
-    "João Pedro"
-  ],
-  "transfer_out": "Konsa",
-  "transfer_in": "Gvardiol",
-  "transfer_reason": "Bring in top xPts defender Gvardiol for Konsa",
-  "chip": null,
-  "projected_xpts": 53.74,
-  "confidence": "medium",
-  "key_risk": "Several starting players lack explicit xPts entries in TOP_XPTS"
+  "gw": 6,
+  "error": "parse_failed",
+  "raw": ""
 }
