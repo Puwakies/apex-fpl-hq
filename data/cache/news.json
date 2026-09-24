@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T17:23:55.374Z",
+  "updated": "2026-09-24T17:24:25.209Z",
   "items": [
     {
       "player": "Saliba",
@@ -8,6 +8,33 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Back injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "M.Bizot",
+      "team": "AVL",
+      "pos": "GK",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Back injury - Expected back 10 Oct",
+      "signal": "out"
+    },
+    {
+      "player": "Pau",
+      "team": "AVL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 10 Oct",
+      "signal": "out"
+    },
+    {
+      "player": "Maatsen",
+      "team": "AVL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -53,6 +80,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Kluivert",
+      "team": "BOU",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -191,12 +227,21 @@
       "signal": "out"
     },
     {
+      "player": "Azeez",
+      "team": "BHA",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 10 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Emegha",
       "team": "CHE",
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 18 Sep",
+      "news": "Hamstring injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -215,6 +260,15 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Amenda",
+      "team": "COV",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Calf injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -272,6 +326,15 @@
       "signal": "out"
     },
     {
+      "player": "Röhl",
+      "team": "EVE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Unspecified injury - Expected back 11 Oct",
+      "signal": "out"
+    },
+    {
       "player": "Cairney",
       "team": "FUL",
       "pos": "MID",
@@ -296,69 +359,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Groin injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Matazo",
-      "team": "HUL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Gyabi",
-      "team": "HUL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Thigh injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Morita",
-      "team": "HUL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Calf injury - Expected back 11 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Mendy",
-      "team": "HUL",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Concussion - Expected back 11 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Ansah",
-      "team": "HUL",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Back injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Taylor",
-      "team": "IPS",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Rodon",
-      "team": "LEE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 21 Nov",
       "signal": "out"
     }
   ]
