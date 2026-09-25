@@ -1,48 +1,34 @@
 {
-  "gw": 38,
-  "generated": "2026-06-03T00:00:00Z",
-  "formation": "3-4-3",
+  "engine": "claude",
+  "gw": 6,
+  "generated": "2026-09-25",
+  "note": "Mirror of data/reports/claude.json (GW6 final). The full record, including real_squad_actions, conditional transfers and claude_optimal_15, is in claude.json.",
+  "captain": "Haaland",
+  "captain_type": "template",
+  "captain_trigger": "none",
+  "vice": "Groß",
+  "formation": "4-4-2",
   "starting_xi": [
-    {"name": "Raya", "team": "ARS", "position": "GK", "is_captain": false, "is_vice_captain": false},
-    {"name": "Robertson", "team": "LIV", "position": "DEF", "is_captain": false, "is_vice_captain": false},
-    {"name": "Van Dijk", "team": "LIV", "position": "DEF", "is_captain": false, "is_vice_captain": false},
-    {"name": "Lacroix", "team": "CRY", "position": "DEF", "is_captain": false, "is_vice_captain": false},
-    {"name": "M.Salah", "team": "LIV", "position": "MID", "is_captain": true, "is_vice_captain": false},
-    {"name": "Mbeumo", "team": "BRE", "position": "MID", "is_captain": false, "is_vice_captain": true},
-    {"name": "Palmer", "team": "CHE", "position": "MID", "is_captain": false, "is_vice_captain": false},
-    {"name": "Rogers", "team": "AVL", "position": "MID", "is_captain": false, "is_vice_captain": false},
-    {"name": "Mateta", "team": "CRY", "position": "FWD", "is_captain": false, "is_vice_captain": false},
-    {"name": "Isak", "team": "NEW", "position": "FWD", "is_captain": false, "is_vice_captain": false},
-    {"name": "Joao Pedro", "team": "BHA", "position": "FWD", "is_captain": false, "is_vice_captain": false}
+    { "name": "Raya", "pos": "GK", "price": 6.1, "xpts": 11.88 },
+    { "name": "Calafiori", "pos": "DEF", "price": 5.8, "xpts": 11.31 },
+    { "name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
+    { "name": "De Cuyper", "pos": "DEF", "price": 4.9, "xpts": 9.93 },
+    { "name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 7.25 },
+    { "name": "Groß", "pos": "MID", "price": 5.8, "xpts": 11.83 },
+    { "name": "Barnes", "pos": "MID", "price": 6.1, "xpts": 6.93 },
+    { "name": "Gibbs-White", "pos": "MID", "price": 8.0, "xpts": 6.9 },
+    { "name": "Gakpo", "pos": "MID", "price": 7.2, "xpts": 4.76 },
+    { "name": "Haaland", "pos": "FWD", "price": 15.6, "xpts": 8.15 },
+    { "name": "Wissa", "pos": "FWD", "price": 6.2, "xpts": 3.55 }
   ],
   "bench": [
-    {"name": "Sels", "team": "NFO", "position": "GK", "bench_order": 1},
-    {"name": "Gabriel Jesus", "team": "ARS", "position": "FWD", "bench_order": 2},
-    {"name": "Mukiele", "team": "BOU", "position": "DEF", "bench_order": 3},
-    {"name": "Kerkez", "team": "BOU", "position": "DEF", "bench_order": 4}
+    { "name": "Leno", "pos": "GK", "price": 4.5 },
+    { "name": "Palmer", "pos": "MID", "price": 9.7 },
+    { "name": "Konsa", "pos": "DEF", "price": 4.6 },
+    { "name": "João Pedro", "pos": "FWD", "price": 7.7 }
   ],
-  "captain": "M.Salah",
-  "vice_captain": "Mbeumo",
-  "transfers": [
-    {"out": "Gabriel", "in": "Mbeumo", "reason": "Gabriel is doubtful (75%, status 'd'), facing -140k net transfers and a confirmed -0.1 price fall, with Arsenal rotating heavily ahead of the UCL final (Saliba, Saka, Raya all rested). Lowest captain EV (3.1) and haul prob in the pool. Mbeumo is a nailed starter (no European/cup distraction), home FDR 2, primary pen + set-piece taker, +58k net transfers and rising. Top-3 captaincy EV (5.82) and best differential ceiling.", "cost": 0}
-  ],
-  "chip": {
-    "play": "bench_boost",
-    "reason": "GW38 is the final gameweek — any unused chip is wasted. Bench Boost is the highest-floor play: it banks 4 extra starting scores with no captaincy-concentration risk, ideal given GW38's elevated rotation chaos. Triple Captain on Salah is tempting but his away fixture (FDR 2.9 at Ipswich) and single-GW ceiling favour BB. CRITICAL OVERRIDE: do NOT Triple Captain Haaland — News Desk confirms he is omitted from the Man City squad."
-  },
-  "key_risks": [
-    "DO NOT CAPTAIN HAALAND: News Desk confirms he was OMITTED from Man City's GW38 matchday squad (Guardiola final-day rotation). This OVERRIDES Sim Lab's EV rank-2 and Intel's must-captain call — Haaland is uncaptainable and likely a zero. Sell/bench any Haaland holding before deadline.",
-    "Gabriel doubtful + Arsenal-wide rotation (Saka, Saliba, Raya rested for UCL final) — confirm Raya start before keeping him in goal; Sels is GK cover.",
-    "Crystal Palace rotation: Mateta and Lacroix may be managed ahead of the Conference League final — monitor team news 1h before deadline.",
-    "Aston Villa final-day motivation: Rogers has the fewest minutes in the watchlist; bench-able if not chasing Europe.",
-    "GW38 is the single highest-rotation event of the season — late team news is decisive."
-  ],
-  "watchlist": [
-    "Arteta Arsenal team sheet (Raya/Gabriel Jesus start confirmation) — 1h before deadline",
-    "Glasner Palace lineup (Mateta/Lacroix minutes management)",
-    "Aston Villa XI vs Newcastle (Rogers start)",
-    "Salah confirmed started farewell game — captain locked, but verify in late XI"
-  ],
-  "projected_xpts": 72.5,
-  "brief_summary": "GW38 รอบสุดท้าย: ขาย Gabriel (ติดธงเจ็บ 75% + ราคาตก + อาเซนอลพักผู้เล่นก่อนนัดชิง UCL) ดึง Mbeumo เข้ามาแทน (ฟิตชัวร์ เตะลูกตั้งเตะ+จุดโทษ เหย้า FDR 2). กัปตันคือ Salah อย่างเด็ดขาด ส่วน Haaland ถูกตัดชื่อจากทีม Man City ห้ามใส่ปลอกแขนเด็ดขาด รองกัปตันคือ Mbeumo. เล่นชิป Bench Boost ในนัดสุดท้ายเพื่อเก็บแต้มสำรองทั้งหมด ความเสี่ยงหลักคือการหมุนผู้เล่นวันสุดท้าย ต้องเช็คข่าวตัวจริง 1 ชม. ก่อนเส้นตาย."
+  "transfers": { "out": "M.Sangaré", "in": "Barnes", "hits": 0, "bank": 0.5 },
+  "chip": { "name": "none", "action": "SAVE", "reason": "No trigger is met. No confirmed BGW/DGW, and only 2 starters are hard rotation-flagged. The first-half FH is still unused; the GW19 deadline is 13 GWs away and the forcing rule starts at GW16." },
+  "projected_xpts": 100.67,
+  "risks": ["See data/reports/claude.json"]
 }
