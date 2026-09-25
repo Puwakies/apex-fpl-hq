@@ -1,116 +1,116 @@
 {
-  "gw": 5,
-  "generated": "2026-09-18",
-  "agent": "the-director",
-  "method": "YOU scored from squad.json starting XI against data/cache/xpts.json (captain x2). GEMINI and CLAUDE projected_xpts copied as self-reported, with an independent recompute on the same xpts.json for an apples-to-apples check.",
-
-  "you": {
-    "projected_xpts": 62.05,
-    "captain": "Palmer",
-    "vice": "João Pedro",
-    "starting_xi": [
-      { "name": "Raya", "pos": "GK", "xpts": 8.27 },
-      { "name": "De Cuyper", "pos": "DEF", "xpts": 5.61 },
-      { "name": "Ajer", "pos": "DEF", "xpts": 3.10 },
-      { "name": "Konsa", "pos": "DEF", "xpts": 4.58 },
-      { "name": "Hall", "pos": "DEF", "xpts": 5.97 },
-      { "name": "Palmer", "pos": "MID", "xpts": 5.13 },
-      { "name": "Groß", "pos": "MID", "xpts": 5.46 },
-      { "name": "Saka", "pos": "MID", "xpts": 5.80 },
-      { "name": "João Pedro", "pos": "FWD", "xpts": 2.70 },
-      { "name": "Haaland", "pos": "FWD", "xpts": 7.45 },
-      { "name": "Wissa", "pos": "FWD", "xpts": 2.85 }
-    ],
-    "bench": ["Leno", "M.Sangaré", "Gakpo", "Egan"],
-    "xi_base_xpts": 56.92,
-    "captain_bonus": 5.13,
-    "note": "Starting XI includes João Pedro, confirmed OUT by medical-bay (knee edema, return ~GW7). His 2.70 xpts is effectively 0 before auto-sub, so the true live projection is nearer 59.4. Captain Palmer (5.13) is the 4th-best doubling option inside the XI."
-  },
-
-  "gemini": {
-    "projected_xpts": 53.74,
-    "projected_xpts_recomputed": 75.44,
-    "captain": "Gvardiol",
-    "vice": "Raya",
-    "starting_xi": ["Raya", "Gvardiol", "Hall", "De Cuyper", "Saka", "Palmer", "Gakpo", "Groß", "M.Sangaré", "Haaland", "Wissa"],
-    "bench": ["Leno", "Ajer", "Egan", "João Pedro"],
-    "transfer_in": "Gvardiol",
-    "transfer_out": "Konsa",
-    "chip": null,
-    "confidence": "medium",
-    "self_declared_risk": "Several starting players lack explicit xPts entries in TOP_XPTS",
-    "director_flags": [
-      "SELF-INCONSISTENT NUMBER: Gemini reports 53.74 but its own XI scored on xpts.json is 75.44 — a 21.7 pt gap it attributes to missing xPts lookups. Neither number can be trusted at face value.",
-      "TRANSFER IS UNFUNDED: selling Konsa (4.5) plus bank (0.7) gives 5.2m. Gvardiol costs 5.7m. The move is 0.5m short and cannot legally be executed this GW.",
-      "PROTOCOL BREACH: captains a 5.7m DEFENDER the squad does not own, off a one-week xpts spike (10.32). Locked APEX captaincy = season cum_pts leader among nailed premiums. Seven holdout rounds proved every xpts/form/matchup variant loses to cum_pts on unseen data.",
-      "STRUCTURAL CEILING: a CS-dependent defender has no goal-volume tail. Haaland p90 22.46 doubled vs a defender ceiling around 13."
-    ]
-  },
-
-  "claude": {
-    "projected_xpts": 69.35,
-    "projected_xpts_recomputed": 69.35,
-    "captain": "Haaland",
-    "vice": "Saka",
-    "formation": "4-5-1",
-    "starting_xi": [
-      { "name": "Raya", "pos": "GK", "xpts": 8.27 },
-      { "name": "Hall", "pos": "DEF", "xpts": 5.97 },
-      { "name": "De Cuyper", "pos": "DEF", "xpts": 5.61 },
-      { "name": "Egan", "pos": "DEF", "xpts": 5.37 },
-      { "name": "Konsa", "pos": "DEF", "xpts": 4.58 },
-      { "name": "Saka", "pos": "MID", "xpts": 5.80 },
-      { "name": "Groß", "pos": "MID", "xpts": 5.46 },
-      { "name": "Palmer", "pos": "MID", "xpts": 5.13 },
-      { "name": "Gakpo", "pos": "MID", "xpts": 4.96 },
-      { "name": "M.Sangaré", "pos": "MID", "xpts": 3.30 },
-      { "name": "Haaland", "pos": "FWD", "xpts": 7.45 }
-    ],
-    "bench": ["Leno", "Ajer", "Wissa", "João Pedro"],
-    "transfer_in": "Bogle",
-    "transfer_out": "Ajer",
-    "transfer_hits": 0,
-    "transfer_funded": true,
-    "chip": "none",
-    "chip_action": "SAVE",
-    "director_flags": [
-      "Arithmetic verified against xpts.json: XI base 61.90 + Haaland captain bonus 7.45 = 69.35. Exact.",
-      "Transfer is funded like-for-like (Ajer 4.5 -> Bogle 4.5, bank untouched at 0.7) and adds a further ~+3.99 XI xpts, taking the plan toward ~73.3.",
-      "Protocol-compliant captain: Haaland leads season cum_pts (33 pts / 8.25 ppg / 100% mins) and simultaneously wins cap_score 8.01, Monte-Carlo EV 14.75 and floor p10 7.97 — no tie-break needed.",
-      "Independently corroborated: sim-lab ranks Haaland #1 eligible captain; intel rates him DO-NOT-FADE at ~58% field captain share."
-    ]
-  },
-
-  "consensus": {
-    "captain_agree": false,
-    "transfer_agree": false,
-    "chip_agree": true,
-    "conviction": "SPLIT",
-    "detail": "The two engines agree on exactly one thing — save the chips (FH + WC stay in the bank, no DGW/BGW trigger, only 1 starter rotation-flagged and news clears him). They split on the armband (Gvardiol vs Haaland) and on the transfer (Konsa->Gvardiol vs Ajer->Bogle). The split is NOT symmetric: Gemini's side of it breaks the locked protocol and is financially illegal, so this is a resolvable split, not a genuine 50/50."
-  },
-
-  "best_plan": "claude",
-
-  "verdict": "CLAUDE wins GW5 on every axis that survives scrutiny. Raw numbers: CLAUDE 69.35 > YOU 62.05, with Gemini nominally 53.74 (self-reported) or 75.44 (recomputed). Gemini's 75.44 is the highest figure on the board and must be discarded anyway, for two independent reasons: (1) the plan is not executable — selling Konsa 4.5 plus 0.7 bank funds 5.2m against Gvardiol's 5.7m, a 0.5m shortfall, so the whole XI it scores is fictional; (2) it captains a defender the squad does not own off a single-week xpts spike, which breaks the locked APEX captaincy rule (season cum_pts leader among nailed premiums) that seven holdout rounds established. Strip the illegal transfer out and Gemini's plan collapses below CLAUDE's. ENGINES DISAGREE — but the disagreement resolves cleanly in CLAUDE's favour. On the three direct questions: (a) YES, Haaland is the correct GW5 captain — he is the season cum_pts leader (33 pts, 8.25 ppg, 100% mins, AVAILABLE) and uniquely wins cap_score (8.01 vs Palmer 6.09), Monte-Carlo EV (14.75 vs 10.04), floor p10 (7.97 vs 4.51) and p_blank (1.4% vs 7.5%) at the same time, at home vs Sunderland who carry the worst opponent rating in the pool; intel measures the current Palmer armband as a ~56% EO short worth about -4.6 xPts to the field and -10 to -18 rank-adjusted on a Haaland haul. (b) YES, the vice-captain must move off João Pedro — medical-bay has UPGRADED him from 75% doubtful to confirmed OUT (knee edema / ACL-MCL sprain vs Hull 12 Sep, Alonso confirms he misses Friday vs Brentford, return ~GW7). A vice who cannot play is a null armband, and with BB/WC/TC all spent there is no chip left to rescue a zeroed captaincy. Move VC to Saka (or to Haaland if Haaland is not taking the armband). (c) The real squad does NOT already match the best plan — it needs four moves, not zero. Beyond the armband: João Pedro must come out of the XI entirely (dead 2.70 slot), Egan (5.37) should replace Ajer (3.10) for +2.27 free, and the free transfer Ajer->Bogle converts a benched FDR-4 enabler into the 3rd-highest xpts asset in the pool while Bogle's price rise is still pending tonight. Chip call is unanimous and correct: SAVE.",
-
-  "highest_leverage_action": "Move the armband from Palmer to Haaland, and in the same edit move the vice from João Pedro (confirmed OUT) to Saka. This is one screen, costs 0 transfers and 0 points, is worth +2.32 xPts on raw projection and roughly -4.6 to -18 in rank-adjusted terms against a field that is ~58% captained on Haaland, and it simultaneously removes the catastrophic tail where Palmer is a late absentee and the captaincy falls to a player who is already ruled out. Everything else this week — Egan for Ajer, the Ajer->Bogle transfer, benching João Pedro — is worth less than this single fix.",
-
-  "action_queue": [
-    { "priority": 1, "action": "CAPTAIN: Palmer -> Haaland", "cost": "free", "value": "+2.32 xpts raw, +4.6 to +18 rank-adjusted" },
-    { "priority": 2, "action": "VICE: João Pedro (OUT) -> Saka", "cost": "free", "value": "removes null-armband tail risk" },
-    { "priority": 3, "action": "XI: bench João Pedro, start M.Sangaré (4-5-1)", "cost": "free", "value": "+3.30 vs a dead slot" },
-    { "priority": 4, "action": "XI: Ajer -> Egan", "cost": "free", "value": "+2.27 xpts" },
-    { "priority": 5, "action": "TRANSFER: Ajer -> Bogle (1 FT, 0 hits, bank stays 0.7)", "cost": "1 FT", "value": "+3.99 XI xpts, price rise pending tonight" },
-    { "priority": 6, "action": "CHIP: SAVE (FH + WC held)", "cost": "none", "value": "both engines agree, no trigger met" }
+  "gw": 6,
+  "season": "2026/27",
+  "generated": "2026-09-25",
+  "engines_available": ["you", "claude"],
+  "engines_unavailable": [
+    { "engine": "gemini", "status": "N/A", "error": "parse_failed", "note": "Gemini Apps Script export returned an empty raw response for GW6. No picks were fabricated or carried over from GW5. The head-to-head this week is YOU vs CLAUDE only." }
   ],
-
-  "rival_note": "rival.json read as sparring context only; not counted as a fourth engine in this comparison.",
-
-  "open_risks": [
-    "Friday deadline: Chelsea vs Brentford is a Friday fixture (Palmer, M.Sangaré, Ajer), so the Sangaré call is locked blind with no Saturday team news.",
-    "Re-verify Haaland at the Friday presser — an older GW38 25/26 snapshot carried a stale 'Haaland UNAVAILABLE' alert. It is NOT live (cache/news.json 2026-09-17 has zero flags; squad.json lists him AVAILABLE).",
-    "Konsa starts only on Saliba's absence (53% mins_share). If Timber/Mosquera are passed fit late he is first dropped.",
-    "No chip safety net remains this GW — BB, WC and TC all spent by GW4.",
-    "CITY COVERAGE GAP: MCI hold 4 of the top 8 xpts slots vs SUN and the squad owns one City asset. Queued as the GW6 priority (Guéhi 6.0 at ~14% EO is the preferred differential route)."
-  ]
+  "you": {
+    "projected_xpts": 82.28,
+    "projected_xpts_calc": "The 11 starters sum to 75.38 (Raya 11.88, Konsa 0.00 with no xpts.json row, Hall 10.03, Calafiori 11.31, Groß 11.83, Palmer 3.89, Gibbs-White 6.90, Gakpo 4.76, M.Sangaré 3.08, Haaland 8.15, Wissa 3.55). Adding Gibbs-White again as captain (+6.90) gives 82.28. Konsa counts as 0, so this figure understates YOU a little.",
+    "captain": "Gibbs-White",
+    "vice": "Haaland",
+    "captain_status": "STALE. Carried over from GW5 and against the locked APEX protocol. The season cum_pts leader among owned nailed premiums is Haaland (39 pts, 450/450 mins) vs Gibbs-White (28).",
+    "formation": "3-5-2",
+    "starting_xi": [
+      { "name": "Raya", "team": "ARS", "pos": "GK", "price": 6.1, "xpts": 11.88 },
+      { "name": "Konsa", "team": "ARS", "pos": "DEF", "price": 4.6, "xpts": null },
+      { "name": "Hall", "team": "NEW", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
+      { "name": "Calafiori", "team": "ARS", "pos": "DEF", "price": 5.8, "xpts": 11.31 },
+      { "name": "Groß", "team": "BHA", "pos": "MID", "price": 5.8, "xpts": 11.83 },
+      { "name": "Palmer", "team": "CHE", "pos": "MID", "price": 9.7, "xpts": 3.89, "status": "DOUBTFUL 75%" },
+      { "name": "Gibbs-White", "team": "NFO", "pos": "MID", "price": 8.0, "xpts": 6.9, "is_captain": true },
+      { "name": "Gakpo", "team": "LIV", "pos": "MID", "price": 7.2, "xpts": 4.76 },
+      { "name": "M.Sangaré", "team": "BRE", "pos": "MID", "price": 5.6, "xpts": 3.08 },
+      { "name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.6, "xpts": 8.15, "is_vice": true },
+      { "name": "Wissa", "team": "NEW", "pos": "FWD", "price": 6.2, "xpts": 3.55 }
+    ],
+    "bench": [
+      { "name": "Leno", "team": "FUL", "pos": "GK", "price": 4.5, "xpts": 5.6 },
+      { "name": "João Pedro", "team": "CHE", "pos": "FWD", "price": 7.7, "xpts": 2.78, "status": "DOUBTFUL 75%" },
+      { "name": "Egan", "team": "HUL", "pos": "DEF", "price": 4.1, "xpts": 7.25 },
+      { "name": "De Cuyper", "team": "BHA", "pos": "DEF", "price": 4.9, "xpts": 9.93 }
+    ],
+    "transfer_in": null,
+    "transfer_out": null,
+    "chip": null,
+    "chips_left": ["FH", "WC x1"],
+    "bank": 1.0
+  },
+  "gemini": {
+    "status": "N/A",
+    "error": "parse_failed",
+    "projected_xpts": null,
+    "captain": null,
+    "starting_xi": null,
+    "bench": null,
+    "transfer_in": null,
+    "transfer_out": null,
+    "chip": null,
+    "note": "UNAVAILABLE THIS GW. Empty raw response from the Apps Script export. Excluded from best_plan and from consensus rather than treated as agreeing or disagreeing."
+  },
+  "claude": {
+    "projected_xpts": 100.67,
+    "projected_xpts_calc": "The 11 starters sum to 92.52. Adding Haaland again as captain (+8.15) gives 100.67 (re-verified by the director). The same XI without the transfer (Sangaré starting instead of Barnes) comes to 96.82.",
+    "captain": "Haaland",
+    "vice": "Groß",
+    "formation": "4-4-2",
+    "starting_xi": [
+      { "name": "Raya", "team": "ARS", "pos": "GK", "price": 6.1, "xpts": 11.88 },
+      { "name": "Calafiori", "team": "ARS", "pos": "DEF", "price": 5.8, "xpts": 11.31 },
+      { "name": "Hall", "team": "NEW", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
+      { "name": "De Cuyper", "team": "BHA", "pos": "DEF", "price": 4.9, "xpts": 9.93 },
+      { "name": "Egan", "team": "HUL", "pos": "DEF", "price": 4.1, "xpts": 7.25 },
+      { "name": "Groß", "team": "BHA", "pos": "MID", "price": 5.8, "xpts": 11.83, "is_vice": true },
+      { "name": "Barnes", "team": "NEW", "pos": "MID", "price": 6.1, "xpts": 6.93 },
+      { "name": "Gibbs-White", "team": "NFO", "pos": "MID", "price": 8.0, "xpts": 6.9 },
+      { "name": "Gakpo", "team": "LIV", "pos": "MID", "price": 7.2, "xpts": 4.76 },
+      { "name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.6, "xpts": 8.15, "is_captain": true },
+      { "name": "Wissa", "team": "NEW", "pos": "FWD", "price": 6.2, "xpts": 3.55 }
+    ],
+    "bench": [
+      { "name": "Leno", "team": "FUL", "pos": "GK", "price": 4.5 },
+      { "name": "Palmer", "team": "CHE", "pos": "MID", "price": 9.7, "note": "Rotation-Risk Gate: DOUBTFUL 75% and sources conflict (Alonso 2026 quotes say he returns in GW6; the 'six weeks out' headline quotes Maresca and is probably stale)" },
+      { "name": "Konsa", "team": "ARS", "pos": "DEF", "price": 4.6, "note": "Rotation-Risk Gate: 56 min/GW is below 60" },
+      { "name": "João Pedro", "team": "CHE", "pos": "FWD", "price": 7.7, "note": "Knee injury, 0 mins in GW5" }
+    ],
+    "transfer_in": "Barnes",
+    "transfer_out": "M.Sangaré",
+    "transfer_hits": 0,
+    "transfer_conditional": [
+      "If the FPL app shows Konsa at AVL (the cache says ARS, which is likely an error), Palmer -> Saka is the better 1-FT move.",
+      "If 2 FT are available and Konsa is confirmed AVL: Palmer -> Saka plus Konsa -> Mykolenko (+8.44 XI xPts, 0 hits), which beats Sangaré -> Barnes (+3.85).",
+      "Only take a -4 hit for the 2-move plan if the Chelsea presser confirms Palmer is OUT."
+    ],
+    "chip": null,
+    "chip_action": "SAVE (no Chip Timing trigger is met: no DGW/BGW confirmed, only 2 starters hard-flagged, season average 67.8)"
+  },
+  "consensus": {
+    "mode": "2-way YOU vs CLAUDE (GEMINI N/A)",
+    "captain_agree": false,
+    "captain_detail": "YOU = Gibbs-White, CLAUDE = Haaland. YOU's armband is a stale GW5 carry-over, not a considered GW6 pick.",
+    "transfer_agree": false,
+    "transfer_detail": "YOU has no transfer. CLAUDE sells M.Sangaré and buys Barnes (0 hits).",
+    "chip_agree": true,
+    "chip_detail": "Both use no chip (save FH and WC).",
+    "conviction": "SPLIT",
+    "conviction_note": "Under the formal rule, the engines split on captain. The split is between CLAUDE and a stale armband in the real squad, not between two independent engines. gemini_vs_claude cannot be measured this GW.",
+    "gemini_vs_claude": { "captain_agree": null, "transfer_agree": null, "chip_agree": null, "status": "N/A (Gemini parse_failed)" },
+    "recommendation_support": {
+      "captain_haaland": ["the-gaffer (CLAUDE)", "sim-lab (recommend_c)", "intel (captain_shield, ~140% EO, DO NOT FADE)"],
+      "level": "HIGH",
+      "caveat": "All three sources apply the same locked cum_pts rule to the same cache, so this is agreement within one pipeline, not agreement between independent engines."
+    }
+  },
+  "best_plan": "claude",
+  "xpts_bridge_you_to_claude": {
+    "you_as_is": 82.28,
+    "captain_to_haaland_only": 83.53,
+    "plus_gate_bench_swaps": 96.82,
+    "plus_transfer_sangare_to_barnes": 100.67,
+    "note": "The swaps put De Cuyper and Egan in for Palmer and Konsa. Part of that gain comes from Konsa having no xpts row, which counts as 0. The xpts.json scale is inflated for DEF/GK, so compare plans by relative ranking, not by absolute totals."
+  },
+  "verdict": "CLAUDE is the best plan at 100.67 projected xPts, against 82.28 for YOU as currently set. GEMINI is N/A this week (parse_failed), so this is a 2-way comparison and formal engine conviction is SPLIT. The split comes from YOU's stale Gibbs-White armband, not from a real disagreement between engines. YOU's current team does not match the best plan. It needs a captain change (Gibbs-White -> Haaland, VC Groß), two Rotation-Risk Gate lineup fixes (start De Cuyper and Egan, bench Palmer and Konsa), and one free transfer (M.Sangaré -> Barnes, sold before tonight's Sangaré price drop and Barnes rise). No chip this GW. Check before acting: (1) squad.json lists Konsa as ARS, but he is normally AVL. If the app shows AVL, Palmer -> Saka is the better move, and with 2 FT, Palmer -> Saka plus Konsa -> Mykolenko beats the Barnes move. (2) The FT count is not in the cache. (3) Palmer has conflicting fitness reports. He sits first on the bench, and the manager can start him over Wissa if he is confirmed fit. The human override on late lineup news still applies.",
+  "highest_leverage_action": "Before the GW6 deadline, move the captaincy from Gibbs-White to Haaland (VC Groß). This follows the locked cum_pts rule (39 vs 28), is backed by sim-lab, intel and the-gaffer, and removes the biggest rank risk of the week: fading a ~140% EO template captain. After that, start De Cuyper and Egan over Palmer and Konsa, then make the free transfer M.Sangaré -> Barnes."
 }
