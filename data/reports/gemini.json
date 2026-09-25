@@ -1,31 +1,17 @@
 {
   "engine": "gemini",
-  "gw": 5,
-  "captain": "Gvardiol",
-  "vice": "Raya",
-  "starting_xi": [
-    "Raya",
-    "Gvardiol",
-    "Hall",
-    "De Cuyper",
-    "Saka",
-    "Palmer",
-    "Gakpo",
-    "Groß",
-    "M.Sangaré",
-    "Haaland",
-    "Wissa"
-  ],
-  "bench": [
-    "Leno",
-    "Ajer",
-    "Egan",
-    "João Pedro"
-  ],
-  "transfer_out": "Konsa",
-  "transfer_in": "Gvardiol",
+  "gw": 6,
+  "status": "unavailable",
+  "error": "parse_failed",
+  "note": "Gemini Apps Script export returned an empty raw response for GW6; no structured picks could be parsed. No captain/vice/starting_xi/bench/transfer data is available this week. Do not fabricate or infer picks — treat GEMINI as N/A and compare YOU vs CLAUDE only for GW6.",
+  "captain": null,
+  "vice": null,
+  "starting_xi": null,
+  "bench": null,
+  "transfer_out": null,
+  "transfer_in": null,
   "chip": null,
-  "projected_xpts": 53.74,
-  "confidence": "medium",
-  "key_risk": "Several starting players lack explicit xPts entries in TOP_XPTS"
+  "projected_xpts": null,
+  "confidence": null,
+  "key_risk": null
 }
