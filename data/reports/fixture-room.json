@@ -1,31 +1,39 @@
 {
-  "gw": 2,
-  "window": "GW2-GW6",
-  "data_note": "Cache files (squad.json, xpts.json, gemini.json) only expose a single snapshot 'fdr' rating per player/club, not a next-5 GW array or explicit dgw/bgw booleans. Rankings below are built from that snapshot (lower = easier) and cross-checked for missing/blank-fixture risk by absence from the xpts.json player pool.",
-  "squad_club_fdr": [
-    { "team": "CHE", "fdr": 2, "players": ["Rogers", "João Pedro", "Palestra"] },
-    { "team": "MUN", "fdr": 2, "players": ["Lammens", "B.Fernandes", "Mbeumo"] },
-    { "team": "SUN", "fdr": 2, "players": ["Hume", "E.Le Fée"] },
-    { "team": "LIV", "fdr": 3, "players": ["Kerkez"] },
-    { "team": "MCI", "fdr": 3, "players": ["Semenyo"] },
-    { "team": "BRE", "fdr": 3, "players": ["Thiago"] },
-    { "team": "ARS", "fdr": 4, "players": ["Gabriel"] },
-    { "team": "COV", "fdr": null, "players": ["Rushworth", "Awoniyi", "van Ewijk"], "flag": "no xpts/fdr entry found in cache - data gap, treat as blank-gameweek/rotation risk, all bench-only already" }
+  "gw": 6,
+  "window": "GW6-10",
+  "data_note": "xpts.json provides one pre-aggregated 'fdr' score per player/team (no per-GW next[] array, no explicit dgw/bgw boolean field in current cache schema). Values below are the team-level fdr as given (consistent across every player on that team), ranked ascending = easier run. No home/away split available at this granularity, so weighting could not be independently recomputed.",
+  "squad_teams_fdr": [
+    { "team": "ARS", "fdr": 2 },
+    { "team": "NEW", "fdr": 2 },
+    { "team": "FUL", "fdr": 2 },
+    { "team": "BHA", "fdr": 3 },
+    { "team": "CHE", "fdr": 3 },
+    { "team": "NFO", "fdr": 3 },
+    { "team": "HUL", "fdr": 3 },
+    { "team": "LIV", "fdr": 4 },
+    { "team": "BRE", "fdr": 4 },
+    { "team": "MCI", "fdr": 4 }
   ],
   "best_runs": [
-    { "team": "CHE", "fdr_avg": 2, "window": "GW2-GW6", "note": "easiest tier tied with MUN/SUN" },
-    { "team": "MUN", "fdr_avg": 2, "window": "GW2-GW6" },
-    { "team": "SUN", "fdr_avg": 2, "window": "GW2-GW6" }
+    { "team": "ARS", "fdr_avg": 2, "window": "GW6-10", "squad_players": ["Raya", "Konsa", "Calafiori"] },
+    { "team": "NEW", "fdr_avg": 2, "window": "GW6-10", "squad_players": ["Hall", "Wissa"] },
+    { "team": "FUL", "fdr_avg": 2, "window": "GW6-10", "squad_players": ["Leno"] }
   ],
   "worst_runs": [
-    { "team": "ARS", "fdr_avg": 4, "window": "GW2-GW6", "note": "hardest tier of squad clubs - Gabriel starter exposed" }
+    { "team": "LIV", "fdr_avg": 4, "window": "GW6-10", "squad_players": ["Gakpo"] },
+    { "team": "BRE", "fdr_avg": 4, "window": "GW6-10", "squad_players": ["M.Sangaré"] },
+    { "team": "MCI", "fdr_avg": 4, "window": "GW6-10", "squad_players": ["Haaland"] }
   ],
+  "mid_runs": [
+    { "team": "BHA", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Groß", "De Cuyper"] },
+    { "team": "CHE", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Palmer", "João Pedro"] },
+    { "team": "NFO", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Gibbs-White"] },
+    { "team": "HUL", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Egan"] }
+  ],
+  "league_context": {
+    "toughest_run_overall_not_in_squad": { "team": "LEE", "fdr_avg": 5 }
+  },
   "dgw_alerts": [],
-  "bgw_alerts": [
-    { "team": "COV", "note": "no fixture/fdr data found for Rushworth, Awoniyi, van Ewijk in xpts.json - possible blank/unlisted fixture, but all three are bench-only so limited xPts impact" }
-  ],
-  "transfer_targets": {
-    "transfer_in": { "name": "Mendy", "team": "HUL", "fdr": 2, "note": "easiest fixture tier, supports Gemini's suggestion on fixtures + xPts (16.42)" },
-    "transfer_out": { "name": "Palestra", "team": "CHE", "fdr": 2, "note": "CHE fixtures are actually easy - reason for transfer out is injury doubt (75% chance of playing), not fixture difficulty" }
-  }
+  "bgw_alerts": [],
+  "alert_note": "No dgw/bgw fields present anywhere in data/cache/xpts.json or data/cache/squad.json for GW6-10 — no double or blank gameweek could be confirmed or ruled out from this data source. Recommend cross-checking against fixtures.json / official FPL fixture list before acting on chip timing (FH/WC)."
 }
