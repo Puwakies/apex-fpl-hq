@@ -1,166 +1,52 @@
 {
-  "gw": 2,
-  "deadline_utc": "2026-08-28T17:30:00Z",
-  "generated_by": "medical-bay",
+  "gw": 6,
+  "generated": "2026-09-25",
+  "fixture_context": "GW6 = Chelsea host Bournemouth, Sat 10 Oct 2026 (post international break)",
   "matrix": [
+    { "player": "Raya", "team": "ARS", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
+    { "player": "Konsa", "team": "ARS", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
+    { "player": "Hall", "team": "NEW", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
+    { "player": "Calafiori", "team": "ARS", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
+    { "player": "Groß", "team": "BHA", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
     {
-      "player": "Lammens",
-      "team": "MUN",
-      "pos": "GK",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); no club news found",
-      "confidence": "high"
-    },
-    {
-      "player": "Kerkez",
-      "team": "LIV",
-      "pos": "DEF",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); reported fit/active in recent match",
-      "confidence": "high"
-    },
-    {
-      "player": "Hume",
-      "team": "SUN",
-      "pos": "DEF",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); no injury news found",
-      "confidence": "medium"
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "pos": "DEF",
-      "role": "starting (vice-captain)",
-      "status": "AVAILABLE",
-      "chance_pct": 90,
-      "source": "FPL news.json (no flag); WEB: forced off late in GW1 vs Liverpool after collision with Nunez, severity unclear at the time, but not mentioned in Arteta's GW2 (27 Aug) press conference and not listed in Arsenal's injury news alongside Timber/Saliba",
-      "confidence": "medium",
-      "note": "minor watch item - no formal doubt flag issued, monitor Arsenal team news right up to deadline"
-    },
-    {
-      "player": "B.Fernandes",
-      "team": "MUN",
-      "pos": "MID",
-      "role": "starting (captain)",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB confirms fit and central to United's GW2 plans",
-      "confidence": "high"
-    },
-    {
-      "player": "Mbeumo",
-      "team": "MUN",
-      "pos": "MID",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB confirms starting role (No.9) for GW2",
-      "confidence": "high"
-    },
-    {
-      "player": "Semenyo",
-      "team": "MCI",
-      "pos": "MID",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); no injury news found",
-      "confidence": "medium"
-    },
-    {
-      "player": "E.Le Fée",
-      "team": "SUN",
-      "pos": "MID",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB: recovered from prior issue, expected available",
-      "confidence": "medium"
-    },
-    {
-      "player": "Rogers",
+      "player": "Palmer",
       "team": "CHE",
-      "pos": "MID",
-      "role": "starting (Gemini vice-captain pick)",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB: named in predicted Chelsea XI for GW2 vs Brighton, scored in GW1",
-      "confidence": "high"
+      "status": "doubt",
+      "chance_pct": 75,
+      "expected_return_gw": 6,
+      "source": "squad.json flag (muscular injury, 75%); corroborated by readchelsea.com (23 Sep 2026) and fantasyfootballscout.co.uk (GW5/GW6 team news) - Palmer withdrew from England Nations League duty with a muscular issue, stayed at Cobham to manage load, and is 'pencilled in for a potential return' when Chelsea host Bournemouth on Sat 10 Oct (GW6). No suggestion the issue is serious; Alonso expects him available for the next fixture."
     },
-    {
-      "player": "Thiago",
-      "team": "BRE",
-      "pos": "FWD",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB confirms fit, scoring in pre-season",
-      "confidence": "high"
-    },
+    { "player": "Gibbs-White", "team": "NFO", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE) - current captain" },
+    { "player": "Gakpo", "team": "LIV", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
+    { "player": "M.Sangaré", "team": "BRE", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE); benched GW5 vs Chelsea for tactical reasons per fantasyfootballscout.co.uk, not injury" },
+    { "player": "Haaland", "team": "MCI", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE) - vice captain" },
+    { "player": "Wissa", "team": "NEW", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE)" },
+    { "player": "Leno", "team": "FUL", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE) - bench GK" },
     {
       "player": "João Pedro",
       "team": "CHE",
-      "pos": "FWD",
-      "role": "starting",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB: named in predicted Chelsea XI for GW2 vs Brighton, scored in GW1 win over Fulham",
-      "confidence": "high"
+      "status": "doubt",
+      "chance_pct": 75,
+      "expected_return_gw": 6,
+      "source": "squad.json flag (knee injury, 75%); corroborated by fantasyfootballscout.co.uk (18-19 Sep 2026, 'Brentford v Chelsea team news: Sangare benched, no Pedro') and readchelsea.com (23 Sep 2026) - knee edema/sprain (ACL/MCL) sustained vs Hull City, missed GW5 vs Brentford (~3.5 week absence), withdrew from Brazil squad to use international break to recover. Alonso: 'we expect to use the international break for him to be back in the next game against Bournemouth' (GW6, 10 Oct). Danny Welbeck deputized as CHE FWD1 in GW5 - watch for continued rotation risk even if Pedro is passed fit."
     },
-    {
-      "player": "Rushworth",
-      "team": "COV",
-      "pos": "GK",
-      "role": "bench",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB confirms ever-present, no injury",
-      "confidence": "high"
-    },
-    {
-      "player": "Palestra",
-      "team": "CHE",
-      "pos": "DEF",
-      "role": "bench",
-      "status": "DOUBTFUL",
-      "chance_pct": 50,
-      "source": "FPL squad.json flag: 'Unspecified injury - 75% chance of playing'. WEB (27 Aug, Sports Mole/Goal/CaughtOffside/FFS): Xabi Alonso confirmed Palestra missed the Luton EFL Cup tie with a fitness setback and 'will require further assessment' before his availability for Brighton is determined; not included in GW2 predicted Chelsea XI.",
-      "confidence": "medium",
-      "note": "UPGRADE FROM FPL FLAG: news suggests genuine uncertainty, likely below the 75% FPL currently shows - treat as a coinflip doubt, not a near-certain starter/returner. Low fantasy relevance as bench-only fringe defender."
-    },
-    {
-      "player": "Awoniyi",
-      "team": "COV",
-      "pos": "FWD",
-      "role": "bench",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB confirms fit, expected available (Wright is Coventry's injured forward, not Awoniyi)",
-      "confidence": "high"
-    },
-    {
-      "player": "van Ewijk",
-      "team": "COV",
-      "pos": "DEF",
-      "role": "bench",
-      "status": "AVAILABLE",
-      "chance_pct": 100,
-      "source": "FPL news.json (no flag); WEB confirms regular starter, no injury",
-      "confidence": "high"
-    }
+    { "player": "Egan", "team": "HUL", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE) - bench" },
+    { "player": "De Cuyper", "team": "BHA", "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json (AVAILABLE) - bench" }
   ],
-  "summary": {
-    "doubts": 1,
-    "confirmed_out": 0,
-    "confirmed_suspended": 0,
-    "flagged_players": ["Palestra"],
-    "new_watch_items_not_in_fpl_flags": ["Gabriel (ARS) - GW1 knock, no formal flag issued yet"]
-  }
+  "news_json_cross_check": {
+    "out_list_count": 40,
+    "squad_matches_found": 0,
+    "note": "None of the 15 squad players appear in news.json's 40-item OUT list (all chance:0). Only relevant CHE entry is Emegha (FWD, hamstring, back ~10 Oct) - not owned, direct Pedro backup depth, not squad-relevant."
+  },
+  "confirmed_out": [],
+  "flags_for_gaffer": [
+    {
+      "player": "Palmer",
+      "reason": "chance_next 75% < 75% threshold boundary (equal, flagged per instruction chance_next < 75 OR status in doubt set); status DOUBTFUL. Starting XI player - captaincy/lineup risk if he doesn't recover before GW6 deadline."
+    },
+    {
+      "player": "João Pedro",
+      "reason": "chance_next 75%, status DOUBTFUL, knee injury with ACL/MCL sprain history - higher-risk injury type than Palmer's muscular issue despite same quoted %. Currently benched anyway so lower lineup impact, but monitor before committing FH/WC around him."
+    }
+  ]
 }
