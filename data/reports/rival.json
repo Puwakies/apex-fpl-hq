@@ -1,68 +1,91 @@
 {
-  "gw": 5,
+  "gw": 6,
+  "season": "2026/27",
   "strategy": "top10k",
-  "strategy_note": "3-4-3 elite pattern: safe-haven core (Haaland + MCI defensive block + Raya) with 2 calculated differentials (Bogle 4.1% TSB, Emersonn 2.8% TSB). Captain = season cum_pts leader among nailed premiums per APEX locked captaincy rule.",
+  "strategy_note": "Rank-chaser / elite 3-4-3 pattern: safe-haven core (Haaland 73.5% TSB, Raya 42.0% TSB, Saka) plus 1-2 calculated differentials. Captain = season cum_pts leader among nailed outfield premiums (APEX locked rule). Built blind from data/cache/player_pool.json + data/cache/xpts.json; carries on from the rival's own GW5 squad, with no access to the user's team.",
   "squad": [
     "Raya",
     "Tzolakis",
-    "Gvardiol",
-    "Guéhi",
-    "Bogle",
+    "Tarkowski",
     "Mykolenko",
+    "Gvardiol",
     "Maitland-Niles",
-    "Gibbs-White",
-    "Saka",
+    "Bogle",
     "Groß",
-    "Gakpo",
+    "Saka",
     "Tavernier",
+    "Gibbs-White",
+    "Gakpo",
     "Haaland",
-    "Emersonn",
-    "Calvert-Lewin"
+    "Brobbey",
+    "Emersonn"
   ],
   "starting_xi": [
     "Raya",
+    "Tarkowski",
+    "Mykolenko",
     "Gvardiol",
-    "Guéhi",
-    "Bogle",
-    "Gibbs-White",
-    "Saka",
     "Groß",
-    "Gakpo",
+    "Saka",
+    "Tavernier",
+    "Gibbs-White",
     "Haaland",
-    "Emersonn",
-    "Calvert-Lewin"
+    "Brobbey",
+    "Emersonn"
   ],
   "formation": "3-4-3",
   "bench_order": [
-    "Tavernier",
-    "Mykolenko",
     "Maitland-Niles",
+    "Bogle",
+    "Gakpo",
     "Tzolakis"
   ],
   "captain": "Haaland",
-  "vice": "Gvardiol",
-  "transfers": [],
-  "transfer_note": "0 transfers - squad established for GW5, 1 FT banked. No rotation-flagged starter worth a hit; forward pool beyond Haaland is thin (next best xPts 4.02 at 9.1m).",
-  "chip": null,
-  "chip_note": "No chip. No DGW/BGW in GW5, <3 rotation-flagged starters, 3-GW rolling projection above 55. APEX chip-timing gate says save.",
-  "budget": {
-    "squad_value": 99.3,
-    "in_the_bank": 0.7,
-    "cap_check": "max 3 per club satisfied (MCI 3: Gvardiol/Guéhi/Haaland; ARS 2; LEE 2; EVE 2; rest 1)"
-  },
-  "projected_xpts": 80.93,
-  "xpts_breakdown": {
-    "GK": 8.27,
-    "DEF": 27.89,
-    "MID": 22.34,
-    "FWD": 14.98,
-    "captain_bonus": 7.45
-  },
-  "key_differential": "Emersonn (IPS, 2.8% TSB, 3.86 xPts) - 2 goals + 1 assist in 237 mins, 4.36 ppm, cheapest route to a 3-4-3 third forward; secondary differential Bogle (LEE, 4.1% TSB, 8.57 xPts, season pts leader on 37).",
-  "risks": [
-    "Emersonn fails APEX rotation gate (59 avg mins < 60) - Tavernier is first auto-sub cover.",
-    "3-4-3 leaves Tarkowski-class defensive points on the bench; accepted as the cost of the elite shape.",
-    "Captain Haaland (72.6% TSB) is zero-edge vs field; edge is built in the defence and third-forward slot instead."
+  "vice": "Saka",
+  "transfers": [
+    {
+      "out": "Guéhi",
+      "in": "Tarkowski",
+      "pos": "DEF",
+      "price_out": 6.0,
+      "price_in": 6.1,
+      "xpts_out": 6.37,
+      "xpts_in": 12.76,
+      "reason": "Highest-xPts asset in the pool (12.76, FDR 2), 43 season pts, 450/450 mins. Guéhi faces FDR 4. EVE count goes to 3 (Mykolenko, Maitland-Niles, Tarkowski)."
+    },
+    {
+      "out": "Calvert-Lewin",
+      "in": "Brobbey",
+      "pos": "FWD",
+      "price_out": 6.0,
+      "price_in": 5.7,
+      "xpts_out": 3.54,
+      "xpts_in": 5.97,
+      "reason": "Calvert-Lewin has an FDR 5 fixture (3.54 xPts). Brobbey: FDR 2, 2.94 xG and 3 goals in 399 mins, 6.2% TSB. Frees 0.3m."
+    }
   ],
-  "reasoning": "GW5 model favours defenders heavily: the three highest xPts assets in the pool are Gvardiol (10.32), Guéhi (9.00) and Bogle (8.57), and the MCI fixture is FDR 2. I take the full legal MCI allocation (Gvardiol, Guéhi, Haaland = 26.77 combined xPts for 27.2m) as the safe-haven core, pair it with Raya (40.8% TSB, FDR 3, 29 season pts) in goal, and fund a four-man midfield of Gibbs-White, Saka, Groß and Gakpo. Captaincy follows the locked APEX rule - cum_pts leader among nailed premiums - which ties Haaland and Gvardiol on 33 season points and breaks to Haaland as the outfield premium with the ceiling; Gvardiol takes the armband if Haaland is a late scratch. Differentials are deliberately cheap rather than speculative: Bogle at 4.5m is the outright season points leader (37) at 4.1% ownership, and Emersonn at 5.5m gives a 3.86 xPts third forward at 2.8% ownership without compromising the core."
+  "transfer_note": "2 free transfers used (1 banked from GW5 + 1 GW6), 0 hit. A third move (Gakpo -> Ødegaard) gains only about +1.96 XI xPts, so it does not justify a -4 hit.",
+  "chip": null,
+  "chip_note": "No chip. Every squad player has a GW6 fixture (no BGW), there is no confirmed DGW, and no XI starter is rotation-flagged, so the APEX chip-timing gate says save. Maitland-Niles (177 mins in 5 GWs) fails the rotation gate and is benched.",
+  "budget": {
+    "squad_value": 99.6,
+    "in_the_bank_est": 0.4,
+    "note": "Valued at current pool prices. Exact ITB depends on FPL selling prices (only half of any price rise is kept).",
+    "cap_check": "max 3 per club satisfied (EVE 3: Tarkowski/Mykolenko/Maitland-Niles; ARS 2; MCI 2; rest 1)"
+  },
+  "projected_xpts": 103.47,
+  "xpts_breakdown": {
+    "GK": 11.88,
+    "DEF": 29.19,
+    "MID": 35.13,
+    "FWD": 19.12,
+    "captain_bonus": 8.15
+  },
+  "key_differential": "Brobbey (SUN, 6.2% TSB, 5.97 xPts, FDR 2): 2.94 xG, the best underlying shot volume in the sub-6m forward pool. Secondary: Emersonn (IPS, 3.4% TSB, 5.00 xPts, FDR 2).",
+  "risks": [
+    "Captain Haaland has FDR 4 (8.15 xPts), and Saka (10.19) and Groß (11.83) project higher. The armband follows the locked APEX cum_pts rule and blocks a 73.5%-owned field, so there is zero captain edge.",
+    "The 3-4-3 shape benches Maitland-Niles (9.54 xPts), but he is rotation-flagged (avg about 35 mins).",
+    "3 EVE defenders stack clean-sheet correlation on one FDR 2 fixture.",
+    "projected_xpts uses the Sim Lab xpts.json priors, which look inflated for defenders and GKs this week (e.g. Tarkowski 12.76). Compare it with other engines on the same scale, not as an absolute points forecast."
+  ]
 }
