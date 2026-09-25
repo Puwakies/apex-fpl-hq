@@ -1,118 +1,62 @@
 {
-  "generated_by": "news-desk",
-  "gw": 2,
-  "deadline_utc": "2026-08-28T17:30:00Z",
+  "gw": 6,
+  "generated": "2026-09-25",
   "items": [
     {
-      "player": "Lammens",
-      "team": "MUN",
-      "signal": "starts",
-      "note": "Predicted GK vs Ipswich (H, Sun). No fresh MUN injury concerns.",
-      "source": "manunews.com predicted lineup vs Ipswich"
-    },
-    {
-      "player": "Kerkez",
-      "team": "LIV",
-      "signal": "starts",
-      "note": "Predicted starting LB vs Nottingham Forest (H, Sat). Kept his place after GW1 start; no injury flag.",
-      "source": "ESPN/the4thofficial.net Liverpool vs Nottingham Forest predicted XI"
-    },
-    {
-      "player": "Hume",
-      "team": "SUN",
-      "signal": "starts",
-      "note": "Predicted starting RB in Sunderland's 4-2-3-1 vs Fulham (H, Sun). No fitness concerns after GW1.",
-      "source": "Squawka/Sports Mole Sunderland vs Fulham predicted lineup"
-    },
-    {
-      "player": "Gabriel",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Predicted starting CB vs Aston Villa (A, Mon). Nailed at CB despite Saliba/Timber both still out (increases Gabriel's defensive workload/importance, not a risk to his minutes).",
-      "source": "Yahoo Sports Arsenal XI vs Aston Villa confirmed/predicted lineup"
-    },
-    {
-      "player": "B.Fernandes",
-      "team": "MUN",
-      "signal": "starts",
-      "note": "Nailed - MUN's primary attacking outlet and set-piece taker on everything (corners, FKs, pens). Predicted to start centrally vs Ipswich. No rotation risk.",
-      "source": "manunews.com / RotoWire Man Utd vs Ipswich predicted lineup"
-    },
-    {
-      "player": "Mbeumo",
-      "team": "MUN",
-      "signal": "starts",
-      "note": "Predicted starter vs Ipswich, ahead of Cunha in pecking order per pre-season reports.",
-      "source": "manunews.com predicted lineup vs Ipswich"
-    },
-    {
-      "player": "Semenyo",
-      "team": "MCI",
-      "signal": "starts",
-      "note": "Predicted starter in Man City's 3-man attack (with Foden, O'Reilly) behind Haaland vs Crystal Palace - City are short of attacking depth (Doku injured, Savio/Marmoush departed), boosting Semenyo's nailed status.",
-      "source": "beIN Sports / yen.com.gh Crystal Palace vs Man City predicted lineup"
-    },
-    {
-      "player": "E.Le Fée",
-      "team": "SUN",
-      "signal": "starts",
-      "note": "Predicted starting attacking mid vs Fulham (H, Sun), part of Sunderland's settled front line.",
-      "source": "Squawka Sunderland vs Fulham predicted lineup"
-    },
-    {
-      "player": "Rogers",
+      "player": "Palmer",
       "team": "CHE",
-      "signal": "starts",
-      "note": "Nailed and in-form - scored in Chelsea's 5-goal derby win last match alongside Joao Pedro and Palmer. Vs Brighton (H, Sun). Palmer is under assessment for a groin issue (possible surgery) which could mean MORE Chelsea creative burden shifts to Rogers - upside signal, not a risk.",
-      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
-    },
-    {
-      "player": "Thiago",
-      "team": "BRE",
-      "signal": "starts",
-      "note": "Brentford have a settled team after 3-0 win over Tottenham and are likely to stick with it vs Leeds (A, Sun). No injury flag for Thiago.",
-      "source": "Yorkshire Evening Post / Squawka Leeds vs Brentford preview"
+      "signal": "rotation_risk",
+      "note": "squad.json/news.json show DOUBTFUL, 75% chance of playing (muscular injury). WebSearch found conflicting external reports: one line (Sky Sports-style headline) states Palmer aggravated a groin injury vs Man Utd (20 Sep) and Maresca said he is 'out for six more weeks' - materially worse than the 75%/muscular framing in cache. Also separate reports of him being managed/withdrawn from England duty after playing 90 mins vs Brentford. Signal is conflicting and stale/mixed across sources (could reflect different injury episodes or simulated-season noise); treat internal 75% figure with caution and downgrade confidence. Recommend: check final press conference close to GW6 deadline before captaining or auto-starting; currently in starting XI - real bench/injury leak risk higher than cache suggests.",
+      "source": "squad.json embedded news; Sky Sports-style headline 'Cole Palmer: Chelsea star out for six more weeks with injury, Enzo Maresca confirms'; Heavy.com 'Xabi Alonso Announces Cole Palmer Injury News'; premierleague.com video 'Maresca's injury update on Palmer'"
     },
     {
       "player": "João Pedro",
       "team": "CHE",
-      "signal": "starts",
-      "note": "Nailed - scored in Chelsea's last match. Starts vs Brighton (H, Sun).",
-      "source": "Yahoo Sports Chelsea vs Brighton lineups/team news"
+      "signal": "rotation_risk",
+      "note": "squad.json/news.json show DOUBTFUL, 75% chance of playing (knee injury) and player is already benched in squad. WebSearch corroborates a genuine knee/ligament issue (sprained knee ligaments picked up vs Hull, missed training, withdrew from Brazil squad, no involvement in the Brentford defeat). Brazilian outlets cited a ~3-3.5 week recovery window with a likely target return around GW7 (Bournemouth, ~10 Oct) - i.e. materially more doubtful for GW6 than the 75% figure implies. Correctly benched already; do not bring into starting XI blind this week.",
+      "source": "Yahoo Sports 'Chelsea injury update: Joao Pedro, Cole Palmer, Reece James'; SI.com 'Joao Pedro Injury: Progress, Potential Return Date'; premierleague.com 'Chelsea team news: Latest injury update on Joao Pedro'"
     },
     {
-      "player": "Palestra",
-      "team": "CHE",
-      "signal": "benched",
-      "note": "ESCALATION beyond data-lab's 75%-chance flag: Palestra has missed Chelsea's last matchday squad entirely (EFL Cup vs Luton) due to a minor fitness setback per Alonso, and in his absence Malo Gusto has taken the right wing-back slot. Even set aside injury, Gusto looks first-choice there. Treat as a likely non-starter/bench risk for GW2, not just a fitness coin-flip - lower confidence than the 75% number implies.",
-      "source": "Fantasy Football Scout 'Fulham v Chelsea: No Caicedo or Palestra' + FPL GW2 Thursday/Wednesday live injury updates"
+      "player": "Gibbs-White",
+      "team": "NFO",
+      "signal": "starts",
+      "note": "squad.json shows AVAILABLE, no embedded news flag, and is captain this GW. WebSearch turned up an injury-doubt story (head-clash cut vs Chelsea, doubt for Villa) but that content is dated/contextually from a different (later-season, May 2026) fixture cycle, not a current GW6 signal. No live rotation or fitness concern found for GW6; treat as nailed pending final press conference, but note captaincy protocol flag already raised separately by data-lab (captain should be cum_pts leader per CLAUDE.md, currently Gibbs-White not the clear leader - a squad-selection issue, not a news/fitness one).",
+      "source": "squad.json (no news field); Sports Mole 'Pereira delivers Gibbs-White Forest injury update' (dated to a different fixture window, low relevance to GW6)"
     },
     {
-      "player": "Awoniyi",
-      "team": "COV",
+      "player": "Wissa",
+      "team": "NEW",
       "signal": "starts",
-      "note": "Bench player upside note: predicted to lead the line for Coventry ahead of Ellis Simms vs Hull (H, Sat) - not a squad risk since he is already benched by manager, but strong bench-enabler signal if a Chelsea/Coventry punt is needed later.",
-      "source": "Yahoo Sports / thehardtackle.com Coventry vs Hull preview"
+      "note": "No injury flag in squad.json/news.json. Fantasy Football Scout piece dated 19 Sep 2026 references Wissa missing a penalty for Newcastle in a recent match, confirming he is actively starting/involved in the squad's current form. No rotation concern found.",
+      "source": "fantasyfootballscout.co.uk 'FPL notes: Wissa pen miss + Newcastle the new DefCon kings?' (19 Sep 2026)"
     },
     {
-      "player": "van Ewijk",
-      "team": "COV",
+      "player": "Haaland",
+      "team": "MCI",
       "signal": "starts",
-      "note": "Predicted starting RB for Coventry vs Hull (H, Sat). Bench player, no action needed.",
-      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
+      "note": "squad.json shows AVAILABLE, no news flag; vice-captain this GW. WebSearch returned a mix of older-season (2025/26) fitness-scare articles and general workload-management commentary, but nothing specific and current confirming a GW6 doubt. Treat as nailed premium pending Friday press conference.",
+      "source": "squad.json (no news field); general Haaland injury-news search (mixed dated results, no clear GW6-specific signal)"
     },
     {
-      "player": "Rushworth",
-      "team": "COV",
+      "player": "Raya",
+      "team": "ARS",
       "signal": "starts",
-      "note": "Predicted starting GK for Coventry vs Hull. Bench GK, no action needed.",
-      "source": "Yahoo Sports Coventry vs Hull predicted lineup"
+      "note": "No injury/rotation flag in squad.json or news.json (note: Arsenal's Saliba IS on the news.json OUT list with a back injury/unknown return - does not affect Raya directly but is a defensive-solidity concern for Arsenal's Calafiori/Konsa clean-sheet upside this GW).",
+      "source": "data/cache/news.json (Saliba OUT entry); data/cache/squad.json"
+    },
+    {
+      "player": "Calafiori",
+      "team": "ARS",
+      "signal": "starts",
+      "note": "No injury flag. Flagged only indirectly: Saliba (fellow ARS CB) is OUT with a back injury of unknown return date per news.json, which could affect Arsenal's backline shape/rotation but no direct signal against Calafiori's starting spot.",
+      "source": "data/cache/news.json"
+    },
+    {
+      "player": "Konsa, Hall, Groß, Gakpo, M.Sangaré, De Cuyper, Egan, Leno",
+      "team": "various",
+      "signal": "unknown",
+      "note": "No injury/doubt flags present in squad.json or news.json for these players and no targeted rotation-specific search was run for each individually within this pass (budget-limited). No red flags surfaced incidentally. Recommend a quick final-day check of official confirmed lineups/press pressers before deadline, per standard process, but nothing here overrides the Rotation-Risk Gate (blind mins <60 or sub <60 in 2+ of last 3) - no minutes data available in this pass to test that rule directly for bench-risk players (Konsa in particular worth a manual look, not in xpts top rows per data-lab).",
+      "source": "data/cache/squad.json; data/cache/news.json (no matching entries)"
     }
-  ],
-  "summary_notes": {
-    "captain_bfernandes_nailed": true,
-    "vice_gabriel_nailed": true,
-    "new_risk_beyond_datalab": "Palestra (bench DEF) risk is worse than the 75% doubtful flag suggests - repeated squad omissions this week and Gusto ahead of him in the pecking order at RWB. Low priority since he's on the bench, not starting XI.",
-    "notable_positive": "Semenyo and Rogers both look more nailed than usual this week due to teammate absences/departures (City attacking depth thin; Palmer groin concern at Chelsea)."
-  }
+  ]
 }
