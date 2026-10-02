@@ -1,62 +1,27 @@
 {
   "gw": 6,
-  "generated": "2026-09-25",
+  "generated": "2026-10-02",
+  "caveats": [
+    "Search results mixed 2025/26 and 2026/27 content (e.g. rotowire GW6 presser article references Odegaard/Madueke/Havertz = 2025 season); only 2026-dated sources used for Palmer/Gakpo/Joao Pedro.",
+    "No confirmed 2026 GW6 presser quotes found for NEW, MCI, NFO, BHA, BRE, FUL, HUL; those rated unknown/starts on FPL status only.",
+    "Squad picks are from GW5 (picks_gw=5); verify transfers."
+  ],
   "items": [
-    {
-      "player": "Palmer",
-      "team": "CHE",
-      "signal": "rotation_risk",
-      "note": "squad.json/news.json show DOUBTFUL, 75% chance of playing (muscular injury). WebSearch found conflicting external reports: one line (Sky Sports-style headline) states Palmer aggravated a groin injury vs Man Utd (20 Sep) and Maresca said he is 'out for six more weeks' - materially worse than the 75%/muscular framing in cache. Also separate reports of him being managed/withdrawn from England duty after playing 90 mins vs Brentford. Signal is conflicting and stale/mixed across sources (could reflect different injury episodes or simulated-season noise); treat internal 75% figure with caution and downgrade confidence. Recommend: check final press conference close to GW6 deadline before captaining or auto-starting; currently in starting XI - real bench/injury leak risk higher than cache suggests.",
-      "source": "squad.json embedded news; Sky Sports-style headline 'Cole Palmer: Chelsea star out for six more weeks with injury, Enzo Maresca confirms'; Heavy.com 'Xabi Alonso Announces Cole Palmer Injury News'; premierleague.com video 'Maresca's injury update on Palmer'"
-    },
-    {
-      "player": "João Pedro",
-      "team": "CHE",
-      "signal": "rotation_risk",
-      "note": "squad.json/news.json show DOUBTFUL, 75% chance of playing (knee injury) and player is already benched in squad. WebSearch corroborates a genuine knee/ligament issue (sprained knee ligaments picked up vs Hull, missed training, withdrew from Brazil squad, no involvement in the Brentford defeat). Brazilian outlets cited a ~3-3.5 week recovery window with a likely target return around GW7 (Bournemouth, ~10 Oct) - i.e. materially more doubtful for GW6 than the 75% figure implies. Correctly benched already; do not bring into starting XI blind this week.",
-      "source": "Yahoo Sports 'Chelsea injury update: Joao Pedro, Cole Palmer, Reece James'; SI.com 'Joao Pedro Injury: Progress, Potential Return Date'; premierleague.com 'Chelsea team news: Latest injury update on Joao Pedro'"
-    },
-    {
-      "player": "Gibbs-White",
-      "team": "NFO",
-      "signal": "starts",
-      "note": "squad.json shows AVAILABLE, no embedded news flag, and is captain this GW. WebSearch turned up an injury-doubt story (head-clash cut vs Chelsea, doubt for Villa) but that content is dated/contextually from a different (later-season, May 2026) fixture cycle, not a current GW6 signal. No live rotation or fitness concern found for GW6; treat as nailed pending final press conference, but note captaincy protocol flag already raised separately by data-lab (captain should be cum_pts leader per CLAUDE.md, currently Gibbs-White not the clear leader - a squad-selection issue, not a news/fitness one).",
-      "source": "squad.json (no news field); Sports Mole 'Pereira delivers Gibbs-White Forest injury update' (dated to a different fixture window, low relevance to GW6)"
-    },
-    {
-      "player": "Wissa",
-      "team": "NEW",
-      "signal": "starts",
-      "note": "No injury flag in squad.json/news.json. Fantasy Football Scout piece dated 19 Sep 2026 references Wissa missing a penalty for Newcastle in a recent match, confirming he is actively starting/involved in the squad's current form. No rotation concern found.",
-      "source": "fantasyfootballscout.co.uk 'FPL notes: Wissa pen miss + Newcastle the new DefCon kings?' (19 Sep 2026)"
-    },
-    {
-      "player": "Haaland",
-      "team": "MCI",
-      "signal": "starts",
-      "note": "squad.json shows AVAILABLE, no news flag; vice-captain this GW. WebSearch returned a mix of older-season (2025/26) fitness-scare articles and general workload-management commentary, but nothing specific and current confirming a GW6 doubt. Treat as nailed premium pending Friday press conference.",
-      "source": "squad.json (no news field); general Haaland injury-news search (mixed dated results, no clear GW6-specific signal)"
-    },
-    {
-      "player": "Raya",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "No injury/rotation flag in squad.json or news.json (note: Arsenal's Saliba IS on the news.json OUT list with a back injury/unknown return - does not affect Raya directly but is a defensive-solidity concern for Arsenal's Calafiori/Konsa clean-sheet upside this GW).",
-      "source": "data/cache/news.json (Saliba OUT entry); data/cache/squad.json"
-    },
-    {
-      "player": "Calafiori",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "No injury flag. Flagged only indirectly: Saliba (fellow ARS CB) is OUT with a back injury of unknown return date per news.json, which could affect Arsenal's backline shape/rotation but no direct signal against Calafiori's starting spot.",
-      "source": "data/cache/news.json"
-    },
-    {
-      "player": "Konsa, Hall, Groß, Gakpo, M.Sangaré, De Cuyper, Egan, Leno",
-      "team": "various",
-      "signal": "unknown",
-      "note": "No injury/doubt flags present in squad.json or news.json for these players and no targeted rotation-specific search was run for each individually within this pass (budget-limited). No red flags surfaced incidentally. Recommend a quick final-day check of official confirmed lineups/press pressers before deadline, per standard process, but nothing here overrides the Rotation-Risk Gate (blind mins <60 or sub <60 in 2+ of last 3) - no minutes data available in this pass to test that rule directly for bench-risk players (Konsa in particular worth a manual look, not in xpts top rows per data-lab).",
-      "source": "data/cache/squad.json; data/cache/news.json (no matching entries)"
-    }
+    {"player": "Palmer", "team": "CHE", "signal": "rotation_risk", "note": "FPL 75% muscular. Withdrew from England squad with minor muscle issue; Chelsea managing it. Assumed fit vs BOU (home) but unconfirmed. Starter, doubt flag.", "source": "https://www.fantasyfootballscout.co.uk/2026/04/27/fpl-notes-palmer-pedro-fit-gudmundsson-injury-enzo-good ; https://www.rotowire.com/soccer/article/fpl-gameweek-6-rankings-best-players-captain-picks-gw6-135927"},
+    {"player": "Gakpo", "team": "LIV", "signal": "rotation_risk", "note": "FPL 75% ankle. Played 90 mins, scored and assisted in recent outing (Sep 16), encouraging, but still rated doubt for GW6. Check pre-deadline presser.", "source": "https://www.fantasyfootballscout.co.uk/2026/09/16/fpl-notes-gakpo-impresses-szoboszlai-scores-porro-injury-boost"},
+    {"player": "João Pedro", "team": "CHE", "signal": "rotation_risk", "note": "FPL 75% knee. Missed GW5 vs BRE; Alonso said break should have him back for BOU. Most-sold player GW6 (380k+). On bench slot 13 so low lineup impact.", "source": "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689"},
+    {"player": "Saliba", "team": "ARS", "signal": "benched", "note": "Out with back injury (cache: unknown return; Rotowire headline: targets November). Not owned. Boosts Konsa/Calafiori starting certainty (Konsa 4.6 ARS def in squad).", "source": "https://rotowire.com/soccer/headlines/william-saliba-injury-targets-november-return-536656"},
+    {"player": "Raya", "team": "ARS", "signal": "starts", "note": "Available, no flags, first-choice GK.", "source": "data/cache/squad.json"},
+    {"player": "Konsa", "team": "ARS", "signal": "unknown", "note": "Available per FPL; xpts null in data-lab. Saliba out improves odds of starting but no lineup confirmation found.", "source": "data/cache/squad.json"},
+    {"player": "Calafiori", "team": "ARS", "signal": "starts", "note": "Available, no flags; Saliba absence helps.", "source": "data/cache/squad.json"},
+    {"player": "Hall", "team": "NEW", "signal": "starts", "note": "Available, no flags; no presser found.", "source": "data/cache/squad.json"},
+    {"player": "Wissa", "team": "NEW", "signal": "unknown", "note": "Available per FPL; xpts only 3.55, no presser found.", "source": "data/cache/squad.json"},
+    {"player": "Gibbs-White", "team": "NFO", "signal": "starts", "note": "Captain; available, no flags. No presser found, confirm before deadline.", "source": "data/cache/squad.json"},
+    {"player": "Haaland", "team": "MCI", "signal": "starts", "note": "Available, no flags (a Rotowire Haaland injury article exists but date unverified, likely 2025).", "source": "data/cache/squad.json"},
+    {"player": "Groß", "team": "BHA", "signal": "starts", "note": "Available. Note BHA has many injuries (Mitoma, Ferguson, Hinshelwood, Azeez etc, several back ~10 Oct), which supports his minutes.", "source": "data/cache/news.json"},
+    {"player": "De Cuyper", "team": "BHA", "signal": "unknown", "note": "Bench slot; available, xpts 9.93 vs Konsa null. Strong bench-to-XI candidate.", "source": "data/cache/squad.json"},
+    {"player": "M.Sangaré", "team": "BRE", "signal": "unknown", "note": "Available; BRE has 6 injured (Jensen, Dasilva, Milambo etc). No lineup info found.", "source": "data/cache/news.json"},
+    {"player": "Egan", "team": "HUL", "signal": "unknown", "note": "Bench; available. HUL missing Butland, Hughes.", "source": "data/cache/news.json"},
+    {"player": "Leno", "team": "FUL", "signal": "unknown", "note": "Bench GK; available.", "source": "data/cache/squad.json"}
   ]
 }

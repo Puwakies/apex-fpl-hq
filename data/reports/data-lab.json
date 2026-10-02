@@ -1,127 +1,329 @@
 {
+ "gw": 6,
+ "generated": "2026-10-02",
+ "source_files": {
+  "squad.json": {
+   "updated": "2026-10-01T17:24:20.283Z",
+   "rows": 15,
+   "status": "OK"
+  },
+  "xpts.json": {
+   "updated": "2026-10-01T17:24:21.729Z",
+   "rows": 150,
+   "status": "OK"
+  },
+  "league.json": {
+   "updated": "2026-10-01T17:24:23.077Z",
+   "rows": 0,
+   "status": "PARTIAL",
+   "note": "context only (GW5, 18 managers); differentials/template arrays empty"
+  },
+  "news.json": {
+   "updated": "2026-10-01T17:24:24.324Z",
+   "rows": 40,
+   "status": "OK"
+  },
+  "price.json": {
+   "updated": "2026-10-01T17:24:25.503Z",
+   "rows_rises": 12,
+   "rows_falls": 12,
+   "status": "OK"
+  },
+  "gemini.json": {
+   "updated": "2026-10-01T17:24:26.523Z",
+   "status": "PARSE_FAILED",
+   "note": "raw empty; no Gemini captain/transfers/projected_xpts for GW6"
+  },
+  "player_pool.json": {
+   "rows": 400
+  }
+ },
+ "squad": {
+  "team_name": "Puwakies Jjimyang",
+  "manager": "Puwakorn Amart",
   "gw": 6,
-  "generated": "2026-09-25",
-  "source_files": {
-    "squad.json": {"updated": "2026-09-24T17:24:21.461Z", "rows": 15, "status": "OK"},
-    "xpts.json": {"updated": "2026-09-24T17:24:22.852Z", "rows": 125, "status": "OK"},
-    "league.json": {"updated": "2026-09-24T17:24:23.853Z", "rows": 1, "status": "OK", "note": "context object for GW5, no per-manager rows array populated"},
-    "news.json": {"updated": "2026-09-24T17:24:25.209Z", "rows": 40, "status": "OK"},
-    "price.json": {"updated": "2026-09-24T17:24:26.328Z", "rows_rises": 12, "rows_falls": 12, "status": "OK"},
-    "gemini.json": {"updated": "2026-09-24T17:24:27.319Z", "status": "PARSE_FAILED", "note": "engine returned raw:'' — Gemini picks unavailable for GW6, treat as non-fatal data-quality gap, do not stop pipeline"},
-    "player_pool.json": {"updated": "2026-09-24T17:24:28.291Z", "rows": 400, "status": "OK", "source": "FULL_PLAYER_DATA_2627"}
+  "picks_gw": 5,
+  "overall_rank": 1286263,
+  "total_points": 339,
+  "bank": 1,
+  "squad_value": 101.9,
+  "captain": "Gibbs-White",
+  "vice_captain": "Haaland",
+  "chips_used": [
+   "BB@GW2",
+   "WC@GW3",
+   "TC@GW4"
+  ],
+  "chips_left": [
+   "FH",
+   "WC×1"
+  ]
+ },
+ "squad_players": [
+  {
+   "name": "Raya",
+   "team": "ARS",
+   "pos": "GK",
+   "price": 6.1,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 9.92
   },
-  "squad": {
-    "team_name": "Puwakies Jjimyang",
-    "manager": "Puwakorn Amart",
-    "fpl_team_id": 6023024,
-    "gw": 6,
-    "picks_from_gw": 5,
-    "overall_rank": 1286406,
-    "total_points": 339,
-    "bank": 1,
-    "squad_value": 101.9,
-    "captain": "Gibbs-White",
-    "vice_captain": "Haaland",
-    "chips_used": ["BB@GW2", "WC@GW3", "TC@GW4"],
-    "chips_left": ["FH", "WC x1"],
-    "starting_xi": [
-      {"name": "Raya", "pos": "GK", "team": "ARS", "price": 6.1, "status": "AVAILABLE"},
-      {"name": "Konsa", "pos": "DEF", "team": "ARS", "price": 4.6, "status": "AVAILABLE"},
-      {"name": "Hall", "pos": "DEF", "team": "NEW", "price": 5.3, "status": "AVAILABLE"},
-      {"name": "Calafiori", "pos": "DEF", "team": "ARS", "price": 5.8, "status": "AVAILABLE"},
-      {"name": "Groß", "pos": "MID", "team": "BHA", "price": 5.8, "status": "AVAILABLE"},
-      {"name": "Palmer", "pos": "MID", "team": "CHE", "price": 9.7, "status": "DOUBTFUL", "news": "Muscular injury - 75% chance of playing"},
-      {"name": "Gibbs-White", "pos": "MID", "team": "NFO", "price": 8.0, "status": "AVAILABLE", "is_captain": true},
-      {"name": "Gakpo", "pos": "MID", "team": "LIV", "price": 7.2, "status": "AVAILABLE"},
-      {"name": "M.Sangaré", "pos": "MID", "team": "BRE", "price": 5.6, "status": "AVAILABLE"},
-      {"name": "Haaland", "pos": "FWD", "team": "MCI", "price": 15.6, "status": "AVAILABLE", "is_vice": true},
-      {"name": "Wissa", "pos": "FWD", "team": "NEW", "price": 6.2, "status": "AVAILABLE"}
-    ],
-    "bench": [
-      {"name": "Leno", "pos": "GK", "team": "FUL", "price": 4.5, "status": "AVAILABLE"},
-      {"name": "João Pedro", "pos": "FWD", "team": "CHE", "price": 7.7, "status": "DOUBTFUL", "news": "Knee injury - 75% chance of playing"},
-      {"name": "Egan", "pos": "DEF", "team": "HUL", "price": 4.1, "status": "AVAILABLE"},
-      {"name": "De Cuyper", "pos": "DEF", "team": "BHA", "price": 4.9, "status": "AVAILABLE"}
-    ]
+  {
+   "name": "Konsa",
+   "team": "ARS",
+   "pos": "DEF",
+   "price": 4.6,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": null
   },
-  "xpts_summary": {
-    "rows": 125,
-    "note": "Trusted precomputed values, not recalculated",
-    "top_5_xpts": [
-      {"name": "Tarkowski", "team": "EVE", "pos": "DEF", "xpts": 12.76},
-      {"name": "Raya", "team": "ARS", "pos": "GK", "xpts": 11.88},
-      {"name": "Groß", "team": "BHA", "pos": "MID", "xpts": 11.83},
-      {"name": "Calafiori", "team": "ARS", "pos": "DEF", "xpts": 11.31},
-      {"name": "Tzolakis", "team": "HUL", "pos": "GK", "xpts": 10.43}
-    ],
-    "squad_players_xpts": {
-      "Raya": 11.88,
-      "Calafiori": 11.31,
-      "Groß": 11.83,
-      "Hall": 10.03,
-      "De Cuyper": 9.93,
-      "Haaland": 8.15,
-      "Gibbs-White": 6.9,
-      "Egan": 7.25,
-      "Wissa": 3.55,
-      "Gakpo": 4.76,
-      "M.Sangaré": 3.08,
-      "Palmer": 3.89,
-      "João Pedro": 2.78,
-      "Konsa": "not listed in xpts.json top rows (not in top ~125)",
-      "Leno": 5.6
-    },
-    "captain_note": "Locked protocol = captain should be season cum_pts leader (nailed premium, not GK); current squad captain is Gibbs-White (xpts 6.9) with Haaland as vice (xpts 8.15) - flag for gaffer/director review vs protocol"
+  {
+   "name": "Hall",
+   "team": "NEW",
+   "pos": "DEF",
+   "price": 5.3,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 10.03
   },
-  "league": {
-    "gw_context": 5,
-    "my_rank": 11,
-    "total_managers": 18,
-    "league_leader": "Ohmbappe (393 pts)",
-    "my_total_pts": 339,
-    "gap_to_leader": 54,
-    "am_i_leading": false,
-    "template_players": ["Haaland", "João Pedro", "Raya", "Calafiori"],
-    "top_differentials": "none listed"
+  {
+   "name": "Calafiori",
+   "team": "ARS",
+   "pos": "DEF",
+   "price": 5.8,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 9.19
   },
-  "news_injury_flags": {
-    "total_out_injuries_listed": 40,
-    "relevant_to_squad": [
-      {"player": "Palmer", "team": "CHE", "status": "DOUBTFUL", "chance": 75, "news": "Muscular injury - 75% chance of playing", "source": "squad.json embedded news"},
-      {"player": "João Pedro", "team": "CHE", "status": "DOUBTFUL", "chance": 75, "news": "Knee injury - 75% chance of playing", "source": "squad.json embedded news"}
-    ],
-    "note": "news.json OUT list (40 items, all chance:0) does not include any of the 15 squad players; Palmer/João Pedro doubtful flags came from squad.json per-player news field, not from news.json itself"
+  {
+   "name": "Groß",
+   "team": "BHA",
+   "pos": "MID",
+   "price": 5.8,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 11.83
   },
-  "price_signals": {
-    "likely_rises_count": 12,
-    "likely_falls_count": 12,
-    "squad_relevant_rises": [
-      {"player": "Groß", "net_rate": 25.137, "price": 5.8, "price_change": 0.1}
-    ],
-    "squad_relevant_falls": [
-      {"player": "M.Sangaré", "net_rate": -12.072, "price": 5.6, "price_change": -0.1}
-    ],
-    "top_rise": {"player": "Kostoulas", "team": "BHA", "net_rate": 69.458},
-    "top_fall": {"player": "Elanga", "team": "NEW", "net_rate": -32.673}
+  {
+   "name": "Palmer",
+   "team": "CHE",
+   "pos": "MID",
+   "price": 9.7,
+   "status": "DOUBTFUL",
+   "news": "Muscular injury - 75% chance of playing",
+   "is_starting": true,
+   "xpts": 3.89
   },
-  "gemini_picks": {
-    "status": "UNAVAILABLE",
-    "error": "parse_failed",
-    "raw": "",
-    "impact": "Gemini captain/transfer/projected_xpts picks not available for GW6. Downstream gemini-read and the-director agents should skip GEMINI engine comparison this week or fall back to prior GW gemini data with explicit caveat. Data-quality issue only, not a pipeline-stopping condition."
+  {
+   "name": "Gibbs-White",
+   "team": "NFO",
+   "pos": "MID",
+   "price": 8,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 6.9
   },
-  "player_pool_overview": {
-    "source": "FULL_PLAYER_DATA_2627",
-    "count": 400,
-    "updated": "2026-09-24T17:24:28.291Z",
-    "top_5_by_pts_sampled": [
-      {"name": "Groß", "team": "BHA", "pos": "MID", "pts": 47},
-      {"name": "Tarkowski", "team": "EVE", "pos": "DEF", "pts": 43},
-      {"name": "Bogle", "team": "LEE", "pos": "DEF", "pts": 42},
-      {"name": "Schade", "team": "BRE", "pos": "MID", "pts": 39},
-      {"name": "De Cuyper", "team": "BHA", "pos": "DEF", "pts": 38}
-    ],
-    "note": "Large file (400 players, ~6800 lines); only first ~200 rows inspected directly, sorted descending by season pts. Fields present: price, pts, mp, goals, assists, xG, xA, cs, bps, tsb, ppm, gw_last."
+  {
+   "name": "Gakpo",
+   "team": "LIV",
+   "pos": "MID",
+   "price": 7.2,
+   "status": "DOUBTFUL",
+   "news": "Ankle injury - 75% chance of playing",
+   "is_starting": true,
+   "xpts": 2.42
   },
-  "overall_status": "ALL_CORE_FILES_PRESENT — pipeline OK to proceed; only gemini.json failed to parse (non-fatal, flagged above)"
+  {
+   "name": "M.Sangaré",
+   "team": "BRE",
+   "pos": "MID",
+   "price": 5.6,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 3.7
+  },
+  {
+   "name": "Haaland",
+   "team": "MCI",
+   "pos": "FWD",
+   "price": 15.6,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 8.15
+  },
+  {
+   "name": "Wissa",
+   "team": "NEW",
+   "pos": "FWD",
+   "price": 6.2,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": true,
+   "xpts": 3.55
+  },
+  {
+   "name": "Leno",
+   "team": "FUL",
+   "pos": "GK",
+   "price": 4.5,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": false,
+   "xpts": 5.6
+  },
+  {
+   "name": "João Pedro",
+   "team": "CHE",
+   "pos": "FWD",
+   "price": 7.7,
+   "status": "DOUBTFUL",
+   "news": "Knee injury - 75% chance of playing",
+   "is_starting": false,
+   "xpts": 2.78
+  },
+  {
+   "name": "Egan",
+   "team": "HUL",
+   "pos": "DEF",
+   "price": 4.1,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": false,
+   "xpts": 7.25
+  },
+  {
+   "name": "De Cuyper",
+   "team": "BHA",
+   "pos": "DEF",
+   "price": 5,
+   "status": "AVAILABLE",
+   "news": "",
+   "is_starting": false,
+   "xpts": 9.93
+  }
+ ],
+ "flagged": [
+  "Palmer",
+  "Gakpo",
+  "João Pedro"
+ ],
+ "league": {
+  "GW": 5,
+  "My Rank": 11,
+  "League Leader": "Ohmbappe (393pts)",
+  "Top Differentials": "",
+  "Template Players": "Haaland, João Pedro, Raya, Calafiori",
+  "Total Managers": 18,
+  "My Total Pts": 339,
+  "League Leader Pts": 393,
+  "Gap To Leader": 54,
+  "Am I Leading": "NO"
+ },
+ "xpts_top10": [
+  {
+   "name": "Tarkowski",
+   "team": "EVE",
+   "pos": "DEF",
+   "price": 6.2,
+   "xpts": 12.76,
+   "captain_xpts": 25.52,
+   "fdr": 2
+  },
+  {
+   "name": "Groß",
+   "team": "BHA",
+   "pos": "MID",
+   "price": 5.8,
+   "xpts": 11.83,
+   "captain_xpts": 23.66,
+   "fdr": 3
+  },
+  {
+   "name": "Tzolakis",
+   "team": "HUL",
+   "pos": "GK",
+   "price": 4.7,
+   "xpts": 10.43,
+   "captain_xpts": 20.86,
+   "fdr": 3
+  },
+  {
+   "name": "Hall",
+   "team": "NEW",
+   "pos": "DEF",
+   "price": 5.3,
+   "xpts": 10.03,
+   "captain_xpts": 20.06,
+   "fdr": 2
+  },
+  {
+   "name": "De Cuyper",
+   "team": "BHA",
+   "pos": "DEF",
+   "price": 5,
+   "xpts": 9.93,
+   "captain_xpts": 19.86,
+   "fdr": 3
+  },
+  {
+   "name": "Raya",
+   "team": "ARS",
+   "pos": "GK",
+   "price": 6.1,
+   "xpts": 9.92,
+   "captain_xpts": 19.84,
+   "fdr": 3
+  },
+  {
+   "name": "B.Fernandes",
+   "team": "MUN",
+   "pos": "MID",
+   "price": 11.9,
+   "xpts": 9.59,
+   "captain_xpts": 19.18,
+   "fdr": 2
+  },
+  {
+   "name": "Maitland-Niles",
+   "team": "EVE",
+   "pos": "DEF",
+   "price": 4.5,
+   "xpts": 9.54,
+   "captain_xpts": 19.08,
+   "fdr": 2
+  },
+  {
+   "name": "Calafiori",
+   "team": "ARS",
+   "pos": "DEF",
+   "price": 5.8,
+   "xpts": 9.19,
+   "captain_xpts": 18.38,
+   "fdr": 3
+  },
+  {
+   "name": "Schade",
+   "team": "BRE",
+   "pos": "MID",
+   "price": 6.2,
+   "xpts": 8.85,
+   "captain_xpts": 17.7,
+   "fdr": 3
+  }
+ ],
+ "gaps": [
+  "gemini.json parse_failed",
+  "league differentials/template arrays empty",
+  "league context is GW5",
+  "squad picks_gw=5 (pre-GW6 deadline picks; verify transfers)"
+ ]
 }

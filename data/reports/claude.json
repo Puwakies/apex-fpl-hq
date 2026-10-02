@@ -1,102 +1,60 @@
 {
   "engine": "claude",
   "gw": 6,
-  "generated": "2026-09-25",
   "captain": "Haaland",
   "captain_type": "template",
   "captain_trigger": "none",
-  "vice": "Groß",
-  "formation": "4-4-2",
+  "captain_reason": "LOCKED rule: Haaland = season cum_pts leader among owned nailed premiums (39 pts / 5 GP). Also intel.captain_shield priority 1 (EO ~140%), and he is fit, so the shield cannot be faded. Groß (47) and De Cuyper (38) have more points but are not premiums, so they fall outside the rule. Last GW's C Gibbs-White moves to vice.",
+  "vice": "Gibbs-White",
   "starting_xi": [
-    { "name": "Raya", "pos": "GK", "price": 6.1, "xpts": 11.88 },
-    { "name": "Calafiori", "pos": "DEF", "price": 5.8, "xpts": 11.31 },
-    { "name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
-    { "name": "De Cuyper", "pos": "DEF", "price": 4.9, "xpts": 9.93 },
-    { "name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 7.25 },
-    { "name": "Groß", "pos": "MID", "price": 5.8, "xpts": 11.83 },
-    { "name": "Barnes", "pos": "MID", "price": 6.1, "xpts": 6.93 },
-    { "name": "Gibbs-White", "pos": "MID", "price": 8.0, "xpts": 6.9 },
-    { "name": "Gakpo", "pos": "MID", "price": 7.2, "xpts": 4.76 },
-    { "name": "Haaland", "pos": "FWD", "price": 15.6, "xpts": 8.15 },
-    { "name": "Wissa", "pos": "FWD", "price": 6.2, "xpts": 3.55 }
+    {"name": "Raya", "pos": "GK", "price": 6.1, "xpts": 9.92},
+    {"name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 10.03},
+    {"name": "De Cuyper", "pos": "DEF", "price": 5.0, "xpts": 9.93},
+    {"name": "Calafiori", "pos": "DEF", "price": 5.8, "xpts": 9.19},
+    {"name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 7.25},
+    {"name": "Groß", "pos": "MID", "price": 5.8, "xpts": 11.83},
+    {"name": "Schade", "pos": "MID", "price": 6.2, "xpts": 8.85},
+    {"name": "Gibbs-White", "pos": "MID", "price": 8.0, "xpts": 6.9},
+    {"name": "Palmer", "pos": "MID", "price": 9.7, "xpts": 3.89},
+    {"name": "Haaland", "pos": "FWD", "price": 15.6, "xpts": 8.15},
+    {"name": "Wissa", "pos": "FWD", "price": 6.2, "xpts": 3.55}
   ],
+  "formation": "4-4-2",
   "bench": [
-    { "name": "Leno", "pos": "GK", "price": 4.5 },
-    { "name": "Palmer", "pos": "MID", "price": 9.7 },
-    { "name": "Konsa", "pos": "DEF", "price": 4.6 },
-    { "name": "João Pedro", "pos": "FWD", "price": 7.7 }
+    {"name": "Leno", "pos": "GK", "price": 4.5},
+    {"name": "Konsa", "pos": "DEF", "price": 4.6},
+    {"name": "João Pedro", "pos": "FWD", "price": 7.7},
+    {"name": "Gakpo", "pos": "MID", "price": 7.2}
   ],
-  "bench_order_note": "Leno is the bench GK (450/450 mins). Outfield order: 1) Palmer (88 min/GW when fit, gated out of the XI on injury news; first sub if he is passed fit and a starter blanks), 2) Konsa (56 min/GW, fails the 60-min gate), 3) João Pedro (knee, 0 mins GW5, most likely out). Two bench players average more than 45 blind mins (Palmer 88, Pedro 72), so rule C is met.",
+  "lineup_changes_vs_current": [
+    "De Cuyper IN to the XI for Konsa (xPts 9.93 vs null; sim-lab marks Konsa not nailed, so he fails Gate A)",
+    "Egan IN to the XI for Gakpo (75% ankle doubt, xPts 2.42 at FDR4; news-desk flags rotation_risk, so he fails Gate A)",
+    "Schade (transfer) IN to the XI for M.Sangaré (sim-lab marks him not nailed and his price is falling)",
+    "Formation changes from 3-5-2 to 4-4-2",
+    "Armband moves from Gibbs-White to Haaland"
+  ],
   "transfers": {
     "out": "M.Sangaré",
-    "in": "Barnes",
+    "in": "Schade",
     "hits": 0,
-    "bank": 0.5,
-    "ft_used": 1,
-    "reason": "Sell the weakest XI link before tonight's price drop. Sangaré has 3.08 xpts, BRE is on the worst GW6-10 run (FDR 4), he was tactically benched in GW5, sim-lab rates him nailed=false and market-desk has high confidence in a 0.1 drop tonight. Barnes (NEW, 6.1) has 6.93 xpts, 450/450 mins, and NEW is on the easiest GW6-10 run (FDR 2). market-desk expects his price to rise tonight. XI gain is +3.85 xpts at no cost, and 1.0 + 5.6 - 6.1 leaves 0.5 in the bank. After the move the squad has 3 NEW players (Hall, Wissa, Barnes), which is the club limit.",
-    "alternative_gw6_xpts": "Sangaré -> Schade (BRE, 6.2) gives 7.47 xpts, 0.54 more than Barnes this GW. CLAUDE prefers Barnes because Schade stays on BRE's FDR-4 run for GW6-10.",
-    "conditional_upgrades": [
-      "CHECK KONSA'S CLUB: squad.json lists Konsa as ARS, which already puts Raya, Calafiori and Konsa at the 3-per-club limit and makes Saka illegal. intel flags this as a likely cache error (Konsa is normally AVL). If the FPL app shows Konsa at AVL, make Palmer -> Saka (9.5) the 1-FT move instead. Saka has 10.19 xpts and ARS is on the easiest run. Saka replaces Sangaré in the XI for +7.11 xpts, bank goes to 1.2, and the squad gets cover for the ~30%-EO Saka rank risk.",
-      "IF 2 FT ARE AVAILABLE (FT count is not in squad.json): do Konsa -> Mykolenko (EVE 4.6, 8.58 xpts, 450 mins, FDR 2) and Palmer -> Saka. Selling Konsa frees an ARS slot. Mykolenko replaces Egan in the XI for +1.33 and Saka replaces Sangaré for +7.11, a total of +8.44 XI xpts with bank 1.2 and 0 hits. This beats the single Sangaré -> Barnes move.",
-      "WITH A -4 HIT: the same 2-transfer plan nets about +4.44 this GW against +3.85 for the free Barnes move. Only take the hit if the Chelsea presser confirms Palmer is OUT. Otherwise keep Palmer, since medical-bay reports Alonso expects him back for GW6, and reassess at GW7."
-    ],
-    "do_not": "Do not sell João Pedro this GW. He is already benched and costs 0, his return is expected around GW6-7, and the FWD pool at his price is thin."
+    "bank": 0.4,
+    "reason": "M.Sangaré (5.6, xPts 3.7, not nailed, -130k net and a high fall risk) out for Schade (6.2, xPts 8.85, +367k and rising). Bank 1.0 + 5.6 - 6.2 = 0.4. Uses 1 FT. A second move (Gakpo -> Belloumi) would gain about 3.3 xPts against a -4 hit, so it is not worth doing. B.Fernandes (11.9) cannot be afforded from any single sale."
   },
   "chip": {
     "name": "none",
-    "action": "SAVE",
-    "reason": "No trigger is met. TC and BB are used (GW4, GW2). FH needs a BGW with 4+ starters blank, and fixture-room shows no DGW/BGW alerts for GW6-10 (there is also no fixtures.json cache to confirm either way). WC needs 3+ starters rotation-flagged or a 3-GW average below 55. Only 2 starters are hard-flagged (Palmer on news, Konsa at 56 min/GW), Sangaré is a soft flag only (64 min/GW passes the numeric gate), and all three are fixed by bench swaps plus 1 FT. The season average is 67.8 pts/GW (339/5). Deadline status: the first-half FH is still unused and expires at the GW19 deadline (2 Jan), which is 13 GWs away. The forcing rule starts at GW16, so there is no pressure yet. The remaining 'WC×1' is probably the second-half wildcard; check in the app whether it can be used before GW20."
+    "action": "save",
+    "reason": "TC and BB from the first set are already used (TC@GW4, BB@GW2). FH and WC are left. fixture-room has no GW6 data, so no DGW or BGW is confirmed, and FH needs a BGW with 4+ starters blanking. The WC trigger technically fired on the submitted XI (Palmer, Gakpo, Konsa and Sangaré flagged). After bench reshuffles and 1 FT, only 1 starter is still flagged, and those flags are 75% short-term knocks rather than structural rotation, so a rebuild is not justified. The first-set FH is unused and expires at the GW19 deadline (13 GWs away). The forcing rule starts at GW16."
   },
-  "projected_xpts": 100.67,
-  "projected_xpts_note": "Arithmetic checked: 11 starters sum to 92.52, plus Haaland 8.15 as captain, gives 100.67. The total is above 80 because the xpts.json scale is inflated at the top: DEF/GK rows sit at 10-12.8, above Haaland's 8.15, which sim-lab already flagged as miscalibrated. It is not an arithmetic error. Without the transfer (Sangaré starting) the total is 96.82. Compare engines on relative xpts, not the absolute number.",
-  "real_squad_actions": [
-    { "action": "CAPTAIN CHANGE", "from": "Gibbs-White", "to": "Haaland", "priority": "CRITICAL", "reason": "Locked protocol: the captain is the season cum_pts leader among owned nailed premiums (not GK). Haaland has 39 pts and 450/450 mins against Gibbs-White's 28. It agrees with intel's captain_shield (~140% EO, DO NOT FADE) and sim-lab's recommend_c. Haaland's FDR 4 at Liverpool is a matchup signal, and the holdouts showed matchup signals do not beat cum_pts, so it does not change the pick. Captain_trigger is none because this is not a differential." },
-    { "action": "VICE", "to": "Groß", "priority": "HIGH", "reason": "Vice is the next-highest cum_pts starter: Groß has 47, the most in the squad, with 450/450 mins, 11.83 xpts and the top MC EV. This differs from sim-lab, which picked Gibbs-White (28 pts) by limiting the vice to premiums. CLAUDE follows the plain 'next highest cum_pts' vice rule and agrees with intel. Gibbs-White as VC is also acceptable. The vice only matters if Haaland does not play." },
-    { "action": "XI -> BENCH", "target": "Palmer", "priority": "HIGH", "reason": "Rotation-Risk Gate, third condition: news-desk flags rotation_risk and the status is DOUBTFUL 75% (muscular). The sources conflict. medical-bay has 2026 sources (readchelsea 23 Sep, FFS) saying Alonso expects him back vs Bournemouth. news-desk's 'out six more weeks' headline quotes Maresca, who was not the Chelsea manager this season, so it is probably a stale 25/26 story. Even so, he is benched per the rule. He is bench slot 1 so he still autosubs in if he plays and a starter blanks." },
-    { "action": "XI -> BENCH", "target": "Konsa", "priority": "HIGH", "reason": "Rotation-Risk Gate, first condition: 281 mins over 5 GWs is 56.2 min/GW, below 60. He has no xpts row, and sim-lab rates him nailed=false. Egan (437 mins, 7.25 xpts) starts instead." },
-    { "action": "BENCH -> XI", "target": "Egan", "priority": "HIGH", "reason": "Egan (87 min/GW) is the most reliable bench outfielder and takes the 4th DEF slot, giving a 4-4-2." },
-    { "action": "BENCH -> XI", "target": "De Cuyper", "priority": "HIGH", "reason": "De Cuyper has 9.93 xpts and 423 mins. He should never have been benched: he outscores Konsa, Egan, Gakpo and Wissa on xpts." },
-    { "action": "KEEP BENCHED", "target": "João Pedro", "priority": "NOTE", "reason": "Knee sprain, 0 mins in GW5. news-desk expects a return around GW7 and medical-bay around GW6. Either way he does not start blind." },
-    { "action": "HOLD", "target": "M.Sangaré price drop", "priority": "NOTE", "reason": "Handled by the transfer. Sell before tonight's price update to keep the current sale value." }
-  ],
-  "claude_optimal_15": {
-    "budget": 100.0,
-    "cost": 97.0,
-    "bank": 3.0,
-    "method": "Maximise GW6 XI xpts from xpts.json under FPL rules (2/5/5/3, max 3 per club, 100.0m). All starters must pass the rotation gate (at least 300 of 450 mins, i.e. 60 min/GW, and no injury flag). The captain follows the locked protocol.",
-    "formation": "5-4-1",
-    "captain": "Haaland",
-    "vice": "Groß",
-    "starting_xi": [
-      { "name": "Raya", "team": "ARS", "pos": "GK", "price": 6.1, "xpts": 11.88 },
-      { "name": "Tarkowski", "team": "EVE", "pos": "DEF", "price": 6.1, "xpts": 12.76 },
-      { "name": "Calafiori", "team": "ARS", "pos": "DEF", "price": 5.8, "xpts": 11.31 },
-      { "name": "Hall", "team": "NEW", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
-      { "name": "De Cuyper", "team": "BHA", "pos": "DEF", "price": 4.9, "xpts": 9.93 },
-      { "name": "Mykolenko", "team": "EVE", "pos": "DEF", "price": 4.6, "xpts": 8.58 },
-      { "name": "Groß", "team": "BHA", "pos": "MID", "price": 5.8, "xpts": 11.83 },
-      { "name": "Saka", "team": "ARS", "pos": "MID", "price": 9.5, "xpts": 10.19 },
-      { "name": "Schade", "team": "BRE", "pos": "MID", "price": 6.2, "xpts": 7.47 },
-      { "name": "Belloumi", "team": "HUL", "pos": "MID", "price": 5.1, "xpts": 7.21 },
-      { "name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.6, "xpts": 8.15 }
-    ],
-    "bench": [
-      { "name": "Tzolakis", "team": "HUL", "pos": "GK", "price": 4.6 },
-      { "name": "Barnes", "team": "NEW", "pos": "MID", "price": 6.1 },
-      { "name": "Brobbey", "team": "SUN", "pos": "FWD", "price": 5.7 },
-      { "name": "Barry", "team": "EVE", "pos": "FWD", "price": 5.6 }
-    ],
-    "projected_xpts": 117.49,
-    "notes": "The XI sums to 109.34, plus 8.15 for the captain, giving 117.49. Club counts: ARS 3, EVE 3, BHA 2, HUL 2, NEW 2, BRE 1, MCI 1, SUN 1. Ødegaard (8.17) and Gabriel (9.63) are left out because of the ARS limit. Maitland-Niles (9.54) is left out by the minutes gate (177 mins). The optimal XI shares 6 players with the real squad (Raya, Calafiori, Hall, De Cuyper, Groß, Haaland). Its main gaps are Tarkowski, Saka and the EVE defence. Variant: Davis for Mykolenko plus B.Fernandes for Schade adds +0.72 but leaves a weaker bench. Not adopted, since bench depth is not the thing to tune."
-  },
-  "gemini_comparison": "Gemini GW6 picks are not available (gemini.json parse_failed), so CLAUDE is the only independent engine this week and there is no divergence table.",
+  "projected_xpts": 97.64,
+  "projected_xpts_calc": "XI sum 89.49 + Haaland 8.15 (captain) = 97.64. Recomputed because it is above 80 and the arithmetic is correct. The figure is high because xpts.json values run high this GW (DEF/GK at 9-10 each). Treat it as a relative number, not a points forecast.",
   "risks": [
-    "HAALAND AT LIVERPOOL (FDR 4, the MCI run is among the hardest in GW6-10): the lock keeps him as captain. If the Friday presser shows he is benched or injured, the armband passes to VC Groß. The human manager can override with real lineup info.",
-    "PALMER SOURCE CONFLICT: the '6 weeks' headline quotes Maresca and is probably from a previous season, while 26/27 sources quoting Alonso say he returns in GW6. He is benched for safety. If he is confirmed fit and starting, the manager can start him over Wissa (3.55 xpts), which is a human override.",
-    "KONSA CLUB ANOMALY: squad.json says ARS but he is normally AVL. This decides whether Saka can be bought. Check in the FPL app before making the transfer.",
-    "FT COUNT UNKNOWN: squad.json has no free_transfers field. The plan assumes 1 FT. If there are 2, use the Palmer -> Saka plus Konsa -> Mykolenko plan.",
-    "XPTS CALIBRATION: xpts.json puts DEF/GK above premium attackers (Tarkowski 12.76, Raya 11.88 vs Haaland 8.15). The projected 100.67 is inflated in absolute terms. XI choices depend on relative ranks, which the minutes and fixture data also support.",
-    "LIV/BRE/MCI HARD RUN: Gakpo (LIV, FDR 4, 4.76 xpts, 74 min/GW) is the next sale target for GW7 if Palmer and Pedro are resolved.",
-    "WISSA LOW CEILING: 3.55 xpts despite NEW FDR 2 and one missed penalty. He only starts because Pedro is out and Konsa is gated. He is the first XI slot to upgrade if the FWD budget frees up."
+    "Palmer starts as a forced Gate-A exception. Every remaining 11th-man option fails the gate (Konsa not nailed/xPts null, Gakpo and João Pedro 75% doubts). His 3.89 xPts already includes the 75% chance. Konsa is bench 1 and fit, so he is the autosub cover. If Chelsea confirm Palmer before the deadline, keep him. If they rule him out, the autosub covers it.",
+    "Schade's minutes are not checked against blind mins data, which is not in the reports. Confirm he starts for BRE (BRE has 6 injured, which helps his minutes).",
+    "B.Fernandes is not owned (39% overall, ~50% elite, xPts 9.59 at FDR2, rising captain share). This is the biggest unhedged rank risk. It cannot be fixed without a hit or selling Haaland.",
+    "Haaland has FDR4 and the captaincy field is more split than usual. The locked rule stands. Trust a human override only with confirmed lineup or injury news.",
+    "FT count is not in squad.json. Assumed 1 FT. If 2 FT are available, consider Gakpo -> Barnes/Belloumi as well.",
+    "Konsa is listed as ARS in the cache (team field may be wrong). His xpts are missing from xpts.json.",
+    "fixture-room has no GW6+ data, so BGW/DGW detection is blind. Chip decisions must be revisited once features.json is regenerated.",
+    "gemini.json parse failed, so there is no Gemini comparison this GW."
   ]
 }

@@ -1,71 +1,73 @@
 {
   "gw": 6,
+  "generated": "2026-10-02",
   "agent": "intel",
-  "pillar": "ELITE-OWN",
-  "generated": "2026-09-25",
-  "data_quality": {
-    "note": "Cache has no selected_by_percent or captain% fields; league.json template/differential arrays are empty (only the 'Template Players' string). Only three ownership figures are sourced: Haaland 86%, Groß 28.1%, Isak 22.4% (overall, not top-10k). Every other eo_est is an estimate from mini-league template status, price/xPts and web consensus. Treat these as ranges, not measurements.",
-    "sourced": {
-      "Haaland_own_pct": 86.0,
-      "Gross_own_pct": 28.1,
-      "Isak_own_pct": 22.4
-    },
-    "cache_anomaly": "squad.json lists Konsa as ARS (normally AVL). Check this before counting him as Arsenal clean-sheet exposure vs Leeds."
-  },
-  "mini_league": {
-    "rank": 11,
-    "managers": 18,
-    "gap_to_leader": 54,
-    "template_named": ["Haaland", "João Pedro", "Raya", "Calafiori"],
-    "user_owns_all_template": true
+  "method": {
+    "template_proxy": "player_pool.json tsb (selected_by_percent, overall) + cum pts; elite/top-10k EO from web where available",
+    "eo_formula": "eo_est = elite_own% + elite_captain% (x2 multiplier counts once extra); TC ignored",
+    "caveats": [
+      "Overall tsb is a proxy; top-10k ownership typically runs higher for premiums and in-form budget picks",
+      "Web elite data partly mixes seasons; Haaland elite own ~74-84% and elite captaincy ~79% (GW5) treated as estimates",
+      "Web consensus says GW6 captaincy is 'more open than usual' (B.Fernandes / Saka / Haaland split), so Haaland captain share is estimated lower than GW5",
+      "league.json differentials/template arrays empty; gemini.json parse failed"
+    ]
   },
   "template_core": [
-    {"player": "Haaland", "team": "MCI", "owned": true, "eo_est": 140, "eo_basis": "86% own (sourced) + est. ~50-60% captaincy overall; top-10k EO likely 150-175%", "xpts": 8.15},
-    {"player": "Raya", "team": "ARS", "owned": true, "eo_est": 40, "eo_basis": "mini-league template, ARS home vs LEE", "xpts": 11.88},
-    {"player": "João Pedro", "team": "CHE", "owned": true, "eo_est": 35, "eo_basis": "mini-league template, 33pt GW4 haul drove ownership; 75% knee doubt", "xpts": 2.78},
-    {"player": "Calafiori", "team": "ARS", "owned": true, "eo_est": 30, "eo_basis": "mini-league template, ARS home vs LEE", "xpts": 11.31},
-    {"player": "Groß", "team": "BHA", "owned": true, "eo_est": 32, "eo_basis": "28.1% own (sourced) + some captaincy; top xPts MID", "xpts": 11.83},
-    {"player": "Saka", "team": "ARS", "owned": false, "eo_est": 30, "eo_basis": "web consensus template MID, ARS best fixture of GW (LEE home)", "xpts": 10.19},
-    {"player": "B.Fernandes", "team": "MUN", "owned": false, "eo_est": 30, "eo_basis": "Scout top-3 captain pick; premium template MID", "xpts": 8.28},
-    {"player": "Isak", "team": "LIV", "owned": false, "eo_est": 24, "eo_basis": "22.4% own (sourced), hosts MCI", "xpts": 6.49}
+    {"player": "Haaland", "team": "MCI", "own_overall": 73.5, "eo_est": 140, "owned_by_us": true},
+    {"player": "João Pedro", "team": "CHE", "own_overall": 66.7, "eo_est": 70, "owned_by_us": true, "note": "DOUBTFUL 75% (knee); EO falls if he misses"},
+    {"player": "Calafiori", "team": "ARS", "own_overall": 50.6, "eo_est": 55, "owned_by_us": true},
+    {"player": "B.Fernandes", "team": "MUN", "own_overall": 39.2, "eo_est": 70, "owned_by_us": false, "note": "highest-xPts premium (9.59, FDR2); top captain pick on several sites"},
+    {"player": "Raya", "team": "ARS", "own_overall": 42.0, "eo_est": 45, "owned_by_us": true},
+    {"player": "Rogers", "team": "CHE", "own_overall": 40.2, "eo_est": 42, "owned_by_us": false},
+    {"player": "Groß", "team": "BHA", "own_overall": 26.1, "eo_est": 40, "owned_by_us": true, "note": "+778k net transfers; elite ownership rising fast, top MID xPts 11.83"},
+    {"player": "De Cuyper", "team": "BHA", "own_overall": 26.6, "eo_est": 35, "owned_by_us": true},
+    {"player": "Szoboszlai", "team": "LIV", "own_overall": 33.6, "eo_est": 30, "owned_by_us": false, "note": "low xPts 4.45 at FDR4 - safe to leave out"},
+    {"player": "Palmer", "team": "CHE", "own_overall": 26.7, "eo_est": 25, "owned_by_us": true, "note": "DOUBTFUL 75% (muscular)"},
+    {"player": "Gvardiol", "team": "MCI", "own_overall": 26.4, "eo_est": 25, "owned_by_us": false},
+    {"player": "Gabriel", "team": "ARS", "own_overall": 22.9, "eo_est": 28, "owned_by_us": false}
   ],
   "captain_shield": [
     {
       "player": "Haaland",
       "eo_est": 140,
-      "why": "Most-owned (86%) and likely most-captained player. Per CLAUDE.md's locked rule, captain = season cum_pts leader (nailed premium, not a GK), and the backtest showed that fading the template captain cost points. The user owns him but GW5 captain was Gibbs-White with Haaland as VC. If Haaland hauls at ~150% EO, not captaining him costs about 1x his score in relative rank. DO NOT FADE unless a human override has fresh lineup info.",
-      "caveat": "Tough fixture (LIV away, FDR 4) and model xPts 8.15 is lower than several defenders/Groß. That is the kind of matchup signal the holdout found did NOT beat cum_pts, so it should not override the lock. Check cum_pts leader status against live data; the cache has no cum_pts field."
-    }
-  ],
-  "captain_risk_flags": [
-    {
-      "flag": "CAPTAIN_FADE_RISK",
-      "player": "Gibbs-White",
-      "detail": "Current captain in squad.json (carried from GW5). Low EO (est. <10%), xPts 6.9 < Haaland 8.15. Captaining him fades the ~140% EO template captain, which is the exact pattern the backtest punished. Recommend C=Haaland, VC=Groß."
+      "why": "DO NOT FADE. ~74% overall / ~80%+ elite owned, elite captaincy ~79% last GW (expect ~55-65% this GW despite FDR4). Season cum_pts leader among nailed premiums (39 pts, 5 G, xG 4.42, 450 mins) = APEX-locked captain rule. Owned by us; captaining Gibbs-White (15.8% owned) again would be a ~-1x Haaland EO bet - a single Haaland haul (e.g. 13 pts) costs ~13+ pts of rank-relative ground. Backtest lesson: fading template captains lost points.",
+      "priority": 1
     },
     {
-      "flag": "HIGH_XPTS_NON_TEMPLATE_CAPTAIN",
-      "player": "Groß",
-      "detail": "Highest outfield xPts in squad (11.83), but only ~28% own and low captain share. Using him as captain is a rank gamble, not a shield. Good VC choice; captain only by human override."
+      "player": "B.Fernandes",
+      "eo_est": 70,
+      "why": "WATCH / SECONDARY SHIELD. Not owned by us. Highest premium xPts (9.59, captain_xpts 19.18 vs Haaland 16.3) at FDR2; named top GW6 captain by Solio/FPL Copilot, so his captain share is rising among elite. Not owning him while ~20% of elite captain him is the biggest unhedged rank risk in our squad. Does not override APEX captain rule (Haaland), but a transfer-in shields it.",
+      "priority": 2
     }
   ],
   "differentials": [
-    {"player": "Tarkowski", "team": "EVE", "pos": "DEF", "price": 6.1, "eo_est": 5, "ceiling": "high", "xpts": 12.76, "why": "Top xPts in the whole pool, FDR 2. Defender with attacking threat, low ownership. Rank-chase only."},
-    {"player": "Tzolakis", "team": "HUL", "pos": "GK", "price": 4.6, "eo_est": 3, "ceiling": "medium", "xpts": 10.43, "why": "Budget GK with high save/CS xPts. Low priority because Raya is already a template GK."},
-    {"player": "Maitland-Niles", "team": "EVE", "pos": "DEF", "price": 4.5, "eo_est": 2, "ceiling": "medium", "xpts": 9.54, "why": "EVE FDR 2 at 4.5. Cheap alternative to Egan (7.25) for the bench or 5th DEF."},
-    {"player": "Ødegaard", "team": "ARS", "pos": "MID", "price": 6.8, "eo_est": 6, "ceiling": "high", "xpts": 8.17, "why": "Cheap Arsenal attacking exposure vs Leeds (best fixture of GW). Lower-EO way to cover the Arsenal haul risk than Saka."}
+    {"player": "Davis", "team": "IPS", "pos": "DEF", "price": 4.0, "eo_est": 6.9, "xpts": 8.49, "ceiling": "high", "why": "Attacking DEF (2G 2A, xG 1.59 in 5 GWs), FDR2, 450 mins nailed, 4.0m enabler. Best rank-gain value pick."},
+    {"player": "Cunha", "team": "MUN", "pos": "MID", "price": 7.9, "eo_est": 5.7, "xpts": 6.92, "ceiling": "high", "why": "MUN FDR2 attacker at <6% owned; same fixture as the B.Fernandes template haul, so it partially hedges MUN upside cheaply."},
+    {"player": "Mykolenko", "team": "EVE", "pos": "DEF", "price": 4.6, "eo_est": 4.2, "xpts": 8.58, "ceiling": "medium", "why": "EVE FDR2, 3 CS in 5, 450 mins. Cheaper route to the EVE defence than Tarkowski (15.2%)."},
+    {"player": "Branthwaite", "team": "EVE", "pos": "DEF", "price": 5.5, "eo_est": 2.3, "xpts": 8.58, "ceiling": "medium", "why": "Same EVE CS case, 2.3% owned, nailed 450 mins."},
+    {"player": "Barnes", "team": "NEW", "pos": "MID", "price": 6.1, "eo_est": 5.1, "xpts": 6.93, "ceiling": "high", "why": "NEW FDR2, 1G 3A, nailed; price rising (+141k)."},
+    {"player": "Belloumi", "team": "HUL", "pos": "MID", "price": 5.1, "eo_est": 4.7, "xpts": 7.21, "ceiling": "medium", "why": "2G 2A, budget MID with HUL defensive returns."},
+    {"player": "Vuskovic", "team": "BHA", "pos": "DEF", "price": 5.0, "eo_est": 3.4, "xpts": 8.14, "ceiling": "medium", "why": "BHA defence is the hot pick (Groß/De Cuyper template); Vuskovic gets the same CS at 3.4%."},
+    {"player": "Maitland-Niles", "team": "EVE", "pos": "DEF", "price": 4.5, "eo_est": 1.2, "xpts": 9.54, "ceiling": "medium", "why": "Highest-xPts sub-2% player but only 177 mins in 5 GWs -> fails Rotation-Risk Gate (A). Only if lineup confirmed."}
   ],
   "rank_risks": [
-    "Captaincy: Gibbs-White is captain over Haaland (~140% EO). This is the biggest single rank risk for GW6. Switch to C=Haaland.",
-    "Arsenal attack vs Leeds: user has ARS defence (Raya, Calafiori, +Konsa if the ARS listing is correct) but no Saka/Ødegaard. If Saka (xPts 10.19, ~30% EO) hauls, the user falls behind the field.",
-    "Palmer (75%, muscular) is starting with xPts 3.89. If he doesn't play and the bench fails, it hurts, but his EO is falling, so the rank damage is moderate.",
-    "João Pedro (75%, knee) is a mini-league template player on the bench (xPts 2.78). Keeping him benched is fine for EO because his GW6 EO will be low while he is doubtful.",
-    "Mini-league: 54 pts behind the leader with 18 managers. Chase with differentials (Tarkowski/Ødegaard), not with a captain fade. The backtest shows captain fades lose more often than they win."
+    "B.Fernandes not owned: 39% overall, ~50%+ elite, highest premium xPts (9.59, FDR2), rising captain share. Biggest unshielded template gap.",
+    "Captain choice: last GW captain was Gibbs-White (15.8% owned, xPts 6.9). Repeating a non-Haaland captain fades ~140% EO. APEX rule + intel both say Haaland (or human override only with confirmed lineup info).",
+    "Rogers not owned: 40.2% overall, xPts 6.79 - moderate risk only.",
+    "João Pedro (66.7%) and Palmer (26.7%) both DOUBTFUL 75%; Gakpo DOUBTFUL 75%. If they start we hold the template; if they miss, field EO drops - no action needed for rank, but they cost us playing points if benched late.",
+    "Groß surge (+778k): already owned - keep; selling him would open a growing EO hole.",
+    "Haaland FDR4: captaincy field is more split than usual (B.Fernandes / Saka alternatives). Haaland EO lower than GW5 means a Haaland blank hurts the field less, but a Haaland haul is still the single largest swing."
   ],
+  "squad_eo_snapshot": {
+    "owned_template": ["Haaland", "João Pedro", "Calafiori", "Raya", "Groß", "De Cuyper", "Palmer"],
+    "missing_template": ["B.Fernandes", "Rogers", "Gabriel", "Gvardiol", "Szoboszlai"],
+    "low_eo_owned": ["Gibbs-White 15.8", "Gakpo 12.6", "M.Sangaré 10.4", "Wissa 18.9", "Konsa 19.4", "Hall 16.1"]
+  },
   "sources": [
     "https://fplcopilot.com/blog/fpl-tips-gw6",
-    "https://www.rotowire.com/soccer/article/fpl-gameweek-6-rankings-best-players-captain-picks-gw6-135927",
-    "https://fpl-assistent.com/gameweek/2026-27/6",
-    "https://www.fantasyfootballhub.co.uk/fantasy-premier-league-ultimate-guide-fpl-tips"
+    "https://fpl.solioanalytics.com/api/data/latest",
+    "https://www.fantasyfootballfix.com/blog-index/gw6-fpl-ownership-statistics/",
+    "https://smartdraftboard.com/fpl-captain-picks",
+    "https://plan.livefpl.net//top10k"
   ]
 }

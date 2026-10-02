@@ -1,73 +1,40 @@
 {
   "gw": 6,
-  "generated_from": {
-    "price_source": "data/cache/price.json",
-    "price_updated": "2026-09-24T17:24:26.328Z",
-    "squad_source": "data/cache/squad.json"
-  },
+  "method": "price.json net_transfers/net_rate (no ownership base available in read files; net_rate used as momentum proxy). price_change field > 0 or < 0 means a move already registered this event, so remaining risk is lower.",
   "likely_rises": [
-    { "player": "Kostoulas", "team": "BHA", "net_transfers": 256996, "net_rate": 69.458, "price_change_flag": 0.1, "confidence": "high", "in_squad": false },
-    { "player": "Manzambi", "team": "AVL", "net_transfers": 23011, "net_rate": 57.527, "price_change_flag": 0, "confidence": "high", "in_squad": false },
-    { "player": "Schuster", "team": "BRE", "net_transfers": 11971, "net_rate": 39.903, "price_change_flag": 0, "confidence": "medium", "in_squad": false },
-    { "player": "Schade", "team": "BRE", "net_transfers": 326190, "net_rate": 29.654, "price_change_flag": 0.1, "confidence": "high", "in_squad": false },
-    { "player": "Groß", "team": "BHA", "net_transfers": 708872, "net_rate": 25.137, "price_change_flag": 0.1, "confidence": "high", "in_squad": true },
-    { "player": "King", "team": "FUL", "net_transfers": 57571, "net_rate": 23.028, "price_change_flag": 0, "confidence": "medium", "in_squad": false },
-    { "player": "Barnes", "team": "NEW", "net_transfers": 126201, "net_rate": 22.946, "price_change_flag": 0.1, "confidence": "high", "in_squad": false },
-    { "player": "Brobbey", "team": "SUN", "net_transfers": 160582, "net_rate": 22.617, "price_change_flag": -0.1, "confidence": "medium", "in_squad": false, "note": "conflicting signal - positive net transfers but negative price_change_flag in source data" },
-    { "player": "J.Timber", "team": "ARS", "net_transfers": 6994, "net_rate": 17.485, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "N.Jackson", "team": "AVL", "net_transfers": 22696, "net_rate": 16.211, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "Anthony", "team": "BRE", "net_transfers": 1511, "net_rate": 15.11, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "Andersen", "team": "FUL", "net_transfers": 1397, "net_rate": 13.97, "price_change_flag": 0, "confidence": "low", "in_squad": false }
+    {"player": "Kostoulas", "net_transfers": 294103, "confidence": "high"},
+    {"player": "Manzambi", "net_transfers": 24802, "confidence": "medium"},
+    {"player": "Schade", "net_transfers": 367013, "confidence": "high"},
+    {"player": "Groß", "net_transfers": 777867, "confidence": "high"},
+    {"player": "Barnes", "net_transfers": 141486, "confidence": "medium"},
+    {"player": "Schuster", "net_transfers": 12799, "confidence": "low"},
+    {"player": "King", "net_transfers": 69234, "confidence": "low"},
+    {"player": "Affengruber", "net_transfers": 4356, "confidence": "low"}
   ],
   "likely_falls": [
-    { "player": "Elanga", "team": "NEW", "net_transfers": -153565, "net_rate": -32.673, "price_change_flag": -0.1, "confidence": "high", "in_squad": false },
-    { "player": "Wilson", "team": "LEE", "net_transfers": -35803, "net_rate": -21.061, "price_change_flag": 0, "confidence": "medium", "in_squad": false },
-    { "player": "J.Ramsey", "team": "NEW", "net_transfers": -4179, "net_rate": -20.895, "price_change_flag": 0, "confidence": "medium", "in_squad": false },
-    { "player": "Dedić", "team": "NEW", "net_transfers": -34053, "net_rate": -18.918, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "Kluivert", "team": "BOU", "net_transfers": -13230, "net_rate": -14.7, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "Foden", "team": "MCI", "net_transfers": -24683, "net_rate": -13.713, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "M.Sangaré", "team": "BRE", "net_transfers": -120719, "net_rate": -12.072, "price_change_flag": -0.1, "confidence": "high", "in_squad": true },
-    { "player": "James", "team": "CHE", "net_transfers": -68990, "net_rate": -11.693, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "White", "team": "ARS", "net_transfers": -55678, "net_rate": -11.136, "price_change_flag": 0, "confidence": "low", "in_squad": false },
-    { "player": "Awoniyi", "team": "COV", "net_transfers": -4398, "net_rate": -10.995, "price_change_flag": -0.1, "confidence": "high", "in_squad": false },
-    { "player": "Maatsen", "team": "AVL", "net_transfers": -5412, "net_rate": -10.824, "price_change_flag": -0.1, "confidence": "high", "in_squad": false },
-    { "player": "Fatawu", "team": "IPS", "net_transfers": -2149, "net_rate": -10.745, "price_change_flag": 0, "confidence": "low", "in_squad": false }
+    {"player": "Elanga", "net_transfers": -165917, "confidence": "high"},
+    {"player": "M.Sangaré", "net_transfers": -130290, "confidence": "high"},
+    {"player": "Wilson", "net_transfers": -40243, "confidence": "medium"},
+    {"player": "Dedić", "net_transfers": -37121, "confidence": "medium"},
+    {"player": "James", "net_transfers": -77145, "confidence": "medium"},
+    {"player": "White", "net_transfers": -64158, "confidence": "low"},
+    {"player": "Foden", "net_transfers": -28066, "confidence": "low"}
   ],
   "act_now": [
     {
-      "player": "M.Sangaré",
-      "team": "BRE",
-      "direction": "fall",
-      "net_transfers": -120719,
-      "net_rate": -12.072,
-      "confidence": "high",
-      "in_squad": true,
-      "squad_slot": 9,
-      "is_starting": true,
-      "action": "Owned, price_change_flag -0.1 signals a drop is imminent tonight. No sell target lined up in this data - if a transfer out is already planned for other reasons, do it before the deadline to lock in current sale value; otherwise no forced action since it stays owned."
+      "move": "Sell M.Sangaré (owned, 5.6, xPts 3.7) before deadline",
+      "reason": "Heavy net selling (-130k), fall risk; weak xPts. Bank 1.0 + 5.6 funds Schade (6.2, xPts 8.85, rising).",
+      "urgency": "high"
     },
     {
-      "player": "Groß",
-      "team": "BHA",
-      "direction": "rise",
-      "net_transfers": 708872,
-      "net_rate": 25.137,
-      "confidence": "high",
-      "in_squad": true,
-      "squad_slot": 5,
-      "is_starting": true,
-      "action": "Owned, price_change_flag +0.1 signals a rise is imminent tonight - good news, no action needed, hold."
-    },
-    { "player": "Kostoulas", "team": "BHA", "direction": "rise", "net_transfers": 256996, "net_rate": 69.458, "confidence": "high", "in_squad": false, "action": "Not owned - if considering as a transfer-in target, buy before deadline to beat the rise." },
-    { "player": "Schade", "team": "BRE", "direction": "rise", "net_transfers": 326190, "net_rate": 29.654, "confidence": "high", "in_squad": false, "action": "Not owned - buy before deadline if targeting, price flagged to rise tonight." },
-    { "player": "Barnes", "team": "NEW", "direction": "rise", "net_transfers": 126201, "net_rate": 22.946, "confidence": "high", "in_squad": false, "action": "Not owned - buy before deadline if targeting, price flagged to rise tonight." },
-    { "player": "Elanga", "team": "NEW", "direction": "fall", "net_transfers": -153565, "net_rate": -32.673, "confidence": "high", "in_squad": false, "action": "Not owned - no squad action required, watch as a potential cheaper buy after drop." },
-    { "player": "Awoniyi", "team": "COV", "direction": "fall", "net_transfers": -4398, "net_rate": -10.995, "confidence": "high", "in_squad": false, "action": "Not owned - no squad action required." },
-    { "player": "Maatsen", "team": "AVL", "direction": "fall", "net_transfers": -5412, "net_rate": -10.824, "confidence": "high", "in_squad": false, "action": "Not owned - no squad action required." },
-    { "player": "Brobbey", "team": "SUN", "direction": "rise", "net_transfers": 160582, "net_rate": 22.617, "confidence": "medium", "in_squad": false, "action": "Not owned - conflicting signal in source data (positive transfers but negative price_change_flag), monitor rather than act." }
+      "move": "Hold Groß (owned, 5.8)",
+      "reason": "Strong net buying (+778k), top xPts; price lock-in already benefits you.",
+      "urgency": "info"
+    }
   ],
-  "squad_watch": [
-    { "player": "Groß", "status": "rising tonight", "in_squad": true, "recommendation": "hold" },
-    { "player": "M.Sangaré", "status": "falling tonight", "in_squad": true, "recommendation": "hold unless already planning to sell, then sell before deadline" }
+  "monitor": ["Kostoulas", "Manzambi", "Barnes", "Elanga", "Wilson", "James"],
+  "caveats": [
+    "Palmer, Gakpo, Joao Pedro are 75% doubtful: injury news could trigger sell pressure but this is a squad issue, not a price call.",
+    "Ownership base not used; confidence is heuristic."
   ]
 }

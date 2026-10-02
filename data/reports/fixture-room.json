@@ -1,39 +1,16 @@
 {
   "gw": 6,
-  "window": "GW6-10",
-  "data_note": "xpts.json provides one pre-aggregated 'fdr' score per player/team (no per-GW next[] array, no explicit dgw/bgw boolean field in current cache schema). Values below are the team-level fdr as given (consistent across every player on that team), ranked ascending = easier run. No home/away split available at this granularity, so weighting could not be independently recomputed.",
-  "squad_teams_fdr": [
-    { "team": "ARS", "fdr": 2 },
-    { "team": "NEW", "fdr": 2 },
-    { "team": "FUL", "fdr": 2 },
-    { "team": "BHA", "fdr": 3 },
-    { "team": "CHE", "fdr": 3 },
-    { "team": "NFO", "fdr": 3 },
-    { "team": "HUL", "fdr": 3 },
-    { "team": "LIV", "fdr": 4 },
-    { "team": "BRE", "fdr": 4 },
-    { "team": "MCI", "fdr": 4 }
-  ],
-  "best_runs": [
-    { "team": "ARS", "fdr_avg": 2, "window": "GW6-10", "squad_players": ["Raya", "Konsa", "Calafiori"] },
-    { "team": "NEW", "fdr_avg": 2, "window": "GW6-10", "squad_players": ["Hall", "Wissa"] },
-    { "team": "FUL", "fdr_avg": 2, "window": "GW6-10", "squad_players": ["Leno"] }
-  ],
-  "worst_runs": [
-    { "team": "LIV", "fdr_avg": 4, "window": "GW6-10", "squad_players": ["Gakpo"] },
-    { "team": "BRE", "fdr_avg": 4, "window": "GW6-10", "squad_players": ["M.Sangaré"] },
-    { "team": "MCI", "fdr_avg": 4, "window": "GW6-10", "squad_players": ["Haaland"] }
-  ],
-  "mid_runs": [
-    { "team": "BHA", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Groß", "De Cuyper"] },
-    { "team": "CHE", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Palmer", "João Pedro"] },
-    { "team": "NFO", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Gibbs-White"] },
-    { "team": "HUL", "fdr_avg": 3, "window": "GW6-10", "squad_players": ["Egan"] }
-  ],
-  "league_context": {
-    "toughest_run_overall_not_in_squad": { "team": "LEE", "fdr_avg": 5 }
-  },
+  "status": "NO_FIXTURE_DATA",
+  "data_gap": "data/features.json is stale: meta.target_gw=1, generated 2026-07-23, fdr.next covers GW1-5 only. No GW6-10 fixture/FDR data exists in data/cache or data-lab.json (xpts.json carries only a single GW6 fdr value per player). Ranking GW1-5 as a GW6 window would be misleading, so no ranking was produced. Regenerate features.json with target_gw=6 and rerun.",
+  "best_runs": [],
+  "worst_runs": [],
   "dgw_alerts": [],
   "bgw_alerts": [],
-  "alert_note": "No dgw/bgw fields present anywhere in data/cache/xpts.json or data/cache/squad.json for GW6-10 — no double or blank gameweek could be confirmed or ruled out from this data source. Recommend cross-checking against fixtures.json / official FPL fixture list before acting on chip timing (FH/WC)."
+  "partial_signals": {
+    "gw6_single_fixture_fdr_from_xpts": {
+      "easy_fdr2": ["EVE (Tarkowski, Maitland-Niles)", "NEW (Hall)", "MUN (B.Fernandes)"],
+      "mid_fdr3": ["BHA (Gross, De Cuyper)", "HUL (Tzolakis)", "ARS (Raya, Calafiori)", "BRE (Schade)"]
+    },
+    "note": "GW6 only, home/away not known. Not a next-5 ranking. DGW/BGW cannot be assessed; chips left are FH and WC."
+  }
 }
