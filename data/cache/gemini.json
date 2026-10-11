@@ -1,34 +1,34 @@
 {
-  "updated": "2026-10-02T02:16:43.588Z",
+  "updated": "2026-10-11T02:05:54.377Z",
   "engine": "gemini",
-  "gw": 6,
-  "captain": "Tarkowski",
-  "captain_xpts": 12.76,
-  "vice_captain": "Groß",
+  "gw": 7,
+  "captain": "Groß",
+  "captain_xpts": 15.5,
+  "vice_captain": "De Cuyper",
   "starting_xi": [
     "Raya",
-    "Hall",
-    "Calafiori",
     "De Cuyper",
-    "Egan",
-    "Tarkowski",
+    "Calafiori",
+    "Hall",
     "Groß",
-    "Gibbs-White",
     "Palmer",
-    "Gakpo",
-    "Haaland"
+    "Gibbs-White",
+    "Barnes",
+    "Haaland",
+    "João Pedro",
+    "Kostoulas"
   ],
   "bench": [
     "Leno",
-    "M.Sangaré",
     "Wissa",
-    "João Pedro"
+    "Konsa",
+    "Egan"
   ],
-  "transfer_out": "Konsa",
-  "transfer_in": "Tarkowski",
-  "transfer_reason": "Replace Konsa (no xPts) with Tarkowski who has top xPts (12.76) and FDR2.",
+  "transfer_out": "Wissa",
+  "transfer_in": "Kostoulas",
+  "transfer_reason": "Fund-freeing upgrade to in-form starting forward Kostoulas (xPts 6.96) with favorable FDR2 fixture",
   "chip": null,
-  "projected_xpts": 91.82,
+  "projected_xpts": 81.21,
   "confidence": "medium",
-  "key_risk": "Several attackers (Palmer, Gakpo, João Pedro) are flagged doubtful."
+  "key_risk": "Kostoulas minutes risk and relying on unmodeled midfield differentials"
 }
