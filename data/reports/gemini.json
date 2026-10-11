@@ -1,18 +1,14 @@
 {
   "engine": "gemini",
   "gw": 6,
-  "status": "no_picks/parse_failed",
-  "error": "parse_failed",
-  "note": "gemini.json cache had empty raw output; no picks relayed.",
-  "source_updated": "2026-10-01T17:24:26.523Z",
-  "captain": null,
-  "vice": null,
-  "starting_xi": [],
-  "bench": [],
-  "transfer_out": null,
-  "transfer_in": null,
+  "captain": "Tarkowski",
+  "vice": "Groß",
+  "starting_xi": ["Raya", "Hall", "Calafiori", "De Cuyper", "Egan", "Tarkowski", "Groß", "Gibbs-White", "Palmer", "Gakpo", "Haaland"],
+  "bench": ["Leno", "M.Sangaré", "Wissa", "João Pedro"],
+  "transfer_out": "Konsa",
+  "transfer_in": "Tarkowski",
   "chip": null,
-  "projected_xpts": null,
-  "confidence": null,
-  "key_risk": null
+  "projected_xpts": 91.82,
+  "confidence": "medium",
+  "key_risk": "Several attackers (Palmer, Gakpo, João Pedro) are flagged doubtful."
 }

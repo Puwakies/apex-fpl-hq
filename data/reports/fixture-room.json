@@ -1,16 +1,21 @@
 {
   "gw": 6,
-  "status": "NO_FIXTURE_DATA",
-  "data_gap": "data/features.json is stale: meta.target_gw=1, generated 2026-07-23, fdr.next covers GW1-5 only. No GW6-10 fixture/FDR data exists in data/cache or data-lab.json (xpts.json carries only a single GW6 fdr value per player). Ranking GW1-5 as a GW6 window would be misleading, so no ranking was produced. Regenerate features.json with target_gw=6 and rerun.",
-  "best_runs": [],
-  "worst_runs": [],
+  "data_caveat": "data/features.json is stale (generated 2026-07-23, target_gw 1, fdr.next covers GW1-5) so no true GW6-10 window exists. Ranking uses the single-GW6 fdr in data/cache/xpts.json; away/home weighting not possible (no loc data).",
+  "best_runs": [
+    {"team": "EVE", "fdr_avg": 2, "window": "GW6 only", "note": "best DEF run: Tarkowski 12.76 xPts, Maitland-Niles 9.54, Branthwaite/Mykolenko 8.58, Pickford 8.10"},
+    {"team": "NEW", "fdr_avg": 2, "window": "GW6 only", "note": "owned: Hall (10.03 xPts), Wissa; also Barnes, Botman"},
+    {"team": "MUN", "fdr_avg": 2, "window": "GW6 only", "note": "best attack run: B.Fernandes 9.59, Cunha 6.92, Mbeumo 6.79"},
+    {"team": "FUL", "fdr_avg": 2, "window": "GW6 only", "note": "Leno owned (bench), Castagne 6.24"},
+    {"team": "IPS", "fdr_avg": 2, "window": "GW6 only", "note": "Davis 8.49 xPts at 4.0m"}
+  ],
+  "worst_runs": [
+    {"team": "LEE", "fdr_avg": 5, "window": "GW6 only"},
+    {"team": "MCI", "fdr_avg": 4, "window": "GW6 only", "note": "owned: Haaland (15.6m, 8.15 xPts)"},
+    {"team": "LIV", "fdr_avg": 4, "window": "GW6 only", "note": "owned: Gakpo (also DOUBTFUL 75%)"},
+    {"team": "BOU", "fdr_avg": 4, "window": "GW6 only"},
+    {"team": "TOT", "fdr_avg": 4, "window": "GW6 only"}
+  ],
   "dgw_alerts": [],
   "bgw_alerts": [],
-  "partial_signals": {
-    "gw6_single_fixture_fdr_from_xpts": {
-      "easy_fdr2": ["EVE (Tarkowski, Maitland-Niles)", "NEW (Hall)", "MUN (B.Fernandes)"],
-      "mid_fdr3": ["BHA (Gross, De Cuyper)", "HUL (Tzolakis)", "ARS (Raya, Calafiori)", "BRE (Schade)"]
-    },
-    "note": "GW6 only, home/away not known. Not a next-5 ranking. DGW/BGW cannot be assessed; chips left are FH and WC."
-  }
+  "bgw_note": "All 20 teams have at least one player in xpts.json for GW6, so no blank detected for GW6. GW7+ blanks/doubles cannot be checked until features.json is regenerated."
 }

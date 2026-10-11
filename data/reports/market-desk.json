@@ -1,40 +1,37 @@
 {
   "gw": 6,
-  "method": "price.json net_transfers/net_rate (no ownership base available in read files; net_rate used as momentum proxy). price_change field > 0 or < 0 means a move already registered this event, so remaining risk is lower.",
+  "source": "data/cache/price.json (updated 2026-10-02T02:16:37Z; stale vs 2026-10-11, verify live before acting)",
   "likely_rises": [
-    {"player": "Kostoulas", "net_transfers": 294103, "confidence": "high"},
-    {"player": "Manzambi", "net_transfers": 24802, "confidence": "medium"},
-    {"player": "Schade", "net_transfers": 367013, "confidence": "high"},
-    {"player": "Groß", "net_transfers": 777867, "confidence": "high"},
-    {"player": "Barnes", "net_transfers": 141486, "confidence": "medium"},
-    {"player": "Schuster", "net_transfers": 12799, "confidence": "low"},
-    {"player": "King", "net_transfers": 69234, "confidence": "low"},
-    {"player": "Affengruber", "net_transfers": 4356, "confidence": "low"}
+    {"player": "Kostoulas", "net_transfers": 295885, "confidence": "high"},
+    {"player": "Groß", "net_transfers": 781166, "confidence": "high"},
+    {"player": "Schade", "net_transfers": 369094, "confidence": "high"},
+    {"player": "Manzambi", "net_transfers": 24904, "confidence": "medium"},
+    {"player": "Barnes", "net_transfers": 142388, "confidence": "medium"},
+    {"player": "King", "net_transfers": 69982, "confidence": "medium"},
+    {"player": "Schuster", "net_transfers": 12858, "confidence": "low"},
+    {"player": "Affengruber", "net_transfers": 4443, "confidence": "low"},
+    {"player": "Brobbey", "net_transfers": 148978, "confidence": "low"},
+    {"player": "J.Timber", "net_transfers": 8613, "confidence": "low"},
+    {"player": "N.Jackson", "net_transfers": 28341, "confidence": "low"},
+    {"player": "Anthony", "net_transfers": 1724, "confidence": "low"}
   ],
   "likely_falls": [
-    {"player": "Elanga", "net_transfers": -165917, "confidence": "high"},
-    {"player": "M.Sangaré", "net_transfers": -130290, "confidence": "high"},
-    {"player": "Wilson", "net_transfers": -40243, "confidence": "medium"},
-    {"player": "Dedić", "net_transfers": -37121, "confidence": "medium"},
-    {"player": "James", "net_transfers": -77145, "confidence": "medium"},
-    {"player": "White", "net_transfers": -64158, "confidence": "low"},
-    {"player": "Foden", "net_transfers": -28066, "confidence": "low"}
+    {"player": "Elanga", "net_transfers": -166475, "confidence": "high"},
+    {"player": "M.Sangaré", "net_transfers": -130729, "confidence": "high"},
+    {"player": "James", "net_transfers": -77531, "confidence": "medium"},
+    {"player": "White", "net_transfers": -64524, "confidence": "medium"},
+    {"player": "Wilson", "net_transfers": -40432, "confidence": "medium"},
+    {"player": "Dedić", "net_transfers": -37284, "confidence": "medium"},
+    {"player": "Foden", "net_transfers": -28242, "confidence": "low"},
+    {"player": "Kluivert", "net_transfers": -15821, "confidence": "low"},
+    {"player": "Maatsen", "net_transfers": -6142, "confidence": "low"},
+    {"player": "J.Ramsey", "net_transfers": -4665, "confidence": "low"},
+    {"player": "Awoniyi", "net_transfers": -4970, "confidence": "low"},
+    {"player": "Fatawu", "net_transfers": -2464, "confidence": "low"}
   ],
   "act_now": [
-    {
-      "move": "Sell M.Sangaré (owned, 5.6, xPts 3.7) before deadline",
-      "reason": "Heavy net selling (-130k), fall risk; weak xPts. Bank 1.0 + 5.6 funds Schade (6.2, xPts 8.85, rising).",
-      "urgency": "high"
-    },
-    {
-      "move": "Hold Groß (owned, 5.8)",
-      "reason": "Strong net buying (+778k), top xPts; price lock-in already benefits you.",
-      "urgency": "info"
-    }
+    {"player": "M.Sangaré", "owned": true, "action": "Sell before deadline if a transfer is already planned; high fall risk, -130,729 net", "urgency": "high"},
+    {"player": "Groß", "owned": true, "action": "Hold; already rising and in squad, no action needed", "urgency": "none"}
   ],
-  "monitor": ["Kostoulas", "Manzambi", "Barnes", "Elanga", "Wilson", "James"],
-  "caveats": [
-    "Palmer, Gakpo, Joao Pedro are 75% doubtful: injury news could trigger sell pressure but this is a squad issue, not a price call.",
-    "Ownership base not used; confidence is heuristic."
-  ]
+  "monitor": ["Kostoulas", "Schade", "Barnes", "Elanga", "Wilson", "Foden"]
 }

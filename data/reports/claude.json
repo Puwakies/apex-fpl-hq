@@ -1,60 +1,59 @@
 {
   "engine": "claude",
   "gw": 6,
+  "generated": "2026-10-11",
+  "data_freshness": "cache stamped 2026-10-02T02:16Z (9 days old). news/medical/market/sim reports are GW5 (Sep 17-18); fixture.json is GW38 25/26 (stale, ignored). Only intel.json and data-lab.json are GW6.",
   "captain": "Haaland",
   "captain_type": "template",
   "captain_trigger": "none",
-  "captain_reason": "LOCKED rule: Haaland = season cum_pts leader among owned nailed premiums (39 pts / 5 GP). Also intel.captain_shield priority 1 (EO ~140%), and he is fit, so the shield cannot be faded. Groß (47) and De Cuyper (38) have more points but are not premiums, so they fall outside the rule. Last GW's C Gibbs-White moves to vice.",
-  "vice": "Gibbs-White",
+  "captain_reason": "Locked cum_pts rule: Haaland is the season cum_pts leader among owned nailed premiums (33 pts after GW4 per sim-lab, 39 per intel web data) with 100% mins share. Also intel.captain_shield (est EO ~150%), so he must not be faded. João Pedro ties on cum_pts but is DOUBTFUL (75%) and medical has him OUT until about GW7. No differential trigger: GW6 is early season, 11th of 18 and 54 pts behind the leader, but this is not a late-season rank chase.",
+  "vice": "Groß",
+  "vice_reason": "Next highest cum_pts in the XI (33, tied), nailed, highest xPts in the squad (11.83). Saka (sim-lab VC) is no longer owned.",
   "starting_xi": [
-    {"name": "Raya", "pos": "GK", "price": 6.1, "xpts": 9.92},
-    {"name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 10.03},
-    {"name": "De Cuyper", "pos": "DEF", "price": 5.0, "xpts": 9.93},
-    {"name": "Calafiori", "pos": "DEF", "price": 5.8, "xpts": 9.19},
-    {"name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 7.25},
-    {"name": "Groß", "pos": "MID", "price": 5.8, "xpts": 11.83},
-    {"name": "Schade", "pos": "MID", "price": 6.2, "xpts": 8.85},
-    {"name": "Gibbs-White", "pos": "MID", "price": 8.0, "xpts": 6.9},
-    {"name": "Palmer", "pos": "MID", "price": 9.7, "xpts": 3.89},
-    {"name": "Haaland", "pos": "FWD", "price": 15.6, "xpts": 8.15},
-    {"name": "Wissa", "pos": "FWD", "price": 6.2, "xpts": 3.55}
+    { "name": "Raya", "pos": "GK", "price": 6.1, "xpts": 9.92 },
+    { "name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
+    { "name": "De Cuyper", "pos": "DEF", "price": 5.0, "xpts": 9.93 },
+    { "name": "Calafiori", "pos": "DEF", "price": 5.8, "xpts": 9.19 },
+    { "name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 7.25 },
+    { "name": "Groß", "pos": "MID", "price": 5.8, "xpts": 11.83 },
+    { "name": "Schade", "pos": "MID", "price": 6.2, "xpts": 8.85 },
+    { "name": "Gibbs-White", "pos": "MID", "price": 8.0, "xpts": 6.9 },
+    { "name": "Palmer", "pos": "MID", "price": 9.7, "xpts": 3.89 },
+    { "name": "Haaland", "pos": "FWD", "price": 15.6, "xpts": 8.15 },
+    { "name": "Wissa", "pos": "FWD", "price": 6.2, "xpts": 3.55 }
   ],
   "formation": "4-4-2",
   "bench": [
-    {"name": "Leno", "pos": "GK", "price": 4.5},
-    {"name": "Konsa", "pos": "DEF", "price": 4.6},
-    {"name": "João Pedro", "pos": "FWD", "price": 7.7},
-    {"name": "Gakpo", "pos": "MID", "price": 7.2}
+    { "name": "Leno", "pos": "GK", "price": 4.5 },
+    { "name": "M.Sangaré", "pos": "MID", "price": 5.6 },
+    { "name": "João Pedro", "pos": "FWD", "price": 7.7 },
+    { "name": "Konsa", "pos": "DEF", "price": 4.6 }
   ],
-  "lineup_changes_vs_current": [
-    "De Cuyper IN to the XI for Konsa (xPts 9.93 vs null; sim-lab marks Konsa not nailed, so he fails Gate A)",
-    "Egan IN to the XI for Gakpo (75% ankle doubt, xPts 2.42 at FDR4; news-desk flags rotation_risk, so he fails Gate A)",
-    "Schade (transfer) IN to the XI for M.Sangaré (sim-lab marks him not nailed and his price is falling)",
-    "Formation changes from 3-5-2 to 4-4-2",
-    "Armband moves from Gibbs-White to Haaland"
-  ],
+  "bench_order_note": "Sangaré is the first outfield sub, so he covers Palmer (75%) on a like-for-like MID autosub. João Pedro is 2nd (75% doubt, medical says out until about GW7). Konsa is 3rd (mins share 0.531, below the Rule A 60-min gate, and has no xPts row).",
   "transfers": {
-    "out": "M.Sangaré",
+    "out": "Gakpo",
     "in": "Schade",
     "hits": 0,
-    "bank": 0.4,
-    "reason": "M.Sangaré (5.6, xPts 3.7, not nailed, -130k net and a high fall risk) out for Schade (6.2, xPts 8.85, +367k and rising). Bank 1.0 + 5.6 - 6.2 = 0.4. Uses 1 FT. A second move (Gakpo -> Belloumi) would gain about 3.3 xPts against a -4 hit, so it is not worth doing. B.Fernandes (11.9) cannot be afforded from any single sale."
+    "bank": 2.0,
+    "reason": "Gakpo (7.2) is DOUBTFUL (ankle, 75%), has mins share 0.778 (nailed=false) and xPts of only 2.42 at FDR 4. Schade (6.2, BRE) has xPts 8.85, is rising in price (+369k net) and goes straight into the XI over Sangaré, about +5.2 xPts this GW. It also frees about 1.0m. Alternative considered: Konsa to Maitland-Niles (about +5.8 this GW). It is close on GW6 points, but it leaves 7.2m tied up in a low-xPts doubt. A second move (Palmer or Konsa out) for a -4 hit is marginal (+1 net at best), so it was rejected. Assumes 1 FT (not in squad.json) and a sell price of 7.2 (check the actual sale price)."
   },
   "chip": {
     "name": "none",
     "action": "save",
-    "reason": "TC and BB from the first set are already used (TC@GW4, BB@GW2). FH and WC are left. fixture-room has no GW6 data, so no DGW or BGW is confirmed, and FH needs a BGW with 4+ starters blanking. The WC trigger technically fired on the submitted XI (Palmer, Gakpo, Konsa and Sangaré flagged). After bench reshuffles and 1 FT, only 1 starter is still flagged, and those flags are 75% short-term knocks rather than structural rotation, so a rebuild is not justified. The first-set FH is unused and expires at the GW19 deadline (13 GWs away). The forcing rule starts at GW16."
+    "reason": "No DGW or BGW is confirmed (no fixtures.json in cache, and fixture.json is stale GW38 25/26 data). So TC, BB and FH conditions are not met. WC: only Konsa fails the strict <60-min gate, so not 3+ rotation-flagged starters. Points average is about 68/GW (339 over 5 GWs), above the 55 threshold. Chips used: BB@GW2, WC@GW3, TC@GW4. Remaining: FH (first-half set, expires at the GW19 deadline, 13 GWs away, not in the GW16-18 forcing window yet) and WC x1 (assumed to be the second-half set)."
   },
   "projected_xpts": 97.64,
-  "projected_xpts_calc": "XI sum 89.49 + Haaland 8.15 (captain) = 97.64. Recomputed because it is above 80 and the arithmetic is correct. The figure is high because xpts.json values run high this GW (DEF/GK at 9-10 each). Treat it as a relative number, not a points forecast.",
+  "projected_xpts_note": "Recomputed: 11 starters sum to 89.49, plus Haaland 8.15 as captain = 97.64. This is above the 80 sanity band because the cache xPts scale is inflated (DEF/GK at 9-10 each, and Gemini's projection is similarly 91.82). It is not an arithmetic error. Discounting Palmer to 75% gives about 96.7.",
   "risks": [
-    "Palmer starts as a forced Gate-A exception. Every remaining 11th-man option fails the gate (Konsa not nailed/xPts null, Gakpo and João Pedro 75% doubts). His 3.89 xPts already includes the 75% chance. Konsa is bench 1 and fit, so he is the autosub cover. If Chelsea confirm Palmer before the deadline, keep him. If they rule him out, the autosub covers it.",
-    "Schade's minutes are not checked against blind mins data, which is not in the reports. Confirm he starts for BRE (BRE has 6 injured, which helps his minutes).",
-    "B.Fernandes is not owned (39% overall, ~50% elite, xPts 9.59 at FDR2, rising captain share). This is the biggest unhedged rank risk. It cannot be fixed without a hit or selling Haaland.",
-    "Haaland has FDR4 and the captaincy field is more split than usual. The locked rule stands. Trust a human override only with confirmed lineup or injury news.",
-    "FT count is not in squad.json. Assumed 1 FT. If 2 FT are available, consider Gakpo -> Barnes/Belloumi as well.",
-    "Konsa is listed as ARS in the cache (team field may be wrong). His xpts are missing from xpts.json.",
-    "fixture-room has no GW6+ data, so BGW/DGW detection is blind. Chip decisions must be revisited once features.json is regenerated.",
-    "gemini.json parse failed, so there is no Gemini comparison this GW."
+    "STALE CACHE: squad, xpts and news are stamped 2026-10-02, 9 days before deadline-week. Injury flags may have resolved or worsened. Re-check FPL statuses before the deadline.",
+    "Palmer (CHE, Muscular injury - 75%): starting in the XI with Sangaré as the first sub as cover. The GW5 medical report said fit, but the newer 2 Oct cache flags him DOUBTFUL. If confirmed out or limited before the deadline, start Sangaré.",
+    "Gakpo (LIV, Ankle injury - 75%): sold. If news shows him fully fit, the transfer still holds on xPts (2.42 vs 8.85).",
+    "João Pedro (CHE, Knee injury - 75%): benched. GW5 medical said knee edema, 3-4 weeks, target return about 10 Oct (GW7). Template-owned in the league, so he is a sell candidate next GW if the return slips. Not eligible for the armband.",
+    "Konsa: squad.json lists him as ARS with no xPts row (suspected data-mapping error) and mins share 0.531. Benched; transfer-out candidate next GW.",
+    "Gibbs-White and Calafiori were bought in GW5 and have no sim-lab mins data. Assumed nailed (no news flags).",
+    "Schade: no blind mins data in cache. BRE starter per price momentum and xPts, but verify he is in the predicted XI.",
+    "FT count is not in squad.json. Assumed 1 FT after 2 transfers in GW5.",
+    "Independence note: I did not read data/reports/gemini.json, but data-lab.json and intel.json both mention Gemini's pick (Tarkowski C, Konsa to Tarkowski). The CLAUDE decision was made on xPts and rules, not to match or avoid that pick.",
+    "Human override: if confirmed lineups show Haaland benched or injured, the armband passes to Groß (VC)."
   ]
 }

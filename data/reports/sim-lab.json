@@ -1,12 +1,14 @@
 {
  "gw": 6,
- "generated": "2026-10-02",
+ "generated": "2026-10-11",
  "generated_by": "sim-lab (WRPPM-5D)",
  "rule": "LOCKED cum_pts captaincy: cap_score=0.70*season_ppg+0.30*recent_form over owned nailed premiums (price>=7.5, not GK, AVAILABLE, >=85% mins). No matchup/haul/floor terms.",
  "inputs": {
-  "squad": "2026-10-01T17:24:20.283Z",
-  "player_pool": "2026-10-01T17:24:27Z (gw_last=5; season totals unchanged vs 2026-09-25 run)",
-  "recent_form": "carried from GW6 sim-lab 2026-09-25 (0.5*GW5 form + 0.5*GW5 pts); no new GW played since"
+  "squad": "2026-10-02T02:16:37.289Z",
+  "player_pool": "2026-10-02T02:16:44.926Z (gw_last=5)",
+  "xpts": "2026-10-02T02:16:38.613Z",
+  "news": "2026-10-02T02:16:41.243Z",
+  "recent_form": "carried from prior GW6 sim-lab run (0.5*GW5 form + 0.5*GW5 pts); cache has no per-GW form field and no new GW played since GW5"
  },
  "captain_ranking": [
   {
@@ -90,6 +92,22 @@
    "xpts": 9.93
   },
   {
+   "player": "Gakpo",
+   "team": "LIV",
+   "pos": "MID",
+   "price": 7.2,
+   "status": "DOUBTFUL",
+   "season_cum_pts": 32,
+   "games": 5,
+   "season_ppg": 8.0,
+   "recent_form": 3.98,
+   "cap_score": 6.794,
+   "type": "other",
+   "nailed": false,
+   "eligible": false,
+   "xpts": 2.42
+  },
+  {
    "player": "João Pedro",
    "team": "CHE",
    "pos": "FWD",
@@ -120,22 +138,6 @@
    "nailed": true,
    "eligible": false,
    "xpts": 9.19
-  },
-  {
-   "player": "Gakpo",
-   "team": "LIV",
-   "pos": "MID",
-   "price": 7.2,
-   "status": "DOUBTFUL",
-   "season_cum_pts": 32,
-   "games": 5,
-   "season_ppg": 6.4,
-   "recent_form": 3.98,
-   "cap_score": 5.674,
-   "type": "other",
-   "nailed": false,
-   "eligible": false,
-   "xpts": 2.42
   },
   {
    "player": "Palmer",
@@ -177,13 +179,29 @@
    "status": "AVAILABLE",
    "season_cum_pts": 22,
    "games": 5,
-   "season_ppg": 4.4,
+   "season_ppg": 5.5,
    "recent_form": 1.65,
-   "cap_score": 3.575,
+   "cap_score": 4.345,
    "type": "other",
    "nailed": false,
    "eligible": false,
    "xpts": 3.7
+  },
+  {
+   "player": "Konsa",
+   "team": "ARS",
+   "pos": "DEF",
+   "price": 4.6,
+   "status": "AVAILABLE",
+   "season_cum_pts": 12,
+   "games": 5,
+   "season_ppg": 4.0,
+   "recent_form": 2.79,
+   "cap_score": 3.637,
+   "type": "other",
+   "nailed": false,
+   "eligible": false,
+   "xpts": null
   },
   {
    "player": "Wissa",
@@ -200,22 +218,6 @@
    "nailed": true,
    "eligible": false,
    "xpts": 3.55
-  },
-  {
-   "player": "Konsa",
-   "team": "ARS",
-   "pos": "DEF",
-   "price": 4.6,
-   "status": "AVAILABLE",
-   "season_cum_pts": 12,
-   "games": 5,
-   "season_ppg": 2.4,
-   "recent_form": 2.79,
-   "cap_score": 2.517,
-   "type": "other",
-   "nailed": false,
-   "eligible": false,
-   "xpts": null
   }
  ],
  "recommend_c": "Haaland",
@@ -243,6 +245,7 @@
  ],
  "notes": [
   "Gakpo now DOUBTFUL 75% (ankle) in 2026-10-01 squad.json - was AVAILABLE on 2026-09-25; non-premium (7.2) anyway",
-  "Human late-news override remains valid per CLAUDE.md"
+  "Human late-news override remains valid per CLAUDE.md",
+  "2026-10-11 re-run: cache unchanged since 2026-10-02 (season pts and statuses identical); ranking re-verified. Cache is 9 days old - confirm Palmer/Gakpo/Joao Pedro status before deadline."
  ]
 }
