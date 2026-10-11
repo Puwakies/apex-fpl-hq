@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T02:16:41.243Z",
+  "updated": "2026-10-11T02:05:52.621Z",
   "items": [
     {
       "player": "Saliba",
@@ -11,21 +11,12 @@
       "signal": "out"
     },
     {
-      "player": "M.Bizot",
-      "team": "AVL",
-      "pos": "GK",
+      "player": "Tzolis",
+      "team": "ARS",
+      "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Back injury - Expected back 10 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Pau",
-      "team": "AVL",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 10 Oct",
+      "news": "Hamstring injury - Expected back 24 Oct",
       "signal": "out"
     },
     {
@@ -47,21 +38,12 @@
       "signal": "out"
     },
     {
-      "player": "Madjo",
-      "team": "AVL",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
-      "signal": "out"
-    },
-    {
       "player": "Goretzka",
       "team": "AVL",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Expected back 10 Oct",
+      "news": "Knee injury - Expected back 17 Oct",
       "signal": "out"
     },
     {
@@ -77,6 +59,15 @@
       "player": "J.Araujo",
       "team": "BOU",
       "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Scott",
+      "team": "BOU",
+      "pos": "MID",
       "status": "INJURED",
       "chance": 0,
       "news": "Thigh injury - Unknown return date",
@@ -119,24 +110,6 @@
       "signal": "out"
     },
     {
-      "player": "Van den Berg",
-      "team": "BRE",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Groin injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Jensen",
-      "team": "BRE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Unspecified injury - Expected back 10 Oct",
-      "signal": "out"
-    },
-    {
       "player": "Milambo",
       "team": "BRE",
       "pos": "MID",
@@ -169,7 +142,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 10 Oct",
+      "news": "Hamstring injury - Expected back 18 Oct",
       "signal": "out"
     },
     {
@@ -179,15 +152,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Leg injury - Expected back 28 Nov",
-      "signal": "out"
-    },
-    {
-      "player": "Hinshelwood",
-      "team": "BHA",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Expected back 10 Oct",
       "signal": "out"
     },
     {
@@ -205,7 +169,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Expected back 10 Oct",
+      "news": "Unspecified injury - Expected back 18 Oct",
       "signal": "out"
     },
     {
@@ -223,7 +187,7 @@
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
-      "news": "Ankle injury - Expected back 10 Oct",
+      "news": "Ankle injury - Expected back 18 Oct",
       "signal": "out"
     },
     {
@@ -232,7 +196,16 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 10 Oct",
+      "news": "Hamstring injury - Expected back 18 Oct",
+      "signal": "out"
+    },
+    {
+      "player": "Gittens",
+      "team": "CHE",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -241,16 +214,7 @@
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 10 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Kesler-Hayden",
-      "team": "COV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
+      "news": "Hamstring injury - Expected back 17 Oct",
       "signal": "out"
     },
     {
@@ -295,7 +259,7 @@
       "pos": "GK",
       "status": "INJURED",
       "chance": 0,
-      "news": "Foot injury - Expected back 11 Oct",
+      "news": "Foot injury - Expected back 18 Oct",
       "signal": "out"
     },
     {
@@ -313,25 +277,16 @@
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 11 Oct",
+      "news": "Hamstring injury - Expected back 18 Oct",
       "signal": "out"
     },
     {
-      "player": "Nørgaard",
-      "team": "EVE",
-      "pos": "MID",
+      "player": "Tomiyasu",
+      "team": "CRY",
+      "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Groin injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Röhl",
-      "team": "EVE",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Unspecified injury - Expected back 11 Oct",
+      "news": "Calf injury - Expected back 18 Oct",
       "signal": "out"
     },
     {
@@ -340,7 +295,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Expected back 10 Oct",
+      "news": "Knee injury - Expected back 17 Oct",
       "signal": "out"
     },
     {
@@ -359,6 +314,51 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Groin injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Matazo",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Gyabi",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Targett",
+      "team": "HUL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Ansah",
+      "team": "HUL",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Back injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Rodon",
+      "team": "LEE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 21 Nov",
       "signal": "out"
     }
   ]
