@@ -1,34 +1,7 @@
 {
-  "updated": "2026-10-15T17:25:07.801Z",
+  "updated": "2026-10-15T17:25:23.602Z",
   "engine": "gemini",
   "gw": 7,
-  "captain": "Groß",
-  "captain_xpts": 31,
-  "vice_captain": "Haaland",
-  "starting_xi": [
-    "Raya",
-    "De Cuyper",
-    "Hall",
-    "Calafiori",
-    "Groß",
-    "Semenyo",
-    "Barnes",
-    "Gibbs-White",
-    "Palmer",
-    "Haaland",
-    "João Pedro"
-  ],
-  "bench": [
-    "Leno",
-    "Konsa",
-    "Egan",
-    "Wissa"
-  ],
-  "transfer_out": "Gakpo",
-  "transfer_in": "Semenyo",
-  "transfer_reason": "Replace injured Gakpo with top xPts midfielder Semenyo",
-  "chip": null,
-  "projected_xpts": 90.36,
-  "confidence": "medium",
-  "key_risk": "Multiple squad members lack official xPts baseline data"
+  "error": "parse_failed",
+  "raw": ""
 }
