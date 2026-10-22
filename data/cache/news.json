@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T02:01:52.827Z",
+  "updated": "2026-10-22T17:24:08.562Z",
   "items": [
     {
       "player": "Saliba",
@@ -11,30 +11,12 @@
       "signal": "out"
     },
     {
-      "player": "Hincapie",
-      "team": "ARS",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Expected back 24 Oct",
-      "signal": "out"
-    },
-    {
       "player": "Tzolis",
       "team": "ARS",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
       "news": "Hamstring injury - Expected back 1 Nov",
-      "signal": "out"
-    },
-    {
-      "player": "Maatsen",
-      "team": "AVL",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Ankle injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -52,7 +34,16 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
+      "news": "Hamstring injury - Expected back 2 Jan",
+      "signal": "out"
+    },
+    {
+      "player": "Wan-Bissaka",
+      "team": "AVL",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 21 Nov",
       "signal": "out"
     },
     {
@@ -61,7 +52,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Thigh injury - Unknown return date",
+      "news": "Thigh injury - Expected back 8 Nov",
       "signal": "out"
     },
     {
@@ -79,16 +70,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Thigh injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Kroupi.Jr",
-      "team": "BOU",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Foot injury - Expected back 7 Nov",
+      "news": "Thigh injury - Expected back 8 Nov",
       "signal": "out"
     },
     {
@@ -268,16 +250,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Calf injury - Expected back 25 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Chilwell",
-      "team": "CRY",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Calf injury - Expected back 8 Nov",
       "signal": "out"
     },
     {
@@ -335,30 +308,57 @@
       "signal": "out"
     },
     {
-      "player": "Gourna-Douath",
-      "team": "HUL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Calf injury - Expected back 25 Oct",
-      "signal": "out"
-    },
-    {
-      "player": "Cho",
-      "team": "HUL",
-      "pos": "MID",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Unspecified injury - Expected back 25 Oct",
-      "signal": "out"
-    },
-    {
       "player": "Ansah",
       "team": "HUL",
       "pos": "FWD",
       "status": "INJURED",
       "chance": 0,
       "news": "Back injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Lukić",
+      "team": "IPS",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Groin injury - Expected back 23 Oct",
+      "signal": "out"
+    },
+    {
+      "player": "Rodon",
+      "team": "LEE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 21 Nov",
+      "signal": "out"
+    },
+    {
+      "player": "Mateo Joseph",
+      "team": "LEE",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Jaros",
+      "team": "LIV",
+      "pos": "GK",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Frimpong",
+      "team": "LIV",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
       "signal": "out"
     }
   ]
