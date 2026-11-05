@@ -1,7 +1,34 @@
 {
-  "updated": "2026-10-22T17:24:13.906Z",
+  "updated": "2026-11-05T17:23:55.669Z",
   "engine": "gemini",
-  "gw": 8,
-  "error": "parse_failed",
-  "raw": ""
+  "gw": 10,
+  "captain": "Haaland",
+  "captain_xpts": 19.82,
+  "vice_captain": "Konsa",
+  "starting_xi": [
+    "Leno",
+    "Konsa",
+    "Van Hecke",
+    "Silva",
+    "Rudoni",
+    "Tavernier",
+    "Rogers",
+    "Belloumi",
+    "Haaland",
+    "Evanilson",
+    "Isak"
+  ],
+  "bench": [
+    "Kinsky",
+    "Robertson",
+    "Hall",
+    "Manzambi"
+  ],
+  "transfer_out": "Dasilva",
+  "transfer_in": "Konsa",
+  "transfer_reason": "Replace injured Dasilva with highest-projected defender Konsa",
+  "chip": null,
+  "projected_xpts": 67.49,
+  "confidence": "medium",
+  "key_risk": "Defensive ceiling dependency and limited squad coverage in top xPts table"
 }
