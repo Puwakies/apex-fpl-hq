@@ -1,96 +1,54 @@
 {
-  "gw": 6,
+  "gw": 10,
   "agent": "intel",
-  "generated": "2026-10-11",
-  "data_quality": {
-    "ownership_source": "PROXY ONLY - xpts.json/squad.json carry no selected_by_percent; no 2026/27 GW6 elite/top-10k EO or captaincy data found via web search",
-    "proxies_used": [
-      "league.json context 'Template Players': Haaland, Joao Pedro, Raya, Calafiori (mini-league, 18 managers)",
-      "price.json net transfers (Gross +781k, Schade +369k, Kostoulas +296k, Brobbey +149k, Barnes +142k; Elanga -166k, M.Sangare -131k)",
-      "web: Haaland top-scoring FWD 2026/27 to date (5 PL goals, 39 pts) and #1 on GW6 captaincy lists",
-      "price tier + xPts rank as secondary heuristic"
-    ],
-    "confidence": "low-medium - eo_est values are banded estimates (top-10k), not measured"
-  },
+  "checked": "2026-11-06",
+  "method": "eo_est = overall selected_by% (player_pool.json tsb) + estimated captain share. No GW10 2026/27 top-10k ownership or captaincy data was found by web search, so elite figures are ESTIMATES (Haaland only: FFS GW9 captain poll showed about 50% of site users). Rank context: OR 389,425, so overall EO is the right benchmark, and elite EO is listed for reference.",
   "template_core": [
-    { "player": "Haaland", "team": "MCI", "eo_est": 150, "owned_by_user": true, "note": "Est ~90% top-10k owned + ~55-60% captained. Highest-EO asset in the game." },
-    { "player": "Raya", "team": "ARS", "eo_est": 45, "owned_by_user": true, "note": "League template GK; xPts 9.92." },
-    { "player": "Calafiori", "team": "ARS", "eo_est": 40, "owned_by_user": true, "note": "League template DEF; xPts 9.19." },
-    { "player": "Groß", "team": "BHA", "eo_est": 35, "owned_by_user": true, "note": "+781k net transfers - fastest-rising template asset; xPts 11.83 (#2 overall)." },
-    { "player": "João Pedro", "team": "CHE", "eo_est": 30, "owned_by_user": true, "note": "League template but DOUBTFUL (knee, 75%); xPts only 2.78. Template EO will fall as managers bench/sell." },
-    { "player": "Gabriel", "team": "ARS", "eo_est": 25, "owned_by_user": false, "note": "Premium ARS DEF (8.0); xPts 7.84. Estimated, unverified." },
-    { "player": "Saka", "team": "ARS", "eo_est": 25, "owned_by_user": false, "note": "xPts 8.76; estimated mid-template attacker." }
+    {"player": "Haaland (MCI FWD)", "eo_est": "own 79% / EO ~140% overall (~180%+ top-10k est)", "owned": true},
+    {"player": "Rogers (CHE MID)", "eo_est": "52.5%", "owned": true},
+    {"player": "Calafiori (ARS DEF)", "eo_est": "48%", "owned": false},
+    {"player": "Groß (BHA MID)", "eo_est": "46.9%", "owned": false},
+    {"player": "Raya (ARS GK)", "eo_est": "46.6%", "owned": false},
+    {"player": "De Cuyper (BHA DEF)", "eo_est": "45.1%", "owned": false},
+    {"player": "Cherki (MCI MID)", "eo_est": "35.4%", "owned": false},
+    {"player": "Palmer (CHE MID)", "eo_est": "28.1%", "owned": false},
+    {"player": "Tavernier (BOU MID)", "eo_est": "27.7%", "owned": true},
+    {"player": "N.Jackson (AVL FWD)", "eo_est": "26.1%", "owned": false},
+    {"player": "Gabriel (ARS DEF)", "eo_est": "24.5%", "owned": false},
+    {"player": "Konsa (listed ARS DEF 4.8)", "eo_est": "23.1%", "owned": false}
   ],
   "captain_shield": [
     {
       "player": "Haaland",
-      "team": "MCI",
-      "eo_est": 150,
-      "why": "DO NOT FADE. He leads forwards on cumulative points (39), so the locked APEX captain rule (season cum_pts leader, nailed premium, non-GK) picks him. Estimated 55-60% of the top 10k captain him. Our xPts model has him at only 8.15 (FDR 4), which pushes sim-lab/Gemini toward fades like Tarkowski (Gemini's captain, 12.76 xPts). That is the same kind of xPts-led fade of a template captain that lost points in the backtest. If Haaland hauls (2+ goals is about 16-20 captained points) and we captained someone else, we lose about 1.5x his score relative to the field. The user's current captain is Gibbs-White (xPts 6.9), which is a fade with a low ceiling. Recommend Haaland (C)."
-    },
-    {
-      "player": "B.Fernandes",
-      "team": "MUN",
-      "eo_est": 20,
-      "why": "Secondary shield, vice-captain tier only. FDR 2, xPts 9.59, on penalties, so the floor is high. Some top-10k captaincy share is likely given the fixture. The user doesn't own him. Not a must-own, but if he hauls with no cover it is a mid-size rank hit."
+      "eo_est": "~140% overall (79% own + ~60-65% captain share); top-10k likely 170-190%",
+      "why": "Season cum_pts leader among non-GK nailed premiums (68 pts, 9 G, xG 6.56, 309 BPS), fdr 2, top captain_xpts 19.82 among outfield players, Gemini also captains him. Most managers will captain him, so if he hauls and you did not captain him you lose about 1.4x his score against the field. DO NOT FADE. This matches the locked APEX captain rule and the current squad captain."
     }
   ],
   "differentials": [
-    {
-      "player": "Tarkowski",
-      "team": "EVE",
-      "eo_est": 6,
-      "ceiling": "15+ (CS + DefCon + set-piece goal threat at FDR 2)",
-      "why": "Highest xPts in the model (12.76), FDR 2, likely low ownership. This is Gemini's transfer-in (Konsa out). Use him as a rank-gaining starter, NOT as captain over Haaland."
-    },
-    {
-      "player": "Schade",
-      "team": "BRE",
-      "eo_est": 7,
-      "ceiling": "12-15",
-      "why": "xPts 8.85 for 6.2. +369k net transfers, so the differential window is closing fast. Buy now or he becomes template."
-    },
-    {
-      "player": "Barnes",
-      "team": "NEW",
-      "eo_est": 5,
-      "ceiling": "12-15",
-      "why": "xPts 6.93 at FDR 2 for 6.1. Rising (+142k). Elanga (NEW, -166k, xPts 0.43) is being sold, which hands Barnes the minutes."
-    },
-    {
-      "player": "Mbeumo",
-      "team": "MUN",
-      "eo_est": 7,
-      "ceiling": "12-15",
-      "why": "xPts 6.79 at FDR 2 for 7.9. Cheaper route into the MUN attack than Fernandes."
-    },
-    {
-      "player": "Cunha",
-      "team": "MUN",
-      "eo_est": 5,
-      "ceiling": "12-15",
-      "why": "xPts 6.92 at FDR 2 for 7.9. Similar profile to Mbeumo; pick one MUN attacker, not both."
-    },
-    {
-      "player": "Tzolakis",
-      "team": "HUL",
-      "eo_est": 3,
-      "ceiling": "10-12",
-      "why": "Top GK xPts (10.43) for 4.7. GK is a low-leverage slot, so only consider him if the user moves away from Raya."
-    }
+    {"player": "Vuskovic (BHA DEF 5.2)", "eo_est": "7.4%", "ceiling": "high for a DEF: xpts 9.78, 58 pts, 6 CS, ppm 11.15", "why": "Best xpts per % owned in the pool. BHA defence is in template form (De Cuyper/Verbruggen) and he gives cheap exposure at 1/6th of their ownership. A transfer candidate to replace Belloumi or Dasilva via a DEF slot."},
+    {"player": "Barry (EVE FWD 5.6)", "eo_est": "7.6%", "ceiling": "highest attacking ceiling among <8% players: xG 6.37 but only 4 G, fdr 2, xpts 7.15", "why": "Big xG underperformance, so goals are due. His 2-goal hauls swing rank because few own him. Rank-chasing only."},
+    {"player": "Hill (BOU DEF 5.5)", "eo_est": "2.6%", "ceiling": "xpts 9.67, fdr 2", "why": "Doubles up the BOU defence you already hold (Silva) with near-zero EO. Clean-sheet upside."},
+    {"player": "Truffert (BOU DEF 5.4)", "eo_est": "3.3%", "ceiling": "xpts 8.01, fdr 2", "why": "Alternative BOU DEF to Hill."},
+    {"player": "Iwobi (FUL MID 5.4)", "eo_est": "1.4%", "ceiling": "xpts 7.39, xA 2.76", "why": "Cheap mid with a high xA and very low EO. A Belloumi replacement (Belloumi has HUL fdr 5, xpts 2.54)."},
+    {"player": "Ayari (BHA MID 5.4)", "eo_est": "1.5%", "ceiling": "xpts 7.32, 3 G", "why": "Low-owned BHA attacker, an alternative to template Groß."}
   ],
   "rank_risks": [
-    "CAPTAIN FADE: the user captained Gibbs-White in GW5 and Gemini captains Tarkowski in GW6. Both fade Haaland, whose estimated EO is about 150%. This is the single biggest rank risk this GW. Captain Haaland.",
-    "Doubtful starters: Palmer (75%) and Gakpo (75%) are in the user's XI. João Pedro (75%) is a template-owned bench player. Gakpo xPts 2.42 and Palmer 3.89 are low even if they play.",
-    "Konsa has no xPts row and squad.json lists him as ARS (suspected data-mapping error). Treat him as a zero and a transfer-out candidate, consistent with Gemini.",
-    "M.Sangaré (user XI) is being sold (-131k) and has xPts 3.7. He is a weak starter, not a template risk.",
-    "Missing template: the user owns none of Gabriel, Saka or B.Fernandes. Combined EO exposure is about 70%, a moderate risk only if two of them return.",
-    "Chip state: FH and WC remain. No chip-driven EO swing expected this GW."
+    "Haaland: owned and captained, so the shield is in place. Do NOT switch the armband for a differential (backtest lesson: fading template captains lost points).",
+    "De Cuyper (45.1%, xpts 10.99) not owned. This is the biggest non-captain template gap and is listed in the league template too.",
+    "Raya (46.6%, xpts 9.63) not owned. Kinsky (15.4%, xpts 6.72) starts in GK instead.",
+    "Groß (46.9%, xpts 7.13) not owned. League template player.",
+    "Konsa (23.1%, xpts 12.87, the top xpts in the pool) not owned, and Gemini is transferring him in. Note that the xpts data lists Konsa as ARS, so the club tag should be checked.",
+    "Calafiori (48%, xpts 7.58) not owned. This is a smaller risk.",
+    "Belloumi (10.2%, HUL fdr 5, xpts 2.54) is the weakest starter. Benching or selling him costs no template cover.",
+    "Gain opportunity: João Pedro (39.8%) is INJURED (0% chance). Owners who did not move him lose points against you.",
+    "Gain opportunity: Palmer (28.1%, xpts 4.76) and Cherki (35.4%, xpts 4.08) are template but low-xpts. It is fine not to own them.",
+    "Squad already holds differentials Silva 2.6%, Rudoni 0.9% and Manzambi 7.1%."
   ],
-  "summary": {
-    "must_owns": 4,
-    "must_owns_list": ["Haaland", "Groß", "Raya", "Calafiori"],
-    "captain_shield_pick": "Haaland",
-    "best_differential": "Tarkowski"
-  }
+  "owned_eo": {"Kinsky": 15.4, "Silva": 2.6, "Van Hecke": 11.3, "Hall": 19.9, "Rogers": 52.5, "Rudoni": 0.9, "Tavernier": 27.7, "Manzambi": 7.1, "Belloumi": 10.2, "Haaland": 79.0, "Evanilson": 18.1, "Leno": 4.4, "Dasilva": 1.5, "Isak": 21.8, "Robertson": 2.4},
+  "sources": [
+    "data/cache/player_pool.json (tsb)",
+    "data/cache/xpts.json",
+    "data/cache/league.json",
+    "https://www.fantasyfootballscout.co.uk/2026/10/30/who-is-the-best-captain-for-fpl-gameweek-9-5"
+  ]
 }
