@@ -1,5 +1,7 @@
-{"gw":7,"agent":"data-lab","checked":"2026-10-16",
-"files":{"squad":"OK","xpts":"OK (150 rows)","league":"OK (10 context keys; differentials/template arrays empty, context has template string)","news":"OK (40)","price":"OK (12 rises/12 falls)","gemini":"BAD: parse_failed, raw empty","player_pool":"OK (400)"},
-"updated":"all 2026-10-15T17:25Z","gw_fields":"all 7 (squad picks_gw=6, league context GW=6)",
-"facts":{"captain":"Barnes","vice":"Haaland","bank":0.5,"squad_value":102.4,"rank":1171058,"total_points":408,"chips_used":["BB@GW2","WC@GW3","TC@GW4"],"chips_left":["FH","WC x1"],"FH_available":true,"WC_available":true,"league_rank":"10 of 18, 73 behind Ohmbappe (481)"},
-"status":"PARTIAL - gemini.json unusable"}
+{"gw":10,"agent":"data-lab","checked":"2026-11-06",
+"files":{"squad":"OK (15 players)","xpts":"OK (150 rows)","league":"OK (context 10 keys; differentials/template arrays empty, template string in context)","news":"OK (40)","price":"OK (12 rises/12 falls)","gemini":"OK (parsed, gw10)","player_pool":"OK (400)"},
+"updated":"all 2026-11-05T17:23Z","gw_fields":"squad/xpts/gemini/pool gw=10 (squad picks_gw=9); league context GW=9",
+"facts":{"captain":"Haaland","vice":"Tavernier","bank":1.5,"squad_value":103.8,"rank":389425,"total_points":607,"chips_used":["BB@GW2","WC@GW3","TC@GW4","FH@GW9"],"chips_left":["WC x1"],"FH_available":false,"WC_available":true,"league_rank":"7 of 18, 47 behind Ohmbappe (654)","template":"De Cuyper, Haaland, Gross, Tavernier, Raya"},
+"gemini":{"captain":"Haaland","captain_xpts":19.82,"vice":"Konsa","projected_xpts":67.49,"transfer":"Dasilva -> Konsa","chip":null,"confidence":"medium"},
+"flags":["Gemini transfer_out Dasilva as injured: news.json Dasilva is BRE MID, squad Dasilva is COV DEF (status AVAILABLE) - likely name collision","Gemini XI/bench differs from real squad (puts Leno in XI, Isak/Hall/Manzambi/Robertson/Kinsky on bench; Konsa not owned)","Belloumi xpts 2.54 lowest starter","squad.json vice Tavernier vs gemini vice Konsa"],
+"status":"OK"}
