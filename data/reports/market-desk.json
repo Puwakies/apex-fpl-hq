@@ -1,37 +1,40 @@
 {
-  "gw": 6,
-  "source": "data/cache/price.json (updated 2026-10-02T02:16:37Z; stale vs 2026-10-11, verify live before acting)",
+  "gw": 10,
+  "agent": "market-desk",
+  "source": "data/cache/price.json (features.json not read, 610KB over read limit; price.json carries net_transfers/net_rate)",
   "likely_rises": [
-    {"player": "Kostoulas", "net_transfers": 295885, "confidence": "high"},
-    {"player": "Groß", "net_transfers": 781166, "confidence": "high"},
-    {"player": "Schade", "net_transfers": 369094, "confidence": "high"},
-    {"player": "Manzambi", "net_transfers": 24904, "confidence": "medium"},
-    {"player": "Barnes", "net_transfers": 142388, "confidence": "medium"},
-    {"player": "King", "net_transfers": 69982, "confidence": "medium"},
-    {"player": "Schuster", "net_transfers": 12858, "confidence": "low"},
-    {"player": "Affengruber", "net_transfers": 4443, "confidence": "low"},
-    {"player": "Brobbey", "net_transfers": 148978, "confidence": "low"},
-    {"player": "J.Timber", "net_transfers": 8613, "confidence": "low"},
-    {"player": "N.Jackson", "net_transfers": 28341, "confidence": "low"},
-    {"player": "Anthony", "net_transfers": 1724, "confidence": "low"}
+    {"player": "Ayari", "net_transfers": 76214, "confidence": "high", "owned": false},
+    {"player": "Kroupi.Jr", "net_transfers": 21311, "confidence": "high", "owned": false},
+    {"player": "Silva", "net_transfers": 80631, "confidence": "high", "owned": true},
+    {"player": "Evanilson", "net_transfers": 488058, "confidence": "high", "owned": true},
+    {"player": "Rudoni", "net_transfers": 19612, "confidence": "medium", "owned": true},
+    {"player": "Kudus", "net_transfers": 38695, "confidence": "medium", "owned": false},
+    {"player": "Van Hecke", "net_transfers": 244543, "confidence": "medium", "owned": true},
+    {"player": "Manzambi", "net_transfers": 122508, "confidence": "medium", "owned": true},
+    {"player": "Acheampong", "net_transfers": 8378, "confidence": "low", "owned": false},
+    {"player": "Penders", "net_transfers": 4786, "confidence": "low", "owned": false},
+    {"player": "N.Jackson", "net_transfers": 385196, "confidence": "medium", "owned": false},
+    {"player": "Enciso", "net_transfers": 13082, "confidence": "low", "owned": false}
   ],
   "likely_falls": [
-    {"player": "Elanga", "net_transfers": -166475, "confidence": "high"},
-    {"player": "M.Sangaré", "net_transfers": -130729, "confidence": "high"},
-    {"player": "James", "net_transfers": -77531, "confidence": "medium"},
-    {"player": "White", "net_transfers": -64524, "confidence": "medium"},
-    {"player": "Wilson", "net_transfers": -40432, "confidence": "medium"},
-    {"player": "Dedić", "net_transfers": -37284, "confidence": "medium"},
-    {"player": "Foden", "net_transfers": -28242, "confidence": "low"},
-    {"player": "Kluivert", "net_transfers": -15821, "confidence": "low"},
-    {"player": "Maatsen", "net_transfers": -6142, "confidence": "low"},
-    {"player": "J.Ramsey", "net_transfers": -4665, "confidence": "low"},
-    {"player": "Awoniyi", "net_transfers": -4970, "confidence": "low"},
-    {"player": "Fatawu", "net_transfers": -2464, "confidence": "low"}
+    {"player": "João Pedro", "net_transfers": -851980, "confidence": "high", "owned": false},
+    {"player": "Hato", "net_transfers": -11311, "confidence": "medium", "owned": false},
+    {"player": "Henderson", "net_transfers": -24721, "confidence": "medium", "owned": false},
+    {"player": "Okafor", "net_transfers": -4111, "confidence": "low", "owned": false},
+    {"player": "Lacroix", "net_transfers": -63130, "confidence": "medium", "owned": false},
+    {"player": "Baleba", "net_transfers": -2370, "confidence": "low", "owned": false},
+    {"player": "Saka", "net_transfers": -68440, "confidence": "medium", "owned": false},
+    {"player": "Pinnock", "net_transfers": -1096, "confidence": "low", "owned": false},
+    {"player": "Gonzalo", "net_transfers": -45532, "confidence": "medium", "owned": false},
+    {"player": "Mukiele", "net_transfers": -14844, "confidence": "low", "owned": false},
+    {"player": "Gibbs-White", "net_transfers": -101281, "confidence": "medium", "owned": false},
+    {"player": "Sávio", "net_transfers": -3807, "confidence": "low", "owned": false}
   ],
   "act_now": [
-    {"player": "M.Sangaré", "owned": true, "action": "Sell before deadline if a transfer is already planned; high fall risk, -130,729 net", "urgency": "high"},
-    {"player": "Groß", "owned": true, "action": "Hold; already rising and in squad, no action needed", "urgency": "none"}
+    {"move": "Hold Silva, Evanilson, Van Hecke, Manzambi, Rudoni", "reason": "owned and rising, selling would forfeit value gain"},
+    {"move": "If a transfer is planned, buy Ayari (MID 5.4) before the deadline, e.g. for Belloumi (lowest starter xPts 2.54, 5.3)", "reason": "highest net_rate (47.6) on the list, bank 1.5 covers it"},
+    {"move": "Kroupi.Jr (7.3) is a secondary rise target", "reason": "net_rate 35.5"}
   ],
-  "monitor": ["Kostoulas", "Schade", "Barnes", "Elanga", "Wilson", "Foden"]
+  "monitor": ["Kudus", "N.Jackson", "Acheampong", "Penders", "Enciso"],
+  "notes": ["No squad player is in the fall list.", "Players with price_change != 0 in price.json (Silva, Evanilson, Kudus, Van Hecke, N.Jackson up; João Pedro, Gonzalo, Gibbs-White, Sávio down) may already have moved; confirm before acting.", "Wildcard is the only chip left; no chip is needed for price moves."]
 }

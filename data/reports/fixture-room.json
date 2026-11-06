@@ -1,21 +1,10 @@
 {
-  "gw": 6,
-  "data_caveat": "data/features.json is stale (generated 2026-07-23, target_gw 1, fdr.next covers GW1-5) so no true GW6-10 window exists. Ranking uses the single-GW6 fdr in data/cache/xpts.json; away/home weighting not possible (no loc data).",
-  "best_runs": [
-    {"team": "EVE", "fdr_avg": 2, "window": "GW6 only", "note": "best DEF run: Tarkowski 12.76 xPts, Maitland-Niles 9.54, Branthwaite/Mykolenko 8.58, Pickford 8.10"},
-    {"team": "NEW", "fdr_avg": 2, "window": "GW6 only", "note": "owned: Hall (10.03 xPts), Wissa; also Barnes, Botman"},
-    {"team": "MUN", "fdr_avg": 2, "window": "GW6 only", "note": "best attack run: B.Fernandes 9.59, Cunha 6.92, Mbeumo 6.79"},
-    {"team": "FUL", "fdr_avg": 2, "window": "GW6 only", "note": "Leno owned (bench), Castagne 6.24"},
-    {"team": "IPS", "fdr_avg": 2, "window": "GW6 only", "note": "Davis 8.49 xPts at 4.0m"}
-  ],
-  "worst_runs": [
-    {"team": "LEE", "fdr_avg": 5, "window": "GW6 only"},
-    {"team": "MCI", "fdr_avg": 4, "window": "GW6 only", "note": "owned: Haaland (15.6m, 8.15 xPts)"},
-    {"team": "LIV", "fdr_avg": 4, "window": "GW6 only", "note": "owned: Gakpo (also DOUBTFUL 75%)"},
-    {"team": "BOU", "fdr_avg": 4, "window": "GW6 only"},
-    {"team": "TOT", "fdr_avg": 4, "window": "GW6 only"}
-  ],
+  "gw": 10,
+  "status": "DATA_STALE",
+  "note": "data/features.json is stale: meta.generated_at 2026-07-23, target_gw 1, fdr.next covers GW1-5 only. It cannot support a GW10-14 fixture ranking, so no ranking was fabricated. cache/xpts.json has only a single-GW fdr per player (no 5-GW run, no DGW/BGW flags). Regenerate features.json for target_gw 10 and re-run.",
+  "best_runs": [],
+  "worst_runs": [],
   "dgw_alerts": [],
   "bgw_alerts": [],
-  "bgw_note": "All 20 teams have at least one player in xpts.json for GW6, so no blank detected for GW6. GW7+ blanks/doubles cannot be checked until features.json is regenerated."
+  "bgw_alerts_unverified": "No fixture data for GW10+ available, so DGW/BGW absence is unconfirmed, not cleared. Real squad has FH used (GW9) and WC x1 left."
 }
