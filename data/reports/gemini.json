@@ -1,14 +1,1 @@
-{
-  "engine": "gemini",
-  "gw": 6,
-  "captain": "Tarkowski",
-  "vice": "Groß",
-  "starting_xi": ["Raya", "Hall", "Calafiori", "De Cuyper", "Egan", "Tarkowski", "Groß", "Gibbs-White", "Palmer", "Gakpo", "Haaland"],
-  "bench": ["Leno", "M.Sangaré", "Wissa", "João Pedro"],
-  "transfer_out": "Konsa",
-  "transfer_in": "Tarkowski",
-  "chip": null,
-  "projected_xpts": 91.82,
-  "confidence": "medium",
-  "key_risk": "Several attackers (Palmer, Gakpo, João Pedro) are flagged doubtful."
-}
+{"engine":"gemini","gw":10,"captain":"Haaland","vice":"Konsa","starting_xi":["Leno","Konsa","Van Hecke","Silva","Rudoni","Tavernier","Rogers","Belloumi","Haaland","Evanilson","Isak"],"bench":["Kinsky","Robertson","Hall","Manzambi"],"transfer_out":"Dasilva","transfer_in":"Konsa","chip":null,"projected_xpts":67.49,"confidence":"medium","key_risk":"Defensive ceiling dependency and limited squad coverage in top xPts table"}
