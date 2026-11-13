@@ -1,108 +1,53 @@
 {
-  "gw": 10,
-  "agent": "the-director",
-  "generated": "2026-11-06",
+  "gw": 11,
+  "season": "2026/27",
+  "generated": "2026-11-13",
   "you": {
-    "projected_xpts": 89.12,
-    "projected_xpts_note": "Real squad.json XI scored with xpts.json: 11 starters sum to 79.21, plus Haaland 9.91 again for the armband, gives 89.12.",
-    "captain": "Haaland",
-    "vice": "Tavernier",
-    "starting_xi": [
-      {"name": "Kinsky", "team": "TOT", "pos": "GK", "price": 4.4, "xpts": 6.72},
-      {"name": "Silva", "team": "BOU", "pos": "DEF", "price": 5.1, "xpts": 8.96},
-      {"name": "Van Hecke", "team": "TOT", "pos": "DEF", "price": 5.0, "xpts": 9.40},
-      {"name": "Hall", "team": "NEW", "pos": "DEF", "price": 5.3, "xpts": 6.74},
-      {"name": "Rogers", "team": "CHE", "pos": "MID", "price": 8.2, "xpts": 5.00},
-      {"name": "Rudoni", "team": "COV", "pos": "MID", "price": 4.9, "xpts": 7.17},
-      {"name": "Tavernier", "team": "BOU", "pos": "MID", "price": 6.6, "xpts": 7.08},
-      {"name": "Manzambi", "team": "AVL", "pos": "MID", "price": 6.1, "xpts": 6.42},
-      {"name": "Belloumi", "team": "HUL", "pos": "MID", "price": 5.3, "xpts": 2.54},
-      {"name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.8, "xpts": 9.91},
-      {"name": "Evanilson", "team": "BOU", "pos": "FWD", "price": 6.4, "xpts": 9.27}
-    ],
-    "bench": [
-      {"name": "Leno", "team": "FUL", "pos": "GK", "price": 4.5, "xpts": 6.65},
-      {"name": "Dasilva", "team": "COV", "pos": "DEF", "price": 4.0, "xpts": 6.35},
-      {"name": "Isak", "team": "LIV", "pos": "FWD", "price": 9.2, "xpts": 5.12},
-      {"name": "Robertson", "team": "TOT", "pos": "DEF", "price": 4.3, "xpts": 5.74}
-    ],
-    "transfer_in": null,
-    "transfer_out": null,
-    "chip": null,
-    "bank": 1.5,
-    "chips_left": ["WC x1"]
+    "projected_xpts": 94.42,
+    "projected_xpts_note": "XI sum 89.74 + Isak captain bonus 4.68 (xpts.json). With Haaland (C) instead: 98.95.",
+    "captain": "Isak",
+    "vice": "Palmer",
+    "formation": "4-4-2",
+    "starting_xi": ["Raya", "De Cuyper", "Van Hecke", "Konsa", "Calafiori", "Rogers", "Palmer", "Groß", "Tavernier", "Haaland", "Isak"],
+    "bench": ["Leno", "Barnes", "Wissa", "Egan"],
+    "chips_left": ["WC"]
   },
   "gemini": {
-    "projected_xpts": 67.49,
-    "projected_xpts_rescored": 93.88,
-    "projected_xpts_note": "67.49 is Gemini's own figure and is on a different scale. Rescoring Gemini's XI with xpts.json the same way gives 93.88 (83.97 plus Haaland 9.91). Compare on the rescored number or on rank.",
-    "captain": "Haaland",
-    "vice": "Konsa",
-    "starting_xi": ["Leno", "Konsa", "Van Hecke", "Silva", "Rudoni", "Tavernier", "Rogers", "Belloumi", "Haaland", "Evanilson", "Isak"],
-    "bench": ["Kinsky", "Robertson", "Hall", "Manzambi"],
-    "transfer_in": "Konsa",
-    "transfer_out": "Dasilva",
+    "projected_xpts": 86.47,
+    "projected_xpts_note": "As stated by Gemini. Recomputed on the same xpts.json scale the lineup sums to 96.77 + De Cuyper captain bonus 12.92 = 109.69, so Gemini's own figure does not match the cache. The plan is NOT executable: Egan (4.1) + bank 0.1 = 4.2 vs Vuskovic 5.3, short 1.1m (market-desk). Without the transfer it collapses to the YOU XI with a DEF captain.",
+    "captain": "De Cuyper",
+    "vice": "Vuskovic",
+    "formation": "5-3-2",
+    "starting_xi": ["Raya", "De Cuyper", "Vuskovic", "Konsa", "Van Hecke", "Calafiori", "Groß", "Palmer", "Tavernier", "Haaland", "Isak"],
+    "bench": ["Leno", "Barnes", "Rogers", "Wissa"],
+    "transfer_in": "Vuskovic",
+    "transfer_out": "Egan",
     "chip": null,
-    "confidence": "medium",
-    "flags": [
-      "The reason for selling Dasilva is a name collision. The injured Dasilva in news.json is the BRE MID. Our Dasilva is the COV DEF and is AVAILABLE.",
-      "Konsa is tagged ARS in xpts.json but plays for AVL in real life, so the 12.87 xpts is suspect. sim-lab (GW5) recorded his mins_share as 0.53 and nailed=false.",
-      "Belloumi (HUL, FDR 5, 2.54 xpts) starts while Hall (6.74) and Manzambi (6.42) are benched. That costs about 4.2 xpts in the XI."
-    ]
+    "feasible": false
   },
   "claude": {
-    "projected_xpts": 95.06,
-    "projected_xpts_note": "Checked with xpts.json: 11 starters sum to 85.15, plus Haaland 9.91 again, gives 95.06. It is on the same scale as the YOU figure of 89.12.",
+    "projected_xpts": 101.59,
+    "projected_xpts_note": "XI sum 92.38 + Haaland captain bonus 9.21. Verified against xpts.json.",
     "captain": "Haaland",
-    "vice": "Isak",
-    "formation": "4-3-3",
-    "starting_xi": [
-      {"name": "Kinsky", "pos": "GK", "price": 4.4, "xpts": 6.72},
-      {"name": "Van Hecke", "pos": "DEF", "price": 5.0, "xpts": 9.40},
-      {"name": "Vuskovic", "pos": "DEF", "price": 5.2, "xpts": 9.78},
-      {"name": "Silva", "pos": "DEF", "price": 5.1, "xpts": 8.96},
-      {"name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 6.74},
-      {"name": "Rudoni", "pos": "MID", "price": 4.9, "xpts": 7.17},
-      {"name": "Tavernier", "pos": "MID", "price": 6.6, "xpts": 7.08},
-      {"name": "Rogers", "pos": "MID", "price": 8.2, "xpts": 5.00},
-      {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 9.91},
-      {"name": "Evanilson", "pos": "FWD", "price": 6.4, "xpts": 9.27},
-      {"name": "Isak", "pos": "FWD", "price": 9.2, "xpts": 5.12}
-    ],
-    "bench": [
-      {"name": "Leno", "pos": "GK", "price": 4.5},
-      {"name": "Robertson", "pos": "DEF", "price": 4.3},
-      {"name": "Manzambi", "pos": "MID", "price": 6.1},
-      {"name": "Belloumi", "pos": "MID", "price": 5.3}
-    ],
-    "transfer_in": "Vuskovic",
-    "transfer_out": "Dasilva",
-    "hits": 0,
+    "vice": "Rogers",
+    "formation": "4-4-2",
+    "starting_xi": ["Raya", "De Cuyper", "Konsa", "Van Hecke", "Calafiori", "Groß", "Tavernier", "Rogers", "Palmer", "Haaland", "Barry"],
+    "bench": ["Leno", "Isak", "Barnes", "Egan"],
+    "transfer_in": "Barry",
+    "transfer_out": "Wissa",
     "chip": null,
-    "chip_action": "save"
+    "chip_note": "WC held (triggers not met)",
+    "feasible": true,
+    "feasibility_note": "Needs Wissa sell price >= 5.6 (bank 0.1). Fallback: McBurnie or roll FT."
   },
   "consensus": {
-    "captain_agree": true,
+    "captain_agree": false,
     "transfer_agree": false,
-    "transfer_detail": "Both engines sell Dasilva but buy different players: Gemini buys Konsa and Claude buys Vuskovic. Gemini sells him because of the name collision. Claude sells him for upside.",
     "chip_agree": true,
-    "chip_detail": "Both use no chip. Gemini's chip is null and Claude's is save. WC x1 is the only chip left and its trigger is not met: 1 starter is rotation-flagged and the average is about 67 pts/GW.",
-    "conviction": "HIGH",
-    "captain_unanimous_all_three": true
+    "conviction": "SPLIT",
+    "notes": "Captains split: Gemini De Cuyper (DEF, fades ~125% Haaland EO) vs Claude Haaland (locked APEX cum_pts rule; sim-lab and intel also back Haaland). Transfers split: Gemini Egan->Vuskovic (unaffordable by 1.1m) vs Claude Wissa->Barry. Both engines hold chips. Neither engine backs YOUR captain Isak (xPts 4.68, sim-lab nailed=false, unverified doubt hint)."
   },
-  "rank_same_scale": [
-    {"side": "claude", "xpts": 95.06},
-    {"side": "gemini", "xpts": 93.88},
-    {"side": "you", "xpts": 89.12}
-  ],
   "best_plan": "claude",
-  "verdict": "All three sides captain Haaland. He is the season cum_pts leader, the locked APEX rule, and intel's captain shield at about 140% EO. That gives HIGH conviction. Scored on the same xpts.json scale, CLAUDE ranks first at 95.06, GEMINI second at 93.88 (its own figure of 67.49 is on a different scale), and YOU last at 89.12. YOUR current team does not match the best plan. It needs one transfer and a reshuffle of the XI. The engines DISAGREE on the transfer target. Gemini's Dasilva->Konsa is unreliable on two counts: the injury reason is a name collision (our Dasilva is the fit COV DEF), and Konsa's ARS tag and 12.87 xpts are suspect because he plays for AVL and his GW5 minutes share was 0.53. Gemini's XI also starts Belloumi (FDR 5) over Hall and Manzambi. Claude's Dasilva->Vuskovic is the cleaner move: he is nailed (797/810 mins), it adds no 4th BOU player, and he is a 7.4% EO differential in form. Claude also starts Vuskovic and Isak in place of Manzambi (rotation gate, about 43 mins per GW) and Belloumi (HUL, FDR 5). Caveats: news, medical, market and sim reports are GW5 and stale. fixture-room is DATA_STALE. the-rival produced no output. The free-transfer count is unknown. If you have 0 FT, skip the transfer, because a -4 hit for about +3.4 is not worth it, and make only the free XI changes.",
-  "highest_leverage_action": "Transfer Dasilva (COV DEF 4.0) out and Vuskovic (BHA DEF 5.2) in, with no hit (bank 1.5 -> 0.3), and start him in place of Manzambi, who fails the rotation gate. That is worth about +3.4 xpts. Also bench Belloumi (FDR 5) for Isak, which is free and worth +2.6. Together these take YOU from 89.12 to 95.06. If you have 0 FT, make only the Isak-for-Belloumi swap. Keep the Haaland captaincy.",
-  "data_caveats": [
-    "news.json, medical.json, market.json and sim.json are GW5 (Sep 2026) and stale. Only data-lab and intel are GW10.",
-    "fixture-room is DATA_STALE (GW38 of 25/26).",
-    "the-rival produced no output (features.json is stale).",
-    "The free-transfer count is not in squad.json.",
-    "The xpts.json scale looks inflated this week (a DEF on 12.87). Raw engine totals are not comparable, so use rank."
-  ]
+  "verdict": "CLAUDE is the best executable plan at 101.59 xPts vs YOU 94.42. Gemini's stated 86.47 is the lowest, and its recomputed 109.69 is unreachable because Egan->Vuskovic is 1.1m short. Engines DISAGREE on captain (SPLIT conviction), but the disagreement is resolved by the locked APEX rule, sim-lab, and intel all pointing to Haaland. Your current team does not match the best plan. It needs two changes: armband Isak -> Haaland (+4.53) and Wissa -> Barry with Barry starting over Isak (+2.64). Together they take you from 94.42 to 101.59 (+7.17). Hold WC.",
+  "highest_leverage_action": "Move the captaincy from Isak to Haaland (vice Rogers): +4.53 xPts, no transfer cost, and it covers ~125% template EO. Then, if Wissa sells for 5.6 or more, do Wissa -> Barry and start Barry over Isak (+2.64)."
 }

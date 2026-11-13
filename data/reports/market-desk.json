@@ -1,40 +1,53 @@
 {
-  "gw": 10,
+  "gw": 11,
   "agent": "market-desk",
-  "source": "data/cache/price.json (features.json not read, 610KB over read limit; price.json carries net_transfers/net_rate)",
+  "season": "2026/27",
+  "source": "data/cache/price.json (2026-11-12T17:25Z), squad.json, data-lab.json",
+  "caveat": "price_change in price.json is the change already applied, not a forecast. Confidence is a heuristic from net_transfers and net_rate. Ownership base is not available, so thresholds are approximate.",
   "likely_rises": [
-    {"player": "Ayari", "net_transfers": 76214, "confidence": "high", "owned": false},
-    {"player": "Kroupi.Jr", "net_transfers": 21311, "confidence": "high", "owned": false},
-    {"player": "Silva", "net_transfers": 80631, "confidence": "high", "owned": true},
-    {"player": "Evanilson", "net_transfers": 488058, "confidence": "high", "owned": true},
-    {"player": "Rudoni", "net_transfers": 19612, "confidence": "medium", "owned": true},
-    {"player": "Kudus", "net_transfers": 38695, "confidence": "medium", "owned": false},
-    {"player": "Van Hecke", "net_transfers": 244543, "confidence": "medium", "owned": true},
-    {"player": "Manzambi", "net_transfers": 122508, "confidence": "medium", "owned": true},
-    {"player": "Acheampong", "net_transfers": 8378, "confidence": "low", "owned": false},
-    {"player": "Penders", "net_transfers": 4786, "confidence": "low", "owned": false},
-    {"player": "N.Jackson", "net_transfers": 385196, "confidence": "medium", "owned": false},
-    {"player": "Enciso", "net_transfers": 13082, "confidence": "low", "owned": false}
+    {"player": "Van Hecke", "team": "TOT", "net_transfers": 166930, "confidence": "high", "owned": true, "note": "In squad (5.1). Already +0.1 and still heavy inflow. Hold; buying later costs more."},
+    {"player": "Vuskovic", "team": "BHA", "net_transfers": 146605, "confidence": "high", "owned": false, "note": "Gemini transfer target (Egan->Vuskovic), xPts 12.3. Already +0.1 to 5.3, a second rise is plausible."},
+    {"player": "N.Jackson", "team": "AVL", "net_transfers": 292249, "confidence": "high", "owned": false, "note": "Highest inflow, xPts 11.91. Price 7.1."},
+    {"player": "Evanilson", "team": "BOU", "net_transfers": 192142, "confidence": "medium", "owned": false, "note": "xPts 10.11. Price 6.5."},
+    {"player": "Barry", "team": "EVE", "net_transfers": 195778, "confidence": "medium", "owned": false, "note": "Price 5.7."},
+    {"player": "Alysson", "team": "AVL", "net_transfers": 10403, "confidence": "medium", "owned": false, "note": "Highest net_rate (52), low volume. Price 4.9."},
+    {"player": "Wirtz", "team": "LIV", "net_transfers": 45309, "confidence": "low", "owned": false},
+    {"player": "McGinn", "team": "AVL", "net_transfers": 33499, "confidence": "low", "owned": false},
+    {"player": "Ayari", "team": "BHA", "net_transfers": 22207, "confidence": "low", "owned": false},
+    {"player": "Delap", "team": "NFO", "net_transfers": 19642, "confidence": "low", "owned": false, "note": "Just fell 0.1. Rise unlikely."},
+    {"player": "Rudoni", "team": "COV", "net_transfers": 14284, "confidence": "low", "owned": false},
+    {"player": "J.Timber", "team": "ARS", "net_transfers": 9026, "confidence": "low", "owned": false}
   ],
   "likely_falls": [
-    {"player": "João Pedro", "net_transfers": -851980, "confidence": "high", "owned": false},
-    {"player": "Hato", "net_transfers": -11311, "confidence": "medium", "owned": false},
-    {"player": "Henderson", "net_transfers": -24721, "confidence": "medium", "owned": false},
-    {"player": "Okafor", "net_transfers": -4111, "confidence": "low", "owned": false},
-    {"player": "Lacroix", "net_transfers": -63130, "confidence": "medium", "owned": false},
-    {"player": "Baleba", "net_transfers": -2370, "confidence": "low", "owned": false},
-    {"player": "Saka", "net_transfers": -68440, "confidence": "medium", "owned": false},
-    {"player": "Pinnock", "net_transfers": -1096, "confidence": "low", "owned": false},
-    {"player": "Gonzalo", "net_transfers": -45532, "confidence": "medium", "owned": false},
-    {"player": "Mukiele", "net_transfers": -14844, "confidence": "low", "owned": false},
-    {"player": "Gibbs-White", "net_transfers": -101281, "confidence": "medium", "owned": false},
-    {"player": "Sávio", "net_transfers": -3807, "confidence": "low", "owned": false}
+    {"player": "Wissa", "team": "NEW", "net_transfers": -57990, "confidence": "medium", "owned": true, "note": "In squad (bench, 5.9). Already -0.1, so another fall is possible. Low urgency since he is a bench player."},
+    {"player": "Gvardiol", "team": "MCI", "net_transfers": -281128, "confidence": "high", "owned": false, "note": "Already -0.1. Not owned."},
+    {"player": "João Pedro", "team": "CHE", "net_transfers": -304952, "confidence": "high", "owned": false, "note": "Already -0.1. Not owned."},
+    {"player": "Thiago", "team": "BRE", "net_transfers": -93858, "confidence": "medium", "owned": false},
+    {"player": "Guéhi", "team": "MCI", "net_transfers": -137854, "confidence": "medium", "owned": false},
+    {"player": "White", "team": "ARS", "net_transfers": -31543, "confidence": "low", "owned": false},
+    {"player": "Stach", "team": "LEE", "net_transfers": -11520, "confidence": "low", "owned": false},
+    {"player": "Tel", "team": "TOT", "net_transfers": -5121, "confidence": "low", "owned": false},
+    {"player": "Hato", "team": "CHE", "net_transfers": -4321, "confidence": "low", "owned": false},
+    {"player": "Baleba", "team": "MUN", "net_transfers": -3105, "confidence": "low", "owned": false, "note": "Highest fall rate but tiny volume."},
+    {"player": "Sanchez", "team": "BOU", "net_transfers": -675, "confidence": "low", "owned": false},
+    {"player": "Gudmundsson", "team": "LEE", "net_transfers": -665, "confidence": "low", "owned": false}
   ],
   "act_now": [
-    {"move": "Hold Silva, Evanilson, Van Hecke, Manzambi, Rudoni", "reason": "owned and rising, selling would forfeit value gain"},
-    {"move": "If a transfer is planned, buy Ayari (MID 5.4) before the deadline, e.g. for Belloumi (lowest starter xPts 2.54, 5.3)", "reason": "highest net_rate (47.6) on the list, bank 1.5 covers it"},
-    {"move": "Kroupi.Jr (7.3) is a secondary rise target", "reason": "net_rate 35.5"}
+    {
+      "move": "Vuskovic (BHA DEF, 5.3) is the target to buy before the deadline. Egan->Vuskovic is the Gemini suggestion.",
+      "urgency": "high",
+      "reason": "Heavy inflow and a possible second rise. xPts 12.3.",
+      "constraint": "Egan sells for about 4.1 and the bank is 0.1, which gives about 4.2 against a 5.3 price. The move is short by about 1.1 and does not work as a single transfer. Funding would need a second sale, such as Wissa (5.9), which means a 2-transfer sequence and a possible -4 hit, since no free-transfer count is in the cache. Another option is to hold Egan and skip it."
+    },
+    {
+      "move": "Do not sell Van Hecke.",
+      "urgency": "medium",
+      "reason": "He is owned and rising, so selling would lose value."
+    }
   ],
-  "monitor": ["Kudus", "N.Jackson", "Acheampong", "Penders", "Enciso"],
-  "notes": ["No squad player is in the fall list.", "Players with price_change != 0 in price.json (Silva, Evanilson, Kudus, Van Hecke, N.Jackson up; João Pedro, Gonzalo, Gibbs-White, Sávio down) may already have moved; confirm before acting.", "Wildcard is the only chip left; no chip is needed for price moves."]
+  "monitor": [
+    "Wissa: bench player already falling. Sell only if a transfer is otherwise needed.",
+    "N.Jackson, Evanilson: high xPts and rising. Not affordable without a restructure.",
+    "Gvardiol, João Pedro: falling, not owned. Avoid buying them."
+  ]
 }

@@ -1,91 +1,135 @@
 {
-  "gw": 6,
+  "gw": 11,
   "season": "2026/27",
   "strategy": "top10k",
-  "strategy_note": "Rank-chaser / elite 3-4-3 pattern: safe-haven core (Haaland 73.5% TSB, Raya 42.0% TSB, Saka) plus 1-2 calculated differentials. Captain = season cum_pts leader among nailed outfield premiums (APEX locked rule). Built blind from data/cache/player_pool.json + data/cache/xpts.json; carries on from the rival's own GW5 squad, with no access to the user's team.",
+  "strategy_note": "Rank-chaser, elite 3-4-3 pattern: a safe-haven core (Haaland 79% TSB, De Cuyper 47.4%, Groß 47.7%, Raya 47.4%) plus 2 calculated differentials (Rudoni 1.2%, Vuskovic 8.6%). Captain is the season cum_pts leader among nailed outfield premiums (locked APEX rule). Built blind from data/cache/xpts.json, player_pool.json, price.json and news.json. It carries on from the rival's own GW6 squad, with no access to the user's team.",
   "squad": [
     "Raya",
     "Tzolakis",
-    "Tarkowski",
-    "Mykolenko",
-    "Gvardiol",
-    "Maitland-Niles",
+    "De Cuyper",
+    "Vuskovic",
+    "Konsa",
     "Bogle",
+    "Maitland-Niles",
     "Groß",
-    "Saka",
+    "Rudoni",
     "Tavernier",
     "Gibbs-White",
     "Gakpo",
     "Haaland",
-    "Brobbey",
-    "Emersonn"
+    "N.Jackson",
+    "Evanilson"
   ],
   "starting_xi": [
     "Raya",
-    "Tarkowski",
-    "Mykolenko",
-    "Gvardiol",
+    "De Cuyper",
+    "Vuskovic",
+    "Konsa",
     "Groß",
-    "Saka",
+    "Rudoni",
     "Tavernier",
     "Gibbs-White",
     "Haaland",
-    "Brobbey",
-    "Emersonn"
+    "N.Jackson",
+    "Evanilson"
   ],
   "formation": "3-4-3",
   "bench_order": [
-    "Maitland-Niles",
     "Bogle",
     "Gakpo",
+    "Maitland-Niles",
     "Tzolakis"
   ],
   "captain": "Haaland",
-  "vice": "Saka",
+  "vice": "N.Jackson",
   "transfers": [
     {
-      "out": "Guéhi",
-      "in": "Tarkowski",
-      "pos": "DEF",
-      "price_out": 6.0,
-      "price_in": 6.1,
-      "xpts_out": 6.37,
-      "xpts_in": 12.76,
-      "reason": "Highest-xPts asset in the pool (12.76, FDR 2), 43 season pts, 450/450 mins. Guéhi faces FDR 4. EVE count goes to 3 (Mykolenko, Maitland-Niles, Tarkowski)."
+      "out": "Saka",
+      "in": "Rudoni",
+      "pos": "MID",
+      "price_out": 9.4,
+      "price_in": 4.9,
+      "xpts_out": 0.42,
+      "xpts_in": 7.82,
+      "reason": "Saka is out with a thigh injury and no return date (news.json, chance 0). Rudoni has FDR 2, 7.82 xPts, xG+xA of 3.91, 1.2% TSB and is a likely price riser. Frees 4.5m."
     },
     {
-      "out": "Calvert-Lewin",
-      "in": "Brobbey",
+      "out": "Brobbey",
+      "in": "N.Jackson",
       "pos": "FWD",
-      "price_out": 6.0,
-      "price_in": 5.7,
-      "xpts_out": 3.54,
-      "xpts_in": 5.97,
-      "reason": "Calvert-Lewin has an FDR 5 fixture (3.54 xPts). Brobbey: FDR 2, 2.94 xG and 3 goals in 399 mins, 6.2% TSB. Frees 0.3m."
+      "price_out": 5.7,
+      "price_in": 7.1,
+      "xpts_out": 0.32,
+      "xpts_in": 11.91,
+      "reason": "Brobbey has collapsed to 0.32 xPts. N.Jackson has FDR 2, 6 goals, 11.91 xPts (the top forward), 30% TSB and +292k net transfers."
+    },
+    {
+      "out": "Emersonn",
+      "in": "Evanilson",
+      "pos": "FWD",
+      "price_out": 5.4,
+      "price_in": 6.5,
+      "xpts_out": 1.2,
+      "xpts_in": 10.11,
+      "reason": "Evanilson: 61 pts, 4.45 xG, 10.11 xPts, 23% TSB. BOU count goes to 2 (with Tavernier)."
+    },
+    {
+      "out": "Tarkowski",
+      "in": "De Cuyper",
+      "pos": "DEF",
+      "price_out": 6.2,
+      "price_in": 5.5,
+      "xpts_out": 3.08,
+      "xpts_in": 12.92,
+      "reason": "Highest xPts in the pool (12.92, FDR 2). De Cuyper leads the season at 75 pts and has 47.4% TSB, so he is a safe-haven core pick. EVE now faces FDR 4."
+    },
+    {
+      "out": "Mykolenko",
+      "in": "Konsa",
+      "pos": "DEF",
+      "price_out": 4.6,
+      "price_in": 4.8,
+      "xpts_out": 2.94,
+      "xpts_in": 12.15,
+      "reason": "Konsa (ARS): 57 pts, 11.88 ppm, 12.15 xPts, 24.1% TSB. ARS count goes to 2 (with Raya)."
+    },
+    {
+      "out": "Gvardiol",
+      "in": "Vuskovic",
+      "pos": "DEF",
+      "price_out": 5.6,
+      "price_in": 5.3,
+      "xpts_out": 3.84,
+      "xpts_in": 12.3,
+      "reason": "This is the -4 hit. It gains +8.46 xPts (net +4.46). Gvardiol is in the price-fall list (-281k). Vuskovic: 70 pts, 7 CS, 8.6% TSB, rising. BHA count goes to 3 (De Cuyper, Vuskovic, Groß)."
     }
   ],
-  "transfer_note": "2 free transfers used (1 banked from GW5 + 1 GW6), 0 hit. A third move (Gakpo -> Ødegaard) gains only about +1.96 XI xPts, so it does not justify a -4 hit.",
+  "transfer_note": "The rival file was last written for GW6, so GW7-10 are assumed to be rolled transfers, which gives 5 FT (FPL cap). 6 moves = 5 FT + 1 extra at -4. Saka had to be sold to fund the moves and to clear 9.4m of dead money. The 6th move (Gvardiol -> Vuskovic, +8.46) clears the hit comfortably. If only 1-2 FT are actually available, do Saka->Rudoni, Brobbey->N.Jackson and Tarkowski->De Cuyper first.",
+  "transfer_cost": -4,
   "chip": null,
-  "chip_note": "No chip. Every squad player has a GW6 fixture (no BGW), there is no confirmed DGW, and no XI starter is rotation-flagged, so the APEX chip-timing gate says save. Maitland-Niles (177 mins in 5 GWs) fails the rotation gate and is benched.",
+  "chip_note": "No chip. There is no BGW (every XI player has a fixture) and no confirmed DGW. Only 1 starter (Saka, now sold) was flagged, which is below the WC trigger of 3+. Save WC/TC/BB/FH under the APEX chip-timing gates. Maitland-Niles (308 mins in 10 GWs, not in xpts) fails the rotation gate and is the 3rd bench sub.",
   "budget": {
-    "squad_value": 99.6,
-    "in_the_bank_est": 0.4,
-    "note": "Valued at current pool prices. Exact ITB depends on FPL selling prices (only half of any price rise is kept).",
-    "cap_check": "max 3 per club satisfied (EVE 3: Tarkowski/Mykolenko/Maitland-Niles; ARS 2; MCI 2; rest 1)"
+    "squad_value": 98.0,
+    "in_the_bank_est": 3.2,
+    "note": "Valued at current pool prices. The GW6 squad was worth 100.8 at today's prices plus 0.4 ITB. The real ITB will be a little lower because FPL only keeps half of any price rise on sale.",
+    "cap_check": "Max 3 per club holds: BHA 3 (De Cuyper/Vuskovic/Groß), ARS 2 (Raya/Konsa), BOU 2 (Tavernier/Evanilson), all others 1."
   },
-  "projected_xpts": 103.47,
+  "projected_xpts": 105.81,
   "xpts_breakdown": {
-    "GK": 11.88,
-    "DEF": 29.19,
-    "MID": 35.13,
-    "FWD": 19.12,
-    "captain_bonus": 8.15
+    "GK": 8.94,
+    "DEF": 37.37,
+    "MID": 23.06,
+    "FWD": 31.23,
+    "captain_bonus": 9.21,
+    "hit": -4,
+    "gross_before_hit": 109.81
   },
-  "key_differential": "Brobbey (SUN, 6.2% TSB, 5.97 xPts, FDR 2): 2.94 xG, the best underlying shot volume in the sub-6m forward pool. Secondary: Emersonn (IPS, 3.4% TSB, 5.00 xPts, FDR 2).",
+  "key_differential": "Rudoni (COV, 1.2% TSB, 4.9m, 7.82 xPts, FDR 2): 3 goals, 2.23 xG + 1.68 xA, and a likely price riser. Secondary: Vuskovic (BHA, 8.6% TSB, 12.3 xPts).",
   "risks": [
-    "Captain Haaland has FDR 4 (8.15 xPts), and Saka (10.19) and Groß (11.83) project higher. The armband follows the locked APEX cum_pts rule and blocks a 73.5%-owned field, so there is zero captain edge.",
-    "The 3-4-3 shape benches Maitland-Niles (9.54 xPts), but he is rotation-flagged (avg about 35 mins).",
-    "3 EVE defenders stack clean-sheet correlation on one FDR 2 fixture.",
-    "projected_xpts uses the Sim Lab xpts.json priors, which look inflated for defenders and GKs this week (e.g. Tarkowski 12.76). Compare it with other engines on the same scale, not as an absolute points forecast."
+    "Captain Haaland (9.21 xPts, FDR 2) follows the locked APEX cum_pts rule (70 pts, tied top among outfield premiums). N.Jackson projects higher (11.91), but the armband is a block against a 79%-owned field, not a play for rank.",
+    "The 3-4-3 shape starts Gibbs-White (1.78) over Bogle (3.75). A 4-3-3 would add about +1.97 xPts, but the strategy locks 3-4-3. Gibbs-White/Gakpo are the targets next GW, using the about 3.2m ITB.",
+    "BHA triple-up (De Cuyper/Vuskovic/Groß) stacks clean-sheet correlation on one FDR 2 fixture.",
+    "The free-transfer count is assumed (GW7-10 rival history is missing). If fewer FTs are available, the hit cost goes up.",
+    "Sim Lab xpts.json priors look inflated for defenders (12+ xPts). Compare with other engines on the same scale, not as an absolute points forecast."
   ]
 }

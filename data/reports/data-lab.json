@@ -1,7 +1,114 @@
-{"gw":10,"agent":"data-lab","checked":"2026-11-06",
-"files":{"squad":"OK (15 players)","xpts":"OK (150 rows)","league":"OK (context 10 keys; differentials/template arrays empty, template string in context)","news":"OK (40)","price":"OK (12 rises/12 falls)","gemini":"OK (parsed, gw10)","player_pool":"OK (400)"},
-"updated":"all 2026-11-05T17:23Z","gw_fields":"squad/xpts/gemini/pool gw=10 (squad picks_gw=9); league context GW=9",
-"facts":{"captain":"Haaland","vice":"Tavernier","bank":1.5,"squad_value":103.8,"rank":389425,"total_points":607,"chips_used":["BB@GW2","WC@GW3","TC@GW4","FH@GW9"],"chips_left":["WC x1"],"FH_available":false,"WC_available":true,"league_rank":"7 of 18, 47 behind Ohmbappe (654)","template":"De Cuyper, Haaland, Gross, Tavernier, Raya"},
-"gemini":{"captain":"Haaland","captain_xpts":19.82,"vice":"Konsa","projected_xpts":67.49,"transfer":"Dasilva -> Konsa","chip":null,"confidence":"medium"},
-"flags":["Gemini transfer_out Dasilva as injured: news.json Dasilva is BRE MID, squad Dasilva is COV DEF (status AVAILABLE) - likely name collision","Gemini XI/bench differs from real squad (puts Leno in XI, Isak/Hall/Manzambi/Robertson/Kinsky on bench; Konsa not owned)","Belloumi xpts 2.54 lowest starter","squad.json vice Tavernier vs gemini vice Konsa"],
-"status":"OK"}
+{
+ "gw": 11,
+ "agent": "data-lab",
+ "checked": "2026-11-13",
+ "season": "2026/27",
+ "files": {
+  "squad": "OK (15 players, gw11, picks_gw10)",
+  "xpts": "OK (150 rows, gw11)",
+  "league": "OK (context only; differentials/template arrays empty; context GW=10)",
+  "news": "OK (40)",
+  "price": "OK (12 rises/12 falls)",
+  "gemini": "OK (gw11)",
+  "player_pool": "OK (400, gw11)"
+ },
+ "updated": "all 2026-11-12T17:24-17:25Z",
+ "missing": [],
+ "stop": false,
+ "squad": {
+  "team": "Puwakies Jjimyang",
+  "captain": "Isak",
+  "vice": "Palmer",
+  "bank": 0.1,
+  "value": 103.9,
+  "total_points": 668,
+  "overall_rank": 457775,
+  "xi": [
+   "Raya",
+   "De Cuyper",
+   "Van Hecke",
+   "Konsa",
+   "Calafiori",
+   "Rogers",
+   "Palmer",
+   "Gross",
+   "Tavernier",
+   "Haaland",
+   "Isak"
+  ],
+  "bench": [
+   "Leno",
+   "Barnes",
+   "Wissa",
+   "Egan"
+  ]
+ },
+ "chips": {
+  "used": [
+   "BB@GW2",
+   "WC@GW3",
+   "TC@GW4",
+   "FH@GW9"
+  ],
+  "left": [
+   "WC x1"
+  ]
+ },
+ "xpts_top": [
+  [
+   "De Cuyper",
+   12.92
+  ],
+  [
+   "Vuskovic",
+   12.3
+  ],
+  [
+   "Konsa",
+   12.15
+  ],
+  [
+   "N.Jackson",
+   11.91
+  ],
+  [
+   "Verbruggen",
+   11.32
+  ],
+  [
+   "Gabriel",
+   11.29
+  ],
+  [
+   "Van Hecke",
+   11.18
+  ],
+  [
+   "Evanilson",
+   10.11
+  ],
+  [
+   "Haaland",
+   9.21
+  ],
+  [
+   "Raya",
+   8.94
+  ]
+ ],
+ "league": {
+  "rank": 7,
+  "of": 18,
+  "leader": "Ohmbappe (714)",
+  "gap": 46
+ },
+ "gemini": {
+  "captain": "De Cuyper",
+  "captain_xpts": 12.92,
+  "vice": "Vuskovic",
+  "transfer": "Egan->Vuskovic",
+  "chip": null,
+  "projected_xpts": 86.47,
+  "confidence": "high"
+ }
+}

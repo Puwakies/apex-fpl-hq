@@ -1,34 +1,40 @@
 {
   "engine": "claude",
-  "gw": 6,
-  "generated": "2026-09-25",
-  "note": "Mirror of data/reports/claude.json (GW6 final). The full record, including real_squad_actions, conditional transfers and claude_optimal_15, is in claude.json.",
+  "gw": 11,
+  "generated": "2026-11-13",
+  "note": "Mirror of data/reports/claude.json (GW11). The full record is in claude.json.",
   "captain": "Haaland",
   "captain_type": "template",
   "captain_trigger": "none",
-  "vice": "Groß",
+  "vice": "Rogers",
   "formation": "4-4-2",
   "starting_xi": [
-    { "name": "Raya", "pos": "GK", "price": 6.1, "xpts": 11.88 },
-    { "name": "Calafiori", "pos": "DEF", "price": 5.8, "xpts": 11.31 },
-    { "name": "Hall", "pos": "DEF", "price": 5.3, "xpts": 10.03 },
-    { "name": "De Cuyper", "pos": "DEF", "price": 4.9, "xpts": 9.93 },
-    { "name": "Egan", "pos": "DEF", "price": 4.1, "xpts": 7.25 },
-    { "name": "Groß", "pos": "MID", "price": 5.8, "xpts": 11.83 },
-    { "name": "Barnes", "pos": "MID", "price": 6.1, "xpts": 6.93 },
-    { "name": "Gibbs-White", "pos": "MID", "price": 8.0, "xpts": 6.9 },
-    { "name": "Gakpo", "pos": "MID", "price": 7.2, "xpts": 4.76 },
-    { "name": "Haaland", "pos": "FWD", "price": 15.6, "xpts": 8.15 },
-    { "name": "Wissa", "pos": "FWD", "price": 6.2, "xpts": 3.55 }
+    {"name": "Raya", "pos": "GK", "price": 6.2, "xpts": 8.94},
+    {"name": "De Cuyper", "pos": "DEF", "price": 5.5, "xpts": 12.92},
+    {"name": "Konsa", "pos": "DEF", "price": 4.8, "xpts": 12.15},
+    {"name": "Van Hecke", "pos": "DEF", "price": 5.1, "xpts": 11.18},
+    {"name": "Calafiori", "pos": "DEF", "price": 5.9, "xpts": 6.85},
+    {"name": "Groß", "pos": "MID", "price": 6.3, "xpts": 6.75},
+    {"name": "Tavernier", "pos": "MID", "price": 6.7, "xpts": 6.71},
+    {"name": "Rogers", "pos": "MID", "price": 8.2, "xpts": 5.27},
+    {"name": "Palmer", "pos": "MID", "price": 9.8, "xpts": 5.08},
+    {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 9.21},
+    {"name": "Barry", "pos": "FWD", "price": 5.7, "xpts": 7.32}
   ],
   "bench": [
-    { "name": "Leno", "pos": "GK", "price": 4.5 },
-    { "name": "Palmer", "pos": "MID", "price": 9.7 },
-    { "name": "Konsa", "pos": "DEF", "price": 4.6 },
-    { "name": "João Pedro", "pos": "FWD", "price": 7.7 }
+    {"name": "Leno", "pos": "GK", "price": 4.5},
+    {"name": "Isak", "pos": "FWD", "price": 9.3},
+    {"name": "Barnes", "pos": "MID", "price": 6.1},
+    {"name": "Egan", "pos": "DEF", "price": 4.1}
   ],
-  "transfers": { "out": "M.Sangaré", "in": "Barnes", "hits": 0, "bank": 0.5 },
-  "chip": { "name": "none", "action": "SAVE", "reason": "No trigger is met. No confirmed BGW/DGW, and only 2 starters are hard rotation-flagged. The first-half FH is still unused; the GW19 deadline is 13 GWs away and the forcing rule starts at GW16." },
-  "projected_xpts": 100.67,
-  "risks": ["See data/reports/claude.json"]
+  "transfers": {"out": "Wissa", "in": "Barry", "hits": 0, "bank": 0.3},
+  "chip": {"name": "WC", "action": "hold", "reason": "WC triggers not met (0 rotation-flagged starters, 66.8/GW avg). No DGW/BGW data. Re-check the chip's set at GW16 for the forcing rule."},
+  "projected_xpts": 101.59,
+  "risks": [
+    "Isak benched (xPts 4.68, unverified doubt). If he is confirmed fit, swapping him for Palmer costs 0.40.",
+    "Palmer has an unconfirmed injury headline. Vice is Rogers.",
+    "Calafiori minutes are borderline (60/game GW8-10).",
+    "Wissa's sell price is unknown. Barry needs it to be >= 5.6.",
+    "projected_xpts is above 80 because of the cache xPts scale (DEF 11-13). The arithmetic is verified."
+  ]
 }

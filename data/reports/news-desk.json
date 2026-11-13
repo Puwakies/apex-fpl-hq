@@ -1,20 +1,29 @@
 {
-  "gw": 10,
+  "gw": 11,
   "agent": "news-desk",
-  "checked": "2026-11-06",
-  "coverage_note": "Web search returned only prior-season GW10 articles (2022-2025); no verified 2026/27 presser or predicted-lineup data found. Signals below are based only on FPL status flags in data/cache/squad.json and news.json. 'starts' means no injury flag only, not a confirmed lineup.",
+  "checked": "2026-11-13",
+  "caveat": "Cache news.json lists only 40 injured players and all 15 squad players are AVAILABLE with no news. Web coverage of GW11 pressers is thin (international break); most items below are inferred from GW10 team sheets and the FFScout 9 Nov notes, not confirmed GW11 lineups. Re-check after Friday pressers and ~75 min before deadline.",
   "items": [
-    {"player": "Haaland", "team": "MCI", "signal": "starts", "note": "AVAILABLE, no news flag. No rotation talk found. Captain.", "source": "data/cache/squad.json"},
-    {"player": "Tavernier", "team": "BOU", "signal": "starts", "note": "AVAILABLE, no flag. BOU has many injured (Milosavljevic, J.Araujo, Scott, Toth.A) but none of these are owned.", "source": "data/cache/squad.json; data/cache/news.json"},
-    {"player": "Evanilson", "team": "BOU", "signal": "starts", "note": "AVAILABLE, no flag.", "source": "data/cache/squad.json"},
-    {"player": "Silva", "team": "BOU", "signal": "unknown", "note": "AVAILABLE, no flag. Starting status not verified.", "source": "data/cache/squad.json"},
-    {"player": "Rogers", "team": "CHE", "signal": "unknown", "note": "AVAILABLE. CHE has a long injury list (Martinez, James, Gittens, Joao Pedro, Lacroix and others), so CHE lineup churn is possible. No Rogers-specific news found.", "source": "data/cache/news.json"},
-    {"player": "Manzambi", "team": "AVL", "signal": "unknown", "note": "AVAILABLE. AVL injuries (Onana, Ruggeri, Wan-Bissaka) could change the midfield. No player-specific news found.", "source": "data/cache/news.json"},
-    {"player": "Belloumi", "team": "HUL", "signal": "unknown", "note": "AVAILABLE. Lowest starter xPts (2.54) per data-lab. HUL has several injured. Minutes not verified.", "source": "data/reports/data-lab.json"},
-    {"player": "Rudoni", "team": "COV", "signal": "unknown", "note": "AVAILABLE, no flag.", "source": "data/cache/squad.json"},
-    {"player": "Hall", "team": "NEW", "signal": "unknown", "note": "AVAILABLE, no flag.", "source": "data/cache/squad.json"},
-    {"player": "Kinsky", "team": "TOT", "signal": "unknown", "note": "AVAILABLE, no flag. Starting GK status not verified.", "source": "data/cache/squad.json"},
-    {"player": "Van Hecke", "team": "TOT", "signal": "unknown", "note": "AVAILABLE, no flag. Team is TOT in squad.json, which is unusual. Verify.", "source": "data/cache/squad.json"},
-    {"player": "Dasilva", "team": "COV", "signal": "unknown", "note": "Owned bench DEF is AVAILABLE. Gemini's 'injured Dasilva' is the BRE MID (name collision), so this player is not injured.", "source": "data/reports/data-lab.json"}
-  ]
+    {"player": "De Cuyper", "team": "BHA", "signal": "starts", "note": "Regular starter; 13 returns, 5.5m, price rise. Competes with Vuskovic for FPL slot but they are different players, both can start. Brighton GW11 opponent reportedly Hull. Mitoma (back ~22 Nov) and Yohanna out, so attack/minutes stay concentrated. No rotation talk found.", "source": "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-vuskovic-and-gross-haul-how-long-is-the-thiago-ban"},
+    {"player": "Vuskovic", "team": "BHA", "signal": "starts", "note": "Scout notes call his long-term minutes security better than De Cuyper; 12-pt GW10, regular DefCon points, price 5.3m after 9 Nov rise. Key target (Egan->Vuskovic is Gemini's transfer). No rotation flag found.", "source": "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-vuskovic-and-gross-haul-how-long-is-the-thiago-ban"},
+    {"player": "Groß", "team": "BHA", "signal": "starts", "note": "Scored GW10 penalty to end lull; league leader in chances created (29). Nailed. Check who takes penalties if Mitoma returns.", "source": "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-vuskovic-and-gross-haul-how-long-is-the-thiago-ban"},
+    {"player": "Van Hecke", "team": "TOT", "signal": "starts", "note": "Started GW10 at Leeds in the Spurs back line (Kinsky, Porro, van Hecke, van de Ven, Robertson). No GW11 rotation info found. Note: cache lists him as TOT; verify club/price since he was long a Brighton player.", "source": "https://www.fantasyfootballscout.co.uk/2026/11/07/leeds-v-spurs-team-news-calvert-lewin-starts-no-stach"},
+    {"player": "Isak", "team": "LIV", "signal": "starts", "note": "Cache status AVAILABLE, no news. Liverpool injury list is long (Frimpong, Bradley, Leoni, Jaros out) which hurts clean-sheet odds but not Isak's starting place. Captain per cum_pts rule; no web confirmation of GW11 fitness found.", "source": "data/cache/news.json"},
+    {"player": "Palmer", "team": "CHE", "signal": "unknown", "note": "Cache AVAILABLE, no flag. Chelsea missing James, Hato, Gittens, Joao Pedro, Lacroix (all out, unknown return). A GW11 injury-report newsletter title queries 'Is Palmer okay' but the season could not be verified; treat as unconfirmed and check Friday presser. He is vice-captain.", "source": "https://fplphysio-newsletter.beehiiv.com/p/gw-11-injury-report-is-palmer-okay"},
+    {"player": "Rogers", "team": "CHE", "signal": "unknown", "note": "Cache AVAILABLE. Chelsea squad depleted so minutes likely safe; no confirmed GW11 info.", "source": "data/cache/news.json"},
+    {"player": "Haaland", "team": "MCI", "signal": "starts", "note": "Cache AVAILABLE, no news. No rotation talk found.", "source": "data/cache/squad.json"},
+    {"player": "Raya", "team": "ARS", "signal": "starts", "note": "AVAILABLE. Saka is out (thigh, unknown) but that does not affect defence/GK starts.", "source": "data/cache/news.json"},
+    {"player": "Konsa", "team": "ARS", "signal": "starts", "note": "AVAILABLE, no news. xPts 12.15 (3rd in data-lab). Arsenal defence otherwise intact.", "source": "data/cache/squad.json"},
+    {"player": "Calafiori", "team": "ARS", "signal": "starts", "note": "AVAILABLE, no news.", "source": "data/cache/squad.json"},
+    {"player": "Tavernier", "team": "BOU", "signal": "starts", "note": "AVAILABLE. Bournemouth missing Milosavljevic, J.Araujo, Toth, Sanchez (all out), so Tavernier's minutes are secure; team defensive depth is weak.", "source": "data/cache/news.json"},
+    {"player": "Barnes", "team": "NEW", "signal": "unknown", "note": "Bench. AVAILABLE, no news. Only matters as autosub.", "source": "data/cache/squad.json"},
+    {"player": "Wissa", "team": "NEW", "signal": "unknown", "note": "Bench. AVAILABLE, no news. Only matters as autosub.", "source": "data/cache/squad.json"},
+    {"player": "Leno", "team": "FUL", "signal": "unknown", "note": "Bench GK. AVAILABLE, no news.", "source": "data/cache/squad.json"},
+    {"player": "Egan", "team": "HUL", "signal": "unknown", "note": "Bench DEF (Gemini sells him for Vuskovic). Hull have Hughes, Targett, Matazo, Morita, Ansah out. Hull reportedly face Brighton in GW11, which is a poor fixture for a Hull defender. Not flagged injured himself.", "source": "https://onefpl.com/blog/brighton-fpl-gw10-14-de-cuyper-gross-verbruggen"}
+  ],
+  "summary": {
+    "rotation_flags": 0,
+    "biggest_lineup_leak": "Mitoma will not necessarily return straight after the break (Hurzeler), so Brighton attack and Gross/De Cuyper roles stay unchanged in GW11",
+    "nailed_budget_enabler": "Vuskovic (5.3m) and De Cuyper (5.5m), both Brighton starters with no rotation talk"
+  }
 }

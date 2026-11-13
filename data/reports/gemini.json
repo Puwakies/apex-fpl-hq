@@ -1,1 +1,15 @@
-{"engine":"gemini","gw":10,"captain":"Haaland","vice":"Konsa","starting_xi":["Leno","Konsa","Van Hecke","Silva","Rudoni","Tavernier","Rogers","Belloumi","Haaland","Evanilson","Isak"],"bench":["Kinsky","Robertson","Hall","Manzambi"],"transfer_out":"Dasilva","transfer_in":"Konsa","chip":null,"projected_xpts":67.49,"confidence":"medium","key_risk":"Defensive ceiling dependency and limited squad coverage in top xPts table"}
+{
+  "engine": "gemini",
+  "gw": 11,
+  "captain": "De Cuyper",
+  "captain_xpts": 12.92,
+  "vice": "Vuskovic",
+  "starting_xi": ["Raya", "De Cuyper", "Vuskovic", "Konsa", "Van Hecke", "Calafiori", "Groß", "Palmer", "Tavernier", "Haaland", "Isak"],
+  "bench": ["Leno", "Barnes", "Rogers", "Wissa"],
+  "transfer_out": "Egan",
+  "transfer_in": "Vuskovic",
+  "chip": null,
+  "projected_xpts": 86.47,
+  "confidence": "high",
+  "key_risk": "High reliance on clean sheet points from 5-man defence"
+}

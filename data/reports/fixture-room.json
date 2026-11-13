@@ -1,10 +1,36 @@
 {
-  "gw": 10,
-  "status": "DATA_STALE",
-  "note": "data/features.json is stale: meta.generated_at 2026-07-23, target_gw 1, fdr.next covers GW1-5 only. It cannot support a GW10-14 fixture ranking, so no ranking was fabricated. cache/xpts.json has only a single-GW fdr per player (no 5-GW run, no DGW/BGW flags). Regenerate features.json for target_gw 10 and re-run.",
-  "best_runs": [],
-  "worst_runs": [],
+  "gw": 11,
+  "agent": "fixture-room",
+  "season": "2026/27",
+  "window": "GW11 only (multi-GW data unavailable)",
+  "data_quality": {
+    "limited": true,
+    "note": "data/cache/xpts.json carries one fdr value per player (GW11 only). player_pool.json and data-lab.json hold no fixture data. data/features.json is stale (target_gw 1, generated 2026-07-23), so its fdr.next[] was not used. No GW12-15 FDR, home/away split, DGW or BGW info is available. Rankings below are GW11-only and are NOT a next-5 ranking."
+  },
+  "best_runs": [
+    {"team": "BHA", "fdr_avg": 2, "window": "GW11", "note": "top xPts DEF/GK/MID: De Cuyper 12.92, Vuskovic 12.3, Verbruggen 11.32"},
+    {"team": "TOT", "fdr_avg": 2, "window": "GW11", "note": "Van Hecke 11.18, Kinsky 8.44"},
+    {"team": "AVL", "fdr_avg": 2, "window": "GW11", "note": "N.Jackson 11.91"},
+    {"team": "MCI", "fdr_avg": 2, "window": "GW11", "note": "Haaland 9.21, Donnarumma 6.06"},
+    {"team": "COV", "fdr_avg": 2, "window": "GW11"},
+    {"team": "CRY", "fdr_avg": 2, "window": "GW11"}
+  ],
+  "worst_runs": [
+    {"team": "FUL", "fdr_avg": 5, "window": "GW11", "note": "Leno (in squad bench), Bassey, Iwobi all FDR 5"},
+    {"team": "EVE", "fdr_avg": 4, "window": "GW11"},
+    {"team": "LEE", "fdr_avg": 4, "window": "GW11"},
+    {"team": "HUL", "fdr_avg": 4, "window": "GW11"},
+    {"team": "NEW", "fdr_avg": 4, "window": "GW11"},
+    {"team": "NFO", "fdr_avg": 4, "window": "GW11"},
+    {"team": "MUN", "fdr_avg": 4, "window": "GW11"}
+  ],
+  "neutral_fdr3": ["ARS", "BOU", "LIV", "CHE", "SUN", "IPS", "BRE"],
   "dgw_alerts": [],
   "bgw_alerts": [],
-  "bgw_alerts_unverified": "No fixture data for GW10+ available, so DGW/BGW absence is unconfirmed, not cleared. Real squad has FH used (GW9) and WC x1 left."
+  "dgw_bgw_status": "UNKNOWN beyond GW11. All 20 teams have a GW11 fixture row in xpts, so no GW11 blank is evident. GW12-15 DGW/BGW cannot be assessed without a fixtures feed. Do not time chips (WC left only) on this report.",
+  "squad_exposure_gw11": {
+    "favourable_fdr2": ["De Cuyper", "Van Hecke", "Haaland"],
+    "neutral_fdr3": ["Raya", "Konsa", "Calafiori", "Rogers", "Palmer", "Tavernier", "Isak"],
+    "tough": ["Leno (FUL, FDR 5, bench)", "Barnes (NEW, FDR 4, bench)", "Egan (HUL, FDR 4, bench)"]
+  }
 }
