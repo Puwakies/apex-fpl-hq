@@ -1,52 +1,48 @@
 {
   "gw": 11,
   "agent": "intel",
-  "season": "2026/27",
-  "checked": "2026-11-13",
-  "method": "No live 2026/27 elite/top-10k EO found via web search (GW11 not yet played). eo_est = overall tsb% (player_pool.json) + estimated captain share; elite EO for top assets typically runs higher than overall. Treat as proxy.",
-  "sources": {
-    "ownership": "data/cache/player_pool.json (tsb)",
-    "xpts": "data/cache/xpts.json",
-    "league": "data/cache/league.json (mini-league template: De Cuyper, Gross, Haaland, Raya, Tavernier)",
-    "gemini": "data/cache/gemini.json (captain De Cuyper)"
-  },
+  "generated": "2026-11-20",
+  "method": "No live 2026/27 elite/top-10k ownership or captaincy data found via web search. eo_est = proxy: player_pool tsb (overall selected_by %) scaled for elite concentration on premium/high-cum_pts assets, plus estimated captaincy share. Treat as +/-15pt estimates.",
   "template_core": [
-    {"player": "Haaland", "team": "MCI", "own": 79.0, "eo_est": 125, "xpts": 9.21, "owned_by_us": true},
-    {"player": "Rogers", "team": "CHE", "own": 53.9, "eo_est": 54, "xpts": null, "owned_by_us": true},
-    {"player": "Calafiori", "team": "ARS", "own": 48.7, "eo_est": 49, "xpts": 6.85, "owned_by_us": true},
-    {"player": "Gross", "team": "BHA", "own": 47.7, "eo_est": 48, "xpts": 6.75, "owned_by_us": true},
-    {"player": "De Cuyper", "team": "BHA", "own": 47.4, "eo_est": 50, "xpts": 12.92, "owned_by_us": true},
-    {"player": "Raya", "team": "ARS", "own": 47.4, "eo_est": 47, "xpts": 8.94, "owned_by_us": true},
-    {"player": "Cherki", "team": "MCI", "own": 33.4, "eo_est": 34, "xpts": null, "owned_by_us": false},
-    {"player": "Joao Pedro", "team": "CHE", "own": 32.7, "eo_est": 34, "xpts": null, "owned_by_us": false},
-    {"player": "Tavernier", "team": "BOU", "own": 31.0, "eo_est": 31, "xpts": 6.71, "owned_by_us": true},
-    {"player": "N.Jackson", "team": "AVL", "own": 30.0, "eo_est": 33, "xpts": 11.91, "owned_by_us": false}
+    {"player": "Haaland", "own_overall": 79.0, "eo_est": 165, "owned": true, "note": "est ~95% elite own + ~70% captaincy"},
+    {"player": "Rogers", "own_overall": 53.9, "eo_est": 65, "owned": true},
+    {"player": "Calafiori", "own_overall": 48.7, "eo_est": 55, "owned": true},
+    {"player": "Groß", "own_overall": 47.7, "eo_est": 60, "owned": true, "note": "league template"},
+    {"player": "De Cuyper", "own_overall": 47.4, "eo_est": 62, "owned": true, "note": "league template; cum_pts leader 75"},
+    {"player": "Raya", "own_overall": 47.4, "eo_est": 55, "owned": true, "note": "league template"},
+    {"player": "Cherki", "own_overall": 33.4, "eo_est": 38, "owned": false},
+    {"player": "João Pedro", "own_overall": 32.7, "eo_est": 36, "owned": false},
+    {"player": "Tavernier", "own_overall": 31.0, "eo_est": 38, "owned": true, "note": "league template"},
+    {"player": "N.Jackson", "own_overall": 30.0, "eo_est": 38, "owned": false, "note": "xpts 11.91 (4th overall), fdr 2 - biggest unowned template threat"}
   ],
   "captain_shield": [
     {
       "player": "Haaland",
-      "eo_est": 125,
-      "why": "79% owned, est. ~45% of managers captain (elite share likely higher). Highest-EO asset, FDR 2, 9 goals / 7.06 xG, captain_xpts 18.42. Top cum_pts among nailed premiums (70 pts, tied with Gross; De Cuyper 75 is a 5.5 DEF, not a premium). Captaining anyone else = fading ~125% EO: a Haaland double-digit haul costs about 10-20 pts of rank-relative ground. Do NOT fade. GW10 captain Isak (24.7% owned) and Gemini's De Cuyper captaincy are both template fades."
+      "eo_est": 165,
+      "why": "79% overall owned, near-universal in elite; most-captained by a distance. 9 goals, 315 bps (highest), fdr 2, nailed premium. Tied 70 cum_pts with Groß/Vuskovic and is the only premium in that group, so APEX cum_pts rule (nailed premium, not GK) also points here. Est captain EO ~70% elite: a 2-goal haul (~13 pts) costs ~9 pts of relative rank to anyone not captaining. DO NOT FADE. User captained Isak (24.7% own) in GW10 and Gemini picks De Cuyper (DEF) for GW11; both are Haaland fades."
     }
   ],
   "differentials": [
-    {"player": "Ayari", "team": "BHA", "pos": "MID", "price": 5.5, "eo_est": 2.2, "ceiling": "high", "xpts": 8.05, "why": "BHA FDR 2, 7 CS on MID, 3G in 741 mins. Attacking + CS upside at 2% ownership"},
-    {"player": "Hill", "team": "BOU", "pos": "DEF", "price": 5.6, "eo_est": 2.9, "ceiling": "medium", "xpts": 8.92, "why": "Best xPts of any sub-8% player. 900 mins, nailed"},
-    {"player": "Silva", "team": "BOU", "pos": "DEF", "price": 5.1, "eo_est": 3.6, "ceiling": "medium", "xpts": 8.27, "why": "1.3 xG from DEF, nailed 900 mins"},
-    {"player": "Rudoni", "team": "COV", "pos": "MID", "price": 4.9, "eo_est": 1.2, "ceiling": "medium-high", "xpts": 7.82, "why": "FDR 2, 2.23 xG + 1.68 xA, budget enabler"},
-    {"player": "Wirtz", "team": "LIV", "pos": "MID", "price": 7.2, "eo_est": 5.3, "ceiling": "high", "xpts": 6.59, "why": "5 assists, explosive ceiling, low ownership"},
-    {"player": "E.Le Fee", "team": "SUN", "pos": "MID", "price": 5.7, "eo_est": 2.7, "ceiling": "medium-high", "xpts": 6.46, "why": "3.83 xG + 1.86 xA underperforming (3G), due a return"},
-    {"player": "Boscagli", "team": "BHA", "pos": "DEF", "price": 4.5, "eo_est": 0.7, "ceiling": "medium", "xpts": 7.98, "why": "BHA CS share at 0.7%, cheapest BHA defensive route"}
-  ],
-  "borderline_not_differential": [
-    {"player": "Vuskovic", "own": 8.6, "xpts": 12.3, "note": "Gemini's Egan->Vuskovic. Just above the 8% line, still a low-EO gain if it hits"}
+    {"player": "Ayari", "team": "BHA", "pos": "MID", "price": 5.5, "eo_est": 3, "xpts": 8.05, "ceiling": "high", "why": "2.2% owned. BHA fdr 2, 3G+1A in 741 mins, 7 CS-tier team. Best xpts among sub-8% attackers. Affordable sideways move."},
+    {"player": "Hill", "team": "BOU", "pos": "DEF", "price": 5.6, "eo_est": 3, "xpts": 8.92, "ceiling": "medium", "why": "2.9% owned. Highest xpts of any sub-8% player, nailed 900 mins. Defender ceiling is limited."},
+    {"player": "E.Le Fée", "team": "SUN", "pos": "MID", "price": 5.7, "eo_est": 3, "xpts": 6.46, "ceiling": "high", "why": "2.7% owned. xG 3.83 + xA 1.86 is well above his 3G/1A output, so positive regression is due."},
+    {"player": "Wirtz", "team": "LIV", "pos": "MID", "price": 7.2, "eo_est": 6, "xpts": 6.59, "ceiling": "high", "why": "5.3% owned. 5 assists and LIV creative hub. Too expensive with 0.1 ITB unless funded by a sale."},
+    {"player": "Rudoni", "team": "COV", "pos": "MID", "price": 4.9, "eo_est": 1, "xpts": 7.82, "ceiling": "medium", "why": "1.2% owned, fdr 2, budget enabler with xG+xA of 3.9."},
+    {"player": "Vuskovic", "team": "BHA", "pos": "DEF", "price": 5.3, "eo_est": 9, "xpts": 12.3, "ceiling": "medium", "why": "BORDERLINE at 8.6% owned. 2nd-highest xpts in the pool. Only a differential in the overall rank sense."}
   ],
   "rank_risks": [
-    {"risk": "Captain fade", "detail": "Captaining Isak (GW10 choice) or De Cuyper (Gemini) instead of Haaland fades about 125% EO. Backtest lesson: fading the template captain lost points. Keep Haaland (C)."},
-    {"risk": "N.Jackson not owned", "detail": "30% owned, xpts 11.91 at FDR 2 (4th-best in pool). Highest-EO, highest-xPts player we don't own, so it is the biggest ownership-gap risk this GW."},
-    {"risk": "Gabriel / Verbruggen not owned", "detail": "25.9% / 23.8% owned, xpts 11.29 / 11.32. Moderate EO, which can hurt if they keep a clean sheet and get bonus. We hold Raya/Konsa/Calafiori for ARS cover."},
-    {"risk": "Cherki / Joao Pedro not owned", "detail": "33% each. Lower model xPts, so the cap-free gap is acceptable but should be watched."},
-    {"risk": "Mini-league", "detail": "7th of 18, 46 pts behind the leader. We own all 5 league template players, so the gap can only close via differentials or a captain edge, not by fading Haaland. Use differential slots (Egan/Wissa bench spots) rather than the captaincy."},
-    {"risk": "Low-EO squad drag", "detail": "Palmer (28.5%, vice) and Isak (24.7%) are below-template premiums. Fine to hold, but they are not shields."}
+    "CAPTAIN FADE: Gemini's De Cuyper captaincy (12.92 xpts, DEF) fades Haaland (est elite EO ~165). The xpts model seems to overrate defenders: 7 of the top 10 by xpts are DEF/GK, which is unrealistic. Do not let it override the template captain.",
+    "GW10 pattern: user captained Isak (24.7% own, xpts 4.68 for GW11). Repeating this is a fade with low upside.",
+    "N.Jackson unowned: 30% overall owned and xpts 11.91 at fdr 2. A haul costs about 4-6 pts of relative rank. Cherki and João Pedro (about 33%) are minor exposure.",
+    "League (7th/18, 46 behind Ohmbappe 714): no rival squad data in league.json (differentials/template arrays empty). The league template (De Cuyper, Groß, Haaland, Raya, Tavernier) is fully owned, so the league is a template-on-template race. Chase the 46-pt gap through 1-2 differential starters (Ayari/Le Fée), not through a captain fade.",
+    "Weak links in the XI: Isak (4.68), Palmer (5.08) and Rogers (5.27) are high-priced, low-xpts players. Rogers has 53.9% template ownership, so selling him is a mild rank risk. Isak/Palmer are safer to move.",
+    "Data caveat: no live elite EO or captaincy feed exists for 2026/27. All eo_est values are proxies, so re-check against the LiveFPL or FPL site captaincy stats before the deadline if possible."
+  ],
+  "sources": [
+    "data/cache/player_pool.json (tsb)",
+    "data/cache/xpts.json",
+    "data/cache/league.json",
+    "data/cache/gemini.json",
+    "web: https://www.fantasyfootballscout.co.uk/2025/11/07/who-is-the-best-captain-for-fpl-gameweek-11-3 (historical 25/26 only)"
   ]
 }

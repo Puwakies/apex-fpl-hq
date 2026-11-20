@@ -1,15 +1,16 @@
 {
   "engine": "claude",
   "gw": 11,
+  "generated": "2026-11-20",
   "captain": "Haaland",
   "captain_type": "template",
   "captain_trigger": "none",
+  "captain_note": "LOCKED rule: Haaland is the season cum_pts leader (70) among owned nailed premiums (98.8% mins, 270/270 GW8-10). He is also intel.captain_shield (EO est ~165), with no OUT or doubt flag. Isak (last GW's armband) fails the nailed gate (83% mins). De Cuyper (75 cum_pts) is a DEF and not a premium, so he is not eligible. A differential is not triggered: it is GW11, early season, and the 46-pt league gap should be chased through starters, not the armband. If the human has real-time lineup info, their override takes priority.",
   "vice": "Rogers",
-  "formation": "4-4-2",
   "starting_xi": [
     {"name": "Raya", "pos": "GK", "price": 6.2, "xpts": 8.94},
     {"name": "De Cuyper", "pos": "DEF", "price": 5.5, "xpts": 12.92},
-    {"name": "Konsa", "pos": "DEF", "price": 4.8, "xpts": 12.15},
+    {"name": "Konsa", "pos": "DEF", "price": 4.9, "xpts": 12.15},
     {"name": "Van Hecke", "pos": "DEF", "price": 5.1, "xpts": 11.18},
     {"name": "Calafiori", "pos": "DEF", "price": 5.9, "xpts": 6.85},
     {"name": "Groß", "pos": "MID", "price": 6.3, "xpts": 6.75},
@@ -17,43 +18,36 @@
     {"name": "Rogers", "pos": "MID", "price": 8.2, "xpts": 5.27},
     {"name": "Palmer", "pos": "MID", "price": 9.8, "xpts": 5.08},
     {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 9.21},
-    {"name": "Barry", "pos": "FWD", "price": 5.7, "xpts": 7.32}
+    {"name": "Isak", "pos": "FWD", "price": 9.3, "xpts": 4.68}
   ],
+  "formation": "4-4-2",
   "bench": [
     {"name": "Leno", "pos": "GK", "price": 4.5},
-    {"name": "Isak", "pos": "FWD", "price": 9.3},
-    {"name": "Barnes", "pos": "MID", "price": 6.1},
+    {"name": "Barry", "pos": "FWD", "price": 5.7},
+    {"name": "Barnes", "pos": "MID", "price": 6.0},
     {"name": "Egan", "pos": "DEF", "price": 4.1}
   ],
-  "squad_15": ["Raya", "De Cuyper", "Konsa", "Van Hecke", "Calafiori", "Groß", "Tavernier", "Rogers", "Palmer", "Haaland", "Barry", "Leno", "Isak", "Barnes", "Egan"],
   "transfers": {
     "out": "Wissa",
     "in": "Barry",
     "hits": 0,
     "bank": 0.3,
-    "reason": "Egan->Vuskovic is not affordable (Egan 4.1 + bank 0.1 = 4.2 vs 5.3, short 1.1); funding it needs a 2nd sale and a likely -4, and Vuskovic would only displace Calafiori (+5.45) while Egan sits on the bench. Wissa is the dead slot: 99 mins in GW8-10 (33/game, fails rotation gate), xPts 1.08, price falling. Barry (EVE FWD 5.7) is nailed (851 mins / 10 GW), 6G from 7.29 xG, xPts 7.32, rising (+195k net). He starts ahead of Isak (4.68). Net XI gain +2.64 for 1 FT, no hit. Bank 0.1 + 5.9 - 5.7 = 0.3 (assumes Wissa sells at 5.9; needs sell price >= 5.6). Assumes 1 FT (FT count not in cache).",
-    "alternative": "If the manager prefers to keep Isak in the XI, still do Wissa->Barry and start Barry over Palmer (5.08); XI xPts falls by only 0.40."
+    "reason": "Wissa is dead weight: xPts 1.08, only 99 mins over GW8-10 (rotation-flagged) and a likely price fall. Barry (EVE, 5.7) has xPts 7.32, xG 7.29 and +225k net transfers, so a rise is likely. This is the only like-for-like FWD upgrade that fits a 6.0 budget. It uses 1 FT; the FT count is not in squad.json, so 1 is assumed. Do not take a -4 for it. I rejected Isak -> N.Jackson (+7.2 xPts on paper): Isak is 6.78 ppg, and that xPts gap comes mostly from the single-GW model, which intel flags as unreliable for this kind of comparison."
   },
   "chip": {
     "name": "WC",
-    "action": "hold",
-    "reason": "Only WC x1 left (BB GW2, WC GW3, TC GW4, FH GW9 used). WC triggers not met: 0 starters rotation-flagged after the Wissa sale, and season average is 66.8/GW (668 over 10), above the 55 floor. fixture-room has no DGW/BGW data beyond GW11. If this WC belongs to the first-half set it expires at the GW19 deadline (8 GWs away); the forcing rule applies from GW16, so re-check its set at GW16."
+    "action": "save",
+    "reason": "No trigger is met. 0 starters are rotation-flagged (Calafiori is borderline at exactly 60 mins/GW and still passes). The season average is about 66.8 pts/GW, above the 55 threshold. fixture-room shows no DGW or BGW (unverified). Only WC x1 remains; BB, WC, TC and FH are used. Check which chip set this WC belongs to: if it is a first-half chip that expires at the GW19 deadline, the forcing rule applies from GW16, so deploy it in GW16-18 rather than lose it. GW11 is outside the forcing window (first-half deadline in 8 GWs)."
   },
-  "projected_xpts": 101.59,
-  "projected_xpts_note": "Sum of 11 starters 92.38 + Haaland captain bonus 9.21 = 101.59. This is above the 80 sanity line. Recomputed and the arithmetic is correct. The overshoot comes from the cache xPts scale (DEF rows at 11-13 for one GW: De Cuyper 12.92, Konsa 12.15, Van Hecke 11.18). Gemini's 86.47 uses the same scale, so compare on a like-for-like basis rather than as absolute points.",
-  "rotation_gate": {
-    "flagged": ["Wissa (99 mins GW8-10) - sold"],
-    "borderline": ["Calafiori (180 mins GW8-10 = 60/game, exactly at the threshold, sim-lab nailed=false). Starts because no news/medical rotation flag; Egan is the first DEF on the bench as cover."],
-    "passed": "All other starters >= 242 mins in GW8-10"
-  },
-  "blank_check": "No BGW. All 20 teams have a GW11 fixture. Starters' FDR: no FDR 5 (Leno, FUL FDR 5, benched). Barry is FDR 4 (only tough starter).",
+  "projected_xpts": 98.95,
+  "projected_xpts_note": "Raw sum is 89.74 for the XI plus 9.21 for the Haaland armband. I checked it twice and the arithmetic is correct. It is above the 80 sanity line because xpts.json inflates single-GW defender values (De Cuyper 12.92, Konsa 12.15, Van Hecke 11.18). A realistic outcome is probably about 60-70.",
   "risks": [
-    "Isak benched (xPts 4.68, lowest of the outfield options). medical-bay has an unverified web hint that he is a doubt. He is the first outfield sub. If he is confirmed fit and the manager wants him, swap him for Palmer (-0.40).",
-    "Palmer (vice candidate) has an unconfirmed 'Is Palmer okay' injury-report headline. Check Friday's presser. Vice is Rogers (next nailed-premium cum_pts), not Palmer.",
-    "Calafiori minutes are borderline (60/game GW8-10). Egan autosubs in.",
-    "Barry: FDR 4 at EVE. The xPts edge relies on his 7.29 xG volume, not the fixture.",
-    "Wissa's sell price is not in the cache. If it is below 5.6, Barry is unaffordable; fall back to McBurnie (5.5, xPts 5.28, bench role) or roll the FT.",
-    "Mini-league: 7th of 18, 46 behind. Captain stays on template Haaland (captain_shield, ~125% EO). The differential edge comes from Barry (10% owned), not a captain fade. Gemini's De Cuyper (C) fades Haaland.",
-    "N.Jackson (30% owned, xPts 11.91) is the biggest unowned EO risk. He is not affordable without a restructure."
+    "xpts.json looks inflated for DEF/GK: 7 of the top 10 are DEF/GK. Treat the projection as relative, not absolute.",
+    "Calafiori: 180 mins over GW8-10 (60/GW, 85% season) is at the edge of the Rotation-Risk Gate. Check team news. If he is benched, Egan (HUL, fdr 4) is the auto-sub, which is weak.",
+    "Isak: 83% season mins and an unverified web hint that he may be a doubt (sim-lab). Confirm the LIV lineup. Barry is the first outfield sub if Isak is ruled out.",
+    "Barry's minutes are unverified in the cache, so I left him on the bench rather than starting him over Isak or Palmer. If his mins prove nailed, starting him over Palmer in a 4-3-3 adds about 2.2 on paper.",
+    "N.Jackson (30% own, xPts 11.91, fdr 2) is unowned and the biggest template threat.",
+    "There is no live 26/27 presser or lineup data and no multi-GW fixture list, so DGW/BGW status is unverified before any chip decision.",
+    "League is 7th/18, 46 behind. The captain is template-on-template, so league ground has to come from starters and transfers."
   ]
 }

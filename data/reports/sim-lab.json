@@ -1,16 +1,15 @@
 {
  "gw": 11,
- "generated": "2026-11-13",
+ "generated": "2026-11-20",
  "generated_by": "sim-lab (WRPPM-5D)",
- "rule": "LOCKED cum_pts captaincy (CLAUDE.md): cap_score=0.70*season_ppg+0.30*recent_form over owned nailed premiums (price>=7.5, not GK, AVAILABLE/no news flag, >=85% season mins and >=85% GW8-10 mins). No matchup/haul/floor terms.",
- "not_run": "Caller requested Monte Carlo with floor weighting. Not applied: CLAUDE.md locks captaincy to the cum_pts leader and says no new captain signals (floor tested and failed in holdout) without a fresh-season holdout. Needs explicit user sign-off to change.",
+ "rule": "LOCKED cum_pts captaincy (CLAUDE.md): cap_score=0.70*season_ppg+0.30*recent_form over owned nailed premiums (price>=7.5, not GK, AVAILABLE/no news, >=85% season mins and >=230 of 270 GW8-10 mins). No matchup/haul/floor terms in the recommendation.",
+ "monte_carlo_note": "Caller asked for Monte Carlo EV+floor. Run as INFORMATIONAL ONLY (20k sims/player, captain pts doubled; model: start prob from mins share, Poisson goals/assists on avg of actual and xG/xA per game, Bernoulli CS, Poisson residual for bonus/DefCon). It does NOT change recommend_c: floor/haul signals failed the holdout and CLAUDE.md forbids new captain signals without a fresh-season holdout.",
  "inputs": {
-  "squad": "2026-11-12T17:24:59.472Z",
-  "player_pool": "2026-11-12T17:25:10.582Z (gw_last=10)",
-  "xpts": "2026-11-12T17:25:02.376Z",
-  "news": "2026-11-12T17:25:05.757Z",
-  "recent_form": "(pts@GW10 - pts@GW7)/3 via git snapshot 7265371 of player_pool.json (gw_last=7); games=ceil(mins/90) capped at 10",
-  "medical": "reports/medical*.json stale (GW5/GW10); squad.json all AVAILABLE, news.json has no owned-player flags"
+  "squad": "2026-11-19T17:24:08.848Z",
+  "player_pool": "2026-11-19T17:24:26.358Z (gw_last=10, identical to 2026-11-12 snapshot)",
+  "xpts": "2026-11-19T17:24:10.785Z",
+  "recent_form": "(pts@GW10 - pts@GW7)/3 via git snapshot 7265371 (gw_last=7); games=ceil(mins/90) capped at 10",
+  "medical": "medical-bay.json/news-desk.json GW11 (checked 2026-11-13): all 15 fit; unverified web hint Isak may be a doubt. news.json (2026-11-19): no owned-player flags"
  },
  "captain_ranking": [
   {
@@ -30,7 +29,14 @@
    "nailed": true,
    "eligible": true,
    "starter": true,
-   "xpts": 9.21
+   "xpts": 9.21,
+   "mc": {
+    "ev_c": 13.91,
+    "floor_p10_c": 6,
+    "median_c": 14,
+    "p90_c": 24,
+    "p_haul_c_ge20": 0.233
+   }
   },
   {
    "player": "Rogers",
@@ -49,7 +55,14 @@
    "nailed": true,
    "eligible": true,
    "starter": true,
-   "xpts": 5.27
+   "xpts": 5.27,
+   "mc": {
+    "ev_c": 10.2,
+    "floor_p10_c": 4,
+    "median_c": 8,
+    "p90_c": 20,
+    "p_haul_c_ge20": 0.104
+   }
   },
   {
    "player": "Palmer",
@@ -68,13 +81,20 @@
    "nailed": true,
    "eligible": true,
    "starter": true,
-   "xpts": 5.08
+   "xpts": 5.08,
+   "mc": {
+    "ev_c": 9.19,
+    "floor_p10_c": 4,
+    "median_c": 6,
+    "p90_c": 18,
+    "p_haul_c_ge20": 0.082
+   }
   },
   {
    "player": "Konsa",
    "team": "ARS",
    "pos": "DEF",
-   "price": 4.8,
+   "price": 4.9,
    "status": "AVAILABLE",
    "season_cum_pts": 57,
    "games": 9,
@@ -87,7 +107,14 @@
    "nailed": false,
    "eligible": false,
    "starter": true,
-   "xpts": 12.15
+   "xpts": 12.15,
+   "mc": {
+    "ev_c": 11.56,
+    "floor_p10_c": 4,
+    "median_c": 12,
+    "p90_c": 18,
+    "p_haul_c_ge20": 0.092
+   }
   },
   {
    "player": "De Cuyper",
@@ -106,7 +133,14 @@
    "nailed": true,
    "eligible": false,
    "starter": true,
-   "xpts": 12.92
+   "xpts": 12.92,
+   "mc": {
+    "ev_c": 13.77,
+    "floor_p10_c": 4,
+    "median_c": 12,
+    "p90_c": 24,
+    "p_haul_c_ge20": 0.21
+   }
   },
   {
    "player": "Isak",
@@ -125,7 +159,14 @@
    "nailed": false,
    "eligible": false,
    "starter": true,
-   "xpts": 4.68
+   "xpts": 4.68,
+   "mc": {
+    "ev_c": 12.58,
+    "floor_p10_c": 4,
+    "median_c": 12,
+    "p90_c": 22,
+    "p_haul_c_ge20": 0.183
+   }
   },
   {
    "player": "Van Hecke",
@@ -144,7 +185,14 @@
    "nailed": true,
    "eligible": false,
    "starter": true,
-   "xpts": 11.18
+   "xpts": 11.18,
+   "mc": {
+    "ev_c": 11.31,
+    "floor_p10_c": 4,
+    "median_c": 12,
+    "p90_c": 20,
+    "p_haul_c_ge20": 0.11
+   }
   },
   {
    "player": "Groß",
@@ -163,7 +211,40 @@
    "nailed": true,
    "eligible": false,
    "starter": true,
-   "xpts": 6.75
+   "xpts": 6.75,
+   "mc": {
+    "ev_c": 13.75,
+    "floor_p10_c": 6,
+    "median_c": 12,
+    "p90_c": 24,
+    "p_haul_c_ge20": 0.218
+   }
+  },
+  {
+   "player": "Raya",
+   "team": "ARS",
+   "pos": "GK",
+   "price": 6.2,
+   "status": "AVAILABLE",
+   "season_cum_pts": 60,
+   "games": 10,
+   "season_ppg": 6.0,
+   "recent_form": 6.0,
+   "recent_mins_gw8_10": 270,
+   "mins_pct": 100.0,
+   "cap_score": 6.0,
+   "type": "other",
+   "nailed": true,
+   "eligible": false,
+   "starter": true,
+   "xpts": 8.94,
+   "mc": {
+    "ev_c": 11.99,
+    "floor_p10_c": 6,
+    "median_c": 12,
+    "p90_c": 16,
+    "p_haul_c_ge20": 0.023
+   }
   },
   {
    "player": "Calafiori",
@@ -182,7 +263,14 @@
    "nailed": false,
    "eligible": false,
    "starter": true,
-   "xpts": 6.85
+   "xpts": 6.85,
+   "mc": {
+    "ev_c": 12.05,
+    "floor_p10_c": 4,
+    "median_c": 12,
+    "p90_c": 20,
+    "p_haul_c_ge20": 0.119
+   }
   },
   {
    "player": "Tavernier",
@@ -201,13 +289,20 @@
    "nailed": true,
    "eligible": false,
    "starter": true,
-   "xpts": 6.71
+   "xpts": 6.71,
+   "mc": {
+    "ev_c": 10.92,
+    "floor_p10_c": 4,
+    "median_c": 8,
+    "p90_c": 20,
+    "p_haul_c_ge20": 0.128
+   }
   },
   {
    "player": "Barnes",
    "team": "NEW",
    "pos": "MID",
-   "price": 6.1,
+   "price": 6,
    "status": "AVAILABLE",
    "season_cum_pts": 44,
    "games": 10,
@@ -220,7 +315,40 @@
    "nailed": true,
    "eligible": false,
    "starter": false,
-   "xpts": 3.03
+   "xpts": 3.03,
+   "mc": {
+    "ev_c": 8.67,
+    "floor_p10_c": 4,
+    "median_c": 6,
+    "p90_c": 16,
+    "p_haul_c_ge20": 0.055
+   }
+  },
+  {
+   "player": "Leno",
+   "team": "FUL",
+   "pos": "GK",
+   "price": 4.5,
+   "status": "AVAILABLE",
+   "season_cum_pts": 39,
+   "games": 10,
+   "season_ppg": 3.9,
+   "recent_form": 4.33,
+   "recent_mins_gw8_10": 270,
+   "mins_pct": 100.0,
+   "cap_score": 4.03,
+   "type": "other",
+   "nailed": true,
+   "eligible": false,
+   "starter": false,
+   "xpts": 3.71,
+   "mc": {
+    "ev_c": 7.8,
+    "floor_p10_c": 4,
+    "median_c": 6,
+    "p90_c": 14,
+    "p_haul_c_ge20": 0.002
+   }
   },
   {
    "player": "Egan",
@@ -239,7 +367,14 @@
    "nailed": false,
    "eligible": false,
    "starter": false,
-   "xpts": 2.98
+   "xpts": 2.98,
+   "mc": {
+    "ev_c": 7.24,
+    "floor_p10_c": 4,
+    "median_c": 6,
+    "p90_c": 14,
+    "p_haul_c_ge20": 0.007
+   }
   },
   {
    "player": "Wissa",
@@ -258,20 +393,154 @@
    "nailed": false,
    "eligible": false,
    "starter": false,
-   "xpts": 1.08
+   "xpts": 1.08,
+   "mc": {
+    "ev_c": 6.48,
+    "floor_p10_c": 4,
+    "median_c": 4,
+    "p90_c": 12,
+    "p_haul_c_ge20": 0.031
+   }
+  }
+ ],
+ "locked_rule_check": {
+  "season_cum_pts_leader_nailed_premium": "Haaland",
+  "cum_pts": 70,
+  "rank_by_cap_score": 1,
+  "rank_by_mc_ev": 1,
+  "rank_by_mc_floor": 1
+ },
+ "monte_carlo_ranking_ev": [
+  {
+   "player": "Haaland",
+   "ev_c": 13.91,
+   "floor_p10_c": 6,
+   "median_c": 14,
+   "p90_c": 24,
+   "p_haul_c_ge20": 0.233
+  },
+  {
+   "player": "De Cuyper",
+   "ev_c": 13.77,
+   "floor_p10_c": 4,
+   "median_c": 12,
+   "p90_c": 24,
+   "p_haul_c_ge20": 0.21
+  },
+  {
+   "player": "Groß",
+   "ev_c": 13.75,
+   "floor_p10_c": 6,
+   "median_c": 12,
+   "p90_c": 24,
+   "p_haul_c_ge20": 0.218
+  },
+  {
+   "player": "Isak",
+   "ev_c": 12.58,
+   "floor_p10_c": 4,
+   "median_c": 12,
+   "p90_c": 22,
+   "p_haul_c_ge20": 0.183
+  },
+  {
+   "player": "Calafiori",
+   "ev_c": 12.05,
+   "floor_p10_c": 4,
+   "median_c": 12,
+   "p90_c": 20,
+   "p_haul_c_ge20": 0.119
+  },
+  {
+   "player": "Raya",
+   "ev_c": 11.99,
+   "floor_p10_c": 6,
+   "median_c": 12,
+   "p90_c": 16,
+   "p_haul_c_ge20": 0.023
+  },
+  {
+   "player": "Konsa",
+   "ev_c": 11.56,
+   "floor_p10_c": 4,
+   "median_c": 12,
+   "p90_c": 18,
+   "p_haul_c_ge20": 0.092
+  },
+  {
+   "player": "Van Hecke",
+   "ev_c": 11.31,
+   "floor_p10_c": 4,
+   "median_c": 12,
+   "p90_c": 20,
+   "p_haul_c_ge20": 0.11
+  },
+  {
+   "player": "Tavernier",
+   "ev_c": 10.92,
+   "floor_p10_c": 4,
+   "median_c": 8,
+   "p90_c": 20,
+   "p_haul_c_ge20": 0.128
+  },
+  {
+   "player": "Rogers",
+   "ev_c": 10.2,
+   "floor_p10_c": 4,
+   "median_c": 8,
+   "p90_c": 20,
+   "p_haul_c_ge20": 0.104
+  },
+  {
+   "player": "Palmer",
+   "ev_c": 9.19,
+   "floor_p10_c": 4,
+   "median_c": 6,
+   "p90_c": 18,
+   "p_haul_c_ge20": 0.082
+  },
+  {
+   "player": "Barnes",
+   "ev_c": 8.67,
+   "floor_p10_c": 4,
+   "median_c": 6,
+   "p90_c": 16,
+   "p_haul_c_ge20": 0.055
+  },
+  {
+   "player": "Leno",
+   "ev_c": 7.8,
+   "floor_p10_c": 4,
+   "median_c": 6,
+   "p90_c": 14,
+   "p_haul_c_ge20": 0.002
+  },
+  {
+   "player": "Egan",
+   "ev_c": 7.24,
+   "floor_p10_c": 4,
+   "median_c": 6,
+   "p90_c": 14,
+   "p_haul_c_ge20": 0.007
+  },
+  {
+   "player": "Wissa",
+   "ev_c": 6.48,
+   "floor_p10_c": 4,
+   "median_c": 4,
+   "p90_c": 12,
+   "p_haul_c_ge20": 0.031
   }
  ],
  "recommend_c": "Haaland",
  "recommend_vc": "Rogers",
- "season_cum_pts_leader": "Haaland",
  "best_differential_c": {
   "player": "De Cuyper",
   "cap_score": 6.85,
   "season_ppg": 7.5,
-  "note": "rank-chase only, historically weaker"
+  "note": "rank-chase only, historically weaker (not a nailed premium)"
  },
- "vs_current": {
-  "current_c": "Isak",
-  "current_vc": "Palmer"
- }
+ "current_squad_captain": "Isak",
+ "current_squad_vice": "Palmer",
+ "human_override_note": "Current armband is Isak (cum_pts 61, 747 mins / 83%, fails nailed gate). APEX says Haaland. Human override with real-time lineup info is allowed (beat models in TEST)."
 }

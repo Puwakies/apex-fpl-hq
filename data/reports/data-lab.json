@@ -1,7 +1,7 @@
 {
  "gw": 11,
  "agent": "data-lab",
- "checked": "2026-11-13",
+ "checked": "2026-11-20",
  "season": "2026/27",
  "files": {
   "squad": "OK (15 players, gw11, picks_gw10)",
@@ -12,7 +12,7 @@
   "gemini": "OK (gw11)",
   "player_pool": "OK (400, gw11)"
  },
- "updated": "all 2026-11-12T17:24-17:25Z",
+ "updated": "all 2026-11-19T17:24-17:25Z",
  "missing": [],
  "stop": false,
  "squad": {
@@ -22,7 +22,7 @@
   "bank": 0.1,
   "value": 103.9,
   "total_points": 668,
-  "overall_rank": 457775,
+  "overall_rank": 457769,
   "xi": [
    "Raya",
    "De Cuyper",
@@ -31,7 +31,7 @@
    "Calafiori",
    "Rogers",
    "Palmer",
-   "Gross",
+   "Groß",
    "Tavernier",
    "Haaland",
    "Isak"
@@ -105,10 +105,30 @@
  "gemini": {
   "captain": "De Cuyper",
   "captain_xpts": 12.92,
-  "vice": "Vuskovic",
-  "transfer": "Egan->Vuskovic",
+  "vice": "Konsa",
+  "transfer": null,
   "chip": null,
-  "projected_xpts": 86.47,
-  "confidence": "high"
- }
+  "projected_xpts": 74.17,
+  "confidence": "medium",
+  "key_risk": "Several starting midfielders have unrated xPts data"
+ },
+ "squad_xpts": {
+  "Raya": 8.94,
+  "De Cuyper": 12.92,
+  "Van Hecke": 11.18,
+  "Konsa": 12.15,
+  "Calafiori": 6.85,
+  "Rogers": 5.27,
+  "Palmer": 5.08,
+  "Groß": 6.75,
+  "Tavernier": 6.71,
+  "Haaland": 9.21,
+  "Isak": 4.68,
+  "Leno": 3.71,
+  "Barnes": 3.03,
+  "Wissa": 1.08,
+  "Egan": 2.98
+ },
+ "squad_news": "no squad player flagged in news.json; all 15 AVAILABLE",
+ "price_flags": "squad players in price.json: Van Hecke, Barnes, Wissa"
 }
