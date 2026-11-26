@@ -1,34 +1,34 @@
 {
-  "updated": "2026-11-19T17:24:23.590Z",
+  "updated": "2026-11-26T17:25:01.779Z",
   "engine": "gemini",
-  "gw": 11,
-  "captain": "De Cuyper",
-  "captain_xpts": 12.92,
-  "vice_captain": "Konsa",
+  "gw": 12,
+  "captain": "Hill",
+  "captain_xpts": 11.09,
+  "vice_captain": "Van Hecke",
   "starting_xi": [
-    "Raya",
-    "De Cuyper",
-    "Konsa",
+    "Kinsky",
+    "Hill",
     "Van Hecke",
+    "Konsa",
     "Calafiori",
-    "Groß",
-    "Palmer",
     "Tavernier",
+    "Palmer",
     "Rogers",
-    "Haaland",
-    "Isak"
+    "Barnes",
+    "Isak",
+    "Haaland"
   ],
   "bench": [
     "Leno",
-    "Egan",
-    "Barnes",
+    "De Cuyper",
+    "Groß",
     "Wissa"
   ],
-  "transfer_out": null,
-  "transfer_in": null,
-  "transfer_reason": "Current squad holds high xPts defensive structure and top captaincy option",
+  "transfer_out": "Egan",
+  "transfer_in": "Hill",
+  "transfer_reason": "Bring in top xPts target Hill (11.09 xPts) to replace Egan",
   "chip": null,
-  "projected_xpts": 74.17,
+  "projected_xpts": 65.02,
   "confidence": "medium",
-  "key_risk": "Several starting midfielders have unrated xPts data"
+  "key_risk": "Several key squad members lack explicit xPts entries in TOP_XPTS table"
 }
