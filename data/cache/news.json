@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T17:24:18.607Z",
+  "updated": "2026-11-26T17:24:59.059Z",
   "items": [
     {
       "player": "Saka",
@@ -7,7 +7,16 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Thigh injury - Unknown return date",
+      "news": "Thigh injury - Expected back 20 Dec",
+      "signal": "out"
+    },
+    {
+      "player": "Zubimendi",
+      "team": "ARS",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -34,7 +43,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Thigh injury - Expected back 31 Oct",
+      "news": "Thigh injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -65,12 +74,30 @@
       "signal": "out"
     },
     {
+      "player": "Collins",
+      "team": "BRE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Knee injury - Expected back 2 Dec",
+      "signal": "out"
+    },
+    {
       "player": "Henry",
       "team": "BRE",
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
       "news": "Hip injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Hickey",
+      "team": "BRE",
+      "pos": "DEF",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Expected back 2 Dec",
       "signal": "out"
     },
     {
@@ -83,12 +110,12 @@
       "signal": "out"
     },
     {
-      "player": "Carvalho",
+      "player": "Dasilva",
       "team": "BRE",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knock - Expected back 23 Nov",
+      "news": "Hamstring injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -106,7 +133,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 22 Nov",
+      "news": "Hamstring injury - Expected back 2 Dec",
       "signal": "out"
     },
     {
@@ -115,7 +142,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Expected back 22 Nov",
+      "news": "Unspecified injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -137,21 +164,12 @@
       "signal": "out"
     },
     {
-      "player": "Struijk",
-      "team": "BHA",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Expected back 8 Nov",
-      "signal": "out"
-    },
-    {
-      "player": "Azeez",
+      "player": "Yalcouyé",
       "team": "BHA",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Hamstring injury - Expected back 8 Nov",
+      "news": "Unspecified injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -169,7 +187,7 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Back injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -236,6 +254,15 @@
       "signal": "out"
     },
     {
+      "player": "Awoniyi",
+      "team": "COV",
+      "pos": "FWD",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Ankle injury - Unknown return date",
+      "signal": "out"
+    },
+    {
       "player": "Chadi Riad",
       "team": "CRY",
       "pos": "DEF",
@@ -250,7 +277,7 @@
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Groin injury - Expected back 21 Nov",
+      "news": "Groin injury - Expected back 29 Nov",
       "signal": "out"
     },
     {
@@ -259,16 +286,34 @@
       "pos": "DEF",
       "status": "INJURED",
       "chance": 0,
-      "news": "Calf injury - Expected back 21 Nov",
+      "news": "Calf injury - Expected back 29 Nov",
       "signal": "out"
     },
     {
-      "player": "Cairney",
+      "player": "Lecomte",
+      "team": "FUL",
+      "pos": "GK",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Achilles injury - Unknown return date",
+      "signal": "out"
+    },
+    {
+      "player": "Smith Rowe",
       "team": "FUL",
       "pos": "MID",
       "status": "INJURED",
       "chance": 0,
-      "news": "Knee injury - Expected back 21 Nov",
+      "news": "Hip injury - Expected back 29 Nov",
+      "signal": "out"
+    },
+    {
+      "player": "Iroegbunam",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Hamstring injury - Unknown return date",
       "signal": "out"
     },
     {
@@ -290,6 +335,15 @@
       "signal": "out"
     },
     {
+      "player": "Gelhardt",
+      "team": "HUL",
+      "pos": "MID",
+      "status": "INJURED",
+      "chance": 0,
+      "news": "Thigh injury - Unknown return date",
+      "signal": "out"
+    },
+    {
       "player": "Targett",
       "team": "HUL",
       "pos": "DEF",
@@ -305,60 +359,6 @@
       "status": "INJURED",
       "chance": 0,
       "news": "Groin injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Ansah",
-      "team": "HUL",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Back injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Mateo Joseph",
-      "team": "LEE",
-      "pos": "FWD",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Jaros",
-      "team": "LIV",
-      "pos": "GK",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Frimpong",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Hamstring injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Bradley",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
-      "signal": "out"
-    },
-    {
-      "player": "Leoni",
-      "team": "LIV",
-      "pos": "DEF",
-      "status": "INJURED",
-      "chance": 0,
-      "news": "Knee injury - Unknown return date",
       "signal": "out"
     }
   ]
