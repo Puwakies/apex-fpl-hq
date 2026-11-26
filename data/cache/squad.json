@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-19T17:24:08.848Z",
-  "gw": 11,
-  "picks_gw": 10,
+  "updated": "2026-11-26T17:24:54.823Z",
+  "gw": 12,
+  "picks_gw": 11,
   "team_name": "Puwakies Jjimyang",
   "manager": "Puwakorn Amart",
-  "overall_rank": 457769,
-  "total_points": 668,
-  "bank": 0.1,
-  "squad_value": 103.9,
-  "captain": "Isak",
-  "vice_captain": "Palmer",
+  "overall_rank": 318806,
+  "total_points": 714,
+  "bank": 1.8,
+  "squad_value": 104.2,
+  "captain": "Groß",
+  "vice_captain": "Haaland",
   "chips_used": [
     "BB@GW2",
     "WC@GW3",
@@ -23,10 +23,10 @@
     {
       "slot": 1,
       "is_starting": true,
-      "name": "Raya",
-      "team": "ARS",
+      "name": "Kinsky",
+      "team": "TOT",
       "pos": "GK",
-      "price": 6.2,
+      "price": 4.4,
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
@@ -50,7 +50,7 @@
       "name": "Van Hecke",
       "team": "TOT",
       "pos": "DEF",
-      "price": 5.1,
+      "price": 5.2,
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
@@ -86,7 +86,7 @@
       "name": "Rogers",
       "team": "CHE",
       "pos": "MID",
-      "price": 8.2,
+      "price": 8.3,
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
@@ -102,7 +102,7 @@
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
-      "is_vice": true
+      "is_vice": false
     },
     {
       "slot": 8,
@@ -113,7 +113,7 @@
       "price": 6.3,
       "status": "AVAILABLE",
       "news": "",
-      "is_captain": false,
+      "is_captain": true,
       "is_vice": false
     },
     {
@@ -122,7 +122,7 @@
       "name": "Tavernier",
       "team": "BOU",
       "pos": "MID",
-      "price": 6.7,
+      "price": 6.8,
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
@@ -138,7 +138,7 @@
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
-      "is_vice": false
+      "is_vice": true
     },
     {
       "slot": 11,
@@ -146,10 +146,10 @@
       "name": "Isak",
       "team": "LIV",
       "pos": "FWD",
-      "price": 9.3,
+      "price": 9.4,
       "status": "AVAILABLE",
       "news": "",
-      "is_captain": true,
+      "is_captain": false,
       "is_vice": false
     },
     {
@@ -194,7 +194,7 @@
       "name": "Egan",
       "team": "HUL",
       "pos": "DEF",
-      "price": 4.1,
+      "price": 4,
       "status": "AVAILABLE",
       "news": "",
       "is_captain": false,
