@@ -1,53 +1,62 @@
 {
   "engine": "claude",
-  "gw": 11,
-  "generated": "2026-11-20",
+  "gw": 12,
+  "generated": "2026-11-27",
   "captain": "Haaland",
   "captain_type": "template",
   "captain_trigger": "none",
-  "captain_note": "LOCKED rule: Haaland is the season cum_pts leader (70) among owned nailed premiums (98.8% mins, 270/270 GW8-10). He is also intel.captain_shield (EO est ~165), with no OUT or doubt flag. Isak (last GW's armband) fails the nailed gate (83% mins). De Cuyper (75 cum_pts) is a DEF and not a premium, so he is not eligible. A differential is not triggered: it is GW11, early season, and the 46-pt league gap should be chased through starters, not the armband. If the human has real-time lineup info, their override takes priority.",
+  "captain_note": "LOCKED rule: Haaland is the season cum_pts leader among owned nailed premiums (72 pts, 98.9% mins, 270/270 GW9-11). He is also intel.captain_shield (EO est 150%) and has no OUT/doubt flag, so he is not faded. His low GW12 xPts (4.48, MCI FDR 5) and form of 2,2,2 are excluded by protocol. De Cuyper (76) and Groß (74) have more cum_pts but are not premiums (<7.5m). Isak (66) fails the 85% nailed gate. The current armband on Groß is replaced. A human override based on real-time lineup info is still allowed.",
   "vice": "Rogers",
+  "vice_note": "Next eligible nailed premium by cum_pts (57, 270/270 recent mins). Same as sim-lab recommend_vc.",
   "starting_xi": [
-    {"name": "Raya", "pos": "GK", "price": 6.2, "xpts": 8.94},
-    {"name": "De Cuyper", "pos": "DEF", "price": 5.5, "xpts": 12.92},
-    {"name": "Konsa", "pos": "DEF", "price": 4.9, "xpts": 12.15},
-    {"name": "Van Hecke", "pos": "DEF", "price": 5.1, "xpts": 11.18},
-    {"name": "Calafiori", "pos": "DEF", "price": 5.9, "xpts": 6.85},
-    {"name": "Groß", "pos": "MID", "price": 6.3, "xpts": 6.75},
-    {"name": "Tavernier", "pos": "MID", "price": 6.7, "xpts": 6.71},
-    {"name": "Rogers", "pos": "MID", "price": 8.2, "xpts": 5.27},
-    {"name": "Palmer", "pos": "MID", "price": 9.8, "xpts": 5.08},
-    {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 9.21},
-    {"name": "Isak", "pos": "FWD", "price": 9.3, "xpts": 4.68}
+    {"name": "Kinsky", "pos": "GK", "price": 4.4, "xpts": 7.88},
+    {"name": "Hill", "pos": "DEF", "price": 5.7, "xpts": 11.09},
+    {"name": "Van Hecke", "pos": "DEF", "price": 5.2, "xpts": 9.94},
+    {"name": "Konsa", "pos": "DEF", "price": 4.9, "xpts": 9.54},
+    {"name": "De Cuyper", "pos": "DEF", "price": 5.5, "xpts": 7.23},
+    {"name": "Tavernier", "pos": "MID", "price": 6.8, "xpts": 8.2},
+    {"name": "Groß", "pos": "MID", "price": 6.3, "xpts": 5.57},
+    {"name": "Rogers", "pos": "MID", "price": 8.3, "xpts": 4.83},
+    {"name": "Palmer", "pos": "MID", "price": 9.8, "xpts": 3.87},
+    {"name": "Isak", "pos": "FWD", "price": 9.4, "xpts": 7.28},
+    {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 4.48}
   ],
   "formation": "4-4-2",
   "bench": [
     {"name": "Leno", "pos": "GK", "price": 4.5},
-    {"name": "Barry", "pos": "FWD", "price": 5.7},
     {"name": "Barnes", "pos": "MID", "price": 6.0},
-    {"name": "Egan", "pos": "DEF", "price": 4.1}
+    {"name": "Egan", "pos": "DEF", "price": 4.0},
+    {"name": "Wissa", "pos": "FWD", "price": 5.9}
   ],
+  "rotation_gate": {
+    "benched_by_gate": [
+      "Wissa: 93/270 mins GW9-11 (31 per game), xPts 0.47. Fails the 60-minute gate.",
+      "Egan: 135/270 mins GW9-11 (45 per game). Fails the 60-minute gate."
+    ],
+    "passed": "All 11 starters have at least 242/270 recent mins and no news or medical rotation flags. Isak fails the 85% season captain gate (missed GW6) but has 264/270 recent mins, so he is safe to start."
+  },
+  "blank_check": "All 20 teams appear in the GW12 xpts.json, so no BGW is detected. No starter has FDR 5 except Haaland (1 of 11), so this is not a high-blank-risk week. Note fixtures.json is stale. fixture.json covers GW12 only.",
   "transfers": {
-    "out": "Wissa",
-    "in": "Barry",
+    "out": "Calafiori (ARS, DEF, 5.9, xPts 4.28, FDR 4)",
+    "in": "Hill (BOU, DEF, 5.7, xPts 11.09, FDR 3)",
     "hits": 0,
-    "bank": 0.3,
-    "reason": "Wissa is dead weight: xPts 1.08, only 99 mins over GW8-10 (rotation-flagged) and a likely price fall. Barry (EVE, 5.7) has xPts 7.32, xG 7.29 and +225k net transfers, so a rise is likely. This is the only like-for-like FWD upgrade that fits a 6.0 budget. It uses 1 FT; the FT count is not in squad.json, so 1 is assumed. Do not take a -4 for it. I rejected Isak -> N.Jackson (+7.2 xPts on paper): Isak is 6.78 ppg, and that xPts gap comes mostly from the single-GW model, which intel flags as unreliable for this kind of comparison."
+    "bank": 2.0,
+    "reason": "Best single-FT gain: +6.81 xPts in the XI. Hill is verified nailed (100% mins, 270/270 GW9-11) with no flag, and he is rising (market act_now: high). Adds a 2nd BOU player alongside Tavernier. Assumes Calafiori sells at 5.9; check his selling price in the app. Alternatives considered: Wissa to McBurnie (about +6.6 only if McBurnie starts over Palmer, and his minutes are unverified) and Palmer to Wirtz (+5.66). Both are weaker, and taking either as a -4 hit is not justified. Wissa to McBurnie or Evanilson is the queued FT for GW13."
   },
   "chip": {
-    "name": "WC",
+    "name": "none",
     "action": "save",
-    "reason": "No trigger is met. 0 starters are rotation-flagged (Calafiori is borderline at exactly 60 mins/GW and still passes). The season average is about 66.8 pts/GW, above the 55 threshold. fixture-room shows no DGW or BGW (unverified). Only WC x1 remains; BB, WC, TC and FH are used. Check which chip set this WC belongs to: if it is a first-half chip that expires at the GW19 deadline, the forcing rule applies from GW16, so deploy it in GW16-18 rather than lose it. GW11 is outside the forcing window (first-half deadline in 8 GWs)."
+    "reason": "Only WC×1 is left (BB/WC/TC/FH already used in GW2/3/4/9). WC trigger not met: 0 starters are rotation-flagged after the gate (Wissa and Egan are on the bench), and the season average is about 64.9/GW (714 pts over 11 GWs), so no 3-GW sub-55 signal is visible. No DGW/BGW is known. If this WC belongs to the first-half set, it expires at the GW19 deadline (Sat 2 Jan, 13:30 GMT) and does not carry over. That is 7 GWs away, and the forcing rule activates at GW16 (4 GWs away). Verify in the FPL app whether this is the first-half or second-half WC."
   },
-  "projected_xpts": 98.95,
-  "projected_xpts_note": "Raw sum is 89.74 for the XI plus 9.21 for the Haaland armband. I checked it twice and the arithmetic is correct. It is above the 80 sanity line because xpts.json inflates single-GW defender values (De Cuyper 12.92, Konsa 12.15, Van Hecke 11.18). A realistic outcome is probably about 60-70.",
+  "projected_xpts": 84.39,
+  "projected_xpts_calc": "XI sum 79.91 + captain Haaland 4.48 = 84.39. Rechecked because it is over 80. The arithmetic is correct. The excess comes from inflated xpts.json values (Hill 11.09, Van Hecke 9.94, Konsa 9.54 for single-GW DEFs). Intel suspects these may cover multiple GWs. A realistic single-GW band is about 60-70.",
   "risks": [
-    "xpts.json looks inflated for DEF/GK: 7 of the top 10 are DEF/GK. Treat the projection as relative, not absolute.",
-    "Calafiori: 180 mins over GW8-10 (60/GW, 85% season) is at the edge of the Rotation-Risk Gate. Check team news. If he is benched, Egan (HUL, fdr 4) is the auto-sub, which is weak.",
-    "Isak: 83% season mins and an unverified web hint that he may be a doubt (sim-lab). Confirm the LIV lineup. Barry is the first outfield sub if Isak is ruled out.",
-    "Barry's minutes are unverified in the cache, so I left him on the bench rather than starting him over Isak or Palmer. If his mins prove nailed, starting him over Palmer in a 4-3-3 adds about 2.2 on paper.",
-    "N.Jackson (30% own, xPts 11.91, fdr 2) is unowned and the biggest template threat.",
-    "There is no live 26/27 presser or lineup data and no multi-GW fixture list, so DGW/BGW status is unverified before any chip decision.",
-    "League is 7th/18, 46 behind. The captain is template-on-template, so league ground has to come from starters and transfers."
+    "projected_xpts is above 80 because xpts.json DEF values look inflated (possibly a multi-GW horizon). Treat 84 as an upper bound.",
+    "Haaland as C has a low GW12 xPts (4.48, FDR 5) and form 2,2,2. Kept by the LOCKED rule and the captain_shield (EO about 150%). The human can override if lineup or presser news emerges.",
+    "Bench rule C is only partly met: Leno (GK) and Barnes (90 mins) are reliable, but Egan (45/game) and Wissa (31/game) are not. Fix Wissa with the GW13 FT.",
+    "Data conflicts are unresolved: Van Hecke TOT vs BHA, Konsa ARS vs AVL (data-lab). Squad.json teams are used.",
+    "Palmer (9.8m, xPts 3.87 at FDR 2) is an unexplained low outlier. He starts only because Barnes (3.82) is marginally lower. Check for a minutes or fitness reason.",
+    "No verified 2026/27 pressers or predicted lineups were available (news-desk). All starts are 'no flag', not confirmed XI.",
+    "Hill price rise may already be applied (+0.1). Buy before the deadline anyway. Confirm Calafiori's selling price covers it (needs bank of 1.8 + SP of at least 5.7)."
   ]
 }

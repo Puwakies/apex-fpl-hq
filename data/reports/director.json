@@ -1,81 +1,91 @@
 {
-  "gw": 11,
-  "generated": "2026-11-20",
+  "gw": 12,
+  "generated": "2026-11-27",
   "you": {
-    "projected_xpts": 94.42,
-    "projected_xpts_note": "XI raw sum 89.74 plus Isak armband 4.68 (xpts.json, captain x2).",
-    "captain": "Isak",
-    "vice": "Palmer",
+    "projected_xpts": 78.67,
+    "projected_xpts_calc": "XI sum 73.10 + captain Groß 5.57 = 78.67 (squad.json picks_gw 11, scored with xpts.json GW12)",
+    "captain": "Groß",
+    "vice": "Haaland",
     "starting_xi": [
-      {"name": "Raya", "team": "ARS", "pos": "GK", "price": 6.2, "xpts": 8.94},
-      {"name": "De Cuyper", "team": "BHA", "pos": "DEF", "price": 5.5, "xpts": 12.92},
-      {"name": "Van Hecke", "team": "TOT", "pos": "DEF", "price": 5.1, "xpts": 11.18},
-      {"name": "Konsa", "team": "ARS", "pos": "DEF", "price": 4.9, "xpts": 12.15},
-      {"name": "Calafiori", "team": "ARS", "pos": "DEF", "price": 5.9, "xpts": 6.85},
-      {"name": "Rogers", "team": "CHE", "pos": "MID", "price": 8.2, "xpts": 5.27},
-      {"name": "Palmer", "team": "CHE", "pos": "MID", "price": 9.8, "xpts": 5.08},
-      {"name": "Groß", "team": "BHA", "pos": "MID", "price": 6.3, "xpts": 6.75},
-      {"name": "Tavernier", "team": "BOU", "pos": "MID", "price": 6.7, "xpts": 6.71},
-      {"name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.8, "xpts": 9.21},
-      {"name": "Isak", "team": "LIV", "pos": "FWD", "price": 9.3, "xpts": 4.68}
+      {"name": "Kinsky", "team": "TOT", "pos": "GK", "price": 4.4, "xpts": 7.88},
+      {"name": "De Cuyper", "team": "BHA", "pos": "DEF", "price": 5.5, "xpts": 7.23},
+      {"name": "Van Hecke", "team": "TOT", "pos": "DEF", "price": 5.2, "xpts": 9.94},
+      {"name": "Konsa", "team": "ARS", "pos": "DEF", "price": 4.9, "xpts": 9.54},
+      {"name": "Calafiori", "team": "ARS", "pos": "DEF", "price": 5.9, "xpts": 4.28},
+      {"name": "Rogers", "team": "CHE", "pos": "MID", "price": 8.3, "xpts": 4.83},
+      {"name": "Palmer", "team": "CHE", "pos": "MID", "price": 9.8, "xpts": 3.87},
+      {"name": "Groß", "team": "BHA", "pos": "MID", "price": 6.3, "xpts": 5.57},
+      {"name": "Tavernier", "team": "BOU", "pos": "MID", "price": 6.8, "xpts": 8.2},
+      {"name": "Haaland", "team": "MCI", "pos": "FWD", "price": 15.8, "xpts": 4.48},
+      {"name": "Isak", "team": "LIV", "pos": "FWD", "price": 9.4, "xpts": 7.28}
     ],
     "bench": [
-      {"name": "Leno", "team": "FUL", "pos": "GK", "price": 4.5, "xpts": 3.71},
-      {"name": "Barnes", "team": "NEW", "pos": "MID", "price": 6.0, "xpts": 3.03},
-      {"name": "Wissa", "team": "NEW", "pos": "FWD", "price": 5.9, "xpts": 1.08},
-      {"name": "Egan", "team": "HUL", "pos": "DEF", "price": 4.1, "xpts": 2.98}
+      {"name": "Leno", "team": "FUL", "pos": "GK", "price": 4.5, "xpts": 6.65},
+      {"name": "Barnes", "team": "NEW", "pos": "MID", "price": 6.0, "xpts": 3.82},
+      {"name": "Wissa", "team": "NEW", "pos": "FWD", "price": 5.9, "xpts": 0.47},
+      {"name": "Egan", "team": "HUL", "pos": "DEF", "price": 4.0, "xpts": 4.21}
     ],
-    "chips_left": ["WC"]
+    "bank": 1.8,
+    "chips_left": ["WC×1"]
   },
   "gemini": {
-    "projected_xpts": 74.17,
-    "projected_xpts_recomputed": 102.66,
-    "projected_xpts_note": "Gemini reported 74.17, but its XI is identical to YOU's. On the shared xpts.json it scores 89.74 + De Cuyper armband 12.92 = 102.66. The reported figure is inconsistent with the cache (Gemini key_risk: 'several starting midfielders have unrated xPts data'), so it is not comparable like-for-like.",
-    "captain": "De Cuyper",
-    "vice": "Konsa",
-    "starting_xi": ["Raya", "De Cuyper", "Konsa", "Van Hecke", "Calafiori", "Groß", "Palmer", "Tavernier", "Rogers", "Haaland", "Isak"],
-    "bench": ["Leno", "Egan", "Barnes", "Wissa"],
-    "transfer_in": null,
-    "transfer_out": null,
+    "projected_xpts": 65.02,
+    "projected_xpts_rescored": 86.30,
+    "rescore_note": "Gemini's self-reported 65.02 does not match its own lineup on xpts.json. Rescored: XI sum 75.21 + captain Hill 11.09 = 86.30. Gemini flagged missing xPts entries (key_risk), which likely explains the under-count. The rescored total beats CLAUDE only because a DEF (Hill) has the armband on suspect DEF values. Gemini's XI is 4.70 weaker than CLAUDE's because it benches De Cuyper (7.23) and Groß (5.57) for Calafiori (4.28) and Barnes (3.82).",
+    "captain": "Hill",
+    "vice": "Van Hecke",
+    "starting_xi": ["Kinsky", "Hill", "Van Hecke", "Konsa", "Calafiori", "Tavernier", "Palmer", "Rogers", "Barnes", "Isak", "Haaland"],
+    "bench": ["Leno", "De Cuyper", "Groß", "Wissa"],
+    "transfer_in": "Hill",
+    "transfer_out": "Egan",
     "chip": null,
     "confidence": "medium"
   },
   "claude": {
-    "projected_xpts": 98.95,
-    "projected_xpts_note": "XI raw sum 89.74 plus Haaland armband 9.21. Verified. The model inflates single-GW DEF values, so a realistic outcome is about 60-70.",
+    "projected_xpts": 84.39,
+    "projected_xpts_calc": "XI sum 79.91 + captain Haaland 4.48 = 84.39 (verified)",
     "captain": "Haaland",
     "vice": "Rogers",
+    "formation": "4-4-2",
     "starting_xi": [
-      {"name": "Raya", "pos": "GK", "price": 6.2, "xpts": 8.94},
-      {"name": "De Cuyper", "pos": "DEF", "price": 5.5, "xpts": 12.92},
-      {"name": "Konsa", "pos": "DEF", "price": 4.9, "xpts": 12.15},
-      {"name": "Van Hecke", "pos": "DEF", "price": 5.1, "xpts": 11.18},
-      {"name": "Calafiori", "pos": "DEF", "price": 5.9, "xpts": 6.85},
-      {"name": "Groß", "pos": "MID", "price": 6.3, "xpts": 6.75},
-      {"name": "Tavernier", "pos": "MID", "price": 6.7, "xpts": 6.71},
-      {"name": "Rogers", "pos": "MID", "price": 8.2, "xpts": 5.27},
-      {"name": "Palmer", "pos": "MID", "price": 9.8, "xpts": 5.08},
-      {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 9.21},
-      {"name": "Isak", "pos": "FWD", "price": 9.3, "xpts": 4.68}
+      {"name": "Kinsky", "pos": "GK", "price": 4.4, "xpts": 7.88},
+      {"name": "Hill", "pos": "DEF", "price": 5.7, "xpts": 11.09},
+      {"name": "Van Hecke", "pos": "DEF", "price": 5.2, "xpts": 9.94},
+      {"name": "Konsa", "pos": "DEF", "price": 4.9, "xpts": 9.54},
+      {"name": "De Cuyper", "pos": "DEF", "price": 5.5, "xpts": 7.23},
+      {"name": "Tavernier", "pos": "MID", "price": 6.8, "xpts": 8.2},
+      {"name": "Groß", "pos": "MID", "price": 6.3, "xpts": 5.57},
+      {"name": "Rogers", "pos": "MID", "price": 8.3, "xpts": 4.83},
+      {"name": "Palmer", "pos": "MID", "price": 9.8, "xpts": 3.87},
+      {"name": "Isak", "pos": "FWD", "price": 9.4, "xpts": 7.28},
+      {"name": "Haaland", "pos": "FWD", "price": 15.8, "xpts": 4.48}
     ],
     "bench": [
       {"name": "Leno", "pos": "GK", "price": 4.5},
-      {"name": "Barry", "pos": "FWD", "price": 5.7},
       {"name": "Barnes", "pos": "MID", "price": 6.0},
-      {"name": "Egan", "pos": "DEF", "price": 4.1}
+      {"name": "Egan", "pos": "DEF", "price": 4.0},
+      {"name": "Wissa", "pos": "FWD", "price": 5.9}
     ],
-    "transfer_in": "Barry",
-    "transfer_out": "Wissa",
-    "chip": "WC (save)"
+    "transfer_in": "Hill",
+    "transfer_out": "Calafiori",
+    "chip": null
+  },
+  "rival": {
+    "projected_xpts": 91.67,
+    "captain": "Haaland",
+    "transfer": "Gibbs-White -> Wirtz",
+    "note": "Built blind, top10k strategy. Shares Haaland (C), De Cuyper, Groß, Tavernier and Konsa with YOU. Holds no Hill. Same inflated xpts.json scale, so compare only relatively. Haaland as C neutralises the armband; the gap comes from Wirtz, Evanilson, N.Jackson and Tzolakis."
   },
   "consensus": {
     "captain_agree": false,
     "transfer_agree": false,
+    "transfer_in_agree": true,
+    "transfer_note": "Both engines buy Hill. They differ on who goes out: Gemini sells Egan (bench, needs 1.7 of 1.8 bank), Claude sells Calafiori (bank becomes 2.0). Either way Hill replaces Calafiori's XI slot. That is +6.81 xPts in the XI.",
     "chip_agree": true,
-    "conviction": "SPLIT",
-    "notes": "Captain SPLIT: Gemini De Cuyper vs Claude Haaland. Transfer split: Gemini rolls the FT, Claude does Wissa -> Barry. Chips agree: neither plays a chip (Claude explicitly saves WC). All three sides field the identical starting XI, so the only XI-level difference is the armband."
+    "chip_note": "Both save the chip (WC×1 left; no WC/DGW/BGW trigger)",
+    "conviction": "SPLIT"
   },
   "best_plan": "claude",
-  "verdict": "All three sides start the same 11 (raw 89.74 xPts), so this GW is decided by the armband. On reported numbers CLAUDE leads (98.95) over YOU (94.42) and GEMINI (74.17). Gemini's reported 74.17 does not reconcile with the cache: recomputed, its De Cuyper armband would score 102.66 on paper, but that edge comes from the xpts.json single-GW DEF inflation, and a DEF captain violates the LOCKED APEX captaincy rule (season cum_pts leader, nailed premium, not GK). Haaland (cum_pts 70, 98.8% mins) is the rule-compliant pick and he is also the EO shield. Isak fails the nailed gate (83% mins) and has an unverified doubt hint. YOUR team needs one move: the armband. Wissa -> Barry is a free bench upgrade (0 XI xPts this GW, but Wissa is rotation-flagged and Barry is rising). Save the WC because no trigger is met. ENGINES DISAGREE on captain, so conviction is SPLIT. Per protocol, a human override with real-time lineup info takes priority.",
-  "highest_leverage_action": "Move the captaincy from Isak to Haaland (+4.53 xPts on the model, rule-compliant, covers EO ~165). Then, if 1 FT is confirmed, do Wissa -> Barry with no hit."
+  "verdict": "CLAUDE has the highest valid projection at 84.39. YOU is at 78.67 and GEMINI reported 65.02. GEMINI's figure does not reconcile with xpts.json: the same lineup rescores to 86.30, and all of that edge comes from captaining DEF Hill (11.09) on DEF values that look inflated. That breaks the LOCKED cum_pts captain rule, and Gemini's XI is 4.70 weaker than CLAUDE's. ENGINES DISAGREE ON CAPTAIN: Gemini picks Hill, Claude picks Haaland (locked rule). Your armband is on Groß. On this scale Groß (5.57) projects slightly above Haaland (4.48, MCI FDR 5, form 2,2,2), and the protocol allows a human override based on lineup news. YOUR current team does not match the best plan. It needs one move. Both engines agree Hill should come in for Calafiori's XI spot. The rival projects 91.67 on the same inflated scale with Haaland as C, so a Haaland armband neutralises the rival's captain while Groß is a 1.09-point differential. Caveats: xpts.json DEF values look multi-GW, so treat every total as an upper bound (realistic band about 60-70). player_pool.json is empty. There is no DGW/BGW data beyond GW12.",
+  "highest_leverage_action": "Buy Hill (BOU DEF, 5.7) and start him in place of Calafiori. That is +6.81 xPts, the only move both engines agree on. CLAUDE sells Calafiori (bank becomes 2.0). Selling Egan instead (Gemini) gives the same XI but leaves only 0.1 in the bank. Confirm the sale price before the deadline. Hill's price is rising."
 }

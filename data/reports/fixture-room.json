@@ -1,31 +1,32 @@
 {
-  "gw": 11,
+  "gw": 12,
   "agent": "fixture-room",
-  "data_quality": "LIMITED: only a single-GW (GW11) FDR per player exists in data/cache/xpts.json. data/features.json is stale (generated 2026-07-23, target_gw 1, fixtures GW1-5) and was NOT used. No GW12-15 fixture data found, so no weighted next-5 ranking and no home/away weighting was possible. Ranks below are GW11 only.",
+  "data_quality": "LIMITED: only a single-GW (GW12) FDR per player exists in data/cache/xpts.json (updated 2026-11-26). data/features.json is stale (generated 2026-07-23, target_gw 1, fixtures GW1-5) and was NOT used. data/cache/player_pool.json ignored per instruction. No GW13-16 fixture data and no home/away flag exists in the cache, so a weighted GW12-16 ranking was NOT possible. Ranks below are GW12 only, with no away weighting.",
   "best_runs": [
-    {"team": "BHA", "fdr_avg": 2, "window": "GW11 only"},
-    {"team": "TOT", "fdr_avg": 2, "window": "GW11 only"},
-    {"team": "MCI", "fdr_avg": 2, "window": "GW11 only"},
-    {"team": "AVL", "fdr_avg": 2, "window": "GW11 only"},
-    {"team": "COV", "fdr_avg": 2, "window": "GW11 only"},
-    {"team": "CRY", "fdr_avg": 2, "window": "GW11 only"}
+    {"team": "CHE", "fdr_avg": 2, "window": "GW12 only"},
+    {"team": "AVL", "fdr_avg": 2, "window": "GW12 only"},
+    {"team": "LEE", "fdr_avg": 2, "window": "GW12 only"},
+    {"team": "HUL", "fdr_avg": 2, "window": "GW12 only"},
+    {"team": "CRY", "fdr_avg": 2, "window": "GW12 only"}
   ],
   "worst_runs": [
-    {"team": "FUL", "fdr_avg": 5, "window": "GW11 only"},
-    {"team": "EVE", "fdr_avg": 4, "window": "GW11 only"},
-    {"team": "LEE", "fdr_avg": 4, "window": "GW11 only"},
-    {"team": "HUL", "fdr_avg": 4, "window": "GW11 only"},
-    {"team": "NEW", "fdr_avg": 4, "window": "GW11 only"},
-    {"team": "NFO", "fdr_avg": 4, "window": "GW11 only"},
-    {"team": "MUN", "fdr_avg": 4, "window": "GW11 only"}
+    {"team": "MCI", "fdr_avg": 5, "window": "GW12 only"},
+    {"team": "ARS", "fdr_avg": 4, "window": "GW12 only"},
+    {"team": "EVE", "fdr_avg": 4, "window": "GW12 only"},
+    {"team": "NEW", "fdr_avg": 4, "window": "GW12 only"},
+    {"team": "NFO", "fdr_avg": 4, "window": "GW12 only"}
   ],
-  "mid_teams_fdr3": ["ARS", "BOU", "LIV", "CHE", "SUN", "BRE", "IPS"],
+  "mid_teams_fdr3": ["TOT", "BOU", "LIV", "BHA", "SUN", "BRE", "COV", "FUL", "IPS", "MUN"],
   "squad_fixture_notes": {
-    "good_gw11": ["De Cuyper (BHA, 2)", "Groß (BHA, 2)", "Van Hecke (TOT, 2)", "Haaland (MCI, 2)"],
-    "neutral_gw11": ["Raya/Konsa/Calafiori (ARS, 3)", "Tavernier (BOU, 3)", "Rogers/Palmer (CHE, 3)", "Isak (LIV, 3)"],
-    "poor_gw11": ["Leno (FUL, 5, bench GK)", "Barnes/Wissa (NEW, 4, bench)", "Egan (HUL, 4, bench)"]
+    "good_gw12": ["Rogers (CHE, 2)", "Palmer (CHE, 2)", "Egan (HUL, 2, bench)"],
+    "neutral_gw12": ["Kinsky/Van Hecke (TOT, 3)", "De Cuyper/Groß (BHA, 3, Groß is captain)", "Tavernier (BOU, 3)", "Isak (LIV, 3)", "Leno (FUL, 3, bench GK)"],
+    "poor_gw12": ["Konsa/Calafiori (ARS, 4)", "Haaland (MCI, 5, vice-captain)", "Barnes/Wissa (NEW, 4, bench)"]
+  },
+  "key_targets_gw12": {
+    "easy_fixture_high_xpts": ["Hill (BOU, 3, xPts 11.09)", "McBurnie (HUL, 2, 10.48)", "Muharemovic (LEE, 2, 10.18)", "Trafford (LEE GK, 2, 9.44)", "Justin (LEE, 2, 9.28)", "N.Jackson (AVL, 2, 9.11)"],
+    "avoid_hard_fixture": ["Haaland (MCI, 5, xPts 4.48)", "Gabriel/Rice/Odegaard (ARS, 4)"]
   },
   "dgw_alerts": [],
   "bgw_alerts": [],
-  "alert_caveat": "Empty means UNVERIFIED, not confirmed clear. No dgw flag or multi-GW fixture list exists for GW11-15 in the readable cache. Every team listed in xpts.json has a GW11 fixture value, but not every team appears there. Verify against the live FPL fixtures endpoint before any chip decision."
+  "alert_caveat": "Empty means UNVERIFIED, not confirmed clear. All 20 teams appear in the GW12 xpts.json, which suggests none blank in GW12, but no multi-GW fixture list exists, so DGW/BGW for GW13-16 cannot be assessed. Verify against the live FPL fixtures endpoint before any chip decision (1 WC left)."
 }

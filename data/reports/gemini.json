@@ -1,14 +1,14 @@
 {
   "engine": "gemini",
-  "gw": 11,
-  "captain": "De Cuyper",
-  "vice": "Konsa",
-  "starting_xi": ["Raya", "De Cuyper", "Konsa", "Van Hecke", "Calafiori", "Groß", "Palmer", "Tavernier", "Rogers", "Haaland", "Isak"],
-  "bench": ["Leno", "Egan", "Barnes", "Wissa"],
-  "transfer_out": null,
-  "transfer_in": null,
+  "gw": 12,
+  "captain": "Hill",
+  "vice": "Van Hecke",
+  "starting_xi": ["Kinsky","Hill","Van Hecke","Konsa","Calafiori","Tavernier","Palmer","Rogers","Barnes","Isak","Haaland"],
+  "bench": ["Leno","De Cuyper","Groß","Wissa"],
+  "transfer_out": "Egan",
+  "transfer_in": "Hill",
   "chip": null,
-  "projected_xpts": 74.17,
+  "projected_xpts": 65.02,
   "confidence": "medium",
-  "key_risk": "Several starting midfielders have unrated xPts data"
+  "key_risk": "Several key squad members lack explicit xPts entries in TOP_XPTS table"
 }

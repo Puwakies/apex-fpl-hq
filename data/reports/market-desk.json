@@ -1,48 +1,49 @@
 {
-  "gw": 11,
-  "agent": "market-desk",
-  "bank": 0.1,
+  "gw": 12,
+  "generated": "2026-11-27",
+  "source": "data/cache/price.json (updated 2026-11-26T17:25Z), squad.json, xpts.json. player_pool.json ignored (empty). No ownership base available, so confidence uses net_rate and net_transfers only.",
+  "caveat": "price_change in price.json is non-zero for Wirtz, Hill, Trafford (+0.1) and Kostoulas, Cherki (-0.1). It may mean the move already happened, so those are treated as already moved or partly priced in. Verify in the FPL app.",
   "likely_rises": [
-    {"player": "Barry", "net_transfers": 224692, "confidence": "high"},
-    {"player": "Vuskovic", "net_transfers": 217124, "confidence": "high"},
-    {"player": "Van Hecke", "net_transfers": 256021, "confidence": "high"},
-    {"player": "N.Jackson", "net_transfers": 429955, "confidence": "high"},
-    {"player": "McGinn", "net_transfers": 78882, "confidence": "medium"},
-    {"player": "Alysson", "net_transfers": 22031, "confidence": "medium"},
-    {"player": "Wirtz", "net_transfers": 90379, "confidence": "medium"},
-    {"player": "Ayari", "net_transfers": 28238, "confidence": "low"},
-    {"player": "Rudoni", "net_transfers": 23653, "confidence": "low"},
-    {"player": "J.Timber", "net_transfers": 12156, "confidence": "low"},
-    {"player": "Lindelöf", "net_transfers": 6928, "confidence": "low"},
-    {"player": "Delap", "net_transfers": 25558, "confidence": "low"}
+    {"player": "Okafor", "team": "LEE", "price": 5.7, "net_transfers": 127286, "confidence": "high", "note": "Highest net_rate (79.6). xPts only 2.88, so a price-only play."},
+    {"player": "Williams-Barnett", "team": "TOT", "price": 4.4, "net_transfers": 27010, "confidence": "medium", "note": "High rate, small volume."},
+    {"player": "Wirtz", "team": "LIV", "price": 7.4, "net_transfers": 501901, "confidence": "medium", "note": "Largest volume. price_change +0.1 may already be applied. xPts 9.53, top MID target."},
+    {"player": "Hill", "team": "BOU", "price": 5.7, "net_transfers": 126404, "confidence": "medium", "note": "price_change +0.1 may already be applied. xPts 11.09, best DEF."},
+    {"player": "Trafford", "team": "LEE", "price": 5.1, "net_transfers": 144813, "confidence": "medium", "note": "price_change +0.1 may already be applied. xPts 9.44, best GK."},
+    {"player": "Ngumoha", "team": "LIV", "price": 5.7, "net_transfers": 21644, "confidence": "low"},
+    {"player": "Arrizabalaga", "team": "ARS", "price": 4.9, "net_transfers": 3992, "confidence": "low"},
+    {"player": "Madueke", "team": "ARS", "price": 6.2, "net_transfers": 16478, "confidence": "low"},
+    {"player": "Kluivert", "team": "BOU", "price": 5.9, "net_transfers": 20878, "confidence": "low"},
+    {"player": "Emegha", "team": "CHE", "price": 4.9, "net_transfers": 2527, "confidence": "low"},
+    {"player": "Wan-Bissaka", "team": "AVL", "price": 4.5, "net_transfers": 4848, "confidence": "low"},
+    {"player": "Van den Berg", "team": "BRE", "price": 4.9, "net_transfers": 1923, "confidence": "low"}
   ],
   "likely_falls": [
-    {"player": "Gvardiol", "net_transfers": -381988, "confidence": "high"},
-    {"player": "João Pedro", "net_transfers": -400648, "confidence": "high"},
-    {"player": "Guéhi", "net_transfers": -194091, "confidence": "high"},
-    {"player": "Thiago", "net_transfers": -138419, "confidence": "medium"},
-    {"player": "Wissa", "net_transfers": -78860, "confidence": "medium"},
-    {"player": "Barnes", "net_transfers": -65380, "confidence": "medium"},
-    {"player": "Gonzalo", "net_transfers": -37986, "confidence": "medium"},
-    {"player": "Stach", "net_transfers": -15706, "confidence": "low"},
-    {"player": "Tel", "net_transfers": -8429, "confidence": "low"},
-    {"player": "Hato", "net_transfers": -6091, "confidence": "low"},
-    {"player": "Baleba", "net_transfers": -3997, "confidence": "low"},
-    {"player": "Gudmundsson", "net_transfers": -1065, "confidence": "low"}
+    {"player": "Cherki", "team": "MCI", "price": 7.8, "net_transfers": -263230, "confidence": "medium", "note": "price_change -0.1 may already be applied. Not owned."},
+    {"player": "Tarkowski", "team": "EVE", "price": 6.2, "net_transfers": -186662, "confidence": "medium", "note": "Large volume, xPts 1.01. Not owned."},
+    {"player": "Kostoulas", "team": "BHA", "price": 5.7, "net_transfers": -79251, "confidence": "medium", "note": "price_change -0.1 may already be applied. Not owned."},
+    {"player": "Gakpo", "team": "LIV", "price": 7.1, "net_transfers": -64106, "confidence": "medium", "note": "Not owned."},
+    {"player": "Doku", "team": "MCI", "price": 7.5, "net_transfers": -42048, "confidence": "medium", "note": "Not owned."},
+    {"player": "Neto", "team": "CHE", "price": 6.6, "net_transfers": -41601, "confidence": "low"},
+    {"player": "Tel", "team": "TOT", "price": 5.6, "net_transfers": -6803, "confidence": "low", "note": "Worst net_rate (-22.7), low volume."},
+    {"player": "Marmoush", "team": "TOT", "price": 7.0, "net_transfers": -21505, "confidence": "low"},
+    {"player": "Yalcouyé", "team": "BHA", "price": 4.4, "net_transfers": -20480, "confidence": "low"},
+    {"player": "Xhaka", "team": "SUN", "price": 5.3, "net_transfers": -17856, "confidence": "low"},
+    {"player": "Penders", "team": "CHE", "price": 4.4, "net_transfers": -3456, "confidence": "low"},
+    {"player": "Iroegbunam", "team": "HUL", "price": 5.0, "net_transfers": -962, "confidence": "low"}
   ],
-  "squad_at_risk": [
-    {"player": "Van Hecke", "direction": "rise", "note": "Owned starter, 5.1; hold to bank the rise. xPts 11.18."},
-    {"player": "Wissa", "direction": "fall", "note": "Bench, 5.9, xPts 1.08; likely -0.1 tonight."},
-    {"player": "Barnes", "direction": "fall", "note": "Bench, 6.0, xPts 3.03; price.json shows -0.1 flag already (pool lists 6.1), so the drop may be already applied."}
-  ],
+  "squad_exposure": {
+    "owned_in_rise_list": [],
+    "owned_in_fall_list": [],
+    "note": "None of the 15 owned players appear in the rise or fall lists, so there is no price-driven sell pressure. Bank is 1.8m."
+  },
   "act_now": [
-    {"move": "Wissa -> Barry", "reason": "Sell a faller and buy a likely riser before the deadline. Barry is 5.7 against Wissa 5.9, so bank goes 0.1 to 0.3. Barry has xG 7.29 and +224k net transfers.", "urgency": "high"},
-    {"move": "Hold Van Hecke", "reason": "Likely rise, so no action is needed.", "urgency": "none"}
+    {"player": "Hill", "team": "BOU", "price": 5.7, "reason": "Top xPts in the pool (11.09) and rising. Candidate swap for De Cuyper (5.5, xPts 7.23) costs +0.2m and fits the 1.8m bank. If the +0.1 already landed, the rise is already priced in and he is still the best buy on xPts.", "urgency": "high"},
+    {"player": "Wirtz", "team": "LIV", "price": 7.4, "reason": "501k net transfers and xPts 9.53. Buy before any further rise if a MID slot can be funded.", "urgency": "medium"},
+    {"player": "Trafford", "team": "LEE", "price": 5.1, "reason": "xPts 9.44 and rising. GK upgrade over Kinsky (4.4, xPts 7.88) or Leno (4.5, xPts 6.65).", "urgency": "medium"}
   ],
-  "monitor": ["Barnes (fall, bench, may already have dropped)", "N.Jackson (7.1, strong rise, not affordable on current bank)", "Vuskovic (5.3, likely rise, high xPts 12.3)"],
-  "caveats": [
-    "price_change in price.json is ambiguous: some falling players show 0 and some rising players show -0.1. Treat confidence as approximate.",
-    "player_pool.json was read only for lines 1-2301 of 6808; only the first part of the 400 players was checked, which was enough for the squad and flagged players.",
-    "Any transfer beyond the free transfer costs 4 points; check the free transfer count before moving."
+  "monitor": [
+    "Okafor, Williams-Barnett: price-only risers with low xPts, so not worth a transfer.",
+    "Cherki, Doku, Gakpo, Tarkowski, Kostoulas, Neto: fall risks, none owned. Avoid buying.",
+    "Haaland (xPts 4.48, FDR 5), Palmer (3.87), Rogers (4.83), Barnes (3.82), Wissa (0.47) are owned. No price pressure, but their xPts are weak. That is a transfer question, not a price one."
   ]
 }

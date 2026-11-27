@@ -1,96 +1,35 @@
 {
-  "gw": 5,
-  "updated": "2026-09-18",
-  "fixtures_relevant": [
-    "Arsenal vs Brighton (Raya, Konsa, Saka vs De Cuyper, Groß)",
-    "Chelsea vs Brentford (Palmer, João Pedro vs Ajer)",
-    "Man City vs Sunderland (Haaland)",
-    "Newcastle vs Hull (Hall, Wissa)"
-  ],
+  "gw": 12,
+  "agent": "news-desk",
+  "checked": "2026-11-27",
+  "coverage_note": "Web search returned only prior-season (2020-2025) GW12 articles; no verified 2026/27 pressers or predicted lineups found. Signals below rest on cache news.json (official flags, 40 items) only. 'starts' means no injury flag in cache, NOT confirmed lineup. player_pool.json ignored per instruction.",
   "items": [
-    {
-      "player": "João Pedro",
-      "team": "CHE",
-      "signal": "rotation_risk",
-      "note": "Knee issue (ACL/MCL strain) from Hull City game, pulled out of Brazil squad. Xabi Alonso: 'no one is ruled out for Friday' but late fitness call vs Brentford, final decision day-of-match. Squad.json has him at 75% chance. Treat as genuine doubt for starting XI, not just conservative flag.",
-      "source": "fantasyfootballscout.co.uk GW5 team news (17 Sep), sportsmole.co.uk"
-    },
-    {
-      "player": "Palmer",
-      "team": "CHE",
-      "signal": "starts",
-      "note": "No injury news found; captain, expected nailed for Brentford away.",
-      "source": "squad.json / no adverse news found"
-    },
-    {
-      "player": "Raya",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Predicted XI vs Brighton confirms Raya returns in goal after Carabao Cup rest. Nailed.",
-      "source": "sportsmole.co.uk Arsenal predicted lineup vs Brighton"
-    },
-    {
-      "player": "Konsa",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Named in Arsenal's predicted back four (alongside Timber, Gabriel, Calafiori) vs Brighton. Nailed, no injury flags.",
-      "source": "sportsmole.co.uk Arsenal predicted lineup vs Brighton"
-    },
-    {
-      "player": "Saka",
-      "team": "ARS",
-      "signal": "starts",
-      "note": "Confirmed as Arteta's first-choice winger, expected back in as Arsenal return closer to full strength vs Brighton. No bench risk this GW.",
-      "source": "sportsmole.co.uk Arsenal predicted lineup vs Brighton"
-    },
-    {
-      "player": "De Cuyper",
-      "team": "BHA",
-      "signal": "starts",
-      "note": "6th most transferred-in player league-wide for GW5 (244k+ transfers in) off an 11-point haul last GW. Nailed short-term; longer-term note (not GW5-relevant): may lose LW role once Mitoma returns from injury.",
-      "source": "allaboutfpl.com GW5 transfer tips"
-    },
-    {
-      "player": "Groß",
-      "team": "BHA",
-      "signal": "starts",
-      "note": "2nd most transferred-in player for GW5 (333k+) after a 17-point haul (goal + 2 assists) in GW4. Fully nailed, in-form.",
-      "source": "allaboutfpl.com GW5 transfer tips"
-    },
-    {
-      "player": "Ajer",
-      "team": "BRE",
-      "signal": "starts",
-      "note": "Brentford boss Keith Andrews confirmed no new injury concerns at Thursday presser. Ajer retained his place in EFL Cup lineup. Budget enabler, fully nailed for Chelsea visit.",
-      "source": "fantasyfootballscout.co.uk Brentford injury latest / GW5 team news"
-    },
-    {
-      "player": "Haaland",
-      "team": "MCI",
-      "signal": "starts",
-      "note": "No current fitness concerns reported for GW5; Man City host Sunderland (favourable matchup). No rotation signal found despite occasional past precautionary subs.",
-      "source": "no adverse news found; mancity.com fixture list confirms MCI vs Sunderland GW5"
-    },
-    {
-      "player": "Hall",
-      "team": "NEW",
-      "signal": "starts",
-      "note": "Newcastle hit by a squad crisis for the Hull City visit -- Elanga (hamstring, 6-8wk), Dedic, Nico Gonzalez (head injury/return protocol), Burn, Jaouen, Osula and Joelinton all out. Hall not among the absentees, so with defensive options thin he is effectively guaranteed to start.",
-      "source": "fantasyfootballscout.co.uk 'Dedic, Elanga, Nico' GW5 Newcastle injury latest; nufcblog.co.uk"
-    },
-    {
-      "player": "Wissa",
-      "team": "NEW",
-      "signal": "starts",
-      "note": "Not among Newcastle's list of absentees for the Hull game; with Joelinton and other forward options out, Wissa is the nailed central striker option this week.",
-      "source": "fantasyfootballscout.co.uk GW5 Newcastle injury latest"
-    },
-    {
-      "player": "Elanga",
-      "team": "NEW",
-      "signal": "benched",
-      "note": "Not in squad but flagged for context: hamstring injury, expected out 6-8 weeks, misses GW5-7 minimum. Not in our squad, informational only.",
-      "source": "fantasyfootballscout.co.uk"
-    }
-  ]
+    {"player": "Kinsky", "team": "TOT", "signal": "unknown", "note": "No flag in news.json. No presser/lineup source found.", "source": "data/cache/news.json"},
+    {"player": "De Cuyper", "team": "BHA", "signal": "unknown", "note": "No personal flag. BHA has 5 players out (Mitoma back 2 Dec, Yohanna, Tzimas, Ferguson, Yalcouyé): thin squad, likely helps minutes.", "source": "data/cache/news.json"},
+    {"player": "Van Hecke", "team": "TOT", "signal": "unknown", "note": "No flag. Team conflict: squad.json/xpts.json say TOT, data-lab top_xpts says BHA. Verify.", "source": "data/cache/news.json; data/reports/data-lab.json"},
+    {"player": "Konsa", "team": "ARS", "signal": "unknown", "note": "No flag. Team conflict: squad.json/xpts.json say ARS, data-lab says AVL. ARS has Saka (back 20 Dec) and Zubimendi (unknown) out; rotation talk not verified.", "source": "data/cache/news.json; data/reports/data-lab.json"},
+    {"player": "Calafiori", "team": "ARS", "signal": "unknown", "note": "No flag. Low xPts 4.28 (FDR 4), a matchup issue and not a news issue.", "source": "data/cache/news.json"},
+    {"player": "Rogers", "team": "CHE", "signal": "unknown", "note": "No flag. CHE has 5 out (James, Hato, Gittens, Joao Pedro, Lacroix), so attacking minutes are likely secure. Low xPts 4.83 despite FDR 2.", "source": "data/cache/news.json"},
+    {"player": "Palmer", "team": "CHE", "signal": "unknown", "note": "No flag in news.json. xPts only 3.87 at FDR 2, an unusually low outlier. Check for a minutes or fitness reason before trusting it.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "Groß", "team": "BHA", "signal": "unknown", "note": "Captain. No flag. BHA injury list is long (see De Cuyper). xPts 5.57 is well below Hill 11.09; captaincy rule is cum_pts-based, so no override from news.", "source": "data/cache/news.json"},
+    {"player": "Tavernier", "team": "BOU", "signal": "unknown", "note": "No flag. BOU missing Milosavljevic, J.Araujo, Sanchez (DEF) and Toth.A (MID), all unknown return.", "source": "data/cache/news.json"},
+    {"player": "Haaland", "team": "MCI", "signal": "unknown", "note": "No flag. FDR 5, xPts 4.48. Vice-captain. No rotation talk found.", "source": "data/cache/news.json"},
+    {"player": "Isak", "team": "LIV", "signal": "unknown", "note": "No flag. xPts 7.28.", "source": "data/cache/news.json"},
+    {"player": "Leno", "team": "FUL", "signal": "unknown", "note": "Bench GK. No flag. Fulham GK Lecomte is out (Achilles), so Leno is the likely starter at FUL.", "source": "data/cache/news.json"},
+    {"player": "Barnes", "team": "NEW", "signal": "unknown", "note": "Bench. No flag. xPts 3.82 (FDR 4).", "source": "data/cache/news.json"},
+    {"player": "Wissa", "team": "NEW", "signal": "unknown", "note": "Bench. No flag, but xPts 0.47 suggests the model sees little or no minutes. Possible rotation or benched risk; unverified.", "source": "data/cache/xpts.json"},
+    {"player": "Egan", "team": "HUL", "signal": "unknown", "note": "Bench. No flag. HUL has 6 out (Iroegbunam, Hughes, Matazo, Gelhardt, Targett, Morita), so HUL defender minutes are likely. Gemini suggests Egan -> Hill.", "source": "data/cache/news.json; data/reports/data-lab.json"},
+    {"player": "Hill", "team": "BOU", "signal": "unknown", "note": "Top xPts 11.09. No flag in news.json, but BOU has 3 defenders out (Milosavljevic, J.Araujo, Sanchez), which probably helps his minutes. Starting status unverified.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "McBurnie", "team": "HUL", "signal": "unknown", "note": "xPts 10.48, FDR 2. No flag. Not in HUL injury list. Starting status unverified.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "Muharemovic", "team": "LEE", "signal": "unknown", "note": "xPts 10.18, FDR 2. No LEE players in news.json. Starting status unverified.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "Wirtz", "team": "LIV", "signal": "unknown", "note": "xPts 9.53. No flag in cache. The only Wirtz injury news found was from Nov 2025 (muscle injury), which is a prior season and irrelevant. Starting status unverified.", "source": "data/cache/news.json"}
+  ],
+  "squad_flags": {
+    "squad_players_in_news_json": 0,
+    "rotation_flags": 0,
+    "data_conflicts": [
+      "Van Hecke team: TOT (squad/xpts) vs BHA (data-lab top_xpts)",
+      "Konsa team: ARS (squad/xpts) vs AVL (data-lab top_xpts)"
+    ]
+  }
 }

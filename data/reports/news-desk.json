@@ -1,26 +1,35 @@
 {
-  "gw": 11,
+  "gw": 12,
+  "agent": "news-desk",
+  "checked": "2026-11-27",
+  "coverage_note": "Web search returned only prior-season (2020-2025) GW12 articles; no verified 2026/27 pressers or predicted lineups found. Signals below rest on cache news.json (official flags, 40 items) only. 'starts' means no injury flag in cache, NOT confirmed lineup. player_pool.json ignored per instruction.",
   "items": [
-    {"player": "Raya", "team": "ARS", "signal": "unknown", "note": "FPL status AVAILABLE, no news in cache. No GW11 2026/27 presser found via web search. Nailed GK by default, unverified.", "source": "data/cache/squad.json"},
-    {"player": "De Cuyper", "team": "BHA", "signal": "unknown", "note": "AVAILABLE. BHA has many injuries (Mitoma, Yohanna back 22 Nov; Ferguson, Tzimas, Struijk, Azeez out), so he is likely to keep starting, but no presser confirmation.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Van Hecke", "team": "TOT", "signal": "unknown", "note": "AVAILABLE. Flagged in price.json (price change), not a news issue. No presser found.", "source": "data/cache/squad.json, data/reports/data-lab.json"},
-    {"player": "Konsa", "team": "ARS", "signal": "unknown", "note": "AVAILABLE. Saka out (thigh, unknown return) per cache. No rotation talk found.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Calafiori", "team": "ARS", "signal": "unknown", "note": "AVAILABLE. No rotation talk found.", "source": "data/cache/squad.json"},
-    {"player": "Rogers", "team": "CHE", "signal": "unknown", "note": "AVAILABLE. Chelsea attackers out per cache (Joao Pedro, Gittens), so attacking minutes are likely safe, but no presser confirmation.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Palmer", "team": "CHE", "signal": "unknown", "note": "AVAILABLE, vice captain. Chelsea also has James, Hato and Lacroix out. No presser found.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Groß", "team": "BHA", "signal": "unknown", "note": "AVAILABLE. BHA depleted, likely to start, unverified.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Tavernier", "team": "BOU", "signal": "unknown", "note": "AVAILABLE. BOU has several defenders and Toth.A out. No rotation talk found.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Haaland", "team": "MCI", "signal": "unknown", "note": "AVAILABLE. No GW11 presser found. City rotation is a general risk, but nothing specific on him.", "source": "data/cache/squad.json"},
-    {"player": "Isak", "team": "LIV", "signal": "unknown", "note": "AVAILABLE, captain. Liverpool has Frimpong, Bradley, Leoni and Jaros out per cache, none a forward. No GW11 presser found, so confirm before the deadline.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Leno", "team": "FUL", "signal": "unknown", "note": "Bench GK, AVAILABLE. Fulham has Cairney out until 21 Nov.", "source": "data/cache/squad.json, data/cache/news.json"},
-    {"player": "Barnes", "team": "NEW", "signal": "unknown", "note": "Bench, AVAILABLE. Flagged in price.json. No lineup info found.", "source": "data/cache/squad.json, data/reports/data-lab.json"},
-    {"player": "Wissa", "team": "NEW", "signal": "unknown", "note": "Bench, AVAILABLE. Flagged in price.json. Very low xPts (1.08), so he is unlikely to be a reliable starter.", "source": "data/cache/squad.json, data/reports/data-lab.json"},
-    {"player": "Egan", "team": "HUL", "signal": "unknown", "note": "Bench, AVAILABLE. HUL has Hughes, Targett, Matazo, Morita and Ansah out per cache.", "source": "data/cache/squad.json, data/cache/news.json"}
+    {"player": "Kinsky", "team": "TOT", "signal": "unknown", "note": "No flag in news.json. No presser/lineup source found.", "source": "data/cache/news.json"},
+    {"player": "De Cuyper", "team": "BHA", "signal": "unknown", "note": "No personal flag. BHA has 5 players out (Mitoma back 2 Dec, Yohanna, Tzimas, Ferguson, Yalcouyé): thin squad, likely helps minutes.", "source": "data/cache/news.json"},
+    {"player": "Van Hecke", "team": "TOT", "signal": "unknown", "note": "No flag. Team conflict: squad.json/xpts.json say TOT, data-lab top_xpts says BHA. Verify.", "source": "data/cache/news.json; data/reports/data-lab.json"},
+    {"player": "Konsa", "team": "ARS", "signal": "unknown", "note": "No flag. Team conflict: squad.json/xpts.json say ARS, data-lab says AVL. ARS has Saka (back 20 Dec) and Zubimendi (unknown) out; rotation talk not verified.", "source": "data/cache/news.json; data/reports/data-lab.json"},
+    {"player": "Calafiori", "team": "ARS", "signal": "unknown", "note": "No flag. Low xPts 4.28 (FDR 4), a matchup issue and not a news issue.", "source": "data/cache/news.json"},
+    {"player": "Rogers", "team": "CHE", "signal": "unknown", "note": "No flag. CHE has 5 out (James, Hato, Gittens, Joao Pedro, Lacroix), so attacking minutes are likely secure. Low xPts 4.83 despite FDR 2.", "source": "data/cache/news.json"},
+    {"player": "Palmer", "team": "CHE", "signal": "unknown", "note": "No flag in news.json. xPts only 3.87 at FDR 2, an unusually low outlier. Check for a minutes or fitness reason before trusting it.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "Groß", "team": "BHA", "signal": "unknown", "note": "Captain. No flag. BHA injury list is long (see De Cuyper). xPts 5.57 is well below Hill 11.09; captaincy rule is cum_pts-based, so no override from news.", "source": "data/cache/news.json"},
+    {"player": "Tavernier", "team": "BOU", "signal": "unknown", "note": "No flag. BOU missing Milosavljevic, J.Araujo, Sanchez (DEF) and Toth.A (MID), all unknown return.", "source": "data/cache/news.json"},
+    {"player": "Haaland", "team": "MCI", "signal": "unknown", "note": "No flag. FDR 5, xPts 4.48. Vice-captain. No rotation talk found.", "source": "data/cache/news.json"},
+    {"player": "Isak", "team": "LIV", "signal": "unknown", "note": "No flag. xPts 7.28.", "source": "data/cache/news.json"},
+    {"player": "Leno", "team": "FUL", "signal": "unknown", "note": "Bench GK. No flag. Fulham GK Lecomte is out (Achilles), so Leno is the likely starter at FUL.", "source": "data/cache/news.json"},
+    {"player": "Barnes", "team": "NEW", "signal": "unknown", "note": "Bench. No flag. xPts 3.82 (FDR 4).", "source": "data/cache/news.json"},
+    {"player": "Wissa", "team": "NEW", "signal": "unknown", "note": "Bench. No flag, but xPts 0.47 suggests the model sees little or no minutes. Possible rotation or benched risk; unverified.", "source": "data/cache/xpts.json"},
+    {"player": "Egan", "team": "HUL", "signal": "unknown", "note": "Bench. No flag. HUL has 6 out (Iroegbunam, Hughes, Matazo, Gelhardt, Targett, Morita), so HUL defender minutes are likely. Gemini suggests Egan -> Hill.", "source": "data/cache/news.json; data/reports/data-lab.json"},
+    {"player": "Hill", "team": "BOU", "signal": "unknown", "note": "Top xPts 11.09. No flag in news.json, but BOU has 3 defenders out (Milosavljevic, J.Araujo, Sanchez), which probably helps his minutes. Starting status unverified.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "McBurnie", "team": "HUL", "signal": "unknown", "note": "xPts 10.48, FDR 2. No flag. Not in HUL injury list. Starting status unverified.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "Muharemovic", "team": "LEE", "signal": "unknown", "note": "xPts 10.18, FDR 2. No LEE players in news.json. Starting status unverified.", "source": "data/cache/news.json; data/cache/xpts.json"},
+    {"player": "Wirtz", "team": "LIV", "signal": "unknown", "note": "xPts 9.53. No flag in cache. The only Wirtz injury news found was from Nov 2025 (muscle injury), which is a prior season and irrelevant. Starting status unverified.", "source": "data/cache/news.json"}
   ],
-  "caveats": [
-    "Web search returned only 2021-2025 articles. No 2026/27 GW11 pressers, predicted lineups or rotation hints were found, so no item is confirmed.",
-    "Signals rest only on FPL status in the cache (all 15 AVAILABLE, no squad player in news.json). They are marked unknown, not starts.",
-    "Rotation-Risk Gate (blind mins and sub history) needs minutes data that is not in the cache, so it was not applied.",
-    "Re-check pressers on Friday before the deadline."
-  ]
+  "squad_flags": {
+    "squad_players_in_news_json": 0,
+    "rotation_flags": 0,
+    "data_conflicts": [
+      "Van Hecke team: TOT (squad/xpts) vs BHA (data-lab top_xpts)",
+      "Konsa team: ARS (squad/xpts) vs AVL (data-lab top_xpts)"
+    ]
+  }
 }

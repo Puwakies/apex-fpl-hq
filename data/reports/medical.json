@@ -1,110 +1,26 @@
 {
-  "gw": 5,
+  "gw": 12,
+  "generated": "2026-11-27",
+  "note": "No squad or watchlist player appears in news.json injury list; squad.json shows all 15 AVAILABLE with empty news. Web search returned no current-cycle (Nov 2026) club news for GW12 (results were older seasons), so no upgrade/downgrade of FPL flags. Wirtz web results were inconclusive/undated (an Oct 2026 minor knock reported as not serious); treated as fit per FPL cache, recommend re-check after Friday presser. player_pool.json ignored as instructed.",
   "matrix": [
-    {
-      "player": "Raya",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "squad.json (AVAILABLE, no news flag)"
-    },
-    {
-      "player": "De Cuyper",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "squad.json (AVAILABLE, no news flag)"
-    },
-    {
-      "player": "Ajer",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "FFS GW5 predicted Brentford lineup includes Ajer"
-    },
-    {
-      "player": "Konsa",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "FFS GW5 team news: 'Saliba out, Timber/Mosquera doubts, Konsa comes into the side'"
-    },
-    {
-      "player": "Hall",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "squad.json (AVAILABLE); Newcastle GW5 injury news lists Gordon/Elanga/Dedic/Ramsey/Gonzalez, not Hall"
-    },
-    {
-      "player": "Egan",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "squad.json (AVAILABLE, no news flag)"
-    },
-    {
-      "player": "Palmer",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "RotoWire: Palmer cleared, no injury concern, standout GW5 pick"
-    },
-    {
-      "player": "Groß",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "FFS GW5 predicted Brighton lineup includes Groß"
-    },
-    {
-      "player": "Saka",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "RotoWire GW5 rankings: Saka started all 4 GWs, 3 goals, no injury flag"
-    },
-    {
-      "player": "M.Sangaré",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "FFS GW5 predicted Brentford lineup includes Sangaré"
-    },
-    {
-      "player": "Gakpo",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "squad.json (AVAILABLE, no news flag)"
-    },
-    {
-      "player": "João Pedro",
-      "status": "out",
-      "chance_pct": 0,
-      "expected_return_gw": 7,
-      "source": "UPGRADE vs FPL flag (was 75% doubtful). Confirmed knee edema (ACL/MCL sprain) suffered vs Hull 12 Sep; Xabi Alonso confirms he 'will miss Friday's match against Brentford' (GW5). Recovery estimated 3-4 weeks; target return is Chelsea vs Bournemouth 10 Oct (~GW7). Danny Welbeck to lead attack in his absence. Sources: fantasyfootballscout.co.uk (GW5 team news 17 Sep), sportsmole.co.uk, si.com"
-    },
-    {
-      "player": "Haaland",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "RotoWire GW5 rankings: top-ranked pick, no injury concern, Man City vs Sunderland"
-    },
-    {
-      "player": "Wissa",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "ESPN/predicted lineup: Wissa scored vs Spurs, included in predicted Newcastle XI vs Hull 19 Sep"
-    },
-    {
-      "player": "Leno",
-      "status": "fit",
-      "chance_pct": 100,
-      "expected_return_gw": null,
-      "source": "squad.json (AVAILABLE, bench GK, no news flag)"
-    }
+    {"player": "Kinsky", "team": "TOT", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "De Cuyper", "team": "BHA", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Van Hecke", "team": "TOT", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Konsa", "team": "ARS", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Calafiori", "team": "ARS", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json (ARS has Saka/Zubimendi out, Calafiori not listed)"},
+    {"player": "Rogers", "team": "CHE", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Palmer", "team": "CHE", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Groß", "team": "BHA", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE (captain); not in news.json"},
+    {"player": "Tavernier", "team": "BOU", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Haaland", "team": "MCI", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE (vice); not in news.json"},
+    {"player": "Isak", "team": "LIV", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Leno", "team": "FUL", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json (FUL GK Lecomte is out, Leno is the available GK)"},
+    {"player": "Barnes", "team": "NEW", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Wissa", "team": "NEW", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Egan", "team": "HUL", "owned": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "squad.json AVAILABLE; not in news.json"},
+    {"player": "Hill", "team": "BOU", "owned": false, "watchlist": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "not in news.json; xpts.json lists him (xPts 11.09). No web confirmation. Note BOU has 4 defenders/mid out (Milosavljevic, J.Araujo, Sanchez, Toth.A)"},
+    {"player": "McBurnie", "team": "HUL", "owned": false, "watchlist": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "not in news.json; xpts.json lists him (xPts 10.48). No web confirmation"},
+    {"player": "Muharemović", "team": "LEE", "owned": false, "watchlist": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "not in news.json; xpts.json lists him (xPts 10.18). No web confirmation"},
+    {"player": "Wirtz", "team": "LIV", "owned": false, "watchlist": true, "status": "fit", "chance_pct": 100, "expected_return_gw": null, "source": "not in news.json; xpts.json lists him (xPts 9.53). Web search inconclusive on late-Nov status; re-check at presser"}
   ]
 }

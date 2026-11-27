@@ -1,37 +1,49 @@
 {
- "gw": 11,
+ "gw": 12,
  "agent": "data-lab",
- "checked": "2026-11-20",
+ "checked": "2026-11-27",
  "season": "2026/27",
  "files": {
-  "squad": "OK (15 players, gw11, picks_gw10)",
-  "xpts": "OK (150 rows, gw11)",
-  "league": "OK (context only; differentials/template arrays empty; context GW=10)",
-  "news": "OK (40)",
+  "squad": "OK (15 players, gw12, picks_gw11)",
+  "xpts": "OK (150 rows, gw12)",
+  "league": "PARTIAL (context only, context GW=11 = standings through GW11; differentials/template arrays empty)",
+  "news": "OK (40 items, none on squad players)",
   "price": "OK (12 rises/12 falls)",
-  "gemini": "OK (gw11)",
-  "player_pool": "OK (400, gw11)"
+  "gemini": "OK (gw12)",
+  "player_pool": "EMPTY (players: [] , gw12)"
  },
- "updated": "all 2026-11-19T17:24-17:25Z",
- "missing": [],
- "stop": false,
+ "updated": "all 2026-11-26T17:24-17:25Z",
+ "missing": [
+  "player_pool.players (empty array)"
+ ],
+ "stop": true,
+ "stop_reason": "player_pool.json has 0 players; Apps Script push incomplete for this file. All other files present and GW12.",
  "squad": {
   "team": "Puwakies Jjimyang",
-  "captain": "Isak",
-  "vice": "Palmer",
-  "bank": 0.1,
-  "value": 103.9,
-  "total_points": 668,
-  "overall_rank": 457769,
+  "captain": "Gro\u00df",
+  "vice": "Haaland",
+  "bank": 1.8,
+  "value": 104.2,
+  "total_points": 714,
+  "overall_rank": 318806,
+  "chips_used": [
+   "BB@GW2",
+   "WC@GW3",
+   "TC@GW4",
+   "FH@GW9"
+  ],
+  "chips_left": [
+   "WC x1"
+  ],
   "xi": [
-   "Raya",
+   "Kinsky",
    "De Cuyper",
    "Van Hecke",
    "Konsa",
    "Calafiori",
    "Rogers",
    "Palmer",
-   "Groß",
+   "Gro\u00df",
    "Tavernier",
    "Haaland",
    "Isak"
@@ -43,92 +55,64 @@
    "Egan"
   ]
  },
- "chips": {
-  "used": [
-   "BB@GW2",
-   "WC@GW3",
-   "TC@GW4",
-   "FH@GW9"
-  ],
-  "left": [
-   "WC x1"
-  ]
- },
- "xpts_top": [
+ "top_xpts": [
   [
-   "De Cuyper",
-   12.92
+   "Hill",
+   "BOU",
+   "DEF",
+   11.09
   ],
   [
-   "Vuskovic",
-   12.3
+   "McBurnie",
+   "HUL",
+   "FWD",
+   10.48
   ],
   [
-   "Konsa",
-   12.15
-  ],
-  [
-   "N.Jackson",
-   11.91
-  ],
-  [
-   "Verbruggen",
-   11.32
-  ],
-  [
-   "Gabriel",
-   11.29
+   "Muharemovi\u0107",
+   "LEE",
+   "DEF",
+   10.18
   ],
   [
    "Van Hecke",
-   11.18
+   "BHA",
+   "DEF",
+   9.94
   ],
   [
-   "Evanilson",
-   10.11
+   "Konsa",
+   "AVL",
+   "DEF",
+   9.54
   ],
   [
-   "Haaland",
-   9.21
-  ],
-  [
-   "Raya",
-   8.94
+   "Wirtz",
+   "LIV",
+   "MID",
+   9.53
   ]
  ],
- "league": {
-  "rank": 7,
-  "of": 18,
-  "leader": "Ohmbappe (714)",
-  "gap": 46
- },
  "gemini": {
-  "captain": "De Cuyper",
-  "captain_xpts": 12.92,
-  "vice": "Konsa",
-  "transfer": null,
+  "captain": "Hill",
+  "captain_xpts": 11.09,
+  "vice": "Van Hecke",
+  "transfer": "Egan -> Hill",
   "chip": null,
-  "projected_xpts": 74.17,
-  "confidence": "medium",
-  "key_risk": "Several starting midfielders have unrated xPts data"
+  "projected_xpts": 65.02,
+  "confidence": "medium"
  },
- "squad_xpts": {
-  "Raya": 8.94,
-  "De Cuyper": 12.92,
-  "Van Hecke": 11.18,
-  "Konsa": 12.15,
-  "Calafiori": 6.85,
-  "Rogers": 5.27,
-  "Palmer": 5.08,
-  "Groß": 6.75,
-  "Tavernier": 6.71,
-  "Haaland": 9.21,
-  "Isak": 4.68,
-  "Leno": 3.71,
-  "Barnes": 3.03,
-  "Wissa": 1.08,
-  "Egan": 2.98
+ "league": {
+  "rank": 5,
+  "of": 18,
+  "leader": "Ohmbappe (753)",
+  "gap": 39
  },
- "squad_news": "no squad player flagged in news.json; all 15 AVAILABLE",
- "price_flags": "squad players in price.json: Van Hecke, Barnes, Wissa"
+ "flags": [
+  "player_pool empty",
+  "Gemini key_risk: several squad members lack xPts entries",
+  "Low squad xPts: Wissa 0.47, Barnes 3.82, Palmer 3.87, Calafiori 4.28, Haaland 4.48",
+  "Hill (Gemini captain) not in squad; needs Egan transfer",
+  "No news flags on squad players"
+ ]
 }
